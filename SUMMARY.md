@@ -1,6 +1,6 @@
 #SUMMARY.md
 * [前言](README.md)
-* [基本语法](README.md)
+* [基本语法](ds.md)
 * [集合](README.md)
 * [设计模式](README.md)
 * [同步](synchronize.md)
