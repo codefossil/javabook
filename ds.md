@@ -1,5 +1,6 @@
-#object healder#
+#object header#
 oopDesc -> object header(mark + klass)
+mark=hashcode/sync/gc
 
 http://openjdk.java.net/groups/hotspot/docs/HotSpotGlossary.html
 https://www.javamex.com/tutorials/memory/object_memory_usage.shtml
