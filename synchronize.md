@@ -39,10 +39,15 @@ This instruction is not supported on Intel processors earlier than the Intel486 
 00 has_locker()
 
 
-重量级 
+重量级/stack-locked
+00 inflating
+|
 10 has_monitor()
 objectMonitor=mark->monitor()
+inflating
 
+
+https://cloud.tencent.com/developer/article/1013062
 https://labs.oracle.com/pls/apex/f?p=labs:49:::::P49_PROJECT_ID:16
 
 https://docs.oracle.com/javase/8/docs/
