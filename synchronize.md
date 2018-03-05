@@ -1,5 +1,4 @@
 #同步/并发原语#
-
 ``` cpp
 //os_cpu/windows_x86/atomic_windows_x86.inline.hpp
 interlocked
@@ -9,10 +8,14 @@ lock add/dec/*
 http://www.felixcloutier.com/x86/index.html
 http://gee.cs.oswego.edu/dl/jmm/cookbook.html
 
-#乐观锁和悲观锁
+##悲观锁
+>修改数据之前就独占
 
+##乐观锁
+>直到数据修改时才验证冲突（一般是通过对比数据版本号）
+wait-free/lock-free
 
-#CAS和自旋锁
+##CAS和自旋锁
 ``` cpp
 //os_cpu/windows_x86/atomic_windows_x86.inline.hpp
 [lock] cmpxchg reg, reg/mem
@@ -41,7 +44,7 @@ http://gee.cs.oswego.edu/dl/jmm/cookbook.html
 >Thin Locks: An Implementation of Synchronization for Java
 
 #轻量级/thin-lock
-线程通过spin检查（减少fat-lock用户和内核态的切换）
+>线程通过spin检查（减少fat-lock用户和内核态的切换）
 
 ``` cpp
 >share/vm/runtime/synchronizer.cpp
@@ -49,7 +52,8 @@ http://gee.cs.oswego.edu/dl/jmm/cookbook.html
 ```
 
 #重量级/fat-lock
-线程通过park/pending操作，让出CPU等待唤醒
+>线程通过park/pending操作，让出CPU等待唤醒
+
 ```cpp
 //os/windows/vm/os_windows.cpp
 00 inflating
@@ -59,24 +63,29 @@ park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
 ```
 
 #重入锁/偏向锁
-线程通过线程ID检查（减少thin-lock的spin）
+>线程通过线程ID检查（减少thin-lock的spin）
 当竞争时，需要撤销偏向锁
 
+- synchronized实现分析
 https://www.cnblogs.com/dennyzhangdd/p/6734638.html
 https://toutiao.io/posts/cv2q7t/preview
 https://www.jianshu.com/p/c5058b6fe8e5
 http://www.cnblogs.com/zhenyimo/p/6738210.html
 https://cloud.tencent.com/developer/article/1013062
 
+- 参考
 https://labs.oracle.com/pls/apex/f?p=labs:49:::::P49_PROJECT_ID:16
-
 https://docs.oracle.com/javase/8/docs/
 https://www.ibm.com/developerworks/java/library/j-jtp04223/index.html
 https://www.ibm.com/developerworks/library/j-threads1/index.html
 https://javainterview-mayank.blogspot.com/2011/04/synchronization-volatile-and-atomic.html
+
+- 性能测试
 https://mechanical-sympathy.blogspot.com/2011/11/java-lock-implementations.html
 
-AQS
+#volatile
+
+#AQS
 https://www.ibm.com/developerworks/library/j-jtp11234/
 https://en.wikipedia.org/wiki/Non-blocking_algorithm
 https://kukuruku.co/post/lock-free-data-structures-basics-atomicity-and-atomic-primitives/
@@ -93,7 +102,6 @@ executor
 并行流/lambda
 actor
 同步器
-AQS同步组件
 
 
 
@@ -108,7 +116,6 @@ https://github.com/torvalds/linux/blob/master/arch/x86/include/asm/cmpxchg.h
 https://www.quora.com/Why-does-the-Java-API-not-give-control-over-thread-scheduling-to-application-programmers
 
 reentrantlock
-单变量无锁无阻塞
 死锁的原理和排查方法
 
 http://www.oracle.com/technetwork/java/tuning-139912.html
