@@ -1,7 +1,10 @@
 #同步/并发原语#
+
+``` cpp
+//os_cpu/windows_x86/atomic_windows_x86.inline.hpp
 interlocked
-intrinsic function
 lock add/dec/*
+```
 
 http://www.felixcloutier.com/x86/index.html
 http://gee.cs.oswego.edu/dl/jmm/cookbook.html
@@ -10,9 +13,11 @@ http://gee.cs.oswego.edu/dl/jmm/cookbook.html
 
 
 #CAS和自旋锁
+``` cpp
+//os_cpu/windows_x86/atomic_windows_x86.inline.hpp
 [lock] cmpxchg reg, reg/mem
-
-This instruction is not supported on Intel processors earlier than the Intel486 processors.
+//This instruction is not supported on Intel processors earlier than the Intel486 processors.
+```
 
 直到486，x86才有了实现
 到2013年，基本上所有多核CPU都实现了硬件CAS
@@ -29,23 +34,35 @@ This instruction is not supported on Intel processors earlier than the Intel486 
 
 虽然CAS由CPU保证，但整个CAS过程（取值、比较）需要消耗大概500个时钟周期（大概相当于500个普通指令），同步的算法优化大都用来减少CAS操作
 
-#偏向锁
-基于大量观察，80%的程序都是低竞争；
-并且对于相同的锁，从每次获得锁的线程顺序看，经常都是相同的线程在重复CAS，于是这个重复的CAS就显得很浪费。
+#程序执行的模式
+- [x] 80%的程序都是低竞争
+- [x] 有那么一小部分是相同线程嵌套锁定
 
+>Thin Locks: An Implementation of Synchronization for Java
 
-#synchronized
-轻量级 
+#轻量级/thin-lock
+线程通过spin检查（减少fat-lock用户和内核态的切换）
+
+``` cpp
+>share/vm/runtime/synchronizer.cpp
 00 has_locker()
+```
 
-
-重量级/stack-locked
+#重量级/fat-lock
+线程通过park/pending操作，让出CPU等待唤醒
+```cpp
+//os/windows/vm/os_windows.cpp
 00 inflating
-|
 10 has_monitor()
-objectMonitor=mark->monitor()
-inflating
+objectMonitor = mark->monitor()
+park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
+```
 
+#重入锁/偏向锁
+线程通过线程ID检查（减少thin-lock的spin）
+当竞争时，需要撤销偏向锁
+
+https://www.cnblogs.com/dennyzhangdd/p/6734638.html
 https://toutiao.io/posts/cv2q7t/preview
 https://www.jianshu.com/p/c5058b6fe8e5
 http://www.cnblogs.com/zhenyimo/p/6738210.html
@@ -65,7 +82,7 @@ https://en.wikipedia.org/wiki/Non-blocking_algorithm
 https://kukuruku.co/post/lock-free-data-structures-basics-atomicity-and-atomic-primitives/
 
 
-thread和runnable的区别
+thread和runable的区别
 
 JUC(java.util.concurrent)
 
