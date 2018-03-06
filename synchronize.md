@@ -1,29 +1,43 @@
-#线程同步/并发原语#
-``` cpp
+#线程同步/并发原语
+```cpp
 //os_cpu/windows_x86/atomic_windows_x86.inline.hpp
 interlocked
 lock add/dec/*
 ```
-通过共享访问内存，使得通信变得非常高效，但是造成了以下问题：
-- thread interference/interleave 
-- 内存一致性错误（对于相同数据，不同线程看到的不一样）
+通过共享访问内存，使得通信变得非常高效，但是会引入以下问题：
+- 原子性，thread interference/interleave 
+- 可见性，内存一致性错误（对于相同数据，不同线程看到的不一样）
+- 有序性，编译/运行时重排影响
+
+>原子操作保证的是数据的完整性，不会出现中间状态
 
 http://www.felixcloutier.com/x86/index.html
 http://gee.cs.oswego.edu/dl/jmm/cookbook.html
+http://preshing.com/20120515/memory-reordering-caught-in-the-act/
 
-##volatile/原子操作
+##volatile
+
 ```java
+//1. 原子性
 volatile long i=0;
 volatile double j = 0;
 ```
 
->Reads and writes are atomic for reference variables and for most primitive variables (all types except long and double).
+```java
+//2. 可见性和顺序性
+//线程A执行的代码
+int i = 0;
+i = 10;
 
-不管CPU平台，java中，long和double是2个32bit组合而成
+//线程B执行的代码
+j = i;
+```
+使用场景
+- 状态值
+
 https://docs.oracle.com/javase/tutorial/essential/concurrency/atomic.html
-
-**很重要的*
 http://blog.vinceliu.com/2010/05/difference-between-atomic-and-volatile.html
+https://www.ibm.com/developerworks/java/library/j-jtp06197/
 
 ##悲观锁
 >修改数据之前就独占
@@ -101,7 +115,7 @@ https://javainterview-mayank.blogspot.com/2011/04/synchronization-volatile-and-a
 https://mechanical-sympathy.blogspot.com/2011/11/java-lock-implementations.html
 https://flex4java.blogspot.com/2015/03/is-multi-threading-really-worth-it.html
 
-#volatile
+#ReentrantLock
 
 #AQS
 https://www.ibm.com/developerworks/library/j-jtp11234/
