@@ -129,7 +129,8 @@ https://javainterview-mayank.blogspot.com/2011/04/synchronization-volatile-and-a
 - 性能测试
 https://mechanical-sympathy.blogspot.com/2011/11/java-lock-implementations.html
 https://flex4java.blogspot.com/2015/03/is-multi-threading-really-worth-it.html
-
+https://baptiste-wicht.com/posts/2010/09/java-synchronization-mutual-exclusion-benchmark.html
+https://mailinator.blogspot.com/2008/03/how-fast-is-java-volatile-or-atomic-or.html
 #ReentrantLock
 https://blog.takipi.com/java-8-longadders-the-fastest-way-to-add-numbers-concurrently/
 
@@ -138,6 +139,9 @@ https://www.ibm.com/developerworks/library/j-jtp11234/
 https://en.wikipedia.org/wiki/Non-blocking_algorithm
 https://kukuruku.co/post/lock-free-data-structures-basics-atomicity-and-atomic-primitives/
 http://winterbe.com/posts/2015/05/22/java8-concurrency-tutorial-atomic-concurrent-map-examples/
+
+
+http://ifeve.com/enhanced-cas-in-jdk8/https://cloud.tencent.com/developer/article/1021132http://blog.leanote.com/tag/linckye/%E5%B9%B6%E5%8F%91
 
 thread和runable的区别
 公平锁
