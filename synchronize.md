@@ -29,6 +29,8 @@ java -XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -version
 https://github.com/AdoptOpenJDK/jitwatch
 https://sourceforge.net/projects/fcml
 https://briangordon.github.io/
+http://gee.cs.oswego.edu/dl/
+http://g.oswego.edu/dl/jmm/cookbook.html
 
 ##volatile
 
