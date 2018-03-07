@@ -15,6 +15,21 @@ http://www.felixcloutier.com/x86/index.html
 http://gee.cs.oswego.edu/dl/jmm/cookbook.html
 http://preshing.com/20120515/memory-reordering-caught-in-the-act/
 
+- 反汇编
+```cpp
+//share/tools/hsdis/hsdis.h
+void* decode_instructions(void* start, void* end,..
+```
+
+>在jre中，加载反汇编dll+jitwatch即可查看运行时的汇编代码。
+
+注意：简单的方法无法不足以触发JIT
+java -XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -version
+
+https://github.com/AdoptOpenJDK/jitwatch
+https://sourceforge.net/projects/fcml
+https://briangordon.github.io/
+
 ##volatile
 
 ```java
@@ -116,12 +131,13 @@ https://mechanical-sympathy.blogspot.com/2011/11/java-lock-implementations.html
 https://flex4java.blogspot.com/2015/03/is-multi-threading-really-worth-it.html
 
 #ReentrantLock
+https://blog.takipi.com/java-8-longadders-the-fastest-way-to-add-numbers-concurrently/
 
 #AQS
 https://www.ibm.com/developerworks/library/j-jtp11234/
 https://en.wikipedia.org/wiki/Non-blocking_algorithm
 https://kukuruku.co/post/lock-free-data-structures-basics-atomicity-and-atomic-primitives/
-
+http://winterbe.com/posts/2015/05/22/java8-concurrency-tutorial-atomic-concurrent-map-examples/
 
 thread和runable的区别
 公平锁
