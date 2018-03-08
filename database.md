@@ -18,3 +18,5 @@ mysql teradata * mongodb oceanbase
 
 http://15721.courses.cs.cmu.edu/spring2017/schedule.html
 http://www.cs.cmu.edu/~pavlo/datasets/index.html
+https://sfu-db.github.io/dbsystems/
+http://www.gpfeng.com/
