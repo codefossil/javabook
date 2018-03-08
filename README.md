@@ -94,18 +94,6 @@ SpringSession默认用cookie保存和传递sessionid
  - 复制
  - 一致性
 
-## 8. 数据库 ##
-事务管理
-事务隔离级别
-数据库连接池
-c3p0/druid
-JDBC
-Mybatis
-union/union all区别
-left join
-索引的分类/区别
-性能优化
-
 ## 9. 数据结构和算法 ##
 AVL
 红黑
