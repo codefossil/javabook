@@ -15,6 +15,11 @@ rdms mpp hadoop nosql newsql
 mysql teradata * mongodb oceanbase
 数据库为响应时间
 数据库为高吞吐量
+范式和非范式
+mvcc
+oom PermGen space
+how to scale a database
+table corruption
 
 http://15721.courses.cs.cmu.edu/spring2017/schedule.html
 http://www.cs.cmu.edu/~pavlo/datasets/index.html
