@@ -4,18 +4,43 @@
 interlocked
 lock add/dec/*
 ```
-通过共享访问内存，使得通信变得非常高效，但是会引入以下问题：
-- 原子性，thread interference/interleave 
-- 可见性，内存一致性错误（对于相同数据，不同线程看到的不一样）
-- 有序性，编译/运行时重排影响
+通过共享访问内存（多线程/内存映射），使得通信变得非常高效，但是会引入以下问题。
 
+##原子性
+thread interference/interleave 
 >原子操作保证的是数据的完整性，不会出现中间状态
+
+##可见性
+```cpp
+//x86
+sfence/lfence/mfence
+```
+内存一致性错误（对于相同数据，不同线程看到的不一样）
+>现代的程序内存工作模型限制
+
+##有序性
+```cpp
+//Processor #1:
+
+ while (f == 0);
+ // Memory fence required here
+ print x;
+
+//Processor #2:
+
+ x = 42;
+ // Memory fence required here
+ f = 1;
+```
+
+- 编译/运行时重排影响，happen-before判定
+- cpu流水线指令执行顺序
 
 http://www.felixcloutier.com/x86/index.html
 http://gee.cs.oswego.edu/dl/jmm/cookbook.html
 http://preshing.com/20120515/memory-reordering-caught-in-the-act/
 
-- 反汇编
+##反汇编
 ```cpp
 //share/tools/hsdis/hsdis.h
 void* decode_instructions(void* start, void* end,..
