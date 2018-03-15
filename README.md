@@ -14,14 +14,6 @@
 写起来舒服，读起来容易，管起来方便
 http://www.cppblog.com/vczh/archive/2013/04/27/199765.html
 
-## 1. 基本语法 ##
-
-static
-final
-transient
-volatile及其底层实现原理
-clone
-异常和出错
 
 ## 2. 集合 ##
 List, Map, Set的底层原理实现
@@ -100,11 +92,7 @@ AVL
 索引的实现
 collection.sort实现
 
-## 10. java虚拟机 ##
-内存分布
-GC算法
-类加载器
-happens-before规则
+
 
 ## 11. web ##
 系统各种连接数限制
