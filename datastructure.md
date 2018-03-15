@@ -10,3 +10,11 @@ http://arturmkrtchyan.com/
 对象拷贝
 
 #hashing
+##hashcode
+
+##0x61c88647
+```java
+//share\classes\java\lang\ThreadLocal.java
+private static final int HASH_INCREMENT = 0x61c88647;
+nextHashCode.getAndAdd(HASH_INCREMENT);
+```
