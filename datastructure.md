@@ -8,3 +8,5 @@ https://gist.github.com/arturmkrtchyan/43d6135e8a15798cc46c
 http://arturmkrtchyan.com/
 
 对象拷贝
+
+#hashing

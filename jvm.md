@@ -32,7 +32,7 @@ Map<WeakReference<Socket>, User> track;
 ref = new WeakReference(target, queue);
 ```
 
-> profiler引用，同弱引用使用方式，无法get，完全用来评测gc性能。
+> profiler引用，同弱引用使用方式，get直接返回null，完全用来评测gc性能。
 
 
 类加载器
