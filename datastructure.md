@@ -11,6 +11,8 @@ http://arturmkrtchyan.com/
 
 #hashing
 ##hashcode
+> 用来缩小查找范围
+
 ###默认实现
 ```cpp
 //hotspot\src\share\vm\runtime\synchronizer.cpp
