@@ -13,6 +13,7 @@ http://arturmkrtchyan.com/
 ##hashcode
 > 用来缩小查找范围
 
+https://www.jitendrazaa.com/blog/java/what-is-the-need-to-override-hashcode-and-equals-method/
 ###默认实现
 ```cpp
 //hotspot\src\share\vm\runtime\synchronizer.cpp
