@@ -5,13 +5,21 @@
 interlocked
 lock add/dec/*
 ```
+根据程序局部性原理，成本和功耗上的考虑，CPU读取和写入的请求，都会经过：
 
-L1~L3
-cache line
-伪共享
+| RAM | cycle | price($) | hitrate|count
+|-----|-------|--------|--------|--------|
+|L1    |4       |   10K     |90%|2 per core
+|L2     | 15      |        |6%|1 per core
+|L3     | 50      |        |3%|1 
+|DRAM     | 80      |        |1%|1 
 
 
-通过共享访问内存（多线程/内存映射），使得通信变得非常高效，但是会引入以下问题。
+>伪共享
+由于其他数据被写，造成所有core中的这条cache line“被无效”。
+
+http://cenalulu.github.io/linux/all-about-cpu-cache/
+程序通过共享访问内存（多线程/内存映射），使得通信变得非常高效，但是会引入以下问题。
 
 ##原子性
 thread interference/interleave 
@@ -23,7 +31,6 @@ thread interference/interleave
 sfence/lfence/mfence
 ```
 内存一致性错误（对于相同数据，不同线程看到的不一样）
->现代的程序内存工作模型限制
 
 ##有序性
 ```cpp
