@@ -9,6 +9,28 @@ http://arturmkrtchyan.com/
 
 对象拷贝
 
+##IEEE 754
+```java
+< System.out.println(Integer.toBinaryString(Float.floatToIntBits(0.1f)));
+> 111101110011001100110011001101
+
+< System.out.println(1e16 + 1.0 - 1e16);
+> 0.0
+```
+>就像十进制无法精确表达π和e一样，二进制也无法精确表达小数；
+
+精确度
+>假如double能够精确表达的离散点记为S，不能表达的记为s'，s'>>s
+
+精度控制
+微分/差分方程稳定性
+
+http://justjavac.com/codepuzzle/2012/11/11/codepuzzle-float-who-stole-your-accuracy.html
+https://people.eecs.berkeley.edu/~wkahan/
+https://docs.oracle.com/cd/E19957-01/806-3568/ncgTOC.html
+https://en.wikipedia.org/wiki/IEEE_754-1985#Comparing_floating-point_numbers
+http://0.30000000000000004.com/
+
 #hashing
 ##hashcode
 > 用来缩小查找范围

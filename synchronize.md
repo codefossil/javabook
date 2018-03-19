@@ -1,9 +1,16 @@
 #线程同步/并发原语
+##cpu缓存
 ```cpp
 //os_cpu/windows_x86/atomic_windows_x86.inline.hpp
 interlocked
 lock add/dec/*
 ```
+
+L1~L3
+cache line
+伪共享
+
+
 通过共享访问内存（多线程/内存映射），使得通信变得非常高效，但是会引入以下问题。
 
 ##原子性
