@@ -39,7 +39,11 @@ mark=hashcode/sync/gc
 
 ## hashcode
 
-> 用来缩小查找范围
+> 不是用来唯一判定对象本身，而是用来缩小查找范围
+
+约定
+- 如果equal()返回true，2个对象hashCode()必须相等
+- 如果equal()返回false，对于hashCode()没有规定
 
 [https://www.jitendrazaa.com/blog/java/what-is-the-need-to-override-hashcode-and-equals-method/](https://www.jitendrazaa.com/blog/java/what-is-the-need-to-override-hashcode-and-equals-method/)
 
