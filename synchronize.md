@@ -18,6 +18,7 @@ lock add/dec/*
 >伪共享
 由于其他数据被写，造成所有core中的这条cache line“被无效”。
 
+https://www.usenix.org/legacy/publications/library/proceedings/als00/2000papers/papers/full_papers/sears/sears_html/
 http://cenalulu.github.io/linux/all-about-cpu-cache/
 程序通过共享访问内存（多线程/内存映射），使得通信变得非常高效，但是会引入以下问题。
 
@@ -181,6 +182,7 @@ https://en.wikipedia.org/wiki/Non-blocking_algorithm
 https://kukuruku.co/post/lock-free-data-structures-basics-atomicity-and-atomic-primitives/
 http://winterbe.com/posts/2015/05/22/java8-concurrency-tutorial-atomic-concurrent-map-examples/
 
+#fps
 
 http://ifeve.com/enhanced-cas-in-jdk8/https://cloud.tencent.com/developer/article/1021132http://blog.leanote.com/tag/linckye/%E5%B9%B6%E5%8F%91
 
