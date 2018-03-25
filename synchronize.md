@@ -9,7 +9,7 @@ lock add/dec/*
 
 | RAM | cycle | price($) | hitrate|count
 |-----|-------|--------|--------|--------|
-|L1    |4       |   10K     |90%|2 per core
+|L1    |4       |        |90%|2 per core
 |L2     | 15      |        |6%|1 per core
 |L3     | 50      |        |3%|1 
 |DRAM     | 80      |        |1%|1 
