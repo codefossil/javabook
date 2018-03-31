@@ -10,7 +10,7 @@ http://arturmkrtchyan.com/
 
 对象拷贝
 
-##计算
+##0.1
 ##数与码
 10根手指数数，最习惯十进制
 0-9就是码，也就是我们采用最少的符号，通过编码，完全表示所有数
@@ -18,7 +18,8 @@ http://arturmkrtchyan.com/
 
 ###负数和补码
 - 原码。为了进行计算，需要引入符号，这就是二进制的原码，这也是最直观的编码方式
-- 补码。为了简化加减器，负数编码成补码
+- 补码。为了简化加法器，负数编码成补码
+- 移码。
 
 ## IEEE 754
 
@@ -32,19 +33,32 @@ http://arturmkrtchyan.com/
 
 > 就像十进制无法精确表达π和e一样，二进制也无法精确表达小数；
 
+###精确度
 
-内存结构
+**内存布局**
 
-|存储类型  | 符号 | 指数 | 尾数 | 
-|----     |-----|-------|--------|
-|单精度    |1       |8   |23     |
-|双精度    |1       |11   |52  |
+存储类型 | 符号 | 指数（缩放） | 尾数（精度）|
+- | - | --- | ------|
+单精度 | 1bit（`0`） | 8bits(`01111011`) | 23bits(`10011001100110011001101`), 2*2^23=1.6777216e7(保证有7位有效数字)
+双精度 | 1bit | 11bits | 52bits, 2*2^52=9.007199254740992e15(保证15位有效数字)
 
-精确度
+> 同样是32位的整型，最大值是2^31-1=2.147483647e9，而float最大是3.4028235e38，可以想象有99%的小数是无法准确表示
 
-> 假如double能够精确表达的离散点记为S，不能表达的记为s'，s'&gt;&gt;s
+```java
+Float f = 0.1f;
+int base = 2;
+System.out.println("float: " + f);
+System.out.println("binary: " + Integer.toBinaryString(Float.floatToIntBits(f)));
+System.out.println("exp: " + (Integer.parseInt("01111011", 2) - 127));
+System.out.println("m: " + "10011001100110011001101");
+double d = 0 * Math.pow(base, 0) + 0 * Math.pow(base, -1) + 0 * Math.pow(base, -2) + 0 * Math.pow(base, -3) +
+        1 * Math.pow(base, -4) + 1 * Math.pow(base, -5);
+System.out.println("1.100110011*2^(-4)=0.00011b=" + d);
+```
 
-精度控制  
+http://tool.oschina.net/hexconvert
+
+###精度控制  
 微分/差分方程稳定性
 
 http://justjavac.com/codepuzzle/2012/11/11/codepuzzle-float-who-stole-your-accuracy.html  
