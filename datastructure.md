@@ -19,7 +19,7 @@ http://arturmkrtchyan.com/
 ###负数和补码
 - 原码。为了进行计算，需要引入符号，这就是二进制的原码，这也是最直观的编码方式
 - 补码。为了简化加法器，负数编码成补码
-- 移码。
+- 移码。是符号位取反的一种补码。
 
 ## IEEE 754
 
@@ -32,7 +32,9 @@ http://arturmkrtchyan.com/
 ```
 
 > 就像十进制无法精确表达π和e一样，二进制也无法精确表达小数；
+70’s的时候，程序员需要处理不同的浮点数模型。
 
+https://people.eecs.berkeley.edu/~wkahan/ieee754status/754story.html
 ###精确度
 
 **内存布局**
@@ -42,7 +44,7 @@ http://arturmkrtchyan.com/
 单精度 | 1bit（`0`） | 8bits(`01111011`) | 23bits(`10011001100110011001101`), 2*2^23=1.6777216e7(保证有7位有效数字)
 双精度 | 1bit | 11bits | 52bits, 2*2^52=9.007199254740992e15(保证15位有效数字)
 
-> 同样是32位的整型，最大值是2^31-1=2.147483647e9，而float最大是3.4028235e38，可以想象有99%的小数是无法准确表示
+> 同样是32位的整型，最大值是2^31-1=2.147483647e9，而float最大是3.4028235e38，可以想象有99%的小数是无法准确表示。
 
 ```java
 Float f = 0.1f;
@@ -57,7 +59,7 @@ System.out.println("1.100110011*2^(-4)=0.00011b=" + d);
 ```
 
 http://tool.oschina.net/hexconvert
-
+http://www.binaryconvert.com/
 ###精度控制  
 微分/差分方程稳定性
 
@@ -103,6 +105,7 @@ http://g.oswego.edu/
 check(    new Long(x).hashCode() == (int)((long)x ^ (long)x>>>32));
 check(Integer.valueOf(x).hashCode() == x);
 //...
+return floatToIntBits(value);
 ```
 
 ## 0x61c88647
