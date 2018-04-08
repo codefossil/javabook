@@ -9,15 +9,32 @@ lock add/dec/*
 
 | RAM | cycle | price($) | hitrate|count
 |-----|-------|--------|--------|--------|
-|L1    |4       |        |90%|2 per core
-|L2     | 15      |        |6%|1 per core
+|L1    |3       |        |90%|2 per core
+|L2     | 14      |        |6%|1 per core
 |L3     | 50      |        |3%|1 
-|DRAM     | 80      |        |1%|1 
+|DRAM     | 250      |        |1%|1 
 
+>延迟的度量
+https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html
 
->伪共享
+1982，指令缓存
+1985，数据缓存
+1995，乱序和预读
+2006，酷睿双核
+
+##cache line和伪共享
 由于其他数据被写，造成所有core中的这条cache line“被无效”。
+因此需要协议来保证缓存的一致性，最著名的是MESI协议，每个缓存行都会有一个如下状态机：
 
+| 状态 | 描述
+|-----|-------
+|**M**(Modified)|这行数据有效，数据被修改了，和内存中的数据不一致，数据只存在于本Cache中。       
+|**E**(Exclusive)|这行数据有效，数据和内存中的数据一致，数据只存在于本Cache中。
+|**S**(Shared)|这行数据有效，数据和内存中的数据一致，数据存在于很多Cache中。
+|**I**(Invalid)|这行数据无效。
+
+<br>
+http://www.cnblogs.com/xkfz007/archive/2012/10/08/2715163.html
 https://www.usenix.org/legacy/publications/library/proceedings/als00/2000papers/papers/full_papers/sears/sears_html/
 http://cenalulu.github.io/linux/all-about-cpu-cache/
 程序通过共享访问内存（多线程/内存映射），使得通信变得非常高效，但是会引入以下问题。
@@ -49,7 +66,7 @@ sfence/lfence/mfence
 ```
 
 - 编译/运行时重排影响，happen-before判定
-- cpu流水线指令执行顺序
+- cpu流水线指令执行顺序(i486,1989)
 
 http://www.felixcloutier.com/x86/index.html
 http://gee.cs.oswego.edu/dl/jmm/cookbook.html
