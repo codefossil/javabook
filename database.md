@@ -22,13 +22,13 @@ how to scale a database
 table corruption
 
 https://dev.mysql.com/doc/internals/en/date-and-time-data-type-representation.html
-
-[http://15721.courses.cs.cmu.edu/spring2017/schedule.html](http://15721.courses.cs.cmu.edu/spring2017/schedule.html)  
-[http://www.cs.cmu.edu/~pavlo/datasets/index.html](http://www.cs.cmu.edu/~pavlo/datasets/index.html)  
-[https://sfu-db.github.io/dbsystems/](https://sfu-db.github.io/dbsystems/)  
-[http://www.gpfeng.com/](http://www.gpfeng.com/)  
-[http://troels.arvin.dk/db/rdbms/](http://troels.arvin.dk/db/rdbms/)  
-[https://en.wikipedia.org/wiki/Comparison\_of\_relational\_database\_management\_systems](https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems)
+http://15721.courses.cs.cmu.edu/spring2017/schedule.html
+http://www.cs.cmu.edu/~pavlo/datasets/index.html
+https://sfu-db.github.io/dbsystems/
+http://www.gpfeng.com/
+http://troels.arvin.dk/db/rdbms/
+https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems
 http://www.notedeep.com/note/38
+http://www.redbook.io/
 
 
