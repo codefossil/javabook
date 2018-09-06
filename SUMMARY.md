@@ -11,6 +11,7 @@
 * [jvm](jvm.md)
 * [web](README.md)
 * [项目管理](README.md)
+* [引用](reference.md)
 
 5，技术实现细节，独挡一面  
 10， 行业认识，技术认识，TOP，系统架构  
