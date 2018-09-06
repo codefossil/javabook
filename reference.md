@@ -9,6 +9,7 @@
 * [dubbo](http://dubbo.apache.org/zh-cn/docs/user/quick-start.html)
 * [maven](http://maven.apache.org/)
 * [git](https://git-scm.com/docs)
+* [amqp](https://www.rabbitmq.com/protocol.html)
 
 # 源码
 * [redis](https://github.com/antirez/redis)
