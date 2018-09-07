@@ -23,3 +23,9 @@
 # 其他
 * [taobao openapi](http://open.taobao.com/api.htm?cid=1&docId=4&docType=2#)
 * [微软系统组](https://www.microsoft.com/en-us/research/research-area/systems-and-networking/)
+* [tiobe](https://www.tiobe.com/tiobe-index/)
+* [db-rank](https://db-engines.com/en/ranking)
+* [top-conference](http://www.guide2research.com/)
+* [cs-ranking](https://webdocs.cs.ualberta.ca/~zaiane/htmldocs/ConfRanking.html)
+* [top-cs](http://csrankings.org)
+* [ccf-recommendation](http://www.ccf.org.cn/xspj/gyml/)
