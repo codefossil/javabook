@@ -29,3 +29,4 @@
 * [cs-ranking](https://webdocs.cs.ualberta.ca/~zaiane/htmldocs/ConfRanking.html)
 * [top-cs](http://csrankings.org)
 * [ccf-recommendation](http://www.ccf.org.cn/xspj/gyml/)
+* [radar-thoughtworks](https://www.thoughtworks.com/radar/techniques)
