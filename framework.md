@@ -28,8 +28,15 @@ HTTP的携带状态问题
 SpringSession默认用cookie保存和传递sessionid
 
 * 共享
+
 * 复制
+
 * 一致性
+
+servlet与容器
+
+dubbo
+
 
 https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html\#spring-introduction
 

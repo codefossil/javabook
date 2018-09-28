@@ -231,3 +231,11 @@ reentrantlock
 http://www.oracle.com/technetwork/java/tuning-139912.html
 http://www.oracle.com/technetwork/java/5-136747.html
 http://www.oracle.com/technetwork/java/6-performance-137236.html
+
+List, Map, Set的底层原理实现  
+CopyOnWrite容器  
+ConcurrentHashMap
+
+- 锁分段技术
+- 读是否要加锁
+- 迭代器的一致性
