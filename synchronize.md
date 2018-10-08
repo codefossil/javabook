@@ -6,13 +6,12 @@ interlocked
 lock add/dec/*
 ```
 根据程序局部性原理，成本和功耗上的考虑，CPU读取和写入的请求，都会经过：
-
-| RAM | cycle | price($) | hitrate|count
-|-----|-------|--------|--------|--------|
-|L1    |3       |        |90%|2 per core
-|L2     | 14      |        |6%|1 per core
-|L3     | 50      |        |3%|1 
-|DRAM     | 250      |        |1%|1 
+| RAM | cycle | price($) | hitrate|count|
+| ---- | ---- | ---- | ---- | ---- |
+|L1    |3       |        |90%|2 per core|
+|L2     | 14      |        |6%|1 per core|
+|L3     | 50      |        |3%|1 |
+|DRAM     | 250      |        |1%|1 |
 
 >延迟的度量
 https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html
@@ -232,3 +231,11 @@ reentrantlock
 http://www.oracle.com/technetwork/java/tuning-139912.html
 http://www.oracle.com/technetwork/java/5-136747.html
 http://www.oracle.com/technetwork/java/6-performance-137236.html
+
+List, Map, Set的底层原理实现  
+CopyOnWrite容器  
+ConcurrentHashMap
+
+- 锁分段技术
+- 读是否要加锁
+- 迭代器的一致性
