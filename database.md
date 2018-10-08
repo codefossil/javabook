@@ -12,26 +12,30 @@
 #事务管理 
 WAL协议
 2PL
-事务隔离级别  
-数据库连接池  
-c3p0/druid  
-JDBC  
-Mybatis  
-union/union all区别  
-left join  
-索引的分类/区别  
-性能优化  
-dbms测试框架  
-外排算法  
-并发控制  
-rdms mpp hadoop nosql newsql  
-mysql teradata \* mongodb oceanbase  
-数据库为响应时间  
-数据库为高吞吐量  
-范式和非范式  
-mvcc  
-oom PermGen space  
-how to scale a database  
+内联/外联/笛卡尔乘积
+索引
+动态规划
+贪心算法
+事务隔离级别
+数据库连接池
+c3p0/druid
+JDBC
+Mybatis
+union/union all区别
+left join
+索引的分类/区别
+性能优化
+dbms测试框架
+外排算法
+并发控制
+rdms mpp hadoop nosql newsql
+mysql teradata \* mongodb oceanbase
+数据库为响应时间
+数据库为高吞吐量
+范式和非范式
+mvcc
+oom PermGen space
+how to scale a database
 table corruption
 
 https://dev.mysql.com/doc/internals/en/date-and-time-data-type-representation.html
@@ -43,5 +47,5 @@ http://troels.arvin.dk/db/rdbms/
 https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems
 http://www.notedeep.com/note/38
 http://www.redbook.io/
-
+http://coding-geek.com/how-databases-work
 
