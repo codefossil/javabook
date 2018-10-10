@@ -9,9 +9,10 @@
 设计模式UML图  
 类似AOP，是设计模式能够解决的吗
 
-
-
 数据建模中的设计考虑
-
 Generalization and Specialization
 
+流量切换 sla
+服务依赖/状态/降级
+发布和灰度
+扩容和缩容

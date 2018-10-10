@@ -37,6 +37,7 @@ mvcc
 oom PermGen space
 how to scale a database
 table corruption
+数据库监控/切换
 
 https://dev.mysql.com/doc/internals/en/date-and-time-data-type-representation.html
 http://15721.courses.cs.cmu.edu/spring2017/schedule.html
