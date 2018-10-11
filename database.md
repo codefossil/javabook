@@ -40,7 +40,22 @@ how to scale a database
 table corruption
 数据库监控/切换
 
-#分库分表中间件
+#对象存储
+s3实现原理
+
+#批处理
+Hadoop, Spark实现原理
+
+#海量存储
+HBase
+DynamoDB
+Cassandra
+
+#经典存储(手动扩容)
+mysql
+mongo
+
+##分库分表中间件
 单库强一致性，多库2PC
 Cobar属于阿里B2B事业群，始于2008年，在阿里服役3年多，接管3000+个MySQL数据库的schema,集群日处理在线SQL请求50亿次以上(由此可以计算：Cobar的TPS=5,000,000,000/(3000*24*60*60)=20)
 
@@ -57,7 +72,16 @@ Cobar属于阿里B2B事业群，始于2008年，在阿里服役3年多，接管3
 比如一个简单的AVG操作，对于一些比较初级的分布式数据库模型而言，常见做法是把AVG直接下发到所有存储节点，这样造成的结果就是语法兼容，语义不兼容，最终拿到的是错误结果。而DRDS的智能下推引擎，对SQL的语法做充分的语义兼容性适配，针对AVG操作，只能由引擎将逻辑AVG SQL解析优化为SUM和COUNT的SQL然后进行下推，由底层的数据库实例节点完成SUM和COUNT计算，充分利用底层节点的计算能力，在引擎层将各个存储节点的SUM和COUNT结果聚合计算，最终计算出AVG。
 
 
-本文来自 朱小厮 的CSDN 博客 ，全文地址请点击：https://blog.csdn.net/u013256816/article/details/52769297?utm_source=copy 
+
+#单机存储
+Oracle Berkeley DB
+LevelDB
+
+HIVE
+数据建模中的设计考虑
+Generalization and Specialization
+
+
 
 https://dev.mysql.com/doc/internals/en/date-and-time-data-type-representation.html
 http://15721.courses.cs.cmu.edu/spring2017/schedule.html

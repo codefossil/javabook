@@ -36,6 +36,7 @@ SpringSession默认用cookie保存和传递sessionid
 servlet与容器
 
 dubbo
+akka
 
 
 https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html\#spring-introduction
