@@ -22,6 +22,7 @@
 * [guava](https://github.com/google/guava)
 
 # 其他
+* [Turing award](https://amturing.acm.org/)
 * [taobao openapi](http://open.taobao.com/api.htm?cid=1&docId=4&docType=2#)
 * [淘宝数据库内核](http://mysql.taobao.org/monthly/)
 * [微软系统组](https://www.microsoft.com/en-us/research/research-area/systems-and-networking/)
