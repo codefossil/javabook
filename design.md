@@ -8,6 +8,7 @@
 
 **整个过程就是一个动态规划问题**
 
+https://www.w3.org/DesignIssues/
 控制复杂度
 单一职责原则  
 开放封闭原则  
@@ -33,6 +34,7 @@ DDD/TDD/BDD/microservice/SOA/CQRS/DCI/Lambda Architecture/Functional Programming
 
 发号器、设计 feed 系统、设计缓存系统、设计推荐系统、登录系统、抢票系统
 Xpress， 解LP MIP
+
 
 # spring
 
