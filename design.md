@@ -35,6 +35,9 @@ DDD/TDD/BDD/microservice/SOA/CQRS/DCI/Lambda Architecture/Functional Programming
 发号器、设计 feed 系统、设计缓存系统、设计推荐系统、登录系统、抢票系统
 Xpress， 解LP MIP
 
+Kafka/Kinesis，分布式队列，分布式数据收集
+SQS，对性能无太大要求时，做简单队列, availability超好
+
 
 # spring
 
