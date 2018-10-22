@@ -70,18 +70,18 @@ N=100M行数据量
 
 Cobar属于阿里B2B事业群，始于2008年，在阿里服役3年多，接管3000+个MySQL数据库的schema,集群日处理在线SQL请求50亿次以上(由此可以计算：Cobar的TPS=5,000,000,000/(3000*24*60*60)=20)
 
-|能力|Cobar|MyCAT|DRDS|
+|特性|Cobar|MyCAT|DRDS|
 | ---- | ---- | ---- | ---- |
-|前端MySQL协议|:ballot_box_with_check:|:ballot_box_with_check:|:ballot_box_with_check:|
-|SQL||SQL92|
+|前端MySQL协议|✅|✅|✅|
+|SQL||SQL92||
 |事务|2PC|弱XA|强XA+2PC+柔性事务|
-|读写分离||:ballot_box_with_check:|
-|分库路由||:ballot_box_with_check:|hash|
-|分表路由||:ballot_box_with_check:|hash+时间|
-|后端协议|MySQL|MySQL+JDBC|
-|IO|NIO+BIO|AIO|
-|join||2表|
-|聚合||:ballot_box_with_check:|智能下推|
+|读写分离||✅||
+|分库路由||✅|hash|
+|分表路由||✅|hash+时间|
+|后端协议|MySQL|MySQL+JDBC||
+|IO|NIO+BIO|AIO||
+|join||2表||
+|聚合||✅|智能下推|
 
 比如一个简单的AVG操作，对于一些比较初级的分布式数据库模型而言，常见做法是把AVG直接下发到所有存储节点，这样造成的结果就是语法兼容，语义不兼容，最终拿到的是错误结果。而DRDS的智能下推引擎，对SQL的语法做充分的语义兼容性适配，针对AVG操作，只能由引擎将逻辑AVG SQL解析优化为SUM和COUNT的SQL然后进行下推，由底层的数据库实例节点完成SUM和COUNT计算，充分利用底层节点的计算能力，在引擎层将各个存储节点的SUM和COUNT结果聚合计算，最终计算出AVG。
 
@@ -99,6 +99,7 @@ https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_syste
 http://www.notedeep.com/note/38
 http://www.redbook.io/
 http://coding-geek.com/how-databases-work
+https://dbmsmusings.blogspot.com/2010/03/distinguishing-two-major-types-of_29.html
 
 Xpress， 解LP MIP
 Hadoop MapReduce，Spark 做海量数据批处
