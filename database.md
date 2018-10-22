@@ -35,6 +35,9 @@ Mybatis
 #查询管理
 动态规划
 贪心算法
+iterator/volcano
+materialization
+vectorized
 
 #批处理
 Hadoop, Spark实现原理
@@ -46,10 +49,18 @@ Hadoop, Spark实现原理
 s3实现原理
 
 ##列式存储
-HBase
-DynamoDB
-Cassandra
+Vertica
+Greenplum
+Redshift 做海量数据queriable存储
+
+##列族存储
+HBase 做scan more， get less 存储
+
+DynamoDB/Cassandra 做get more，scan less存储
 HIVE
+
+##全内存
+memcache/redis 内存数据库，做高速响应queriable存储（其实是cache）
 
 ##经典行式存储
 get少，scan少，低延迟
@@ -85,10 +96,6 @@ Cobar属于阿里B2B事业群，始于2008年，在阿里服役3年多，接管3
 
 比如一个简单的AVG操作，对于一些比较初级的分布式数据库模型而言，常见做法是把AVG直接下发到所有存储节点，这样造成的结果就是语法兼容，语义不兼容，最终拿到的是错误结果。而DRDS的智能下推引擎，对SQL的语法做充分的语义兼容性适配，针对AVG操作，只能由引擎将逻辑AVG SQL解析优化为SUM和COUNT的SQL然后进行下推，由底层的数据库实例节点完成SUM和COUNT计算，充分利用底层节点的计算能力，在引擎层将各个存储节点的SUM和COUNT结果聚合计算，最终计算出AVG。
 
-#单机存储
-Oracle Berkeley DB
-LevelDB
-
 https://dev.mysql.com/doc/internals/en/date-and-time-data-type-representation.html
 http://15721.courses.cs.cmu.edu/spring2017/schedule.html
 http://www.cs.cmu.edu/~pavlo/datasets/index.html
@@ -103,13 +110,7 @@ https://dbmsmusings.blogspot.com/2010/03/distinguishing-two-major-types-of_29.ht
 
 Xpress， 解LP MIP
 Hadoop MapReduce，Spark 做海量数据批处
-Storm/trident，做实时分布式消息处理
-HBase，做scan more， get less 存储
-Dynamo/Cassandra， 做get more，scan less存储
-Redshift，做海量数据queriable存储
-memcache/redis 内存数据库，做高速响应queriable存储（其实是cache）
+Storm/trident，做实时分布式消息处理 
 Flume, 海量数据收集with high availability
 Hive/SparkSQL，做大数据在线分析 
-
-
 专业数据库 ap 时间序列 文档 图表 数据处理工具 hadoop spark flink
