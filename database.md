@@ -1,9 +1,8 @@
-#事务管理 
-WAL协议
-2PC
-事务隔离级别
-
 #并发控制
+**事务是为了简化，解决数据库容错。为了HA/HP，事务可以丢弃**
+2PC
+WAL
+事务隔离级别
 mvcc
 timestamp order
 timestamp+dynamic locking
