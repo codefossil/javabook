@@ -29,8 +29,31 @@ JDBC
 Mybatis
 
 #索引
-外排算法
-索引的分类/区别
+
+##B-tree和LSM-tree
+|OP|B-tree|LSM|
+| ---- | ---- | ---- | ---- |
+|写|1.REDO 2.getPage+**树分裂(可能)** 3. 1~3个页到disk|1.REDO+memtable 2.当达到阈值，后台线程合并segment|
+|读|getPage+内存中查找row|memtable+**迭代查询其他SSTable索引**|
+|更新|读操作+更新+disk|写操作+更新标记|
+|删除||写操作+删除标记|
+
+* LSM
+![](https://images0.cnblogs.com/blog/312753/201304/16145934-37d2fd126af44802b8d372329b59ccb4.png)
+segment的大小和合并策略
+查询失效时，加速迭代查询
+高并发锁
+
+* B-tree
+叶节点到底是存值（**聚集索引**），还是文件偏移
+写入是随机的
+
+##多列索引和R-tree
+复杂的条件查询通常会包含多列，普通的索引查询只能用到前缀匹配
+
+##布隆过滤
+
+[SSTable](http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb/)
 
 #查询管理
 动态规划
@@ -60,7 +83,10 @@ DynamoDB/Cassandra 做get more，scan less存储
 HIVE
 
 ##全内存
-memcache/redis 内存数据库，做高速响应queriable存储（其实是cache）
+memcache 仅仅作为cache
+redis
+内存数据库，做高速响应queriable存储（其实是cache）
+nvm
 
 ##经典行式存储
 get少，scan少，低延迟
