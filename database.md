@@ -28,9 +28,13 @@ JDBC
 Mybatis
 
 #索引
+##B树的深度问题
+* 假设sizeof(key)=sizeof(next_node)=4 byte，**节点最大占用m*(4+4)=8*m byte**
+* 假设sizeof(page)=4KB，m=4*1024/(4+4)=512，即**B树就是个512叉树**
+* 假如有10M行数据，**B树最大深度有log(512/2, 10M)=2.9006~=3**，avl的深度log(2, 10M)=23.25
 
-##B-tree和LSM-tree
-|OP|B-tree|LSM|
+##B树和LSM
+|OP|B|LSM|
 | ---- | ---- | ---- | ---- |
 |写|1.REDO 2.getPage+**树分裂(可能)** 3. 1~3个页到disk|1.REDO+memtable 2.当达到阈值，后台线程合并segment|
 |读|getPage+内存中查找row|memtable+**迭代查询其他SSTable索引**|
@@ -43,9 +47,10 @@ segment的大小和合并策略
 查询失效时，加速迭代查询
 高并发锁
 
-* B-tree
+* B树
 叶节点到底是存值（**聚集索引**），还是文件偏移
 写入是随机的
+
 
 ##多列索引和R-tree
 复杂的条件查询通常会包含多列，普通的索引查询只能用到前缀匹配
