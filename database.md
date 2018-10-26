@@ -1,12 +1,48 @@
 #并发控制
 **事务是为了简化，解决数据库容错。为了HA/HP，事务可以丢弃**
-2PC
-WAL
-事务隔离级别
+
+##串行
+###单线程实现
+最简单的串行方式，比如Redis，
+* 事务要数据量小，快速更新
+* 或者内存可以装满数据，取消cache，允许直接读少量内存数据
+
+但是性能被单个CPU核心限制
+
+###内存锁实现
+####2PL=悲观锁实现=lock + 协议
+
+**经典汇款**
+A=100, B=100
+T1：A给B 50
+T2：查看A和B总和
+
+|T1|T2|T2结果|
+| -- | -- | -- |
+|R(A)|||
+|A=A-50||
+|W(A)|R(A)|50|
+||R(B)|100|
+|R(B)|返回A+B|150|
+|B=B+50|commit|
+|W(B)||
+|commit||
+
+|变体|协议|结果|
+| -- | -- | -- |
+|2PL|锁可以在事务中间释放|脏读|
+|S2PL|X-lock在事务结束释放|死锁|
+|SS2PL|S-lock/X-lock都必须在事务结束释放||
+|C2PL|1阶段就获取所有锁|彻底悲观，无死锁，有幻读|
+|2PL+predicate（索引锁）|条件查询/更新/删除时，需要检查predicate锁|串行|
+
+####SSI
 mvcc
+
 timestamp order
 timestamp+dynamic locking
 2PL
+2PC
 deterministic concurrency control
 active-active
 
