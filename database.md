@@ -112,6 +112,8 @@ T2：查看A和B总和
 
 ##确定性
 deterministic concurrency control
+view serialization的条件是什么
+死锁、SGT闭环
 
 #数据建模和SQL
 内联/外联/笛卡尔乘积
