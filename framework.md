@@ -37,6 +37,7 @@ servlet与容器
 
 dubbo
 akka
+MapReduce
 
 
 https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html\#spring-introduction

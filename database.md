@@ -164,8 +164,6 @@ segment的大小和合并策略
 [SSTable](http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb/)
 
 #查询管理
-动态规划
-贪心算法
 iterator/volcano
 materialization
 vectorized
