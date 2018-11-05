@@ -104,11 +104,17 @@ T2：查看A和B总和
 |--|--|--|--|
 |A0|123|0|
 
-####设计考虑
+###设计考虑
 现代DBMS实现是以上方法的混合体
 ||协议|多版本存储方式|GC|索引|
 |--|--|--|--|--|
 |InnoDB|MV+2PL|Delta|VACUUM||
+
+#日志与恢复
+**WAL**
+|LSN|pre-LSN|txn id|type|obj|before|after|
+|--|--|--|--|--|
+|002|001|T1|update|A|1|2|
 
 ##确定性
 deterministic concurrency control
