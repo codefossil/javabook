@@ -78,7 +78,7 @@ T2：查看A和B总和
 |SS2PL+predicate（索引锁）|条件查询/更新/删除时，需要检查predicate锁||||||串行|
 
 ###SI/SSI=乐观=MVCC+TO/2PL
-**SSI适合读写较短的事务，事务终止数量严重影响性能**
+**SSI适合读写较短/竞争低的事务，事务终止数量严重影响性能，长事务可能会饿死**
 ||事务开始|可见性规则|不可见|事务提交|
 |--|--|--|--|--|
 |SI|所有已经提交的数据+所有没有提交的删除||正在处理的写事务+已经终止的事务+之后开始的事务|可能更新丢失|
@@ -130,6 +130,7 @@ Generalization and Specialization
 数据库为响应时间
 数据库为高吞吐量
 范式和非范式
+Blob存储
 how to scale a database
 table corruption
 数据库监控/切换
@@ -246,7 +247,7 @@ http://www.notedeep.com/note/38
 http://www.redbook.io/
 http://coding-geek.com/how-databases-work
 https://dbmsmusings.blogspot.com/2010/03/distinguishing-two-major-types-of_29.html
-
+https://fgiesen.wordpress.com/category/papers/
 Xpress， 解LP MIP
 Hadoop MapReduce，Spark 做海量数据批处
 Storm/trident，做实时分布式消息处理 

@@ -29,7 +29,7 @@ https://www.w3.org/DesignIssues/
 流量切换 sla
 服务依赖/状态/降级
 发布和灰度
-扩容和缩容
+容量规划，扩容和缩容
 Flume vs kafka(HA)
 zookeeper
 
@@ -40,3 +40,6 @@ Xpress， 解LP MIP
 
 Kafka/Kinesis，分布式队列，分布式数据收集
 SQS，对性能无太大要求时，做简单队列, availability超好
+
+无状态服务器
+分布式队列
