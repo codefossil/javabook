@@ -23,6 +23,8 @@ https://www.w3.org/DesignIssues/
 常用的设计模式
 类似AOP，是设计模式能够解决的吗
 
+#Immutable
+
 规模估算
 大规模用户
 大数据量
@@ -31,7 +33,6 @@ https://www.w3.org/DesignIssues/
 发布和灰度
 容量规划，扩容和缩容
 Flume vs kafka(HA)
-zookeeper
 
 DDD/TDD/BDD/microservice/SOA/CQRS/DCI/Lambda Architecture/Functional Programming
 
