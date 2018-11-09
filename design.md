@@ -20,6 +20,8 @@ https://www.w3.org/DesignIssues/
 接口隔离原则  
 依赖倒置原则
 
+CQRS and event sourcing
+
 常用的设计模式
 类似AOP，是设计模式能够解决的吗
 
