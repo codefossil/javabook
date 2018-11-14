@@ -27,6 +27,7 @@ CQRS and event sourcing
 
 #Immutable
 
+瀑布->Agile->DevOps演变
 规模估算
 大规模用户
 大数据量
