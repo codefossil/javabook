@@ -37,3 +37,6 @@
 * [system-desgin](https://github.com/donnemartin/system-design-primer)
 * [pg](http://momjian.us/)
 * [hightscalability](http://highscalability.com/all-time-favorites/)
+* [kaggle](http://www.kaggle.com)
+* [leetcode](https://leetcode.com/explore/)
+* [moc](https://ocw.mit.edu/courses/find-by-topic/)
