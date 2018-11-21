@@ -140,6 +140,13 @@ wait-free/lock-free
 - [x] 有那么一小部分是相同线程嵌套锁定
 
 >Thin Locks: An Implementation of Synchronization for Java
+#并行的限制
+* Amdahl定律
+* Gustafson定律
+
+http://blog.sina.com.cn/s/articlelist_1685243084_7_1.html
+https://groups.csail.mit.edu/cag/ps3/schedule.shtml
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-multicore-programming-primer-january-iap-2007/syllabus/
 
 #轻量级/thin-lock
 >线程通过spin检查（减少fat-lock用户和内核态的切换）
