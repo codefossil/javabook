@@ -1,7 +1,7 @@
 # 内存分布
 # object header
 
-oopDesc -> object header\(mark + klass\)  
+oopDesc -> object header\(mark + klass\)    
 mark=hashcode/sync/gc
 
 http://openjdk.java.net/groups/hotspot/docs/HotSpotGlossary.html
@@ -26,7 +26,7 @@ func(){
 
 但是大家对gc回收对象有不同程度的需求，因此jdk1.2后增加以下**3种更弱**的引用类型，更加精确地与gc交互。
 
-##软引用
+## 软引用
 ```java
 //share\classes\sun\nio\cs\AbstractCharsetProvider.java
 Map<String,SoftReference<Charset>> cache;
@@ -40,7 +40,7 @@ if (sr != null) {
 ```
 当堆中基本全是强引用，gc无法腾出更多的空间而抛出OOM之前，最后一招软引用可达的对象会被gc。**因此软引用适合非重要业务，对象过度占用内存**。比如各种cache使用。
 
-##弱引用
+## 弱引用
 ```java
 // 原理
 WeakReference<Object> ref = new WeakReference<>(obj, queue);
@@ -52,7 +52,7 @@ WeakHashMap<TCPEndPoint, User> clientList = new WeakHashMap<>(); // 当EndPoint�
 ```
 每个对象可以有多个引用类型的组合，当多个**对象有依赖关系时**（比如socket被回收，与之对应的客户端信息需要关联删除），可以非常优雅地实现自动依赖回收
 
-##虚引用
+## 虚引用
 ```java
 //share\classes\sun\java2d\Disposer.java
 ref = new PhantomReference(target, queue);
@@ -60,7 +60,7 @@ ref.get(); // 永远返回null
 ```
 使用场景多是profiler/同弱引用
 
-##引用队列与通知
+## 引用队列与通知
 ```java
 //share\classes\java\lang\ref\Reference.java
 private static Reference pending = null;
@@ -68,12 +68,12 @@ private static class ReferenceHandler extends Thread {
 ```
 后面2种引用类型基本无法直接使用，使用场景也基本是gc后通知。为了可用，jvm维持一个线程负责一个pending单向列表保存回收对象的引用。
 
-#数与码
+# 数与码
 10根手指数数，最习惯十进制
 0-9就是码，也就是我们采用最少的符号，通过编码，完全表示所有数
 进位是为了递归表示无限多的更大的数
 
-##负数和补码
+## 负数和补码
 - 原码。为了进行计算，需要引入符号，这就是二进制的原码，这也是最直观的编码方式
 - 补码。为了简化加法器，负数编码成补码
 - 移码。是符号位取反的一种补码。
@@ -92,7 +92,7 @@ private static class ReferenceHandler extends Thread {
 70’s的时候，程序员需要处理不同的浮点数模型。
 
 https://people.eecs.berkeley.edu/~wkahan/ieee754status/754story.html
-##数字精确表示
+## 数字精确表示
 
 **内存布局**
 
@@ -117,7 +117,7 @@ System.out.println("1.100110011*2^(-4)=0.00011b=" + d);
 
 http://tool.oschina.net/hexconvert
 http://www.binaryconvert.com/
-###精度控制  
+### 精度控制  
 微分/差分方程稳定性
 
 http://justjavac.com/codepuzzle/2012/11/11/codepuzzle-float-who-stole-your-accuracy.html  
@@ -172,13 +172,13 @@ private static final int HASH_INCREMENT = 0x61c88647;
 nextHashCode.getAndAdd(HASH_INCREMENT);
 ```
 
-#GC算法
+# GC算法
 
 
 
-#类加载器
+# 类加载器
 transient
 
-#异常和出错
+# 异常和出错
 
 

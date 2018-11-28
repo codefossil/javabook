@@ -1,5 +1,5 @@
-#线程同步/并发原语
-##cpu缓存
+# 线程同步/并发原语
+## cpu缓存
 ```cpp
 //os_cpu/windows_x86/atomic_windows_x86.inline.hpp
 interlocked
@@ -13,10 +13,10 @@ lock add/dec/*
 |L3     | 50      |        |3%|1 |
 |DRAM     | 250      |        |1%|1 |
 
-1982，指令缓存
-1985，数据缓存
-1995，乱序和预读
-2006，酷睿双核
+1982，指令缓存  
+1985，数据缓存  
+1995，乱序和预读  
+2006，酷睿双核  
 
 由于引入了cache，就会涉及以下问题
 cache line
@@ -29,11 +29,11 @@ http://cenalulu.github.io/linux/all-about-cpu-cache/
 
 程序通过共享访问内存（多线程/内存映射），使得通信变得非常高效，但是会引入以下问题。
 
-##原子性
+## 原子性
 thread interference/interleave 
->原子操作保证的是数据的完整性，不会出现中间状态
+> 原子操作保证的是数据的完整性，不会出现中间状态
 
-##可见性
+## 可见性
 ```cpp
 //x86
 sfence/lfence/mfence
@@ -47,7 +47,8 @@ https://preshing.com/20120930/weak-vs-strong-memory-models/
 https://bartoszmilewski.com/2008/12/01/c-atomics-and-memory-ordering/
 https://www.theregister.co.uk/2011/06/11/herb_sutter_next_c_plus_plus?page=1
 https://stackoverflow.com/questions/44374614/vc-volatilems-on-x86
-##有序性
+
+## 有序性
 ```cpp
 //Processor #1:
 
@@ -69,7 +70,7 @@ http://www.felixcloutier.com/x86/index.html
 http://gee.cs.oswego.edu/dl/jmm/cookbook.html
 http://preshing.com/20120515/memory-reordering-caught-in-the-act/
 
-##反汇编
+## 反汇编
 ```cpp
 //share/tools/hsdis/hsdis.h
 void* decode_instructions(void* start, void* end,..
@@ -80,13 +81,13 @@ void* decode_instructions(void* start, void* end,..
 注意：简单的方法无法不足以触发JIT
 java -XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -version
 
-https://github.com/AdoptOpenJDK/jitwatch
-https://sourceforge.net/projects/fcml
-https://briangordon.github.io/
-http://gee.cs.oswego.edu/dl/
-http://g.oswego.edu/dl/jmm/cookbook.html
+https://github.com/AdoptOpenJDK/jitwatch  
+https://sourceforge.net/projects/fcml  
+https://briangordon.github.io/  
+http://gee.cs.oswego.edu/dl/  
+http://g.oswego.edu/dl/jmm/cookbook.html  
 
-##volatile
+## volatile
 
 ```java
 //1. 原子性
@@ -134,27 +135,27 @@ https://www.ibm.com/developerworks/java/library/j-jtp06197/
 > 编程语言应该尽量避免同步安全性，过于复杂
 > 同步安全性，应该简单到直接注解对象用法就可以了，而不是像现在还要工程师自己ad-hoc
 
-##悲观锁
->修改数据之前就独占
+## 悲观锁
+> 修改数据之前就独占
 
-##乐观锁
->直到数据修改时才验证冲突（一般是通过对比数据版本号）
+## 乐观锁
+> 直到数据修改时才验证冲突（一般是通过对比数据版本号）
 wait-free/lock-free
 
-##CAS和自旋锁
+## CAS和自旋锁
 ``` cpp
 //os_cpu/windows_x86/atomic_windows_x86.inline.hpp
 [lock] cmpxchg reg, reg/mem
 //This instruction is not supported on Intel processors earlier than the Intel486 processors.
 ```
 
-直到486，x86才有了实现
+直到486，x86才有了实现  
 到2013年，基本上所有多核CPU都实现了硬件CAS
 
-内核态自旋锁：关闭所有软中断(保证线程不被切走，并且响应硬中断)，以此来保证，临界代码尽快被释放掉。
+内核态自旋锁：关闭所有软中断(保证线程不被切走，并且响应硬中断)，以此来保证，临界代码尽快被释放掉。  
 用户态自旋锁：大问题是，锁的时间不被保证，特别是高并发下等待大量时间unlock.
 
-对于自旋锁本身，目前的实现并不会有太大的问题和提升空间；
+对于自旋锁本身，目前的实现并不会有太大的问题和提升空间；  
 重要的是理解高并发用户态的线程同步必须要系统支持。
 
 同步实现模式
@@ -163,7 +164,7 @@ wait-free/lock-free
 
 虽然CAS由CPU保证，但整个CAS过程（取值、比较）需要消耗大概500个时钟周期（大概相当于500个普通指令），同步的算法优化大都用来减少CAS操作
 
-#程序执行的模式
+# 程序执行的模式
 - [x] 80%的程序都是低竞争
 - [x] 有那么一小部分是相同线程嵌套锁定
 
@@ -178,7 +179,7 @@ https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-mu
 https://steve-yegge.blogspot.com/2006/03/moores-law-is-crap.html
 https://www.extremetech.com/extreme/203031-moores-law-at-50-its-past-and-its-future
 
-#轻量级/thin-lock
+# 轻量级/thin-lock
 >线程通过spin检查（减少fat-lock用户和内核态的切换）
 
 ``` cpp
@@ -186,7 +187,7 @@ https://www.extremetech.com/extreme/203031-moores-law-at-50-its-past-and-its-fut
 00 has_locker()
 ```
 
-#重量级/fat-lock
+# 重量级/fat-lock
 >线程通过park/pending操作，让出CPU等待唤醒
 
 ```cpp
@@ -197,8 +198,8 @@ objectMonitor = mark->monitor()
 park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
 ```
 
-#重入锁/偏向锁
->线程通过线程ID检查（减少thin-lock的spin）
+# 重入锁/偏向锁
+> 线程通过线程ID检查（减少thin-lock的spin）  
 当竞争时，需要撤销偏向锁
 
 - synchronized实现分析
@@ -223,13 +224,13 @@ https://mailinator.blogspot.com/2008/03/how-fast-is-java-volatile-or-atomic-or.h
 #ReentrantLock
 https://blog.takipi.com/java-8-longadders-the-fastest-way-to-add-numbers-concurrently/
 
-#AQS
+# AQS
 https://www.ibm.com/developerworks/library/j-jtp11234/
 https://en.wikipedia.org/wiki/Non-blocking_algorithm
 https://kukuruku.co/post/lock-free-data-structures-basics-atomicity-and-atomic-primitives/
 http://winterbe.com/posts/2015/05/22/java8-concurrency-tutorial-atomic-concurrent-map-examples/
 
-#fps
+# fps
 
 http://ifeve.com/enhanced-cas-in-jdk8/https://cloud.tencent.com/developer/article/1021132http://blog.leanote.com/tag/linckye/%E5%B9%B6%E5%8F%91
 
