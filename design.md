@@ -10,7 +10,16 @@
 
 #康威定律
 软件系统架构，反映了公司的组织架构
+[架构漫谈](https://www.infoq.cn/article/an-informal-discussion-on-architecture-part01)
 
+#worse is better
+KISS和正确之间需要平衡
+
+[程序员的呐喊](https://book.douban.com/subject/25884108/)
+[worse is better](http://dreamsongs.com/WorseIsBetter.html)
+[rise of wib](http://dreamsongs.com/RiseOfWorseIsBetter.html)
+https://blog.codinghorror.com/worse-is-better/
+[wib-example](https://stackoverflow.com/questions/471544/worse-is-better-is-there-an-example)
 #架构视图
 * 开发
 流程：源码 -> 源码仓库 -> 发布系统
@@ -32,6 +41,9 @@
 输出：用例
 
 https://www.w3.org/DesignIssues/
+https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/
+https://www.ibm.com/developerworks/cn/rational/r-4p1-view/index.html
+
 控制复杂度
 单一职责原则  
 开放封闭原则  
@@ -57,6 +69,7 @@ CQRS and event sourcing
 容量规划，扩容和缩容
 Flume vs kafka(HA)
 
+creator driven
 DDD/TDD/BDD/microservice/SOA/CQRS/DCI/Lambda Architecture/Functional Programming
 
 发号器、设计 feed 系统、设计缓存系统、设计推荐系统、登录系统、抢票系统
@@ -67,3 +80,4 @@ SQS，对性能无太大要求时，做简单队列, availability超好
 
 无状态服务器
 分布式队列
+https://simplicable.com/new/coding-principles

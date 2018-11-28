@@ -13,9 +13,6 @@ lock add/dec/*
 |L3     | 50      |        |3%|1 |
 |DRAM     | 250      |        |1%|1 |
 
->延迟的度量
-https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html
-
 1982，指令缓存
 1985，数据缓存
 1995，乱序和预读
@@ -43,6 +40,13 @@ sfence/lfence/mfence
 ```
 内存一致性错误（对于相同数据，不同线程看到的不一样）
 
+https://stackoverflow.com/questions/6319146/c11-introduced-a-standardized-memory-model-what-does-it-mean-and-how-is-it-g
+https://brooker.co.za/blog/
+https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/acquire-and-release-semantics
+https://preshing.com/20120930/weak-vs-strong-memory-models/
+https://bartoszmilewski.com/2008/12/01/c-atomics-and-memory-ordering/
+https://www.theregister.co.uk/2011/06/11/herb_sutter_next_c_plus_plus?page=1
+https://stackoverflow.com/questions/44374614/vc-volatilems-on-x86
 ##有序性
 ```cpp
 //Processor #1:
@@ -99,12 +103,36 @@ i = 10;
 //线程B执行的代码
 j = i;
 ```
-使用场景
-- 状态值
+
+```java
+public static class DelayWrite implements Runnable {
+    private String str;
+
+    void setStr(String str) {
+        this.str = str;
+    }
+
+    public void run() {
+        while (str == null);
+        // Thread.yield();
+        System.out.println(str);
+	}
+}
+
+public static void test() throws InterruptedException {
+    DelayWrite delay = new DelayWrite();
+    new Thread(delay).start();
+    Thread.sleep(100);
+    delay.setStr("Hello world!!");
+}
+```
 
 https://docs.oracle.com/javase/tutorial/essential/concurrency/atomic.html
 http://blog.vinceliu.com/2010/05/difference-between-atomic-and-volatile.html
 https://www.ibm.com/developerworks/java/library/j-jtp06197/
+
+> 编程语言应该尽量避免同步安全性，过于复杂
+> 同步安全性，应该简单到直接注解对象用法就可以了，而不是像现在还要工程师自己ad-hoc
 
 ##悲观锁
 >修改数据之前就独占
@@ -147,6 +175,8 @@ wait-free/lock-free
 http://blog.sina.com.cn/s/articlelist_1685243084_7_1.html
 https://groups.csail.mit.edu/cag/ps3/schedule.shtml
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-multicore-programming-primer-january-iap-2007/syllabus/
+https://steve-yegge.blogspot.com/2006/03/moores-law-is-crap.html
+https://www.extremetech.com/extreme/203031-moores-law-at-50-its-past-and-its-future
 
 #轻量级/thin-lock
 >线程通过spin检查（减少fat-lock用户和内核态的切换）
