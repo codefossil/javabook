@@ -4,7 +4,7 @@
 * 当读和写一个数据同时发生
 ## 弱隔离
 **为了HA/HP，事务可以丢弃**  
-考虑以下并发错误问题：
+考虑以下并发错误问题：  
 **脏写**
 
 |T1|T2|T2结果|
@@ -111,23 +111,24 @@ T2：查看A和B总和
 |--|--|--|--|--|
 |InnoDB|MV+2PL|Delta|VACUUM||
 
-[cmu 15-445/645](https://15445.courses.cs.cmu.edu/fall2018/schedule.html)
-[ddia](https://book.douban.com/subject/26197294/)
-[2pl](https://en.wikipedia.org/wiki/Two-phase_locking)
+[cmu 15-445/645](https://15445.courses.cs.cmu.edu/fall2018/schedule.html)  
+[ddia](https://book.douban.com/subject/26197294/)  
+[2pl](https://en.wikipedia.org/wiki/Two-phase_locking)  
 # 日志与恢复
-**WAL**  
+**WAL** 
+
 |LSN|pre-LSN|txn id|type|obj|before|after|
 |--|--|--|--|--|
 |002|001|T1|update|A|1|2|
 ## 确定性
-deterministic concurrency control
-view serialization的条件是什么
+deterministic concurrency control.
+view serialization的条件是什么?
 死锁、SGT闭环
 # 数据建模和SQL
-内联/外联/笛卡尔乘积
+内联/外联/笛卡尔乘积。
 union/union all区别
 left join
-数据建模中的设计考虑
+数据建模中的设计考虑<br />
 Generalization and Specialization
 数据库为响应时间
 数据库为高吞吐量
@@ -193,6 +194,7 @@ memcache 仅仅作为cache
 redis
 内存数据库，做高速响应queriable存储（其实是cache）
 nvm
+
 ## 经典行式存储
 get少，scan少，低延迟
 ### 关系模型
