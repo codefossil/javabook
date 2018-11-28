@@ -121,32 +121,33 @@ T2：查看A和B总和
 |--|--|--|--|--|
 |002|001|T1|update|A|1|2|
 ## 确定性
-deterministic concurrency control.
-view serialization的条件是什么?
-死锁、SGT闭环
+deterministic concurrency control  
+view serialization的条件是什么?  
+死锁、SGT闭环  
 # 数据建模和SQL
-内联/外联/笛卡尔乘积。
-union/union all区别
-left join
-数据建模中的设计考虑<br />
-Generalization and Specialization
-数据库为响应时间
-数据库为高吞吐量
-范式和非范式
-Blob存储
-how to scale a database
-table corruption
-数据库监控/切换
-数据库连接池
-c3p0/druid
-JDBC
-Mybatis
+内联/外联/笛卡尔乘积  
+union/union all区别  
+left join  
+数据建模中的设计考虑  
+Generalization and Specialization  
+数据库为响应时间  
+数据库为高吞吐量  
+范式和非范式  
+Blob存储  
+how to scale a database  
+table corruption  
+数据库监控/切换  
+数据库连接池  
+c3p0/druid  
+JDBC  
+Mybatis  
 # 索引
 ## B树的深度问题
 * 假设sizeof(key)=sizeof(next_node)=4 byte，**节点最大占用m*(4+4)=8*m byte**
 * 假设sizeof(page)=4KB，m=4*1024/(4+4)=512，即**B树就是个512叉树**
 * 假如有10M行数据，**B树最大深度有log(512/2, 10M)=2.9006~=3**，avl的深度log(2, 10M)=23.25
 ## B树和LSM
+
 |OP|B|LSM|
 | ---- | ---- | ---- | ---- |
 |写|1.REDO 2.getPage+**树分裂(可能)** 3. 1~3个页到disk|1.REDO+memtable 2.当达到阈值，后台线程合并segment|
@@ -171,9 +172,9 @@ segment的大小和合并策略
 [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
 [浅谈MySQL的B树索引与索引优化](https://monkeysayhi.github.io/2018/03/06/%E6%B5%85%E8%B0%88MySQL%E7%9A%84B%E6%A0%91%E7%B4%A2%E5%BC%95%E4%B8%8E%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96/)
 # 查询管理
-iterator/volcano
-materialization
-vectorized
+iterator/volcano  
+materialization  
+vectorized  
 # 批处理
 Hadoop, Spark实现原理
 # 存储引擎
@@ -181,33 +182,31 @@ Hadoop, Spark实现原理
 ## 非结构化对象存储
 s3实现原理
 ## 列式存储
-Vertica
-Greenplum
-Redshift 做海量数据queriable存储
+Vertica  
+Greenplum  
+Redshift 做海量数据queriable存储  
 ## 列族存储
-HBase 做scan more， get less 存储
-
-DynamoDB/Cassandra 做get more，scan less存储
-HIVE
+HBase 做scan more， get less 存储  
+DynamoDB/Cassandra 做get more，scan less存储  
+HIVE  
 ## 全内存
-memcache 仅仅作为cache
-redis
-内存数据库，做高速响应queriable存储（其实是cache）
-nvm
-
+memcache 仅仅作为cache  
+redis  
+内存数据库，做高速响应queriable存储（其实是cache）  
+nvm  
 ## 经典行式存储
 get少，scan少，低延迟
 ### 关系模型
-依赖多表join
-单表10M~100M量级？
-产品mysql, oracle
+依赖多表join  
+单表10M~100M量级？  
+产品mysql, oracle  
 ### 文档模型
-避免join
-大多数据1对多
-文档内查询弱
-产品mongodb
+避免join  
+大多数据1对多  
+文档内查询弱  
+产品mongodb  
 ### mysql分库分表中间件
-单表5M，分表数=ceiling(N / (RDS 实例数 * 8) / 5,000,000)
+单表5M，分表数=ceiling(N / (RDS 实例数 * 8) / 5,000,000)  
 N=100M行数据量
 
 Cobar属于阿里B2B事业群，始于2008年，在阿里服役3年多，接管3000+个MySQL数据库的schema,集群日处理在线SQL请求50亿次以上(由此可以计算：Cobar的TPS=5,000,000,000/(3000*24*60*60)=20)
@@ -228,28 +227,29 @@ Cobar属于阿里B2B事业群，始于2008年，在阿里服役3年多，接管3
 
 比如一个简单的AVG操作，对于一些比较初级的分布式数据库模型而言，常见做法是把AVG直接下发到所有存储节点，这样造成的结果就是语法兼容，语义不兼容，最终拿到的是错误结果。而DRDS的智能下推引擎，对SQL的语法做充分的语义兼容性适配，针对AVG操作，只能由引擎将逻辑AVG SQL解析优化为SUM和COUNT的SQL然后进行下推，由底层的数据库实例节点完成SUM和COUNT计算，充分利用底层节点的计算能力，在引擎层将各个存储节点的SUM和COUNT结果聚合计算，最终计算出AVG。
 
-[mycat权威指南](http://www.mycat.io/document/mycat-definitive-guide.pdf)
-[column-oriented vs column-family](https://dbmsmusings.blogspot.com/2010/03/distinguishing-two-major-types-of_29.html)
-[数据库相关中间件收录集](https://blog.csdn.net/u013256816/article/details/52769297)
+[mycat权威指南](http://www.mycat.io/document/mycat-definitive-guide.pdf)  
+[column-oriented vs column-family](https://dbmsmusings.blogspot.com/2010/03/distinguishing-two-major-types-of_29.html)  
+[数据库相关中间件收录集](https://blog.csdn.net/u013256816/article/details/52769297)  
 [跨时代的分布式数据库 – 阿里云DRDS详解
 ](https://www.csdn.net/article/a/2015-08-28/15827676)
+
 # TODO
-[cmu 15-721](http://15721.courses.cs.cmu.edu/spring2017/schedule.html)
-[cmu pavlo](http://www.cs.cmu.edu/~pavlo/datasets/index.html)
+[cmu 15-721](http://15721.courses.cs.cmu.edu/spring2017/schedule.html)  
+[cmu pavlo](http://www.cs.cmu.edu/~pavlo/datasets/index.html)  
 https://dev.mysql.com/doc/internals/en/date-and-time-data-type-representation.html
-[sfu](https://sfu-db.github.io/dbsystems/)
-[db-how](http://coding-geek.com/how-databases-work)
-[Comparison of different SQL implementations](http://troels.arvin.dk/db/rdbms/)
-[dbms wiki](https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems)
+[sfu](https://sfu-db.github.io/dbsystems/)  
+[db-how](http://coding-geek.com/how-databases-work)  
+[Comparison of different SQL implementations](http://troels.arvin.dk/db/rdbms/)  
+[dbms wiki](https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems)  
 
-http://www.gpfeng.com/
-http://www.notedeep.com/note/38
-http://www.redbook.io/
-https://fgiesen.wordpress.com/category/papers/
+http://www.gpfeng.com/  
+http://www.notedeep.com/note/38  
+http://www.redbook.io/  
+https://fgiesen.wordpress.com/category/papers/  
 
-Xpress， 解LP MIP
-Hadoop MapReduce，Spark 做海量数据批处
-Storm/trident，做实时分布式消息处理 
-Flume, 海量数据收集with high availability
-Hive/SparkSQL，做大数据在线分析 
-专业数据库 ap 时间序列 文档 图表 数据处理工具 hadoop spark flink
+Xpress， 解LP MIP  
+Hadoop MapReduce，Spark 做海量数据批处  
+Storm/trident，做实时分布式消息处理   
+Flume, 海量数据收集with high availability  
+Hive/SparkSQL，做大数据在线分析   
+专业数据库 ap 时间序列 文档 图表 数据处理工具 hadoop spark flink  
