@@ -2,6 +2,7 @@
 **事务是为了简化，解决数据库容错**
 * 当2个并发同时写一个数据
 * 当读和写一个数据同时发生
+
 ## 弱隔离
 **为了HA/HP，事务可以丢弃**  
 考虑以下并发错误问题：  
@@ -62,6 +63,7 @@ T2：查看A和B总和
 ||MAX|50|
 |ADD(A=100)+commit||**幻读和不可重复读的区别=添加，影响的是where等范围查询**|
 ||MAX+commit|100|
+
 ## 串行=强隔离
 ### 单线程实现
 最简单的串行方式，比如Redis，
@@ -69,6 +71,7 @@ T2：查看A和B总和
 * 或者内存可以装满数据，取消cache，允许直接读少量内存数据
 
 但是性能被单个CPU核心限制
+
 ### 2PL=悲观=内存锁 + 协议
 |变体|协议|脏读|脏写|不可重复读|更新丢失|幻读|评价|
 | -- | -- | -- | -- | -- | -- | -- | -- |
@@ -77,6 +80,7 @@ T2：查看A和B总和
 |S2PL|X-lock在事务结束释放|||✅|✅|✅|死锁，偏向读，读已提交|
 |SS2PL|S-lock/X-lock都必须在事务结束释放||||✅|✅|可重复读|
 |SS2PL+predicate（索引锁）|条件查询/更新/删除时，需要检查predicate锁||||||串行|
+
 ### OCC=完全乐观=[TO+SGT]+无锁
 **适合读写较短/竞争低的事务，事务终止数量严重影响性能，长事务可能会饿死**
 每个事务读写时间戳写到各自的workset
@@ -90,6 +94,7 @@ T2：查看A和B总和
 |T2|value|created|deleted|
 |--|--|--|--|
 |A0|123|0|
+
 ### 现代混合=MVCC+2PL+GC
 **综合负载性能好，不一定性能好于OCC**  
 每个tuple的修改都有一个版本记录
@@ -99,11 +104,14 @@ T2：查看A和B总和
 |--|--|--|--|
 |A0|123|0|42|
 |A1|456|42|-|
+
 #### SI/SSI=MVCC（数据部分）+ OCC（验证规则）+ 无锁
+
 ||事务开始|可见性规则|不可见|事务提交|
 |--|--|--|--|--|
 |SI|所有已经提交的数据+所有没有提交的删除||正在处理的写事务+已经终止的事务+之后开始的事务|可能更新丢失|
 |SSI|同上|跟踪正在提交的数据|同上|检查查询结果改变，回滚并重试|
+
 #### 设计考虑
 现代DBMS实现是以上方法的混合体
 
@@ -114,16 +122,19 @@ T2：查看A和B总和
 [cmu 15-445/645](https://15445.courses.cs.cmu.edu/fall2018/schedule.html)  
 [ddia](https://book.douban.com/subject/26197294/)  
 [2pl](https://en.wikipedia.org/wiki/Two-phase_locking)  
+
 # 日志与恢复
-**WAL** 
+**WAL**  
 
 |LSN|pre-LSN|txn id|type|obj|before|after|
 |--|--|--|--|--|
 |002|001|T1|update|A|1|2|
+
 ## 确定性
 deterministic concurrency control  
 view serialization的条件是什么?  
 死锁、SGT闭环  
+
 # 数据建模和SQL
 内联/外联/笛卡尔乘积  
 union/union all区别  
@@ -141,11 +152,13 @@ table corruption
 c3p0/druid  
 JDBC  
 Mybatis  
+
 # 索引
 ## B树的深度问题
 * 假设sizeof(key)=sizeof(next_node)=4 byte，**节点最大占用m*(4+4)=8*m byte**
 * 假设sizeof(page)=4KB，m=4*1024/(4+4)=512，即**B树就是个512叉树**
 * 假如有10M行数据，**B树最大深度有log(512/2, 10M)=2.9006~=3**，avl的深度log(2, 10M)=23.25
+
 ## B树和LSM
 
 |OP|B|LSM|
@@ -171,40 +184,51 @@ segment的大小和合并策略
 [SSTable](http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb/)
 [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
 [浅谈MySQL的B树索引与索引优化](https://monkeysayhi.github.io/2018/03/06/%E6%B5%85%E8%B0%88MySQL%E7%9A%84B%E6%A0%91%E7%B4%A2%E5%BC%95%E4%B8%8E%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96/)
+
 # 查询管理
 iterator/volcano  
 materialization  
 vectorized  
+
 # 批处理
 Hadoop, Spark实现原理
+
 # 存储引擎
 数据访问模式
+
 ## 非结构化对象存储
 s3实现原理
+
 ## 列式存储
 Vertica  
 Greenplum  
 Redshift 做海量数据queriable存储  
+
 ## 列族存储
 HBase 做scan more， get less 存储  
 DynamoDB/Cassandra 做get more，scan less存储  
 HIVE  
+
 ## 全内存
 memcache 仅仅作为cache  
 redis  
 内存数据库，做高速响应queriable存储（其实是cache）  
 nvm  
+
 ## 经典行式存储
 get少，scan少，低延迟
+
 ### 关系模型
 依赖多表join  
 单表10M~100M量级？  
 产品mysql, oracle  
+
 ### 文档模型
 避免join  
 大多数据1对多  
 文档内查询弱  
 产品mongodb  
+
 ### mysql分库分表中间件
 单表5M，分表数=ceiling(N / (RDS 实例数 * 8) / 5,000,000)  
 N=100M行数据量
