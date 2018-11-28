@@ -138,6 +138,7 @@
 deterministic concurrency control  
 view serialization的条件是什么?  
 死锁、SGT闭环  
+DAG Directed acyclic graph  
 
 # 数据建模和SQL
 内联/外联/笛卡尔乘积  
