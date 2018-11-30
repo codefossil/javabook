@@ -6,6 +6,7 @@ interlocked
 lock add/dec/*
 ```
 根据程序局部性原理，成本和功耗上的考虑，CPU读取和写入的请求，都会经过：
+
 | RAM | cycle | price($) | hitrate|count|
 | ---- | ---- | ---- | ---- | ---- |
 |L1    |3       |        |90%|2 per core|

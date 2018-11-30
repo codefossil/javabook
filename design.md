@@ -21,8 +21,21 @@ KISS和正确之间需要平衡
 https://blog.codinghorror.com/worse-is-better/  
 [wib-example](https://stackoverflow.com/questions/471544/worse-is-better-is-there-an-example)  
 
+# The Rule of Least Power
+* 在用的（很少），万一以后要用（很多）
+* 过度设计，过度抽象
+
+[origin](https://www.w3.org/2001/tag/doc/leastPower.html)
+https://sourcemaking.com/refactoring/smells/speculative-generality
+https://medium.com/@jason.goodwin/the-rule-of-least-power-in-modern-technology-a4d9047e1063
+[Atwood's Law](https://blog.codinghorror.com/the-principle-of-least-power/)
+[Architectural and philosophical points](https://www.w3.org/DesignIssues/)
+[Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)
+http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html
+[PEP 20](https://www.python.org/dev/peps/pep-0020/)
+
 # 架构视图
-* 开发 
+* 开发   
 流程：源码 -> 源码仓库 -> 发布系统  
 测试：单元测试 -> 系统测试 -> QA -> 预发布 -> 线上  
 组件：配置中心/链路追踪/统一日志/消息（基础架构怎么做）  

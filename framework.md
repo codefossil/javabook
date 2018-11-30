@@ -40,6 +40,9 @@ akka
 MapReduce
 reactive
 
+webhook
+http://progrium.com/blog/2007/05/03/web-hooks-to-revolutionize-the-web/
+
 
 https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html\#spring-introduction
 
