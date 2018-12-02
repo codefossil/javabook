@@ -289,3 +289,6 @@ Storm/trident，做实时分布式消息处理
 Flume, 海量数据收集with high availability  
 Hive/SparkSQL，做大数据在线分析   
 专业数据库 ap 时间序列 文档 图表 数据处理工具 hadoop spark flink  
+
+[SIGMOD](https://dl.acm.org/event.cfm?id=RE227&tab=pubs)  
+[VLDB](http://vldb.org/pvldb)  
