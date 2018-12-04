@@ -58,6 +58,7 @@ http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html
 突出系统间依赖  
 输出：用例
 
+[亿级用户下的新浪微博平台架构](https://www.infoq.cn/article/weibo-platform-archieture)
 https://www.w3.org/DesignIssues/  
 https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/  
 https://www.ibm.com/developerworks/cn/rational/r-4p1-view/index.html  
