@@ -170,7 +170,8 @@ wait-free/lock-free
 - [x] 有那么一小部分是相同线程嵌套锁定
 
 >Thin Locks: An Implementation of Synchronization for Java
-#并行的限制
+
+# 并行的限制
 * Amdahl定律
 * Gustafson定律
 
