@@ -91,6 +91,7 @@ Flume vs kafka(HA)
 creator driven  
 DDD/TDD/BDD/microservice/SOA/CQRS/DCI/Lambda Architecture/Functional Programming
 
+社区类服务架构、云服务架构、搜索架构、电商服务架构、O2O
 发号器、设计 feed 系统、设计缓存系统、设计推荐系统、登录系统、抢票系统  
 Xpress， 解LP MIP  
 
