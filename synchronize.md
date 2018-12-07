@@ -227,6 +227,7 @@ https://mailinator.blogspot.com/2008/03/how-fast-is-java-volatile-or-atomic-or.h
 https://blog.takipi.com/java-8-longadders-the-fastest-way-to-add-numbers-concurrently/
 
 # AQS
+
 https://www.ibm.com/developerworks/library/j-jtp11234/
 https://en.wikipedia.org/wiki/Non-blocking_algorithm
 https://kukuruku.co/post/lock-free-data-structures-basics-atomicity-and-atomic-primitives/
@@ -253,7 +254,8 @@ executor
 actor
 同步器
 
-
+线程中断  
+https://www.ibm.com/developerworks/cn/java/j-jtp05236.html
 
 多线程同步和锁
 high contention
