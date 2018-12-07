@@ -11,6 +11,7 @@
 * [maven](http://maven.apache.org/)
 * [git](https://git-scm.com/docs)
 * [amqp](https://www.rabbitmq.com/protocol.html)
+* [cron](http://www.quartz-scheduler.org/documentation/quartz-2.x/tutorials/crontrigger.html)
 
 # 源码
 * [redis](https://github.com/antirez/redis)
