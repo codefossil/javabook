@@ -76,6 +76,8 @@ CQRS and event sourcing
 常用的设计模式  
 类似AOP，是设计模式能够解决的吗
 
+how software evolution
+
 # Immutable
 
 瀑布->Agile->DevOps演变  
@@ -101,3 +103,4 @@ SQS，对性能无太大要求时，做简单队列, availability超好
 无状态服务器  
 分布式队列  
 https://simplicable.com/new/coding-principles  
+https://about.gitlab.com/handbook/

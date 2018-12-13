@@ -171,6 +171,26 @@ wait-free/lock-free
 
 >Thin Locks: An Implementation of Synchronization for Java
 
+# context switch
+> CPU: 20x faster
+Main memory: 3x faster
+Context switch: about the same
+
+线程切换 = 状态转换(~n us) + `cache missing`(~n 10ns)
+
+http://www.cs.cmu.edu/afs/cs/academic/class/15712-s99/www/
+https://www.cs.cmu.edu/~15712/syllabus.html
+https://www.cs.cmu.edu/~410/lecture.html
+https://news.ycombinator.com/item?id=13930305  
+[mgbench](http://mcvoy.com/lm/bitmover/lmbench/lmbench-usenix.pdf)  
+https://blog.tsunanet.net/2010/11/how-long-does-it-take-to-make-context.html  
+http://www.cis.upenn.edu/group/systems/slides/SystemsLunchSept09_Threads.pdf
+
+# 创建进程
+> fork(~n 100ns) = ~10x pthread_create(~n 10ns)
+
+[why pthread](https://computing.llnl.gov/tutorials/pthreads/#WhyPthreads)
+
 # 并行的限制
 * Amdahl定律
 * Gustafson定律
@@ -180,6 +200,7 @@ https://groups.csail.mit.edu/cag/ps3/schedule.shtml
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-multicore-programming-primer-january-iap-2007/syllabus/
 https://steve-yegge.blogspot.com/2006/03/moores-law-is-crap.html
 https://www.extremetech.com/extreme/203031-moores-law-at-50-its-past-and-its-future
+http://www.cs.cmu.edu/~418/schedule.html
 
 # 轻量级/thin-lock
 >线程通过spin检查（减少fat-lock用户和内核态的切换）
@@ -237,6 +258,7 @@ http://winterbe.com/posts/2015/05/22/java8-concurrency-tutorial-atomic-concurren
 
 http://ifeve.com/enhanced-cas-in-jdk8/https://cloud.tencent.com/developer/article/1021132http://blog.leanote.com/tag/linckye/%E5%B9%B6%E5%8F%91
 
+
 thread和runable的区别
 公平锁
 共享锁
@@ -281,3 +303,12 @@ ConcurrentHashMap
 - 锁分段技术
 - 读是否要加锁
 - 迭代器的一致性
+
+[History of Computing Project](http://www.thocp.net/)
+https://www.cs.cmu.edu/~213/schedule.html  
+https://www.multicians.org/
+https://users.cs.duke.edu/~chase/cps196/topics.html
+https://www.udacity.com/wiki/ud156-readings
+https://cseweb.ucsd.edu/classes/wi01/cse221/
+https://www.cc.gatech.edu/~rama/CS6210-External/class-schedule.pdf
+https://www.cc.gatech.edu/classes/AY2010/cs4210_fall/#lectures

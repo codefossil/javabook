@@ -9,4 +9,7 @@ collection.sort实现
 skip list
 
 [theory](https://en.wikipedia.org/wiki/Computational_complexity_theory)
-
+http://www.cs.cmu.edu/~./adamchik/15-211/index.html
+https://www.cs.cmu.edu/~15210/
+https://www.cs.cmu.edu/~112/schedule.html
+https://www.cs.cmu.edu/~15451/index.html
