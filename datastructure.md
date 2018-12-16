@@ -10,6 +10,10 @@ skip list
 
 http://cs-www.cs.yale.edu/homes/aspnes/classes/223/notes.html
 [theory](https://en.wikipedia.org/wiki/Computational_complexity_theory)
+http://www.cs.cmu.edu/~./adamchik/15-211/index.html
+https://www.cs.cmu.edu/~15210/
+https://www.cs.cmu.edu/~112/schedule.html
+https://www.cs.cmu.edu/~15451/index.html
 https://cseweb.ucsd.edu/classes/sp99/cse221/
 https://visualgo.net/en
 https://web.stanford.edu/class/cs97si/
