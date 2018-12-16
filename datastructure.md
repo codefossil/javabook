@@ -11,3 +11,6 @@ skip list
 http://cs-www.cs.yale.edu/homes/aspnes/classes/223/notes.html
 [theory](https://en.wikipedia.org/wiki/Computational_complexity_theory)
 https://cseweb.ucsd.edu/classes/sp99/cse221/
+https://visualgo.net/en
+https://web.stanford.edu/class/cs97si/
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-851-advanced-data-structures-spring-2012/calendar-and-notes/
