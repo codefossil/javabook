@@ -312,3 +312,6 @@ https://www.udacity.com/wiki/ud156-readings
 https://cseweb.ucsd.edu/classes/wi01/cse221/
 https://www.cc.gatech.edu/~rama/CS6210-External/class-schedule.pdf
 https://www.cc.gatech.edu/classes/AY2010/cs4210_fall/#lectures
+http://www.javapractices.com/topic/TopicAction.do?Id=248
+http://gee.cs.oswego.edu/dl/concurrency-interest/index.html
+https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/package-summary.html
