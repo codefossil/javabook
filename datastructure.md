@@ -15,3 +15,6 @@ https://www.cs.cmu.edu/~15210/
 https://www.cs.cmu.edu/~112/schedule.html
 https://www.cs.cmu.edu/~15451/index.html
 https://cseweb.ucsd.edu/classes/sp99/cse221/
+https://visualgo.net/en
+https://web.stanford.edu/class/cs97si/
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-851-advanced-data-structures-spring-2012/calendar-and-notes/
