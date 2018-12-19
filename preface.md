@@ -11,6 +11,8 @@
 |O(logN^3)|1,000,000,000|1,000,000,000,000,000,000|
 
 # 延迟
+> 响应时间 = 服务时间（性能） + 排队时间
+
 [Latency Numbers Every Programmer Should Know](https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html)
 
 # 线上业务故障级别

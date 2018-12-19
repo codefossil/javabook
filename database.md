@@ -1,3 +1,28 @@
+# 数据库查询之旅
+> Performance is all about code path
+
+30个列，总数50M，300条/用户，2个大字段总共2K，总长度250byte/记录
+S1一张表，S2主表(90%) + 详情表(10%)
+109Kbyte/索引
+
+||S1|S2|备注|
+| -- | -- | -- | -- |
+|1个数据块记录详情|8K*0.8 div (2K+250) ≈ 3|8K*0.8 div 250 ≈ 26，8K*0.8/2K ≈ 3|
+|查询计划|
+|索引记录详情|8K*0.6 div 109≈45||索引空间利用率为60~70%|
+|索引查询|4+300/45 ≈ 11|
+|内存I/O|(300 div 3)* 1.5+11≈161|(300 div 26)* 1.5+11≈29|用户记录离散程度为1.5（？这里是否必要引入）|
+|磁盘访问I/O|161*(1-0.85)≈25|29*(1-0.85)≈5|缓存命中率为85%|
+|总耗时|161*0.01+25*7≈177ms|29*0.01+5*7≈36ms|内存I/O 0.01ms，磁盘I/O 7ms，不算排队时间|
+
+* 优化问题，把所有访问路径列出来
+* 各种cache/各种延迟影响很大
+
+[我对后端优化的一点想法](https://www.slideshare.net/jamestong/2012-12552732)  
+[5-minute rule](http://www.hpl.hp.com/techreports/tandem/TR-86.1.pdf)  
+[Think Clearly About Performance](https://method-r.com/wp-content/uploads/2018/07/TCAP-from-MOTD2.pdf)
+https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt.html
+
 # 并发控制
 
 > 事务是为了简化，解决数据库容错
@@ -163,6 +188,7 @@ JDBC
 Mybatis  
 
 # 索引
+> 不访问不必要的数据
 
 ## B树的深度问题
 * 假设sizeof(key)=sizeof(next_node)=4 byte，**节点最大占用m*(4+4)=8*m byte**
@@ -179,13 +205,11 @@ Mybatis
 |删除||写操作+删除标记|
 
 设计考虑
-- LSM
+- LSM（**写优化**）
   ![](image/lsm.png)
-
 - segment的大小和合并策略
   查询失效时，加速迭代查询
   高并发锁
-
 - B树
   叶节点到底是存值`聚集索引`，还是文件偏移
   写入是随机的
@@ -198,6 +222,7 @@ Mybatis
 [SSTable](http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb/)  
 [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)  
 [浅谈MySQL的B树索引与索引优化](https://monkeysayhi.github.io/2018/03/06/%E6%B5%85%E8%B0%88MySQL%E7%9A%84B%E6%A0%91%E7%B4%A2%E5%BC%95%E4%B8%8E%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96/)  
+[Relational Database Index Design and the Optimizers](https://book.douban.com/subject/26419771/)  
 
 # 查询管理
 iterator/volcano  

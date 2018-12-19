@@ -31,6 +31,7 @@ https://medium.com/@jason.goodwin/the-rule-of-least-power-in-modern-technology-a
 [Atwood's Law](https://blog.codinghorror.com/the-principle-of-least-power/)
 [Architectural and philosophical points](https://www.w3.org/DesignIssues/)
 [Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)
+[方法论、方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)
 http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html
 [PEP 20](https://www.python.org/dev/peps/pep-0020/)
 
@@ -63,15 +64,23 @@ https://www.w3.org/DesignIssues/
 https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/  
 https://www.ibm.com/developerworks/cn/rational/r-4p1-view/index.html  
 
+第一原理
+沉默成本（可用性）  
+机会成本（兼容性）  
+边际成本（扩展性）  
 控制复杂度  
 单一职责原则  
 开放封闭原则  
 里氏替换原则  
 最少知识原则  
 接口隔离原则  
-依赖倒置原则
-
+依赖倒置原则  
+KISS – Keep It Simple Stupid
+Do not reinvent the wheel.
 CQRS and event sourcing  
+You Aren't Gonna Need It.
+If it ain't broke, don't fix it.
+飞轮效应
 
 常用的设计模式  
 类似AOP，是设计模式能够解决的吗

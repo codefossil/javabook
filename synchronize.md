@@ -202,6 +202,8 @@ https://steve-yegge.blogspot.com/2006/03/moores-law-is-crap.html
 https://www.extremetech.com/extreme/203031-moores-law-at-50-its-past-and-its-future
 http://www.cs.cmu.edu/~418/schedule.html
 
+http://www.newsmth.net/nForum/#!article/CSArch/43360
+
 # 轻量级/thin-lock
 >线程通过spin检查（减少fat-lock用户和内核态的切换）
 
@@ -315,3 +317,6 @@ https://www.cc.gatech.edu/classes/AY2010/cs4210_fall/#lectures
 http://www.javapractices.com/topic/TopicAction.do?Id=248
 http://gee.cs.oswego.edu/dl/concurrency-interest/index.html
 https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/package-summary.html
+http://www.cs.cmu.edu/~418/schedule.html
+http://csg.csail.mit.edu/6.823/lecnotes.html
+
