@@ -64,6 +64,11 @@ https://www.w3.org/DesignIssues/
 https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/  
 https://www.ibm.com/developerworks/cn/rational/r-4p1-view/index.html  
 
+# 容量规划，扩容和缩容  
+
+[排队论及其应用浅析](https://www.slideshare.net/frogd/ss-27959518)
+
+
 第一原理
 沉默成本（可用性）  
 机会成本（兼容性）  
@@ -87,7 +92,7 @@ If it ain't broke, don't fix it.
 
 how software evolution
 
-# Immutable
+
 
 瀑布->Agile->DevOps演变  
 规模估算  
@@ -96,7 +101,7 @@ how software evolution
 流量切换 sla  
 服务依赖/状态/降级  
 发布和灰度  
-容量规划，扩容和缩容  
+
 Flume vs kafka(HA)  
 
 creator driven  

@@ -1,9 +1,9 @@
 # 数据库查询之旅
 > Performance is all about code path
 
-30个列，总数50M，300条/用户，2个大字段总共2K，总长度250byte/记录
-S1一张表，S2主表(90%) + 详情表(10%)
-109Kbyte/索引
+30个列，总数50M，300条/用户，2个大字段总共2K，总长度250byte/记录  
+S1一张表，S2主表(90%) + 详情表(10%)  
+109Kbyte/索引  
 
 ||S1|S2|备注|
 | -- | -- | -- | -- |
@@ -27,12 +27,11 @@ https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt
 
 > 事务是为了简化，解决数据库容错
 
-数据库并发保证数据不被破坏（A**`C`**ID）
 * 当2个并发同时写一个数据
 * 当读和写一个数据同时发生
 * 多个数据同时写
 
-> 事务的局限是数据库无法维护**并发不可变条件**
+> 数据库事务保证数据不被破坏（A**C**ID），其局限是数据库无法维护业务的**并发不可变条件**
 
 ## 弱隔离
 
@@ -195,7 +194,7 @@ Mybatis
 * 假设sizeof(page)=4KB，m=4*1024/(4+4)=512，即**B树就是个512叉树**
 * 假如有10M行数据，**B树最大深度有log(512/2, 10M)=2.9006~=3**，avl的深度log(2, 10M)=23.25
 
-## B树和LSM
+## 写优化LSM
 
 |OP|B|LSM|
 | ---- | ---- | ---- |
@@ -205,14 +204,13 @@ Mybatis
 |删除||写操作+删除标记|
 
 设计考虑
-- LSM（**写优化**）
-  ![](image/lsm.png)
+- 是否需要写优化
+![](image/lsm.png)
 - segment的大小和合并策略
   查询失效时，加速迭代查询
   高并发锁
-- B树
-  叶节点到底是存值`聚集索引`，还是文件偏移
-  写入是随机的
+  lsm如何保证迭代读取次数
+- B树叶节点到底是存值`聚集索引`，还是文件偏移
 
 ## 多列索引和R-tree
 复杂的条件查询通常会包含多列，普通的索引查询只能用到前缀匹配
@@ -309,6 +307,7 @@ http://www.gpfeng.com/
 http://www.notedeep.com/note/38  
 http://www.redbook.io/  
 https://fgiesen.wordpress.com/category/papers/  
+http://blog.yufeng.info/  
 
 Xpress， 解LP MIP  
 Hadoop MapReduce，Spark 做海量数据批处  

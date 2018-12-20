@@ -136,6 +136,8 @@ https://www.ibm.com/developerworks/java/library/j-jtp06197/
 > 编程语言应该尽量避免同步安全性，过于复杂
 > 同步安全性，应该简单到直接注解对象用法就可以了，而不是像现在还要工程师自己ad-hoc
 
+# Immutable
+
 ## 悲观锁
 > 修改数据之前就独占
 
