@@ -156,6 +156,8 @@ https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt
 
 # 日志与恢复
 
+## binlog
+
 ## WAL
 
 |LSN|pre-LSN|txn id|type|obj|before|after|
@@ -226,15 +228,41 @@ Mybatis
 iterator/volcano  
 materialization  
 vectorized  
+地理位置查询/多维查询
+
 
 # 批处理
-Hadoop, Spark实现原理
+Hadoop MR, Spark实现原理
+
+# 在线分析
+Hive/SparkSQL
+
+# 离线分析
 
 # 存储引擎
 数据访问模式
 
+## 全内存
+QPS (单机100K+~集群1M+)
+RT<1ms
+GB~Tbyte(集群)
+memcache 仅仅作为cache  
+redis  
+内存数据库，做高速响应queriable存储（其实是cache）  
+nvm 
+
 ## 非结构化对象存储
 s3实现原理
+
+## 搜索
+Pbyte  
+QPS 7B  
+TPS 10M  
+
+## 时间序列
+TPS 10M
+
+## 图
 
 ## 列式存储
 Vertica  
@@ -242,15 +270,16 @@ Greenplum
 Redshift 做海量数据queriable存储  
 
 ## 列族存储
-HBase 做scan more， get less 存储  
+Pbyte+
+TPS 10M+
+10K+节点，n 100集群，HBase 做scan more， get less 存储  
 DynamoDB/Cassandra 做get more，scan less存储  
-HIVE  
+HIVE   
 
-## 全内存
-memcache 仅仅作为cache  
-redis  
-内存数据库，做高速响应queriable存储（其实是cache）  
-nvm  
+避免join  
+大多数据1对多  
+文档内查询弱  
+产品mongodb  
 
 ## 经典行式存储
 get少，scan少，低延迟
@@ -258,13 +287,9 @@ get少，scan少，低延迟
 ### 关系模型
 依赖多表join  
 单表10M~100M量级？  
-产品mysql, oracle  
-
-### 文档模型
-避免join  
-大多数据1对多  
-文档内查询弱  
-产品mongodb  
+总库100Gbyte
+QPS 100K+
+产品mysql, oracle 
 
 ### mysql分库分表中间件
 单表5M，分表数=ceiling(N / (RDS 实例数 * 8) / 5,000,000)  
@@ -294,6 +319,13 @@ Cobar属于阿里B2B事业群，始于2008年，在阿里服役3年多，接管3
 [跨时代的分布式数据库 – 阿里云DRDS详解
 ](https://www.csdn.net/article/a/2015-08-28/15827676)
 
+# HA
+
+|单机房|双机房|三机房|
+| ---- | ---- | ---- |
+|主从异步复制|主从半同步复制|主从RAFT强同步（金融级）|
+
+
 # TODO
 [cmu 15-721](http://15721.courses.cs.cmu.edu/spring2017/schedule.html)  
 [cmu pavlo](http://www.cs.cmu.edu/~pavlo/datasets/index.html)  
@@ -310,11 +342,9 @@ https://fgiesen.wordpress.com/category/papers/
 http://blog.yufeng.info/  
 
 Xpress， 解LP MIP  
-Hadoop MapReduce，Spark 做海量数据批处  
 Storm/trident，做实时分布式消息处理   
 Flume, 海量数据收集with high availability  
-Hive/SparkSQL，做大数据在线分析   
-专业数据库 ap 时间序列 文档 图表 数据处理工具 hadoop spark flink  
+图表 数据处理工具 hadoop spark flink  
 
 [SIGMOD](https://dl.acm.org/event.cfm?id=RE227&tab=pubs)  
 [VLDB](http://vldb.org/pvldb)  
