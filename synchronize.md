@@ -308,6 +308,11 @@ ConcurrentHashMap
 - 读是否要加锁
 - 迭代器的一致性
 
+check-then-act  
+compare-and-swap  
+test-and-set  
+read-modify-write  
+
 [History of Computing Project](http://www.thocp.net/)
 https://www.cs.cmu.edu/~213/schedule.html  
 https://www.multicians.org/

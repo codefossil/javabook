@@ -117,4 +117,5 @@ SQS，对性能无太大要求时，做简单队列, availability超好
 无状态服务器  
 分布式队列  
 https://simplicable.com/new/coding-principles  
-https://about.gitlab.com/handbook/
+https://about.gitlab.com/handbook/  
+https://en.wikipedia.org/wiki/List_of_software_development_philosophies
