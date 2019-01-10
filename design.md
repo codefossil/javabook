@@ -112,6 +112,15 @@ Flume vs kafka(HA)
 # 问题分治还是工作分治
 creator driven  
 
+# Be Zara, not Foxconn
+从效率模式->快速响应式
+https://firstround.com/review/Responsiveness-New-Efficiency/
+
 https://simplicable.com/new/coding-principles  
 https://about.gitlab.com/handbook/  
 https://en.wikipedia.org/wiki/List_of_software_development_philosophies
+http://blog.vgod.tw/
+https://blog.youxu.info/
+http://blog.54chen.com/
+http://www.yankay.com
+http://www.valleytalk.org

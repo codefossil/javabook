@@ -304,6 +304,9 @@ get少，scan少，低延迟
 QPS 100K+
 产品mysql, oracle 
 
+http://mysql.rjweb.org/doc.php/limits
+https://dev.mysql.com/doc/mysql-reslimits-excerpt/5.6/en/limits.html
+
 ### mysql分库分表中间件
 单表5M，分表数=ceiling(N / (RDS 实例数 * 8) / 5,000,000)  
 N=100M行数据量
