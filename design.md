@@ -109,9 +109,8 @@ https://lethain.com/digg-v4-architecture-process/
 
 Flume vs kafka(HA)  
 
-# 分治问题还是分配工作
+# 问题分治还是工作分治
 creator driven  
-
 
 https://simplicable.com/new/coding-principles  
 https://about.gitlab.com/handbook/  
