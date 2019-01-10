@@ -150,6 +150,13 @@ https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt
 |--|--|--|--|--|
 |InnoDB|MV+2PL|Delta|VACUUM||
 
+### 死锁检测
+确定性
+deterministic concurrency control  
+view serialization的条件是什么?  
+死锁、SGT闭环  
+DAG Directed acyclic graph
+
 [cmu 15-445/645](https://15445.courses.cs.cmu.edu/fall2018/schedule.html)  
 [ddia](https://book.douban.com/subject/26197294/)  
 [2pl](https://en.wikipedia.org/wiki/Two-phase_locking)  
@@ -164,13 +171,12 @@ https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt
 |--|--|--|--|--|--|--|
 |002|001|T1|update|A|1|2|
 
-## 确定性
-deterministic concurrency control  
-view serialization的条件是什么?  
-死锁、SGT闭环  
-DAG Directed acyclic graph  
-
 # 数据建模和SQL
+https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
+https://blog.sqlizer.io/posts/sql-43/
+https://en.wikipedia.org/wiki/Relational_algebra
+https://en.wikipedia.org/wiki/Tuple_relational_calculus
+https://blog.codinghorror.com/maybe-normalizing-isnt-normal/
 内联/外联/笛卡尔乘积  
 union/union all区别  
 left join  
@@ -230,20 +236,27 @@ materialization
 vectorized  
 地理位置查询/多维查询
 
-
-# 批处理
+# 批处理/离线分析
 Hadoop MR, Spark实现原理
 
-# 在线分析
+# 在线实时分析
 Hive/SparkSQL
-
-# 离线分析
+flink
 
 # 存储引擎
+KTPS
+MTPS
+
 数据访问模式
+[digg v4](https://knowyourmeme.com/memes/events/digg-v4)
+https://www.memsql.com/blog/why-nosql-databases-wrong-tool-for-modern-application/
+https://dzone.com/articles/nosql-vs-sql-differences-explained
+https://www.gartner.com/doc/reprints?id=1-5N2H2SM&ct=181024&st=sb
+[don't use mongodb](https://news.ycombinator.com/item?id=3202081)
 
 ## 全内存
-QPS (单机100K+~集群1M+)
+视频/答题/账单
+QPS (单机100K+集群1M+)  
 RT<1ms
 GB~Tbyte(集群)
 memcache 仅仅作为cache  

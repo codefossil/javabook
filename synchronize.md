@@ -1,3 +1,7 @@
+> A colleague provided this amusing anecodote: he had been involved in the testing of an expensive and complex application that managed its work via a tunable thread pool. After the system was complete, testing showed that the optimal number of threads for the pool was . . . 1. This should have been obvious from the outset; the target system was a single-CPU system and the application was almost entirely CPU-bound
+
+
+
 # 线程同步/并发原语
 ## cpu缓存
 ```cpp
@@ -195,7 +199,7 @@ http://www.cis.upenn.edu/group/systems/slides/SystemsLunchSept09_Threads.pdf
 
 # 并行的限制
 * Amdahl定律
-* Gustafson定律
+* Gustafson定律 
 
 http://blog.sina.com.cn/s/articlelist_1685243084_7_1.html
 https://groups.csail.mit.edu/cag/ps3/schedule.shtml

@@ -8,6 +8,10 @@ collection.sort实现
 并查集
 skip list
 
+Xpress， 解LP MIP
+大数据算法
+性能指标体系
+
 http://cs-www.cs.yale.edu/homes/aspnes/classes/223/notes.html
 [theory](https://en.wikipedia.org/wiki/Computational_complexity_theory)
 http://www.cs.cmu.edu/~./adamchik/15-211/index.html
@@ -18,3 +22,5 @@ https://cseweb.ucsd.edu/classes/sp99/cse221/
 https://visualgo.net/en
 https://web.stanford.edu/class/cs97si/
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-851-advanced-data-structures-spring-2012/calendar-and-notes/
+
+https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_computer_science

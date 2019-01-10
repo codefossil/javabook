@@ -92,9 +92,14 @@ If it ain't broke, don't fix it.
 
 how software evolution
 
-
-
+# 写诗还是写文档
 瀑布->Agile->DevOps演变  
+DDD/TDD/BDD/CQRS/DCI/
+microservice/SOA/Lambda Architecture
+OOP/FP
+akka/reactive
+https://lethain.com/digg-v4-architecture-process/
+
 规模估算  
 大规模用户  
 大数据量  
@@ -104,18 +109,10 @@ how software evolution
 
 Flume vs kafka(HA)  
 
+# 分治问题还是分配工作
 creator driven  
-DDD/TDD/BDD/microservice/SOA/CQRS/DCI/Lambda Architecture/Functional Programming
 
-社区类服务架构、云服务架构、搜索架构、电商服务架构、O2O
-发号器、设计 feed 系统、设计缓存系统、设计推荐系统、登录系统、抢票系统  
-Xpress， 解LP MIP  
 
-Kafka/Kinesis，分布式队列，分布式数据收集  
-SQS，对性能无太大要求时，做简单队列, availability超好  
-
-无状态服务器  
-分布式队列  
 https://simplicable.com/new/coding-principles  
 https://about.gitlab.com/handbook/  
 https://en.wikipedia.org/wiki/List_of_software_development_philosophies
