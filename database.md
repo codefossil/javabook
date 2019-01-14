@@ -253,6 +253,7 @@ https://www.memsql.com/blog/why-nosql-databases-wrong-tool-for-modern-applicatio
 https://dzone.com/articles/nosql-vs-sql-differences-explained
 https://www.gartner.com/doc/reprints?id=1-5N2H2SM&ct=181024&st=sb
 [don't use mongodb](https://news.ycombinator.com/item?id=3202081)
+http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/
 
 ## 全内存
 视频/答题/账单
@@ -357,10 +358,16 @@ http://www.redbook.io/
 https://fgiesen.wordpress.com/category/papers/  
 http://blog.yufeng.info/  
 
-Xpress， 解LP MIP  
+https://qw4990.gitbooks.io/nyadb/content/index.html
+
+# 面向TPS
 Storm/trident，做实时分布式消息处理   
 Flume, 海量数据收集with high availability  
 图表 数据处理工具 hadoop spark flink  
+https://sites.google.com/a/brown.edu/ugur-cetintemel/
+https://data1030.github.io/
+https://www.linkedin.com/pulse/big-data-velocity-plain-english-john-ryan/
+https://www.allthingsdistributed.com/2018/06/purpose-built-databases-in-aws.html
 
 [SIGMOD](https://dl.acm.org/event.cfm?id=RE227&tab=pubs)  
 [VLDB](http://vldb.org/pvldb)  

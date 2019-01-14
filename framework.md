@@ -63,6 +63,8 @@ SQS，对性能无太大要求时，做简单队列, availability超好
 
 ## 大数据分析
 
+http://www.voidcn.com/article/p-biggriil-bhz.html
+
 webhook
 http://progrium.com/blog/2007/05/03/web-hooks-to-revolutionize-the-web/
 

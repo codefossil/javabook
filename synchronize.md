@@ -1,6 +1,41 @@
-> A colleague provided this amusing anecodote: he had been involved in the testing of an expensive and complex application that managed its work via a tunable thread pool. After the system was complete, testing showed that the optimal number of threads for the pool was . . . 1. This should have been obvious from the outset; the target system was a single-CPU system and the application was almost entirely CPU-bound
+*** Design of concurrent systems often entails finding reliable techniques for coordinating their execution, data exchange, memory allocation, and execution scheduling to minimize response time and maximise throughput.
 
 
+
+# shared memory
+## barrier
+
+https://en.wikipedia.org/wiki/Concurrency_pattern
+
+http://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html
+https://emeryberger.com/teaching/grad-systems/
+https://cacm.acm.org/magazines/2015/6/187316-turing-lecture-the-computer-science-of-concurrency
+https://en.wikipedia.org/wiki/Out-of-order_execution
+
+https://courses.physics.illinois.edu/cs533/sp2018/
+http://web.mit.edu/6.173/
+http://homepages.math.uic.edu/~jan/mcs572/
+http://web.stanford.edu/~ouster/cgi-bin/cs140-spring14/lectures.php
+https://github.com/angrave/SystemProgramming/wiki
+https://learn.saylor.org/course/resources.php?id=94
+https://pdos.csail.mit.edu/6.828/2018/schedule.html
+https://www.scss.tcd.ie/~jones/CS4021/
+http://www.doc88.com/p-6098166737073.html
+https://dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html
+https://www.eecs.wsu.edu/~hauser/teaching/Concurrent-S10/lectures/calendar.html
+https://en.wikipedia.org/wiki/Concurrency_pattern
+https://en.wikipedia.org/wiki/Concurrency_(computer_science)
+https://en.wikipedia.org/wiki/Java_concurrency
+https://en.wikipedia.org/wiki/Java_collections_framework
+https://www.csd.uoc.gr/~hy486/old_websites/2011_2012/material.html
+http://www.scs.stanford.edu/nyu/04fa/
+http://web.mit.edu/6.005/www/fa16/
+http://pages.cs.wisc.edu/~bart/537/lecturenotes/titlepage.html
+
+https://en.wikipedia.org/wiki/List_of_important_publications_in_concurrent,_parallel,_and_distributed_computing
+https://github.com/papers-we-love/papers-we-love/tree/master/concurrency
+https://cis.temple.edu/~ingargio/cis307/readings/
+https://bryanpendleton.blogspot.com/2015/06/weekend-reading-list.html
 
 # 线程同步/并发原语
 ## cpu缓存
@@ -198,6 +233,8 @@ http://www.cis.upenn.edu/group/systems/slides/SystemsLunchSept09_Threads.pdf
 [why pthread](https://computing.llnl.gov/tutorials/pthreads/#WhyPthreads)
 
 # 并行的限制
+> A colleague provided this amusing anecodote: he had been involved in the testing of an expensive and complex application that managed its work via a tunable thread pool. After the system was complete, testing showed that the optimal number of threads for the pool was . . . 1. This should have been obvious from the outset; the target system was a single-CPU system and the application was almost entirely CPU-bound
+
 * Amdahl定律
 * Gustafson定律 
 
