@@ -371,3 +371,4 @@ https://www.allthingsdistributed.com/2018/06/purpose-built-databases-in-aws.html
 
 [SIGMOD](https://dl.acm.org/event.cfm?id=RE227&tab=pubs)  
 [VLDB](http://vldb.org/pvldb)  
+[Momjian-PostgreSQL](https://momjian.us/main/faq.html)
