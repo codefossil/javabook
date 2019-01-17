@@ -1,13 +1,37 @@
+# 数据库查询之旅
+> Performance is all about code path
+
+30个列，总数50M，300条/用户，2个大字段总共2K，总长度250byte/记录  
+S1一张表，S2主表(90%) + 详情表(10%)  
+109Kbyte/索引  
+
+||S1|S2|备注|
+| -- | -- | -- | -- |
+|1个数据块记录详情|8K*0.8 div (2K+250) ≈ 3|8K*0.8 div 250 ≈ 26，8K*0.8/2K ≈ 3|
+|查询计划|
+|索引记录详情|8K*0.6 div 109≈45||索引空间利用率为60~70%|
+|索引查询|4+300/45 ≈ 11|
+|内存I/O|(300 div 3)* 1.5+11≈161|(300 div 26)* 1.5+11≈29|用户记录离散程度为1.5（？这里是否必要引入）|
+|磁盘访问I/O|161*(1-0.85)≈25|29*(1-0.85)≈5|缓存命中率为85%|
+|总耗时|161*0.01+25*7≈177ms|29*0.01+5*7≈36ms|内存I/O 0.01ms，磁盘I/O 7ms，不算排队时间|
+
+* 优化问题，把所有访问路径列出来
+* 各种cache/各种延迟影响很大
+
+[我对后端优化的一点想法](https://www.slideshare.net/jamestong/2012-12552732)  
+[5-minute rule](http://www.hpl.hp.com/techreports/tandem/TR-86.1.pdf)  
+[Think Clearly About Performance](https://method-r.com/wp-content/uploads/2018/07/TCAP-from-MOTD2.pdf)
+https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt.html
+
 # 并发控制
 
 > 事务是为了简化，解决数据库容错
 
-数据库并发保证数据不被破坏（A**`C`**ID）
 * 当2个并发同时写一个数据
 * 当读和写一个数据同时发生
 * 多个数据同时写
 
-> 事务的局限是数据库无法维护**并发不可变条件**
+> 数据库事务保证数据不被破坏（AID），其局限是数据库无法维护业务的**并发不可变条件**
 
 ## 弱隔离
 
@@ -126,11 +150,20 @@
 |--|--|--|--|--|
 |InnoDB|MV+2PL|Delta|VACUUM||
 
+### 死锁检测
+确定性
+deterministic concurrency control  
+view serialization的条件是什么?  
+死锁、SGT闭环  
+DAG Directed acyclic graph
+
 [cmu 15-445/645](https://15445.courses.cs.cmu.edu/fall2018/schedule.html)  
 [ddia](https://book.douban.com/subject/26197294/)  
 [2pl](https://en.wikipedia.org/wiki/Two-phase_locking)  
 
 # 日志与恢复
+
+## binlog
 
 ## WAL
 
@@ -138,13 +171,12 @@
 |--|--|--|--|--|--|--|
 |002|001|T1|update|A|1|2|
 
-## 确定性
-deterministic concurrency control  
-view serialization的条件是什么?  
-死锁、SGT闭环  
-DAG Directed acyclic graph  
-
 # 数据建模和SQL
+https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
+https://blog.sqlizer.io/posts/sql-43/
+https://en.wikipedia.org/wiki/Relational_algebra
+https://en.wikipedia.org/wiki/Tuple_relational_calculus
+https://blog.codinghorror.com/maybe-normalizing-isnt-normal/
 内联/外联/笛卡尔乘积  
 union/union all区别  
 left join  
@@ -163,13 +195,14 @@ JDBC
 Mybatis  
 
 # 索引
+> 不访问不必要的数据
 
 ## B树的深度问题
 * 假设sizeof(key)=sizeof(next_node)=4 byte，**节点最大占用m*(4+4)=8*m byte**
 * 假设sizeof(page)=4KB，m=4*1024/(4+4)=512，即**B树就是个512叉树**
 * 假如有10M行数据，**B树最大深度有log(512/2, 10M)=2.9006~=3**，avl的深度log(2, 10M)=23.25
 
-## B树和LSM
+## 写优化LSM
 
 |OP|B|LSM|
 | ---- | ---- | ---- |
@@ -179,16 +212,13 @@ Mybatis
 |删除||写操作+删除标记|
 
 设计考虑
-- LSM
-  ![](image/lsm.png)
-
+- 是否需要写优化
+![](image/lsm.png)
 - segment的大小和合并策略
   查询失效时，加速迭代查询
   高并发锁
-
-- B树
-  叶节点到底是存值`聚集索引`，还是文件偏移
-  写入是随机的
+  lsm如何保证迭代读取次数
+- B树叶节点到底是存值`聚集索引`，还是文件偏移
 
 ## 多列索引和R-tree
 复杂的条件查询通常会包含多列，普通的索引查询只能用到前缀匹配
@@ -198,20 +228,55 @@ Mybatis
 [SSTable](http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb/)  
 [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)  
 [浅谈MySQL的B树索引与索引优化](https://monkeysayhi.github.io/2018/03/06/%E6%B5%85%E8%B0%88MySQL%E7%9A%84B%E6%A0%91%E7%B4%A2%E5%BC%95%E4%B8%8E%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96/)  
+[Relational Database Index Design and the Optimizers](https://book.douban.com/subject/26419771/)  
 
 # 查询管理
 iterator/volcano  
 materialization  
 vectorized  
+地理位置查询/多维查询
 
-# 批处理
-Hadoop, Spark实现原理
+# 批处理/离线分析
+Hadoop MR, Spark实现原理
+
+# 在线实时分析
+Hive/SparkSQL
+flink
 
 # 存储引擎
+KTPS
+MTPS
+
 数据访问模式
+[digg v4](https://knowyourmeme.com/memes/events/digg-v4)
+https://www.memsql.com/blog/why-nosql-databases-wrong-tool-for-modern-application/
+https://dzone.com/articles/nosql-vs-sql-differences-explained
+https://www.gartner.com/doc/reprints?id=1-5N2H2SM&ct=181024&st=sb
+[don't use mongodb](https://news.ycombinator.com/item?id=3202081)
+http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/
+
+## 全内存
+视频/答题/账单
+QPS (单机100K+集群1M+)  
+RT<1ms
+GB~Tbyte(集群)
+memcache 仅仅作为cache  
+redis  
+内存数据库，做高速响应queriable存储（其实是cache）  
+nvm 
 
 ## 非结构化对象存储
 s3实现原理
+
+## 搜索
+Pbyte  
+QPS 7B  
+TPS 10M  
+
+## 时间序列
+TPS 10M
+
+## 图
 
 ## 列式存储
 Vertica  
@@ -219,15 +284,16 @@ Greenplum
 Redshift 做海量数据queriable存储  
 
 ## 列族存储
-HBase 做scan more， get less 存储  
+Pbyte+
+TPS 10M+
+10K+节点，n 100集群，HBase 做scan more， get less 存储  
 DynamoDB/Cassandra 做get more，scan less存储  
-HIVE  
+HIVE   
 
-## 全内存
-memcache 仅仅作为cache  
-redis  
-内存数据库，做高速响应queriable存储（其实是cache）  
-nvm  
+避免join  
+大多数据1对多  
+文档内查询弱  
+产品mongodb  
 
 ## 经典行式存储
 get少，scan少，低延迟
@@ -235,13 +301,12 @@ get少，scan少，低延迟
 ### 关系模型
 依赖多表join  
 单表10M~100M量级？  
-产品mysql, oracle  
+总库100Gbyte
+QPS 100K+
+产品mysql, oracle 
 
-### 文档模型
-避免join  
-大多数据1对多  
-文档内查询弱  
-产品mongodb  
+http://mysql.rjweb.org/doc.php/limits
+https://dev.mysql.com/doc/mysql-reslimits-excerpt/5.6/en/limits.html
 
 ### mysql分库分表中间件
 单表5M，分表数=ceiling(N / (RDS 实例数 * 8) / 5,000,000)  
@@ -271,6 +336,13 @@ Cobar属于阿里B2B事业群，始于2008年，在阿里服役3年多，接管3
 [跨时代的分布式数据库 – 阿里云DRDS详解
 ](https://www.csdn.net/article/a/2015-08-28/15827676)
 
+# HA
+
+|单机房|双机房|三机房|
+| ---- | ---- | ---- |
+|主从异步复制|主从半同步复制|主从RAFT强同步（金融级）|
+
+
 # TODO
 [cmu 15-721](http://15721.courses.cs.cmu.edu/spring2017/schedule.html)  
 [cmu pavlo](http://www.cs.cmu.edu/~pavlo/datasets/index.html)  
@@ -284,13 +356,19 @@ http://www.gpfeng.com/
 http://www.notedeep.com/note/38  
 http://www.redbook.io/  
 https://fgiesen.wordpress.com/category/papers/  
+http://blog.yufeng.info/  
 
-Xpress， 解LP MIP  
-Hadoop MapReduce，Spark 做海量数据批处  
+https://qw4990.gitbooks.io/nyadb/content/index.html
+
+# 面向TPS
 Storm/trident，做实时分布式消息处理   
 Flume, 海量数据收集with high availability  
-Hive/SparkSQL，做大数据在线分析   
-专业数据库 ap 时间序列 文档 图表 数据处理工具 hadoop spark flink  
+图表 数据处理工具 hadoop spark flink  
+https://sites.google.com/a/brown.edu/ugur-cetintemel/
+https://data1030.github.io/
+https://www.linkedin.com/pulse/big-data-velocity-plain-english-john-ryan/
+https://www.allthingsdistributed.com/2018/06/purpose-built-databases-in-aws.html
 
 [SIGMOD](https://dl.acm.org/event.cfm?id=RE227&tab=pubs)  
 [VLDB](http://vldb.org/pvldb)  
+[Momjian-PostgreSQL](https://momjian.us/main/faq.html)

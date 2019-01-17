@@ -1,3 +1,42 @@
+*** Design of concurrent systems often entails finding reliable techniques for coordinating their execution, data exchange, memory allocation, and execution scheduling to minimize response time and maximise throughput.
+
+
+
+# shared memory
+## barrier
+
+https://en.wikipedia.org/wiki/Concurrency_pattern
+
+http://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html
+https://emeryberger.com/teaching/grad-systems/
+https://cacm.acm.org/magazines/2015/6/187316-turing-lecture-the-computer-science-of-concurrency
+https://en.wikipedia.org/wiki/Out-of-order_execution
+
+https://courses.physics.illinois.edu/cs533/sp2018/
+http://web.mit.edu/6.173/
+http://homepages.math.uic.edu/~jan/mcs572/
+http://web.stanford.edu/~ouster/cgi-bin/cs140-spring14/lectures.php
+https://github.com/angrave/SystemProgramming/wiki
+https://learn.saylor.org/course/resources.php?id=94
+https://pdos.csail.mit.edu/6.828/2018/schedule.html
+https://www.scss.tcd.ie/~jones/CS4021/
+http://www.doc88.com/p-6098166737073.html
+https://dwheeler.com/secure-programs/Secure-Programs-HOWTO/index.html
+https://www.eecs.wsu.edu/~hauser/teaching/Concurrent-S10/lectures/calendar.html
+https://en.wikipedia.org/wiki/Concurrency_pattern
+https://en.wikipedia.org/wiki/Concurrency_(computer_science)
+https://en.wikipedia.org/wiki/Java_concurrency
+https://en.wikipedia.org/wiki/Java_collections_framework
+https://www.csd.uoc.gr/~hy486/old_websites/2011_2012/material.html
+http://www.scs.stanford.edu/nyu/04fa/
+http://web.mit.edu/6.005/www/fa16/
+http://pages.cs.wisc.edu/~bart/537/lecturenotes/titlepage.html
+
+https://en.wikipedia.org/wiki/List_of_important_publications_in_concurrent,_parallel,_and_distributed_computing
+https://github.com/papers-we-love/papers-we-love/tree/master/concurrency
+https://cis.temple.edu/~ingargio/cis307/readings/
+https://bryanpendleton.blogspot.com/2015/06/weekend-reading-list.html
+
 # 线程同步/并发原语
 ## cpu缓存
 ```cpp
@@ -136,6 +175,8 @@ https://www.ibm.com/developerworks/java/library/j-jtp06197/
 > 编程语言应该尽量避免同步安全性，过于复杂
 > 同步安全性，应该简单到直接注解对象用法就可以了，而不是像现在还要工程师自己ad-hoc
 
+# Immutable
+
 ## 悲观锁
 > 修改数据之前就独占
 
@@ -192,8 +233,10 @@ http://www.cis.upenn.edu/group/systems/slides/SystemsLunchSept09_Threads.pdf
 [why pthread](https://computing.llnl.gov/tutorials/pthreads/#WhyPthreads)
 
 # 并行的限制
+> A colleague provided this amusing anecodote: he had been involved in the testing of an expensive and complex application that managed its work via a tunable thread pool. After the system was complete, testing showed that the optimal number of threads for the pool was . . . 1. This should have been obvious from the outset; the target system was a single-CPU system and the application was almost entirely CPU-bound
+
 * Amdahl定律
-* Gustafson定律
+* Gustafson定律 
 
 http://blog.sina.com.cn/s/articlelist_1685243084_7_1.html
 https://groups.csail.mit.edu/cag/ps3/schedule.shtml
@@ -201,6 +244,8 @@ https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-mu
 https://steve-yegge.blogspot.com/2006/03/moores-law-is-crap.html
 https://www.extremetech.com/extreme/203031-moores-law-at-50-its-past-and-its-future
 http://www.cs.cmu.edu/~418/schedule.html
+
+http://www.newsmth.net/nForum/#!article/CSArch/43360
 
 # 轻量级/thin-lock
 >线程通过spin检查（减少fat-lock用户和内核态的切换）
@@ -304,6 +349,11 @@ ConcurrentHashMap
 - 读是否要加锁
 - 迭代器的一致性
 
+check-then-act  
+compare-and-swap  
+test-and-set  
+read-modify-write  
+
 [History of Computing Project](http://www.thocp.net/)
 https://www.cs.cmu.edu/~213/schedule.html  
 https://www.multicians.org/
@@ -312,3 +362,9 @@ https://www.udacity.com/wiki/ud156-readings
 https://cseweb.ucsd.edu/classes/wi01/cse221/
 https://www.cc.gatech.edu/~rama/CS6210-External/class-schedule.pdf
 https://www.cc.gatech.edu/classes/AY2010/cs4210_fall/#lectures
+http://www.javapractices.com/topic/TopicAction.do?Id=248
+http://gee.cs.oswego.edu/dl/concurrency-interest/index.html
+https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/package-summary.html
+http://www.cs.cmu.edu/~418/schedule.html
+http://csg.csail.mit.edu/6.823/lecnotes.html
+

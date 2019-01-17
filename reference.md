@@ -23,10 +23,12 @@
 * [guava](https://github.com/google/guava)
 
 # 其他
-* [Turing award](https://amturing.acm.org/)
+* [TURING award list](https://amturing.acm.org/byyear.cfm)
+* [Dijkstra prize list](www.podc.org/dijkstra)
 * [Internet-arch](https://trac.tools.ietf.org/html/rfc3439)
 * [taobao openapi](http://open.taobao.com/api.htm?cid=1&docId=4&docType=2#)
 * [淘宝数据库内核](http://mysql.taobao.org/monthly/)
+* [microsoft-academic](https://academic.microsoft.com/)
 * [微软系统组](https://www.microsoft.com/en-us/research/research-area/systems-and-networking/)
 * [tiobe](https://www.tiobe.com/tiobe-index/)
 * [db-rank](https://db-engines.com/en/ranking)
@@ -41,3 +43,4 @@
 * [kaggle](http://www.kaggle.com)
 * [leetcode](https://leetcode.com/explore/)
 * [moc](https://ocw.mit.edu/courses/find-by-topic/)
+* [cs-list]https://en.wikipedia.org/wiki/List_of_important_publications_in_computer_science#Concurrent,_parallel,_and_distributed_computing

@@ -31,6 +31,7 @@ https://medium.com/@jason.goodwin/the-rule-of-least-power-in-modern-technology-a
 [Atwood's Law](https://blog.codinghorror.com/the-principle-of-least-power/)
 [Architectural and philosophical points](https://www.w3.org/DesignIssues/)
 [Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)
+[方法论、方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)
 http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html
 [PEP 20](https://www.python.org/dev/peps/pep-0020/)
 
@@ -63,44 +64,63 @@ https://www.w3.org/DesignIssues/
 https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/  
 https://www.ibm.com/developerworks/cn/rational/r-4p1-view/index.html  
 
+# 容量规划，扩容和缩容  
+
+[排队论及其应用浅析](https://www.slideshare.net/frogd/ss-27959518)
+
+
+第一原理
+沉默成本（可用性）  
+机会成本（兼容性）  
+边际成本（扩展性）  
 控制复杂度  
 单一职责原则  
 开放封闭原则  
 里氏替换原则  
 最少知识原则  
 接口隔离原则  
-依赖倒置原则
-
+依赖倒置原则  
+KISS – Keep It Simple Stupid
+Do not reinvent the wheel.
 CQRS and event sourcing  
+You Aren't Gonna Need It.
+If it ain't broke, don't fix it.
+飞轮效应
 
 常用的设计模式  
 类似AOP，是设计模式能够解决的吗
 
 how software evolution
 
-# Immutable
-
+# 写诗还是写文档
 瀑布->Agile->DevOps演变  
+DDD/TDD/BDD/CQRS/DCI/
+microservice/SOA/Lambda Architecture
+OOP/FP
+akka/reactive
+https://lethain.com/digg-v4-architecture-process/
+
 规模估算  
 大规模用户  
 大数据量  
 流量切换 sla  
 服务依赖/状态/降级  
 发布和灰度  
-容量规划，扩容和缩容  
+
 Flume vs kafka(HA)  
 
+# 问题分治还是工作分治
 creator driven  
-DDD/TDD/BDD/microservice/SOA/CQRS/DCI/Lambda Architecture/Functional Programming
 
-社区类服务架构、云服务架构、搜索架构、电商服务架构、O2O
-发号器、设计 feed 系统、设计缓存系统、设计推荐系统、登录系统、抢票系统  
-Xpress， 解LP MIP  
+# Be Zara, not Foxconn
+从效率模式->快速响应式
+https://firstround.com/review/Responsiveness-New-Efficiency/
 
-Kafka/Kinesis，分布式队列，分布式数据收集  
-SQS，对性能无太大要求时，做简单队列, availability超好  
-
-无状态服务器  
-分布式队列  
 https://simplicable.com/new/coding-principles  
-https://about.gitlab.com/handbook/
+https://about.gitlab.com/handbook/  
+https://en.wikipedia.org/wiki/List_of_software_development_philosophies
+http://blog.vgod.tw/
+https://blog.youxu.info/
+http://blog.54chen.com/
+http://www.yankay.com
+http://www.valleytalk.org
