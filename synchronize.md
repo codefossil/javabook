@@ -1,5 +1,7 @@
 > Design of concurrent systems often entails finding reliable techniques for coordinating their execution, data exchange, memory allocation, and execution scheduling to minimize response time and maximise throughput.
 
+*Performance and scalability are sensitive to platform factors such as CPU, processor count, cache size, and JVM characteristics, all of which can change over time* 
+
 # 基本问题
 
 [Solution of a Problem in Concurrent Programming Control](http://www.faculty.idc.ac.il/gadi/MyPapers/2008T-mutex.pdf)

@@ -11,6 +11,9 @@ skip list
 Xpress， 解LP MIP
 大数据算法
 性能指标体系
+[Sedgewick](https://www.cs.princeton.edu/~rs/)
+https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+http://jeffe.cs.illinois.edu/teaching/algorithms/
 http://cs.rochester.edu/u/scott/courses/162/schedule.shtml
 http://cs-www.cs.yale.edu/homes/aspnes/classes/223/notes.html
 [theory](https://en.wikipedia.org/wiki/Computational_complexity_theory)
