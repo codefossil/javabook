@@ -18,13 +18,13 @@ fairness
 [Co-operating sequential processes](https://pure.tue.nl/ws/files/4279816/344354178746665.pdf)  
 
 
-# 内存模型和一致性协议
+# 顺序一致性
+[How to Make a Correct Multiprocess Program Execute Correctly on a Multiporcessor, 1979](https://people.eecs.berkeley.edu/~culler/cs252-s03/lamport93how.pdf)  
+[Linearizability, 1990](https://cs.brown.edu/~mph/HerlihyW90/p463-herlihy.pdf)  
 
-[jsr-133](http://www.cs.umd.edu/~pugh/java/memoryModel/jsr133.pdf)
-[Shared Memory](http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-95-7.pdf)
-[The Java Memory Model](https://dl.acm.org/citation.cfm?id=1040336)
-
-# 并发编程
+[JSR133](http://www.cs.umd.edu/~pugh/java/memoryModel/jsr133.pdf)  
+[Shared Memory](http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-95-7.pdf)  
+[The Java Memory Model](https://dl.acm.org/citation.cfm?id=1040336)  
 
 https://stackoverflow.com/questions/6319146/c11-introduced-a-standardized-memory-model-what-does-it-mean-and-how-is-it-g
 https://brooker.co.za/blog/
@@ -34,11 +34,6 @@ https://bartoszmilewski.com/2008/12/01/c-atomics-and-memory-ordering/
 https://www.theregister.co.uk/2011/06/11/herb_sutter_next_c_plus_plus?page=1
 https://stackoverflow.com/questions/44374614/vc-volatilems-on-x86
 
-# 线程与锁
-
-[Wait-free synchronization](https://cs.brown.edu/~mph/Herlihy91/p124-herlihy.pdf)
-[Algorithms for scalable synchronization on shared-memory multiprocessors](https://dl.acm.org/citation.cfm?doid=103727.103729)
-
 # 并发模型
 ## standard model
 ## two-arrow model
@@ -47,7 +42,7 @@ compare-and-swap
 test-and-set  
 read-modify-write  
 
-# shared memory
+# 共享内存
 ## barrier
 http://cs.brown.edu/courses/cs176/lectures.shtml
 https://en.wikipedia.org/wiki/Concurrency_pattern
@@ -55,6 +50,11 @@ https://en.wikipedia.org/wiki/Concurrency_pattern
 http://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html
 https://emeryberger.com/teaching/grad-systems/
 https://en.wikipedia.org/wiki/Out-of-order_execution
+
+## semaphore
+
+[Wait-free synchronization](https://cs.brown.edu/~mph/Herlihy91/p124-herlihy.pdf)  
+[Algorithms for scalable synchronization on shared-memory multiprocessors](https://dl.acm.org/citation.cfm?doid=103727.103729)  
 
 https://courses.physics.illinois.edu/cs533/sp2018/
 http://web.mit.edu/6.173/
