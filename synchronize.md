@@ -3,12 +3,18 @@
 *Performance and scalability are sensitive to platform factors such as CPU, processor count, cache size, and JVM characteristics, all of which can change over time* 
 
 # 基本问题
+[Concurrency-Early](https://cacm.acm.org/magazines/2015/6/187316-turing-lecture-the-computer-science-of-concurrency)  
 
-[Solution of a Problem in Concurrent Programming Control](http://www.faculty.idc.ac.il/gadi/MyPapers/2008T-mutex.pdf)
-check-then-act  
-compare-and-swap  
-test-and-set  
-read-modify-write  
+[Solution of a Problem in Concurrent Programming Control](http://www.faculty.idc.ac.il/gadi/MyPapers/2008T-mutex.pdf)  
+[A new solution of Dijkstra's concurrent programming problem](https://lamport.azurewebsites.net/pubs/bakery.pdf)  
+
+[Recognizing Safety and Liveness](https://www.cs.cornell.edu/fbs/publications/RecSafeLive.pdf)  
+
+[Co-operating sequential processes](https://pure.tue.nl/ws/files/4279816/344354178746665.pdf)  
+
+fairness  
+
+##  
 
 # 内存模型和一致性协议
 
@@ -30,7 +36,12 @@ https://stackoverflow.com/questions/44374614/vc-volatilems-on-x86
 [Algorithms for scalable synchronization on shared-memory multiprocessors](https://dl.acm.org/citation.cfm?doid=103727.103729)
 
 # 并发模型
-
+## standard model
+## two-arrow model
+check-then-act  
+compare-and-swap  
+test-and-set  
+read-modify-write  
 
 # shared memory
 ## barrier
@@ -39,7 +50,6 @@ https://en.wikipedia.org/wiki/Concurrency_pattern
 
 http://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html
 https://emeryberger.com/teaching/grad-systems/
-https://cacm.acm.org/magazines/2015/6/187316-turing-lecture-the-computer-science-of-concurrency
 https://en.wikipedia.org/wiki/Out-of-order_execution
 
 https://courses.physics.illinois.edu/cs533/sp2018/
@@ -251,7 +261,7 @@ https://www.ibm.com/developerworks/java/library/j-jtp06197/
 > 编程语言应该尽量避免同步安全性，过于复杂
 > 同步安全性，应该简单到直接注解对象用法就可以了，而不是像现在还要工程师自己ad-hoc
 
-# Immutable
+
 
 ## 悲观锁
 > 修改数据之前就独占
