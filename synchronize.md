@@ -4,23 +4,27 @@
 
 # 基本问题
 [Concurrency-Early](https://cacm.acm.org/magazines/2015/6/187316-turing-lecture-the-computer-science-of-concurrency)  
+[Turing2013-Lamport](https://amturing.acm.org/award_winners/lamport_1205376.cfm)
 
-[Solution of a Problem in Concurrent Programming Control](http://www.faculty.idc.ac.il/gadi/MyPapers/2008T-mutex.pdf)  
-[A new solution of Dijkstra's concurrent programming problem](https://lamport.azurewebsites.net/pubs/bakery.pdf)  
+# 排他互斥
+[Solution of a Problem in Concurrent Programming Control, 1965](http://www.faculty.idc.ac.il/gadi/MyPapers/2008T-mutex.pdf)  
+[Bakery, 1974](https://lamport.azurewebsites.net/pubs/bakery.pdf)  
 
 [Recognizing Safety and Liveness](https://www.cs.cornell.edu/fbs/publications/RecSafeLive.pdf)  
 
-[Co-operating sequential processes](https://pure.tue.nl/ws/files/4279816/344354178746665.pdf)  
-
 fairness  
 
-##  
+# 生产者-消费者同步
+[Co-operating sequential processes](https://pure.tue.nl/ws/files/4279816/344354178746665.pdf)  
+
 
 # 内存模型和一致性协议
 
 [jsr-133](http://www.cs.umd.edu/~pugh/java/memoryModel/jsr133.pdf)
 [Shared Memory](http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-95-7.pdf)
 [The Java Memory Model](https://dl.acm.org/citation.cfm?id=1040336)
+
+# 并发编程
 
 https://stackoverflow.com/questions/6319146/c11-introduced-a-standardized-memory-model-what-does-it-mean-and-how-is-it-g
 https://brooker.co.za/blog/
