@@ -14,13 +14,13 @@
 
 fairness  
 
-##  
-
 # 内存模型和一致性协议
 
 [jsr-133](http://www.cs.umd.edu/~pugh/java/memoryModel/jsr133.pdf)
 [Shared Memory](http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-95-7.pdf)
 [The Java Memory Model](https://dl.acm.org/citation.cfm?id=1040336)
+
+# 形式化和验证
 
 https://stackoverflow.com/questions/6319146/c11-introduced-a-standardized-memory-model-what-does-it-mean-and-how-is-it-g
 https://brooker.co.za/blog/
