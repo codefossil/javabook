@@ -183,3 +183,20 @@ transient
 
 
 https://en.wikipedia.org/wiki/Java_version_history
+
+# 反汇编
+```cpp
+//share/tools/hsdis/hsdis.h
+void* decode_instructions(void* start, void* end,..
+```
+
+>在jre中，加载反汇编dll+jitwatch即可查看运行时的汇编代码。
+
+注意：简单的方法无法不足以触发JIT
+java -XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -version
+
+https://github.com/AdoptOpenJDK/jitwatch  
+https://sourceforge.net/projects/fcml  
+https://briangordon.github.io/  
+http://gee.cs.oswego.edu/dl/  
+http://g.oswego.edu/dl/jmm/cookbook.html  

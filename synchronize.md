@@ -3,7 +3,7 @@
 *Performance and scalability are sensitive to platform factors such as CPU, processor count, cache size, and JVM characteristics, all of which can change over time* 
 
 # 基本问题
-[Concurrency-Early](https://cacm.acm.org/magazines/2015/6/187316-turing-lecture-the-computer-science-of-concurrency)  
+[Concurrency-Early](http://cncc.bingj.com/cache.aspx?q=turing-lecture-the-computer-science-of-concurrency&d=4816567142126678&mkt=en-US&setlang=en-US&w=zm1S2Bj9n1OOUjUWX536fFC20hviKyz_)  
 [Turing2013-Lamport](https://amturing.acm.org/award_winners/lamport_1205376.cfm)
 
 # 排他互斥
@@ -12,10 +12,19 @@
 
 [Recognizing Safety and Liveness](https://www.cs.cornell.edu/fbs/publications/RecSafeLive.pdf)  
 
+[Equivalence of the Arbiter, the Synchronizer, the Latch, and the Inertial Delay, 1983](https://www.researchgate.net/publication/3048280_Equivalence_of_the_Arbiter_the_Synchronizer_the_Latch_and_the_Inertial_Delay)  
+
 fairness  
+check-then-act  
+compare-and-swap  
+test-and-set  
+read-modify-write  
 
 # 生产者-消费者同步
 [Co-operating sequential processes, 1968](https://pure.tue.nl/ws/files/4279816/344354178746665.pdf)  
+
+[Wait-free synchronization, 1991](https://cs.brown.edu/~mph/Herlihy91/p124-herlihy.pdf)  
+[Algorithms for scalable synchronization on shared-memory multiprocessors](https://dl.acm.org/citation.cfm?doid=103727.103729)  
 
 # 顺序一致性
 [How to Make a Correct Multiprocess Program Execute Correctly on a Multiporcessor, 1979](https://people.eecs.berkeley.edu/~culler/cs252-s03/lamport93how.pdf)  
@@ -28,7 +37,92 @@ fairness
 # 形式化和验证
 [The temporal logic of programs, 1976](http://dimap.ufrn.br/~richard/pubs/dim0436/papers/pnueli_temporal_1977.pdf)  
 
+# 并发编程
+[CPIJ, 1999](https://book.douban.com/subject/1440218/)  
+[Software and the Concurrency Revolution, 2005](https://dl.acm.org/citation.cfm?id=1095421)  
+[Multiprogramming, 1968](https://link.springer.com/content/pdf/10.1007%2F978-1-4757-3510-9_12.pdf)  
+[JCIP, 2006](https://book.douban.com/subject/10484692/)  
 
+[Thread programming, 1989](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/birrell%20paper%2003.pdf)  
+[HYDRA, 1974](http://research.cs.wisc.edu/areas/os/Qual/papers/hydra.pdf)  
+[Threads bad, 1995](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/Conc-4/index.html)  
+[Event bad, 2003](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/Even-2/index.html)  
+
+[Actor, 2016](http://dist-prog-book.com/chapter/3/message-passing.html)
+
+## 计算模型
+[Timesharing, 1962](http://www.eecs.harvard.edu/~margo/cs261/papers/corbato62.pdf)  
+[The Working Set Model for Program Behavior, 1968](https://www.cs.rutgers.edu/~zz124/cs671_fall2013/lectures/fan_workingset.pdf)  
+[NPTL, 2002](https://www.akkadia.org/drepper/nptl-design.pdf)  
+[Task, 1996](http://www.evanjones.ca/software/threading-linus-msg.html)  
+[Transactional memory, 1999](http://cs.brown.edu/~mph/HerlihyM93/herlihy93transactional.pdf)  
+
+## 性能
+[Imbench, 1996](http://mcvoy.com/lm/bitmover/lmbench/lmbench-usenix.pdf) ，线程切换 = 状态转换(~n us) + `cache missing`(~n 10ns)   
+https://news.ycombinator.com/item?id=13930305  
+[Why pthread](https://computing.llnl.gov/tutorials/pthreads/#WhyPthreads), fork(~n 100ns) = ~10x pthread_create(~n 10ns)  
+
+[The Problem with Threads, 2006](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-1.pdf)  
+[Thin Locks, 1998](http://cseweb.ucsd.edu/classes/fa05/cse231/Hubble.pdf)  
+
+http://pages.cs.wisc.edu/~bart/736/f2017/paper1.html  
+https://www.cse.iitb.ac.in/~mythili/os/notes/notes-perf.txt
+
+**并行限制**
+[Amdahl's law in the Multicore Era, 2008](http://www.eng.auburn.edu/~agrawvd/COURSE/E6270_Spr09/READ/Amdahls%20Law%20in%20Multicore%20Era.pdf)  
+[Gustafson's law, 1988](http://www.johngustafson.net/pubs/pub13/amdahl.htm) 
+
+## 执行框架
+[Java synchronizer, csjp04](http://gee.cs.oswego.edu/dl/papers/aqs.pdf)  
+[Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
+
+> todo  
+https://www.cs.ubc.ca/~norm/508/2009W1/readinglist.html  
+http://pages.cs.wisc.edu/~swift/classes/cs736-sp07/reading-list.html
+
+http://www.scs.stanford.edu/17sp-cs240/syllabus/
+
+https://www.cs.rutgers.edu/~zz124/cs671_fall2013/
+http://blog.sina.com.cn/s/articlelist_1685243084_7_1.html
+https://groups.csail.mit.edu/cag/ps3/schedule.shtml
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-multicore-programming-primer-january-iap-2007/syllabus/
+https://steve-yegge.blogspot.com/2006/03/moores-law-is-crap.html
+https://www.extremetech.com/extreme/203031-moores-law-at-50-its-past-and-its-future
+http://www.cs.cmu.edu/~418/schedule.html
+
+http://www.newsmth.net/nForum/#!article/CSArch/43360）
+
+http://www.cs.cmu.edu/afs/cs/academic/class/15712-s99/www/
+https://www.cs.cmu.edu/~15712/syllabus.html
+https://www.cs.cmu.edu/~410/lecture.html
+http://www.eecs.harvard.edu/~margo/cs261/syllabus.html
+
+https://blog.tsunanet.net/2010/11/how-long-does-it-take-to-make-context.html  
+http://www.cis.upenn.edu/group/systems/slides/SystemsLunchSept09_Threads.pdf
+
+## 共享内存
+[Monitor, 1974](http://www.cs.ubc.ca/~norm/508/2009W1/summaries/monitors.pdf)  
+### barrier
+http://cs.brown.edu/courses/cs176/lectures.shtml
+https://en.wikipedia.org/wiki/Concurrency_pattern
+
+http://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html
+https://emeryberger.com/teaching/grad-systems/
+https://en.wikipedia.org/wiki/Out-of-order_execution
+
+虽然CAS由CPU保证，但整个CAS过程（取值、比较）需要消耗大概500个时钟周期（大概相当于500个普通指令），同步的算法优化大都用来减少CAS操作
+``` cpp
+//os_cpu/windows_x86/atomic_windows_x86.inline.hpp
+[lock] cmpxchg reg, reg/mem
+//This instruction is not supported on Intel processors earlier than the Intel486 processors.
+```
+
+locks
+condition variables
+semaphore
+latch
+死锁的排查方法
+high contention
 
 https://stackoverflow.com/questions/6319146/c11-introduced-a-standardized-memory-model-what-does-it-mean-and-how-is-it-g
 https://brooker.co.za/blog/
@@ -38,27 +132,8 @@ https://bartoszmilewski.com/2008/12/01/c-atomics-and-memory-ordering/
 https://www.theregister.co.uk/2011/06/11/herb_sutter_next_c_plus_plus?page=1
 https://stackoverflow.com/questions/44374614/vc-volatilems-on-x86
 
-# 并发模型
-## standard model
-## two-arrow model
-check-then-act  
-compare-and-swap  
-test-and-set  
-read-modify-write  
 
-# 共享内存
-## barrier
-http://cs.brown.edu/courses/cs176/lectures.shtml
-https://en.wikipedia.org/wiki/Concurrency_pattern
 
-http://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html
-https://emeryberger.com/teaching/grad-systems/
-https://en.wikipedia.org/wiki/Out-of-order_execution
-
-## semaphore
-
-[Wait-free synchronization, 1991](https://cs.brown.edu/~mph/Herlihy91/p124-herlihy.pdf)  
-[Algorithms for scalable synchronization on shared-memory multiprocessors](https://dl.acm.org/citation.cfm?doid=103727.103729)  
 
 https://courses.physics.illinois.edu/cs533/sp2018/
 http://web.mit.edu/6.173/
@@ -86,47 +161,6 @@ https://cis.temple.edu/~ingargio/cis307/readings/
 https://bryanpendleton.blogspot.com/2015/06/weekend-reading-list.html
 
 
-# 程序执行的模式
-- [x] 80%的程序都是低竞争
-- [x] 有那么一小部分是相同线程嵌套锁定
-
->Thin Locks: An Implementation of Synchronization for Java
-
-# context switch
-> CPU: 20x faster
-Main memory: 3x faster
-Context switch: about the same
-
-线程切换 = 状态转换(~n us) + `cache missing`(~n 10ns)
-
-http://www.cs.cmu.edu/afs/cs/academic/class/15712-s99/www/
-https://www.cs.cmu.edu/~15712/syllabus.html
-https://www.cs.cmu.edu/~410/lecture.html
-https://news.ycombinator.com/item?id=13930305  
-[mgbench](http://mcvoy.com/lm/bitmover/lmbench/lmbench-usenix.pdf)  
-https://blog.tsunanet.net/2010/11/how-long-does-it-take-to-make-context.html  
-http://www.cis.upenn.edu/group/systems/slides/SystemsLunchSept09_Threads.pdf
-
-# 创建进程
-> fork(~n 100ns) = ~10x pthread_create(~n 10ns)
-
-[why pthread](https://computing.llnl.gov/tutorials/pthreads/#WhyPthreads)
-
-# 并行的限制
-> A colleague provided this amusing anecodote: he had been involved in the testing of an expensive and complex application that managed its work via a tunable thread pool. After the system was complete, testing showed that the optimal number of threads for the pool was . . . 1. This should have been obvious from the outset; the target system was a single-CPU system and the application was almost entirely CPU-bound
-
-* Amdahl定律
-* Gustafson定律 
-
-http://blog.sina.com.cn/s/articlelist_1685243084_7_1.html
-https://groups.csail.mit.edu/cag/ps3/schedule.shtml
-https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-multicore-programming-primer-january-iap-2007/syllabus/
-https://steve-yegge.blogspot.com/2006/03/moores-law-is-crap.html
-https://www.extremetech.com/extreme/203031-moores-law-at-50-its-past-and-its-future
-http://www.cs.cmu.edu/~418/schedule.html
-
-http://www.newsmth.net/nForum/#!article/CSArch/43360
-
 
 
 http://www.cnblogs.com/xkfz007/archive/2012/10/08/2715163.html
@@ -152,8 +186,6 @@ http://www.cs.cmu.edu/~418/schedule.html
 http://csg.csail.mit.edu/6.823/lecnotes.html
 
 
-
-
 # 线程同步/并发原语
 ## cpu缓存
 ```cpp
@@ -161,147 +193,14 @@ http://csg.csail.mit.edu/6.823/lecnotes.html
 interlocked
 lock add/dec/*
 ```
-根据程序局部性原理，成本和功耗上的考虑，CPU读取和写入的请求，都会经过：
-
-| RAM | cycle | price($) | hitrate|count|
-| ---- | ---- | ---- | ---- | ---- |
-|L1    |3       |        |90%|2 per core|
-|L2     | 14      |        |6%|1 per core|
-|L3     | 50      |        |3%|1 |
-|DRAM     | 250      |        |1%|1 |
-
-1982，指令缓存  
-1985，数据缓存  
-1995，乱序和预读  
-2006，酷睿双核  
-
-由于引入了cache，就会涉及以下问题
-cache line
-伪共享
-缓存一致性协议MESI
 
 
-
-程序通过共享访问内存（多线程/内存映射），使得通信变得非常高效，但是会引入以下问题。
-
-## 原子性
-thread interference/interleave 
-> 原子操作保证的是数据的完整性，不会出现中间状态
-
-## 可见性
-```cpp
-//x86
-sfence/lfence/mfence
-```
-内存一致性错误（对于相同数据，不同线程看到的不一样）
-
-
-
-## 有序性
-```cpp
-//Processor #1:
-
- while (f == 0);
- // Memory fence required here
- print x;
-
-//Processor #2:
-
- x = 42;
- // Memory fence required here
- f = 1;
-```
-
-- 编译/运行时重排影响，happen-before判定
-- cpu流水线指令执行顺序(i486,1989)
-
-http://www.felixcloutier.com/x86/index.html
-http://gee.cs.oswego.edu/dl/jmm/cookbook.html
-http://preshing.com/20120515/memory-reordering-caught-in-the-act/
-
-
-
-## volatile
-
-```java
-//1. 原子性
-volatile long i=0;
-volatile double j = 0;
-```
-
-```java
-//2. 可见性和顺序性
-//线程A执行的代码
-int i = 0;
-i = 10;
-
-//线程B执行的代码
-j = i;
-```
-
-```java
-public static class DelayWrite implements Runnable {
-    private String str;
-
-    void setStr(String str) {
-        this.str = str;
-    }
-
-    public void run() {
-        while (str == null);
-        // Thread.yield();
-        System.out.println(str);
-	}
-}
-
-public static void test() throws InterruptedException {
-    DelayWrite delay = new DelayWrite();
-    new Thread(delay).start();
-    Thread.sleep(100);
-    delay.setStr("Hello world!!");
-}
-```
-
+ CAS和自旋锁
 https://docs.oracle.com/javase/tutorial/essential/concurrency/atomic.html
 http://blog.vinceliu.com/2010/05/difference-between-atomic-and-volatile.html
 https://www.ibm.com/developerworks/java/library/j-jtp06197/
 
-> 编程语言应该尽量避免同步安全性，过于复杂
-> 同步安全性，应该简单到直接注解对象用法就可以了，而不是像现在还要工程师自己ad-hoc
-
-
-
-## 悲观锁
-> 修改数据之前就独占
-
-## 乐观锁
-> 直到数据修改时才验证冲突（一般是通过对比数据版本号）
-wait-free/lock-free
-
-## CAS和自旋锁
-``` cpp
-//os_cpu/windows_x86/atomic_windows_x86.inline.hpp
-[lock] cmpxchg reg, reg/mem
-//This instruction is not supported on Intel processors earlier than the Intel486 processors.
-```
-
-直到486，x86才有了实现  
-到2013年，基本上所有多核CPU都实现了硬件CAS
-
-内核态自旋锁：关闭所有软中断(保证线程不被切走，并且响应硬中断)，以此来保证，临界代码尽快被释放掉。  
-用户态自旋锁：大问题是，锁的时间不被保证，特别是高并发下等待大量时间unlock.
-
-对于自旋锁本身，目前的实现并不会有太大的问题和提升空间；  
-重要的是理解高并发用户态的线程同步必须要系统支持。
-
-同步实现模式
-1. 声明共享变量为volatile
-2. 用CAS
-
-虽然CAS由CPU保证，但整个CAS过程（取值、比较）需要消耗大概500个时钟周期（大概相当于500个普通指令），同步的算法优化大都用来减少CAS操作
-
-
-# 轻量级/thin-lock
+轻量级/thin-lock
 >线程通过spin检查（减少fat-lock用户和内核态的切换）
 
 ``` cpp
@@ -309,7 +208,7 @@ wait-free/lock-free
 00 has_locker()
 ```
 
-# 重量级/fat-lock
+重量级/fat-lock
 >线程通过park/pending操作，让出CPU等待唤醒
 
 ```cpp
@@ -320,7 +219,7 @@ objectMonitor = mark->monitor()
 park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
 ```
 
-# 重入锁/偏向锁
+重入锁/偏向锁
 > 线程通过线程ID检查（减少thin-lock的spin）  
 当竞争时，需要撤销偏向锁
 
@@ -343,43 +242,23 @@ https://mechanical-sympathy.blogspot.com/2011/11/java-lock-implementations.html
 https://flex4java.blogspot.com/2015/03/is-multi-threading-really-worth-it.html
 https://baptiste-wicht.com/posts/2010/09/java-synchronization-mutual-exclusion-benchmark.html
 https://mailinator.blogspot.com/2008/03/how-fast-is-java-volatile-or-atomic-or.html
-#ReentrantLock
 https://blog.takipi.com/java-8-longadders-the-fastest-way-to-add-numbers-concurrently/
-
-# AQS
 
 https://www.ibm.com/developerworks/library/j-jtp11234/
 https://en.wikipedia.org/wiki/Non-blocking_algorithm
 https://kukuruku.co/post/lock-free-data-structures-basics-atomicity-and-atomic-primitives/
 http://winterbe.com/posts/2015/05/22/java8-concurrency-tutorial-atomic-concurrent-map-examples/
 
-# fps
-
-http://ifeve.com/enhanced-cas-in-jdk8/https://cloud.tencent.com/developer/article/1021132http://blog.leanote.com/tag/linckye/%E5%B9%B6%E5%8F%91
-
-
-thread和runable的区别
-公平锁
-共享锁
-读写锁
-分段锁
+http://ifeve.com/enhanced-cas-in-jdk8/
+https://cloud.tencent.com/developer/article/1021132
+http://blog.leanote.com/tag/linckye/%E5%B9%B6%E5%8F%91
 
 
-JUC(java.util.concurrent)
+
 
 https://docs.oracle.com/javase/1.5.0/docs/guide/concurrency/overview.html
 
-线程池
-executor
-并行流/lambda
-actor
-同步器
 
-线程中断  
-https://www.ibm.com/developerworks/cn/java/j-jtp05236.html
-
-多线程同步和锁
-high contention
 http://wiki.jikexueyuan.com/project/java-memory-model/lock.html
 http://blog.csdn.net/qyp199312/article/details/70598480
 http://mishadoff.com/blog/java-magic-part-4-sun-dot-misc-dot-unsafe/
@@ -388,35 +267,8 @@ https://brooker.co.za/blog/2013/01/06/volatile.html
 https://github.com/torvalds/linux/blob/master/arch/x86/include/asm/cmpxchg.h
 https://www.quora.com/Why-does-the-Java-API-not-give-control-over-thread-scheduling-to-application-programmers
 
-reentrantlock
-死锁的原理和排查方法
+
 
 http://www.oracle.com/technetwork/java/tuning-139912.html
 http://www.oracle.com/technetwork/java/5-136747.html
 http://www.oracle.com/technetwork/java/6-performance-137236.html
-
-List, Map, Set的底层原理实现  
-CopyOnWrite容器  
-ConcurrentHashMap
-
-- 锁分段技术
-- 读是否要加锁
-- 迭代器的一致性
-
-
-## 反汇编
-```cpp
-//share/tools/hsdis/hsdis.h
-void* decode_instructions(void* start, void* end,..
-```
-
->在jre中，加载反汇编dll+jitwatch即可查看运行时的汇编代码。
-
-注意：简单的方法无法不足以触发JIT
-java -XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -version
-
-https://github.com/AdoptOpenJDK/jitwatch  
-https://sourceforge.net/projects/fcml  
-https://briangordon.github.io/  
-http://gee.cs.oswego.edu/dl/  
-http://g.oswego.edu/dl/jmm/cookbook.html  
