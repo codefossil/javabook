@@ -14,17 +14,16 @@
 
 [Equivalence of the Arbiter, the Synchronizer, the Latch, and the Inertial Delay, 1983](https://www.researchgate.net/publication/3048280_Equivalence_of_the_Arbiter_the_Synchronizer_the_Latch_and_the_Inertial_Delay)  
 
-fairness  
-check-then-act  
-compare-and-swap  
-test-and-set  
-read-modify-write  
+死锁的排查方法
 
 # 生产者-消费者同步
 [Co-operating sequential processes, 1968](https://pure.tue.nl/ws/files/4279816/344354178746665.pdf)  
+[Reader and Writer, 1971](https://dl.acm.org/citation.cfm?id=362813)  
 
 [Wait-free synchronization, 1991](https://cs.brown.edu/~mph/Herlihy91/p124-herlihy.pdf)  
-[Algorithms for scalable synchronization on shared-memory multiprocessors](https://dl.acm.org/citation.cfm?doid=103727.103729)  
+[Algorithms for scalable synchronization on shared-memory multiprocessors](https://dl.acm.org/citation.cfm?doid=103727.103729), 各种同步原语check-then-act, compare-and-swap  , test-and-set, read-modify-write  
+[Monitor, 1974](http://www.cs.ubc.ca/~norm/508/2009W1/summaries/monitors.pdf)，总结定义了monitor和条件变量
+[Barrier,1988](https://link.springer.com/article/10.1007/BF01379320)  
 
 # 顺序一致性
 [How to Make a Correct Multiprocess Program Execute Correctly on a Multiporcessor, 1979](https://people.eecs.berkeley.edu/~culler/cs252-s03/lamport93how.pdf)  
@@ -40,6 +39,8 @@ read-modify-write
 # 并发编程
 [CPIJ, 1999](https://book.douban.com/subject/1440218/)  
 [Software and the Concurrency Revolution, 2005](https://dl.acm.org/citation.cfm?id=1095421)  
+[Parallel Programming, 2011](https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.2011.01.02a.pdf), 很多关于CPU缓存和一致性问题  
+[OS Three Easy pieces, 2015](http://pages.cs.wisc.edu/~remzi/OSTEP/)  
 [Multiprogramming, 1968](https://link.springer.com/content/pdf/10.1007%2F978-1-4757-3510-9_12.pdf)  
 [JCIP, 2006](https://book.douban.com/subject/10484692/)  
 
@@ -47,8 +48,7 @@ read-modify-write
 [HYDRA, 1974](http://research.cs.wisc.edu/areas/os/Qual/papers/hydra.pdf)  
 [Threads bad, 1995](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/Conc-4/index.html)  
 [Event bad, 2003](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/Even-2/index.html)  
-
-[Actor, 2016](http://dist-prog-book.com/chapter/3/message-passing.html)
+[Actor, 2016](http://dist-prog-book.com/chapter/3/message-passing.html)  
 
 ## 计算模型
 [Timesharing, 1962](http://www.eecs.harvard.edu/~margo/cs261/papers/corbato62.pdf)  
@@ -58,8 +58,7 @@ read-modify-write
 [Transactional memory, 1999](http://cs.brown.edu/~mph/HerlihyM93/herlihy93transactional.pdf)  
 
 ## 性能
-[Imbench, 1996](http://mcvoy.com/lm/bitmover/lmbench/lmbench-usenix.pdf) ，线程切换 = 状态转换(~n us) + `cache missing`(~n 10ns)   
-https://news.ycombinator.com/item?id=13930305  
+[Imbench, 1996](http://mcvoy.com/lm/bitmover/lmbench/lmbench-usenix.pdf) ，线程切换 = 状态转换(~n us) + `cache missing`(~n 10ns), https://news.ycombinator.com/item?id=13930305  
 [Why pthread](https://computing.llnl.gov/tutorials/pthreads/#WhyPthreads), fork(~n 100ns) = ~10x pthread_create(~n 10ns)  
 
 [The Problem with Threads, 2006](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-1.pdf)  
@@ -68,15 +67,44 @@ https://news.ycombinator.com/item?id=13930305
 http://pages.cs.wisc.edu/~bart/736/f2017/paper1.html  
 https://www.cse.iitb.ac.in/~mythili/os/notes/notes-perf.txt
 
-**并行限制**
+**并行限制**  
 [Amdahl's law in the Multicore Era, 2008](http://www.eng.auburn.edu/~agrawvd/COURSE/E6270_Spr09/READ/Amdahls%20Law%20in%20Multicore%20Era.pdf)  
 [Gustafson's law, 1988](http://www.johngustafson.net/pubs/pub13/amdahl.htm) 
 
 ## 执行框架
+
 [Java synchronizer, csjp04](http://gee.cs.oswego.edu/dl/papers/aqs.pdf)  
 [Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
 
+**synchronized实现**
+
+轻量级/thin-lock
+>线程通过spin检查（减少fat-lock用户和内核态的切换）
+
+``` cpp
+>share/vm/runtime/synchronizer.cpp
+00 has_locker()
+```
+
+重量级/fat-lock
+>线程通过park/pending操作，让出CPU等待唤醒
+
+```cpp
+//os/windows/vm/os_windows.cpp
+00 inflating
+10 has_monitor()
+objectMonitor = mark->monitor()
+park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
+```
+
+重入锁/偏向锁
+> 线程通过线程ID检查（减少thin-lock的spin）  
+
+当竞争时，需要撤销偏向锁
+
+
 > todo  
+
 https://www.cs.ubc.ca/~norm/508/2009W1/readinglist.html  
 http://pages.cs.wisc.edu/~swift/classes/cs736-sp07/reading-list.html
 
@@ -100,29 +128,14 @@ http://www.eecs.harvard.edu/~margo/cs261/syllabus.html
 https://blog.tsunanet.net/2010/11/how-long-does-it-take-to-make-context.html  
 http://www.cis.upenn.edu/group/systems/slides/SystemsLunchSept09_Threads.pdf
 
-## 共享内存
-[Monitor, 1974](http://www.cs.ubc.ca/~norm/508/2009W1/summaries/monitors.pdf)  
-### barrier
+
+
 http://cs.brown.edu/courses/cs176/lectures.shtml
 https://en.wikipedia.org/wiki/Concurrency_pattern
 
 http://www.cs.umd.edu/~pugh/java/memoryModel/jsr-133-faq.html
 https://emeryberger.com/teaching/grad-systems/
 https://en.wikipedia.org/wiki/Out-of-order_execution
-
-虽然CAS由CPU保证，但整个CAS过程（取值、比较）需要消耗大概500个时钟周期（大概相当于500个普通指令），同步的算法优化大都用来减少CAS操作
-``` cpp
-//os_cpu/windows_x86/atomic_windows_x86.inline.hpp
-[lock] cmpxchg reg, reg/mem
-//This instruction is not supported on Intel processors earlier than the Intel486 processors.
-```
-
-locks
-condition variables
-semaphore
-latch
-死锁的排查方法
-high contention
 
 https://stackoverflow.com/questions/6319146/c11-introduced-a-standardized-memory-model-what-does-it-mean-and-how-is-it-g
 https://brooker.co.za/blog/
@@ -185,59 +198,22 @@ https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/package-summary.h
 http://www.cs.cmu.edu/~418/schedule.html
 http://csg.csail.mit.edu/6.823/lecnotes.html
 
-
-# 线程同步/并发原语
-## cpu缓存
-```cpp
-//os_cpu/windows_x86/atomic_windows_x86.inline.hpp
-interlocked
-lock add/dec/*
-```
-
-
- CAS和自旋锁
 https://docs.oracle.com/javase/tutorial/essential/concurrency/atomic.html
 http://blog.vinceliu.com/2010/05/difference-between-atomic-and-volatile.html
 https://www.ibm.com/developerworks/java/library/j-jtp06197/
 
-轻量级/thin-lock
->线程通过spin检查（减少fat-lock用户和内核态的切换）
-
-``` cpp
->share/vm/runtime/synchronizer.cpp
-00 has_locker()
-```
-
-重量级/fat-lock
->线程通过park/pending操作，让出CPU等待唤醒
-
-```cpp
-//os/windows/vm/os_windows.cpp
-00 inflating
-10 has_monitor()
-objectMonitor = mark->monitor()
-park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
-```
-
-重入锁/偏向锁
-> 线程通过线程ID检查（减少thin-lock的spin）  
-当竞争时，需要撤销偏向锁
-
-- synchronized实现分析
 https://www.cnblogs.com/dennyzhangdd/p/6734638.html
 https://toutiao.io/posts/cv2q7t/preview
 https://www.jianshu.com/p/c5058b6fe8e5
 http://www.cnblogs.com/zhenyimo/p/6738210.html
 https://cloud.tencent.com/developer/article/1013062
 
-- 参考
 https://labs.oracle.com/pls/apex/f?p=labs:49:::::P49_PROJECT_ID:16
 https://docs.oracle.com/javase/8/docs/
 https://www.ibm.com/developerworks/java/library/j-jtp04223/index.html
 https://www.ibm.com/developerworks/library/j-threads1/index.html
 https://javainterview-mayank.blogspot.com/2011/04/synchronization-volatile-and-atomic.html
 
-- 性能测试
 https://mechanical-sympathy.blogspot.com/2011/11/java-lock-implementations.html
 https://flex4java.blogspot.com/2015/03/is-multi-threading-really-worth-it.html
 https://baptiste-wicht.com/posts/2010/09/java-synchronization-mutual-exclusion-benchmark.html
