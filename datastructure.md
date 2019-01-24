@@ -72,3 +72,4 @@ https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_computer_science
 https://web.stanford.edu/class/archive/cs/cs339/cs339.2002/
 
 http://pi.math.cornell.edu/~web6140/  
+http://math.hws.edu/eck/courses/cpsc327_s18.html
