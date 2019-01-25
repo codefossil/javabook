@@ -22,7 +22,7 @@
 
 [Wait-free synchronization, 1991](https://cs.brown.edu/~mph/Herlihy91/p124-herlihy.pdf)  
 [Algorithms for scalable synchronization on shared-memory multiprocessors](https://dl.acm.org/citation.cfm?doid=103727.103729), 各种同步原语check-then-act, compare-and-swap  , test-and-set, read-modify-write  
-[Monitor, 1974](http://www.cs.ubc.ca/~norm/508/2009W1/summaries/monitors.pdf)，总结定义了monitor和条件变量
+[Monitor, 1974](http://www.cs.ubc.ca/~norm/508/2009W1/summaries/monitors.pdf)，总结定义了monitor和条件变量  
 [Barrier,1988](https://link.springer.com/article/10.1007/BF01379320)  
 
 # 顺序一致性
@@ -35,6 +35,8 @@
 
 # 形式化和验证
 [The temporal logic of programs, 1976](http://dimap.ufrn.br/~richard/pubs/dim0436/papers/pnueli_temporal_1977.pdf)  
+[Principles of Concurrent Programming](http://www.cse.chalmers.se/edu/year/2017/course/TDA384_LP1/lectures/)  
+[Software Testing and Verification](http://www.cs.toronto.edu/~chechik/courses18/csc410/readings.html)  
 
 # 并发编程
 [CPIJ, 1999](https://book.douban.com/subject/1440218/)  
