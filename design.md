@@ -92,6 +92,8 @@ If it ain't broke, don't fix it.
 
 how software evolution
 
+https://java-design-patterns.com/principles/
+
 # 写诗还是写文档
 瀑布->Agile->DevOps演变  
 DDD/TDD/BDD/CQRS/DCI/
