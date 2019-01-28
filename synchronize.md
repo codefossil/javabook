@@ -78,33 +78,6 @@ https://www.cse.iitb.ac.in/~mythili/os/notes/notes-perf.txt
 [Java synchronizer, csjp04](http://gee.cs.oswego.edu/dl/papers/aqs.pdf)  
 [Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
 
-**synchronized实现**
-
-轻量级/thin-lock
->线程通过spin检查（减少fat-lock用户和内核态的切换）
-
-``` cpp
->share/vm/runtime/synchronizer.cpp
-00 has_locker()
-```
-
-重量级/fat-lock
->线程通过park/pending操作，让出CPU等待唤醒
-
-```cpp
-//os/windows/vm/os_windows.cpp
-00 inflating
-10 has_monitor()
-objectMonitor = mark->monitor()
-park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
-```
-
-重入锁/偏向锁
-> 线程通过线程ID检查（减少thin-lock的spin）  
-
-当竞争时，需要撤销偏向锁
-
-
 > todo  
 
 https://www.cs.ubc.ca/~norm/508/2009W1/readinglist.html  
