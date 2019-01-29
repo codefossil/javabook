@@ -25,6 +25,9 @@
 [Monitor, 1974](http://www.cs.ubc.ca/~norm/508/2009W1/summaries/monitors.pdf)，总结定义了monitor和条件变量  
 [Barrier,1988](https://link.springer.com/article/10.1007/BF01379320)  
 
+[The little book of semaphores, 2005](http://alumni.cs.ucr.edu/~kishore/papers/semaphores.pdf)
+[synchronization primitives survey, 2008](http://www.enseignement.polytechnique.fr/informatique/INF431/X09-2010-2011/AmphiTHC/SynchronizationPrimitives.pdf)
+
 # 顺序一致性
 [How to Make a Correct Multiprocess Program Execute Correctly on a Multiporcessor, 1979](https://people.eecs.berkeley.edu/~culler/cs252-s03/lamport93how.pdf)  
 [Linearizability, 1990](https://cs.brown.edu/~mph/HerlihyW90/p463-herlihy.pdf)  
@@ -35,8 +38,12 @@
 
 # 形式化和验证
 [The temporal logic of programs, 1976](http://dimap.ufrn.br/~richard/pubs/dim0436/papers/pnueli_temporal_1977.pdf)  
+[CCS, 1980](https://moodle.risc.jku.at/pluginfile.php/6230/mod_resource/content/0/ccs.pdf)
 [Principles of Concurrent Programming](http://www.cse.chalmers.se/edu/year/2017/course/TDA384_LP1/lectures/)  
 [Software Testing and Verification](http://www.cs.toronto.edu/~chechik/courses18/csc410/readings.html)  
+
+http://www.ru.is/faculty/luca/IMTCOURSE/
+https://moodle.risc.jku.at/course/view.php?id=143
 
 # 并发编程
 [CPIJ, 1999](https://book.douban.com/subject/1440218/)  
@@ -51,6 +58,9 @@
 [Threads bad, 1995](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/Conc-4/index.html)  
 [Event bad, 2003](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/Even-2/index.html)  
 [Actor, 2016](http://dist-prog-book.com/chapter/3/message-passing.html)  
+
+https://en.wikipedia.org/wiki/Concurrent_computing
+https://www.irif.fr/~mellies/mpri/mpri-ens/articles/winskel-nielsen-models-for-concurrency.pdf
 
 ## 计算模型
 [Timesharing, 1962](http://www.eecs.harvard.edu/~margo/cs261/papers/corbato62.pdf)  
@@ -77,9 +87,10 @@ https://www.cse.iitb.ac.in/~mythili/os/notes/notes-perf.txt
 
 [Java synchronizer, csjp04](http://gee.cs.oswego.edu/dl/papers/aqs.pdf)  
 [Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
+[Future, 1977](http://home.pipeline.com/~hbaker1/Futures.html)
 
 > todo  
-
+http://www.cs.cornell.edu/courses/cs6410/2018fa/sched.htm
 https://www.cs.ubc.ca/~norm/508/2009W1/readinglist.html  
 http://pages.cs.wisc.edu/~swift/classes/cs736-sp07/reading-list.html
 
