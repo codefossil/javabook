@@ -25,8 +25,8 @@
 [Monitor, 1974](http://www.cs.ubc.ca/~norm/508/2009W1/summaries/monitors.pdf)，总结定义了monitor和条件变量  
 [Barrier,1988](https://link.springer.com/article/10.1007/BF01379320)  
 
-[The little book of semaphores, 2005](http://alumni.cs.ucr.edu/~kishore/papers/semaphores.pdf)
-[synchronization primitives survey, 2008](http://www.enseignement.polytechnique.fr/informatique/INF431/X09-2010-2011/AmphiTHC/SynchronizationPrimitives.pdf)
+[The little book of semaphores, 2005](http://alumni.cs.ucr.edu/~kishore/papers/semaphores.pdf)  
+[synchronization primitives survey, 2008](http://www.enseignement.polytechnique.fr/informatique/INF431/X09-2010-2011/AmphiTHC/SynchronizationPrimitives.pdf)  
 
 # 顺序一致性
 [How to Make a Correct Multiprocess Program Execute Correctly on a Multiporcessor, 1979](https://people.eecs.berkeley.edu/~culler/cs252-s03/lamport93how.pdf)  
