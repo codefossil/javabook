@@ -89,7 +89,8 @@ https://www.cse.iitb.ac.in/~mythili/os/notes/notes-perf.txt
 [Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
 [Future, 1977](http://home.pipeline.com/~hbaker1/Futures.html)
 
-> todo  
+**todo**
+
 http://www.cs.cornell.edu/courses/cs6410/2018fa/sched.htm
 https://www.cs.ubc.ca/~norm/508/2009W1/readinglist.html  
 http://pages.cs.wisc.edu/~swift/classes/cs736-sp07/reading-list.html
