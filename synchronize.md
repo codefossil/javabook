@@ -38,11 +38,11 @@
 
 # 形式化和验证
 [The temporal logic of programs, 1976](http://dimap.ufrn.br/~richard/pubs/dim0436/papers/pnueli_temporal_1977.pdf)  
-[CCS, 1980](https://moodle.risc.jku.at/pluginfile.php/6230/mod_resource/content/0/ccs.pdf)
+[CCS, 1980](https://moodle.risc.jku.at/pluginfile.php/6230/mod_resource/content/0/ccs.pdf)  
 [Principles of Concurrent Programming](http://www.cse.chalmers.se/edu/year/2017/course/TDA384_LP1/lectures/)  
 [Software Testing and Verification](http://www.cs.toronto.edu/~chechik/courses18/csc410/readings.html)  
 
-http://www.ru.is/faculty/luca/IMTCOURSE/
+http://www.ru.is/faculty/luca/IMTCOURSE/  
 https://moodle.risc.jku.at/course/view.php?id=143
 
 # 并发编程
@@ -59,7 +59,7 @@ https://moodle.risc.jku.at/course/view.php?id=143
 [Event bad, 2003](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/Even-2/index.html)  
 [Actor, 2016](http://dist-prog-book.com/chapter/3/message-passing.html)  
 
-https://en.wikipedia.org/wiki/Concurrent_computing
+https://en.wikipedia.org/wiki/Concurrent_computing  
 https://www.irif.fr/~mellies/mpri/mpri-ens/articles/winskel-nielsen-models-for-concurrency.pdf
 
 ## 计算模型
@@ -76,6 +76,7 @@ https://www.irif.fr/~mellies/mpri/mpri-ens/articles/winskel-nielsen-models-for-c
 [The Problem with Threads, 2006](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-1.pdf)  
 [Thin Locks, 1998](http://cseweb.ucsd.edu/classes/fa05/cse231/Hubble.pdf)  
 
+[System performance, 2014](https://book.douban.com/subject/26586598/)  
 http://pages.cs.wisc.edu/~bart/736/f2017/paper1.html  
 https://www.cse.iitb.ac.in/~mythili/os/notes/notes-perf.txt
 
@@ -87,7 +88,7 @@ https://www.cse.iitb.ac.in/~mythili/os/notes/notes-perf.txt
 
 [Java synchronizer, csjp04](http://gee.cs.oswego.edu/dl/papers/aqs.pdf)  
 [Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
-[Future, 1977](http://home.pipeline.com/~hbaker1/Futures.html)
+[Future, 1977](http://home.pipeline.com/~hbaker1/Futures.html)  
 
 **todo**
 

@@ -59,7 +59,9 @@ http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html
 突出系统间依赖  
 输出：用例
 
-[亿级用户下的新浪微博平台架构](https://www.infoq.cn/article/weibo-platform-archieture)
+[Code Architecture](https://book.douban.com/subject/30333919/)  
+[Just Enough Software Architecture](https://book.douban.com/subject/24872314/)  
+[亿级用户下的新浪微博平台架构](https://www.infoq.cn/article/weibo-platform-archieture)  
 https://www.w3.org/DesignIssues/  
 https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/  
 https://www.ibm.com/developerworks/cn/rational/r-4p1-view/index.html  
@@ -92,7 +94,9 @@ If it ain't broke, don't fix it.
 
 how software evolution
 
-https://java-design-patterns.com/principles/
+[Agile Software Development](https://book.douban.com/subject/1140457/)  
+https://java-design-patterns.com/principles/  
+[TAOUP, 2003](https://book.douban.com/subject/5387401/)  
 
 # 写诗还是写文档
 瀑布->Agile->DevOps演变  
@@ -100,7 +104,11 @@ DDD/TDD/BDD/CQRS/DCI/
 microservice/SOA/Lambda Architecture
 OOP/FP
 akka/reactive
-https://lethain.com/digg-v4-architecture-process/
+
+[Clean Code](https://book.douban.com/subject/5442024/)  
+[Refactoring](https://book.douban.com/subject/4262627/)  
+https://en.wikipedia.org/wiki/Agile_software_development  
+https://lethain.com/digg-v4-architecture-process/  
 
 规模估算  
 大规模用户  
@@ -126,3 +134,6 @@ https://blog.youxu.info/
 http://blog.54chen.com/
 http://www.yankay.com
 http://www.valleytalk.org
+
+http://people.scs.carleton.ca/~deugo/Patterns/ospdg/
+https://www.cs.cmu.edu/~aldrich/courses/413/
