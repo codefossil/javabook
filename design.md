@@ -107,6 +107,7 @@ akka/reactive
 
 [Clean Code](https://book.douban.com/subject/5442024/)  
 [Refactoring](https://book.douban.com/subject/4262627/)  
+[DDD](https://book.douban.com/subject/26761413/)  
 https://en.wikipedia.org/wiki/Agile_software_development  
 https://lethain.com/digg-v4-architecture-process/  
 
