@@ -41,6 +41,7 @@ Xpress， 解LP MIP
 大数据算法
 性能指标体系
 
+[Concrete Mathematics](https://book.douban.com/subject/21323941/)  
 http://www.cs.columbia.edu/~bauer/cs3134-f15/lectures.html
 https://www.cs.princeton.edu/courses/archive/fall18/cos226/lectures.php
 

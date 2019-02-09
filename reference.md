@@ -43,4 +43,4 @@
 * [kaggle](http://www.kaggle.com)
 * [leetcode](https://leetcode.com/explore/)
 * [moc](https://ocw.mit.edu/courses/find-by-topic/)
-* [cs-list]https://en.wikipedia.org/wiki/List_of_important_publications_in_computer_science#Concurrent,_parallel,_and_distributed_computing
+* [cs-list](https://en.wikipedia.org/wiki/List_of_important_publications_in_computer_science#Concurrent,_parallel,_and_distributed_computing)
