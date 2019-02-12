@@ -1,13 +1,20 @@
-# 内存分布
-# object header
+https://en.wikipedia.org/wiki/Java_version_history
 
+# 类型系统
+[JLS - Two type system](https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html)  
+https://softwareengineering.stackexchange.com/questions/203970/when-to-use-primitive-vs-class-in-java  
+
+[Effective Java](https://book.douban.com/subject/27047716/)  
+
+# 内存分布
 oopDesc -> object header\(mark + klass\)    
 mark=hashcode/sync/gc
 
-http://openjdk.java.net/groups/hotspot/docs/HotSpotGlossary.html
-https://www.javamex.com/tutorials/memory/object\_memory\_usage.shtml
+[深入理解Java虚拟机, 2013](https://book.douban.com/subject/24722612/)  
+http://openjdk.java.net/groups/hotspot/docs/HotSpotGlossary.html  
+https://www.javamex.com/tutorials/memory/object\_memory\_usage.shtml  
 https://gist.github.com/arturmkrtchyan/43d6135e8a15798cc46c  
-http://arturmkrtchyan.com/
+http://arturmkrtchyan.com/  
 
 # clone对象拷贝
 
@@ -171,18 +178,6 @@ return floatToIntBits(value);
 private static final int HASH_INCREMENT = 0x61c88647;
 nextHashCode.getAndAdd(HASH_INCREMENT);
 ```
-
-# GC算法
-
-
-
-# 类加载器
-transient
-
-# 异常和出错
-
-
-https://en.wikipedia.org/wiki/Java_version_history
 
 # 反汇编
 ```cpp
