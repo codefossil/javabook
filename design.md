@@ -8,10 +8,10 @@
 [MIT-SAL](http://systemarchitect.mit.edu/index.php)  
 
 # 基本问题
-[Humphrey-SPA award](https://resources.sei.cmu.edu/news-events/events/watts/watts.cfm)
-[SE-history, 1996](https://www.dagstuhl.de/Reports/96/9635.pdf)
-https://en.wikipedia.org/wiki/Software_engineering
-https://en.wikipedia.org/wiki/Software_development
+[Humphrey-SPA award](https://resources.sei.cmu.edu/news-events/events/watts/watts.cfm)  
+[SE-history, 1996](https://www.dagstuhl.de/Reports/96/9635.pdf)  
+https://en.wikipedia.org/wiki/Software_engineering  
+https://en.wikipedia.org/wiki/Software_development  
 
 [Engineering a Safer World, 2012](http://sunnyday.mit.edu/safer-world/index.html)  
 [SE, 1968](http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF)  
