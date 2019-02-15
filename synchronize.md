@@ -29,6 +29,7 @@
 [synchronization primitives survey, 2008](http://www.enseignement.polytechnique.fr/informatique/INF431/X09-2010-2011/AmphiTHC/SynchronizationPrimitives.pdf)  
 
 # 顺序一致性
+
 [How to Make a Correct Multiprocess Program Execute Correctly on a Multiporcessor, 1979](https://people.eecs.berkeley.edu/~culler/cs252-s03/lamport93how.pdf)  
 [Linearizability, 1990](https://cs.brown.edu/~mph/HerlihyW90/p463-herlihy.pdf)  
 
@@ -72,6 +73,7 @@ https://www.irif.fr/~mellies/mpri/mpri-ens/articles/winskel-nielsen-models-for-c
 ## 性能
 [Imbench, 1996](http://mcvoy.com/lm/bitmover/lmbench/lmbench-usenix.pdf) ，线程切换 = 状态转换(~n us) + `cache missing`(~n 10ns), https://news.ycombinator.com/item?id=13930305  
 [Why pthread](https://computing.llnl.gov/tutorials/pthreads/#WhyPthreads), fork(~n 100ns) = ~10x pthread_create(~n 10ns)  
+[The Free Lunch Is Over, 2005](http://www.gotw.ca/publications/concurrency-ddj.htm)
 
 [The Problem with Threads, 2006](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-1.pdf)  
 [Thin Locks, 1998](http://cseweb.ucsd.edu/classes/fa05/cse231/Hubble.pdf)  
