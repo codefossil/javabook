@@ -87,9 +87,8 @@ DDD/TDD/BDD/CQRS/DCI/
 [System Architecture: Strategy and Product Development for Complex Systems](https://book.douban.com/subject/26938710/)  
 
 ## 控制规模
-大规模用户  
-大数据量  
 
+[Big data, 2015](https://book.douban.com/subject/10438832/)  
 [Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
 [Software design for large system, 1988](https://web.njit.edu/~kirova/BC-SDP.pdf)  
 [排队论及其应用浅析](https://www.slideshare.net/frogd/ss-27959518)  
@@ -105,7 +104,6 @@ You Aren't Gonna Need It.
 If it ain't broke, don't fix it.
 飞轮效应
 
-[Big data, 2015](https://book.douban.com/subject/10438832/)  
 [Patterns of Enterprise Application Architecture, 2003](https://book.douban.com/subject/1230559/)  
 [Agile Software Development, 2003](https://book.douban.com/subject/1140457/)  
 [TAOUP, 2003](https://book.douban.com/subject/5387401/)  
