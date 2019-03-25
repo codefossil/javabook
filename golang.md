@@ -17,9 +17,15 @@ https://icyapril.com/go/programming/2017/12/17/object-orientation-in-go.html
 https://github.com/golang/go/wiki/Modules
 
 # 错误处理
+不用try catch是性能原因吗	
+[Go 2 designs](https://go.googlesource.com/proposal/+/master/design/go2draft.md)
+https://evilmartians.com/chronicles/errors-in-go-from-denial-to-acceptance
+
+# 泛型
 
 # 测试
 mock  
+https://mlafeldt.github.io/blog/test-coverage-in-go/  
 https://nathany.com/go-testing-toolbox/  
 https://github.com/go-check/check  
 https://www.calhoun.io/how-to-test-with-go/  
