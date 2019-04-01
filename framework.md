@@ -2,12 +2,16 @@
 分布式ID发号器、feed 系统、缓存系统、推荐系统、抢票系统
 社区类服务架构、云服务架构、O2O
 
+[分布式Redis架构设计, 2015](https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=208733458&idx=1&sn=691bfde670fb2dd649685723f7358fea)
+
 # 企业级架构设计
 ## 电商服务架构
 商品管理
 订单系统
 下单流程
-库管
+库管  
+[TableStore实战：亿量级订单管理解决方案](https://yq.aliyun.com/articles/656196?spm=a2c4e.11154837.920241.5.464642b2YuhDE6)
+[分库分表技术演进](https://mp.weixin.qq.com/s/3ZxGq9ZpgdjQFeD2BIJ1MA)
 
 ## 在线支付架构
 第三方支付
