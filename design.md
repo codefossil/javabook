@@ -124,7 +124,7 @@ https://blog.codinghorror.com/worse-is-better/
 
 https://www.w3.org/DesignIssues/  
 https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/  
-https://www.ibm.com/developerworks/cn/rational/r-4p1-view/index.html  
+[4+1](https://www.ibm.com/developerworks/cn/rational/r-4p1-view/index.html)  
 
 [The Rule of Least Power, 2001](https://www.w3.org/2001/tag/doc/leastPower.html)  
 https://sourcemaking.com/refactoring/smells/speculative-generality  
@@ -135,6 +135,7 @@ https://medium.com/@jason.goodwin/the-rule-of-least-power-in-modern-technology-a
 [方法论、方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)  
 http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html  
 [PEP 20](https://www.python.org/dev/peps/pep-0020/)  
+[Stop Learning Frameworks](https://sizovs.net/2018/12/17/stop-learning-frameworks/)
 
 # 软件实现与质量
 > 写诗还是写文档
