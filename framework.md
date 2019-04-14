@@ -1,11 +1,21 @@
 # 通用架构设计
-分布式ID发号器、feed 系统、缓存系统、推荐系统、抢票系统
-社区类服务架构、云服务架构、O2O
+microservice/SOA/Lambda Architecture  
 
-[分布式Redis架构设计, 2015](https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=208733458&idx=1&sn=691bfde670fb2dd649685723f7358fea)
+[Patterns of Enterprise Application Architecture, 2003](https://book.douban.com/subject/1230559/)  
+[Building Microservice](https://book.douban.com/subject/25881698/)  
+
+https://lethain.com/digg-v4-architecture-process/  
+[程序员的呐喊](https://book.douban.com/subject/25884108/)  
+https://www.w3.org/DesignIssues/  
+https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/  
+
+分布式ID发号器、feed 系统、缓存系统、推荐系统、抢票系统  
+社区类服务架构、云服务架构、O2O  
+
+[分布式Redis架构设计, 2015](https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=208733458&idx=1&sn=691bfde670fb2dd649685723f7358fea)  
 [亿级用户下的新浪微博平台架构](https://www.infoq.cn/article/weibo-platform-archieture)  
 [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)  
-[AWS Architecture Center](https://aws.amazon.com/architecture)
+[AWS Architecture Center](https://aws.amazon.com/architecture)  
 
 # 企业级架构设计
 ## 电商服务架构
