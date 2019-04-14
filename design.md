@@ -97,14 +97,14 @@ DDD/TDD/BDD/CQRS/DCI/
 沉默成本（可用性）  
 机会成本（兼容性）  
 边际成本（扩展性）  
-You Aren't Gonna Need It.
-If it ain't broke, don't fix it.
-飞轮效应
+You Aren't Gonna Need It.  
+If it ain't broke, don't fix it.  
+飞轮效应  
 
 [Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
 [Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)，引导出架构中的思考/图/文档的问题点  
 [Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
-[Stop Learning Frameworks](https://sizovs.net/2018/12/17/stop-learning-frameworks/)  
+[Stop Learning Frameworks, 2018](https://sizovs.net/2018/12/17/stop-learning-frameworks/)  
 
 [Agile Software Development, 2003](https://book.douban.com/subject/1140457/)  
 [TAOUP, 2003](https://book.douban.com/subject/5387401/)  
