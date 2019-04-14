@@ -94,8 +94,6 @@ DDD/TDD/BDD/CQRS/DCI/
 [构建高性能Web站点, 2009](https://book.douban.com/subject/3924175/)  
 
 ## 架构/模式/原则
-microservice/SOA/Lambda Architecture  
-
 沉默成本（可用性）  
 机会成本（兼容性）  
 边际成本（扩展性）  
@@ -103,42 +101,33 @@ You Aren't Gonna Need It.
 If it ain't broke, don't fix it.
 飞轮效应
 
-[Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)
+[Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
 [Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)，引导出架构中的思考/图/文档的问题点  
 [Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
-[Patterns of Enterprise Application Architecture, 2003](https://book.douban.com/subject/1230559/)  
+[Stop Learning Frameworks](https://sizovs.net/2018/12/17/stop-learning-frameworks/)  
+
 [Agile Software Development, 2003](https://book.douban.com/subject/1140457/)  
 [TAOUP, 2003](https://book.douban.com/subject/5387401/)  
 [Clean Architecture](https://book.douban.com/subject/30333919/)  
 [Just Enough Software Architecture](https://book.douban.com/subject/24872314/)  
-[Building Microservice](https://book.douban.com/subject/25881698/)
 
-https://lethain.com/digg-v4-architecture-process/  
 https://java-design-patterns.com/principles/  
-https://web.njit.edu/~kirova/is663-s11.html  
+[dp](https://sourcemaking.com/design_patterns)  
 
 [worse is better](http://dreamsongs.com/WorseIsBetter.html)  
-[程序员的呐喊](https://book.douban.com/subject/25884108/)  
-[rise of wib](http://dreamsongs.com/RiseOfWorseIsBetter.html)  
-https://blog.codinghorror.com/worse-is-better/  
-[wib-example](https://stackoverflow.com/questions/471544/worse-is-better-is-there-an-example)  
-
-https://www.w3.org/DesignIssues/  
-https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/  
-[4+1](https://www.ibm.com/developerworks/cn/rational/r-4p1-view/index.html)  
-
 [The Rule of Least Power, 2001](https://www.w3.org/2001/tag/doc/leastPower.html)  
-https://sourcemaking.com/refactoring/smells/speculative-generality  
-https://medium.com/@jason.goodwin/the-rule-of-least-power-in-modern-technology-a4d9047e1063  
-[Atwood's Law](https://blog.codinghorror.com/the-principle-of-least-power/)  
+
 [Architectural and philosophical points](https://www.w3.org/DesignIssues/)  
 [Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)  
 [方法论、方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)  
-http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html  
 [PEP 20](https://www.python.org/dev/peps/pep-0020/)  
-[Stop Learning Frameworks](https://sizovs.net/2018/12/17/stop-learning-frameworks/)
+
+todo  
+https://web.njit.edu/~kirova/is663-s11.html  
+
 
 # 软件实现与质量
+
 > 写诗还是写文档
 根据现有的时间/预算/知识/复杂度，利用最佳实践、技术、框架、工具、设备（工程/学习能力）
 
