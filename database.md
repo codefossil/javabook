@@ -194,6 +194,9 @@ c3p0/druid
 JDBC  
 Mybatis  
 
+## SQL查询引擎
+[presto](http://prestodb.github.io/)  
+
 # 索引
 > 不访问不必要的数据
 
@@ -244,6 +247,7 @@ Hive/SparkSQL
 flink
 
 # 存储引擎
+
 KTPS
 MTPS
 
@@ -296,6 +300,7 @@ HIVE
 产品mongodb  
 
 ## 经典行式存储
+
 get少，scan少，低延迟
 
 ### 关系模型
@@ -372,3 +377,4 @@ https://www.allthingsdistributed.com/2018/06/purpose-built-databases-in-aws.html
 [SIGMOD](https://dl.acm.org/event.cfm?id=RE227&tab=pubs)  
 [VLDB](http://vldb.org/pvldb)  
 [Momjian-PostgreSQL](https://momjian.us/main/faq.html)
+

@@ -94,7 +94,7 @@ DDD/TDD/BDD/CQRS/DCI/
 [排队论及其应用浅析](https://www.slideshare.net/frogd/ss-27959518)  
 [构建高性能Web站点, 2009](https://book.douban.com/subject/3924175/)  
 
-## 架构和模式
+## 架构/模式/原则
 microservice/SOA/Lambda Architecture  
 
 沉默成本（可用性）  
@@ -105,13 +105,14 @@ If it ain't broke, don't fix it.
 飞轮效应
 
 [Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)
+[Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)，引导出架构中的思考/图/文档的问题点  
+[Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
 [Patterns of Enterprise Application Architecture, 2003](https://book.douban.com/subject/1230559/)  
 [Agile Software Development, 2003](https://book.douban.com/subject/1140457/)  
 [TAOUP, 2003](https://book.douban.com/subject/5387401/)  
 [Clean Architecture](https://book.douban.com/subject/30333919/)  
 [Just Enough Software Architecture](https://book.douban.com/subject/24872314/)  
-[亿级用户下的新浪微博平台架构](https://www.infoq.cn/article/weibo-platform-archieture)  
-[Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)  
+[Building Microservice](https://book.douban.com/subject/25881698/)
 
 https://lethain.com/digg-v4-architecture-process/  
 https://java-design-patterns.com/principles/  
@@ -154,9 +155,14 @@ http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html
 [Agile Developer](https://book.douban.com/subject/4164024/)
 
 # 软件发布和运维
+
+![](https://d1.awsstatic.com/product-marketing/DevOps/DevOps_feedback-diagram.ff668bfc299abada00b2dcbdc9ce2389bd3dce3f.png)
+
 流量切换 sla  
 服务依赖/状态/降级  
 发布和灰度   
 
+[Kubernetes In Action, 2017](https://book.douban.com/subject/26997846/)  
 [Continuous Delivery](https://book.douban.com/subject/6862062/)  
 [Site Reliability Engineering](https://book.douban.com/subject/26875239/)  
+[Infrastructure as Code](https://d1.awsstatic.com/whitepapers/DevOps/infrastructure-as-code.pdf)

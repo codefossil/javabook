@@ -3,6 +3,9 @@
 社区类服务架构、云服务架构、O2O
 
 [分布式Redis架构设计, 2015](https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=208733458&idx=1&sn=691bfde670fb2dd649685723f7358fea)
+[亿级用户下的新浪微博平台架构](https://www.infoq.cn/article/weibo-platform-archieture)  
+[Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)  
+[AWS Architecture Center](https://aws.amazon.com/architecture)
 
 # 企业级架构设计
 ## 电商服务架构
@@ -39,6 +42,7 @@ bean销毁
 面向切面编程
 SpringSession默认用cookie保存和传递sessionid
 
+https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html\#spring-introduction  
 [https://en.wikipedia.org/wiki/Aspect-oriented\_programming](https://en.wikipedia.org/wiki/Aspect-oriented_programming)  
 [https://www.ibm.com/developerworks/cn/java/j-aop/index.html](https://www.ibm.com/developerworks/cn/java/j-aop/index.html)  
 [https://zhuanlan.zhihu.com/p/24565766](https://zhuanlan.zhihu.com/p/24565766)  
@@ -55,9 +59,23 @@ job框架/shiro
 
 ## 消息队列
 rabbitmq
-分布式队列
-Kafka/Kinesis，分布式队列，分布式数据收集  
 SQS，对性能无太大要求时，做简单队列, availability超好 
+
+## 数据流
+
+confluent  
+[Kafka: The Definitive Guide](https://book.douban.com/subject/26828527/)  
+https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying  
+https://www.infoq.cn/article/2018/01/confluent-kafka-data  
+
+aws  
+[Kinesis](https://aws.amazon.com/cn/kinesis/)
+
+elastic  
+https://zturn.cc/elkbook/
+
+## 大数据
+http://www.voidcn.com/article/p-biggriil-bhz.html
 
 ## 工作流/规则引擎
 
@@ -65,13 +83,10 @@ SQS，对性能无太大要求时，做简单队列, availability超好
 分词器
 索引规则
 
-## 大数据分析
-
-http://www.voidcn.com/article/p-biggriil-bhz.html
-
 webhook
 http://progrium.com/blog/2007/05/03/web-hooks-to-revolutionize-the-web/
 
 
-https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html\#spring-introduction
+
+
 
