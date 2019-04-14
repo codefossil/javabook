@@ -77,9 +77,8 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
   可扩展/高可用/高性能  
   输出：基础设施 
 
-how software evolution
 [康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
-[架构漫谈, 2016](https://www.infoq.cn/article/an-informal-discussion-on-architecture-part01)   
+[架构漫谈, 2016](https://www.infoq.cn/article/an-informal-discussion-on-architecture-part01)  
 
 ## 控制复杂度
 DDD/TDD/BDD/CQRS/DCI/  
