@@ -153,4 +153,12 @@ https://web.njit.edu/~kirova/is663-s11.html
 [Kubernetes In Action, 2017](https://book.douban.com/subject/26997846/)  
 [Continuous Delivery](https://book.douban.com/subject/6862062/)  
 [Site Reliability Engineering](https://book.douban.com/subject/26875239/)  
-[Infrastructure as Code](https://d1.awsstatic.com/whitepapers/DevOps/infrastructure-as-code.pdf)
+[Infrastructure as Code](https://d1.awsstatic.com/whitepapers/DevOps/infrastructure-as-code.pdf)  
+
+https://lpd-ios.github.io/2017/05/08/Git-Work-Flow/  
+https://docs.gitlab.com/ee/README.html  
+https://ohshitgit.com/  
+www.conventionalcommits.org  
+https://www.atlassian.com/git/tutorials  
+https://github.com/GetMyle/Guides/wiki/MYLE-GitHub-Flow  
+https://about.gitlab.com/2016/03/08/gitlab-tutorial-its-all-connected/  
