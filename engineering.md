@@ -8,6 +8,30 @@
 [MIT-SAL](http://systemarchitect.mit.edu/index.php)  
 
 # 基本问题
+
+* 逻辑（问题怎么解）  
+  问题域分解/服务功能划分  
+  输出：类/对象图、需求分析 
+  
+* 场景（验证能否走通）
+  突出系统间依赖  
+  输出：用例
+  
+* 过程（数据怎么走）  
+  接口/信息流/容错  
+  输出：交互图、时序图  
+
+* 开发
+  流程：源码 -> 源码仓库 -> 发布系统
+  测试：单元测试 -> 系统测试 -> QA -> 预发布 -> 线上
+  组件：配置中心/链路追踪/统一日志/消息（基础架构怎么做）
+  输出：产品展示/服务交互API
+
+* 物理（SRE怎么做）  
+  网络/计算/存储/容器  
+  可扩展/高可用/高性能  
+  输出：基础设施 
+
 [Humphrey-SPA award](https://resources.sei.cmu.edu/news-events/events/watts/watts.cfm)  
 [SE-history, 1996](https://www.dagstuhl.de/Reports/96/9635.pdf)  
 https://en.wikipedia.org/wiki/Software_engineering  
@@ -24,27 +48,21 @@ https://en.wikipedia.org/wiki/Software_development
 [自我评价](http://www.cnblogs.com/xinz/p/3852177.html)
 
 # 开发流程
+
 [Process Models, 2001](https://www.ics.uci.edu/~wscacchi/Papers/SE-Encyc/Process-Models-SE-Encyc.pdf)  
 [Waterfall, 1970](http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf)  
 [Spiral, 1988](http://www-scf.usc.edu/~csci201/lectures/Lecture11/boehm1988.pdf)  
 [PSP, 1996](http://www.star.cc.gatech.edu/documents/SpencerRugabear/psp.pdf)  
 [CMM, 1991](http://sunnyday.mit.edu/16.355/cmm.pdf)  
 [The Agile Methods Fray](http://www-scf.usc.edu/~csci201/lectures/Lecture11/demarco2002.pdf)  
-
+[Agile Software Development, 2003](https://book.douban.com/subject/1140457/)  
 https://en.wikipedia.org/wiki/Agile_software_development  
 
 # 需求和规格
+
 > 解决/不解决什么问题？谁的问题？
 creator driven (问题分治还是工作分治)  
 Be Zara, not Foxconn (从效率模式->快速响应式)  
-
-* 逻辑（问题怎么解）  
-  问题域分解/服务功能划分  
-  输出：类/对象图、需求分析 
-  
-* 场景（验证能否走通）
-  突出系统间依赖  
-  输出：用例
 
 第一原理  
 [Top risks, 2001](http://sunnyday.mit.edu/16.355/lawrence-requirements.pdf)  
@@ -64,66 +82,6 @@ http://www.valleytalk.org
 
 http://people.scs.carleton.ca/~deugo/Patterns/ospdg/
 https://www.cs.cmu.edu/~aldrich/courses/413/
-
-# 软件设计
-> 收集信息/关键路径/简化
-
-* 过程（数据怎么走）  
-  接口/信息流/容错  
-  输出：交互图、时序图  
-
-* 物理（SRE怎么做）  
-  网络/计算/存储/容器  
-  可扩展/高可用/高性能  
-  输出：基础设施 
-
-[康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
-[架构漫谈, 2016](https://www.infoq.cn/article/an-informal-discussion-on-architecture-part01)  
-
-## 控制复杂度
-DDD/TDD/BDD/CQRS/DCI/  
-[DDD](https://book.douban.com/subject/1418618/)  
-[System Architecture: Strategy and Product Development for Complex Systems](https://book.douban.com/subject/26938710/)  
-
-## 控制规模
-
-[Big data, 2015](https://book.douban.com/subject/10438832/)  
-[Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
-[Software design for large system, 1988](https://web.njit.edu/~kirova/BC-SDP.pdf)  
-[排队论及其应用浅析](https://www.slideshare.net/frogd/ss-27959518)  
-[构建高性能Web站点, 2009](https://book.douban.com/subject/3924175/)  
-
-## 架构/模式/原则
-沉默成本（可用性）  
-机会成本（兼容性）  
-边际成本（扩展性）  
-You Aren't Gonna Need It.  
-If it ain't broke, don't fix it.  
-飞轮效应  
-
-[Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
-[Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)，引导出架构中的思考/图/文档的问题点  
-[Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
-[Stop Learning Frameworks, 2018](https://sizovs.net/2018/12/17/stop-learning-frameworks/)  
-
-[Agile Software Development, 2003](https://book.douban.com/subject/1140457/)  
-[TAOUP, 2003](https://book.douban.com/subject/5387401/)  
-[Clean Architecture](https://book.douban.com/subject/30333919/)  
-[Just Enough Software Architecture](https://book.douban.com/subject/24872314/)  
-
-https://java-design-patterns.com/principles/  
-[dp](https://sourcemaking.com/design_patterns)  
-
-[worse is better](http://dreamsongs.com/WorseIsBetter.html)  
-[The Rule of Least Power, 2001](https://www.w3.org/2001/tag/doc/leastPower.html)  
-
-[Architectural and philosophical points](https://www.w3.org/DesignIssues/)  
-[Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)  
-[方法论、方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)  
-[PEP 20](https://www.python.org/dev/peps/pep-0020/)  
-
-todo  
-https://web.njit.edu/~kirova/is663-s11.html  
 
 
 # 软件实现与质量
