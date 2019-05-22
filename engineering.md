@@ -9,6 +9,8 @@
 
 # 基本问题
 
+> One of the biggest problems with software is that **it’s complex and abstract**. The result being that it’s hard to visualise the runtime characteristics of a piece of software from diagrams or even the code itself.
+
 * 逻辑（问题怎么解）  
   问题域分解/服务功能划分  
   输出：类/对象图、需求分析 
@@ -46,6 +48,8 @@ https://en.wikipedia.org/wiki/Software_development
 [构建之法](https://book.douban.com/subject/27069503/)  
 [A Multi-Decade Perspective, Scacchi, 2018](https://www.ics.uci.edu/~wscacchi/Papers/New/IEEE-Computer-Scacchi-2018.pdf)  
 [自我评价](http://www.cnblogs.com/xinz/p/3852177.html)
+
+> software craftsmanship
 
 # 开发流程
 

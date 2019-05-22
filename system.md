@@ -6,10 +6,14 @@
 
 # 基本问题
 
-系统结构
-技术选型
-非功能问题解决之道
-理解业务变化的速度，理解什么是重要的以及为什么重要
+系统结构/技术选型
+非功能需求解决之道
+约束和原则
+
+# 控制风险
+
+- Part of the process of architecting a software system is about understanding **what is significant and why**
+- Understanding **the speed at which your organisation or business changes** is important
 
 # 控制复杂度
 
@@ -33,11 +37,9 @@ DDD/TDD/BDD/CQRS/DCI/
 You Aren't Gonna Need It.  
 If it ain't broke, don't fix it.  
 飞轮效应  
-Architecture, regardless of the domain, is about **structure and vision**.
-Understanding the speed at which your organisation or business changes
 
 [Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
-[Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)，权衡BDUF和演变式设计，架构中的思考/图/文档的问题点  
+[Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)，权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档  
 [Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
 [Just Enough Software Architecture](https://book.douban.com/subject/24872314/)    
 [Stop Learning Frameworks, 2018](https://sizovs.net/2018/12/17/stop-learning-frameworks/)  
@@ -54,6 +56,9 @@ https://java-design-patterns.com/principles/
 [Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)  
 [方法论、方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)  
 [PEP 20](https://www.python.org/dev/peps/pep-0020/)  
+
+# 可视化和文档化架构
+C4
 
 todo  
 https://web.njit.edu/~kirova/is663-s11.html  

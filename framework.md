@@ -18,6 +18,17 @@ https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-eng
 [AWS Architecture Center](https://aws.amazon.com/architecture)  
 
 # 企业级架构设计
+
+## 用户系统
+三用户模型
+
+http://doc.cocolian.cn/essay
+
+## 支付系统
+第三方支付
+优惠券
+积分
+
 ## 电商服务架构
 商品管理
 订单系统
@@ -25,11 +36,6 @@ https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-eng
 库管  
 [TableStore实战：亿量级订单管理解决方案](https://yq.aliyun.com/articles/656196?spm=a2c4e.11154837.920241.5.464642b2YuhDE6)
 [分库分表技术演进](https://mp.weixin.qq.com/s/3ZxGq9ZpgdjQFeD2BIJ1MA)
-
-## 在线支付架构
-第三方支付
-优惠券
-积分
 
 ## 即时消息
 消息推送
