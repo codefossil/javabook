@@ -20,14 +20,18 @@ https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-eng
 # 企业级架构设计
 
 ## 用户系统
-三用户模型
 
+1. 账户系统
+三用户模型
 http://doc.cocolian.cn/essay
 
-## 支付系统
-第三方支付
-优惠券
-积分
+2. 点券系统
+http://www.woshipm.com/pd/913433.html
+http://www.woshipm.com/pd/836586.html
+https://juejin.im/post/5b06851251882538b82c3e1f
+https://www.jianshu.com/p/bc56e676298f
+
+3. 支付系统
 
 ## 电商服务架构
 商品管理
@@ -70,7 +74,6 @@ dubbo/thrift
 
 ## 持久化框架
 jdbc/mybatis
-mybatis$和\#的区别
 job框架/shiro
 
 ## 消息队列
