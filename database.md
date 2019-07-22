@@ -171,33 +171,49 @@ DAG Directed acyclic graph
 |--|--|--|--|--|--|--|
 |002|001|T1|update|A|1|2|
 
-# 数据建模和SQL
+# 数据建模
+
 https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
 https://blog.sqlizer.io/posts/sql-43/
 https://en.wikipedia.org/wiki/Relational_algebra
 https://en.wikipedia.org/wiki/Tuple_relational_calculus
 https://blog.codinghorror.com/maybe-normalizing-isnt-normal/
-内联/外联/笛卡尔乘积  
-union/union all区别  
-left join  
-数据建模中的设计考虑  
-Generalization and Specialization  
-数据库为响应时间  
-数据库为高吞吐量  
-范式和非范式  
-Blob存储  
-how to scale a database  
-table corruption  
-数据库监控/切换  
-数据库连接池  
-c3p0/druid  
-JDBC  
-Mybatis  
+
+> 一种精确的，独立的，抽象方式数据结构，用来描述现实业务的对象和事件。
+> initial requirement->use case->object/relation
+> normalization->business rule (Relational)
+
+宽表和纵表
+EAV模型
+父表子表
+汇总表/计数器表
+物化视图
+范式和非范式
+事实表和维度表
+
+[Relational Model, codd70](http://cs.brown.edu/courses/cs295-11/2006/codd.pdf)  
+[E-R model, chen76](https://harrymoreno.com/assets/greatPapersInCompSci/7.3_-_The_Entity_Relationship_Model_-_Towards_A_Unified_View_of_Data-Peter_Pin-Shan_Chen.pdf)  
+[High Performance MySQL, 2012](https://book.douban.com/subject/10443458/)  
+
+http://cs.brown.edu/courses/cs295-11/2006/schedule.html  
+http://cs.brown.edu/courses/csci2270/previous.html
+
+# sql
+
+query plan
+exe order 
+cost model
 
 ## SQL查询引擎
+
 [presto](http://prestodb.github.io/)  
 
+
+
+[innodb架构](https://dev.mysql.com/doc/refman/5.7/en/innodb-architecture.html)
+
 # 索引
+
 > 不访问不必要的数据
 
 ## B树的深度问题
