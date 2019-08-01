@@ -44,7 +44,8 @@
 [Software Testing and Verification](http://www.cs.toronto.edu/~chechik/courses18/csc410/readings.html)  
 
 http://www.ru.is/faculty/luca/IMTCOURSE/  
-https://moodle.risc.jku.at/course/view.php?id=143
+https://moodle.risc.jku.at/course/view.php?id=143  
+http://www.cs.cornell.edu/gries/July2016/  
 
 # 并发编程
 [CPIJ, 1999](https://book.douban.com/subject/1440218/)  

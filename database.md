@@ -179,9 +179,9 @@ https://en.wikipedia.org/wiki/Relational_algebra
 https://en.wikipedia.org/wiki/Tuple_relational_calculus
 https://blog.codinghorror.com/maybe-normalizing-isnt-normal/
 
-> 一种精确的，独立的，抽象方式数据结构，用来描述现实业务的对象和事件。
-> initial requirement->use case->object/relation
-> normalization->business rule (Relational)
+> 一种精确的，独立的，抽象方式数据结构，用来描述现实业务的对象和事件。  
+initial requirement->use case->object/relation  
+normalization->business rule (Relational)
 
 宽表和纵表
 EAV模型
@@ -198,19 +198,21 @@ EAV模型
 http://cs.brown.edu/courses/cs295-11/2006/schedule.html  
 http://cs.brown.edu/courses/csci2270/previous.html
 
-# sql
+# 查询优化
 
 query plan
 exe order 
 cost model
 
-## SQL查询引擎
-
+[access path, Selinger-79](http://courses.cs.vt.edu/~cs4604/Spring13/lectures/selinger-qopt-paper.pdf)，System-R里面关于sql处理的说明，结合统计信息，基于代价模型计算join顺序和嵌套查询。  
+[algorithms for the join ordering problem, ict09](http://www.acad.bg/rismim/itc/sub/archiv/Paper6_1_2009.PDF)
 [presto](http://prestodb.github.io/)  
-
-
-
+[antlr](https://www.antlr.org)
 [innodb架构](https://dev.mysql.com/doc/refman/5.7/en/innodb-architecture.html)
+
+https://github.com/mysql/mysql-server/blob/5.7/sql/sql_optimizer.cc
+https://tech.meituan.com/2014/06/16/presto.html
+https://www.cockroachlabs.com/blog/join-ordering-pt1/
 
 # 索引
 
@@ -393,4 +395,5 @@ https://www.allthingsdistributed.com/2018/06/purpose-built-databases-in-aws.html
 [SIGMOD](https://dl.acm.org/event.cfm?id=RE227&tab=pubs)  
 [VLDB](http://vldb.org/pvldb)  
 [Momjian-PostgreSQL](https://momjian.us/main/faq.html)
+[daslab](http://daslab.seas.harvard.edu/)
 
