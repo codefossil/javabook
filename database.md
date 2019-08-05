@@ -193,22 +193,18 @@ EAV模型
 
 [Relational Model, codd70](http://cs.brown.edu/courses/cs295-11/2006/codd.pdf)  
 [E-R model, chen76](https://harrymoreno.com/assets/greatPapersInCompSci/7.3_-_The_Entity_Relationship_Model_-_Towards_A_Unified_View_of_Data-Peter_Pin-Shan_Chen.pdf)  
-[High Performance MySQL, 2012](https://book.douban.com/subject/10443458/)  
+[ch4, High Performance MySQL, 2012](https://book.douban.com/subject/10443458/)  
 
 http://cs.brown.edu/courses/cs295-11/2006/schedule.html  
 http://cs.brown.edu/courses/csci2270/previous.html
 
 # 查询优化
 
-query plan
-exe order 
-cost model
-
 [access path, Selinger-79](http://courses.cs.vt.edu/~cs4604/Spring13/lectures/selinger-qopt-paper.pdf)，System-R里面关于sql处理的说明，结合统计信息，基于代价模型计算join顺序和嵌套查询。  
-[algorithms for the join ordering problem, ict09](http://www.acad.bg/rismim/itc/sub/archiv/Paper6_1_2009.PDF)
+[algorithms for the join ordering problem, ict09](http://www.acad.bg/rismim/itc/sub/archiv/Paper6_1_2009.PDF)  
 [presto](http://prestodb.github.io/)  
-[antlr](https://www.antlr.org)
-[innodb架构](https://dev.mysql.com/doc/refman/5.7/en/innodb-architecture.html)
+[antlr](https://www.antlr.org)  
+[innodb架构](https://dev.mysql.com/doc/refman/5.7/en/innodb-architecture.html)    
 
 https://github.com/mysql/mysql-server/blob/5.7/sql/sql_optimizer.cc
 https://tech.meituan.com/2014/06/16/presto.html
@@ -219,6 +215,7 @@ https://www.cockroachlabs.com/blog/join-ordering-pt1/
 > 不访问不必要的数据
 
 ## B树的深度问题
+
 * 假设sizeof(key)=sizeof(next_node)=4 byte，**节点最大占用m*(4+4)=8*m byte**
 * 假设sizeof(page)=4KB，m=4*1024/(4+4)=512，即**B树就是个512叉树**
 * 假如有10M行数据，**B树最大深度有log(512/2, 10M)=2.9006~=3**，avl的深度log(2, 10M)=23.25
