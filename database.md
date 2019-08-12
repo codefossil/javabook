@@ -94,6 +94,7 @@ https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt
 
 ## 串行=强隔离
 ### 单线程实现
+
 最简单的串行方式，比如Redis，
 * 事务要数据量小，快速更新
 * 或者内存可以装满数据，取消cache，允许直接读少量内存数据
@@ -171,6 +172,10 @@ DAG Directed acyclic graph
 |--|--|--|--|--|--|--|
 |002|001|T1|update|A|1|2|
 
+# 基本问题 
+
+[Relational Model, codd70](http://cs.brown.edu/courses/cs295-11/2006/codd.pdf)，提出数据展示和存储需要分离，解决方案就是关系模型+数据语言。  
+
 # 数据建模
 
 https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
@@ -191,12 +196,14 @@ EAV模型
 范式和非范式
 事实表和维度表
 
-[Relational Model, codd70](http://cs.brown.edu/courses/cs295-11/2006/codd.pdf)  
+
 [E-R model, chen76](https://harrymoreno.com/assets/greatPapersInCompSci/7.3_-_The_Entity_Relationship_Model_-_Towards_A_Unified_View_of_Data-Peter_Pin-Shan_Chen.pdf)  
 [ch4, High Performance MySQL, 2012](https://book.douban.com/subject/10443458/)  
 
 http://cs.brown.edu/courses/cs295-11/2006/schedule.html  
 http://cs.brown.edu/courses/csci2270/previous.html
+
+http://www.databaseanswers.org/data_models/
 
 # 查询优化
 
@@ -209,10 +216,44 @@ http://cs.brown.edu/courses/csci2270/previous.html
 https://github.com/mysql/mysql-server/blob/5.7/sql/sql_optimizer.cc
 https://tech.meituan.com/2014/06/16/presto.html
 https://www.cockroachlabs.com/blog/join-ordering-pt1/
+http://idke.ruc.edu.cn/reading/index.htm#phd
+
+# todo
+
+https://www2.cs.duke.edu/courses/fall18/compsci516/
+https://www.inf.unibz.it/~artale/DB2/db2-course.htm
+https://sites.google.com/site/cs186fall17/home/schedule-and-notes
+https://www.ibmbigdatahub.com/blog/celebrating-db2-s-25-years-awesome
+http://daslab.seas.harvard.edu/classes/cs165/#
+
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-830-database-systems-fall-2010/readings/
+
+https://www.svds.com/data-architecture-reading-list/
 
 # 索引
 
 > 不访问不必要的数据
+> Is an index the best solution?
+
+hash index
+b+tree index
+lsm index
+spatial index
+full text index
+selectivity/cardinality
+three-star index
+covering index
+index-organized table
+
+index-covered query
+range query
+how to sort
+
+[Relational Database Index Design and the Optimizers, 2005](https://book.douban.com/subject/26419771/)
+
+https://github.com/jarulraj/databaseology#access-methods
+
+https://web.stanford.edu/class/cs245/
 
 ## B树的深度问题
 

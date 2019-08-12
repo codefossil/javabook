@@ -51,8 +51,13 @@ https://en.wikipedia.org/wiki/Software_development
 
 > software craftsmanship
 
-# 开发流程
+# 项目管理
 
+[项目管理方法论，2015](https://book.douban.com/subject/26584696/)  
+[Peopleware](https://book.douban.com/subject/25956450/)
+[凤凰项目，2015](https://book.douban.com/subject/26644070/)
+
+## 开发流程
 [Process Models, 2001](https://www.ics.uci.edu/~wscacchi/Papers/SE-Encyc/Process-Models-SE-Encyc.pdf)  
 [Waterfall, 1970](http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf)  
 [Spiral, 1988](http://www-scf.usc.edu/~csci201/lectures/Lecture11/boehm1988.pdf)  
@@ -61,6 +66,12 @@ https://en.wikipedia.org/wiki/Software_development
 [The Agile Methods Fray](http://www-scf.usc.edu/~csci201/lectures/Lecture11/demarco2002.pdf)  
 [Agile Software Development, 2003](https://book.douban.com/subject/1140457/)  
 https://en.wikipedia.org/wiki/Agile_software_development  
+
+rad
+xp
+scrum
+rup
+lean
 
 # 需求和规格
 
@@ -86,7 +97,6 @@ http://www.valleytalk.org
 
 http://people.scs.carleton.ca/~deugo/Patterns/ospdg/
 https://www.cs.cmu.edu/~aldrich/courses/413/
-
 
 # 软件实现与质量
 
