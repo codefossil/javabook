@@ -1,5 +1,9 @@
 [Advanced Data Structures ](http://courses.csail.mit.edu/6.851/fall17/)
 
+
+
+https://en.wikipedia.org/wiki/Book:Data_structures
+
 # sorting 
 [quicksort](https://www.cs.ox.ac.uk/files/6226/H2006%20-%20Historic%20Quicksort.pdf)  
 [Sorting in Linear Time?](https://www.cs.unc.edu/~plaisted/comp550/linear%20time%20sorting.pdf)  

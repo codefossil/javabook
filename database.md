@@ -1,180 +1,23 @@
-# 数据库查询之旅
-> Performance is all about code path
+[SIGMOD](https://dl.acm.org/event.cfm?id=RE227&tab=pubs)  
+[VLDB](http://vldb.org/pvldb)  
+[Momjian-PostgreSQL](https://momjian.us/main/faq.html)  
+[daslab](http://daslab.seas.harvard.edu/)  
 
-30个列，总数50M，300条/用户，2个大字段总共2K，总长度250byte/记录  
-S1一张表，S2主表(90%) + 详情表(10%)  
-109Kbyte/索引  
+[Comparison of different SQL implementations](http://troels.arvin.dk/db/rdbms/)  
+[dbms wiki](https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems)  
 
-||S1|S2|备注|
-| -- | -- | -- | -- |
-|1个数据块记录详情|8K*0.8 div (2K+250) ≈ 3|8K*0.8 div 250 ≈ 26，8K*0.8/2K ≈ 3|
-|查询计划|
-|索引记录详情|8K*0.6 div 109≈45||索引空间利用率为60~70%|
-|索引查询|4+300/45 ≈ 11|
-|内存I/O|(300 div 3)* 1.5+11≈161|(300 div 26)* 1.5+11≈29|用户记录离散程度为1.5（？这里是否必要引入）|
-|磁盘访问I/O|161*(1-0.85)≈25|29*(1-0.85)≈5|缓存命中率为85%|
-|总耗时|161*0.01+25*7≈177ms|29*0.01+5*7≈36ms|内存I/O 0.01ms，磁盘I/O 7ms，不算排队时间|
+# 基本问题
 
-* 优化问题，把所有访问路径列出来
-* 各种cache/各种延迟影响很大
+[Turing81, Codd](https://amturing.acm.org/award_winners/codd_1000892.cfm)  
+[Turing98, Gray](https://amturing.acm.org/award_winners/gray_3649936.cfm)  
+[Turing04, Stonebraker](https://amturing.acm.org/award_winners/stonebraker_1172121.cfm)  
 
-[我对后端优化的一点想法](https://www.slideshare.net/jamestong/2012-12552732)  
-[5-minute rule](http://www.hpl.hp.com/techreports/tandem/TR-86.1.pdf)  
-[Think Clearly About Performance](https://method-r.com/wp-content/uploads/2018/07/TCAP-from-MOTD2.pdf)
-https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt.html
+[what goes around, stonebraker05](https://15721.courses.cs.cmu.edu/spring2016/papers/whatgoesaround-stonebraker.pdf), 总结了70-05这35年的数据模型得失  
+[architecture db, 2007](http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf)  
+[db-how](http://coding-geek.com/how-databases-work)  
+[ddia](https://book.douban.com/subject/26197294/)，从工程的角度，系统的，全面地讲解数据处理的各种问题。并且还有论文指南，深入浅出  
+[redbook](http://redbook.io)，从88年开始，每隔10年，由stonebraker组织，对数据这几年的发展进行总结和预测。   
 
-# 并发控制
-
-> 事务是为了简化，解决数据库容错
-
-* 当2个并发同时写一个数据
-* 当读和写一个数据同时发生
-* 多个数据同时写
-
-> 数据库事务保证数据不被破坏（AID），其局限是数据库无法维护业务的**并发不可变条件**
-
-## 弱隔离
-
-> 为了HA/HP，事务可以丢弃
-
-### 脏写
-
-|T1|T2|T2结果|
-| -- | -- | -- |
-|W(A=50)|||
-||W(A=100)+commit|:dog: 覆盖未提交的值|
-|commit||A!=50|
-
-### 脏读
-
-|T1|T2|T2结果|
-| -- | -- | -- |
-||R(A)|72|
-|W(A=96)|||
-||R(A)|96 - :dog: 读取到其他事务未提交数据 |
-|rollback|||
-
-### 更新丢失 (汇款)
-
-|T1(A给B 50)|T2(查看A和B总和)|T2结果|
-| -- | -- | -- |
-|R(A)||初始：A=100, B=100|
-|A=A-50|||
-|W(A)|R(A)|50|
-||R(B)|100|
-|R(B)|返回A+B|150|
-|B=B+50|commit||
-|W(B)|||
-|commit|||
-
-### 原子写-counter（2个读+写事务）
-
-|T1|T2|T2结果|
-| -- | -- | -- |
-|R(A)=42|||
-||R(A)|42|
-|W(A+1)=43|||
-||W(A+1)|43|
-
-### 不可重复读
-
-|T1|T2|T2结果|
-| -- | -- | -- |
-||R(A)|50|
-|W(A=100)+commit|||
-||R(A)+commit|100 - :dog: 多次读取相同数据结果不同|
-
-### 幻读
-
-|T1|T2|T2结果|
-| -- | -- | -- |
-||MAX|50|
-|ADD(A=100)+commit||:dog: 幻读和不可重复读的区别=添加，影响的是where等范围查询|
-||MAX+commit|100|
-
-## 串行=强隔离
-### 单线程实现
-
-最简单的串行方式，比如Redis，
-* 事务要数据量小，快速更新
-* 或者内存可以装满数据，取消cache，允许直接读少量内存数据
-
-但是性能被单个CPU核心限制
-
-### 2PL=悲观=内存锁 + 协议
-
-|变体|协议|脏读|脏写|不可重复读|更新丢失|幻读|评价|
-| -- | -- | -- | -- | -- | -- | -- | -- |
-|2PL|锁可以在事务中间释放|may|may|may|may|may|可能死锁|
-|C2PL|2PL+1阶段就获取所有锁|||may|may|may|保守派，无死锁，有幻读|
-|S2PL|X-lock在事务结束释放|||may|may|may|死锁，偏向读，读已提交|
-|SS2PL|S-lock/X-lock都必须在事务结束释放||||may|may|可重复读|
-|SS2PL+predicate（索引锁）|条件查询/更新/删除时，需要检查predicate锁||||||串行|
-
-### OCC=完全乐观=[TO+SGT]+无锁
-> 适合读写较短/竞争低的事务，事务终止数量严重影响性能，长事务可能会饿死
-
-每个事务读写时间戳写到各自的workset
-提交前验证下
-更新当前workset到主存储（**随机写问题**），否则重试
-
-|T1|value|created|deleted|
-|--|--|--|--|
-|A0|456|1|
-
-|T2|value|created|deleted|
-|--|--|--|--|
-|A0|123|0|
-
-### 现代混合=MVCC+2PL+GC
-> 综合负载性能好，不一定性能好于OCC
-
-每个tuple的修改都有一个版本记录
-怎样记录跟存储模型有关
-
-|version|value|created|deleted|
-|--|--|--|--|
-|A0|123|0|42|
-|A1|456|42|-|
-
-#### SI/SSI=MVCC（数据部分）+ OCC（验证规则）+ 无锁
-
-||事务开始|可见性规则|不可见|事务提交|
-|--|--|--|--|--|
-|SI|所有已经提交的数据+所有没有提交的删除||正在处理的写事务+已经终止的事务+之后开始的事务|可能更新丢失|
-|SSI|同上|跟踪正在提交的数据|同上|检查查询结果改变，回滚并重试|
-
-#### 设计考虑
-现代DBMS实现是以上方法的混合体
-
-||协议|多版本存储方式|GC|索引|
-|--|--|--|--|--|
-|InnoDB|MV+2PL|Delta|VACUUM||
-
-### 死锁检测
-确定性
-deterministic concurrency control  
-view serialization的条件是什么?  
-死锁、SGT闭环  
-DAG Directed acyclic graph
-
-[cmu 15-445/645](https://15445.courses.cs.cmu.edu/fall2018/schedule.html)  
-[ddia](https://book.douban.com/subject/26197294/)  
-[2pl](https://en.wikipedia.org/wiki/Two-phase_locking)  
-
-# 日志与恢复
-
-## binlog
-
-## WAL
-
-|LSN|pre-LSN|txn id|type|obj|before|after|
-|--|--|--|--|--|--|--|
-|002|001|T1|update|A|1|2|
-
-# 基本问题 
-
-[Relational Model, codd70](http://cs.brown.edu/courses/cs295-11/2006/codd.pdf)，提出数据展示和存储需要分离，解决方案就是关系模型+数据语言。  
 
 # 数据建模
 
@@ -196,7 +39,7 @@ EAV模型
 范式和非范式
 事实表和维度表
 
-
+[Relational Model, codd70](http://cs.brown.edu/courses/cs295-11/2006/codd.pdf)，坚持数据展示和存储需要分离，第一次提出关系数据模型，关系代数，数据语言概念。    
 [E-R model, chen76](https://harrymoreno.com/assets/greatPapersInCompSci/7.3_-_The_Entity_Relationship_Model_-_Towards_A_Unified_View_of_Data-Peter_Pin-Shan_Chen.pdf)  
 [ch4, High Performance MySQL, 2012](https://book.douban.com/subject/10443458/)  
 
@@ -205,104 +48,16 @@ http://cs.brown.edu/courses/csci2270/previous.html
 
 http://www.databaseanswers.org/data_models/
 
-# 查询优化
+# 数据并行计算
 
-[access path, Selinger-79](http://courses.cs.vt.edu/~cs4604/Spring13/lectures/selinger-qopt-paper.pdf)，System-R里面关于sql处理的说明，结合统计信息，基于代价模型计算join顺序和嵌套查询。  
-[algorithms for the join ordering problem, ict09](http://www.acad.bg/rismim/itc/sub/archiv/Paper6_1_2009.PDF)  
-[presto](http://prestodb.github.io/)  
-[antlr](https://www.antlr.org)  
-[innodb架构](https://dev.mysql.com/doc/refman/5.7/en/innodb-architecture.html)    
 
-https://github.com/mysql/mysql-server/blob/5.7/sql/sql_optimizer.cc
-https://tech.meituan.com/2014/06/16/presto.html
-https://www.cockroachlabs.com/blog/join-ordering-pt1/
-http://idke.ruc.edu.cn/reading/index.htm#phd
+# 数据库架构
 
-# todo
+[oltp, sigmod08](http://www.cs.umd.edu/~abadi/papers/oltpperf-sigmod08.pdf)  
+[olap overview, sigmod97](https://cs.nju.edu.cn/zhouzh/zhouzh.files/course/dm/reading/reading02/chaudhuri_sigmodrec97.pdf)  
 
-https://www2.cs.duke.edu/courses/fall18/compsci516/
-https://www.inf.unibz.it/~artale/DB2/db2-course.htm
-https://sites.google.com/site/cs186fall17/home/schedule-and-notes
-https://www.ibmbigdatahub.com/blog/celebrating-db2-s-25-years-awesome
-http://daslab.seas.harvard.edu/classes/cs165/#
-
-https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-830-database-systems-fall-2010/readings/
-
-https://www.svds.com/data-architecture-reading-list/
-
-# 索引
-
-> 不访问不必要的数据
-> Is an index the best solution?
-
-hash index
-b+tree index
-lsm index
-spatial index
-full text index
-selectivity/cardinality
-three-star index
-covering index
-index-organized table
-
-index-covered query
-range query
-how to sort
-
-[Relational Database Index Design and the Optimizers, 2005](https://book.douban.com/subject/26419771/)
-
-https://github.com/jarulraj/databaseology#access-methods
-
-https://web.stanford.edu/class/cs245/
-
-## B树的深度问题
-
-* 假设sizeof(key)=sizeof(next_node)=4 byte，**节点最大占用m*(4+4)=8*m byte**
-* 假设sizeof(page)=4KB，m=4*1024/(4+4)=512，即**B树就是个512叉树**
-* 假如有10M行数据，**B树最大深度有log(512/2, 10M)=2.9006~=3**，avl的深度log(2, 10M)=23.25
-
-## 写优化LSM
-
-|OP|B|LSM|
-| ---- | ---- | ---- |
-|写|1.REDO 2.getPage+**树分裂(可能)** 3. 1~3个页到disk|1.REDO+memtable 2.当达到阈值，后台线程合并segment|
-|读|getPage+内存中查找row|memtable+**迭代查询其他SSTable索引**|
-|更新|读操作+更新+disk|写操作+更新标记|
-|删除||写操作+删除标记|
-
-设计考虑
-- 是否需要写优化
-![](image/lsm.png)
-- segment的大小和合并策略
-  查询失效时，加速迭代查询
-  高并发锁
-  lsm如何保证迭代读取次数
-- B树叶节点到底是存值`聚集索引`，还是文件偏移
-
-## 多列索引和R-tree
-复杂的条件查询通常会包含多列，普通的索引查询只能用到前缀匹配
-
-## 布隆过滤
-
-[SSTable](http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb/)  
-[MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)  
-[浅谈MySQL的B树索引与索引优化](https://monkeysayhi.github.io/2018/03/06/%E6%B5%85%E8%B0%88MySQL%E7%9A%84B%E6%A0%91%E7%B4%A2%E5%BC%95%E4%B8%8E%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96/)  
-[Relational Database Index Design and the Optimizers](https://book.douban.com/subject/26419771/)  
-
-# 查询管理
-iterator/volcano  
-materialization  
-vectorized  
-地理位置查询/多维查询
-
-# 批处理/离线分析
-Hadoop MR, Spark实现原理
-
-# 在线实时分析
-Hive/SparkSQL
-flink
-
-# 存储引擎
+[column vs row, sigmod08](https://15721.courses.cs.cmu.edu/spring2019/papers/09-storage/p967-abadi.pdf)  
+[c-store, vldb2005](http://www.cs.umd.edu/~abadi/papers/vldb.pdf)  
 
 KTPS
 MTPS
@@ -389,7 +144,6 @@ Cobar属于阿里B2B事业群，始于2008年，在阿里服役3年多，接管3
 |子查询||1层|[支持列表](https://help.aliyun.com/document_detail/71295.html?spm=a2c4g.11186623.2.11.75093f68Qi2HQX)|
 |聚合||✅|智能下推|
 
-比如一个简单的AVG操作，对于一些比较初级的分布式数据库模型而言，常见做法是把AVG直接下发到所有存储节点，这样造成的结果就是语法兼容，语义不兼容，最终拿到的是错误结果。而DRDS的智能下推引擎，对SQL的语法做充分的语义兼容性适配，针对AVG操作，只能由引擎将逻辑AVG SQL解析优化为SUM和COUNT的SQL然后进行下推，由底层的数据库实例节点完成SUM和COUNT计算，充分利用底层节点的计算能力，在引擎层将各个存储节点的SUM和COUNT结果聚合计算，最终计算出AVG。
 
 [mycat权威指南](http://www.mycat.io/document/mycat-definitive-guide.pdf)  
 [column-oriented vs column-family](https://dbmsmusings.blogspot.com/2010/03/distinguishing-two-major-types-of_29.html)  
@@ -397,21 +151,128 @@ Cobar属于阿里B2B事业群，始于2008年，在阿里服役3年多，接管3
 [跨时代的分布式数据库 – 阿里云DRDS详解
 ](https://www.csdn.net/article/a/2015-08-28/15827676)
 
-# HA
 
-|单机房|双机房|三机房|
-| ---- | ---- | ---- |
-|主从异步复制|主从半同步复制|主从RAFT强同步（金融级）|
+# 存取方法
+
+> 不访问不必要的数据
+> Is an index the best solution?
+
+hash index
+b+tree index
+lsm index
+spatial index
+full text index
+selectivity/cardinality
+three-star index
+covering index
+index-organized table
+
+index-covered query
+range query
+how to sort
+
+[The Ubiquitous B-Tree, 79](http://cs.kangwon.ac.kr/~ysmoon/courses/2005_1/dwnolap/Comer79-U-B-trees.pdf)
+[Relational Database Index Design and the Optimizers, 2005](https://book.douban.com/subject/26419771/)  
+[SSTable](http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb/)  
+[MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)  
+[浅谈MySQL的B树索引与索引优化](https://monkeysayhi.github.io/2018/03/06/%E6%B5%85%E8%B0%88MySQL%E7%9A%84B%E6%A0%91%E7%B4%A2%E5%BC%95%E4%B8%8E%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96/)  
 
 
-# TODO
+https://github.com/jarulraj/databaseology#access-methods
+
+https://web.stanford.edu/class/cs245/
+http://cs.brown.edu/courses/cs227/papers.html
+
+
+# 日志与恢复
+
+[ARIES,tods92 ](https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf)
+
+|LSN|pre-LSN|txn id|type|obj|before|after|
+|--|--|--|--|--|--|--|
+|002|001|T1|update|A|1|2|
+
+
+# 查询优化
+
+[access path, selinger-79](http://courses.cs.vt.edu/~cs4604/Spring13/lectures/selinger-qopt-paper.pdf)，System-R里面关于sql处理的说明，结合统计信息，基于代价模型计算join顺序和嵌套查询。  
+[overview, 98](https://www.microsoft.com/en-us/research/publication/an-overview-of-query-optimization-in-relational-systems-paper/)  
+[algorithms for the join ordering problem, ict09](http://www.acad.bg/rismim/itc/sub/archiv/Paper6_1_2009.PDF)  
+[query evaluation techniques, 93](http://infolab.stanford.edu/~hyunjung/cs346/graefe.pdf)  
+[query optimization, ioannidis96](http://infolab.stanford.edu/~hyunjung/cs346/ioannidis.pdf)  
+[qp distributed, tods81](https://people.eecs.berkeley.edu/~wong/wong_pubs/wong73.pdf)  
+[rule-based, sigmod87](http://www.dblab.ece.ntua.gr/~nikos/edith/qopt_bibl/papers/rule_based/freytag_sigmod87_rule_based_qopt.pdf)  
+
+------
+[presto](http://prestodb.github.io/)  
+[antlr](https://www.antlr.org)  
+[innodb架构](https://dev.mysql.com/doc/refman/5.7/en/innodb-architecture.html)    
+
+https://github.com/mysql/mysql-server/blob/5.7/sql/sql_optimizer.cc
+https://tech.meituan.com/2014/06/16/presto.html
+https://www.cockroachlabs.com/blog/join-ordering-pt1/
+http://idke.ruc.edu.cn/reading/index.htm#phd
+
+iterator/volcano  
+materialization  
+vectorized  
+地理位置查询/多维查询
+
+
+# 并发控制
+
+> 事务是为了简化，解决数据库容错
+
+* 当2个并发同时写一个数据
+* 当读和写一个数据同时发生
+* 多个数据同时写
+
+> 数据库事务保证数据不被破坏（AID），其局限是数据库无法维护业务的**并发不可变条件**
+
+[critique isolation level, sigmod95](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-95-51.pdf)  
+[granularity of locks and degree of consistency, ibm75](http://jimgray.azurewebsites.net/papers/granularity%20of%20locks%20and%20degrees%20of%20consistency%20rj%201654.pdf)  
+[occ, tods81](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)  
+
+[cmu 15-445/645](https://15445.courses.cs.cmu.edu/fall2018/schedule.html)  
+[2pl](https://en.wikipedia.org/wiki/Two-phase_locking) 
+
+确定性
+deterministic concurrency control  
+view serialization的条件是什么?  
+死锁、SGT闭环  
+DAG Directed acyclic graph
+
+
+# 性能优化
+> Performance is all about code path
+
+* 优化问题，把所有访问路径列出来
+* 各种cache/各种延迟影响很大
+
+[我对后端优化的一点想法](https://www.slideshare.net/jamestong/2012-12552732)  
+[5-minute rule](http://www.hpl.hp.com/techreports/tandem/TR-86.1.pdf)  
+[Think Clearly About Performance](https://method-r.com/wp-content/uploads/2018/07/TCAP-from-MOTD2.pdf)
+https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt.html
+
+
+
+# todo
+
+https://www2.cs.duke.edu/courses/fall18/compsci516/
+https://www.inf.unibz.it/~artale/DB2/db2-course.htm
+https://sites.google.com/site/cs186fall17/home/schedule-and-notes
+https://www.ibmbigdatahub.com/blog/celebrating-db2-s-25-years-awesome
+http://daslab.seas.harvard.edu/classes/cs165/#
+
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-830-database-systems-fall-2010/readings/
+
+https://www.svds.com/data-architecture-reading-list/
+
+
 [cmu 15-721](http://15721.courses.cs.cmu.edu/spring2017/schedule.html)  
 [cmu pavlo](http://www.cs.cmu.edu/~pavlo/datasets/index.html)  
-https://dev.mysql.com/doc/internals/en/date-and-time-data-type-representation.html
 [sfu](https://sfu-db.github.io/dbsystems/)  
-[db-how](http://coding-geek.com/how-databases-work)  
-[Comparison of different SQL implementations](http://troels.arvin.dk/db/rdbms/)  
-[dbms wiki](https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems)  
+[CMSC724](http://www.cs.umd.edu/class/spring2017/cmsc724/schedule.html)
 
 http://www.gpfeng.com/  
 http://www.notedeep.com/note/38  
@@ -430,8 +291,4 @@ https://data1030.github.io/
 https://www.linkedin.com/pulse/big-data-velocity-plain-english-john-ryan/
 https://www.allthingsdistributed.com/2018/06/purpose-built-databases-in-aws.html
 
-[SIGMOD](https://dl.acm.org/event.cfm?id=RE227&tab=pubs)  
-[VLDB](http://vldb.org/pvldb)  
-[Momjian-PostgreSQL](https://momjian.us/main/faq.html)
-[daslab](http://daslab.seas.harvard.edu/)
 
