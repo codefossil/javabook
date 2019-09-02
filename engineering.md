@@ -67,6 +67,8 @@ https://en.wikipedia.org/wiki/Software_development
 [Agile Software Development, 2003](https://book.douban.com/subject/1140457/)  
 https://en.wikipedia.org/wiki/Agile_software_development  
 
+[Agile: The World's Most Popular Innovation Engine, 2015](https://www.forbes.com/sites/stevedenning/2015/07/23/the-worlds-most-popular-innovation-engine/#4d24af757c76)  
+
 rad
 xp
 scrum
