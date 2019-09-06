@@ -18,6 +18,9 @@
 
 ## decision making
 
+## n/a
+事实 真理和科学
+
 ## 学习
 
 [为什么学生不喜欢上学，Willingham.D.T.2010](https://book.douban.com/subject/4864832/)  
