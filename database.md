@@ -12,13 +12,17 @@
 [Turing98, Gray](https://amturing.acm.org/award_winners/gray_3649936.cfm)  
 [Turing04, Stonebraker](https://amturing.acm.org/award_winners/stonebraker_1172121.cfm)  
 
-[what goes around, stonebraker05](https://15721.courses.cs.cmu.edu/spring2016/papers/whatgoesaround-stonebraker.pdf), 总结了70-05这35年的数据模型得失  
+[what goes around, stonebraker05](https://15721.courses.cs.cmu.edu/spring2016/papers/whatgoesaround-stonebraker.pdf)  
+总结了70-05这35年的数据模型得失  
+
 [architecture db, 2007](http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf)  
 [db-how](http://coding-geek.com/how-databases-work)  
-[ddia](https://book.douban.com/subject/26197294/)，从工程的角度，系统的，全面地讲解数据处理的各种问题。并且还有论文指南，深入浅出  
-[redbook](http://redbook.io)，从88年开始，每隔10年，由stonebraker组织，对数据这几年的发展进行总结和预测。   
+[ddia](https://book.douban.com/subject/26197294/)  
+从工程的角度，系统的，全面地讲解数据处理的各种问题。并且还有论文指南，深入浅出  
 
-
+[redbook](http://redbook.io)  
+从88年开始，每隔10年，由stonebraker组织，对数据这几年的发展进行总结和预测。  
+  
 # 数据建模
 
 https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
@@ -39,7 +43,9 @@ EAV模型
 范式和非范式
 事实表和维度表
 
-[Relational Model, codd70](http://cs.brown.edu/courses/cs295-11/2006/codd.pdf)，坚持数据展示和存储需要分离，第一次提出关系数据模型，关系代数，数据语言概念。    
+[Relational Model, codd70](http://cs.brown.edu/courses/cs295-11/2006/codd.pdf)  
+坚持数据展示和存储需要分离，第一次提出关系数据模型，关系代数，数据语言概念。    
+
 [E-R model, chen76](https://harrymoreno.com/assets/greatPapersInCompSci/7.3_-_The_Entity_Relationship_Model_-_Towards_A_Unified_View_of_Data-Peter_Pin-Shan_Chen.pdf)  
 [ch4, High Performance MySQL, 2012](https://book.douban.com/subject/10443458/)  
 
@@ -54,15 +60,14 @@ http://www.databaseanswers.org/data_models/
 # 数据库架构
 
 [oltp, sigmod08](http://www.cs.umd.edu/~abadi/papers/oltpperf-sigmod08.pdf)  
+全内存数据库性能。通过把数据库子系统一个个去掉的方式，从内部看传统数据架构性能问题。
+
 [olap overview, sigmod97](https://cs.nju.edu.cn/zhouzh/zhouzh.files/course/dm/reading/reading02/chaudhuri_sigmodrec97.pdf)  
 
 [column vs row, sigmod08](https://15721.courses.cs.cmu.edu/spring2019/papers/09-storage/p967-abadi.pdf)  
 [c-store, vldb2005](http://www.cs.umd.edu/~abadi/papers/vldb.pdf)  
 
-KTPS
-MTPS
-
-数据访问模式
+[column-oriented vs column-family](https://dbmsmusings.blogspot.com/2010/03/distinguishing-two-major-types-of_29.html)   
 [digg v4](https://knowyourmeme.com/memes/events/digg-v4)
 https://www.memsql.com/blog/why-nosql-databases-wrong-tool-for-modern-application/
 https://dzone.com/articles/nosql-vs-sql-differences-explained
@@ -70,86 +75,6 @@ https://www.gartner.com/doc/reprints?id=1-5N2H2SM&ct=181024&st=sb
 [don't use mongodb](https://news.ycombinator.com/item?id=3202081)
 http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/
 
-## 全内存
-视频/答题/账单
-QPS (单机100K+集群1M+)  
-RT<1ms
-GB~Tbyte(集群)
-memcache 仅仅作为cache  
-redis  
-内存数据库，做高速响应queriable存储（其实是cache）  
-nvm 
-
-## 非结构化对象存储
-s3实现原理
-
-## 搜索
-Pbyte  
-QPS 7B  
-TPS 10M  
-
-## 时间序列
-TPS 10M
-
-## 图
-
-## 列式存储
-Vertica  
-Greenplum  
-Redshift 做海量数据queriable存储  
-
-## 列族存储
-Pbyte+
-TPS 10M+
-10K+节点，n 100集群，HBase 做scan more， get less 存储  
-DynamoDB/Cassandra 做get more，scan less存储  
-HIVE   
-
-避免join  
-大多数据1对多  
-文档内查询弱  
-产品mongodb  
-
-## 经典行式存储
-
-get少，scan少，低延迟
-
-### 关系模型
-依赖多表join  
-单表10M~100M量级？  
-总库100Gbyte
-QPS 100K+
-产品mysql, oracle 
-
-http://mysql.rjweb.org/doc.php/limits
-https://dev.mysql.com/doc/mysql-reslimits-excerpt/5.6/en/limits.html
-
-### mysql分库分表中间件
-单表5M，分表数=ceiling(N / (RDS 实例数 * 8) / 5,000,000)  
-N=100M行数据量
-
-Cobar属于阿里B2B事业群，始于2008年，在阿里服役3年多，接管3000+个MySQL数据库的schema,集群日处理在线SQL请求50亿次以上(由此可以计算：Cobar的TPS=5,000,000,000/(3000*24*60*60)=20)
-
-|特性|Cobar|MyCAT|DRDS|
-| ---- | ---- | ---- | ---- |
-|前端MySQL协议|✅|✅|✅|
-|SQL||SQL92||
-|事务|2PC|弱XA|强XA+2PC+柔性事务|
-|读写分离||✅||
-|分库路由||✅|hash|
-|分表路由||✅|hash+时间|
-|后端协议|MySQL|MySQL+JDBC||
-|IO|NIO+BIO|AIO||
-|join||库内任意+跨库2表|任意|
-|子查询||1层|[支持列表](https://help.aliyun.com/document_detail/71295.html?spm=a2c4g.11186623.2.11.75093f68Qi2HQX)|
-|聚合||✅|智能下推|
-
-
-[mycat权威指南](http://www.mycat.io/document/mycat-definitive-guide.pdf)  
-[column-oriented vs column-family](https://dbmsmusings.blogspot.com/2010/03/distinguishing-two-major-types-of_29.html)  
-[数据库相关中间件收录集](https://blog.csdn.net/u013256816/article/details/52769297)  
-[跨时代的分布式数据库 – 阿里云DRDS详解
-](https://www.csdn.net/article/a/2015-08-28/15827676)
 
 
 # 存取方法
@@ -195,7 +120,9 @@ http://cs.brown.edu/courses/cs227/papers.html
 
 # 查询优化
 
-[access path, selinger-79](http://courses.cs.vt.edu/~cs4604/Spring13/lectures/selinger-qopt-paper.pdf)，System-R里面关于sql处理的说明，结合统计信息，基于代价模型计算join顺序和嵌套查询。  
+[access path, selinger-79](http://courses.cs.vt.edu/~cs4604/Spring13/lectures/selinger-qopt-paper.pdf)  
+System-R里面关于sql处理的说明，结合统计信息，基于代价模型计算join顺序和嵌套查询。    
+
 [overview, 98](https://www.microsoft.com/en-us/research/publication/an-overview-of-query-optimization-in-relational-systems-paper/)  
 [algorithms for the join ordering problem, ict09](http://www.acad.bg/rismim/itc/sub/archiv/Paper6_1_2009.PDF)  
 [query evaluation techniques, 93](http://infolab.stanford.edu/~hyunjung/cs346/graefe.pdf)  
@@ -282,13 +209,6 @@ http://blog.yufeng.info/
 
 https://qw4990.gitbooks.io/nyadb/content/index.html
 
-# 面向TPS
-Storm/trident，做实时分布式消息处理   
-Flume, 海量数据收集with high availability  
-图表 数据处理工具 hadoop spark flink  
-https://sites.google.com/a/brown.edu/ugur-cetintemel/
-https://data1030.github.io/
-https://www.linkedin.com/pulse/big-data-velocity-plain-english-john-ryan/
-https://www.allthingsdistributed.com/2018/06/purpose-built-databases-in-aws.html
+
 
 

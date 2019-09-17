@@ -94,6 +94,24 @@ aws
 elastic  
 https://zturn.cc/elkbook/
 
+## 数据库
+|名称|类型|QPS单机|QPS集群|TPS|RT|存储|scan|get|join|
+|--|--|--|--|--|--|--|--|--|--|
+|redis|内存|100K+|1M+||1ms|TB
+|HBase|列族|-|?|10M+|1ms|PB|more|less
+|Cassandra|列族|-|?|10M+|1ms|PB|less|more
+|Hive|列族|-|?|10M+|1ms|PB|less|more
+|Greeplum|列式|-|?|||||
+|S3|对象|-||||||
+|MongoDB|文档||||||x|x|
+|SQL|行|100K+|-|||GB|x|x|x
+|?|图|100K+|-|||GB|x|x|x
+|?|时序|100K+|-|||GB|x|x|x
+
+
+http://mysql.rjweb.org/doc.php/limits
+https://dev.mysql.com/doc/mysql-reslimits-excerpt/5.6/en/limits.html
+
 ## 大数据
 http://www.voidcn.com/article/p-biggriil-bhz.html
 
@@ -110,3 +128,10 @@ http://progrium.com/blog/2007/05/03/web-hooks-to-revolutionize-the-web/
 
 
 
+Storm/trident，做实时分布式消息处理   
+Flume, 海量数据收集with high availability  
+图表 数据处理工具 hadoop spark flink  
+https://sites.google.com/a/brown.edu/ugur-cetintemel/
+https://data1030.github.io/
+https://www.linkedin.com/pulse/big-data-velocity-plain-english-john-ryan/
+https://www.allthingsdistributed.com/2018/06/purpose-built-databases-in-aws.html

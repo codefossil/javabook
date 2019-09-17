@@ -1,4 +1,4 @@
-> 架构=重要的系统设计=结构+愿景
+> 架构=重要的系统设计=结构+愿景=构建成本最小化+效率最大化
 > OODA loop
 
 [康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
