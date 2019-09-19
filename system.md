@@ -1,21 +1,28 @@
-> 架构=重要的系统设计=结构+愿景=构建成本最小化+效率最大化
 > OODA loop
-
-[康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
-[架构漫谈, 2016](https://www.infoq.cn/article/an-informal-discussion-on-architecture-part01)  
-
-# 基本问题
-
-系统结构/技术选型
-非功能需求解决之道
-约束和原则
-
-# 控制风险
 
 - Part of the process of architecting a software system is about understanding **what is significant and why**
 - Understanding **the speed at which your organisation or business changes** is important
 
-# 控制复杂度
+# 架构
+
+业务规则=约束+原则  
+结构=边界+接口  
+
+> 架构=重要的系统设计=结构+愿景=构建成本最小化+效率最大化
+
+[康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
+[架构漫谈, 2016](https://www.infoq.cn/article/an-informal-discussion-on-architecture-part01)  
+
+
+[Clean Architecture](https://book.douban.com/subject/30333919/)  
+提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。 
+
+[Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
+[Just Enough Software Architecture](https://book.douban.com/subject/24872314/)    
+[Architectural and philosophical points](https://www.w3.org/DesignIssues/)  
+
+
+# 边界
 
 > the discipline of **systems thinking** proves to be an invaluable tool in assessing exposure, opportunities, parametric sensitivities. 
 > instrument–process–operand model
@@ -25,7 +32,7 @@ DDD/TDD/BDD/CQRS/DCI/
 [System Architecture: Strategy and Product Development for Complex Systems](https://book.douban.com/subject/26938710/) 
 [the magic number seven, 1956](https://academic.microsoft.com/paper/1984314602/reference)
 
-# 控制规模
+# 伸缩
 
 [Big data, 2015](https://book.douban.com/subject/10438832/)  
 [Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
@@ -41,14 +48,14 @@ DDD/TDD/BDD/CQRS/DCI/
 You Aren't Gonna Need It.  
 If it ain't broke, don't fix it.  
 飞轮效应  
+dependency inversion
+
 
 [Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
-[Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)，权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档  
-[Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
-[Just Enough Software Architecture](https://book.douban.com/subject/24872314/)    
+  
+
 [Stop Learning Frameworks, 2018](https://sizovs.net/2018/12/17/stop-learning-frameworks/)  
-[TAOUP, 2003](https://book.douban.com/subject/5387401/)  
-[Clean Architecture](https://book.douban.com/subject/30333919/)  
+[TAOUP, 2003](https://book.douban.com/subject/5387401/)   
 
 https://java-design-patterns.com/principles/  
 [dp](https://sourcemaking.com/design_patterns)  
@@ -56,13 +63,14 @@ https://java-design-patterns.com/principles/
 [worse is better](http://dreamsongs.com/WorseIsBetter.html)  
 [The Rule of Least Power, 2001](https://www.w3.org/2001/tag/doc/leastPower.html)  
 
-[Architectural and philosophical points](https://www.w3.org/DesignIssues/)  
 [Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)  
 [方法论、方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)  
 [PEP 20](https://www.python.org/dev/peps/pep-0020/)  
 
-# 可视化和文档化架构
-C4
+# 可视化和文档化设计
+
+[Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)  
+权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档
 
 todo  
 https://web.njit.edu/~kirova/is663-s11.html  
