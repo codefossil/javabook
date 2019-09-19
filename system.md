@@ -15,7 +15,7 @@
 
 
 [Clean Architecture](https://book.douban.com/subject/30333919/)  
-提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。 
+提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。底层离中心业务越远越易变，高层中心业务规则是赚钱的法宝比较不易变。 
 
 [Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
 [Just Enough Software Architecture](https://book.douban.com/subject/24872314/)    
@@ -49,7 +49,7 @@ You Aren't Gonna Need It.
 If it ain't broke, don't fix it.  
 飞轮效应  
 dependency inversion
-
+SOLID
 
 [Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
   
