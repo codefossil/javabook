@@ -33,12 +33,21 @@ DDD/TDD/BDD/CQRS/DCI/
 [the magic number seven, 1956](https://academic.microsoft.com/paper/1984314602/reference)
 
 # 伸缩
-
-[Big data, 2015](https://book.douban.com/subject/10438832/)  
+  
 [Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
 [Software design for large system, 1988](https://web.njit.edu/~kirova/BC-SDP.pdf)  
 [排队论及其应用浅析](https://www.slideshare.net/frogd/ss-27959518)  
 [构建高性能Web站点, 2009](https://book.douban.com/subject/3924175/)  
+# 性能优化
+> Performance is all about code path
+
+* 优化问题，把所有访问路径列出来
+* 各种cache/各种延迟影响很大
+
+[我对后端优化的一点想法](https://www.slideshare.net/jamestong/2012-12552732)  
+[5-minute rule](http://www.hpl.hp.com/techreports/tandem/TR-86.1.pdf)  
+[Think Clearly About Performance](https://method-r.com/wp-content/uploads/2018/07/TCAP-from-MOTD2.pdf)
+https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt.html
 
 # 模式/原则
 

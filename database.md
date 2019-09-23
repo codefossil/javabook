@@ -1,8 +1,18 @@
+- 学术  
 [SIGMOD](https://dl.acm.org/event.cfm?id=RE227&tab=pubs)  
 [VLDB](http://vldb.org/pvldb)  
-[Momjian-PostgreSQL](https://momjian.us/main/faq.html)  
-[daslab](http://daslab.seas.harvard.edu/)  
+[daslab](http://daslab.seas.harvard.edu/)   
 
+- 课程  
+[SFU CMPT843](https://sfu-db.github.io/dbsystems/)   
+[UMICH eecs584](http://web.eecs.umich.edu/~mozafari/fall2018/eecs584/)  
+[WATERLOO cs848](https://cs.uwaterloo.ca/~tozsu/courses/CS848/W19/weekly.html)     
+[CMSC724](http://www.cs.umd.edu/class/spring2017/cmsc724/schedule.html)   
+[CMU 15-721](http://15721.courses.cs.cmu.edu/spring2017/schedule.html)  
+
+
+- 工业  
+[Momjian-PostgreSQL](https://momjian.us/main/faq.html)  
 [Comparison of different SQL implementations](http://troels.arvin.dk/db/rdbms/)  
 [dbms wiki](https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems)  
 
@@ -11,17 +21,11 @@
 [Turing81, Codd](https://amturing.acm.org/award_winners/codd_1000892.cfm)  
 [Turing98, Gray](https://amturing.acm.org/award_winners/gray_3649936.cfm)  
 [Turing04, Stonebraker](https://amturing.acm.org/award_winners/stonebraker_1172121.cfm)  
-
-[what goes around, stonebraker05](https://15721.courses.cs.cmu.edu/spring2016/papers/whatgoesaround-stonebraker.pdf)  
-总结了70-05这35年的数据模型得失  
-
-[architecture db, 2007](http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf)  
-[db-how](http://coding-geek.com/how-databases-work)  
+ 
 [ddia](https://book.douban.com/subject/26197294/)  
 从工程的角度，系统的，全面地讲解数据处理的各种问题。并且还有论文指南，深入浅出  
-
 [redbook](http://redbook.io)  
-从88年开始，每隔10年，由stonebraker组织，对数据这几年的发展进行总结和预测。  
+从88年开始，每隔10年，由stonebraker组织，对数据这几年的发展进行总结和预测。 
   
 # 数据建模
 
@@ -43,9 +47,11 @@ EAV模型
 范式和非范式
 事实表和维度表
 
+[what goes around, stonebraker05](https://15721.courses.cs.cmu.edu/spring2016/papers/whatgoesaround-stonebraker.pdf)  
+总结了70-05这35年的数据模型得失 
+
 [Relational Model, codd70](http://cs.brown.edu/courses/cs295-11/2006/codd.pdf)  
 坚持数据展示和存储需要分离，第一次提出关系数据模型，关系代数，数据语言概念。    
-
 [E-R model, chen76](https://harrymoreno.com/assets/greatPapersInCompSci/7.3_-_The_Entity_Relationship_Model_-_Towards_A_Unified_View_of_Data-Peter_Pin-Shan_Chen.pdf)  
 [ch4, High Performance MySQL, 2012](https://book.douban.com/subject/10443458/)  
 
@@ -54,18 +60,28 @@ http://cs.brown.edu/courses/csci2270/previous.html
 
 http://www.databaseanswers.org/data_models/
 
-# 数据并行计算
+# 数据库哲学
+[system-r, 76](http://daslab.seas.harvard.edu/reading-group/papers/astrahan-1976.pdf)
 
+[postgres, 86](https://sfu-db.github.io/dbsystems/Papers/postgres.pdf)
 
-# 数据库架构
+[gamma, 90](http://pages.cs.wisc.edu/~dewitt/includes/paralleldb/ieee90.pdf)
+
+[c-store, vldb2005](http://www.cs.umd.edu/~abadi/papers/vldb.pdf) 
 
 [oltp, sigmod08](http://www.cs.umd.edu/~abadi/papers/oltpperf-sigmod08.pdf)  
 全内存数据库性能。通过把数据库子系统一个个去掉的方式，从内部看传统数据架构性能问题。
 
-[olap overview, sigmod97](https://cs.nju.edu.cn/zhouzh/zhouzh.files/course/dm/reading/reading02/chaudhuri_sigmodrec97.pdf)  
+[olap, sigmod97](https://cs.nju.edu.cn/zhouzh/zhouzh.files/course/dm/reading/reading02/chaudhuri_sigmodrec97.pdf)
+
+
+[data cube, ieee96](http://web.stanford.edu/class/cs345d-01/rl/olap.pdf)
 
 [column vs row, sigmod08](https://15721.courses.cs.cmu.edu/spring2019/papers/09-storage/p967-abadi.pdf)  
-[c-store, vldb2005](http://www.cs.umd.edu/~abadi/papers/vldb.pdf)  
+ 
+[architecture db, 2007](http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf) 
+
+[db-how](http://coding-geek.com/how-databases-work)  
 
 [column-oriented vs column-family](https://dbmsmusings.blogspot.com/2010/03/distinguishing-two-major-types-of_29.html)   
 [digg v4](https://knowyourmeme.com/memes/events/digg-v4)
@@ -76,6 +92,50 @@ https://www.gartner.com/doc/reprints?id=1-5N2H2SM&ct=181024&st=sb
 http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/
 
 
+# 查询
+
+[critique of sql, 83](https://www2.cs.duke.edu/courses/spring03/cps216/papers/date-1983.pdf)
+
+[access path, selinger-79](http://courses.cs.vt.edu/~cs4604/Spring13/lectures/selinger-qopt-paper.pdf)  
+System-R里面关于sql处理的说明，结合统计信息，基于代价模型计算join顺序和嵌套查询。    
+
+[overview, 98](https://www.microsoft.com/en-us/research/publication/an-overview-of-query-optimization-in-relational-systems-paper/)  
+[algorithms for the join ordering problem, ict09](http://www.acad.bg/rismim/itc/sub/archiv/Paper6_1_2009.PDF)  
+[query evaluation techniques, 93](http://infolab.stanford.edu/~hyunjung/cs346/graefe.pdf)  
+[query optimization, ioannidis96](http://infolab.stanford.edu/~hyunjung/cs346/ioannidis.pdf)  
+[qp distributed, tods81](https://people.eecs.berkeley.edu/~wong/wong_pubs/wong73.pdf)  
+[rule-based, sigmod87](http://www.dblab.ece.ntua.gr/~nikos/edith/qopt_bibl/papers/rule_based/freytag_sigmod87_rule_based_qopt.pdf)  
+
+# 日志与恢复
+
+[ARIES,tods92 ](https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf)
+
+[voltdb recovery, icde2014](https://hstore.cs.brown.edu/papers/voltdb-recovery.pdf)
+
+
+
+# 事务与并发控制
+
+> 事务是为了简化，解决数据库容错
+
+* 当2个并发同时写一个数据
+* 当读和写一个数据同时发生
+* 多个数据同时写
+
+> 数据库事务保证数据不被破坏（AID），其局限是数据库无法维护业务的**并发不可变条件**
+
+[critique isolation level, sigmod95](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-95-51.pdf)  
+[granularity of locks and degree of consistency, ibm75](http://jimgray.azurewebsites.net/papers/granularity%20of%20locks%20and%20degrees%20of%20consistency%20rj%201654.pdf)  
+[occ, tods81](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)  
+
+[cmu 15-445/645](https://15445.courses.cs.cmu.edu/fall2018/schedule.html)  
+[2pl](https://en.wikipedia.org/wiki/Two-phase_locking) 
+
+确定性
+deterministic concurrency control  
+view serialization的条件是什么?  
+死锁、SGT闭环  
+DAG Directed acyclic graph
 
 # 存取方法
 
@@ -109,26 +169,34 @@ https://web.stanford.edu/class/cs245/
 http://cs.brown.edu/courses/cs227/papers.html
 
 
-# 日志与恢复
-
-[ARIES,tods92 ](https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf)
-
-|LSN|pre-LSN|txn id|type|obj|before|after|
-|--|--|--|--|--|--|--|
-|002|001|T1|update|A|1|2|
 
 
-# 查询优化
 
-[access path, selinger-79](http://courses.cs.vt.edu/~cs4604/Spring13/lectures/selinger-qopt-paper.pdf)  
-System-R里面关于sql处理的说明，结合统计信息，基于代价模型计算join顺序和嵌套查询。    
+# 实时大数据分析
 
-[overview, 98](https://www.microsoft.com/en-us/research/publication/an-overview-of-query-optimization-in-relational-systems-paper/)  
-[algorithms for the join ordering problem, ict09](http://www.acad.bg/rismim/itc/sub/archiv/Paper6_1_2009.PDF)  
-[query evaluation techniques, 93](http://infolab.stanford.edu/~hyunjung/cs346/graefe.pdf)  
-[query optimization, ioannidis96](http://infolab.stanford.edu/~hyunjung/cs346/ioannidis.pdf)  
-[qp distributed, tods81](https://people.eecs.berkeley.edu/~wong/wong_pubs/wong73.pdf)  
-[rule-based, sigmod87](http://www.dblab.ece.ntua.gr/~nikos/edith/qopt_bibl/papers/rule_based/freytag_sigmod87_rule_based_qopt.pdf)  
+[variant index, sigmod97](http://cs.brown.edu/courses/cs227/archives/2008/mitchpapers/required5.pdf)  
+
+[Hive, icde10](http://infolab.stanford.edu/~ragho/hive-icde2010.pdf)
+
+[MapReduce survey, sigmodrec2011](https://www2.cs.arizona.edu/~bkmoon/papers/sigmodrec11.pdf)
+
+[big data, 2015](https://book.douban.com/subject/10438832/)
+
+[big data at LinkedIn, icomod2013](http://web.cs.wpi.edu/~cs525/f13b-EAR/cs525-homepage/lectures/PAPERS/p1125-sumbaly.pdf)
+
+web数据处理  
+
+# 复杂大数据分析
+数据挖掘  
+数据科学  
+计算广告  
+搜索引擎  
+机器学习  
+
+[ML at Twitter, sigmod2012](http://web.cs.wpi.edu/~cs525/f13b-EAR//cs525-homepage/lectures/PAPERS/Lin_Kolcz_SIGMOD2012.pdf)
+
+
+# todo
 
 ------
 [presto](http://prestodb.github.io/)  
@@ -146,44 +214,6 @@ vectorized
 地理位置查询/多维查询
 
 
-# 并发控制
-
-> 事务是为了简化，解决数据库容错
-
-* 当2个并发同时写一个数据
-* 当读和写一个数据同时发生
-* 多个数据同时写
-
-> 数据库事务保证数据不被破坏（AID），其局限是数据库无法维护业务的**并发不可变条件**
-
-[critique isolation level, sigmod95](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-95-51.pdf)  
-[granularity of locks and degree of consistency, ibm75](http://jimgray.azurewebsites.net/papers/granularity%20of%20locks%20and%20degrees%20of%20consistency%20rj%201654.pdf)  
-[occ, tods81](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)  
-
-[cmu 15-445/645](https://15445.courses.cs.cmu.edu/fall2018/schedule.html)  
-[2pl](https://en.wikipedia.org/wiki/Two-phase_locking) 
-
-确定性
-deterministic concurrency control  
-view serialization的条件是什么?  
-死锁、SGT闭环  
-DAG Directed acyclic graph
-
-
-# 性能优化
-> Performance is all about code path
-
-* 优化问题，把所有访问路径列出来
-* 各种cache/各种延迟影响很大
-
-[我对后端优化的一点想法](https://www.slideshare.net/jamestong/2012-12552732)  
-[5-minute rule](http://www.hpl.hp.com/techreports/tandem/TR-86.1.pdf)  
-[Think Clearly About Performance](https://method-r.com/wp-content/uploads/2018/07/TCAP-from-MOTD2.pdf)
-https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt.html
-
-
-
-# todo
 
 https://www2.cs.duke.edu/courses/fall18/compsci516/
 https://www.inf.unibz.it/~artale/DB2/db2-course.htm
@@ -196,10 +226,6 @@ https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-830-da
 https://www.svds.com/data-architecture-reading-list/
 
 
-[cmu 15-721](http://15721.courses.cs.cmu.edu/spring2017/schedule.html)  
-[cmu pavlo](http://www.cs.cmu.edu/~pavlo/datasets/index.html)  
-[sfu](https://sfu-db.github.io/dbsystems/)  
-[CMSC724](http://www.cs.umd.edu/class/spring2017/cmsc724/schedule.html)
 
 http://www.gpfeng.com/  
 http://www.notedeep.com/note/38  
