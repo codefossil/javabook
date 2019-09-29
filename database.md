@@ -187,10 +187,20 @@ http://cs.brown.edu/courses/cs227/papers.html
 web数据处理  
 
 # 复杂大数据分析
+
+[计算广告, 2015](https://book.douban.com/subject/26596778/)
+
+[统计学习方法，2012](https://book.douban.com/subject/10590856/)
+
+[prml, 2007](https://book.douban.com/subject/2061116/)
+
+[learning from data, 2012](https://book.douban.com/subject/11026330/)
 数据挖掘  
-数据科学  
-计算广告  
-搜索引擎  
+数据科学
+推荐系统
+用户画像
+知识图谱  
+[Introduction to information retrieval, 2008](https://book.douban.com/subject/3059637/)  
 机器学习  
 
 [ML at Twitter, sigmod2012](http://web.cs.wpi.edu/~cs525/f13b-EAR//cs525-homepage/lectures/PAPERS/Lin_Kolcz_SIGMOD2012.pdf)

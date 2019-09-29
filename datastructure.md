@@ -42,10 +42,21 @@ collection.sort实现
 skip list
 
 Xpress， 解LP MIP
-大数据算法
-性能指标体系
 
-[Concrete Mathematics](https://book.douban.com/subject/21323941/)  
+[计算的本质, 2014](https://book.douban.com/subject/26148763/)
+
+[形式语言与自动机导论, 2005](https://book.douban.com/subject/1435126/)
+
+[Introduction to Theoretical Computer Science](https://introtcs.org/public/index.html)
+
+[Concrete Mathematics](https://book.douban.com/subject/21323941/) 
+
+[Sedgewick](https://www.cs.princeton.edu/~rs/)
+
+[theory](https://en.wikipedia.org/wiki/Computational_complexity_theory)
+
+
+# todo
 http://www.cs.columbia.edu/~bauer/cs3134-f15/lectures.html
 https://www.cs.princeton.edu/courses/archive/fall18/cos226/lectures.php
 
@@ -55,14 +66,13 @@ https://www.cs.cmu.edu/~wlovas/15122-r11/schedule.html
 https://www.cs.rochester.edu/~gildea/csc282/
 http://rabbit.eng.miami.edu/class/een318/191index.html
 https://home.cse.ust.hk/~dekai/271/
-[Sedgewick](https://www.cs.princeton.edu/~rs/)
+
 https://algs4.cs.princeton.edu/lectures/
 https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
 https://en.wikipedia.org/wiki/Abstract_data_type
 http://jeffe.cs.illinois.edu/teaching/algorithms/
 http://cs.rochester.edu/u/scott/courses/162/schedule.shtml
 http://cs-www.cs.yale.edu/homes/aspnes/classes/223/notes.html
-[theory](https://en.wikipedia.org/wiki/Computational_complexity_theory)
 http://www.cs.cmu.edu/~./adamchik/15-211/index.html
 https://www.cs.cmu.edu/~15210/
 https://www.cs.cmu.edu/~112/schedule.html
@@ -79,4 +89,4 @@ https://web.stanford.edu/class/archive/cs/cs339/cs339.2002/
 
 http://pi.math.cornell.edu/~web6140/  
 http://math.hws.edu/eck/courses/cpsc327_s18.html  
-[Introduction to Theoretical Computer Science](https://introtcs.org/public/index.html)
+

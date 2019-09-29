@@ -19,9 +19,18 @@
 ## decision making
 
 ## 科学哲学
+||WAHT|FOR|HOW|WHO|
+|---|---|---|---|---|
+|科学|自然界客观规律<br>Raising question about nature and answer it|好奇|观察，科学实验，理论|科学家
+|技术|改造世界<br>Pursuit of the right solution for a problem|美好生活|发明创造|发明家
+|工程|系统构建<br>Study questions about man-made systems|工作|项目管理|工程师
+
+[论科学 、技术与工程之间的关系, 2006]()
 
 [世界观](https://book.douban.com/subject/30379527/)  
 统治西方几千年的科学演变，关于科学与事实、真理的哲学关系。
+
+[大师说科学与哲学](https://book.douban.com/subject/27041829/)
 
 ## 学习
 
