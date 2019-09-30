@@ -186,6 +186,8 @@ http://cs.brown.edu/courses/cs227/papers.html
 
 web数据处理  
 
+http://barbie.uta.edu/~jli/mmwc.html
+
 # 复杂大数据分析
 
 [计算广告, 2015](https://book.douban.com/subject/26596778/)
