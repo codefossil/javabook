@@ -187,6 +187,7 @@ http://cs.brown.edu/courses/cs227/papers.html
 web数据处理  
 
 http://barbie.uta.edu/~jli/mmwc.html
+http://c.biancheng.net/big_data/
 
 # 复杂大数据分析
 
@@ -207,6 +208,12 @@ http://barbie.uta.edu/~jli/mmwc.html
 
 [ML at Twitter, sigmod2012](http://web.cs.wpi.edu/~cs525/f13b-EAR//cs525-homepage/lectures/PAPERS/Lin_Kolcz_SIGMOD2012.pdf)
 
+http://www.nlpir.org/wordpress/
+https://jeffhuang.com/best_paper_awards.html
+http://www.nltk.org/book/
+
+http://staff.ustc.edu.cn/~zwp/teach/Prob-Stat/probstat.htm
+https://github.com/metrofun/machine-learning-surveys
 
 # todo
 
