@@ -8,19 +8,19 @@
 * [认知科学](cognition.md)
 
 ## 计算机科学
-* [计算科学](datastructure.md)
-* [系统设计](system.md)
-* [数据科学](database.md) 
+* [计算](datastructure.md)
+* [数据](database.md) 
 * [并发与性能](synchronize.md)
+* [语言](language.md)
+* [分布式](ds/ds.md)
 
 ## 工程与技术
+* [系统设计](system.md)
 * [软件工程](engineering.md)
 * [企业级应用](framework.md)
-* [jvm](jvm.md)
-* [golang](golang.md)
 
 ## 引用
-[引用](reference.md)
+[文档](reference.md)
 
 
 

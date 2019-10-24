@@ -89,6 +89,8 @@ https://java-design-patterns.com/principles/
 [Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)  
 [方法论、方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)  
 [PEP 20](https://www.python.org/dev/peps/pep-0020/)  
+[system-desgin](https://github.com/donnemartin/system-design-primer)  
+
 
 # 可视化和文档化设计
 

@@ -15,6 +15,10 @@
 [Momjian-PostgreSQL](https://momjian.us/main/faq.html)  
 [Comparison of different SQL implementations](http://troels.arvin.dk/db/rdbms/)  
 [dbms wiki](https://en.wikipedia.org/wiki/Comparison_of_relational_database_management_systems)  
+[淘宝数据库内核](http://mysql.taobao.org/monthly/)  
+[db-rank](https://db-engines.com/en/ranking)  
+[kaggle](http://www.kaggle.com)  
+
 
 # 基本问题
 
