@@ -11,29 +11,6 @@
 
 > One of the biggest problems with software is that **it’s complex and abstract**. The result being that it’s hard to visualise the runtime characteristics of a piece of software from diagrams or even the code itself.
 
-* 逻辑（问题怎么解）  
-  问题域分解/服务功能划分  
-  输出：类/对象图、需求分析 
-  
-* 场景（验证能否走通）
-  突出系统间依赖  
-  输出：用例
-  
-* 过程（数据怎么走）  
-  接口/信息流/容错  
-  输出：交互图、时序图  
-
-* 开发
-  流程：源码 -> 源码仓库 -> 发布系统
-  测试：单元测试 -> 系统测试 -> QA -> 预发布 -> 线上
-  组件：配置中心/链路追踪/统一日志/消息（基础架构怎么做）
-  输出：产品展示/服务交互API
-
-* 物理（SRE怎么做）  
-  网络/计算/存储/容器  
-  可扩展/高可用/高性能  
-  输出：基础设施 
-
 [Humphrey-SPA award](https://resources.sei.cmu.edu/news-events/events/watts/watts.cfm)  
 [SE-history, 1996](https://www.dagstuhl.de/Reports/96/9635.pdf)  
 https://en.wikipedia.org/wiki/Software_engineering  
@@ -53,11 +30,18 @@ https://en.wikipedia.org/wiki/Software_development
 
 # 项目管理
 
+- 项目规划和监控
+- 团队工作调度
+- 成本和工作量估算
+- 风险和不确定性容忍
+
+[PDCA](https://asqaustin.org/wp-content/uploads/2015/12/History_of_the_PDSA_Cycle_CN_ASQ_Talk-_2_10_2016_Handout.pdf)  
+
 [项目管理方法论，2015](https://book.douban.com/subject/26584696/)  
 [Peopleware](https://book.douban.com/subject/25956450/)
 [凤凰项目，2015](https://book.douban.com/subject/26644070/)
 
-## 开发流程
+# 软件过程
 [Process Models, 2001](https://www.ics.uci.edu/~wscacchi/Papers/SE-Encyc/Process-Models-SE-Encyc.pdf)  
 [Waterfall, 1970](http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf)  
 [Spiral, 1988](http://www-scf.usc.edu/~csci201/lectures/Lecture11/boehm1988.pdf)  
@@ -75,11 +59,16 @@ scrum
 rup
 lean
 
-# 需求和规格
+# 需求工程
 
 > 解决/不解决什么问题？谁的问题？
 creator driven (问题分治还是工作分治)  
 Be Zara, not Foxconn (从效率模式->快速响应式)  
+
+定义需求（满足、目标、用户需求、系统需求、软件需求）
+优先级、权衡、风险和影响分析
+需求验证
+UML
 
 第一原理  
 [Top risks, 2001](http://sunnyday.mit.edu/16.355/lawrence-requirements.pdf)  
@@ -100,7 +89,115 @@ http://www.valleytalk.org
 http://people.scs.carleton.ca/~deugo/Patterns/ospdg/
 https://www.cs.cmu.edu/~aldrich/courses/413/
 
-# 软件实现与质量
+# 软件设计
+
+软件设计质量分析和评估  
+设计范例，如结构化设计（自顶向下的功能分解）、面向对象的分析和设
+计、事件驱动的设计、组件级设计、数据结构为中心、面向方面、面向功能、面向
+服务。
+
+
+> OODA loop
+
+- Part of the process of architecting a software system is about understanding **what is significant and why**
+- Understanding **the speed at which your organisation or business changes** is important
+
+## 架构
+
+业务规则=约束+原则  
+结构=边界+接口  
+
+> 架构=重要的系统设计=结构+愿景=构建成本最小化+效率最大化
+
+[康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
+[架构漫谈, 2016](https://www.infoq.cn/article/an-informal-discussion-on-architecture-part01)  
+
+[Clean Architecture](https://book.douban.com/subject/30333919/)  
+提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。底层离中心业务越远越易变，高层中心业务规则是赚钱的法宝比较不易变。 
+
+[Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
+[Just Enough Software Architecture](https://book.douban.com/subject/24872314/)    
+[Architectural and philosophical points](https://www.w3.org/DesignIssues/)  
+
+## 化繁为简
+
+[Engeering: An endless frontier, Auyang2004](https://book.douban.com/subject/3287111/)
+
+[Complexity, Mitchell2011](https://book.douban.com/subject/6749832/)
+
+[控制论与科学方法论, 2005](https://book.douban.com/subject/1322336/)
+
+[GEB, 97](https://book.douban.com/subject/1291204/)
+
+[系统论，95](https://book.douban.com/subject/1008370/)
+
+[System Architecture: Strategy and Product Development for Complex Systems](https://book.douban.com/subject/26938710/)  
+分析了一种系统化的思考方式和识别方法，结合大量实例自顶向下剖析了架构复杂系统的过程，总结出系统分为形式和功能，通过分解和分层等方法破解复杂系统。
+
+
+## 边界
+
+> the discipline of **systems thinking** proves to be an invaluable tool in assessing exposure, opportunities, parametric sensitivities. 
+> instrument–process–operand model
+
+DDD/TDD/BDD/CQRS/DCI/  
+[DDD](https://book.douban.com/subject/1418618/)  
+
+[the magic number seven, 1956](https://academic.microsoft.com/paper/1984314602/reference)
+
+## 伸缩
+  
+[Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
+[Software design for large system, 1988](https://web.njit.edu/~kirova/BC-SDP.pdf)  
+[排队论及其应用浅析](https://www.slideshare.net/frogd/ss-27959518)  
+[构建高性能Web站点, 2009](https://book.douban.com/subject/3924175/)  
+
+## 设计模式/原则
+
+沉默成本（可用性）  
+机会成本（兼容性）  
+边际成本（扩展性）  
+You Aren't Gonna Need It.  
+If it ain't broke, don't fix it.  
+飞轮效应  
+dependency inversion
+SOLID
+
+[Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
+  
+
+[Stop Learning Frameworks, 2018](https://sizovs.net/2018/12/17/stop-learning-frameworks/)  
+[TAOUP, 2003](https://book.douban.com/subject/5387401/)   
+
+https://java-design-patterns.com/principles/  
+[dp](https://sourcemaking.com/design_patterns)  
+
+[worse is better](http://dreamsongs.com/WorseIsBetter.html)  
+[The Rule of Least Power, 2001](https://www.w3.org/2001/tag/doc/leastPower.html)  
+
+[Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)  
+[方法论、方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)  
+[PEP 20](https://www.python.org/dev/peps/pep-0020/)  
+[system-desgin](https://github.com/donnemartin/system-design-primer)  
+
+
+## 可视化和文档化设计
+
+[Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)  
+权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档
+
+todo  
+https://web.njit.edu/~kirova/is663-s11.html  
+https://handbookofsoftwarearchitecture.com/
+
+# 软件构建
+api设计
+代码复用和库
+多态和动态绑定
+断言、契约式设计、防御式编程
+错误处理、异常和容错
+性能分析和优化
+
 
 > 写诗还是写文档
 根据现有的时间/预算/知识/复杂度，利用最佳实践、技术、框架、工具、设备（工程/学习能力）
@@ -109,7 +206,15 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 [Refactoring](https://book.douban.com/subject/4262627/)  
 [Code complete](https://book.douban.com/subject/1477390/)  
 
-测试工具和方法  
+# 软件测试  
+code coverage  
+mocking  
+性能测试  
+review
+static analysis
+自动化测试
+软件质量
+
 [xUnit, 2007](https://book.douban.com/subject/1859393/)  
 [TDD, 2003](https://book.douban.com/subject/1229924/)  
 [OO tests, 2009](https://book.douban.com/subject/4156589/)  

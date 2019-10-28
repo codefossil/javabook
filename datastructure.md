@@ -1,6 +1,31 @@
 [Advanced Data Structures ](http://courses.csail.mit.edu/6.851/fall17/)
 
 
+[ACM CS curricula](https://www.acm.org/education/curricula-recommendations)
+
+# 可计算理论
+
+人类解决客观世界问题的思维过程
+抽象
+
+- 课程
+https://www.cs.cmu.edu/~15110/schedule.html  
+
+
+调度算法
+
+信号处理
+数值表示
+误差分析
+建模与仿真
+
+# 数学基础
+连续函数分析
+离散结构
+线性代数
+概率论与数理统计
+集合论
+逻辑基础
 
 https://en.wikipedia.org/wiki/Book:Data_structures
 

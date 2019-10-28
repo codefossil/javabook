@@ -83,6 +83,16 @@ https://www.irif.fr/~mellies/mpri/mpri-ens/articles/winskel-nielsen-models-for-c
 http://pages.cs.wisc.edu/~bart/736/f2017/paper1.html  
 https://www.cse.iitb.ac.in/~mythili/os/notes/notes-perf.txt
 
+> Performance is all about code path
+
+* 优化问题，把所有访问路径列出来
+* 各种cache/各种延迟影响很大
+
+[我对后端优化的一点想法](https://www.slideshare.net/jamestong/2012-12552732)  
+[5-minute rule](http://www.hpl.hp.com/techreports/tandem/TR-86.1.pdf)  
+[Think Clearly About Performance](https://method-r.com/wp-content/uploads/2018/07/TCAP-from-MOTD2.pdf)
+https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt.html
+
 **并行限制**  
 [Amdahl's law in the Multicore Era, 2008](http://www.eng.auburn.edu/~agrawvd/COURSE/E6270_Spr09/READ/Amdahls%20Law%20in%20Multicore%20Era.pdf)  
 [Gustafson's law, 1988](http://www.johngustafson.net/pubs/pub13/amdahl.htm) 

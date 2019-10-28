@@ -10,12 +10,10 @@
 ## 计算机科学
 * [计算](datastructure.md)
 * [数据](database.md) 
-* [并发与性能](synchronize.md)
-* [语言](language.md)
-* [分布式](ds/ds.md)
+* [并行与分布式](synchronize.md)
+* [程序语言](language.md)
 
 ## 工程与技术
-* [系统设计](system.md)
 * [软件工程](engineering.md)
 * [企业级应用](framework.md)
 
