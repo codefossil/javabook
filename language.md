@@ -1,19 +1,16 @@
-# compilerbook
-A book about compiler
+
 
 计算机体系结构发展  
+形式语言与自动机
 处理器发展  
 程序语言设计  
 程序语言理论  
-语言的本质  
-信息系统  
+语言的本质    
 类型系统  
 流程控制机制  
 代码组织机制  
 写起来舒服，读起来容易，管起来方便  
 把程序看成是一个数学对象  
-automata theory  
-图灵完备  
 PDA/FSA  
 Lambda calculus  
 YACC  

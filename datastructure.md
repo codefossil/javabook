@@ -1,25 +1,45 @@
-[Advanced Data Structures ](http://courses.csail.mit.edu/6.851/fall17/)
+
+- 课程  
+[MIT 6.045-Automata, Computability, and Complexity Theory](http://people.csail.mit.edu/rrw/6.045-2019/)  
+[MIT 6.042 math-cs](https://courses.csail.mit.edu/6.042)  
+https://www.cs.cmu.edu/~15110/schedule.html  
 
 
 [ACM CS curricula](https://www.acm.org/education/curricula-recommendations)
 
-# 可计算理论
+# 计算理论
 
-人类解决客观世界问题的思维过程
-抽象
+[theory computation, 2012](https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X)
 
-- 课程
-https://www.cs.cmu.edu/~15110/schedule.html  
+[Theoretical Computer Science](https://introtcs.org/public/index.html)
+
+[计算的本质, 2014](https://book.douban.com/subject/26148763/)
+
+[形式语言与自动机导论, 2005](https://book.douban.com/subject/1435126/)
 
 
-调度算法
 
+
+图灵
+冯诺依曼
 信号处理
 数值表示
 误差分析
 建模与仿真
 
+人类解决客观世界问题的思维过程
+抽象
+
+
+[theory](https://en.wikipedia.org/wiki/Computational_complexity_theory)
+
+
+
 # 数学基础
+
+[Concrete Mathematics](https://book.douban.com/subject/21323941/) 
+
+
 连续函数分析
 离散结构
 线性代数
@@ -27,9 +47,13 @@ https://www.cs.cmu.edu/~15110/schedule.html
 集合论
 逻辑基础
 
-https://en.wikipedia.org/wiki/Book:Data_structures
 
-# sorting 
+# 算法
+
+[Sedgewick](https://www.cs.princeton.edu/~rs/)
+
+
+## sorting 
 [quicksort](https://www.cs.ox.ac.uk/files/6226/H2006%20-%20Historic%20Quicksort.pdf)  
 [Sorting in Linear Time?](https://www.cs.unc.edu/~plaisted/comp550/linear%20time%20sorting.pdf)  
 [Heapsort, Quicksort, and Entropy](http://thomaslau.xyz/images/Heapsort_Quicksort_and_Entropy.pdf)  
@@ -47,38 +71,19 @@ http://www.bowdoin.edu/~ltoma/teaching/cs231/2018spring/syllabus.html
 https://github.com/Crizstian/data-structure-and-algorithms-with-ES6/tree/master/12-chapter-Sorting-Algorithms  
 https://betterexplained.com/articles/sorting-algorithms/  
 
-# searching
+## searching
 
-# optimization
+## optimization
 
-# graph
+## graph
 
-# 设计范式
-分而治之  
-贪心  
-动态规划  
 
-计算复杂度理论
-一致性hash
-AVL 
-红黑 
-collection.sort实现
-并查集
-skip list
 
-Xpress， 解LP MIP
+# 数据结构
+[Advanced Data Structures ](http://courses.csail.mit.edu/6.851/fall17/)
 
-[计算的本质, 2014](https://book.douban.com/subject/26148763/)
+https://en.wikipedia.org/wiki/Book:Data_structures
 
-[形式语言与自动机导论, 2005](https://book.douban.com/subject/1435126/)
-
-[Introduction to Theoretical Computer Science](https://introtcs.org/public/index.html)
-
-[Concrete Mathematics](https://book.douban.com/subject/21323941/) 
-
-[Sedgewick](https://www.cs.princeton.edu/~rs/)
-
-[theory](https://en.wikipedia.org/wiki/Computational_complexity_theory)
 
 
 # todo
