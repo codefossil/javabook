@@ -178,6 +178,8 @@ http://cs.brown.edu/courses/cs227/papers.html
 
 # 实时大数据分析
 
+[]
+
 [variant index, sigmod97](http://cs.brown.edu/courses/cs227/archives/2008/mitchpapers/required5.pdf)  
 
 [Hive, icde10](http://infolab.stanford.edu/~ragho/hive-icde2010.pdf)
@@ -236,8 +238,9 @@ materialization
 vectorized  
 地理位置查询/多维查询
 
+http://hyper-db.com/
 
-
+https://www.linkedin.com/pulse/100-open-source-big-data-architecture-papers-anil-madan
 https://www2.cs.duke.edu/courses/fall18/compsci516/
 https://www.inf.unibz.it/~artale/DB2/db2-course.htm
 https://sites.google.com/site/cs186fall17/home/schedule-and-notes

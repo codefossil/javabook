@@ -1,5 +1,6 @@
 
 - 课程  
+[purdue ECE 664-Computability, Complexity, and Languages](https://engineering.purdue.edu/kak/ComputabilityComplexityLanguages/)
 [MIT 6.045-Automata, Computability, and Complexity Theory](http://people.csail.mit.edu/rrw/6.045-2019/)  
 [MIT 6.042 math-cs](https://courses.csail.mit.edu/6.042)  
 https://www.cs.cmu.edu/~15110/schedule.html  
@@ -9,7 +10,9 @@ https://www.cs.cmu.edu/~15110/schedule.html
 
 # 计算理论
 
-[theory computation, 2012](https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X)
+> 计算能力和限制
+
+[theory computation, spiser2012](https://www.amazon.com/Introduction-Theory-Computation-Michael-Sipser/dp/113318779X)
 
 [Theoretical Computer Science](https://introtcs.org/public/index.html)
 
