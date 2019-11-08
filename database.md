@@ -7,9 +7,10 @@
 [SFU CMPT843](https://sfu-db.github.io/dbsystems/)   
 [UMICH eecs584](http://web.eecs.umich.edu/~mozafari/fall2018/eecs584/)  
 [WATERLOO cs848](https://cs.uwaterloo.ca/~tozsu/courses/CS848/W19/weekly.html)     
-[CMSC724](http://www.cs.umd.edu/class/spring2017/cmsc724/schedule.html)   
+[CMSC 724](http://www.cs.umd.edu/class/spring2017/cmsc724/schedule.html)   
 [CMU 15-721](http://15721.courses.cs.cmu.edu/spring2017/schedule.html)  
-
+[WISC CS744](http://pages.cs.wisc.edu/~akella/CS744/S19/papers.html)
+[HARVARD cs265](http://daslab.seas.harvard.edu/classes/cs265/)
 
 - 工业  
 [Momjian-PostgreSQL](https://momjian.us/main/faq.html)  
@@ -172,13 +173,30 @@ https://github.com/jarulraj/databaseology#access-methods
 https://web.stanford.edu/class/cs245/
 http://cs.brown.edu/courses/cs227/papers.html
 
+# 分布式资源管理与任务调度
 
+[GFS, sosp03](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)  
+[hdfs, 2010](http://pages.cs.wisc.edu/~akella/CS744/S19/838-CloudPapers/hdfs.pdf)  
+[VL2, sigcomm09](http://bnrg.eecs.berkeley.edu/~randy/Courses/CS268.F09/papers/14_vl2.pdf)  
 
+[yarn, socc2013](http://web.eecs.umich.edu/~mosharaf/Readings/YARN.pdf)
+[mesos, nsdi2011](https://people.eecs.berkeley.edu/~alig/papers/mesos.pdf)
 
+[Spark, nsdi2012](https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final138.pdf)
+[Tez, sigmod2015](http://web.eecs.umich.edu/~mosharaf/Readings/Tez.pdf)
+[Borg, 2015](https://pdos.csail.mit.edu/6.824/papers/borg.pdf)
+[Dryad, EuroSys07](http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/15712/papers/isard07.pdf)
+[dataflow, vldb2015](http://www.vldb.org/pvldb/vol8/p1792-Akidau.pdf)
 
 # 实时大数据分析
 
-[]
+[Storm, sigmod2014](https://cs.brown.edu/courses/csci2270/archives/2015/papers/ss-storm.pdf)
+
+[Kafka, NetDB2011](http://pages.cs.wisc.edu/~akella/CS744/S19/838-CloudPapers/Kafka.pdf)
+
+[Flink, 2015](http://pages.cs.wisc.edu/~shivaram/cs744-slides/cs744-akshaya-flink.pdf)
+
+[GraphX, osdi2014](https://amplab.cs.berkeley.edu/wp-content/uploads/2014/09/graphx.pdf)
 
 [variant index, sigmod97](http://cs.brown.edu/courses/cs227/archives/2008/mitchpapers/required5.pdf)  
 
@@ -196,6 +214,8 @@ http://barbie.uta.edu/~jli/mmwc.html
 http://c.biancheng.net/big_data/
 
 # 复杂大数据分析
+
+[anomaly survey, ACS09](https://cs.brown.edu/courses/csci2270/papers/anomaly-detection-survey.pdf)
 
 [计算广告, 2015](https://book.douban.com/subject/26596778/)
 
