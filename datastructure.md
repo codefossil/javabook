@@ -4,9 +4,18 @@
 [MIT 6.045-Automata, Computability, and Complexity Theory](http://people.csail.mit.edu/rrw/6.045-2019/)  
 [MIT 6.042 math-cs](https://courses.csail.mit.edu/6.042)  
 https://www.cs.cmu.edu/~15110/schedule.html  
+http://www.cs.columbia.edu/~tal/3261/sp18/index.html#links  
 
 
 [ACM CS curricula](https://www.acm.org/education/curricula-recommendations)
+
+https://introtcs.org/public/index.html  
+http://stellar.mit.edu/S/course/6/sp16/6.045/materials.html  
+http://people.cs.vt.edu/~kafura/CS6604/  
+
+
+http://www.cs.virginia.edu/~robins/CS_readings.html  
+https://courses.engr.illinois.edu/cs498374/fa2014/lectures.html  
 
 # 计算理论
 

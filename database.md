@@ -109,7 +109,11 @@ System-R里面关于sql处理的说明，结合统计信息，基于代价模型
 [query evaluation techniques, 93](http://infolab.stanford.edu/~hyunjung/cs346/graefe.pdf)  
 [query optimization, ioannidis96](http://infolab.stanford.edu/~hyunjung/cs346/ioannidis.pdf)  
 [qp distributed, tods81](https://people.eecs.berkeley.edu/~wong/wong_pubs/wong73.pdf)  
-[rule-based, sigmod87](http://www.dblab.ece.ntua.gr/~nikos/edith/qopt_bibl/papers/rule_based/freytag_sigmod87_rule_based_qopt.pdf)  
+[rule-based, sigmod87](http://www.dblab.ece.ntua.gr/~nikos/edith/qopt_bibl/papers/rule_based/freytag_sigmod87_rule_based_qopt.pdf) 
+
+http://cgi.di.uoa.gr/~ad/MDE519.DOCS/  
+https://www.csd.uoc.gr/~hy460/2019-2020-fall/  
+http://avid.cs.umass.edu/courses/645/s2018/  
 
 # 日志与恢复
 
@@ -173,22 +177,34 @@ https://github.com/jarulraj/databaseology#access-methods
 https://web.stanford.edu/class/cs245/
 http://cs.brown.edu/courses/cs227/papers.html
 
-# 分布式资源管理与任务调度
 
+# 实时大数据分析
+
+[clouds berkeley view, 2009](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/AboveTheClouds.pdf)
+
+## 集群管理
+[yarn, socc2013](http://web.eecs.umich.edu/~mosharaf/Readings/YARN.pdf)
+[mesos, nsdi2011](https://people.eecs.berkeley.edu/~alig/papers/mesos.pdf)
+[Borg, 2015](https://pdos.csail.mit.edu/6.824/papers/borg.pdf)
+
+## 分布式存储
 [GFS, sosp03](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)  
 [hdfs, 2010](http://pages.cs.wisc.edu/~akella/CS744/S19/838-CloudPapers/hdfs.pdf)  
 [VL2, sigcomm09](http://bnrg.eecs.berkeley.edu/~randy/Courses/CS268.F09/papers/14_vl2.pdf)  
 
-[yarn, socc2013](http://web.eecs.umich.edu/~mosharaf/Readings/YARN.pdf)
-[mesos, nsdi2011](https://people.eecs.berkeley.edu/~alig/papers/mesos.pdf)
-
+## 分析引擎
+[MapReduce survey, sigmodrec2011](https://www2.cs.arizona.edu/~bkmoon/papers/sigmodrec11.pdf)
 [Spark, nsdi2012](https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final138.pdf)
+[Spark SQL, sigmod2015](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/SparkSQL.pdf)
 [Tez, sigmod2015](http://web.eecs.umich.edu/~mosharaf/Readings/Tez.pdf)
-[Borg, 2015](https://pdos.csail.mit.edu/6.824/papers/borg.pdf)
 [Dryad, EuroSys07](http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/15712/papers/isard07.pdf)
 [dataflow, vldb2015](http://www.vldb.org/pvldb/vol8/p1792-Akidau.pdf)
 
-# 实时大数据分析
+## 分布式任务调度
+[Sparrow, sosp03](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/Sparrow.pdf)
+
+## 数据中心网络
+[jupiter, 2015](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/Jupiter.pdf)
 
 [Storm, sigmod2014](https://cs.brown.edu/courses/csci2270/archives/2015/papers/ss-storm.pdf)
 
@@ -202,7 +218,7 @@ http://cs.brown.edu/courses/cs227/papers.html
 
 [Hive, icde10](http://infolab.stanford.edu/~ragho/hive-icde2010.pdf)
 
-[MapReduce survey, sigmodrec2011](https://www2.cs.arizona.edu/~bkmoon/papers/sigmodrec11.pdf)
+
 
 [big data, 2015](https://book.douban.com/subject/10438832/)
 
@@ -223,8 +239,18 @@ http://c.biancheng.net/big_data/
 
 [prml, 2007](https://book.douban.com/subject/2061116/)
 
-[learning from data, 2012](https://book.douban.com/subject/11026330/)
-数据挖掘  
+## 数据挖掘
+https://ocw.mit.edu/courses/sloan-school-of-management/15-062-data-mining-spring-2003/lecture-notes/Lecture1Slides.pdf  
+
+[learning from data, 2012](https://book.douban.com/subject/11026330/)  
+http://personal.psu.edu/jol2/course/stat557/material.html  
+https://wiki.illinois.edu/wiki/display/cs412/2.+Course+Syllabus+and+Schedule  
+https://en.wikipedia.org/wiki/Data_mining  
+http://www.stat.cmu.edu/~cshalizi/dm/19/  
+https://docs.microsoft.com/en-us/analysis-services/data-mining/data-mining-concepts  
+https://www.britannica.com/technology/data-mining  
+https://developer.ibm.com/articles/ba-data-mining-techniques/  
+
 数据科学
 推荐系统
 用户画像
