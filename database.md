@@ -29,6 +29,7 @@
  
 [ddia](https://book.douban.com/subject/26197294/)  
 从工程的角度，系统的，全面地讲解数据处理的各种问题。并且还有论文指南，深入浅出  
+
 [redbook](http://redbook.io)  
 从88年开始，每隔10年，由stonebraker组织，对数据这几年的发展进行总结和预测。 
   
@@ -77,7 +78,7 @@ http://www.databaseanswers.org/data_models/
 [oltp, sigmod08](http://www.cs.umd.edu/~abadi/papers/oltpperf-sigmod08.pdf)  
 全内存数据库性能。通过把数据库子系统一个个去掉的方式，从内部看传统数据架构性能问题。
 
-[olap, sigmod97](https://cs.nju.edu.cn/zhouzh/zhouzh.files/course/dm/reading/reading02/chaudhuri_sigmodrec97.pdf)
+[olap, chaudhuri97, sigmod](https://cs.nju.edu.cn/zhouzh/zhouzh.files/course/dm/reading/reading02/chaudhuri_sigmodrec97.pdf)
 
 
 [data cube, ieee96](http://web.stanford.edu/class/cs345d-01/rl/olap.pdf)
@@ -89,6 +90,7 @@ http://www.databaseanswers.org/data_models/
 [db-how](http://coding-geek.com/how-databases-work)  
 
 [column-oriented vs column-family](https://dbmsmusings.blogspot.com/2010/03/distinguishing-two-major-types-of_29.html)   
+
 [digg v4](https://knowyourmeme.com/memes/events/digg-v4)
 https://www.memsql.com/blog/why-nosql-databases-wrong-tool-for-modern-application/
 https://dzone.com/articles/nosql-vs-sql-differences-explained
@@ -99,21 +101,43 @@ http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-
 
 # 查询
 
+通过
+cardinality/selectivity in INFORMATION_SCHEMA
+index hint
+index-organized table
+index merge
+决定用哪些索引，join的顺序
+最后统一处理GROUP BY, ORDER BY, HAVING and DISTINCT
+
+`chapter 4, architecture db, 2007`
+
+[query optimization overview, Chaudhuri98](https://www.microsoft.com/en-us/research/publication/an-overview-of-query-optimization-in-relational-systems-paper/)  
+
 [critique of sql, 83](https://www2.cs.duke.edu/courses/spring03/cps216/papers/date-1983.pdf)
 
 [access path, selinger-79](http://courses.cs.vt.edu/~cs4604/Spring13/lectures/selinger-qopt-paper.pdf)  
-System-R里面关于sql处理的说明，结合统计信息，基于代价模型计算join顺序和嵌套查询。    
+System-R里面关于sql处理的说明，结合统计信息，基于代价模型计算join顺序和嵌套查询。   
 
-[overview, 98](https://www.microsoft.com/en-us/research/publication/an-overview-of-query-optimization-in-relational-systems-paper/)  
-[algorithms for the join ordering problem, ict09](http://www.acad.bg/rismim/itc/sub/archiv/Paper6_1_2009.PDF)  
-[query evaluation techniques, 93](http://infolab.stanford.edu/~hyunjung/cs346/graefe.pdf)  
 [query optimization, ioannidis96](http://infolab.stanford.edu/~hyunjung/cs346/ioannidis.pdf)  
+
+[query evaluation, graefe93](https://www.csd.uoc.gr/~hy460/pdf/query.pdf)  
+
+
+[algorithms for the join ordering problem, ict09](http://www.acad.bg/rismim/itc/sub/archiv/Paper6_1_2009.PDF)  
+
+[self-tuning, vldb07](http://www.vldb.org/conf/2007/papers/special/p3-chaudhuri.pdf)  
+
 [qp distributed, tods81](https://people.eecs.berkeley.edu/~wong/wong_pubs/wong73.pdf)  
+
 [rule-based, sigmod87](http://www.dblab.ece.ntua.gr/~nikos/edith/qopt_bibl/papers/rule_based/freytag_sigmod87_rule_based_qopt.pdf) 
 
 http://cgi.di.uoa.gr/~ad/MDE519.DOCS/  
 https://www.csd.uoc.gr/~hy460/2019-2020-fall/  
 http://avid.cs.umass.edu/courses/645/s2018/  
+http://www.inf.ed.ac.uk/teaching/courses/ad/  
+https://www.csd.uoc.gr/~hy460/2019-2020-fall/#portfolio  
+http://infolab.stanford.edu/~hyunjung/cs346/  
+http://pages.cs.wisc.edu/~nil/764/  
 
 # 日志与恢复
 
@@ -148,30 +172,30 @@ DAG Directed acyclic graph
 
 # 存取方法
 
-> 不访问不必要的数据
+> 不访问不必要的数据  
 > Is an index the best solution?
 
-hash index
-b+tree index
-lsm index
-spatial index
 full text index
-selectivity/cardinality
 three-star index
-covering index
-index-organized table
 
-index-covered query
-range query
-how to sort
+[b-trees, icomod70](https://infolab.usc.edu/csci585/Spring2010/den_ar/indexing.pdf)
+给出b树的定义，增/删/查的算法，形式化分析了算法的最小、最大和平均成本。  
+分析了存储利用率。  
+根据当时的磁盘性能，给出了k的最优解。  
+结论的推论数据不知道是怎么来的：9tps/15k-->2tps/1.5M, ???  
+
+[r-trees, 84](http://pages.cs.wisc.edu/~nil/764/Relat/7_rtree.pdf)
+
+[lsm-tree, 96](https://www.cs.umb.edu/~poneil/lsmtree.pdf)  
+
+[improved query performance with variant indexes, icomod97](http://cs.brown.edu/courses/cs227/archives/2008/mitchpapers/required5.pdf)  
 
 [The Ubiquitous B-Tree, 79](http://cs.kangwon.ac.kr/~ysmoon/courses/2005_1/dwnolap/Comer79-U-B-trees.pdf)
 [Relational Database Index Design and the Optimizers, 2005](https://book.douban.com/subject/26419771/)  
 [SSTable](http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb/)  
-[MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)  
-[浅谈MySQL的B树索引与索引优化](https://monkeysayhi.github.io/2018/03/06/%E6%B5%85%E8%B0%88MySQL%E7%9A%84B%E6%A0%91%E7%B4%A2%E5%BC%95%E4%B8%8E%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96/)  
 
 
+http://smalldatum.blogspot.com/  
 https://github.com/jarulraj/databaseology#access-methods
 
 https://web.stanford.edu/class/cs245/
@@ -182,30 +206,27 @@ http://cs.brown.edu/courses/cs227/papers.html
 
 [clouds berkeley view, 2009](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/AboveTheClouds.pdf)
 
+[big data, 2015](https://book.douban.com/subject/10438832/)
+
 ## 集群管理
-[yarn, socc2013](http://web.eecs.umich.edu/~mosharaf/Readings/YARN.pdf)
-[mesos, nsdi2011](https://people.eecs.berkeley.edu/~alig/papers/mesos.pdf)
-[Borg, 2015](https://pdos.csail.mit.edu/6.824/papers/borg.pdf)
+[yarn, socc2013](http://web.eecs.umich.edu/~mosharaf/Readings/YARN.pdf)  
+[mesos, nsdi2011](https://people.eecs.berkeley.edu/~alig/papers/mesos.pdf)  
+[Borg, 2015](https://pdos.csail.mit.edu/6.824/papers/borg.pdf)  
 
 ## 分布式存储
 [GFS, sosp03](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)  
 [hdfs, 2010](http://pages.cs.wisc.edu/~akella/CS744/S19/838-CloudPapers/hdfs.pdf)  
 [VL2, sigcomm09](http://bnrg.eecs.berkeley.edu/~randy/Courses/CS268.F09/papers/14_vl2.pdf)  
 
-## 分析引擎
-[MapReduce survey, sigmodrec2011](https://www2.cs.arizona.edu/~bkmoon/papers/sigmodrec11.pdf)
-[Spark, nsdi2012](https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final138.pdf)
-[Spark SQL, sigmod2015](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/SparkSQL.pdf)
-[Tez, sigmod2015](http://web.eecs.umich.edu/~mosharaf/Readings/Tez.pdf)
-[Dryad, EuroSys07](http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/15712/papers/isard07.pdf)
-[dataflow, vldb2015](http://www.vldb.org/pvldb/vol8/p1792-Akidau.pdf)
+## 执行引擎
+[MapReduce survey, sigmodrec2011](https://www2.cs.arizona.edu/~bkmoon/papers/sigmodrec11.pdf)  
+[Spark, nsdi2012](https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final138.pdf)  
+[Spark SQL, sigmod2015](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/SparkSQL.pdf)  
+[Tez, sigmod2015](http://web.eecs.umich.edu/~mosharaf/Readings/Tez.pdf)  
+[Dryad, EuroSys07](http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/15712/papers/isard07.pdf)  
+[dataflow, vldb2015](http://www.vldb.org/pvldb/vol8/p1792-Akidau.pdf)    
 
-## 分布式任务调度
-[Sparrow, sosp03](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/Sparrow.pdf)
-
-## 数据中心网络
-[jupiter, 2015](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/Jupiter.pdf)
-
+## 分析框架
 [Storm, sigmod2014](https://cs.brown.edu/courses/csci2270/archives/2015/papers/ss-storm.pdf)
 
 [Kafka, NetDB2011](http://pages.cs.wisc.edu/~akella/CS744/S19/838-CloudPapers/Kafka.pdf)
@@ -218,13 +239,14 @@ http://cs.brown.edu/courses/cs227/papers.html
 
 [Hive, icde10](http://infolab.stanford.edu/~ragho/hive-icde2010.pdf)
 
+## 分布式任务调度
+[Sparrow, sosp03](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/Sparrow.pdf)
+
+## 数据中心网络
+[jupiter, 2015](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/Jupiter.pdf)
 
 
-[big data, 2015](https://book.douban.com/subject/10438832/)
-
-[big data at LinkedIn, icomod2013](http://web.cs.wpi.edu/~cs525/f13b-EAR/cs525-homepage/lectures/PAPERS/p1125-sumbaly.pdf)
-
-web数据处理  
+[big data at LinkedIn, icomod2013](http://web.cs.wpi.edu/~cs525/f13b-EAR/cs525-homepage/lectures/PAPERS/p1125-sumbaly.pdf) 
 
 http://barbie.uta.edu/~jli/mmwc.html
 http://c.biancheng.net/big_data/
@@ -278,11 +300,6 @@ https://github.com/mysql/mysql-server/blob/5.7/sql/sql_optimizer.cc
 https://tech.meituan.com/2014/06/16/presto.html
 https://www.cockroachlabs.com/blog/join-ordering-pt1/
 http://idke.ruc.edu.cn/reading/index.htm#phd
-
-iterator/volcano  
-materialization  
-vectorized  
-地理位置查询/多维查询
 
 http://hyper-db.com/
 

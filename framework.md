@@ -41,9 +41,27 @@ https://www.jianshu.com/p/bc56e676298f
 [TableStore实战：亿量级订单管理解决方案](https://yq.aliyun.com/articles/656196?spm=a2c4e.11154837.920241.5.464642b2YuhDE6)
 [分库分表技术演进](https://mp.weixin.qq.com/s/3ZxGq9ZpgdjQFeD2BIJ1MA)
 
-## 即时消息
+## 实时消息
+
+|名称|集群数量|CPU|内存|存储|网络|单机|集群长连接|消息下发|
+|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+|360push服务|9集群，400物理机，3000实例|-|128GB|-|-|800K长连接，20K QPS|10M|10M/分钟，百亿/天,
+|京东云消息|-|-|-|-|-|1.18M长连接|-|-
+
+
 消息推送
-IOT设备MQTT
+iot
+android/ios
+h5
+
+单机连接数/内存使用量
+消息下发量/s
+心跳
+耗时业务
+
+[Netty 百万级推送服务设计要点](https://www.infoq.cn/article/netty-million-level-push-service-design-points)  
+
+emqtt.io
 
 ## 身份认证
 用户系统
