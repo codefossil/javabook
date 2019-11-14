@@ -29,6 +29,23 @@
 
 [大师说科学与哲学](https://book.douban.com/subject/27041829/)
 
+## 系统科学
+
+> the discipline of **systems thinking** proves to be an invaluable tool in assessing exposure, opportunities, parametric sensitivities. 
+> instrument–process–operand model
+
+[the magic number seven, 1956](https://academic.microsoft.com/paper/1984314602/reference)
+
+[Complexity, Mitchell2011](https://book.douban.com/subject/6749832/)
+
+[控制论与科学方法论, 2005](https://book.douban.com/subject/1322336/)
+
+[系统论，95](https://book.douban.com/subject/1008370/)
+
+[System Architecture: Strategy and Product Development for Complex Systems](https://book.douban.com/subject/26938710/)  
+分析了一种系统化的思考方式和识别方法，结合大量实例自顶向下剖析了架构复杂系统的过程，总结出系统分为形式和功能，通过分解和分层等方法破解复杂系统。
+
+
 ## 学习
 
 [How to read a paper, sigcomm07](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/PaperReading.pdf)  

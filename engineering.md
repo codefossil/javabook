@@ -11,6 +11,8 @@
 
 > One of the biggest problems with software is that **it’s complex and abstract**. The result being that it’s hard to visualise the runtime characteristics of a piece of software from diagrams or even the code itself.
 
+[Engeering: An endless frontier, Auyang2004](https://book.douban.com/subject/3287111/)
+
 [Humphrey-SPA award](https://resources.sei.cmu.edu/news-events/events/watts/watts.cfm)  
 [SE-history, 1996](https://www.dagstuhl.de/Reports/96/9635.pdf)  
 https://en.wikipedia.org/wiki/Software_engineering  
@@ -115,42 +117,15 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 [Clean Architecture](https://book.douban.com/subject/30333919/)  
 提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。底层离中心业务越远越易变，高层中心业务规则是赚钱的法宝比较不易变。 
 
+[Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
+[Software design for large system, 1988](https://web.njit.edu/~kirova/BC-SDP.pdf)  
+
 [Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
 [Just Enough Software Architecture](https://book.douban.com/subject/24872314/)    
 [Architectural and philosophical points](https://www.w3.org/DesignIssues/)  
 
-## 化繁为简
-
-[Engeering: An endless frontier, Auyang2004](https://book.douban.com/subject/3287111/)
-
-[Complexity, Mitchell2011](https://book.douban.com/subject/6749832/)
-
-[控制论与科学方法论, 2005](https://book.douban.com/subject/1322336/)
-
-[GEB, 97](https://book.douban.com/subject/1291204/)
-
-[系统论，95](https://book.douban.com/subject/1008370/)
-
-[System Architecture: Strategy and Product Development for Complex Systems](https://book.douban.com/subject/26938710/)  
-分析了一种系统化的思考方式和识别方法，结合大量实例自顶向下剖析了架构复杂系统的过程，总结出系统分为形式和功能，通过分解和分层等方法破解复杂系统。
-
-
-## 边界
-
-> the discipline of **systems thinking** proves to be an invaluable tool in assessing exposure, opportunities, parametric sensitivities. 
-> instrument–process–operand model
-
 DDD/TDD/BDD/CQRS/DCI/  
 [DDD](https://book.douban.com/subject/1418618/)  
-
-[the magic number seven, 1956](https://academic.microsoft.com/paper/1984314602/reference)
-
-## 伸缩
-  
-[Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
-[Software design for large system, 1988](https://web.njit.edu/~kirova/BC-SDP.pdf)  
-[排队论及其应用浅析](https://www.slideshare.net/frogd/ss-27959518)  
-[构建高性能Web站点, 2009](https://book.douban.com/subject/3924175/)  
 
 ## 设计模式/原则
 
@@ -162,6 +137,8 @@ If it ain't broke, don't fix it.
 飞轮效应  
 dependency inversion
 SOLID
+
+[Internet-arch](https://trac.tools.ietf.org/html/rfc3439)  
 
 [Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
   
@@ -176,7 +153,7 @@ https://java-design-patterns.com/principles/
 [The Rule of Least Power, 2001](https://www.w3.org/2001/tag/doc/leastPower.html)  
 
 [Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)  
-[方法论、方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)  
+[方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)  
 [PEP 20](https://www.python.org/dev/peps/pep-0020/)  
 [system-desgin](https://github.com/donnemartin/system-design-primer)  
 

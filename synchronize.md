@@ -83,6 +83,9 @@ https://www.irif.fr/~mellies/mpri/mpri-ens/articles/winskel-nielsen-models-for-c
 http://pages.cs.wisc.edu/~bart/736/f2017/paper1.html  
 https://www.cse.iitb.ac.in/~mythili/os/notes/notes-perf.txt
 
+[排队论及其应用浅析](https://www.slideshare.net/frogd/ss-27959518)  
+[构建高性能Web站点, 2009](https://book.douban.com/subject/3924175/)  
+
 > Performance is all about code path
 
 * 优化问题，把所有访问路径列出来
@@ -102,6 +105,9 @@ https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt
 [Java synchronizer, csjp04](http://gee.cs.oswego.edu/dl/papers/aqs.pdf)  
 [Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
 [Future, 1977](http://home.pipeline.com/~hbaker1/Futures.html)  
+
+# 分布式系统
+[分布式](ds/ds.md)
 
 **todo**
 

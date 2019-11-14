@@ -29,7 +29,7 @@ https://courses.engr.illinois.edu/cs498374/fa2014/lectures.html
 
 [形式语言与自动机导论, 2005](https://book.douban.com/subject/1435126/)
 
-
+[GEB, 97](https://book.douban.com/subject/1291204/)
 
 
 图灵

@@ -1,3 +1,29 @@
+# 开发参考
+* [tcp](https://tools.ietf.org/html/rfc793)
+* [http/1.1](https://tools.ietf.org/html/rfc2616)
+* [nginx](http://nginx.org/en/)
+* [jdk](https://docs.oracle.com/javase/10/)
+* [mysql 8.0](https://dev.mysql.com/doc/refman/8.0/en/)
+* [mysql 5.7](https://dev.mysql.com/doc/refman/5.7/en/)
+* [mysql internal](https://dev.mysql.com/doc/internals/en/)
+* [spring](https://docs.spring.io/spring/docs/)
+* [dubbo](http://dubbo.apache.org/zh-cn/docs/user/quick-start.html)
+* [maven](http://maven.apache.org/)
+* [git](https://git-scm.com/docs)
+* [amqp](https://www.rabbitmq.com/protocol.html)
+* [cron](http://www.quartz-scheduler.org/documentation/quartz-2.x/tutorials/crontrigger.html)
+
+# 源码
+* [redis](https://github.com/antirez/redis)
+* [spring](https://github.com/spring-projects/spring-framework)
+* [jdk7-hotspot](https://github.com/openjdk-mirror/jdk7u-hotspot)
+* [jdk7-jdk](https://github.com/openjdk-mirror/jdk7u-jdk)
+* [mysql](https://github.com/mysql/mysql-server)
+* [linux](https://github.com/torvalds/linux)
+* [guava](https://github.com/google/guava)  
+* [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)  
+* [AWS Architecture Center](https://aws.amazon.com/architecture)  
+
 # 通用架构设计
 microservice/SOA/Lambda Architecture  
 
@@ -14,8 +40,8 @@ https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-eng
 
 [分布式Redis架构设计, 2015](https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=208733458&idx=1&sn=691bfde670fb2dd649685723f7358fea)  
 [亿级用户下的新浪微博平台架构](https://www.infoq.cn/article/weibo-platform-archieture)  
-[Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)  
-[AWS Architecture Center](https://aws.amazon.com/architecture)  
+
+
 
 # 企业级架构设计
 
@@ -34,12 +60,11 @@ https://www.jianshu.com/p/bc56e676298f
 3. 支付系统
 
 ## 电商服务架构
-商品管理
-订单系统
-下单流程
+商品管理  
+订单系统  
+下单流程  
 库管  
-[TableStore实战：亿量级订单管理解决方案](https://yq.aliyun.com/articles/656196?spm=a2c4e.11154837.920241.5.464642b2YuhDE6)
-[分库分表技术演进](https://mp.weixin.qq.com/s/3ZxGq9ZpgdjQFeD2BIJ1MA)
+[TableStore实战：亿量级订单管理解决方案](https://yq.aliyun.com/articles/656196?spm=a2c4e.11154837.920241.5.464642b2YuhDE6)  
 
 ## 实时消息
 
@@ -101,15 +126,12 @@ SQS，对性能无太大要求时，做简单队列, availability超好
 
 ## 数据流
 
-confluent  
 [Kafka: The Definitive Guide](https://book.douban.com/subject/26828527/)  
 https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying  
 https://www.infoq.cn/article/2018/01/confluent-kafka-data  
 
-aws  
 [Kinesis](https://aws.amazon.com/cn/kinesis/)
 
-elastic  
 https://zturn.cc/elkbook/
 
 ## 数据库
@@ -130,25 +152,14 @@ https://zturn.cc/elkbook/
 http://mysql.rjweb.org/doc.php/limits
 https://dev.mysql.com/doc/mysql-reslimits-excerpt/5.6/en/limits.html
 
-## 大数据
 http://www.voidcn.com/article/p-biggriil-bhz.html
 
 ## 工作流/规则引擎
-
-## 数据搜索
-分词器
-索引规则
 
 webhook
 http://progrium.com/blog/2007/05/03/web-hooks-to-revolutionize-the-web/
 
 
-
-
-
-Storm/trident，做实时分布式消息处理   
-Flume, 海量数据收集with high availability  
-图表 数据处理工具 hadoop spark flink  
 https://sites.google.com/a/brown.edu/ugur-cetintemel/
 https://data1030.github.io/
 https://www.linkedin.com/pulse/big-data-velocity-plain-english-john-ryan/
