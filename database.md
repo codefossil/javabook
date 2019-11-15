@@ -78,10 +78,10 @@ http://www.databaseanswers.org/data_models/
 [oltp, sigmod08](http://www.cs.umd.edu/~abadi/papers/oltpperf-sigmod08.pdf)  
 全内存数据库性能。通过把数据库子系统一个个去掉的方式，从内部看传统数据架构性能问题。
 
-[olap, chaudhuri97, sigmod](https://cs.nju.edu.cn/zhouzh/zhouzh.files/course/dm/reading/reading02/chaudhuri_sigmodrec97.pdf)
+[data warehousing and olap overview, chaudhuri97, sigmod](https://cs.nju.edu.cn/zhouzh/zhouzh.files/course/dm/reading/reading02/chaudhuri_sigmodrec97.pdf)
 
 
-[data cube, ieee96](http://web.stanford.edu/class/cs345d-01/rl/olap.pdf)
+[data cube, gray96, ieee](http://web.stanford.edu/class/cs345d-01/rl/olap.pdf)
 
 [column vs row, sigmod08](https://15721.courses.cs.cmu.edu/spring2019/papers/09-storage/p967-abadi.pdf)  
  
@@ -101,17 +101,13 @@ http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-
 
 # 查询
 
-通过
-cardinality/selectivity in INFORMATION_SCHEMA
-index hint
-index-organized table
-index merge
-决定用哪些索引，join的顺序
-最后统一处理GROUP BY, ORDER BY, HAVING and DISTINCT
+`ch4, architecture db, 2007`
 
-`chapter 4, architecture db, 2007`
+[query optimization overview, Chaudhuri98](https://www.microsoft.com/en-us/research/publication/an-overview-of-query-optimization-in-relational-systems-paper/)   
+查询优化器必读  
+从查询空间、统计成本评估，枚举框架到分布式并行，作者列举了优化器领域当时的进展和遇到的难题。
 
-[query optimization overview, Chaudhuri98](https://www.microsoft.com/en-us/research/publication/an-overview-of-query-optimization-in-relational-systems-paper/)  
+[MySQL optimization](https://dev.mysql.com/doc/refman/8.0/en/optimize-overview.html)
 
 [critique of sql, 83](https://www2.cs.duke.edu/courses/spring03/cps216/papers/date-1983.pdf)
 
