@@ -105,7 +105,10 @@ http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-
 
 [query optimization overview, Chaudhuri98](https://www.microsoft.com/en-us/research/publication/an-overview-of-query-optimization-in-relational-systems-paper/)   
 查询优化器必读  
-从查询空间、统计成本评估，枚举框架到分布式并行，作者列举了优化器领域当时的进展和遇到的难题。
+从查询空间、统计成本评估，枚举框架到分布式并行，作者列举了优化器领域当时的进展和遇到的难题。  
+(DP优化的效果从O(n!)->O(n*2^n-1)???/Bushy join算法???)
+
+
 
 [MySQL optimization](https://dev.mysql.com/doc/refman/8.0/en/optimize-overview.html)
 
@@ -174,7 +177,7 @@ DAG Directed acyclic graph
 full text index
 three-star index
 
-[b-trees, icomod70](https://infolab.usc.edu/csci585/Spring2010/den_ar/indexing.pdf)
+[b-trees, icomod70](https://infolab.usc.edu/csci585/Spring2010/den_ar/indexing.pdf)  
 给出b树的定义，增/删/查的算法，形式化分析了算法的最小、最大和平均成本。  
 分析了存储利用率。  
 根据当时的磁盘性能，给出了k的最优解。  
