@@ -59,6 +59,7 @@ EAV模型
 [Relational Model, codd70](http://cs.brown.edu/courses/cs295-11/2006/codd.pdf)  
 坚持数据展示和存储需要分离，第一次提出关系数据模型，关系代数，数据语言概念。    
 [E-R model, chen76](https://harrymoreno.com/assets/greatPapersInCompSci/7.3_-_The_Entity_Relationship_Model_-_Towards_A_Unified_View_of_Data-Peter_Pin-Shan_Chen.pdf)  
+
 [ch4, High Performance MySQL, 2012](https://book.douban.com/subject/10443458/)  
 
 http://cs.brown.edu/courses/cs295-11/2006/schedule.html  
@@ -85,8 +86,6 @@ http://www.databaseanswers.org/data_models/
 
 [column vs row, sigmod08](https://15721.courses.cs.cmu.edu/spring2019/papers/09-storage/p967-abadi.pdf)  
  
-[architecture db, 2007](http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf) 
-
 [db-how](http://coding-geek.com/how-databases-work)  
 
 [column-oriented vs column-family](https://dbmsmusings.blogspot.com/2010/03/distinguishing-two-major-types-of_29.html)   
@@ -190,7 +189,9 @@ three-star index
 [improved query performance with variant indexes, icomod97](http://cs.brown.edu/courses/cs227/archives/2008/mitchpapers/required5.pdf)  
 
 [The Ubiquitous B-Tree, 79](http://cs.kangwon.ac.kr/~ysmoon/courses/2005_1/dwnolap/Comer79-U-B-trees.pdf)
+
 [Relational Database Index Design and the Optimizers, 2005](https://book.douban.com/subject/26419771/)  
+
 [SSTable](http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb/)  
 
 
