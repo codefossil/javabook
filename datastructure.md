@@ -89,6 +89,10 @@ https://betterexplained.com/articles/sorting-algorithms/
 
 ## graph
 
+## hash
+https://www.strchr.com/hash_functions
+https://www.paperplanes.de/2011/12/9/the-magic-of-consistent-hashing.html
+https://web.archive.org/web/20100701151029/http://www.tomkleinpeter.com/2008/03/17/programmers-toolbox-part-3-consistent-hashing/
 
 
 # 数据结构
@@ -99,6 +103,10 @@ https://en.wikipedia.org/wiki/Book:Data_structures
 
 
 # todo
+https://cs.stanford.edu/~rishig/courses/s16.html
+http://web.stanford.edu/class/cs168/index.html
+http://timroughgarden.org/w16/w16.html
+
 http://www.cs.columbia.edu/~bauer/cs3134-f15/lectures.html
 https://www.cs.princeton.edu/courses/archive/fall18/cos226/lectures.php
 
