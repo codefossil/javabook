@@ -11,6 +11,7 @@
 [CMU 15-721](http://15721.courses.cs.cmu.edu/spring2017/schedule.html)  
 [WISC CS744](http://pages.cs.wisc.edu/~akella/CS744/S19/papers.html)
 [HARVARD cs265](http://daslab.seas.harvard.edu/classes/cs265/)
+[CMU 15-445/645](https://15445.courses.cs.cmu.edu/fall2018/schedule.html)  
 
 - 工业  
 [Momjian-PostgreSQL](https://momjian.us/main/faq.html)  
@@ -45,19 +46,12 @@ https://blog.codinghorror.com/maybe-normalizing-isnt-normal/
 initial requirement->use case->object/relation  
 normalization->business rule (Relational)
 
-宽表和纵表
-EAV模型
-父表子表
-汇总表/计数器表
-物化视图
-范式和非范式
-事实表和维度表
-
 [what goes around, stonebraker05](https://15721.courses.cs.cmu.edu/spring2016/papers/whatgoesaround-stonebraker.pdf)  
 总结了70-05这35年的数据模型得失 
 
 [Relational Model, codd70](http://cs.brown.edu/courses/cs295-11/2006/codd.pdf)  
-坚持数据展示和存储需要分离，第一次提出关系数据模型，关系代数，数据语言概念。    
+坚持数据展示和存储需要分离，第一次提出关系数据模型，关系代数，数据语言概念。
+
 [E-R model, chen76](https://harrymoreno.com/assets/greatPapersInCompSci/7.3_-_The_Entity_Relationship_Model_-_Towards_A_Unified_View_of_Data-Peter_Pin-Shan_Chen.pdf)  
 
 [ch4, High Performance MySQL, 2012](https://book.douban.com/subject/10443458/)  
@@ -74,15 +68,14 @@ http://www.databaseanswers.org/data_models/
 
 [gamma, 90](http://pages.cs.wisc.edu/~dewitt/includes/paralleldb/ieee90.pdf)
 
-[c-store, vldb2005](http://www.cs.umd.edu/~abadi/papers/vldb.pdf) 
-
 [oltp, sigmod08](http://www.cs.umd.edu/~abadi/papers/oltpperf-sigmod08.pdf)  
 全内存数据库性能。通过把数据库子系统一个个去掉的方式，从内部看传统数据架构性能问题。
 
-[data warehousing and olap overview, chaudhuri97, sigmod](https://cs.nju.edu.cn/zhouzh/zhouzh.files/course/dm/reading/reading02/chaudhuri_sigmodrec97.pdf)
+[Providing OLAP to User-Analysts, codd93](http://www.uniriotec.br/~tanaka/SAIN/providing_olap_to_user_analysts.pdf)  
 
+[parallel db, 92](https://people.eecs.berkeley.edu/~brewer/cs262/5-dewittgray92.pdf) 
 
-[data cube, gray96, ieee](http://web.stanford.edu/class/cs345d-01/rl/olap.pdf)
+[c-store, vldb2005](http://www.cs.umd.edu/~abadi/papers/vldb.pdf) 
 
 [column vs row, sigmod08](https://15721.courses.cs.cmu.edu/spring2019/papers/09-storage/p967-abadi.pdf)  
  
@@ -97,17 +90,17 @@ https://www.gartner.com/doc/reprints?id=1-5N2H2SM&ct=181024&st=sb
 [don't use mongodb](https://news.ycombinator.com/item?id=3202081)
 http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/
 
+[data warehousing and olap overview, chaudhuri97, sigmod](https://cs.nju.edu.cn/zhouzh/zhouzh.files/course/dm/reading/reading02/chaudhuri_sigmodrec97.pdf)
+[data cube, gray96, ieee](http://web.stanford.edu/class/cs345d-01/rl/olap.pdf)
 
 # 查询
 
-`ch4, architecture db, 2007`
+[ch4, architecture db, 2007](http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf)
 
 [query optimization overview, Chaudhuri98](https://www.microsoft.com/en-us/research/publication/an-overview-of-query-optimization-in-relational-systems-paper/)   
 查询优化器必读  
 从查询空间、统计成本评估，枚举框架到分布式并行，作者列举了优化器领域当时的进展和遇到的难题。  
-(DP优化的效果从O(n!)->O(n*2^n-1)???/Bushy join算法???)
-
-
+(DP优化的效果从O(n!)->O(n*2^n-1)???/Bushy join算法???)  
 
 [MySQL optimization](https://dev.mysql.com/doc/refman/8.0/en/optimize-overview.html)
 
@@ -144,7 +137,6 @@ http://pages.cs.wisc.edu/~nil/764/
 [voltdb recovery, icde2014](https://hstore.cs.brown.edu/papers/voltdb-recovery.pdf)
 
 
-
 # 事务与并发控制
 
 > 事务是为了简化，解决数据库容错
@@ -156,10 +148,11 @@ http://pages.cs.wisc.edu/~nil/764/
 > 数据库事务保证数据不被破坏（AID），其局限是数据库无法维护业务的**并发不可变条件**
 
 [critique isolation level, sigmod95](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-95-51.pdf)  
+
 [granularity of locks and degree of consistency, ibm75](http://jimgray.azurewebsites.net/papers/granularity%20of%20locks%20and%20degrees%20of%20consistency%20rj%201654.pdf)  
+
 [occ, tods81](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)  
 
-[cmu 15-445/645](https://15445.courses.cs.cmu.edu/fall2018/schedule.html)  
 [2pl](https://en.wikipedia.org/wiki/Two-phase_locking) 
 
 确定性
@@ -202,7 +195,7 @@ https://web.stanford.edu/class/cs245/
 http://cs.brown.edu/courses/cs227/papers.html
 
 
-# 实时大数据分析
+# 实时大数据分析  
 
 [clouds berkeley view, 2009](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/AboveTheClouds.pdf)
 
@@ -251,7 +244,7 @@ http://cs.brown.edu/courses/cs227/papers.html
 http://barbie.uta.edu/~jli/mmwc.html
 http://c.biancheng.net/big_data/
 
-# 复杂大数据分析
+# 复杂数据分析
 
 [anomaly survey, ACS09](https://cs.brown.edu/courses/csci2270/papers/anomaly-detection-survey.pdf)
 
