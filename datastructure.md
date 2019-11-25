@@ -90,9 +90,21 @@ https://betterexplained.com/articles/sorting-algorithms/
 ## graph
 
 ## hash
+
+### 一致性hash
+[Consistent hashing and random trees, karger97](https://www.aminer.cn/pub/53e99a4eb7602d97022b385c/consistent-hashing-and-random-trees-distributed-caching-protocols-for-relieving-hot-spots)  
+
+[guava, 2014](https://arxiv.org/pdf/1406.2294v1.pdf)  
+
+[maglev, 2016](http://static.googleusercontent.com/media/research.google.com/zh-TW//pubs/archive/44824.pdf)  
+
+
+https://web.stanford.edu/class/cs168/l/l1.pdf
+https://arxiv.org/pdf/1406.2294v1.pdf
 https://www.strchr.com/hash_functions
 https://www.paperplanes.de/2011/12/9/the-magic-of-consistent-hashing.html
 https://web.archive.org/web/20100701151029/http://www.tomkleinpeter.com/2008/03/17/programmers-toolbox-part-3-consistent-hashing/
+https://highlyscalable.wordpress.com/2012/09/18/distributed-algorithms-in-nosql-databases/
 
 
 # 数据结构
