@@ -99,13 +99,21 @@ https://betterexplained.com/articles/sorting-algorithms/
 [maglev, 2016](http://static.googleusercontent.com/media/research.google.com/zh-TW//pubs/archive/44824.pdf)  
 
 
+
 https://web.stanford.edu/class/cs168/l/l1.pdf
 https://arxiv.org/pdf/1406.2294v1.pdf
 https://www.strchr.com/hash_functions
 https://www.paperplanes.de/2011/12/9/the-magic-of-consistent-hashing.html
 https://web.archive.org/web/20100701151029/http://www.tomkleinpeter.com/2008/03/17/programmers-toolbox-part-3-consistent-hashing/
 https://highlyscalable.wordpress.com/2012/09/18/distributed-algorithms-in-nosql-databases/
-
+https://medium.com/@dgryski/consistent-hashing-algorithmic-tradeoffs-ef6b8e2fcae8
+https://www.last.fm/user/RJ/journal/2007/04/10/rz_libketama_-_a_consistent_hashing_algo_for_memcache_clients
+https://www.toptal.com/big-data/consistent-hashing
+https://en.wikipedia.org/wiki/Perfect_hash_function
+https://dev.mysql.com/doc/refman/5.6/en/ha-memcached-using-hashtypes.html
+https://www.infoq.cn/article/Maglev-Vortex
+https://ai.googleblog.com/2017/04/consistent-hashing-with-bounded-loads.html
+https://medium.com/@dgryski/consistent-hashing-algorithmic-tradeoffs-ef6b8e2fcae8
 
 # 数据结构
 [Advanced Data Structures ](http://courses.csail.mit.edu/6.851/fall17/)

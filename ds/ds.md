@@ -57,6 +57,9 @@ build most robost system
 Oracle/IBM use share-disk
 tradeoff: complexity VS benifit
 
+https://www.mimuw.edu.pl/~iwanicki/courses/ds/2019/
+https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying
+
 https://www.cs.princeton.edu/courses/archive/fall17/cos418/syllabus.html
 http://www.cs.cornell.edu/courses/cs5414/2018fa/
 https://www.cs.ubc.ca/~bestchai/teaching/cs416_2018w1/index.html#schedule
