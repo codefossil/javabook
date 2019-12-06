@@ -43,7 +43,7 @@ https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-eng
 
 https://github.com/akullpp/awesome-java#science
 
-# 企业级架构设计
+# 企业级系统
 
 ## 用户系统
 
@@ -66,6 +66,24 @@ https://www.jianshu.com/p/bc56e676298f
 库管  
 [TableStore实战：亿量级订单管理解决方案](https://yq.aliyun.com/articles/656196?spm=a2c4e.11154837.920241.5.464642b2YuhDE6)  
 
+## 身份认证
+用户系统
+SSO
+登录系统
+权限系统
+
+
+# 企业级服务
+
+## 容器服务
+
+![](image/docker-2018-6-final.png)
+
+
+https://www.datadoghq.com/docker-adoption
+
+
+
 ## 实时消息
 
 |名称|集群数量|CPU|内存|存储|网络|单机|集群长连接|消息下发|
@@ -87,43 +105,6 @@ h5
 [Netty 百万级推送服务设计要点](https://www.infoq.cn/article/netty-million-level-push-service-design-points)  
 
 emqtt.io
-
-
-## 身份认证
-用户系统
-SSO
-登录系统
-权限系统
-
-
-# 实战工具箱
-## web框架/容器
-servlet/tomcat
-依赖注入
-AOP原理
-spring/springmvc
-Spring初始化bean  
-bean销毁  
-面向切面编程
-SpringSession默认用cookie保存和传递sessionid
-
-https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html\#spring-introduction  
-[https://en.wikipedia.org/wiki/Aspect-oriented\_programming](https://en.wikipedia.org/wiki/Aspect-oriented_programming)  
-[https://www.ibm.com/developerworks/cn/java/j-aop/index.html](https://www.ibm.com/developerworks/cn/java/j-aop/index.html)  
-[https://zhuanlan.zhihu.com/p/24565766](https://zhuanlan.zhihu.com/p/24565766)  
-[http://www.importnew.com/26951.html](http://www.importnew.com/26951.html)  
-[http://kubicode.me/2015/07/30/Java Base/Java-AOP-Study/](http://kubicode.me/2015/07/30/Java Base/Java-AOP-Study/)
-
-## 远程通信
-dubbo/thrift
-
-## 持久化框架
-jdbc/mybatis  
-job框架/shiro  
-
-## 性能测试
-
-https://help.aliyun.com/document_detail/29262.html?spm=a2c4g.11174283.6.543.2df91b3aU8Fq6m
 
 
 ## 企业级分布式应用服务
@@ -150,17 +131,30 @@ etcd
 
 https://help.aliyun.com/document_detail/59957.html?spm=a2c4g.11174283.6.545.5c07613600nrB8
 
-## 数据流
+## 数据采集
+
+![](image/bigdata-flow.jpeg)
 
 [Kafka: The Definitive Guide](https://book.douban.com/subject/26828527/)  
+
+[日志采集agent技术](https://yq.aliyun.com/articles/204554)
+
+[从日志统计到大数据分析](https://zhuanlan.zhihu.com/p/20390103)
+
+https://help.aliyun.com/document_detail/48204.html
 https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying  
 https://www.infoq.cn/article/2018/01/confluent-kafka-data  
 
 [Kinesis](https://aws.amazon.com/cn/kinesis/)
 
+https://docs.fluentd.org/quickstart/life-of-a-fluentd-event
 https://zturn.cc/elkbook/
 
+
 ## 数据库
+
+![](image/polyglot.png)
+
 |名称|类型|QPS单机|QPS集群|TPS|RT|存储|scan|get|join|
 |--|--|--|--|--|--|--|--|--|--|
 |redis|内存|100K+|1M+||1ms|TB
@@ -174,7 +168,7 @@ https://zturn.cc/elkbook/
 |?|图|100K+|-|||GB|x|x|x
 |?|时序|100K+|-|||GB|x|x|x
 
-
+https://www.martinfowler.com/bliki/PolyglotPersistence.html
 http://mysql.rjweb.org/doc.php/limits
 https://dev.mysql.com/doc/mysql-reslimits-excerpt/5.6/en/limits.html
 
@@ -190,3 +184,34 @@ https://sites.google.com/a/brown.edu/ugur-cetintemel/
 https://data1030.github.io/
 https://www.linkedin.com/pulse/big-data-velocity-plain-english-john-ryan/
 https://www.allthingsdistributed.com/2018/06/purpose-built-databases-in-aws.html
+
+
+## 性能测试服务
+
+https://help.aliyun.com/document_detail/29262.html?spm=a2c4g.11174283.6.543.2df91b3aU8Fq6m
+
+
+# 实战工具箱
+## web框架/容器
+servlet/tomcat
+依赖注入
+AOP原理
+spring/springmvc
+Spring初始化bean  
+bean销毁  
+面向切面编程
+SpringSession默认用cookie保存和传递sessionid
+
+https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html\#spring-introduction  
+[https://en.wikipedia.org/wiki/Aspect-oriented\_programming](https://en.wikipedia.org/wiki/Aspect-oriented_programming)  
+[https://www.ibm.com/developerworks/cn/java/j-aop/index.html](https://www.ibm.com/developerworks/cn/java/j-aop/index.html)  
+[https://zhuanlan.zhihu.com/p/24565766](https://zhuanlan.zhihu.com/p/24565766)  
+[http://www.importnew.com/26951.html](http://www.importnew.com/26951.html)  
+[http://kubicode.me/2015/07/30/Java Base/Java-AOP-Study/](http://kubicode.me/2015/07/30/Java Base/Java-AOP-Study/)
+
+## 远程通信
+dubbo/thrift
+
+## 持久化框架
+jdbc/mybatis  
+job框架/shiro  
