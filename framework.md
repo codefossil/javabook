@@ -41,7 +41,7 @@ https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-eng
 [分布式Redis架构设计, 2015](https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=208733458&idx=1&sn=691bfde670fb2dd649685723f7358fea)  
 [亿级用户下的新浪微博平台架构](https://www.infoq.cn/article/weibo-platform-archieture)  
 
-
+https://github.com/akullpp/awesome-java#science
 
 # 企业级架构设计
 
@@ -88,6 +88,7 @@ h5
 
 emqtt.io
 
+
 ## 身份认证
 用户系统
 SSO
@@ -117,12 +118,37 @@ https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.h
 dubbo/thrift
 
 ## 持久化框架
-jdbc/mybatis
-job框架/shiro
+jdbc/mybatis  
+job框架/shiro  
+
+## 性能测试
+
+https://help.aliyun.com/document_detail/29262.html?spm=a2c4g.11174283.6.543.2df91b3aU8Fq6m
+
+
+## 企业级分布式应用服务
+
+https://help.aliyun.com/product/29500.html?spm=a2c4g.11186623.6.540.1c66465dK4LT3j
+
 
 ## 消息队列
-rabbitmq
+
+![](image/rocketmq-queues.png)
+
+http://rocketmq.apache.org/docs/motivation/  
+http://rocketmq.apache.org/rocketmq/how-to-support-more-queues-in-rocketmq/  
+https://engineering.linkedin.com/distributed-systems/  log-what-every-software-engineer-should-know-about-real-time-datas-unifying  
+https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/  
+
+
+rabbitmq  
 SQS，对性能无太大要求时，做简单队列, availability超好 
+
+## 分布式应用配置
+zk  
+etcd
+
+https://help.aliyun.com/document_detail/59957.html?spm=a2c4g.11174283.6.545.5c07613600nrB8
 
 ## 数据流
 
