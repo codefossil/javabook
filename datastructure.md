@@ -115,6 +115,9 @@ https://www.infoq.cn/article/Maglev-Vortex
 https://ai.googleblog.com/2017/04/consistent-hashing-with-bounded-loads.html
 https://medium.com/@dgryski/consistent-hashing-algorithmic-tradeoffs-ef6b8e2fcae8
 
+负载均衡  
+https://help.aliyun.com/document_detail/27544.html?spm=a2c4g.11186623.6.546.2bb11d42IuEAbG  
+
 # 数据结构
 [Advanced Data Structures ](http://courses.csail.mit.edu/6.851/fall17/)
 
