@@ -35,7 +35,9 @@
 从88年开始，每隔10年，由stonebraker组织，对数据这几年的发展进行总结和预测。 
 
 [database system concept, silberschatz2020](https://www.db-book.com/db7/index.html)  
-  
+
+[db-how](http://coding-geek.com/how-databases-work)  
+
 # 数据建模
 
 https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
@@ -66,23 +68,39 @@ https://en.wikipedia.org/wiki/Dimensional_modeling
 
 # 数据库哲学
 
+## 经典数据库
 [system-r, 76](http://daslab.seas.harvard.edu/reading-group/papers/astrahan-1976.pdf)
 
 [postgres, 86](https://sfu-db.github.io/dbsystems/Papers/postgres.pdf)
 
 [gamma, 90](http://pages.cs.wisc.edu/~dewitt/includes/paralleldb/ieee90.pdf)
 
+[parallel db, 92](https://people.eecs.berkeley.edu/~brewer/cs262/5-dewittgray92.pdf) 
+
+[Providing OLAP to User-Analysts, codd93](http://www.uniriotec.br/~tanaka/SAIN/providing_olap_to_user_analysts.pdf) 
+
+[one size fit all do not work with DSS, sigmod95](http://omega.sp.susu.ru/books/acm_sigmod/vol1/is1/SIGMOD95/P449.PDF)   
+
+## 经典数据仓库和OLAP
+[data warehousing and olap overview, chaudhuri97, sigmod](https://cs.nju.edu.cn/zhouzh/zhouzh.files/course/dm/reading/reading02/chaudhuri_sigmodrec97.pdf)  
+
+[data cube, gray96, ieee](http://web.stanford.edu/class/cs345d-01/rl/olap.pdf)  
+
+## 现代OLTP
+[end of an architecture era, stonebaker07, vldb](http://www.cs.umd.edu/~abadi/papers/vldb07hstore.pdf)  
+
 [oltp, sigmod08](http://www.cs.umd.edu/~abadi/papers/oltpperf-sigmod08.pdf)  
 全内存数据库性能。通过把数据库子系统一个个去掉的方式，从内部看传统数据架构性能问题。
 
-[column vs row, sigmod08](https://15721.courses.cs.cmu.edu/spring2019/papers/09-storage/p967-abadi.pdf)  
+## 现代OLAP
+[c-store, vldb2005](http://www.cs.umd.edu/~abadi/papers/vldb.pdf) 
 
-[parallel db, 92](https://people.eecs.berkeley.edu/~brewer/cs262/5-dewittgray92.pdf) 
- 
-[db-how](http://coding-geek.com/how-databases-work)  
+[column vs row, sigmod08](https://15721.courses.cs.cmu.edu/spring2019/papers/09-storage/p967-abadi.pdf)  
 
 [column-oriented vs column-family](https://dbmsmusings.blogspot.com/2010/03/distinguishing-two-major-types-of_29.html)   
 
+
+https://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html
 [digg v4](https://knowyourmeme.com/memes/events/digg-v4)
 https://www.memsql.com/blog/why-nosql-databases-wrong-tool-for-modern-application/
 https://dzone.com/articles/nosql-vs-sql-differences-explained
@@ -90,13 +108,6 @@ https://www.gartner.com/doc/reprints?id=1-5N2H2SM&ct=181024&st=sb
 [don't use mongodb](https://news.ycombinator.com/item?id=3202081)
 http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/
 
-[data warehousing and olap overview, chaudhuri97, sigmod](https://cs.nju.edu.cn/zhouzh/zhouzh.files/course/dm/reading/reading02/chaudhuri_sigmodrec97.pdf)  
-[data cube, gray96, ieee](http://web.stanford.edu/class/cs345d-01/rl/olap.pdf)  
-[Providing OLAP to User-Analysts, codd93](http://www.uniriotec.br/~tanaka/SAIN/providing_olap_to_user_analysts.pdf) 
-[one size fit all do not work with DSS, sigmod95](http://omega.sp.susu.ru/books/acm_sigmod/vol1/is1/SIGMOD95/P449.PDF)   
-[c-store, vldb2005](http://www.cs.umd.edu/~abadi/papers/vldb.pdf) 
-
-https://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html
 
 # 查询
 
