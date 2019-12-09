@@ -91,7 +91,7 @@ https://en.wikipedia.org/wiki/Dimensional_modeling
 OLTP的需求变了，用户不在是交互终端的专家用户，而是各种WEB用户和IOT设备。  
 20台32GB的机器，就可以装下TPC-C的工作数据；  
 老的RDBMS架构不再适合集群、高可用、高度自动化运维的需求。  
-新的方向：内置HA+2PC+单线程无锁  
+新的方向：内置HA+2PC+单线程无锁-redo/undo日志-lock/latch
 
 [oltp, sigmod08](http://www.cs.umd.edu/~abadi/papers/oltpperf-sigmod08.pdf)  
 全内存数据库性能。通过把数据库子系统一个个去掉的方式，从内部看传统数据架构性能问题。
