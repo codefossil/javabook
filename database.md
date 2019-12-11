@@ -87,17 +87,26 @@ https://en.wikipedia.org/wiki/Dimensional_modeling
 [data cube, gray96, ieee](http://web.stanford.edu/class/cs345d-01/rl/olap.pdf)  
 
 ## NewSQL
+
+![](image/hstore.png)
+
 [end of an architecture era, stonebaker07, vldb](http://www.cs.umd.edu/~abadi/papers/vldb07hstore.pdf)  
 OLTP的需求变了，用户不在是交互终端的专家用户，而是各种WEB用户和IOT设备。  
 20台32GB的机器，就可以装下TPC-C的工作数据；  
 老的RDBMS架构不再适合集群、高可用、高度自动化运维的需求。  
 新的方向：内置HA+2PC+单线程无锁-redo/undo日志-lock/latch
 
+续集[hstore demo, vldb08](http://db.csail.mit.edu/pubs/final_hstore.pdf)给出了具体的实现选择。
+分布式+行存+shared nothing集群+内存执行器  
+m 事务协调器/节点=n 单线程执行引擎/site/CPU核   
+假设大多数的事务负载都是集中在预定义的存储过程中  
+
+`原型需要斟酌的结果还是归为分布式基本问题`，[Mordern Main-Memory DB, larson2016, vldb](http://www.vldb.org/pvldb/vol9/p1609-larson.pdf)给出了MMDB的概览。
+
 [oltp, sigmod08](http://www.cs.umd.edu/~abadi/papers/oltpperf-sigmod08.pdf)  
 全内存数据库性能。通过把数据库子系统一个个去掉的方式，从内部看传统数据架构性能问题。
 
-[hstore, vldb08](http://db.csail.mit.edu/pubs/final_hstore.pdf)
-
+[这里](http://cs.brown.edu/courses/cs227/archives/2012/slides/dtxn/hstore-architecture.pdf)专门在介绍实操hstore
 
 ## 列式数据库
 [c-store, vldb2005](http://www.cs.umd.edu/~abadi/papers/vldb.pdf) 
