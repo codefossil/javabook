@@ -68,7 +68,7 @@ https://en.wikipedia.org/wiki/Dimensional_modeling
 
 # 数据库哲学
 
-## 经典数据库
+## 经典数据库 (before 2000)
 [system-r, 76](http://daslab.seas.harvard.edu/reading-group/papers/astrahan-1976.pdf)
 
 [postgres, 86](https://sfu-db.github.io/dbsystems/Papers/postgres.pdf)
@@ -103,15 +103,25 @@ m 事务协调器/节点=n 单线程执行引擎/site/CPU核
 
 `原型需要斟酌的结果还是归为分布式基本问题`，[Mordern Main-Memory DB, larson2016, vldb](http://www.vldb.org/pvldb/vol9/p1609-larson.pdf)给出了MMDB的概览。
 
-[oltp, sigmod08](http://www.cs.umd.edu/~abadi/papers/oltpperf-sigmod08.pdf)  
+[oltp through the looking glass, sigmod08](http://www.cs.umd.edu/~abadi/papers/oltpperf-sigmod08.pdf)  
 全内存数据库性能。通过把数据库子系统一个个去掉的方式，从内部看传统数据架构性能问题。
 
 [这里](http://cs.brown.edu/courses/cs227/archives/2012/slides/dtxn/hstore-architecture.pdf)专门在介绍实操hstore
 
 ## 列式数据库
-[c-store, vldb2005](http://www.cs.umd.edu/~abadi/papers/vldb.pdf) 
+![](image/cstore.jpg)
+[c-store, vldb2005](http://www.cs.umd.edu/~abadi/papers/vldb.pdf)  
+数据仓库/CRM/电子图书馆类目，需要成批的大量数据加载，然后长期进行即席查询。这类工作负载需要读优化。  
+随着cpu越来越快，而对比磁盘的带宽却涨幅不大，因此多用cpu来换磁盘IO比较划算。  
 
-[column vs row, sigmod08](https://15721.courses.cs.cmu.edu/spring2019/papers/09-storage/p967-abadi.pdf)  
+- 数据编码压缩。多格式编码。
+- 索引
+- 数据副本和分布式
+- 读写分离
+- 分布式的事务。2PC+快照隔离。
+- 查询优化器和计划。提供冗余和交叉的投影。
+
+[Column-Stores vs. Row-Stores: How Different Are They Really?, sigmod08](https://15721.courses.cs.cmu.edu/spring2019/papers/09-storage/p967-abadi.pdf)  
 
 [column-oriented vs column-family](https://dbmsmusings.blogspot.com/2010/03/distinguishing-two-major-types-of_29.html)   
 
