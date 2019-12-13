@@ -116,10 +116,12 @@ m 事务协调器/节点=n 单线程执行引擎/site/CPU核
 
 - 数据模型。逻辑上还是关系数据库，通过多个投影、水平分区、排序键和索引(sid, sk)组成物理布局。
 - 数据编码压缩。多格式编码。
-- 索引
-- 容错
-- 读写分离
-- 分布式的事务。2PC+快照隔离。
+- 索引。WS是B-tree+大缓存。
+- 容错。
+- 读写分离。
+- 存储管理。segment分布。
+- 分布式的事务。快照隔离基于epoch IV、DRV，加上epoch时间同步算法。读写事务通过简化版2PC。
+- 恢复。
 - 查询优化器和计划。提供冗余和交叉的投影。
 
 [Column-Stores vs. Row-Stores: How Different Are They Really?, sigmod08](https://15721.courses.cs.cmu.edu/spring2019/papers/09-storage/p967-abadi.pdf)  
