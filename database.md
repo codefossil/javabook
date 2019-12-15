@@ -97,11 +97,11 @@ OLTP的需求变了，用户不在是交互终端的专家用户，而是各种W
 新的方向：内置HA+2PC+单线程无锁-redo/undo日志-lock/latch
 
 续集[hstore demo, vldb08](http://db.csail.mit.edu/pubs/final_hstore.pdf)给出了具体的实现选择。
-分布式+行存+shared nothing集群+内存执行器  
-m 事务协调器/节点=n 单线程执行引擎/site/CPU核   
+分布式+行存+shared nothing集群+内存执行器
+单线程/核+事务协调器/节点  
 假设大多数的事务负载都是集中在预定义的存储过程中  
 
-`原型需要斟酌的结果还是归为分布式基本问题`，[Mordern Main-Memory DB, larson2016, vldb](http://www.vldb.org/pvldb/vol9/p1609-larson.pdf)给出了MMDB的概览。
+`原型需要斟酌的问题仍然是分布式基本问题`，[Mordern Main-Memory DB, larson2016, vldb](http://www.vldb.org/pvldb/vol9/p1609-larson.pdf)给出了MMDB的概览。
 
 [oltp through the looking glass, sigmod08](http://www.cs.umd.edu/~abadi/papers/oltpperf-sigmod08.pdf)  
 全内存数据库性能。通过把数据库子系统一个个去掉的方式，从内部看传统数据架构性能问题。
@@ -112,17 +112,20 @@ m 事务协调器/节点=n 单线程执行引擎/site/CPU核
 ![](image/cstore.jpg)
 [c-store, vldb2005](http://www.cs.umd.edu/~abadi/papers/vldb.pdf)  
 数据仓库/CRM/电子图书馆类目，需要成批的大量数据加载，然后长期进行即席查询。这类工作负载需要读优化。  
-随着cpu越来越快，而对比磁盘的带宽却涨幅不大，因此多用cpu来换磁盘IO比较划算。  
+而围绕着数据Cube而构建的聚合预计算，对于一些无法提前参与的实时查询，没有更多的进步。 
+cpu越来越快，而磁盘的带宽却涨幅不大，因此多用cpu来换磁盘IO比较划算。  
+`目标：同时完成更新和即席查询工作负载。`  
 
-- 数据模型。逻辑上还是关系数据库，通过多个投影、水平分区、排序键和索引(sid, sk)组成物理布局。
-- 数据编码压缩。多格式编码。
-- 索引。WS是B-tree+大缓存。
-- 容错。
-- 读写分离。
+- 数据模型。逻辑上还是关系数据库，通过projection、水平分segment、多排序键和索引(sid, sk)组成物理布局。
+- 数据编码。多格式编码。
+- 索引。加速tuple的重建。
+- 读写分离。WS+RS+tuple mover。`WS是B-tree+大缓存`。RS逻辑上与WS保持1比1的索引和segment。tuple mover负责追平WS和RS之间的差异。
 - 存储管理。segment分布。
-- 分布式的事务。快照隔离基于epoch IV、DRV，加上epoch时间同步算法。读写事务通过简化版2PC。
-- 恢复。
+- 分布式的事务。只读事务遵循快照隔离基于epoch IV+DRV+授时算法。更新事务遵循2PL+WAL。授时服务负责协调有效时间[HWM, LWM]。
+- 容错恢复。
 - 查询优化器和计划。提供冗余和交叉的投影。
+
+结论：c-store其实是多技术的创新结合体，包括数据压缩、物化视图、快照隔离、事务管理、高可用。
 
 [Column-Stores vs. Row-Stores: How Different Are They Really?, sigmod08](https://15721.courses.cs.cmu.edu/spring2019/papers/09-storage/p967-abadi.pdf)  
 
