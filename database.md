@@ -88,7 +88,7 @@ https://en.wikipedia.org/wiki/Dimensional_modeling
 
 ## NewSQL
 
-![](image/hstore.png)
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEceea69677d59e94487683cecd2a6904a/69)
 
 [end of an architecture era, stonebaker07, vldb](http://www.cs.umd.edu/~abadi/papers/vldb07hstore.pdf)  
 OLTP的需求变了，用户不在是交互终端的专家用户，而是各种WEB用户和IOT设备。  
@@ -109,7 +109,7 @@ OLTP的需求变了，用户不在是交互终端的专家用户，而是各种W
 [这里](http://cs.brown.edu/courses/cs227/archives/2012/slides/dtxn/hstore-architecture.pdf)专门在介绍实操hstore
 
 ## 列式数据库
-![](image/cstore.jpg)
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE593514ae27acef5bbaeda0a1cde838a5/71)
 [c-store, vldb2005](http://www.cs.umd.edu/~abadi/papers/vldb.pdf)  
 数据仓库/CRM/电子图书馆类目，需要成批的大量数据加载，然后长期进行即席查询。这类工作负载需要读优化。  
 而围绕着数据Cube而构建的聚合预计算，对于一些无法提前参与的实时查询，没有更多的进步。 

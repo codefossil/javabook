@@ -77,7 +77,7 @@ SSO
 
 ## 容器服务
 
-![](image/docker-2018-6-final.png)
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE010efe82339b9336a784ec3a409ce36e/55)
 
 
 https://www.datadoghq.com/docker-adoption
@@ -114,7 +114,7 @@ https://help.aliyun.com/product/29500.html?spm=a2c4g.11186623.6.540.1c66465dK4LT
 
 ## 消息队列
 
-![](image/rocketmq-queues.png)
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEd3bcffef5bb5a2be0d9301a768fde1e5/61)
 
 http://rocketmq.apache.org/docs/motivation/  
 http://rocketmq.apache.org/rocketmq/how-to-support-more-queues-in-rocketmq/  
@@ -133,7 +133,7 @@ https://help.aliyun.com/document_detail/59957.html?spm=a2c4g.11174283.6.545.5c07
 
 ## 数据采集
 
-![](image/bigdata-flow.jpeg)
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEe77a627f8f9e6cdad8f387fac907ab80/52)
 
 [Kafka: The Definitive Guide](https://book.douban.com/subject/26828527/)  
 
@@ -153,7 +153,7 @@ https://zturn.cc/elkbook/
 
 ## 数据库
 
-![](image/polyglot.png)
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEd5e21917088ed4ea8750da1541bf7f56/59)
 
 |名称|类型|QPS单机|QPS集群|TPS|RT|存储|scan|get|join|
 |--|--|--|--|--|--|--|--|--|--|

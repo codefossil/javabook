@@ -15,7 +15,7 @@
 
 > 类似binlog重放
 
-![vm-ft](image/vm-ft.png)
+![vm-ft](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE9a8964975b6efcf64c69af0ac7cc4cf4/77)
 
 # 局限
 - 适合有长连接的关键业务
