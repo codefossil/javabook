@@ -96,15 +96,20 @@ https://www.cse.iitb.ac.in/~mythili/os/notes/notes-perf.txt
 [Think Clearly About Performance](https://method-r.com/wp-content/uploads/2018/07/TCAP-from-MOTD2.pdf)
 https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt.html
 
-**并行限制**  
-[Amdahl's law in the Multicore Era, 2008](http://www.eng.auburn.edu/~agrawvd/COURSE/E6270_Spr09/READ/Amdahls%20Law%20in%20Multicore%20Era.pdf)  
-[Gustafson's law, 1988](http://www.johngustafson.net/pubs/pub13/amdahl.htm) 
 
 ## 执行框架
 
 [Java synchronizer, csjp04](http://gee.cs.oswego.edu/dl/papers/aqs.pdf)  
 [Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
 [Future, 1977](http://home.pipeline.com/~hbaker1/Futures.html)  
+
+# 并行计算
+
+**并行限制**  
+[Amdahl's law in the Multicore Era, 2008](http://www.eng.auburn.edu/~agrawvd/COURSE/E6270_Spr09/READ/Amdahls%20Law%20in%20Multicore%20Era.pdf)  
+[Gustafson's law, 1988](http://www.johngustafson.net/pubs/pub13/amdahl.htm) 
+
+http://cs149.stanford.edu/winter19/
 
 # 分布式系统
 [分布式](ds/ds.md)
