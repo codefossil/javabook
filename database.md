@@ -64,6 +64,9 @@ https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
 
 [ch4, High Performance MySQL, 2012](https://book.douban.com/subject/10443458/)  
 
+
+[RelaX - relational algebra calculator](https://dbis-uibk.github.io/relax/index.htm)  
+
 https://blog.codinghorror.com/maybe-normalizing-isnt-normal/
 
 http://cs.brown.edu/courses/cs295-11/2006/schedule.html  
@@ -71,6 +74,8 @@ http://cs.brown.edu/courses/csci2270/previous.html
 
 http://www.databaseanswers.org/data_models/  
 https://en.wikipedia.org/wiki/Dimensional_modeling  
+
+
 
 # 数据库哲学
 
