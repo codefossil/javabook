@@ -105,14 +105,20 @@ https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt
 
 # 并行计算
 
+![PPL](https://ppl.stanford.edu/)
+
 **并行限制**  
 [Amdahl's law in the Multicore Era, 2008](http://www.eng.auburn.edu/~agrawvd/COURSE/E6270_Spr09/READ/Amdahls%20Law%20in%20Multicore%20Era.pdf)  
 [Gustafson's law, 1988](http://www.johngustafson.net/pubs/pub13/amdahl.htm) 
 
+http://www.cs.cmu.edu/~418
 http://cs149.stanford.edu/winter19/
 
 # 分布式系统
 [分布式](ds/ds.md)
+
+https://cis.temple.edu/~jiewu/teaching/Spring2018/distributed-computing-2018.pdf
+https://books.google.ae/books?id=fEq2_vq-RGwC&pg=PP21&source=gbs_selected_pages&cad=2#v=onepage&q&f=false
 
 **todo**
 

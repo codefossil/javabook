@@ -24,6 +24,8 @@
 
 # 基本问题
 
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE1362f1c5f134120408969075ff62785b/88)
+
 [Turing81, Codd](https://amturing.acm.org/award_winners/codd_1000892.cfm)  
 [Turing98, Gray](https://amturing.acm.org/award_winners/gray_3649936.cfm)  
 [Turing04, Stonebraker](https://amturing.acm.org/award_winners/stonebraker_1172121.cfm)  
@@ -35,30 +37,34 @@
 从88年开始，每隔10年，由stonebraker组织，对数据这几年的发展进行总结和预测。 
 
 [database system concept, silberschatz2020](https://www.db-book.com/db7/index.html)  
+帆船书。ACM教育奖。  
+几乎每个概念你都能找到十分精确的描述。同时作者精心编排和系统性的解读数据库系统。基本不用再自己理了。 
+有习题，工具，引用，还有精读文献。  
 
 [db-how](http://coding-geek.com/how-databases-work)  
 
+https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
+
 # 数据建模
 
-https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
-https://blog.sqlizer.io/posts/sql-43/
-https://en.wikipedia.org/wiki/Relational_algebra
-https://en.wikipedia.org/wiki/Tuple_relational_calculus
-https://blog.codinghorror.com/maybe-normalizing-isnt-normal/
+> 一种精确的，独立的概念工具，描述数据本身，数据关系，数据的语义和一致性约束，以反映`现实业务的对象和事件`。  
 
-> 一种精确的，独立的，抽象方式数据结构，用来描述现实业务的对象和事件。  
-initial requirement->use case->object/relation  
-normalization->business rule (Relational)
+`ch1, ch2, db concept`  
+抽象是一种非常重要的手段，隐藏细节，简化交互。  
+数据库系统主要目的就是通过**抽象数据视图**，来隐藏某些存储和维护细节。 
 
 [what goes around, stonebraker05](https://15721.courses.cs.cmu.edu/spring2016/papers/whatgoesaround-stonebraker.pdf)  
 总结了70-05这35年的数据模型得失 
 
 [Relational Model, codd70](http://cs.brown.edu/courses/cs295-11/2006/codd.pdf)  
-坚持数据展示和存储需要分离，第一次提出关系数据模型，关系代数，数据语言概念。
+坚持数据展示和存储需要分离。  
+提出关系数据模型，关系代数，数据语言概念。  
 
 [E-R model, chen76](https://harrymoreno.com/assets/greatPapersInCompSci/7.3_-_The_Entity_Relationship_Model_-_Towards_A_Unified_View_of_Data-Peter_Pin-Shan_Chen.pdf)  
 
 [ch4, High Performance MySQL, 2012](https://book.douban.com/subject/10443458/)  
+
+https://blog.codinghorror.com/maybe-normalizing-isnt-normal/
 
 http://cs.brown.edu/courses/cs295-11/2006/schedule.html  
 http://cs.brown.edu/courses/csci2270/previous.html  
@@ -67,6 +73,8 @@ http://www.databaseanswers.org/data_models/
 https://en.wikipedia.org/wiki/Dimensional_modeling  
 
 # 数据库哲学
+
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEd46192c545253eddd765cd4f182b7cc7/90)
 
 ## 经典数据库 (before 2000)
 [system-r, 76](http://daslab.seas.harvard.edu/reading-group/papers/astrahan-1976.pdf)
@@ -128,8 +136,6 @@ cpu越来越快，而磁盘的带宽却涨幅不大，因此多用cpu来换磁�
 结论：c-store其实是多技术的创新结合体，包括数据压缩、物化视图、快照隔离、事务管理、高可用。
 
 [Column-Stores vs. Row-Stores: How Different Are They Really?, sigmod08](https://15721.courses.cs.cmu.edu/spring2019/papers/09-storage/p967-abadi.pdf)  
-
-[column-oriented vs column-family](https://dbmsmusings.blogspot.com/2010/03/distinguishing-two-major-types-of_29.html)   
 
 
 https://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html
