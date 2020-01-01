@@ -63,7 +63,10 @@ https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
 坚持数据展示和存储需要分离。  
 提出关系数据模型，关系代数，数据语言概念。  
 
-[E-R model, chen76](https://harrymoreno.com/assets/greatPapersInCompSci/7.3_-_The_Entity_Relationship_Model_-_Towards_A_Unified_View_of_Data-Peter_Pin-Shan_Chen.pdf)  
+[E-R model, chen76, vldb](https://harrymoreno.com/assets/greatPapersInCompSci/7.3_-_The_Entity_Relationship_Model_-_Towards_A_Unified_View_of_Data-Peter_Pin-Shan_Chen.pdf)  
+真实的业务需求怎样映射到数据库中。  
+通过实体集合、关系集合来描述物理世界。  
+在概念设计领域非常影响非常大。  
 
 [ch4, High Performance MySQL, 2012](https://book.douban.com/subject/10443458/)  
 
@@ -303,8 +306,12 @@ http://cs.brown.edu/courses/cs227/papers.html
 
 [big data at LinkedIn, icomod2013](http://web.cs.wpi.edu/~cs525/f13b-EAR/cs525-homepage/lectures/PAPERS/p1125-sumbaly.pdf) 
 
-http://barbie.uta.edu/~jli/mmwc.html
-http://c.biancheng.net/big_data/
+http://barbie.uta.edu/~jli/mmwc.html  
+http://c.biancheng.net/big_data/  
+https://amplab.cs.berkeley.edu/benchmark/#  
+https://www.infosysblogs.com/oracle/2018/08/oracle_exadata_mpp_databases_o.html  
+https://dwarehouse.wordpress.com/2012/12/28/introduction-to-massively-parallel-processing-mpp-database/  
+http://ece757.ece.wisc.edu/#betabook
 
 # 复杂数据分析
 
