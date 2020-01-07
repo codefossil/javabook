@@ -215,3 +215,7 @@ dubbo/thrift
 ## 持久化框架
 jdbc/mybatis  
 job框架/shiro  
+
+## 字符和编码
+https://home.unicode.org/  
+https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/  

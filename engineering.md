@@ -28,6 +28,10 @@ https://en.wikipedia.org/wiki/Software_development
 [A Multi-Decade Perspective, Scacchi, 2018](https://www.ics.uci.edu/~wscacchi/Papers/New/IEEE-Computer-Scacchi-2018.pdf)  
 [自我评价](http://www.cnblogs.com/xinz/p/3852177.html)
 
+软件产品开发为什么失败
+软件、软件危机、软件工程
+测试写到什么程度算足够
+
 > software craftsmanship
 
 # 项目管理
@@ -50,7 +54,7 @@ https://en.wikipedia.org/wiki/Software_development
 [PSP, 1996](http://www.star.cc.gatech.edu/documents/SpencerRugabear/psp.pdf)  
 [CMM, 1991](http://sunnyday.mit.edu/16.355/cmm.pdf)  
 [The Agile Methods Fray](http://www-scf.usc.edu/~csci201/lectures/Lecture11/demarco2002.pdf)  
-[Agile Software Development, 2003](https://book.douban.com/subject/1140457/)  
+
 https://en.wikipedia.org/wiki/Agile_software_development  
 
 [Agile: The World's Most Popular Innovation Engine, 2015](https://www.forbes.com/sites/stevedenning/2015/07/23/the-worlds-most-popular-innovation-engine/#4d24af757c76)  
@@ -91,7 +95,7 @@ http://www.valleytalk.org
 http://people.scs.carleton.ca/~deugo/Patterns/ospdg/
 https://www.cs.cmu.edu/~aldrich/courses/413/
 
-# 软件设计
+# 系统设计
 
 软件设计质量分析和评估  
 设计范例，如结构化设计（自顶向下的功能分解）、面向对象的分析和设
@@ -147,7 +151,6 @@ SOLID
 [TAOUP, 2003](https://book.douban.com/subject/5387401/)   
 
 https://java-design-patterns.com/principles/  
-[dp](https://sourcemaking.com/design_patterns)  
 
 [worse is better](http://dreamsongs.com/WorseIsBetter.html)  
 [The Rule of Least Power, 2001](https://www.w3.org/2001/tag/doc/leastPower.html)  
@@ -169,19 +172,35 @@ https://handbookofsoftwarearchitecture.com/
 
 # 软件构建
 api设计
-代码复用和库
-多态和动态绑定
-断言、契约式设计、防御式编程
-错误处理、异常和容错
+契约式设计、防御式编程
 性能分析和优化
 
+[Clean Code, martin09](https://book.douban.com/subject/5442024/)  
+写代码就是写诗。好的命名就是用来代替文档的。    
+全书精华在第12章。    
+我们需要一个迭代过程，测试用例写得越多，设计需要越简单。  
+通过使用DI、接口和抽象等工具，实现低耦合+高内聚。  
 
-> 写诗还是写文档
-根据现有的时间/预算/知识/复杂度，利用最佳实践、技术、框架、工具、设备（工程/学习能力）
+[Agile Software Development, martin03](https://book.douban.com/subject/1140457/)  
 
-[Clean Code](https://book.douban.com/subject/5442024/)  
+[Code complete, McConnell04](https://book.douban.com/subject/1477390/)  
+
+[Concepts, Techniques, and Models of Computer Programming, roy04](https://book.douban.com/subject/1782316/)  
+编程还是手艺吗？  
+
+[design pattern](https://sourcemaking.com/design_patterns)  
+
 [Refactoring](https://book.douban.com/subject/4262627/)  
-[Code complete](https://book.douban.com/subject/1477390/)  
+
+[Object-Oriented Analysis and Design with Applications, booch07](https://book.douban.com/subject/2266843/)  
+
+[advanced programming in UNIX, steven2013](https://book.douban.com/subject/11937511/)
+
+[Computer Systems, 2015](https://book.douban.com/subject/26344642/)
+
+[computer architecture, 2019](https://book.douban.com/subject/6795919/)
+
+[Expert One-on-One J2EE Development without EJB, johnson04](https://book.douban.com/subject/1426848/)  
 
 # 软件测试  
 code coverage  
