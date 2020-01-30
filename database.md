@@ -12,6 +12,9 @@
 [WISC CS744](http://pages.cs.wisc.edu/~akella/CS744/S19/papers.html)
 [HARVARD cs265](http://daslab.seas.harvard.edu/classes/cs265/)
 [CMU 15-445/645](https://15445.courses.cs.cmu.edu/fall2018/schedule.html)  
+[MIT 6.830](http://people.csail.mit.edu/tdanford/6830papers/)  
+
+http://cs.brown.edu/courses/csci2270/previous.html  
 
 - 工业  
 [Momjian-PostgreSQL](https://momjian.us/main/faq.html)  
@@ -44,8 +47,6 @@
 有习题，工具，引用，还有精读文献。  
 最关键的是，本书还在更新最新的进展。    
 
-[db-how](http://coding-geek.com/how-databases-work)  
-
 https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
 
 # 数据建模
@@ -68,24 +69,114 @@ https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
 通过实体集合、关系集合来描述物理世界。  
 在概念设计领域非常影响非常大。  
 
-[ch4, High Performance MySQL, 2012](https://book.douban.com/subject/10443458/)  
-
+`ch6~ch7, db concept`  
+数据库schema的设计，从ER模型到范式，保证数据不冗余。  
 
 [RelaX - relational algebra calculator](https://dbis-uibk.github.io/relax/index.htm)  
 
-https://blog.codinghorror.com/maybe-normalizing-isnt-normal/
-
-http://cs.brown.edu/courses/cs295-11/2006/schedule.html  
-http://cs.brown.edu/courses/csci2270/previous.html  
-
-http://www.databaseanswers.org/data_models/  
 https://en.wikipedia.org/wiki/Dimensional_modeling  
 
+
+# 查询
+
+`ch2~ch5, db concept`  
+关系型查询语言SQL
+
+[query optimization overview, Chaudhuri98](https://www.microsoft.com/en-us/research/publication/an-overview-of-query-optimization-in-relational-systems-paper/)   
+查询优化器必读  
+从查询空间、统计成本评估，枚举框架到分布式并行，作者列举了优化器领域当时的进展和遇到的难题。  
+(DP优化的效果从O(n!)->O(n*2^n-1)???/Bushy join算法???)  
+
+[MySQL optimization](https://dev.mysql.com/doc/refman/8.0/en/optimize-overview.html)
+
+[critique of sql, 83](https://www2.cs.duke.edu/courses/spring03/cps216/papers/date-1983.pdf)
+
+[access path, selinger-79](http://courses.cs.vt.edu/~cs4604/Spring13/lectures/selinger-qopt-paper.pdf)  
+System-R里面关于sql处理的说明，结合统计信息，基于代价模型计算join顺序和嵌套查询。   
+
+[query optimization, ioannidis96](http://infolab.stanford.edu/~hyunjung/cs346/ioannidis.pdf)  
+
+[query evaluation, graefe93](https://www.csd.uoc.gr/~hy460/pdf/query.pdf)  
+
+
+[algorithms for the join ordering problem, ict09](http://www.acad.bg/rismim/itc/sub/archiv/Paper6_1_2009.PDF)  
+
+[self-tuning, vldb07](http://www.vldb.org/conf/2007/papers/special/p3-chaudhuri.pdf)  
+
+[qp distributed, tods81](https://people.eecs.berkeley.edu/~wong/wong_pubs/wong73.pdf)  
+
+[rule-based, sigmod87](http://www.dblab.ece.ntua.gr/~nikos/edith/qopt_bibl/papers/rule_based/freytag_sigmod87_rule_based_qopt.pdf) 
+
+http://cgi.di.uoa.gr/~ad/MDE519.DOCS/  
+https://www.csd.uoc.gr/~hy460/2019-2020-fall/  
+http://avid.cs.umass.edu/courses/645/s2018/  
+http://www.inf.ed.ac.uk/teaching/courses/ad/  
+https://www.csd.uoc.gr/~hy460/2019-2020-fall/#portfolio  
+http://infolab.stanford.edu/~hyunjung/cs346/  
+http://pages.cs.wisc.edu/~nil/764/  
+
+
+# 事务与并发控制
+
+> 事务是为了简化，解决数据库容错
+
+[The Notions of Consistency and Predicate Locks in a Database System, eswaran76](http://people.csail.mit.edu/tdanford/6830papers/eswaran-notions-of-consistency.pdf)
+
+
+[ARIES,tods92 ](https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf)
+
+[occ, tods81](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)  
+
+[granularity of locks and degree of consistency, ibm75](http://jimgray.azurewebsites.net/papers/granularity%20of%20locks%20and%20degrees%20of%20consistency%20rj%201654.pdf)  
+
+[transaction processing, gray92](https://book.douban.com/subject/2586390/)
+
+[critique isolation level, sigmod95](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-95-51.pdf)  
+
+[voltdb recovery, icde2014](https://hstore.cs.brown.edu/papers/voltdb-recovery.pdf)
+
+
+# 存取方法
+
+> 不访问不必要的数据  
+> Is an index the best solution?
+
+full text index
+three-star index
+
+[b-trees, icomod70](https://infolab.usc.edu/csci585/Spring2010/den_ar/indexing.pdf)  
+给出b树的定义，增/删/查的算法，形式化分析了算法的最小、最大和平均成本。  
+分析了存储利用率。  
+根据当时的磁盘性能，给出了k的最优解。  
+结论的推论数据不知道是怎么来的：9tps/15k-->2tps/1.5M, ???  
+
+[r-trees, 84](http://pages.cs.wisc.edu/~nil/764/Relat/7_rtree.pdf)
+
+[lsm-tree, 96](https://www.cs.umb.edu/~poneil/lsmtree.pdf)  
+
+[improved query performance with variant indexes, icomod97](http://cs.brown.edu/courses/cs227/archives/2008/mitchpapers/required5.pdf)  
+
+[The Ubiquitous B-Tree, 79](http://cs.kangwon.ac.kr/~ysmoon/courses/2005_1/dwnolap/Comer79-U-B-trees.pdf)
+
+[Relational Database Index Design and the Optimizers, 2005](https://book.douban.com/subject/26419771/)  
+
+[SSTable](http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb/)  
+
+
+http://smalldatum.blogspot.com/  
+https://github.com/jarulraj/databaseology#access-methods
+
+https://web.stanford.edu/class/cs245/
+http://cs.brown.edu/courses/cs227/papers.html
 
 
 # 数据库哲学
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEd46192c545253eddd765cd4f182b7cc7/90)
+
+
+[Architecture of a Database system, hellerstein07](http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf)
+[db-how](http://coding-geek.com/how-databases-work)  
 
 ## 经典数据库 (before 2000)
 [system-r, 76](http://daslab.seas.harvard.edu/reading-group/papers/astrahan-1976.pdf)
@@ -158,109 +249,47 @@ https://www.gartner.com/doc/reprints?id=1-5N2H2SM&ct=181024&st=sb
 http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/
 
 
-# 查询
 
-[ch4, architecture db, 2007](http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf)
+# 数据分析
 
-[query optimization overview, Chaudhuri98](https://www.microsoft.com/en-us/research/publication/an-overview-of-query-optimization-in-relational-systems-paper/)   
-查询优化器必读  
-从查询空间、统计成本评估，枚举框架到分布式并行，作者列举了优化器领域当时的进展和遇到的难题。  
-(DP优化的效果从O(n!)->O(n*2^n-1)???/Bushy join算法???)  
+[anomaly survey, ACS09](https://cs.brown.edu/courses/csci2270/papers/anomaly-detection-survey.pdf)
 
-[MySQL optimization](https://dev.mysql.com/doc/refman/8.0/en/optimize-overview.html)
+[计算广告, 2015](https://book.douban.com/subject/26596778/)
 
-[critique of sql, 83](https://www2.cs.duke.edu/courses/spring03/cps216/papers/date-1983.pdf)
+[统计学习方法，2012](https://book.douban.com/subject/10590856/)
 
-[access path, selinger-79](http://courses.cs.vt.edu/~cs4604/Spring13/lectures/selinger-qopt-paper.pdf)  
-System-R里面关于sql处理的说明，结合统计信息，基于代价模型计算join顺序和嵌套查询。   
+[prml, 2007](https://book.douban.com/subject/2061116/)
 
-[query optimization, ioannidis96](http://infolab.stanford.edu/~hyunjung/cs346/ioannidis.pdf)  
+## 数据挖掘
+https://ocw.mit.edu/courses/sloan-school-of-management/15-062-data-mining-spring-2003/lecture-notes/Lecture1Slides.pdf  
 
-[query evaluation, graefe93](https://www.csd.uoc.gr/~hy460/pdf/query.pdf)  
+[learning from data, 2012](https://book.douban.com/subject/11026330/)  
+http://personal.psu.edu/jol2/course/stat557/material.html  
+https://wiki.illinois.edu/wiki/display/cs412/2.+Course+Syllabus+and+Schedule  
+https://en.wikipedia.org/wiki/Data_mining  
+http://www.stat.cmu.edu/~cshalizi/dm/19/  
+https://docs.microsoft.com/en-us/analysis-services/data-mining/data-mining-concepts  
+https://www.britannica.com/technology/data-mining  
+https://developer.ibm.com/articles/ba-data-mining-techniques/  
 
+数据科学
+推荐系统
+用户画像
+知识图谱  
+[Introduction to information retrieval, 2008](https://book.douban.com/subject/3059637/)  
+机器学习  
 
-[algorithms for the join ordering problem, ict09](http://www.acad.bg/rismim/itc/sub/archiv/Paper6_1_2009.PDF)  
+[ML at Twitter, sigmod2012](http://web.cs.wpi.edu/~cs525/f13b-EAR//cs525-homepage/lectures/PAPERS/Lin_Kolcz_SIGMOD2012.pdf)
 
-[self-tuning, vldb07](http://www.vldb.org/conf/2007/papers/special/p3-chaudhuri.pdf)  
+http://www.nlpir.org/wordpress/
+https://jeffhuang.com/best_paper_awards.html
+http://www.nltk.org/book/
 
-[qp distributed, tods81](https://people.eecs.berkeley.edu/~wong/wong_pubs/wong73.pdf)  
-
-[rule-based, sigmod87](http://www.dblab.ece.ntua.gr/~nikos/edith/qopt_bibl/papers/rule_based/freytag_sigmod87_rule_based_qopt.pdf) 
-
-http://cgi.di.uoa.gr/~ad/MDE519.DOCS/  
-https://www.csd.uoc.gr/~hy460/2019-2020-fall/  
-http://avid.cs.umass.edu/courses/645/s2018/  
-http://www.inf.ed.ac.uk/teaching/courses/ad/  
-https://www.csd.uoc.gr/~hy460/2019-2020-fall/#portfolio  
-http://infolab.stanford.edu/~hyunjung/cs346/  
-http://pages.cs.wisc.edu/~nil/764/  
-
-# 日志与恢复
-
-[ARIES,tods92 ](https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf)
-
-[voltdb recovery, icde2014](https://hstore.cs.brown.edu/papers/voltdb-recovery.pdf)
+http://staff.ustc.edu.cn/~zwp/teach/Prob-Stat/probstat.htm
+https://github.com/metrofun/machine-learning-surveys
 
 
-# 事务与并发控制
-
-> 事务是为了简化，解决数据库容错
-
-* 当2个并发同时写一个数据
-* 当读和写一个数据同时发生
-* 多个数据同时写
-
-> 数据库事务保证数据不被破坏（AID），其局限是数据库无法维护业务的**并发不可变条件**
-
-[critique isolation level, sigmod95](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-95-51.pdf)  
-
-[granularity of locks and degree of consistency, ibm75](http://jimgray.azurewebsites.net/papers/granularity%20of%20locks%20and%20degrees%20of%20consistency%20rj%201654.pdf)  
-
-[occ, tods81](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)  
-
-[2pl](https://en.wikipedia.org/wiki/Two-phase_locking) 
-
-确定性
-deterministic concurrency control  
-view serialization的条件是什么?  
-死锁、SGT闭环  
-DAG Directed acyclic graph
-
-# 存取方法
-
-> 不访问不必要的数据  
-> Is an index the best solution?
-
-full text index
-three-star index
-
-[b-trees, icomod70](https://infolab.usc.edu/csci585/Spring2010/den_ar/indexing.pdf)  
-给出b树的定义，增/删/查的算法，形式化分析了算法的最小、最大和平均成本。  
-分析了存储利用率。  
-根据当时的磁盘性能，给出了k的最优解。  
-结论的推论数据不知道是怎么来的：9tps/15k-->2tps/1.5M, ???  
-
-[r-trees, 84](http://pages.cs.wisc.edu/~nil/764/Relat/7_rtree.pdf)
-
-[lsm-tree, 96](https://www.cs.umb.edu/~poneil/lsmtree.pdf)  
-
-[improved query performance with variant indexes, icomod97](http://cs.brown.edu/courses/cs227/archives/2008/mitchpapers/required5.pdf)  
-
-[The Ubiquitous B-Tree, 79](http://cs.kangwon.ac.kr/~ysmoon/courses/2005_1/dwnolap/Comer79-U-B-trees.pdf)
-
-[Relational Database Index Design and the Optimizers, 2005](https://book.douban.com/subject/26419771/)  
-
-[SSTable](http://www.igvita.com/2012/02/06/sstable-and-log-structured-storage-leveldb/)  
-
-
-http://smalldatum.blogspot.com/  
-https://github.com/jarulraj/databaseology#access-methods
-
-https://web.stanford.edu/class/cs245/
-http://cs.brown.edu/courses/cs227/papers.html
-
-
-# 实时大数据分析  
+# 大数据
 
 [clouds berkeley view, 2009](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/AboveTheClouds.pdf)
 
@@ -313,43 +342,7 @@ https://www.infosysblogs.com/oracle/2018/08/oracle_exadata_mpp_databases_o.html
 https://dwarehouse.wordpress.com/2012/12/28/introduction-to-massively-parallel-processing-mpp-database/  
 http://ece757.ece.wisc.edu/#betabook
 
-# 复杂数据分析
 
-[anomaly survey, ACS09](https://cs.brown.edu/courses/csci2270/papers/anomaly-detection-survey.pdf)
-
-[计算广告, 2015](https://book.douban.com/subject/26596778/)
-
-[统计学习方法，2012](https://book.douban.com/subject/10590856/)
-
-[prml, 2007](https://book.douban.com/subject/2061116/)
-
-## 数据挖掘
-https://ocw.mit.edu/courses/sloan-school-of-management/15-062-data-mining-spring-2003/lecture-notes/Lecture1Slides.pdf  
-
-[learning from data, 2012](https://book.douban.com/subject/11026330/)  
-http://personal.psu.edu/jol2/course/stat557/material.html  
-https://wiki.illinois.edu/wiki/display/cs412/2.+Course+Syllabus+and+Schedule  
-https://en.wikipedia.org/wiki/Data_mining  
-http://www.stat.cmu.edu/~cshalizi/dm/19/  
-https://docs.microsoft.com/en-us/analysis-services/data-mining/data-mining-concepts  
-https://www.britannica.com/technology/data-mining  
-https://developer.ibm.com/articles/ba-data-mining-techniques/  
-
-数据科学
-推荐系统
-用户画像
-知识图谱  
-[Introduction to information retrieval, 2008](https://book.douban.com/subject/3059637/)  
-机器学习  
-
-[ML at Twitter, sigmod2012](http://web.cs.wpi.edu/~cs525/f13b-EAR//cs525-homepage/lectures/PAPERS/Lin_Kolcz_SIGMOD2012.pdf)
-
-http://www.nlpir.org/wordpress/
-https://jeffhuang.com/best_paper_awards.html
-http://www.nltk.org/book/
-
-http://staff.ustc.edu.cn/~zwp/teach/Prob-Stat/probstat.htm
-https://github.com/metrofun/machine-learning-surveys
 
 # todo
 
