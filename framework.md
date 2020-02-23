@@ -24,7 +24,7 @@
 * [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)  
 * [AWS Architecture Center](https://aws.amazon.com/architecture)  
 
-# 通用架构设计
+# 通用企业架构设计
 microservice/SOA/Lambda Architecture  
 
 [Patterns of Enterprise Application Architecture, 2003](https://book.douban.com/subject/1230559/)  
@@ -33,10 +33,7 @@ microservice/SOA/Lambda Architecture
 https://lethain.com/digg-v4-architecture-process/  
 [程序员的呐喊](https://book.douban.com/subject/25884108/)  
 https://www.w3.org/DesignIssues/  
-https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/  
-
-分布式ID发号器、feed 系统、缓存系统、推荐系统、抢票系统  
-社区类服务架构、云服务架构、O2O  
+https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-engineers-that-can-deliver-them/    
 
 [分布式Redis架构设计, 2015](https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=208733458&idx=1&sn=691bfde670fb2dd649685723f7358fea)  
 [亿级用户下的新浪微博平台架构](https://www.infoq.cn/article/weibo-platform-archieture)  
@@ -45,25 +42,41 @@ https://github.com/akullpp/awesome-java#science
 
 # 企业级系统
 
+![](https://image.woshipm.com/wp-files/2017/02/eaiRbTvRmooOzRJY9va4.png)
+
+http://www.woshipm.com/pd/586436.html
+
+分布式ID发号器、feed 系统、缓存系统、推荐系统、抢票系统  
+社区类服务架构、云服务架构、O2O
+
+[分布式、服务化的ERP系统架构设计](https://www.cnblogs.com/liuche/p/7955462.html)
+
 ## 用户系统
 
-1. 账户系统
+1. 账户
 三用户模型
 http://doc.cocolian.cn/essay
 
-2. 点券系统
+2. 支付
+
+## 营销系统
+
+![](https://pic2.zhimg.com/v2-98839cd995c6f3e8190455c01dfa49c5_r.jpg)
+
+
+1. 点券
 http://www.woshipm.com/pd/913433.html
 http://www.woshipm.com/pd/836586.html
 https://juejin.im/post/5b06851251882538b82c3e1f
 https://www.jianshu.com/p/bc56e676298f
 
-3. 支付系统
 
 ## 电商服务架构
 商品管理  
 订单系统  
 下单流程  
 库管  
+
 [TableStore实战：亿量级订单管理解决方案](https://yq.aliyun.com/articles/656196?spm=a2c4e.11154837.920241.5.464642b2YuhDE6)  
 
 ## 身份认证
@@ -73,18 +86,19 @@ SSO
 权限系统
 
 
-# 企业级服务
+## 工作流/规则引擎
 
-## 容器服务
-
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE010efe82339b9336a784ec3a409ce36e/55)
-
-
-https://www.datadoghq.com/docker-adoption
+webhook
+http://progrium.com/blog/2007/05/03/web-hooks-to-revolutionize-the-web/
 
 
+https://sites.google.com/a/brown.edu/ugur-cetintemel/
+https://data1030.github.io/
+https://www.linkedin.com/pulse/big-data-velocity-plain-english-john-ryan/
+https://www.allthingsdistributed.com/2018/06/purpose-built-databases-in-aws.html
 
-## 实时消息
+
+## 实时消息推送
 
 |名称|集群数量|CPU|内存|存储|网络|单机|集群长连接|消息下发|
 |--|--|--|--|--|--|--|--|--|
@@ -106,31 +120,6 @@ h5
 
 emqtt.io
 
-
-## 企业级分布式应用服务
-
-https://help.aliyun.com/product/29500.html?spm=a2c4g.11186623.6.540.1c66465dK4LT3j
-
-
-## 消息队列
-
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEd3bcffef5bb5a2be0d9301a768fde1e5/61)
-
-http://rocketmq.apache.org/docs/motivation/  
-http://rocketmq.apache.org/rocketmq/how-to-support-more-queues-in-rocketmq/  
-https://engineering.linkedin.com/distributed-systems/  log-what-every-software-engineer-should-know-about-real-time-datas-unifying  
-https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/  
-
-
-rabbitmq  
-SQS，对性能无太大要求时，做简单队列, availability超好 
-
-## 分布式应用配置
-zk  
-etcd
-
-https://help.aliyun.com/document_detail/59957.html?spm=a2c4g.11174283.6.545.5c07613600nrB8
-
 ## 数据采集
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEe77a627f8f9e6cdad8f387fac907ab80/52)
@@ -149,6 +138,24 @@ https://www.infoq.cn/article/2018/01/confluent-kafka-data
 
 https://docs.fluentd.org/quickstart/life-of-a-fluentd-event
 https://zturn.cc/elkbook/
+
+# 基础技术
+
+https://help.aliyun.com/product/29500.html?spm=a2c4g.11186623.6.540.1c66465dK4LT3j
+
+## 消息队列
+
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEd3bcffef5bb5a2be0d9301a768fde1e5/61)
+
+http://rocketmq.apache.org/docs/motivation/  
+http://rocketmq.apache.org/rocketmq/how-to-support-more-queues-in-rocketmq/  
+https://engineering.linkedin.com/distributed-systems/  log-what-every-software-engineer-should-know-about-real-time-datas-unifying  
+https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/  
+
+
+rabbitmq  
+SQS，对性能无太大要求时，做简单队列, availability超好 
+
 
 
 ## 数据库
@@ -174,19 +181,24 @@ https://dev.mysql.com/doc/mysql-reslimits-excerpt/5.6/en/limits.html
 
 http://www.voidcn.com/article/p-biggriil-bhz.html
 
-## 工作流/规则引擎
-
-webhook
-http://progrium.com/blog/2007/05/03/web-hooks-to-revolutionize-the-web/
 
 
-https://sites.google.com/a/brown.edu/ugur-cetintemel/
-https://data1030.github.io/
-https://www.linkedin.com/pulse/big-data-velocity-plain-english-john-ryan/
-https://www.allthingsdistributed.com/2018/06/purpose-built-databases-in-aws.html
+## 容器
+
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE010efe82339b9336a784ec3a409ce36e/55)
 
 
-## 性能测试服务
+https://www.datadoghq.com/docker-adoption
+
+
+## 分布式应用配置
+zk  
+etcd
+
+https://help.aliyun.com/document_detail/59957.html?spm=a2c4g.11174283.6.545.5c07613600nrB8
+
+
+# 测试
 
 https://help.aliyun.com/document_detail/29262.html?spm=a2c4g.11174283.6.543.2df91b3aU8Fq6m
 
@@ -213,8 +225,12 @@ https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.h
 dubbo/thrift
 
 ## 持久化框架
-jdbc/mybatis  
-job框架/shiro  
+jdbc
+
+## 定时任务
+
+## 
+shiro  
 
 ## 字符和编码
 https://home.unicode.org/  

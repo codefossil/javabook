@@ -47,7 +47,7 @@ https://en.wikipedia.org/wiki/Software_development
 [Peopleware](https://book.douban.com/subject/25956450/)
 [凤凰项目，2015](https://book.douban.com/subject/26644070/)
 
-# 软件过程
+# 软件开发流程
 [Process Models, 2001](https://www.ics.uci.edu/~wscacchi/Papers/SE-Encyc/Process-Models-SE-Encyc.pdf)  
 [Waterfall, 1970](http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf)  
 [Spiral, 1988](http://www-scf.usc.edu/~csci201/lectures/Lecture11/boehm1988.pdf)  
@@ -82,6 +82,8 @@ UML
 [Clean Coder, 2011](https://book.douban.com/subject/11614538/)  
 [软技能](https://book.douban.com/subject/26835090/)  
 https://firstround.com/review/Responsiveness-New-Efficiency/  
+
+http://www.cs.toronto.edu/~sme/CSC340F/  
 
 https://simplicable.com/new/coding-principles  
 https://about.gitlab.com/handbook/  
@@ -121,6 +123,8 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 [Clean Architecture](https://book.douban.com/subject/30333919/)  
 提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。底层离中心业务越远越易变，高层中心业务规则是赚钱的法宝比较不易变。 
 
+[A Philosophy of Software Design, Ousterhout2018](https://book.douban.com/subject/30218046/)
+
 [Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
 [Software design for large system, 1988](https://web.njit.edu/~kirova/BC-SDP.pdf)  
 
@@ -128,8 +132,15 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 [Just Enough Software Architecture](https://book.douban.com/subject/24872314/)    
 [Architectural and philosophical points](https://www.w3.org/DesignIssues/)  
 
-DDD/TDD/BDD/CQRS/DCI/  
+CQRS/DCI/  
 [DDD](https://book.douban.com/subject/1418618/)  
+
+[Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)  
+权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档
+
+todo  
+https://web.njit.edu/~kirova/is663-s11.html  
+https://handbookofsoftwarearchitecture.com/
 
 ## 设计模式/原则
 
@@ -159,16 +170,6 @@ https://java-design-patterns.com/principles/
 [方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)  
 [PEP 20](https://www.python.org/dev/peps/pep-0020/)  
 [system-desgin](https://github.com/donnemartin/system-design-primer)  
-
-
-## 可视化和文档化设计
-
-[Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)  
-权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档
-
-todo  
-https://web.njit.edu/~kirova/is663-s11.html  
-https://handbookofsoftwarearchitecture.com/
 
 # 软件构建
 api设计
@@ -201,6 +202,9 @@ api设计
 [computer architecture, 2019](https://book.douban.com/subject/6795919/)
 
 [Expert One-on-One J2EE Development without EJB, johnson04](https://book.douban.com/subject/1426848/)  
+
+https://ohshitgit.com/  
+https://ngte-se.gitbook.io/
 
 # 软件测试  
 code coverage  

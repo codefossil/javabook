@@ -15,6 +15,7 @@
 [MIT 6.830](http://people.csail.mit.edu/tdanford/6830papers/)  
 
 http://cs.brown.edu/courses/csci2270/previous.html  
+http://people.csail.mit.edu/tdanford/6830papers/  
 
 - 工业  
 [Momjian-PostgreSQL](https://momjian.us/main/faq.html)  
@@ -53,6 +54,12 @@ https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
 
 > 一种精确的，独立的概念工具，描述数据本身，数据关系，数据的语义和一致性约束，以反映`现实业务的对象和事件`。  
 
+![](https://conceptualmodeling.org/erlogo.png)
+
+[Peter P. Chen Awardees](https://conceptualmodeling.org/PeterP.Chen_Awardees.html)
+
+[The history of conceptual modeling](http://cs-exhibitions.uni-klu.ac.at/index.php?id=185)
+
 `ch1, ch2, db concept`  
 抽象是一种非常重要的手段，隐藏细节，简化交互。  
 数据库系统主要目的就是通过**抽象数据视图**，来隐藏某些存储和维护细节。 
@@ -67,15 +74,17 @@ https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
 [E-R model, chen76, vldb](https://harrymoreno.com/assets/greatPapersInCompSci/7.3_-_The_Entity_Relationship_Model_-_Towards_A_Unified_View_of_Data-Peter_Pin-Shan_Chen.pdf)  
 真实的业务需求怎样映射到数据库中。  
 通过实体集合、关系集合来描述物理世界。  
-在概念设计领域非常影响非常大。  
+在概念设计领域影响非常大。  
 
 `ch6~ch7, db concept`  
-数据库schema的设计，从ER模型到范式，保证数据不冗余。  
+数据库schema的设计，从ER模型到范式，保证数据不冗余。 
+
+https://conceptualmodeling.org/
 
 [RelaX - relational algebra calculator](https://dbis-uibk.github.io/relax/index.htm)  
 
 https://en.wikipedia.org/wiki/Dimensional_modeling  
-
+https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model
 
 # 查询
 
@@ -175,7 +184,7 @@ http://cs.brown.edu/courses/cs227/papers.html
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEd46192c545253eddd765cd4f182b7cc7/90)
 
 
-[Architecture of a Database system, hellerstein07](http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf)
+[Architecture of a Database system, hellerstein07](http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf)  
 [db-how](http://coding-geek.com/how-databases-work)  
 
 ## 经典数据库 (before 2000)
@@ -346,7 +355,6 @@ http://ece757.ece.wisc.edu/#betabook
 
 # todo
 
-------
 [presto](http://prestodb.github.io/)  
 [antlr](https://www.antlr.org)  
 [innodb架构](https://dev.mysql.com/doc/refman/5.7/en/innodb-architecture.html)    
