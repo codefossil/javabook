@@ -175,6 +175,8 @@ https://java-design-patterns.com/principles/
 api设计
 契约式设计、防御式编程
 性能分析和优化
+源码版本控制  
+
 
 [Clean Code, martin09](https://book.douban.com/subject/5442024/)  
 写代码就是写诗。好的命名就是用来代替文档的。    
@@ -202,6 +204,8 @@ api设计
 [computer architecture, 2019](https://book.douban.com/subject/6795919/)
 
 [Expert One-on-One J2EE Development without EJB, johnson04](https://book.douban.com/subject/1426848/)  
+
+[阿里巴巴JAVA开发手册](https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E5%8D%8E%E5%B1%B1%E7%89%88%EF%BC%89.pdf)  
 
 https://ohshitgit.com/  
 https://ngte-se.gitbook.io/
