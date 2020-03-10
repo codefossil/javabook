@@ -28,9 +28,9 @@ https://en.wikipedia.org/wiki/Software_development
 [A Multi-Decade Perspective, Scacchi, 2018](https://www.ics.uci.edu/~wscacchi/Papers/New/IEEE-Computer-Scacchi-2018.pdf)  
 [自我评价](http://www.cnblogs.com/xinz/p/3852177.html)
 
-软件产品开发为什么失败
-软件、软件危机、软件工程
-测试写到什么程度算足够
+软件产品开发为什么失败  
+软件、软件危机、软件工程  
+测试写到什么程度算足够  
 
 > software craftsmanship
 
@@ -44,8 +44,9 @@ https://en.wikipedia.org/wiki/Software_development
 [PDCA](https://asqaustin.org/wp-content/uploads/2015/12/History_of_the_PDSA_Cycle_CN_ASQ_Talk-_2_10_2016_Handout.pdf)  
 
 [项目管理方法论，2015](https://book.douban.com/subject/26584696/)  
-[Peopleware](https://book.douban.com/subject/25956450/)
-[凤凰项目，2015](https://book.douban.com/subject/26644070/)
+[Peopleware](https://book.douban.com/subject/25956450/)  
+[凤凰项目，2015](https://book.douban.com/subject/26644070/)  
+[程序员的三门课](https://www.zhihu.com/pub/reader/119647389/chapter/1182332907921813504)  
 
 # 软件开发流程
 [Process Models, 2001](https://www.ics.uci.edu/~wscacchi/Papers/SE-Encyc/Process-Models-SE-Encyc.pdf)  
@@ -71,10 +72,9 @@ lean
 creator driven (问题分治还是工作分治)  
 Be Zara, not Foxconn (从效率模式->快速响应式)  
 
-定义需求（满足、目标、用户需求、系统需求、软件需求）
-优先级、权衡、风险和影响分析
-需求验证
-UML
+定义需求（满足、目标、用户需求、系统需求、软件需求）  
+优先级、权衡、风险和影响分析  
+需求验证  
 
 第一原理  
 [Top risks, 2001](http://sunnyday.mit.edu/16.355/lawrence-requirements.pdf)  
@@ -99,16 +99,17 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 
 # 系统设计
 
-软件设计质量分析和评估  
-设计范例，如结构化设计（自顶向下的功能分解）、面向对象的分析和设
-计、事件驱动的设计、组件级设计、数据结构为中心、面向方面、面向功能、面向
-服务。
-
-
 > OODA loop
 
 - Part of the process of architecting a software system is about understanding **what is significant and why**
 - Understanding **the speed at which your organisation or business changes** is important
+
+[Object-Oriented Analysis and Design with Applications, booch07](https://book.douban.com/subject/2266843/)  
+
+[A Philosophy of Software Design, Ousterhout2018](https://book.douban.com/subject/30218046/)
+
+[DDD](https://book.douban.com/subject/1418618/)  
+
 
 ## 架构
 
@@ -123,17 +124,12 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 [Clean Architecture](https://book.douban.com/subject/30333919/)  
 提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。底层离中心业务越远越易变，高层中心业务规则是赚钱的法宝比较不易变。 
 
-[A Philosophy of Software Design, Ousterhout2018](https://book.douban.com/subject/30218046/)
-
 [Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
 [Software design for large system, 1988](https://web.njit.edu/~kirova/BC-SDP.pdf)  
 
 [Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
 [Just Enough Software Architecture](https://book.douban.com/subject/24872314/)    
 [Architectural and philosophical points](https://www.w3.org/DesignIssues/)  
-
-CQRS/DCI/  
-[DDD](https://book.douban.com/subject/1418618/)  
 
 [Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)  
 权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档
@@ -195,7 +191,6 @@ api设计
 
 [Refactoring](https://book.douban.com/subject/4262627/)  
 
-[Object-Oriented Analysis and Design with Applications, booch07](https://book.douban.com/subject/2266843/)  
 
 [advanced programming in UNIX, steven2013](https://book.douban.com/subject/11937511/)
 

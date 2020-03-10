@@ -15,6 +15,8 @@ https://www.seas.upenn.edu/~cis140/schedule.html
 http://perception.yale.edu/Brian/courses/IntroCogSci-Syllabus.pdf  
 http://mechanism.ucsd.edu/teaching/w07/philpsych/bechtel.cogscihistory.pdf  
 
+https://www.open.edu/openlearn/ocw/mod/oucontent/view.php?id=20033&section=1.1
+
 # 思考
 ## task-switching
 
@@ -38,6 +40,8 @@ http://mechanism.ucsd.edu/teaching/w07/philpsych/bechtel.cogscihistory.pdf
 [为什么学生不喜欢上学，Willingham.D.T.2010](https://book.douban.com/subject/4864832/)  
 从认识理论发展的结论分析，承认大脑的各种缺陷是造成大家学习上的各种困难的根源。迁移知识、持久练习使得背景知识演变成中心知识。  
 
+[刻意练习, ericsson2016](https://book.douban.com/subject/26895993/)
+
 [five-stage-model-mental-activities-involved-directed-skill-acquisition, dreyfus80](https://www.researchgate.net/publication/235125013_A_Five-Stage_Model_of_the_Mental_Activities_Involved_in_Directed_Skill_Acquisition)
 
 [make it stick, brow2014](file:///Users/liangge/Desktop/kupdf.net_make-it-stick-the-science-of-successful-learning.pdf)
@@ -46,11 +50,14 @@ http://mechanism.ucsd.edu/teaching/w07/philpsych/bechtel.cogscihistory.pdf
 
 [learning theories, schunk2011](https://book.douban.com/subject/10579469/?from=tag)
 
-http://matt.colorado.edu/teaching/highcog/fall8/
+http://matt.colorado.edu/teaching/highcog/fall8/  
+https://en.wikipedia.org/wiki/Learning_theory_(education)  
 
 ## 阅读
 [How to read a paper, sigcomm07](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/PaperReading.pdf)  
-引入一个3阶段方法，分别从概览、原理、验证这三个维度解读整篇论文（耗时4-5个小时）  
+引入一个3阶段方法，分别从概览、原理、验证这三个维度解读整篇论文（耗时4-5个小时）
+
+[how to read a book, adler72](https://book.douban.com/subject/1383525/)
 
 ## 写作
 
