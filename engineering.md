@@ -170,8 +170,8 @@ https://java-design-patterns.com/principles/
 # 软件构建
 api设计
 契约式设计、防御式编程
-性能分析和优化
-源码版本控制  
+
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE2915baa108e7ef43a570403b65884806/105)
 
 
 [Clean Code, martin09](https://book.douban.com/subject/5442024/)  
@@ -206,6 +206,9 @@ https://ohshitgit.com/
 https://ngte-se.gitbook.io/
 
 # 软件测试  
+
+![](https://image.slidesharecdn.com/ddd2011-110508055649-phpapp01/95/unit-testing-tdd-and-the-walking-skeleton-11-728.jpg?cb=1306330174)
+
 code coverage  
 mocking  
 性能测试  
@@ -214,9 +217,9 @@ static analysis
 自动化测试
 软件质量
 
+[growing object-oriented software guided by tests, beck09](https://book.douban.com/subject/4156589/)  
+
 [xUnit, 2007](https://book.douban.com/subject/1859393/)  
-[TDD, 2003](https://book.douban.com/subject/1229924/)  
-[OO tests, 2009](https://book.douban.com/subject/4156589/)  
 
 [Agile Developer](https://book.douban.com/subject/4164024/)
 
