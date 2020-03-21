@@ -171,7 +171,7 @@ https://java-design-patterns.com/principles/
 api设计
 契约式设计、防御式编程
 
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE2915baa108e7ef43a570403b65884806/105)
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEc6a4c09769912051b76550b37c2d814c/108)
 
 
 [Clean Code, martin09](https://book.douban.com/subject/5442024/)  
@@ -222,6 +222,8 @@ static analysis
 [xUnit, 2007](https://book.douban.com/subject/1859393/)  
 
 [Agile Developer](https://book.douban.com/subject/4164024/)
+
+http://www.yinwang.org/blog-cn/2016/09/14/tests
 
 # 软件发布和运维
 
