@@ -46,7 +46,9 @@ https://en.wikipedia.org/wiki/Software_development
 [项目管理方法论，2015](https://book.douban.com/subject/26584696/)  
 [Peopleware](https://book.douban.com/subject/25956450/)  
 [凤凰项目，2015](https://book.douban.com/subject/26644070/)  
-[程序员的三门课](https://www.zhihu.com/pub/reader/119647389/chapter/1182332907921813504)  
+[程序员的三门课](https://www.zhihu.com/pub/reader/119647389/chapter/1182332907921813504)
+
+97 Things Every Project Manager Should Know
 
 # 软件开发流程
 [Process Models, 2001](https://www.ics.uci.edu/~wscacchi/Papers/SE-Encyc/Process-Models-SE-Encyc.pdf)  
@@ -207,10 +209,25 @@ https://ngte-se.gitbook.io/
 
 # 软件测试  
 
-![](https://image.slidesharecdn.com/ddd2011-110508055649-phpapp01/95/unit-testing-tdd-and-the-walking-skeleton-11-728.jpg?cb=1306330174)
+软件质量保证  
+
+
+[Endo-Testing: Unit Testing with Mock Objects, mackinnon01, xp2000](https://www2.ccs.neu.edu/research/demeter/related-work/extreme-programming/MockObjectsFinal.PDF)  
+
+[Mock Objects](http://media.pragprog.com/articles/may_02_mock.pdf)
+
+[Mock Roles, not Objects, freeman04, oopsla](http://jmock.org/oopsla2004.pdf)
+
+[xUnit Test Patterns, 2007](https://book.douban.com/subject/1859393/)  
+
+[test driven development by example, beck02](https://book.douban.com/subject/1771049/)
+
+[A New Look at Test Driven Development, astels05](http://daveastels.com/a-new-look-at-test-driven-development.html)
+
+
+[comp6710](http://www.eng.auburn.edu/~kchang/comp6710/Presentation.Schedule.htm)  
 
 code coverage  
-mocking  
 性能测试  
 review
 static analysis
@@ -219,15 +236,20 @@ static analysis
 
 [growing object-oriented software guided by tests, beck09](https://book.douban.com/subject/4156589/)  
 
-[xUnit, 2007](https://book.douban.com/subject/1859393/)  
-
 [Agile Developer](https://book.douban.com/subject/4164024/)
 
-http://www.yinwang.org/blog-cn/2016/09/14/tests
+[关于单元测试](https://techsingular.net/2012/09/04/%E5%85%B3%E4%BA%8E%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/)  
+
+[ten years tdd](http://wiki.c2.com/?TenYearsOfTestDrivenDevelopment)  
+
+http://jaoo.dk/dl/qcon-london-2009/slides/MichaelFeathers_TestDrivenDevelopmentTenYearsLater.pdf  
+http://badsoftware.com/chapter1.htm  
+http://wiki.c2.com/?JavaIdioms  
+
 
 # 软件发布和运维
 
-![](https://d1.awsstatic.com/product-marketing/DevOps/DevOps_feedback-diagram.ff668bfc299abada00b2dcbdc9ce2389bd3dce3f.png)
+![](https://pic1.zhimg.com/80/v2-4106a010bb1f53cf88f3e8173bff07e4_1440w.jpg)
 
 流量切换 sla  
 服务依赖/状态/降级  
