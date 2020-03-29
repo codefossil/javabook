@@ -3,7 +3,9 @@
 [CS != SE](http://www.cnblogs.com/buaashine/archive/2012/12/12/2813931.html)  
 [We Are All Confident Idiots](https://www.guokr.com/article/439517/)  
 
-[MIT 16.355](http://sunnyday.mit.edu/16.355/)  
+[MIT 16.355](http://sunnyday.mit.edu/16.355/)   
+https://www.cs.uic.edu/~i442/
+
 [CMU-SEI](https://sei.cmu.edu/)  
 [MIT-SAL](http://systemarchitect.mit.edu/index.php)  
 
@@ -34,6 +36,8 @@ https://en.wikipedia.org/wiki/Software_development
 
 > software craftsmanship
 
+https://arxiv.org/pdf/1702.01715.pdf
+
 # 项目管理
 
 - 项目规划和监控
@@ -60,13 +64,16 @@ https://en.wikipedia.org/wiki/Software_development
 
 https://en.wikipedia.org/wiki/Agile_software_development  
 
+
+[agile manifesto, 2002](http://agilemanifesto.org/)
+
 [Agile: The World's Most Popular Innovation Engine, 2015](https://www.forbes.com/sites/stevedenning/2015/07/23/the-worlds-most-popular-innovation-engine/#4d24af757c76)  
 
-rad
-xp
-scrum
-rup
-lean
+[SCRUM development process, Schwaber95](http://www.jeffsutherland.org/oopsla/schwapub.pdf)
+
+https://www.jackyshen.com/  
+https://scrumguides.org/scrum-guide.html  
+https://www.scrum.org/  
 
 # 需求工程
 
@@ -101,6 +108,8 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 
 # 系统设计
 
+![](https://pubs.opengroup.org/architecture/archimate-doc/ts_archimate/ts_archimate_files/image008.png)
+
 > OODA loop
 
 - Part of the process of architecting a software system is about understanding **what is significant and why**
@@ -122,6 +131,8 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 
 [康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
 [架构漫谈, 2016](https://www.infoq.cn/article/an-informal-discussion-on-architecture-part01)  
+
+[archimate](https://pubs.opengroup.org/architecture/archimate31-doc/chap01.html#_Toc10045266)
 
 [Clean Architecture](https://book.douban.com/subject/30333919/)  
 提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。底层离中心业务越远越易变，高层中心业务规则是赚钱的法宝比较不易变。 
@@ -173,7 +184,7 @@ https://java-design-patterns.com/principles/
 api设计
 契约式设计、防御式编程
 
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEc6a4c09769912051b76550b37c2d814c/108)
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE72667b09c11acd0f0b7b9c81b84cd30f/114)
 
 
 [Clean Code, martin09](https://book.douban.com/subject/5442024/)  
@@ -205,12 +216,19 @@ api设计
 [阿里巴巴JAVA开发手册](https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E5%8D%8E%E5%B1%B1%E7%89%88%EF%BC%89.pdf)  
 
 https://ohshitgit.com/  
-https://ngte-se.gitbook.io/
+https://ngte-se.gitbook.io/  
+https://github.com/xingshaocheng/architect-awesome  
 
 # 软件测试  
 
+
+https://www.istqb.org/  
+
 软件质量保证  
 
+[Testing in Scrum, linz2014](https://book.douban.com/subject/33319435/)  
+
+[Continuous Integration: Improving Software Quality and Reducing Risk, duvall07](https://book.douban.com/subject/2159442/)
 
 [Endo-Testing: Unit Testing with Mock Objects, mackinnon01, xp2000](https://www2.ccs.neu.edu/research/demeter/related-work/extreme-programming/MockObjectsFinal.PDF)  
 
@@ -245,6 +263,7 @@ static analysis
 http://jaoo.dk/dl/qcon-london-2009/slides/MichaelFeathers_TestDrivenDevelopmentTenYearsLater.pdf  
 http://badsoftware.com/chapter1.htm  
 http://wiki.c2.com/?JavaIdioms  
+https://dhh.dk/2014/tdd-is-dead-long-live-testing.html  
 
 
 # 软件发布和运维

@@ -44,7 +44,8 @@ https://github.com/akullpp/awesome-java#science
 
 ![](https://image.woshipm.com/wp-files/2017/02/eaiRbTvRmooOzRJY9va4.png)
 
-http://www.woshipm.com/pd/586436.html
+http://www.woshipm.com/pd/586436.html  
+[中国互联网业务研发体系架构指南](https://blog.csdn.net/Ture010Love/article/details/104381157)
 
 分布式ID发号器、feed 系统、缓存系统、推荐系统、抢票系统  
 社区类服务架构、云服务架构、O2O
