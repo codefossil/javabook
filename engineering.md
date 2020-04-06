@@ -13,6 +13,8 @@ https://www.cs.uic.edu/~i442/
 
 > One of the biggest problems with software is that **it’s complex and abstract**. The result being that it’s hard to visualise the runtime characteristics of a piece of software from diagrams or even the code itself.
 
+[The Mythical Man Month, brooks03](https://book.douban.com/subject/1105381/)
+
 [Engeering: An endless frontier, Auyang2004](https://book.douban.com/subject/3287111/)
 
 [Humphrey-SPA award](https://resources.sei.cmu.edu/news-events/events/watts/watts.cfm)  
@@ -33,6 +35,8 @@ https://en.wikipedia.org/wiki/Software_development
 软件产品开发为什么失败  
 软件、软件危机、软件工程  
 测试写到什么程度算足够  
+
+
 
 > software craftsmanship
 
@@ -121,6 +125,11 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 
 [DDD](https://book.douban.com/subject/1418618/)  
 
+[Systems Analysis and Design: An Object-Oriented Approach with UML](https://www.amazon.com/Systems-Analysis-Design-Object-Oriented-Approach/dp/1118804678/ref=zg_bs_602672_46?_encoding=UTF8&psc=1&refRID=PKYB5W8Q8TXME0HQZ945)
+
+
+https://docs.microsoft.com/en-us/azure/architecture/microservices/migrate-monolith  
+http://www.mit.edu/~richh/writings/  
 
 ## 架构
 
@@ -132,7 +141,22 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 [康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
 [架构漫谈, 2016](https://www.infoq.cn/article/an-informal-discussion-on-architecture-part01)  
 
+[TOGAF](https://en.wikipedia.org/wiki/The_Open_Group_Architecture_Framework)
+
 [archimate](https://pubs.opengroup.org/architecture/archimate31-doc/chap01.html#_Toc10045266)
+
+[ISO/IEC/IEEE 42010/42020/42030](http://www.iso-architecture.org/42010/)  
+
+[IEEE 1016](https://perso.univ-st-etienne.fr/jacquene/gl/articles/IEEE-1016-2009.pdf)
+
+[Architectural Blueprints - The 4+1 View Model of Software Architecture, kruchten95, rational](https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf)
+
+
+[On the Criteria To Be Used in Decomposing Systems into Modules, parnas72](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf)
+
+[A Laboratory For Teaching Object-Oriented Thinking, beck89, oopsla](http://people.cs.pitt.edu/~chang/231/5spec/CRCcard/Beck-LaboratoryForTeachingOO.pdf)
+
+[archi vs design](https://www.slideshare.net/luctrudeau/architecture-vs-design)
 
 [Clean Architecture](https://book.douban.com/subject/30333919/)  
 提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。底层离中心业务越远越易变，高层中心业务规则是赚钱的法宝比较不易变。 
@@ -205,6 +229,9 @@ api设计
 [Refactoring](https://book.douban.com/subject/4262627/)  
 
 
+[Working Effectively with Legacy Code, feather05](http://www.amazon.com/exec/obidos/ISBN=0131177052/theinternationscA/)
+
+
 [advanced programming in UNIX, steven2013](https://book.douban.com/subject/11937511/)
 
 [Computer Systems, 2015](https://book.douban.com/subject/26344642/)
@@ -219,12 +246,13 @@ https://ohshitgit.com/
 https://ngte-se.gitbook.io/  
 https://github.com/xingshaocheng/architect-awesome  
 
-# 软件测试  
+# 软件验证
 
+[Requirements and Testing: Seven Missing-Link Myths, graham02](http://www.eng.auburn.edu/~kchang/comp6710/readings/RequirementsandTesting_SevenMissing_LinkMyths_Graham.IEEE_Software.2002Sept.pdf)
+
+[What is Software Testing? And Why Is It So Hard?, whittaker2000](http://www.win.tue.nl/~wstomv/edu/sep/ieee/testing-is-hard.pdf)
 
 https://www.istqb.org/  
-
-软件质量保证  
 
 [Testing in Scrum, linz2014](https://book.douban.com/subject/33319435/)  
 
