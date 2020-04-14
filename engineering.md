@@ -36,11 +36,7 @@ https://en.wikipedia.org/wiki/Software_development
 软件、软件危机、软件工程  
 测试写到什么程度算足够  
 
-
-
-> software craftsmanship
-
-https://arxiv.org/pdf/1702.01715.pdf
+[software engineering at google, henderson2017](https://arxiv.org/pdf/1702.01715.pdf)
 
 # 项目管理
 
@@ -56,6 +52,8 @@ https://arxiv.org/pdf/1702.01715.pdf
 [凤凰项目，2015](https://book.douban.com/subject/26644070/)  
 [程序员的三门课](https://www.zhihu.com/pub/reader/119647389/chapter/1182332907921813504)
 
+Evolutionary Project Management
+
 97 Things Every Project Manager Should Know
 
 # 软件开发流程
@@ -66,8 +64,9 @@ https://arxiv.org/pdf/1702.01715.pdf
 [CMM, 1991](http://sunnyday.mit.edu/16.355/cmm.pdf)  
 [The Agile Methods Fray](http://www-scf.usc.edu/~csci201/lectures/Lecture11/demarco2002.pdf)  
 
-https://en.wikipedia.org/wiki/Agile_software_development  
+[Iterative and Incremental Development: A Brief History, 2003](https://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf)
 
+[Extreme Programming Explained: Embrace Change, beck99](https://book.douban.com/subject/1440219/)
 
 [agile manifesto, 2002](http://agilemanifesto.org/)
 
@@ -77,7 +76,8 @@ https://en.wikipedia.org/wiki/Agile_software_development
 
 https://www.jackyshen.com/  
 https://scrumguides.org/scrum-guide.html  
-https://www.scrum.org/  
+https://www.scrum.org/ 
+http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.htm   
 
 # 需求工程
 
@@ -218,6 +218,8 @@ api设计
 通过使用DI、接口和抽象等工具，实现低耦合+高内聚。  
 
 [Agile Software Development, martin03](https://book.douban.com/subject/1140457/)  
+需求促使开发人员执行敏捷实践从而发现问题，通过设计原则诊断问题后，最后选择合适的设计模式解决问题。  
+编写测试用例首次上升到开发人员的一等公民。  
 
 [Code complete, McConnell04](https://book.douban.com/subject/1477390/)  
 
