@@ -119,6 +119,15 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 - Part of the process of architecting a software system is about understanding **what is significant and why**
 - Understanding **the speed at which your organisation or business changes** is important
 
+业务规则=约束+原则  
+结构=边界+接口  
+
+> 架构=重要的系统设计=结构+愿景=构建成本最小化+效率最大化
+
+[康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
+
+[Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
+
 [Object-Oriented Analysis and Design with Applications, booch07](https://book.douban.com/subject/2266843/)  
 
 [A Philosophy of Software Design, Ousterhout2018](https://book.douban.com/subject/30218046/)
@@ -131,14 +140,6 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 https://docs.microsoft.com/en-us/azure/architecture/microservices/migrate-monolith  
 http://www.mit.edu/~richh/writings/  
 
-## 架构
-
-业务规则=约束+原则  
-结构=边界+接口  
-
-> 架构=重要的系统设计=结构+愿景=构建成本最小化+效率最大化
-
-[康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
 [架构漫谈, 2016](https://www.infoq.cn/article/an-informal-discussion-on-architecture-part01)  
 
 [TOGAF](https://en.wikipedia.org/wiki/The_Open_Group_Architecture_Framework)
@@ -171,30 +172,23 @@ http://www.mit.edu/~richh/writings/
 [Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)  
 权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档
 
-todo  
 https://web.njit.edu/~kirova/is663-s11.html  
 https://handbookofsoftwarearchitecture.com/
 
-## 设计模式/原则
 
 沉默成本（可用性）  
 机会成本（兼容性）  
 边际成本（扩展性）  
 You Aren't Gonna Need It.  
-If it ain't broke, don't fix it.  
-飞轮效应  
-dependency inversion
-SOLID
+If it ain't broke, don't fix it.    
 
 [Internet-arch](https://trac.tools.ietf.org/html/rfc3439)  
 
-[Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
   
 
 [Stop Learning Frameworks, 2018](https://sizovs.net/2018/12/17/stop-learning-frameworks/)  
 [TAOUP, 2003](https://book.douban.com/subject/5387401/)   
 
-https://java-design-patterns.com/principles/  
 
 [worse is better](http://dreamsongs.com/WorseIsBetter.html)  
 [The Rule of Least Power, 2001](https://www.w3.org/2001/tag/doc/leastPower.html)  
@@ -246,7 +240,8 @@ api设计
 
 https://ohshitgit.com/  
 https://ngte-se.gitbook.io/  
-https://github.com/xingshaocheng/architect-awesome  
+https://github.com/xingshaocheng/architect-awesome 
+https://java-design-patterns.com/principles/  
 
 # 软件验证
 
