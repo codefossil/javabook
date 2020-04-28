@@ -130,6 +130,8 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 
 [Object-Oriented Analysis and Design with Applications, booch07](https://book.douban.com/subject/2266843/)  
 
+[how to design programs, felleisen2018](https://www.amazon.com/How-Design-Programs-Introduction-Programming/dp/0262534800)
+
 [A Philosophy of Software Design, Ousterhout2018](https://book.douban.com/subject/30218046/)
 
 [DDD](https://book.douban.com/subject/1418618/)  
@@ -217,12 +219,14 @@ api设计
 
 [Code complete, McConnell04](https://book.douban.com/subject/1477390/)  
 
+[Structure and Interpretation of Computer Programs, abelson96](https://book.douban.com/subject/1451622/)
+
 [Concepts, Techniques, and Models of Computer Programming, roy04](https://book.douban.com/subject/1782316/)  
 编程还是手艺吗？  
 
 [design pattern](https://sourcemaking.com/design_patterns)  
 
-[Refactoring](https://book.douban.com/subject/4262627/)  
+[Refactoring, fowler2000](https://book.douban.com/subject/4262627/)  
 
 
 [Working Effectively with Legacy Code, feather05](http://www.amazon.com/exec/obidos/ISBN=0131177052/theinternationscA/)
@@ -237,6 +241,10 @@ api设计
 [Expert One-on-One J2EE Development without EJB, johnson04](https://book.douban.com/subject/1426848/)  
 
 [阿里巴巴JAVA开发手册](https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E5%8D%8E%E5%B1%B1%E7%89%88%EF%BC%89.pdf)  
+
+[cracking the coding interview](https://book.douban.com/subject/26570695/)
+
+[pragmatic programmer, hunt99](https://book.douban.com/subject/1417047/)
 
 https://ohshitgit.com/  
 https://ngte-se.gitbook.io/  
