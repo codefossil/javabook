@@ -8,6 +8,7 @@ https://www.cs.uic.edu/~i442/
 
 [CMU-SEI](https://sei.cmu.edu/)  
 [MIT-SAL](http://systemarchitect.mit.edu/index.php)  
+[ICSE Most Influential Paper Award](https://www.sigsoft.org/awards/icseMIPAward.html)  
 
 # 基本问题
 
@@ -58,13 +59,33 @@ Evolutionary Project Management
 
 # 软件开发流程
 [Process Models, 2001](https://www.ics.uci.edu/~wscacchi/Papers/SE-Encyc/Process-Models-SE-Encyc.pdf)  
-[Waterfall, 1970](http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf)  
-[Spiral, 1988](http://www-scf.usc.edu/~csci201/lectures/Lecture11/boehm1988.pdf)  
 [PSP, 1996](http://www.star.cc.gatech.edu/documents/SpencerRugabear/psp.pdf)  
 [CMM, 1991](http://sunnyday.mit.edu/16.355/cmm.pdf)  
-[The Agile Methods Fray](http://www-scf.usc.edu/~csci201/lectures/Lecture11/demarco2002.pdf)  
+[The Agile Methods Fray](http://www-scf.usc.edu/~csci201/lectures/Lecture11/demarco2002.pdf)
+
+[software process versus design quality, suryanarayana2015](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7140652)
+
+[selecting a development approach, cms05 ](https://www.academia.edu/13239574/SELECTING_A_DEVELOPMENT_APPROACH)
+
+[a rational design process: how and why to fake it, parnas86, tose](https://www.cs.tufts.edu/~nr/cs257/archive/david-parnas/fake-it.pdf)
+
+[managing the development of large software systems, royce1970](http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf) 
+
+[evolutionary development, gilb81, sigsoft](https://dl.acm.org/doi/pdf/10.1145/1010865.1010868)
+
+[a spiral model of software development and enhancement, boehm88](http://www-scf.usc.edu/~csci201/lectures/Lecture11/boehm1988.pdf)  
+
+[CHAOS95](https://www.projectsmart.co.uk/white-papers/chaos-report.pdf)
 
 [Iterative and Incremental Development: A Brief History, 2003](https://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf)
+
+
+- 70年代前：文档驱动-一次过的顺序生命周期
+- 70年代：早期的IID出现
+- 80年代：adaptive和evo出现，人们开始思考软件项目失败的原因
+- 90年代至今：IID大面积推广、Scrum/RAD/RUP/XP，直到如今的敏捷
+
+[SCRUM development process, Schwaber95](http://www.jeffsutherland.org/oopsla/schwapub.pdf)
 
 [Extreme Programming Explained: Embrace Change, beck99](https://book.douban.com/subject/1440219/)
 
@@ -72,7 +93,13 @@ Evolutionary Project Management
 
 [Agile: The World's Most Popular Innovation Engine, 2015](https://www.forbes.com/sites/stevedenning/2015/07/23/the-worlds-most-popular-innovation-engine/#4d24af757c76)  
 
-[SCRUM development process, Schwaber95](http://www.jeffsutherland.org/oopsla/schwapub.pdf)
+https://chrisshayan.atlassian.net/wiki/spaces/my/blog/2013/05/12/622650/Selecting+the+Appropriate+Development+Methodology
+
+http://taoxie.cs.illinois.edu/index.htm
+
+https://www.ifi.uzh.ch/en/seal/teaching/courses/archive/hs10-1.html
+
+https://users.ece.utexas.edu/~perry/education/SE-Intro/
 
 https://www.jackyshen.com/  
 https://scrumguides.org/scrum-guide.html  
@@ -110,212 +137,4 @@ http://www.valleytalk.org
 http://people.scs.carleton.ca/~deugo/Patterns/ospdg/
 https://www.cs.cmu.edu/~aldrich/courses/413/
 
-# 系统设计
 
-![](https://pubs.opengroup.org/architecture/archimate-doc/ts_archimate/ts_archimate_files/image008.png)
-
-> OODA loop
-
-- Part of the process of architecting a software system is about understanding **what is significant and why**
-- Understanding **the speed at which your organisation or business changes** is important
-
-业务规则=约束+原则  
-结构=边界+接口  
-
-> 架构=重要的系统设计=结构+愿景=构建成本最小化+效率最大化
-
-[康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
-
-[Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
-
-[Object-Oriented Analysis and Design with Applications, booch07](https://book.douban.com/subject/2266843/)  
-
-[how to design programs, felleisen2018](https://www.amazon.com/How-Design-Programs-Introduction-Programming/dp/0262534800)
-
-[A Philosophy of Software Design, Ousterhout2018](https://book.douban.com/subject/30218046/)
-
-[DDD](https://book.douban.com/subject/1418618/)  
-
-[Systems Analysis and Design: An Object-Oriented Approach with UML](https://www.amazon.com/Systems-Analysis-Design-Object-Oriented-Approach/dp/1118804678/ref=zg_bs_602672_46?_encoding=UTF8&psc=1&refRID=PKYB5W8Q8TXME0HQZ945)
-
-
-https://docs.microsoft.com/en-us/azure/architecture/microservices/migrate-monolith  
-http://www.mit.edu/~richh/writings/  
-
-[架构漫谈, 2016](https://www.infoq.cn/article/an-informal-discussion-on-architecture-part01)  
-
-[TOGAF](https://en.wikipedia.org/wiki/The_Open_Group_Architecture_Framework)
-
-[archimate](https://pubs.opengroup.org/architecture/archimate31-doc/chap01.html#_Toc10045266)
-
-[ISO/IEC/IEEE 42010/42020/42030](http://www.iso-architecture.org/42010/)  
-
-[IEEE 1016](https://perso.univ-st-etienne.fr/jacquene/gl/articles/IEEE-1016-2009.pdf)
-
-[Architectural Blueprints - The 4+1 View Model of Software Architecture, kruchten95, rational](https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf)
-
-
-[On the Criteria To Be Used in Decomposing Systems into Modules, parnas72](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf)
-
-[A Laboratory For Teaching Object-Oriented Thinking, beck89, oopsla](http://people.cs.pitt.edu/~chang/231/5spec/CRCcard/Beck-LaboratoryForTeachingOO.pdf)
-
-[archi vs design](https://www.slideshare.net/luctrudeau/architecture-vs-design)
-
-[Clean Architecture](https://book.douban.com/subject/30333919/)  
-提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。底层离中心业务越远越易变，高层中心业务规则是赚钱的法宝比较不易变。 
-
-[Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
-[Software design for large system, 1988](https://web.njit.edu/~kirova/BC-SDP.pdf)  
-
-[Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
-[Just Enough Software Architecture](https://book.douban.com/subject/24872314/)    
-[Architectural and philosophical points](https://www.w3.org/DesignIssues/)  
-
-[Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)  
-权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档
-
-https://web.njit.edu/~kirova/is663-s11.html  
-https://handbookofsoftwarearchitecture.com/
-
-
-沉默成本（可用性）  
-机会成本（兼容性）  
-边际成本（扩展性）  
-You Aren't Gonna Need It.  
-If it ain't broke, don't fix it.    
-
-[Internet-arch](https://trac.tools.ietf.org/html/rfc3439)  
-
-  
-
-[Stop Learning Frameworks, 2018](https://sizovs.net/2018/12/17/stop-learning-frameworks/)  
-[TAOUP, 2003](https://book.douban.com/subject/5387401/)   
-
-
-[worse is better](http://dreamsongs.com/WorseIsBetter.html)  
-[The Rule of Least Power, 2001](https://www.w3.org/2001/tag/doc/leastPower.html)  
-
-[Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)  
-[方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)  
-[PEP 20](https://www.python.org/dev/peps/pep-0020/)  
-[system-desgin](https://github.com/donnemartin/system-design-primer)  
-
-# 软件构建
-api设计
-契约式设计、防御式编程
-
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE72667b09c11acd0f0b7b9c81b84cd30f/114)
-
-
-[Clean Code, martin09](https://book.douban.com/subject/5442024/)  
-写代码就是写诗。好的命名就是用来代替文档的。    
-全书精华在第12章。    
-我们需要一个迭代过程，测试用例写得越多，设计需要越简单。  
-通过使用DI、接口和抽象等工具，实现低耦合+高内聚。  
-
-[Agile Software Development, martin03](https://book.douban.com/subject/1140457/)  
-需求促使开发人员执行敏捷实践从而发现问题，通过设计原则诊断问题后，最后选择合适的设计模式解决问题。  
-编写测试用例首次上升到开发人员的一等公民。  
-
-[Code complete, McConnell04](https://book.douban.com/subject/1477390/)  
-
-[Structure and Interpretation of Computer Programs, abelson96](https://book.douban.com/subject/1451622/)
-
-[Concepts, Techniques, and Models of Computer Programming, roy04](https://book.douban.com/subject/1782316/)  
-编程还是手艺吗？  
-
-[design pattern](https://sourcemaking.com/design_patterns)  
-
-[Refactoring, fowler2000](https://book.douban.com/subject/4262627/)  
-
-
-[Working Effectively with Legacy Code, feather05](http://www.amazon.com/exec/obidos/ISBN=0131177052/theinternationscA/)
-
-
-[advanced programming in UNIX, steven2013](https://book.douban.com/subject/11937511/)
-
-[Computer Systems, 2015](https://book.douban.com/subject/26344642/)
-
-[computer architecture, 2019](https://book.douban.com/subject/6795919/)
-
-[Expert One-on-One J2EE Development without EJB, johnson04](https://book.douban.com/subject/1426848/)  
-
-[阿里巴巴JAVA开发手册](https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E5%8D%8E%E5%B1%B1%E7%89%88%EF%BC%89.pdf)  
-
-[cracking the coding interview](https://book.douban.com/subject/26570695/)
-
-[pragmatic programmer, hunt99](https://book.douban.com/subject/1417047/)
-
-https://ohshitgit.com/  
-https://ngte-se.gitbook.io/  
-https://github.com/xingshaocheng/architect-awesome 
-https://java-design-patterns.com/principles/  
-
-# 软件验证
-
-[Requirements and Testing: Seven Missing-Link Myths, graham02](http://www.eng.auburn.edu/~kchang/comp6710/readings/RequirementsandTesting_SevenMissing_LinkMyths_Graham.IEEE_Software.2002Sept.pdf)
-
-[What is Software Testing? And Why Is It So Hard?, whittaker2000](http://www.win.tue.nl/~wstomv/edu/sep/ieee/testing-is-hard.pdf)
-
-https://www.istqb.org/  
-
-[Testing in Scrum, linz2014](https://book.douban.com/subject/33319435/)  
-
-[Continuous Integration: Improving Software Quality and Reducing Risk, duvall07](https://book.douban.com/subject/2159442/)
-
-[Endo-Testing: Unit Testing with Mock Objects, mackinnon01, xp2000](https://www2.ccs.neu.edu/research/demeter/related-work/extreme-programming/MockObjectsFinal.PDF)  
-
-[Mock Objects](http://media.pragprog.com/articles/may_02_mock.pdf)
-
-[Mock Roles, not Objects, freeman04, oopsla](http://jmock.org/oopsla2004.pdf)
-
-[xUnit Test Patterns, 2007](https://book.douban.com/subject/1859393/)  
-
-[test driven development by example, beck02](https://book.douban.com/subject/1771049/)
-
-[A New Look at Test Driven Development, astels05](http://daveastels.com/a-new-look-at-test-driven-development.html)
-
-
-[comp6710](http://www.eng.auburn.edu/~kchang/comp6710/Presentation.Schedule.htm)  
-
-code coverage  
-性能测试  
-review
-static analysis
-自动化测试
-软件质量
-
-[growing object-oriented software guided by tests, beck09](https://book.douban.com/subject/4156589/)  
-
-[Agile Developer](https://book.douban.com/subject/4164024/)
-
-[关于单元测试](https://techsingular.net/2012/09/04/%E5%85%B3%E4%BA%8E%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/)  
-
-[ten years tdd](http://wiki.c2.com/?TenYearsOfTestDrivenDevelopment)  
-
-http://jaoo.dk/dl/qcon-london-2009/slides/MichaelFeathers_TestDrivenDevelopmentTenYearsLater.pdf  
-http://badsoftware.com/chapter1.htm  
-http://wiki.c2.com/?JavaIdioms  
-https://dhh.dk/2014/tdd-is-dead-long-live-testing.html  
-
-
-# 软件发布和运维
-
-![](https://pic1.zhimg.com/80/v2-4106a010bb1f53cf88f3e8173bff07e4_1440w.jpg)
-
-流量切换 sla  
-服务依赖/状态/降级  
-发布和灰度   
-
-[Kubernetes In Action, 2017](https://book.douban.com/subject/26997846/)  
-[Continuous Delivery](https://book.douban.com/subject/6862062/)  
-[Site Reliability Engineering](https://book.douban.com/subject/26875239/)  
-[Infrastructure as Code](https://d1.awsstatic.com/whitepapers/DevOps/infrastructure-as-code.pdf)  
-
-https://lpd-ios.github.io/2017/05/08/Git-Work-Flow/  
-https://docs.gitlab.com/ee/README.html  
-https://ohshitgit.com/  
-www.conventionalcommits.org  
-https://www.atlassian.com/git/tutorials  
-https://github.com/GetMyle/Guides/wiki/MYLE-GitHub-Flow  
-https://about.gitlab.com/2016/03/08/gitlab-tutorial-its-all-connected/  
