@@ -261,61 +261,6 @@ https://www.gartner.com/doc/reprints?id=1-5N2H2SM&ct=181024&st=sb
 http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/
 
 
-# 大数据
-
-[clouds berkeley view, 2009](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/AboveTheClouds.pdf)
-
-[big data, 2015](https://book.douban.com/subject/10438832/)
-
-## 集群管理
-[yarn, socc2013](http://web.eecs.umich.edu/~mosharaf/Readings/YARN.pdf)  
-[mesos, nsdi2011](https://people.eecs.berkeley.edu/~alig/papers/mesos.pdf)  
-[Borg, 2015](https://pdos.csail.mit.edu/6.824/papers/borg.pdf)  
-
-## 分布式存储
-[GFS, sosp03](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)  
-[hdfs, 2010](http://pages.cs.wisc.edu/~akella/CS744/S19/838-CloudPapers/hdfs.pdf)  
-[VL2, sigcomm09](http://bnrg.eecs.berkeley.edu/~randy/Courses/CS268.F09/papers/14_vl2.pdf)  
-
-## 执行引擎
-[MapReduce survey, sigmodrec2011](https://www2.cs.arizona.edu/~bkmoon/papers/sigmodrec11.pdf)  
-[Spark, nsdi2012](https://www.usenix.org/system/files/conference/nsdi12/nsdi12-final138.pdf)  
-[Spark SQL, sigmod2015](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/SparkSQL.pdf)  
-[Tez, sigmod2015](http://web.eecs.umich.edu/~mosharaf/Readings/Tez.pdf)  
-[Dryad, EuroSys07](http://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/15712/papers/isard07.pdf)  
-[dataflow, vldb2015](http://www.vldb.org/pvldb/vol8/p1792-Akidau.pdf)    
-
-## 分析框架
-[Storm, sigmod2014](https://cs.brown.edu/courses/csci2270/archives/2015/papers/ss-storm.pdf)
-
-[Kafka, NetDB2011](http://pages.cs.wisc.edu/~akella/CS744/S19/838-CloudPapers/Kafka.pdf)
-
-[Flink, 2015](http://pages.cs.wisc.edu/~shivaram/cs744-slides/cs744-akshaya-flink.pdf)
-
-[GraphX, osdi2014](https://amplab.cs.berkeley.edu/wp-content/uploads/2014/09/graphx.pdf)
-
-[variant index, sigmod97](http://cs.brown.edu/courses/cs227/archives/2008/mitchpapers/required5.pdf)  
-
-[Hive, icde10](http://infolab.stanford.edu/~ragho/hive-icde2010.pdf)
-
-## 分布式任务调度
-[Sparrow, sosp03](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/Sparrow.pdf)
-
-## 数据中心网络
-[jupiter, 2015](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/Jupiter.pdf)
-
-
-[big data at LinkedIn, icomod2013](http://web.cs.wpi.edu/~cs525/f13b-EAR/cs525-homepage/lectures/PAPERS/p1125-sumbaly.pdf) 
-
-http://barbie.uta.edu/~jli/mmwc.html  
-http://c.biancheng.net/big_data/  
-https://amplab.cs.berkeley.edu/benchmark/#  
-https://www.infosysblogs.com/oracle/2018/08/oracle_exadata_mpp_databases_o.html  
-https://dwarehouse.wordpress.com/2012/12/28/introduction-to-massively-parallel-processing-mpp-database/  
-http://ece757.ece.wisc.edu/#betabook
-
-
-
 # todo
 
 [presto](http://prestodb.github.io/)  
