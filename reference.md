@@ -12,3 +12,6 @@
 * [moc](https://ocw.mit.edu/courses/find-by-topic/)
 * [cs-list](https://en.wikipedia.org/wiki/List_of_important_publications_in_computer_science#Concurrent,_parallel,_and_distributed_computing)  
 * [awesome course](https://github.com/prakhar1989/awesome-courses)  
+* [中科院软件研究所](http://www.is.cas.cn/)
+* [清华大学信息科学技术学院](http://www.sist.tsinghua.edu.cn/)
+* [科学技术司](http://www.moe.gov.cn/s78/A16/)

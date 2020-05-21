@@ -1,3 +1,6 @@
+智能图文信息处理，包括各种文字识别、文档识别和理解。
+
+
 # 数据分析
 
 [anomaly survey, ACS09](https://cs.brown.edu/courses/csci2270/papers/anomaly-detection-survey.pdf)

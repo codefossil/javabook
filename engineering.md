@@ -12,7 +12,11 @@ https://www.cs.uic.edu/~i442/
 
 # 基本问题
 
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE7f9ec4f4ad19d7054a7fb1bdf5d9b2a8/117)
+
 > One of the biggest problems with software is that **it’s complex and abstract**. The result being that it’s hard to visualise the runtime characteristics of a piece of software from diagrams or even the code itself.
+
+[Software Complexity Is Killing Us](https://www.simplethread.com/software-complexity-killing-us/)
 
 [The Mythical Man Month, brooks03](https://book.douban.com/subject/1105381/)
 
