@@ -38,7 +38,20 @@ https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-eng
 [分布式Redis架构设计, 2015](https://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&mid=208733458&idx=1&sn=691bfde670fb2dd649685723f7358fea)  
 [亿级用户下的新浪微博平台架构](https://www.infoq.cn/article/weibo-platform-archieture)  
 
-https://github.com/akullpp/awesome-java#science
+https://github.com/akullpp/awesome-java#science  
+https://github.com/toutiaoio/awesome-architecture
+
+# 工业会议
+
+[ArchSummit](https://archsummit.infoq.cn/)   
+[中国数据库技术大会](http://dtcc.it168.com/)  
+
+# 阿里技术
+阿里技术参考图册  
+不止代码  
+阿里巴巴java开发手册  
+9年双11：互联网技术超级工程  
+阿里工程师的自我修养  
 
 # 企业级系统
 

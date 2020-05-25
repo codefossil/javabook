@@ -55,6 +55,8 @@ http://www.cs.cornell.edu/gries/July2016/
 [Multiprogramming, 1968](https://link.springer.com/content/pdf/10.1007%2F978-1-4757-3510-9_12.pdf)  
 [JCIP, 2006](https://book.douban.com/subject/10484692/)  
 
+[reactive design patterns](https://book.douban.com/subject/25870212/)
+
 [Thread programming, 1989](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/birrell%20paper%2003.pdf)  
 [HYDRA, 1974](http://research.cs.wisc.edu/areas/os/Qual/papers/hydra.pdf)  
 [Threads bad, 1995](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/Conc-4/index.html)  
