@@ -17,7 +17,8 @@ api设计
 通过分析用户故事，形成用例分析，产出软件的静态结构和动态结构。 
 
 [A Philosophy of Software Design, Ousterhout2018](https://book.douban.com/subject/30218046/)  
-好的软件就是要最小的依赖、最少的认识负担
+CS的核心问题就是问题分解。  
+好的软件就是要最小的依赖、最少的认识负担。  
 策略编程，投入10%的时间来思考好的设计。（敏捷弄不好就是直觉编程）  
 接口要薄，要通用，实现要深。  
 
@@ -44,8 +45,6 @@ api设计
 [computer architecture, 2019](https://book.douban.com/subject/6795919/)
 
 [Expert One-on-One J2EE Development without EJB, johnson04](https://book.douban.com/subject/1426848/)  
-
-[阿里巴巴JAVA开发手册](https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E5%8D%8E%E5%B1%B1%E7%89%88%EF%BC%89.pdf)  
 
 [cracking the coding interview](https://book.douban.com/subject/26570695/)
 
