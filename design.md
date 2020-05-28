@@ -1,3 +1,6 @@
+# 工作量评估
+
+
 # 系统设计
 
 ![](https://pubs.opengroup.org/architecture/archimate-doc/ts_archimate/ts_archimate_files/image008.png)
@@ -15,6 +18,8 @@
 [康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
 
 [Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
+
+[What Every Engineer Should Know About Software Engineering, 07](https://book.douban.com/subject/2607747/)
 
 [Object-Oriented Analysis and Design with Applications, booch07](https://book.douban.com/subject/2266843/)  
 
