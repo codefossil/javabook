@@ -1,4 +1,7 @@
-# 软件构建
+http://faculty.cse.tamu.edu/ritchey/courses/csce431/winter20/  
+https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/
+
+# 编程实践，接口，模块化，契约化
 api设计
 契约式设计、防御式编程
 
@@ -50,12 +53,11 @@ CS的核心问题就是问题分解。
 
 [pragmatic programmer, hunt99](https://book.douban.com/subject/1417047/)
 
-https://ohshitgit.com/  
 https://ngte-se.gitbook.io/  
 https://github.com/xingshaocheng/architect-awesome 
 https://java-design-patterns.com/principles/  
 
-# 软件验证
+# 软件验证，确认和测试
 
 [Requirements and Testing: Seven Missing-Link Myths, graham02](http://www.eng.auburn.edu/~kchang/comp6710/readings/RequirementsandTesting_SevenMissing_LinkMyths_Graham.IEEE_Software.2002Sept.pdf)
 
@@ -102,6 +104,8 @@ http://badsoftware.com/chapter1.htm
 http://wiki.c2.com/?JavaIdioms  
 https://dhh.dk/2014/tdd-is-dead-long-live-testing.html  
 
+# 管理代码库
+https://ohshitgit.com/  
 
 # 软件发布和运维
 
