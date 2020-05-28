@@ -15,16 +15,19 @@ api设计
 通过使用DI、接口和抽象等工具，实现低耦合+高内聚。  
 
 [Agile Software Development, martin03](https://book.douban.com/subject/1140457/)  
+完整展示OOAD和OOP，从分析到开发过程。    
 需求促使开发人员执行敏捷实践从而发现问题，通过设计原则诊断问题后，最后选择合适的设计模式解决问题。  
 编写测试用例首次上升到开发人员的一等公民。  
 通过分析用户故事，形成用例分析，产出软件的静态结构和动态结构。 
+所有影响到OOD的技术细节都需要延迟决定。  
+演进式设计模式，每个模式都有维护成本，可能会把事情弄复杂。  
+代码抽象度量令人印象深刻。   
 
 [A Philosophy of Software Design, Ousterhout2018](https://book.douban.com/subject/30218046/)  
 CS的核心问题就是问题分解。  
 好的软件就是要最小的依赖、最少的认识负担。  
 策略编程，投入10%的时间来思考好的设计。（敏捷弄不好就是直觉编程）  
 接口要薄，要通用，实现要深。  
-
 
 [Code complete, McConnell04](https://book.douban.com/subject/1477390/)  
 
@@ -36,7 +39,6 @@ CS的核心问题就是问题分解。
 [design pattern](https://sourcemaking.com/design_patterns)  
 
 [Refactoring, fowler2000](https://book.douban.com/subject/4262627/)  
-
 
 [Working Effectively with Legacy Code, feather05](http://www.amazon.com/exec/obidos/ISBN=0131177052/theinternationscA/)
 
