@@ -22,6 +22,8 @@
 
 [DDD](https://book.douban.com/subject/1418618/)  
 
+[Microservices Patterns: With Examples in Java, 2019](https://book.douban.com/subject/33425123/)  
+
 [Systems Analysis and Design: An Object-Oriented Approach with UML](https://www.amazon.com/Systems-Analysis-Design-Object-Oriented-Approach/dp/1118804678/ref=zg_bs_602672_46?_encoding=UTF8&psc=1&refRID=PKYB5W8Q8TXME0HQZ945)
 
 
