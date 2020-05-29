@@ -1,3 +1,5 @@
+[Unsolved problems in computer science](https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_computer_science)
+
 - 学术
 [TOC](https://toc.csail.mit.edu/)
 
@@ -158,7 +160,6 @@ https://web.stanford.edu/class/cs97si/
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-851-advanced-data-structures-spring-2012/calendar-and-notes/
 
 http://marvin.cs.uidaho.edu/Teaching/CS112/index.html
-https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_computer_science
 
 https://web.stanford.edu/class/archive/cs/cs339/cs339.2002/
 

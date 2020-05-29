@@ -1,27 +1,30 @@
 http://faculty.cse.tamu.edu/ritchey/courses/csce431/winter20/  
 https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/
 
+[programming principles](https://github.com/webpro/programming-principles)  
+[Code as Design: Three Essays](https://www.developerdotstar.com/mag/articles/reeves_design_main.html)  
+
 # 编程实践，接口，模块化，契约化
 api设计
 契约式设计、防御式编程
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE72667b09c11acd0f0b7b9c81b84cd30f/114)
 
+[Refactoring, fowler2000](https://book.douban.com/subject/4262627/)  
+
+[Agile Software Development, martin03](https://book.douban.com/subject/1140457/)  
+定义了软件开发工程师的行规。  
+完整展示OOAD，通过分析用户故事，到用例分析，产出软件的静态结构和动态结构。  
+需求促使开发人员执行敏捷实践从而发现问题，通过设计原则诊断问题后，最后选择合适的设计模式解决问题。  
+编写测试用例首次上升到开发人员的一等公民。   
+演进式设计模式，每个模式都有维护成本，可能会把事情弄复杂。  
+代码抽象度量令人印象深刻。  
 
 [Clean Code, martin09](https://book.douban.com/subject/5442024/)  
 写代码就是写诗。好的命名就是用来代替文档的。    
 全书精华在第12章。    
 我们需要一个迭代过程，测试用例写得越多，设计需要越简单。  
-通过使用DI、接口和抽象等工具，实现低耦合+高内聚。  
-
-[Agile Software Development, martin03](https://book.douban.com/subject/1140457/)  
-完整展示OOAD和OOP，从分析到开发过程。    
-需求促使开发人员执行敏捷实践从而发现问题，通过设计原则诊断问题后，最后选择合适的设计模式解决问题。  
-编写测试用例首次上升到开发人员的一等公民。  
-通过分析用户故事，形成用例分析，产出软件的静态结构和动态结构。 
-所有影响到OOD的技术细节都需要延迟决定。  
-演进式设计模式，每个模式都有维护成本，可能会把事情弄复杂。  
-代码抽象度量令人印象深刻。   
+通过使用DI、接口和抽象等工具，实现低耦合+高内聚。   
 
 [A Philosophy of Software Design, Ousterhout2018](https://book.douban.com/subject/30218046/)  
 CS的核心问题就是问题分解。  
@@ -37,8 +40,6 @@ CS的核心问题就是问题分解。
 编程还是手艺吗？  
 
 [design pattern](https://sourcemaking.com/design_patterns)  
-
-[Refactoring, fowler2000](https://book.douban.com/subject/4262627/)  
 
 [Working Effectively with Legacy Code, feather05](http://www.amazon.com/exec/obidos/ISBN=0131177052/theinternationscA/)
 

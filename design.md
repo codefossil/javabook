@@ -1,7 +1,15 @@
 # 工作量评估
 
+# 系统分析
 
-# 系统设计
+[Object-Oriented Analysis and Design with Applications, booch07](https://book.douban.com/subject/2266843/)  
+
+[Systems Analysis and Design: An Object-Oriented Approach with UML](https://www.amazon.com/Systems-Analysis-Design-Object-Oriented-Approach/dp/1118804678/ref=zg_bs_602672_46?_encoding=UTF8&psc=1&refRID=PKYB5W8Q8TXME0HQZ945)
+
+https://www.umsl.edu/~sauterv/analysis/488_f01_papers/quillin.htm#Top  
+http://www.umsl.edu/~sauterv/analysis/analysis_links.html  
+
+# 架构设计
 
 ![](https://pubs.opengroup.org/architecture/archimate-doc/ts_archimate/ts_archimate_files/image008.png)
 
@@ -21,19 +29,15 @@
 
 [What Every Engineer Should Know About Software Engineering, 07](https://book.douban.com/subject/2607747/)
 
-[Object-Oriented Analysis and Design with Applications, booch07](https://book.douban.com/subject/2266843/)  
-
 [how to design programs, felleisen2018](https://www.amazon.com/How-Design-Programs-Introduction-Programming/dp/0262534800)
 
 [DDD](https://book.douban.com/subject/1418618/)  
 
 [Microservices Patterns: With Examples in Java, 2019](https://book.douban.com/subject/33425123/)  
 
-[Systems Analysis and Design: An Object-Oriented Approach with UML](https://www.amazon.com/Systems-Analysis-Design-Object-Oriented-Approach/dp/1118804678/ref=zg_bs_602672_46?_encoding=UTF8&psc=1&refRID=PKYB5W8Q8TXME0HQZ945)
-
-
 https://docs.microsoft.com/en-us/azure/architecture/microservices/migrate-monolith  
 http://www.mit.edu/~richh/writings/  
+https://blog.pragmaticengineer.com/software-architecture-is-overrated/  
 
 [架构漫谈, 2016](https://www.infoq.cn/article/an-informal-discussion-on-architecture-part01)  
 
@@ -92,6 +96,8 @@ If it ain't broke, don't fix it.
 [方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)  
 [PEP 20](https://www.python.org/dev/peps/pep-0020/)  
 [system-desgin](https://github.com/donnemartin/system-design-primer)  
+
+https://martinfowler.com/architecture/
 
 
 # 系统科学
