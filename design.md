@@ -2,9 +2,12 @@
 
 # 系统分析
 
+[Systems Analysis and Design: An Object-Oriented Approach with UML](https://www.amazon.com/Systems-Analysis-Design-Object-Oriented-Approach/dp/1118804678/ref=zg_bs_602672_46?_encoding=UTF8&psc=1&refRID=PKYB5W8Q8TXME0HQZ945)
+
+[Applying UML and Patterns, larman04](https://book.douban.com/subject/1440149/)
+
 [Object-Oriented Analysis and Design with Applications, booch07](https://book.douban.com/subject/2266843/)  
 
-[Systems Analysis and Design: An Object-Oriented Approach with UML](https://www.amazon.com/Systems-Analysis-Design-Object-Oriented-Approach/dp/1118804678/ref=zg_bs_602672_46?_encoding=UTF8&psc=1&refRID=PKYB5W8Q8TXME0HQZ945)
 
 https://www.umsl.edu/~sauterv/analysis/488_f01_papers/quillin.htm#Top  
 http://www.umsl.edu/~sauterv/analysis/analysis_links.html  
@@ -29,11 +32,15 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 
 [What Every Engineer Should Know About Software Engineering, 07](https://book.douban.com/subject/2607747/)
 
-[how to design programs, felleisen2018](https://www.amazon.com/How-Design-Programs-Introduction-Programming/dp/0262534800)
+[Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)
+
+[Software Architecture in Practice, bass2013](https://www.amazon.com/Software-Architecture-Practice-3rd-Engineering/dp/0321815734)  
 
 [DDD](https://book.douban.com/subject/1418618/)  
 
 [Microservices Patterns: With Examples in Java, 2019](https://book.douban.com/subject/33425123/)  
+
+[Patterns of Enterprise Application Architecture, fowler02](https://book.douban.com/subject/1229954/)
 
 https://docs.microsoft.com/en-us/azure/architecture/microservices/migrate-monolith  
 http://www.mit.edu/~richh/writings/  

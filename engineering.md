@@ -18,6 +18,8 @@ https://www.cs.uic.edu/~i442/
 
 [Software Complexity Is Killing Us](https://www.simplethread.com/software-complexity-killing-us/)
 
+[Apprenticeship Patterns](https://www.amazon.com/Apprenticeship-Patterns-Guidance-Aspiring-Craftsman-ebook/dp/B002RMSZ7E)
+
 [The Mythical Man Month, brooks03](https://book.douban.com/subject/1105381/)
 
 [Engeering: An endless frontier, Auyang2004](https://book.douban.com/subject/3287111/)

@@ -117,7 +117,9 @@ http://www.cs.cmu.edu/~418
 http://cs149.stanford.edu/winter19/
 
 # 分布式系统
-[分布式](ds/ds.md)
+[分布式](ds/ds.md)  
+
+[Distributed Computing, Kshemkalyani08](https://book.douban.com/subject/4182222/)
 
 https://cis.temple.edu/~jiewu/teaching/Spring2018/distributed-computing-2018.pdf
 https://books.google.ae/books?id=fEq2_vq-RGwC&pg=PP21&source=gbs_selected_pages&cad=2#v=onepage&q&f=false

@@ -39,7 +39,8 @@ CS的核心问题就是问题分解。
 [Concepts, Techniques, and Models of Computer Programming, roy04](https://book.douban.com/subject/1782316/)  
 编程还是手艺吗？  
 
-[design pattern](https://sourcemaking.com/design_patterns)  
+[how to design programs, felleisen2018](https://www.amazon.com/How-Design-Programs-Introduction-Programming/dp/0262534800)
+ 
 
 [Working Effectively with Legacy Code, feather05](http://www.amazon.com/exec/obidos/ISBN=0131177052/theinternationscA/)
 
