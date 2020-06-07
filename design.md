@@ -26,6 +26,8 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 
 > 架构=重要的系统设计=结构+愿景=构建成本最小化+效率最大化
 
+https://docs.oracle.com/cd/E19263-01/817-5764/architecture.html
+
 [康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
 
 [Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  

@@ -13,6 +13,8 @@ http://www.cs.columbia.edu/~tal/3261/sp18/index.html#links
 
 [ACM CS curricula](https://www.acm.org/education/curricula-recommendations)
 
+https://introcs.cs.princeton.edu/java/31datatype/
+
 https://introtcs.org/public/index.html  
 http://stellar.mit.edu/S/course/6/sp16/6.045/materials.html  
 http://people.cs.vt.edu/~kafura/CS6604/  
