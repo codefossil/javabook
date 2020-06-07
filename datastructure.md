@@ -70,6 +70,8 @@ https://courses.engr.illinois.edu/cs498374/fa2014/lectures.html
 
 [Sedgewick](https://www.cs.princeton.edu/~rs/)
 
+http://infolab.stanford.edu/~ullman/focs.html
+
 
 ## sorting 
 [quicksort](https://www.cs.ox.ac.uk/files/6226/H2006%20-%20Historic%20Quicksort.pdf)  
