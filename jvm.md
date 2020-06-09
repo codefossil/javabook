@@ -4,17 +4,29 @@ https://en.wikipedia.org/wiki/Java_version_history
 [The Java® Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/index.html)  
 [The Java® Virtual Machine Specification](https://docs.oracle.com/javase/specs/jvms/se8/html/index.html)  
 
+[Programming Languages Research at UMD](https://plum-umd.github.io/projects/)  
+
 # 类型系统
 [JLS - Two type system](https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html)  
 https://softwareengineering.stackexchange.com/questions/203970/when-to-use-primitive-vs-class-in-java  
 
 [Effective Java](https://book.douban.com/subject/27047716/)  
 
-# 内存分布
+# 内存模型和多核处理器
+java是第一个在编程语言的层面规范内存访问模型。  
+
+[JSR 133 (Java Memory Model) FAQ](http://www.cs.umd.edu/users/pugh/java/memoryModel/jsr-133-faq.html)  
+什么是JAVA内存模型，为什么需要这个，C/C++为什么没有  
+
+[The JSR-133 Cookbook for Compiler Writers](http://gee.cs.oswego.edu/dl/jmm/cookbook.html)  
+
+[discussions about java memory model, UMD](http://www.cs.umd.edu/users/pugh/java/memoryModel/)  
+
+[chapter 17 Memory Model, jls](https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.4)   
+
+# GC
 oopDesc -> object header\(mark + klass\)    
 mark=hashcode/sync/gc
-
-# gc
 serial, parallel, CMS
 
 [The Garbage Collection Handbook, jones2011](https://book.douban.com/subject/6809987/)
