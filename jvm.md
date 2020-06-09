@@ -1,4 +1,6 @@
 https://en.wikipedia.org/wiki/Java_version_history
+[The Java® Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/index.html)
+[The Java® Virtual Machine Specification](https://docs.oracle.com/javase/specs/jvms/se8/html/index.html)
 
 # 类型系统
 [JLS - Two type system](https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html)  
