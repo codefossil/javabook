@@ -1,8 +1,8 @@
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE54951e274d7a41a8bf59a5cad1ada97d/121)
 
-https://en.wikipedia.org/wiki/Java_version_history
-[The Java® Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/index.html)
-[The Java® Virtual Machine Specification](https://docs.oracle.com/javase/specs/jvms/se8/html/index.html)
+https://en.wikipedia.org/wiki/Java_version_history  
+[The Java® Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/index.html)  
+[The Java® Virtual Machine Specification](https://docs.oracle.com/javase/specs/jvms/se8/html/index.html)  
 
 # 类型系统
 [JLS - Two type system](https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html)  
