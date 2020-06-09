@@ -1,3 +1,5 @@
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE54951e274d7a41a8bf59a5cad1ada97d/121)
+
 https://en.wikipedia.org/wiki/Java_version_history
 [The Java® Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/index.html)
 [The Java® Virtual Machine Specification](https://docs.oracle.com/javase/specs/jvms/se8/html/index.html)
@@ -11,6 +13,11 @@ https://softwareengineering.stackexchange.com/questions/203970/when-to-use-primi
 # 内存分布
 oopDesc -> object header\(mark + klass\)    
 mark=hashcode/sync/gc
+
+# gc
+serial, parallel, CMS
+
+[The Garbage Collection Handbook, jones2011](https://book.douban.com/subject/6809987/)
 
 [深入理解Java虚拟机, 2013](https://book.douban.com/subject/24722612/)  
 http://openjdk.java.net/groups/hotspot/docs/HotSpotGlossary.html  
