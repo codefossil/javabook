@@ -6,6 +6,10 @@ https://en.wikipedia.org/wiki/Java_version_history
 
 [Programming Languages Research at UMD](https://plum-umd.github.io/projects/)  
 
+[Software Analysis and Testing](https://www.cis.upenn.edu/~mhnaik/edu/cis700/index.html#reading)  
+
+https://www.cc.gatech.edu/~harrold/6340/cs6340_fall2009/
+
 # 类型系统
 [JLS - Two type system](https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html)  
 https://softwareengineering.stackexchange.com/questions/203970/when-to-use-primitive-vs-class-in-java  
@@ -24,7 +28,7 @@ java是第一个在编程语言的层面规范内存访问模型。
 
 [chapter 17 Memory Model, jls](https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.4)   
 
-# GC
+# 垃圾收集
 oopDesc -> object header\(mark + klass\)    
 mark=hashcode/sync/gc
 serial, parallel, CMS
@@ -36,6 +40,12 @@ http://openjdk.java.net/groups/hotspot/docs/HotSpotGlossary.html
 https://www.javamex.com/tutorials/memory/object\_memory\_usage.shtml  
 https://gist.github.com/arturmkrtchyan/43d6135e8a15798cc46c  
 http://arturmkrtchyan.com/  
+
+
+# 锁优化
+[Lock optimizations on the HotSpot VM, pool, 2014](https://www.semanticscholar.org/paper/Lock-optimizations-on-the-HotSpot-VM-Pool/edf954412a9b1ce955bea148199f325759779540)
+
+[Evaluating and improving biased locking in the HotSpot virtual machine, LARSSON2014, MS Thesis](http://www.diva-portal.se/smash/get/diva2:754541/FULLTEXT01.pdf)  
 
 # clone对象拷贝
 
