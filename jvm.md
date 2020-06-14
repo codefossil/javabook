@@ -29,6 +29,27 @@ java是第一个在编程语言的层面规范内存访问模型。
 [chapter 17 Memory Model, jls](https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.4)   
 
 # 垃圾收集
+
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE98bf46481bc887a843546cbb68eb9c3d/123)
+
+```txt
+|--------------------------------------------------------------------------------------------------------------|--------------------|
+|                                            Object Header (96 bits)                                           |        State       |
+|--------------------------------------------------------------------------------|-----------------------------|--------------------|
+|                                  Mark Word (64 bits)                           |    Klass Word (32 bits)     |                    |
+|--------------------------------------------------------------------------------|-----------------------------|--------------------|
+| unused:25 | identity_hashcode:31 | cms_free:1 | age:4 | biased_lock:1 | lock:2 |    OOP to metadata object   |       Normal       |
+|--------------------------------------------------------------------------------|-----------------------------|--------------------|
+| thread:54 |       epoch:2        | cms_free:1 | age:4 | biased_lock:1 | lock:2 |    OOP to metadata object   |       Biased       |
+|--------------------------------------------------------------------------------|-----------------------------|--------------------|
+|                         ptr_to_lock_record                            | lock:2 |    OOP to metadata object   | Lightweight Locked |
+|--------------------------------------------------------------------------------|-----------------------------|--------------------|
+|                     ptr_to_heavyweight_monitor                        | lock:2 |    OOP to metadata object   | Heavyweight Locked |
+|--------------------------------------------------------------------------------|-----------------------------|--------------------|
+|                                                                       | lock:2 |    OOP to metadata object   |    Marked for GC   |
+|--------------------------------------------------------------------------------|-----------------------------|--------------------|
+```
+
 oopDesc -> object header\(mark + klass\)    
 mark=hashcode/sync/gc
 serial, parallel, CMS
@@ -36,6 +57,18 @@ serial, parallel, CMS
 [The Garbage Collection Handbook, jones2011](https://book.douban.com/subject/6809987/)
 
 [深入理解Java虚拟机, 2013](https://book.douban.com/subject/24722612/)  
+
+[HotSpot JVM Performance Tuning Guidelines](https://ionutbalosin.com/2020/01/hotspot-jvm-performance-tuning-guidelines/#jit_tiered_mode)
+
+[The Java HotSpot Performance Engine Architecture](https://www.oracle.com/technetwork/java/whitepaper-135217.html)
+
+safepoint  
+http://xiao-feng.blogspot.com/2008/01/gc-safe-point-and-safe-region.html  
+http://blog.ragozin.info/2012/10/safepoints-in-hotspot-jvm.html  
+https://shipilev.net/jvm/anatomy-quarks/22-safepoint-polls/  
+http://psy-lob-saw.blogspot.com/2015/12/safepoints.html  
+
+
 http://openjdk.java.net/groups/hotspot/docs/HotSpotGlossary.html  
 https://www.javamex.com/tutorials/memory/object\_memory\_usage.shtml  
 https://gist.github.com/arturmkrtchyan/43d6135e8a15798cc46c  
