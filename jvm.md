@@ -50,10 +50,6 @@ java是第一个在编程语言的层面规范内存访问模型。
 |--------------------|--------------------------------------------------------------------------------|-----------------------------|
 ```
 
-oopDesc -> object header\(mark + klass\)    
-mark=hashcode/sync/gc
-serial, parallel, CMS
-
 [The Garbage Collection Handbook, jones2011](https://book.douban.com/subject/6809987/)
 
 [深入理解Java虚拟机, 2013](https://book.douban.com/subject/24722612/)  
