@@ -12,7 +12,7 @@ https://www.cs.uic.edu/~i442/
 
 # 基本问题
 
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE7f9ec4f4ad19d7054a7fb1bdf5d9b2a8/117)
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE8deb61c8fa7a77a9c7c3d1e5075439c5/126)
 
 > One of the biggest problems with software is that **it’s complex and abstract**. The result being that it’s hard to visualise the runtime characteristics of a piece of software from diagrams or even the code itself.
 
@@ -47,17 +47,31 @@ https://en.wikipedia.org/wiki/Software_development
 
 # 项目管理
 
-- 项目规划和监控
-- 团队工作调度
-- 成本和工作量估算
-- 风险和不确定性容忍
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEbb4b4bc4a3e57319b1b11da77e2bd855/129)
 
 [PDCA](https://asqaustin.org/wp-content/uploads/2015/12/History_of_the_PDSA_Cycle_CN_ASQ_Talk-_2_10_2016_Handout.pdf)  
 
+Toyota Production System  
+Total quality management  
+Six Sigma  
+Lean manufacturing  
+  
+
+
+[A Guide to the Project Management Body of Knowledge](https://book.douban.com/subject/24697645/)  
+[汪博士解读PMP考试](https://book.douban.com/subject/24713754/)  
+
+
+[Code of Ethics & Professional Conduct](https://www.pmi.org/about/ethics/code)  
+
 [项目管理方法论，2015](https://book.douban.com/subject/26584696/)  
+
 [Peopleware](https://book.douban.com/subject/25956450/)  
+
 [凤凰项目，2015](https://book.douban.com/subject/26644070/)  
-[程序员的三门课](https://www.zhihu.com/pub/reader/119647389/chapter/1182332907921813504)
+
+[程序员的三门课](https://www.zhihu.com/pub/reader/119647389/chapter/1182332907921813504)  
+
 
 Evolutionary Project Management
 
