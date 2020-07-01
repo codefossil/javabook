@@ -4,6 +4,8 @@ https://en.wikipedia.org/wiki/Java_version_history
 [The Java® Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/index.html)  
 [The Java® Virtual Machine Specification](https://docs.oracle.com/javase/specs/jvms/se8/html/index.html)  
 
+[Java Platform, Standard Edition Tools Reference](https://docs.oracle.com/javase/9/tools/tools-and-command-reference.htm)
+
 [Programming Languages Research at UMD](https://plum-umd.github.io/projects/)  
 
 [Software Analysis and Testing](https://www.cis.upenn.edu/~mhnaik/edu/cis700/index.html#reading)  

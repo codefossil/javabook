@@ -16,6 +16,8 @@
 
 # 时钟/时序
 
+https://www.cs.rutgers.edu/~pxk/417/notes/content/clocks.pdf
+
 [Time, Clocks, and the Ordering of Events in a Distributed System, 1978](http://research.microsoft.com/en-us/um/people/lamport/pubs/time-clocks.pdf)  
 [JVM clock, 2006](https://web.archive.org/web/20160308031939/https://blogs.oracle.com/dholmes/entry/inside_the_hotspot_vm_clocks)  
 [NTP survey, 1999](https://www.eecis.udel.edu/~mills/database/reports/ntp-survey99-minar.pdf)  

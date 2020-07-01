@@ -49,7 +49,7 @@ https://en.wikipedia.org/wiki/Software_development
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE6287ea342110009b3ee392f41eb98c61/132)
 
-[PDCA](https://asqaustin.org/wp-content/uploads/2015/12/History_of_the_PDSA_Cycle_CN_ASQ_Talk-_2_10_2016_Handout.pdf)  
+[PDCA, deming86](https://asqaustin.org/wp-content/uploads/2015/12/History_of_the_PDSA_Cycle_CN_ASQ_Talk-_2_10_2016_Handout.pdf)  
 
 Toyota Production System  
 Total quality management  

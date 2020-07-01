@@ -109,6 +109,8 @@ https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt
 
 ![PPL](https://ppl.stanford.edu/)
 
+https://www.cs.uky.edu/~jzhang/CS621/cs621.html
+
 **并行限制**  
 [Amdahl's law in the Multicore Era, 2008](http://www.eng.auburn.edu/~agrawvd/COURSE/E6270_Spr09/READ/Amdahls%20Law%20in%20Multicore%20Era.pdf)  
 [Gustafson's law, 1988](http://www.johngustafson.net/pubs/pub13/amdahl.htm) 

@@ -8,6 +8,8 @@
 
 [Object-Oriented Analysis and Design with Applications, booch07](https://book.douban.com/subject/2266843/)  
 
+[Object-Oriented Software Engineering - An Agile Unified Methodology](http://www.doc88.com/p-24061870292509.html)
+
 
 https://www.umsl.edu/~sauterv/analysis/488_f01_papers/quillin.htm#Top  
 http://www.umsl.edu/~sauterv/analysis/analysis_links.html  
