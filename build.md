@@ -1,8 +1,12 @@
+
 http://faculty.cse.tamu.edu/ritchey/courses/csce431/winter20/  
 https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/
 
+[cmu17-214](https://www.cs.cmu.edu/~charlie/courses/17-214/2020-spring/)
+
 [programming principles](https://github.com/webpro/programming-principles)  
 [Code as Design: Three Essays](https://www.developerdotstar.com/mag/articles/reeves_design_main.html)  
+
 
 # 编程实践，接口，模块化，契约化
 api设计

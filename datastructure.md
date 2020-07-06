@@ -4,7 +4,7 @@
 [TOC](https://toc.csail.mit.edu/)
 
 - 课程  
-[purdue ECE 664-Computability, Complexity, and Languages](https://engineering.purdue.edu/kak/ComputabilityComplexityLanguages/)
+[purdue ECE 664-Computability, Complexity, and Languages](https://engineering.purdue.edu/kak/ComputabilityComplexityLanguages/)  
 [MIT 6.045-Automata, Computability, and Complexity Theory](http://people.csail.mit.edu/rrw/6.045-2019/)  
 [MIT 6.042 math-cs](https://courses.csail.mit.edu/6.042)  
 https://www.cs.cmu.edu/~15110/schedule.html  
@@ -72,6 +72,16 @@ https://courses.engr.illinois.edu/cs498374/fa2014/lectures.html
 
 http://infolab.stanford.edu/~ullman/focs.html
 
+http://jeffe.cs.illinois.edu/teaching/algorithms/
+
+## 可视化
+
+[BIG O cheatsheet](https://www.bigocheatsheet.com/)
+
+https://visualgo.net/
+
+https://github.com/algorithm-visualizer/algorithm-visualizer
+
 
 ## sorting 
 [quicksort](https://www.cs.ox.ac.uk/files/6226/H2006%20-%20Historic%20Quicksort.pdf)  
@@ -97,7 +107,13 @@ https://betterexplained.com/articles/sorting-algorithms/
 
 ## graph
 
-## hash
+## hash table
+![](https://img-blog.csdnimg.cn/20200705155522338.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMxODIxNzMz,size_16,color_FFFFFF,t_70)
+
+
+https://preshing.com/20110504/hash-collision-probabilities/
+
+https://www.strchr.com/hash_functions
 
 ### 一致性hash
 [Consistent hashing and random trees, karger97](https://www.aminer.cn/pub/53e99a4eb7602d97022b385c/consistent-hashing-and-random-trees-distributed-caching-protocols-for-relieving-hot-spots)  

@@ -18,6 +18,8 @@ https://www.cs.uic.edu/~i442/
 
 [Software Complexity Is Killing Us](https://www.simplethread.com/software-complexity-killing-us/)
 
+[Software Engineering for the 21st Century, mit04](http://www.cs.cmu.edu/~Compose/SEprinciples-pub-rev2.pdf)
+
 [Apprenticeship Patterns](https://www.amazon.com/Apprenticeship-Patterns-Guidance-Aspiring-Craftsman-ebook/dp/B002RMSZ7E)
 
 [The Mythical Man Month, brooks03](https://book.douban.com/subject/1105381/)
@@ -78,6 +80,8 @@ Evolutionary Project Management
 97 Things Every Project Manager Should Know
 
 # 软件开发流程
+
+
 [Process Models, 2001](https://www.ics.uci.edu/~wscacchi/Papers/SE-Encyc/Process-Models-SE-Encyc.pdf)  
 [PSP, 1996](http://www.star.cc.gatech.edu/documents/SpencerRugabear/psp.pdf)  
 [CMM, 1991](http://sunnyday.mit.edu/16.355/cmm.pdf)  

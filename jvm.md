@@ -30,27 +30,13 @@ java是第一个在编程语言的层面规范内存访问模型。
 
 [chapter 17 Memory Model, jls](https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.4)   
 
+# 对象
+
+![](https://img-blog.csdnimg.cn/20190115141050902.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NDRE5fQ1A=,size_16,color_FFFFFF,t_70)
+
 # 垃圾收集
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE98bf46481bc887a843546cbb68eb9c3d/123)
-
-```txt
-|--------------------|--------------------------------------------------------------------------------------------------------------|
-|        State       |                                            Object Header (96 bits)                                           |
-|--------------------|--------------------------------------------------------------------------------|-----------------------------|
-|                    |                                  Mark Word (64 bits)                           |    Klass Word (32 bits)     |
-|--------------------|--------------------------------------------------------------------------------|-----------------------------|
-|       Normal       | unused:25 | identity_hashcode:31 | cms_free:1 | age:4 | biased_lock:1 | lock:2 |    OOP to metadata object   |
-|--------------------|--------------------------------------------------------------------------------|-----------------------------|
-|       Biased       | thread:54 |       epoch:2        | cms_free:1 | age:4 | biased_lock:1 | lock:2 |    OOP to metadata object   |
-|--------------------|--------------------------------------------------------------------------------|-----------------------------|
-| Lightweight Locked |                         ptr_to_lock_record                            | lock:2 |    OOP to metadata object   |
-|--------------------|--------------------------------------------------------------------------------|-----------------------------|
-| Heavyweight Locked |                     ptr_to_heavyweight_monitor                        | lock:2 |    OOP to metadata object   |
-|--------------------|--------------------------------------------------------------------------------|-----------------------------|
-|    Marked for GC   |                                                                       | lock:2 |    OOP to metadata object   |
-|--------------------|--------------------------------------------------------------------------------|-----------------------------|
-```
 
 [The Garbage Collection Handbook, jones2011](https://book.douban.com/subject/6809987/)
 
@@ -74,9 +60,58 @@ http://arturmkrtchyan.com/
 
 
 # 锁优化
+
+```txt
+|--------------------|--------------------------------------------------------------------------------------------------------------|
+|        State       |                                            Object Header (96 bits)                                           |
+|--------------------|--------------------------------------------------------------------------------|-----------------------------|
+|                    |                                  Mark Word (64 bits)                           |    Klass Word (32 bits)     |
+|--------------------|--------------------------------------------------------------------------------|-----------------------------|
+|       Normal       | unused:25 | identity_hashcode:31 | cms_free:1 | age:4 | biased_lock:1 | lock:2 |    OOP to metadata object   |
+|--------------------|--------------------------------------------------------------------------------|-----------------------------|
+|       Biased       | thread:54 |       epoch:2        | cms_free:1 | age:4 | biased_lock:1 | lock:2 |    OOP to metadata object   |
+|--------------------|--------------------------------------------------------------------------------|-----------------------------|
+| Lightweight Locked |                         ptr_to_lock_record                            | lock:2 |    OOP to metadata object   |
+|--------------------|--------------------------------------------------------------------------------|-----------------------------|
+| Heavyweight Locked |                     ptr_to_heavyweight_monitor                        | lock:2 |    OOP to metadata object   |
+|--------------------|--------------------------------------------------------------------------------|-----------------------------|
+|    Marked for GC   |                                                                       | lock:2 |    OOP to metadata object   |
+|--------------------|--------------------------------------------------------------------------------|-----------------------------|
+```
+
 [Lock optimizations on the HotSpot VM, pool, 2014](https://www.semanticscholar.org/paper/Lock-optimizations-on-the-HotSpot-VM-Pool/edf954412a9b1ce955bea148199f325759779540)
 
 [Evaluating and improving biased locking in the HotSpot virtual machine, LARSSON2014, MS Thesis](http://www.diva-portal.se/smash/get/diva2:754541/FULLTEXT01.pdf)  
+
+
+## synchronized
+
+轻量级/thin-lock
+>线程通过spin检查（减少fat-lock用户和内核态的切换）
+
+``` cpp
+>share/vm/runtime/synchronizer.cpp
+00 has_locker()
+```
+
+重量级/fat-lock
+>线程通过park/pending操作，让出CPU等待唤醒
+
+```cpp
+//os/windows/vm/os_windows.cpp
+00 inflating
+10 has_monitor()
+objectMonitor = mark->monitor()
+park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
+```
+
+重入锁/偏向锁
+> 线程通过线程ID检查（减少thin-lock的spin）  
+
+当竞争时，需要撤销偏向锁
+
+# 运算符优先级
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
 
 # clone对象拷贝
 
@@ -258,29 +293,5 @@ https://briangordon.github.io/
 http://gee.cs.oswego.edu/dl/  
 http://g.oswego.edu/dl/jmm/cookbook.html  
 
-# synchronized
 
-轻量级/thin-lock
->线程通过spin检查（减少fat-lock用户和内核态的切换）
-
-``` cpp
->share/vm/runtime/synchronizer.cpp
-00 has_locker()
-```
-
-重量级/fat-lock
->线程通过park/pending操作，让出CPU等待唤醒
-
-```cpp
-//os/windows/vm/os_windows.cpp
-00 inflating
-10 has_monitor()
-objectMonitor = mark->monitor()
-park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
-```
-
-重入锁/偏向锁
-> 线程通过线程ID检查（减少thin-lock的spin）  
-
-当竞争时，需要撤销偏向锁
 

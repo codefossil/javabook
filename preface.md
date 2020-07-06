@@ -1,5 +1,8 @@
 本书献给正在看书的你
 
+# 代码复杂度
+![](https://www.synopsys.com/blogs/software-security/wp-content/uploads/LinesOfCodeInMillions.png)
+
 # 时间复杂度
 |复杂度|计算次数(1k)|迭代次数(1M)|
 | ---- | ---- | ---- |

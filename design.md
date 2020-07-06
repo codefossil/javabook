@@ -1,3 +1,7 @@
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE607fb9a8895d4bc065e8b8f461b121f3/134)
+
+# 软件质量度量
+
 # 工作量评估
 
 # 系统分析

@@ -47,6 +47,9 @@ https://github.com/toutiaoio/awesome-architecture
 [中国数据库技术大会](http://dtcc.it168.com/)  
 
 # 阿里技术
+
+[阿里中间件团队](http://jm.taobao.org/)
+
 阿里技术参考图册  
 不止代码  
 阿里巴巴java开发手册  
