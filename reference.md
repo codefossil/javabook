@@ -10,3 +10,6 @@
 * [中科院软件研究所](http://www.is.cas.cn/)
 * [清华大学信息科学技术学院](http://www.sist.tsinghua.edu.cn/)
 * [科学技术司](http://www.moe.gov.cn/s78/A16/)
+
+
+[Most influential books for programmers](https://github.com/cs-books/influential-cs-books)

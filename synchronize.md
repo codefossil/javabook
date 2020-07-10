@@ -4,7 +4,11 @@
 
 # 基本问题
 [Concurrency-Early](http://cncc.bingj.com/cache.aspx?q=turing-lecture-the-computer-science-of-concurrency&d=4816567142126678&mkt=en-US&setlang=en-US&w=zm1S2Bj9n1OOUjUWX536fFC20hviKyz_)  
+
 [Turing2013-Lamport](https://amturing.acm.org/award_winners/lamport_1205376.cfm)
+
+[synchronization primitives survey, 2008](http://www.enseignement.polytechnique.fr/informatique/INF431/X09-2010-2011/AmphiTHC/SynchronizationPrimitives.pdf)  
+
 
 # 排他互斥
 [Solution of a Problem in Concurrent Programming Control, 1965](http://www.faculty.idc.ac.il/gadi/MyPapers/2008T-mutex.pdf)  
@@ -26,7 +30,6 @@
 [Barrier,1988](https://link.springer.com/article/10.1007/BF01379320)  
 
 [The little book of semaphores, 2005](http://alumni.cs.ucr.edu/~kishore/papers/semaphores.pdf)  
-[synchronization primitives survey, 2008](http://www.enseignement.polytechnique.fr/informatique/INF431/X09-2010-2011/AmphiTHC/SynchronizationPrimitives.pdf)  
 
 # 顺序一致性
 
@@ -272,3 +275,6 @@ https://www.quora.com/Why-does-the-Java-API-not-give-control-over-thread-schedul
 http://www.oracle.com/technetwork/java/tuning-139912.html
 http://www.oracle.com/technetwork/java/5-136747.html
 http://www.oracle.com/technetwork/java/6-performance-137236.html
+
+
+http://courses.csail.mit.edu/6.852/08/lecture.html

@@ -2,10 +2,21 @@
 http://faculty.cse.tamu.edu/ritchey/courses/csce431/winter20/  
 https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/
 
-[cmu17-214](https://www.cs.cmu.edu/~charlie/courses/17-214/2020-spring/)
+[cmu17-214](https://www.cs.cmu.edu/~charlie/courses/17-214/2020-spring/)  
+[COMP 310](https://www.clear.rice.edu/comp310/f19/)
 
 [programming principles](https://github.com/webpro/programming-principles)  
 [Code as Design: Three Essays](https://www.developerdotstar.com/mag/articles/reeves_design_main.html)  
+
+https://www.google.com/books/edition/Object_Oriented_Construction_Handbook/4edsQ97mEwUC?hl=en&gbpv=0
+
+http://squall.cs.ntou.edu.tw/cpp/103spring/slides/CPP16-DisciplinedCodingStyles.pdf
+
+http://www.revision-zero.org/reuse
+
+https://cmu-17-356.github.io/
+
+https://www.coursicle.com/cmu/courses/ISR/17480/
 
 
 # 编程实践，接口，模块化，契约化

@@ -1,10 +1,10 @@
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE54951e274d7a41a8bf59a5cad1ada97d/121)
-
 https://en.wikipedia.org/wiki/Java_version_history  
 [The Java® Language Specification](https://docs.oracle.com/javase/specs/jls/se8/html/index.html)  
 [The Java® Virtual Machine Specification](https://docs.oracle.com/javase/specs/jvms/se8/html/index.html)  
 
 [Java Platform, Standard Edition Tools Reference](https://docs.oracle.com/javase/9/tools/tools-and-command-reference.htm)
+
+[Java Platform Standard Edition 8 Documentation](https://docs.oracle.com/javase/8/docs/)
 
 [Programming Languages Research at UMD](https://plum-umd.github.io/projects/)  
 
@@ -109,6 +109,12 @@ park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
 > 线程通过线程ID检查（减少thin-lock的spin）  
 
 当竞争时，需要撤销偏向锁
+
+# 集合
+
+[Collections Framework Overview](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html)  
+[Outline of the Collections Framework](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/reference.html)
+
 
 # 运算符优先级
 https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
@@ -292,6 +298,8 @@ https://sourceforge.net/projects/fcml
 https://briangordon.github.io/  
 http://gee.cs.oswego.edu/dl/  
 http://g.oswego.edu/dl/jmm/cookbook.html  
+
+
 
 
 

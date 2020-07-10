@@ -74,6 +74,7 @@ http://infolab.stanford.edu/~ullman/focs.html
 
 http://jeffe.cs.illinois.edu/teaching/algorithms/
 
+
 ## 可视化
 
 [BIG O cheatsheet](https://www.bigocheatsheet.com/)
@@ -109,6 +110,11 @@ https://betterexplained.com/articles/sorting-algorithms/
 
 ## hash table
 ![](https://img-blog.csdnimg.cn/20200705155522338.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMxODIxNzMz,size_16,color_FFFFFF,t_70)
+
+
+### hash函数
+prime 
+power-of-two  
 
 
 https://preshing.com/20110504/hash-collision-probabilities/

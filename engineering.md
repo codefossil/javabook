@@ -3,6 +3,7 @@
 [CS != SE](http://www.cnblogs.com/buaashine/archive/2012/12/12/2813931.html)  
 [We Are All Confident Idiots](https://www.guokr.com/article/439517/)  
 
+[cmu 17313](https://www.cs.cmu.edu/~ckaestne/17313/2018/)  
 [MIT 16.355](http://sunnyday.mit.edu/16.355/)   
 https://www.cs.uic.edu/~i442/
 
