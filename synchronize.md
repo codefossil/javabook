@@ -9,6 +9,12 @@
 
 [synchronization primitives survey, 2008](http://www.enseignement.polytechnique.fr/informatique/INF431/X09-2010-2011/AmphiTHC/SynchronizationPrimitives.pdf)  
 
+[Is Parallel Programming Hard, And, If So, What Can You Do About It?](https://book.douban.com/subject/6957175/)
+
+[Parallel and Concurrent Programming in Haskell, marlow2013](https://book.douban.com/subject/24294415/)
+
+[Programming Massively Parallel Processors](https://book.douban.com/subject/4265432/)
+
 
 # 排他互斥
 [Solution of a Problem in Concurrent Programming Control, 1965](http://www.faculty.idc.ac.il/gadi/MyPapers/2008T-mutex.pdf)  
@@ -192,7 +198,7 @@ https://en.wikipedia.org/wiki/Java_concurrency
 https://en.wikipedia.org/wiki/Java_collections_framework
 https://www.csd.uoc.gr/~hy486/old_websites/2011_2012/material.html
 http://www.scs.stanford.edu/nyu/04fa/
-http://web.mit.edu/6.005/www/fa16/
+
 http://pages.cs.wisc.edu/~bart/537/lecturenotes/titlepage.html
 
 https://en.wikipedia.org/wiki/List_of_important_publications_in_concurrent,_parallel,_and_distributed_computing
@@ -278,3 +284,5 @@ http://www.oracle.com/technetwork/java/6-performance-137236.html
 
 
 http://courses.csail.mit.edu/6.852/08/lecture.html
+
+http://web.mit.edu/6.005/www/fa16/
