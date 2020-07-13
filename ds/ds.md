@@ -42,6 +42,7 @@ https://blog.rapid7.com/2014/03/14/synchronizing-clocks-in-a-cassandra-cluster-p
 [Understanding Transactions in Azure, 2015](https://docs.particular.net/nservicebus/azure/understanding-transactionality-in-azure)  
 
 # 一致性
+https://aphyr.com/posts/313-strong-consistency-models
 
 # 复制
 
@@ -58,6 +59,16 @@ build most robost system
 
 Oracle/IBM use share-disk
 tradeoff: complexity VS benifit
+
+
+https://courses.cs.washington.edu/courses/cse550/18au/
+https://github.com/CyC2018/CS-Notes/blob/master/docs/notes/%E5%88%86%E5%B8%83%E5%BC%8F.md
+http://dockone.io/article/967
+https://cloud.tencent.com/info/578495f284496fb177ce5d3578b68c06.html
+https://www.infoq.cn/article/2018%2F05%2Fdistributed-system-architecture
+https://blog.csdn.net/rickiyeat/article/details/78554894
+https://blog.csdn.net/chunlongyu/article/details/52525604
+
 
 https://www.mimuw.edu.pl/~iwanicki/courses/ds/2019/
 https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying

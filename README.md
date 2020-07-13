@@ -23,8 +23,8 @@
 ## 信息系统
 * [数据系统](database.md) 
 * [并行与分布式](synchronize.md)
+* [操作系统与体系结构](os.md)
 * [程序语言](language.md)
-* [操作系统](os.md)
 
 # 资源
 

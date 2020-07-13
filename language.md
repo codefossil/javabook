@@ -1,6 +1,5 @@
+http://users.csc.calpoly.edu/~akeen/courses/csc530/#navtag1
 
-
-计算机体系结构发展  
 形式语言与自动机
 处理器发展  
 程序语言设计  
@@ -110,12 +109,13 @@ http://www.javapractices.com/home/HomeAction.do
 https://en.m.wikipedia.org/wiki/Java_(programming_language)
 https://www.cs.cmu.edu/~crary/819-f09/
 
-arch
-hot spots problem
-http://zhangyi.xyz/handling-complex-by-ddd/
-https://blog.csdn.net/broadview2006/article/details/4136758
-SICP, CLRS, TAOCP
-CSAPP, CAAQA, MOS
-TCPL, CPPP, GOF
 
 [Formal Semantics of Programming Languages](http://web.cs.ucdavis.edu/~su/teaching/ecs240-w17/lectures.html)  
+
+c++
+内存管理
+标准库扩展
+网络库
+文本处理
+c++98/11/14/17
+[C++ Concurrency In Action](https://chenxiaowei.gitbooks.io/cpp_concurrency_in_action/content/)

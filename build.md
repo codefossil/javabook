@@ -2,6 +2,8 @@
 http://faculty.cse.tamu.edu/ritchey/courses/csce431/winter20/  
 https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/
 
+[The Humble Programmer, turing lecture](https://dl.acm.org/doi/10.1145/355604.361591)
+
 [cmu17-214](https://www.cs.cmu.edu/~charlie/courses/17-214/2020-spring/)  
 [COMP 310](https://www.clear.rice.edu/comp310/f19/)
 
@@ -47,6 +49,8 @@ CS的核心问题就是问题分解。
 策略编程，投入10%的时间来思考好的设计。（敏捷弄不好就是直觉编程）  
 接口要薄，要通用，实现要深。  
 
+[pragmatic programmer, hunt99](https://book.douban.com/subject/1417047/)
+
 [Code complete, McConnell04](https://book.douban.com/subject/1477390/)  
 
 [Structure and Interpretation of Computer Programs, abelson96](https://book.douban.com/subject/1451622/)
@@ -56,21 +60,20 @@ CS的核心问题就是问题分解。
 
 [how to design programs, felleisen2018](https://www.amazon.com/How-Design-Programs-Introduction-Programming/dp/0262534800)
  
-
 [Working Effectively with Legacy Code, feather05](http://www.amazon.com/exec/obidos/ISBN=0131177052/theinternationscA/)
 
+[The Practice of Programming, Kernighan99](https://book.douban.com/subject/1459281/)
 
-[advanced programming in UNIX, steven2013](https://book.douban.com/subject/11937511/)
+[The Art of UNIX Programming, raymond2003](https://www.amazon.com/UNIX-Programming-Addison-Wesley-Professional-Computing-ebook/dp/B003U2T5BA)
 
-[Computer Systems, 2015](https://book.douban.com/subject/26344642/)
-
-[computer architecture, 2019](https://book.douban.com/subject/6795919/)
 
 [Expert One-on-One J2EE Development without EJB, johnson04](https://book.douban.com/subject/1426848/)  
 
 [cracking the coding interview](https://book.douban.com/subject/26570695/)
 
-[pragmatic programmer, hunt99](https://book.douban.com/subject/1417047/)
+[software foundation](https://softwarefoundations.cis.upenn.edu/)
+
+[A Discipline of Programming, Dijkstra76](https://book.douban.com/subject/24841112/)
 
 https://ngte-se.gitbook.io/  
 https://github.com/xingshaocheng/architect-awesome 

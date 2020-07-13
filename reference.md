@@ -1,4 +1,5 @@
-* [TURING award list](https://amturing.acm.org/byyear.cfm)
+* [TURING award list](https://amturing.acm.org/byyear.cfm) 
+* [TURING LECTURE](https://amturing.acm.org/lectures.cfm)
 * [Dijkstra prize list](www.podc.org/dijkstra)
 * [taobao openapi](http://open.taobao.com/api.htm?cid=1&docId=4&docType=2#)
 * [微软系统组](https://www.microsoft.com/en-us/research/research-area/systems-and-networking/)
@@ -11,5 +12,11 @@
 * [清华大学信息科学技术学院](http://www.sist.tsinghua.edu.cn/)
 * [科学技术司](http://www.moe.gov.cn/s78/A16/)
 
-
+# blog
+[Software Developers and Technopreneurs](http://tutorials.jenkov.com/)
+[natureofcode](https://natureofcode.com/book/introduction/)
 [Most influential books for programmers](https://github.com/cs-books/influential-cs-books)
+[cs-note](https://github.com/CyC2018/CS-Notes/blob/master/notes/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86.md)
+[amteur](https://dirtysalt.github.io/html/index.html)
+[寒](https://dearhwj.gitbooks.io/itbook/index.html)
+[豆瓣cs](https://book.douban.com/tag/计算机科学)

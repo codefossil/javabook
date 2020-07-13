@@ -31,3 +31,4 @@
 
 # DO
 * 梳理主线
+* [serverside-checklist](https://github.com/mtdvio/going-to-production/blob/master/serverside-checklist.md)

@@ -68,11 +68,27 @@ https://courses.engr.illinois.edu/cs498374/fa2014/lectures.html
 
 # 算法
 
+[Introduction to Algorithms, cormen09, mit](https://book.douban.com/subject/3904676/)
+
+[The Art of Computer Programming, knuth98](https://book.douban.com/subject/1418402/)
+
+[剑指Offer](https://book.douban.com/subject/25910559/)
+
 [Sedgewick](https://www.cs.princeton.edu/~rs/)
+
+[More Programming Pearls, bentley2014](https://book.douban.com/subject/26302533/)
 
 http://infolab.stanford.edu/~ullman/focs.html
 
 http://jeffe.cs.illinois.edu/teaching/algorithms/
+
+
+http://calvin1978.blogcn.com/articles/collection.html
+http://www.cs.cornell.edu/courses/cs2110/2013sp/lecturenotes.html
+https://www.cs.princeton.edu/courses/archive/fall18/cos226/lectures.php
+http://pi.math.cornell.edu/~web6140/
+http://cs.rochester.edu/u/scott/courses/162/schedule.shtml
+
 
 
 ## 可视化

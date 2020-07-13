@@ -132,6 +132,9 @@ http://pages.cs.wisc.edu/~nil/764/
 
 > 事务是为了简化，解决数据库容错
 
+`ch17~ch18, db concept`  
+
+
 [The Notions of Consistency and Predicate Locks in a Database System, eswaran76](http://people.csail.mit.edu/tdanford/6830papers/eswaran-notions-of-consistency.pdf)
 
 
@@ -147,6 +150,7 @@ http://pages.cs.wisc.edu/~nil/764/
 
 [voltdb recovery, icde2014](https://hstore.cs.brown.edu/papers/voltdb-recovery.pdf)
 
+[数据库事务隔离发展历史 | CatKang的博客](https://catkang.github.io/2018/08/31/isolation-level.html)
 
 # 存取方法
 
@@ -181,6 +185,7 @@ https://github.com/jarulraj/databaseology#access-methods
 https://web.stanford.edu/class/cs245/
 http://cs.brown.edu/courses/cs227/papers.html
 
+[B+Tree index structures in InnoDB – Jeremy Cole](https://blog.jcole.us/2013/01/10/btree-index-structures-in-innodb/)
 
 # 数据库哲学
 
@@ -295,6 +300,6 @@ http://blog.yufeng.info/
 
 https://qw4990.gitbooks.io/nyadb/content/index.html
 
-
+[The physical structure of InnoDB index pages – Jeremy Cole](https://blog.jcole.us/2013/01/07/the-physical-structure-of-innodb-index-pages/)
 
 
