@@ -160,8 +160,8 @@ http://pages.cs.wisc.edu/~nil/764/
 full text index
 three-star index
 
-[b-trees, icomod70](https://infolab.usc.edu/csci585/Spring2010/den_ar/indexing.pdf)  
-给出b树的定义，增/删/查的算法，形式化分析了算法的最小、最大和平均成本。  
+[ORGANIZATION AND MAINTENANCE OF LARGE ORDERED INDICES, bayer70, icomod](https://infolab.usc.edu/csci585/Spring2010/den_ar/indexing.pdf)  
+首次提出b树的定义，增/删/查的算法，形式化分析了算法的最小、最大和平均成本。  
 分析了存储利用率。  
 根据当时的磁盘性能，给出了k的最优解。  
 结论的推论数据不知道是怎么来的：9tps/15k-->2tps/1.5M, ???  

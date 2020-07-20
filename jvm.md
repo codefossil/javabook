@@ -59,7 +59,7 @@ https://gist.github.com/arturmkrtchyan/43d6135e8a15798cc46c
 http://arturmkrtchyan.com/  
 
 
-# 锁优化
+# 同步、锁优化
 
 ```txt
 |--------------------|--------------------------------------------------------------------------------------------------------------|
@@ -82,6 +82,16 @@ http://arturmkrtchyan.com/
 [Lock optimizations on the HotSpot VM, pool, 2014](https://www.semanticscholar.org/paper/Lock-optimizations-on-the-HotSpot-VM-Pool/edf954412a9b1ce955bea148199f325759779540)
 
 [Evaluating and improving biased locking in the HotSpot virtual machine, LARSSON2014, MS Thesis](http://www.diva-portal.se/smash/get/diva2:754541/FULLTEXT01.pdf)  
+
+[thin-lock-featherweight-synchronization-for-java-bacon98-sigplan](https://dl.acm.org/doi/10.1145/989393.989452)  
+
+[Building FIFO and Priority-Queuing Spin Locks from Atomic Swap, craig93](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=91D705288CA1399F51F38B2B50598A34?doi=10.1.1.38.7889&rep=rep1&type=pdf)
+
+
+## 框架
+[The java.util.concurrent Synchronizer Framework, csjp04](http://gee.cs.oswego.edu/dl/papers/aqs.pdf)  
+[Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
+[Future, 1977](http://home.pipeline.com/~hbaker1/Futures.html)  
 
 
 ## synchronized

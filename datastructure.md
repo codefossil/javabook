@@ -118,6 +118,13 @@ http://www.bowdoin.edu/~ltoma/teaching/cs231/2018spring/syllabus.html
 https://github.com/Crizstian/data-structure-and-algorithms-with-ES6/tree/master/12-chapter-Sorting-Algorithms  
 https://betterexplained.com/articles/sorting-algorithms/  
 
+## 动态规划
+
+而贪心和动态规划是有联系的，贪心是“最优子结构+局部最优”，动态规划是“最优独立重叠子结构+全局最优”。一句话理解动态规划，则是枚举所有状态，然后剪枝，寻找最优状态，同时将每一次求解子问题的结果保存在一张“表格”中，以后再遇到重叠的子问题，从表格中保存的状态中查找（俗称记忆化搜索）。
+
+https://github.com/julycoding/The-Art-Of-Programming-By-July/blob/master/ebook/zh/05.00.md
+
+
 ## searching
 
 ## optimization
