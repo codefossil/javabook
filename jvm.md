@@ -88,8 +88,10 @@ http://arturmkrtchyan.com/
 [Building FIFO and Priority-Queuing Spin Locks from Atomic Swap, craig93](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=91D705288CA1399F51F38B2B50598A34?doi=10.1.1.38.7889&rep=rep1&type=pdf)
 
 
-## 框架
-[The java.util.concurrent Synchronizer Framework, csjp04](http://gee.cs.oswego.edu/dl/papers/aqs.pdf)  
+## 同步框架
+[The java.util.concurrent Synchronizer Framework](/aqs.md)  
+java5引入的最牛皮的同步器框架底层设计和分析。（结合源码和网友的分析）  
+
 [Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
 [Future, 1977](http://home.pipeline.com/~hbaker1/Futures.html)  
 

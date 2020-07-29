@@ -104,15 +104,8 @@ https://www.cse.iitb.ac.in/~mythili/os/notes/notes-perf.txt
 
 [我对后端优化的一点想法](https://www.slideshare.net/jamestong/2012-12552732)  
 [5-minute rule](http://www.hpl.hp.com/techreports/tandem/TR-86.1.pdf)  
-[Think Clearly About Performance](https://method-r.com/wp-content/uploads/2018/07/TCAP-from-MOTD2.pdf)
+[Think Clearly About Performance](https://method-r.com/wp-content/uploads/2018/07/TCAP-from-MOTD2.pdf)  
 https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt.html
-
-
-## 执行框架
-
-[Java synchronizer, csjp04](http://gee.cs.oswego.edu/dl/papers/aqs.pdf)  
-[Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
-[Future, 1977](http://home.pipeline.com/~hbaker1/Futures.html)  
 
 # 并行计算
 
