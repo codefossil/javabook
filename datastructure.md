@@ -127,6 +127,8 @@ https://github.com/julycoding/The-Art-Of-Programming-By-July/blob/master/ebook/z
 
 ## searching
 
+Disjoint-set
+
 ## optimization
 
 ## graph
