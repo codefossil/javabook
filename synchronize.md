@@ -22,7 +22,10 @@
 
 [Recognizing Safety and Liveness](https://www.cs.cornell.edu/fbs/publications/RecSafeLive.pdf)  
 
-[Equivalence of the Arbiter, the Synchronizer, the Latch, and the Inertial Delay, 1983](https://www.researchgate.net/publication/3048280_Equivalence_of_the_Arbiter_the_Synchronizer_the_Latch_and_the_Inertial_Delay)  
+[Equivalence of the Arbiter, the Synchronizer, the Latch, and the Inertial Delay, 1983](https://www.researchgate.net/publication/3048280_Equivalence_of_the_Arbiter_the_Synchronizer_the_Latch_and_the_Inertial_Delay)
+
+[Simple, fast, and practical non-blocking and blocking concurrent queue algorithms, michael96, podc](https://www.cs.rochester.edu/u/scott/papers/1996_PODC_queues.pdf) 
+
 
 死锁的排查方法
 
@@ -279,3 +282,5 @@ http://www.oracle.com/technetwork/java/6-performance-137236.html
 http://courses.csail.mit.edu/6.852/08/lecture.html
 
 http://web.mit.edu/6.005/www/fa16/
+https://www.cs.rochester.edu/u/scott/courses/458/
+http://web.cecs.pdx.edu/~walpole/class/cs510/winter2018/home.html
