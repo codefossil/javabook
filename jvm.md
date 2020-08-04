@@ -30,6 +30,12 @@ java是第一个在编程语言的层面规范内存访问模型。
 
 [chapter 17 Memory Model, jls](https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.4)   
 
+[JSR133](http://www.cs.umd.edu/~pugh/java/memoryModel/jsr133.pdf)  
+
+[Shared Memory](http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-95-7.pdf)  
+
+[The Java Memory Model](https://dl.acm.org/citation.cfm?id=1040336)  
+
 # 对象
 
 ![](https://img-blog.csdnimg.cn/20190115141050902.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NDRE5fQ1A=,size_16,color_FFFFFF,t_70)
@@ -59,7 +65,7 @@ https://gist.github.com/arturmkrtchyan/43d6135e8a15798cc46c
 http://arturmkrtchyan.com/  
 
 
-# 同步、锁优化
+# 并发、同步、锁优化
 
 ```txt
 |--------------------|--------------------------------------------------------------------------------------------------------------|
@@ -90,11 +96,22 @@ http://arturmkrtchyan.com/
 
 ## 同步框架
 [The java.util.concurrent Synchronizer Framework](/aqs.md)  
-java5引入的最牛皮的同步器框架底层设计和分析。（结合源码和网友的分析）  
+java5引入的同步器框架底层设计和分析。（结合源码和网友的分析）  
+
+[Nonblocking Concurrent Data Structures with Condition Synchronization, Scherer04, DISC](/synchronousqueue.md)
+java5中SynchronousQueue的原型设计和分析。
 
 [Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
+
 [Future, 1977](http://home.pipeline.com/~hbaker1/Futures.html)  
 
+[Java Executor Framework](/executor.md)
+java5引入的多线程任务执行框架。
+
+[JCIP, 2006](https://book.douban.com/subject/10484692/)  
+java并发编程圣经。  
+本书一来就先给出了并发编程的通用的设计原则和模式。 
+然后从任务和执行分离的角度讲java的线程池的设计、评价和基础。  
 
 ## synchronized
 

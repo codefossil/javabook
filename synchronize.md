@@ -45,10 +45,6 @@
 [How to Make a Correct Multiprocess Program Execute Correctly on a Multiporcessor, 1979](https://people.eecs.berkeley.edu/~culler/cs252-s03/lamport93how.pdf)  
 [Linearizability, 1990](https://cs.brown.edu/~mph/HerlihyW90/p463-herlihy.pdf)  
 
-[JSR133](http://www.cs.umd.edu/~pugh/java/memoryModel/jsr133.pdf)  
-[Shared Memory](http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-95-7.pdf)  
-[The Java Memory Model](https://dl.acm.org/citation.cfm?id=1040336)  
-
 # 形式化和验证
 [The temporal logic of programs, 1976](http://dimap.ufrn.br/~richard/pubs/dim0436/papers/pnueli_temporal_1977.pdf)  
 [CCS, 1980](https://moodle.risc.jku.at/pluginfile.php/6230/mod_resource/content/0/ccs.pdf)  
@@ -60,12 +56,11 @@ https://moodle.risc.jku.at/course/view.php?id=143
 http://www.cs.cornell.edu/gries/July2016/  
 
 # 并发编程
-[CPIJ, 1999](https://book.douban.com/subject/1440218/)  
+
 [Software and the Concurrency Revolution, 2005](https://dl.acm.org/citation.cfm?id=1095421)  
 [Parallel Programming, 2011](https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.2011.01.02a.pdf), 很多关于CPU缓存和一致性问题  
 [OS Three Easy pieces, 2015](http://pages.cs.wisc.edu/~remzi/OSTEP/)  
 [Multiprogramming, 1968](https://link.springer.com/content/pdf/10.1007%2F978-1-4757-3510-9_12.pdf)  
-[JCIP, 2006](https://book.douban.com/subject/10484692/)  
 
 [reactive design patterns](https://book.douban.com/subject/25870212/)
 
