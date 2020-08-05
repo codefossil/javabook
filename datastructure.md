@@ -68,6 +68,8 @@ https://courses.engr.illinois.edu/cs498374/fa2014/lectures.html
 
 # 算法
 
+[趣学算法, 陈小玉2017](https://book.douban.com/subject/27109832/)
+
 [算法之道, 邹恒明](https://book.douban.com/subject/10564644/)
 
 [Introduction to Algorithms, cormen09, mit](https://book.douban.com/subject/3904676/)
