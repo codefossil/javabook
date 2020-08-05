@@ -12,6 +12,21 @@ https://en.wikipedia.org/wiki/Java_version_history
 
 https://www.cc.gatech.edu/~harrold/6340/cs6340_fall2009/
 
+# jvm内部线程
+```java
+public class ThreadNumDemo {
+    public static void main(String[] args) {
+        ThreadMXBean threadMXBean =ManagementFactory.getThreadMXBean();
+        ThreadInfo[] threadInfos=threadMXBean.dumpAllThreads(false,false);
+        for (ThreadInfo threadInfo : threadInfos) {
+            System.out.println(threadInfo.getThreadId()+"-"+threadInfo.getThreadName());
+        }
+    }
+}
+```
+
+[HotSpot Runtime Overview](http://openjdk.java.net/groups/hotspot/docs/RuntimeOverview.html)
+
 # 类型系统
 [JLS - Two type system](https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html)  
 https://softwareengineering.stackexchange.com/questions/203970/when-to-use-primitive-vs-class-in-java  
@@ -22,7 +37,7 @@ https://softwareengineering.stackexchange.com/questions/203970/when-to-use-primi
 java是第一个在编程语言的层面规范内存访问模型。  
 
 [JSR 133 (Java Memory Model) FAQ](http://www.cs.umd.edu/users/pugh/java/memoryModel/jsr-133-faq.html)  
-什么是JAVA内存模型，为什么需要这个，C/C++为什么没有  
+什么是JAVA内存模型，为什么需要这个，C/C++为什么没有（到C11/C++11才出现弱内存模型）  
 
 [The JSR-133 Cookbook for Compiler Writers](http://gee.cs.oswego.edu/dl/jmm/cookbook.html)  
 
@@ -36,6 +51,10 @@ java是第一个在编程语言的层面规范内存访问模型。
 
 [The Java Memory Model](https://dl.acm.org/citation.cfm?id=1040336)  
 
+[Close Encounters of The Java Memory Model Kind](https://shipilev.net/blog/2016/close-encounters-of-jmm-kind/)
+
+[Java并发指南2：深入理解Java内存模型JMM](https://blog.51cto.com/14006572/2448908)
+
 # 对象
 
 ![](https://img-blog.csdnimg.cn/20190115141050902.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NDRE5fQ1A=,size_16,color_FFFFFF,t_70)
@@ -44,13 +63,13 @@ java是第一个在编程语言的层面规范内存访问模型。
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE98bf46481bc887a843546cbb68eb9c3d/123)
 
-[The Garbage Collection Handbook, jones2011](https://book.douban.com/subject/6809987/)
+[The Garbage Collection Handbook, jones2011](https://book.douban.com/subject/6809987/)  
 
 [深入理解Java虚拟机, 2013](https://book.douban.com/subject/24722612/)  
 
-[HotSpot JVM Performance Tuning Guidelines](https://ionutbalosin.com/2020/01/hotspot-jvm-performance-tuning-guidelines/#jit_tiered_mode)
+[HotSpot JVM Performance Tuning Guidelines](https://ionutbalosin.com/2020/01/hotspot-jvm-performance-tuning-guidelines/#jit_tiered_mode)  
 
-[The Java HotSpot Performance Engine Architecture](https://www.oracle.com/technetwork/java/whitepaper-135217.html)
+[The Java HotSpot Performance Engine Architecture](https://www.oracle.com/technetwork/java/whitepaper-135217.html)  
 
 safepoint  
 http://xiao-feng.blogspot.com/2008/01/gc-safe-point-and-safe-region.html  
@@ -68,8 +87,23 @@ http://arturmkrtchyan.com/
 # 并发、同步、锁优化
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEadd81df1f79005bf5126391799ecfdab/139)
 
+## lock-free编程
 
-# 同步锁
+https://preshing.com/20120612/an-introduction-to-lock-free-programming/
+
+
+## 内部api
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEf70d984b44f1938dd4380b6ca929dac5/141)
+
+[JEP 193: Variable Handles](https://openjdk.java.net/jeps/193)
+
+[JEP 260: Encapsulate Most Internal APIs](http://openjdk.java.net/jeps/260)
+
+[Java Magic. Part 4: sun.misc.Unsafe](http://mishadoff.com/blog/java-magic-part-4-sun-dot-misc-dot-unsafe/)
+
+[JEP 171: Fence Intrinsics](http://openjdk.java.net/jeps/171)
+
+## 同步锁
 
 ```txt
 |--------------------|--------------------------------------------------------------------------------------------------------------|
@@ -95,7 +129,9 @@ http://arturmkrtchyan.com/
 
 [thin-lock-featherweight-synchronization-for-java-bacon98-sigplan](https://dl.acm.org/doi/10.1145/989393.989452)  
 
-[Building FIFO and Priority-Queuing Spin Locks from Atomic Swap, craig93](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=91D705288CA1399F51F38B2B50598A34?doi=10.1.1.38.7889&rep=rep1&type=pdf)
+[Building FIFO and Priority-Queuing Spin Locks from Atomic Swap, craig93](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=91D705288CA1399F51F38B2B50598A34?doi=10.1.1.38.7889&rep=rep1&type=pdf)  
+
+[JEP 143: Improve Contended Locking](http://openjdk.java.net/jeps/143)
 
 ### synchronized
 

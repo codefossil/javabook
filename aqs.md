@@ -86,8 +86,12 @@ public abstract class AbstractQueuedSynchronizer
     extends AbstractOwnableSynchronizer
     implements java.io.Serializable {
 
+    // CLH同步队列
+    // 头节点是个哑节点
     private transient volatile Node head;
     private transient volatile Node tail;
+
+    // 同步状态，可以表示锁的数量限制
     private volatile int state;
 }       
 ```
@@ -97,13 +101,20 @@ public abstract class AbstractQueuedSynchronizer
 static final class Node {
         volatile int waitStatus;
 
+        // 条件队列
         volatile Node prev;
         volatile Node next;
-        volatile Thread thread;
-   
+        volatile Thread thread;   
         Node nextWaiter;
 }       
 ```
+
+## 同步状态抢占
+
+- 独占锁实现的是tryAcquire(int)、tryRelease(int)
+- 共享锁实现的是tryAcquireShared(int)、tryReleaseShared(int)
+
+由子类（CountDownLatch, ReentantLock）实现具体的同步抢占规则（公平/不公平）。  
 
 ## CLH队列排他锁
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE93db317107de3a039f257bb33010070d/136)
@@ -199,10 +210,10 @@ private void await() {
 
 
 
-## 同步状态机
+## 节点状态
 > 修改CLH自旋的同步等待==>阻塞的同步框架，线程的唤醒就需要额外的状态
 
-负值表示结点处于有效等待状态，而正值表示结点已被取消  
+waitStatus, 负值表示结点处于有效等待状态，而正值表示结点已被取消  
 CANCELLED =  1;
 SIGNAL    = -1;
 CONDITION = -2;
