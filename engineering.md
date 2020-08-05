@@ -80,6 +80,43 @@ Evolutionary Project Management
 
 97 Things Every Project Manager Should Know
 
+# 程序员职业素养
+
+[Clean Coder, 2011](https://book.douban.com/subject/11614538/) 
+
+[软技能2软件开发者职业生涯指南, sonmez2020](https://book.douban.com/subject/35043940/)
+
+[cracking the coding interview](https://book.douban.com/subject/26570695/)
+
+[剑指Offer](https://book.douban.com/subject/25910559/)
+
+[软技能](https://book.douban.com/subject/26835090/)  
+
+[Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman, hoover2010](https://book.douban.com/subject/4924164/)
+
+[卓有成效的程序员](https://book.douban.com/subject/3558788/)
+
+[Pragmatic Thinking and Learning, hunt2011](https://read.douban.com/ebook/1885884/)
+
+https://firstround.com/review/Responsiveness-New-Efficiency/  
+
+http://www.cs.toronto.edu/~sme/CSC340F/  
+
+https://simplicable.com/new/coding-principles  
+https://about.gitlab.com/handbook/  
+https://en.wikipedia.org/wiki/List_of_software_development_philosophies
+http://blog.vgod.tw/
+https://blog.youxu.info/
+http://blog.54chen.com/
+http://www.yankay.com
+http://www.valleytalk.org
+
+http://people.scs.carleton.ca/~deugo/Patterns/ospdg/
+https://www.cs.cmu.edu/~aldrich/courses/413/
+
+
+
+
 # 软件开发流程
 
 
@@ -144,22 +181,5 @@ Be Zara, not Foxconn (从效率模式->快速响应式)
 第一原理  
 [Top risks, 2001](http://sunnyday.mit.edu/16.355/lawrence-requirements.pdf)  
 [Requirements Engineering, 2000](http://mcs.open.ac.uk/ban25/papers/sotar.re.pdf)  
-[Clean Coder, 2011](https://book.douban.com/subject/11614538/)  
-[软技能](https://book.douban.com/subject/26835090/)  
-https://firstround.com/review/Responsiveness-New-Efficiency/  
-
-http://www.cs.toronto.edu/~sme/CSC340F/  
-
-https://simplicable.com/new/coding-principles  
-https://about.gitlab.com/handbook/  
-https://en.wikipedia.org/wiki/List_of_software_development_philosophies
-http://blog.vgod.tw/
-https://blog.youxu.info/
-http://blog.54chen.com/
-http://www.yankay.com
-http://www.valleytalk.org
-
-http://people.scs.carleton.ca/~deugo/Patterns/ospdg/
-https://www.cs.cmu.edu/~aldrich/courses/413/
 
 

@@ -68,11 +68,11 @@ https://courses.engr.illinois.edu/cs498374/fa2014/lectures.html
 
 # 算法
 
+[算法之道, 邹恒明](https://book.douban.com/subject/10564644/)
+
 [Introduction to Algorithms, cormen09, mit](https://book.douban.com/subject/3904676/)
 
 [The Art of Computer Programming, knuth98](https://book.douban.com/subject/1418402/)
-
-[剑指Offer](https://book.douban.com/subject/25910559/)
 
 [Sedgewick](https://www.cs.princeton.edu/~rs/)
 

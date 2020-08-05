@@ -66,10 +66,7 @@ CS的核心问题就是问题分解。
 
 [The Art of UNIX Programming, raymond2003](https://www.amazon.com/UNIX-Programming-Addison-Wesley-Professional-Computing-ebook/dp/B003U2T5BA)
 
-
 [Expert One-on-One J2EE Development without EJB, johnson04](https://book.douban.com/subject/1426848/)  
-
-[cracking the coding interview](https://book.douban.com/subject/26570695/)
 
 [software foundation](https://softwarefoundations.cis.upenn.edu/)
 
