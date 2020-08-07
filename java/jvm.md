@@ -27,7 +27,11 @@ public class ThreadNumDemo {
 
 [HotSpot Runtime Overview](http://openjdk.java.net/groups/hotspot/docs/RuntimeOverview.html)
 
-# 类型系统
+# JVM结构、类型系统
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE98bf46481bc887a843546cbb68eb9c3d/123)
+
+[Chapter 2. The Structure of the Java Virtual Machine](https://docs.oracle.com/javase/specs/jvms/se9/html/jvms-2.html#jvms-2.5)
+
 [JLS - Two type system](https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html)  
 https://softwareengineering.stackexchange.com/questions/203970/when-to-use-primitive-vs-class-in-java  
 
@@ -49,19 +53,18 @@ java是第一个在编程语言的层面规范内存访问模型。
 
 [Shared Memory](http://www.hpl.hp.com/techreports/Compaq-DEC/WRL-95-7.pdf)  
 
-[The Java Memory Model](https://dl.acm.org/citation.cfm?id=1040336)  
+[The Java Memory Model, manson05, popl](https://dl.acm.org/citation.cfm?id=1040336)  
 
 [Close Encounters of The Java Memory Model Kind](https://shipilev.net/blog/2016/close-encounters-of-jmm-kind/)
 
 [Java并发指南2：深入理解Java内存模型JMM](https://blog.51cto.com/14006572/2448908)
 
-# 对象
-
+# 对象、垃圾收集
 ![](https://img-blog.csdnimg.cn/20190115141050902.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NDRE5fQ1A=,size_16,color_FFFFFF,t_70)
 
-# 垃圾收集
+![](https://image.slidesharecdn.com/javaoptimizationtwjug-131222104941-phpapp01/95/introduction-of-java-gc-tuning-and-java-java-mission-control-49-638.jpg?cb=1387709567)
 
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE98bf46481bc887a843546cbb68eb9c3d/123)
+![](https://i2.wp.com/dhaval-shah.com/wp-content/uploads/2017/10/Garbage-Collectors.png?w=626)
 
 [The Garbage Collection Handbook, jones2011](https://book.douban.com/subject/6809987/)  
 
@@ -82,6 +85,10 @@ http://openjdk.java.net/groups/hotspot/docs/HotSpotGlossary.html
 https://www.javamex.com/tutorials/memory/object\_memory\_usage.shtml  
 https://gist.github.com/arturmkrtchyan/43d6135e8a15798cc46c  
 http://arturmkrtchyan.com/  
+
+## 内存监控、故障排除
+
+[native memory tracking](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr007.html)
 
 
 # 并发、同步、锁优化
@@ -165,7 +172,7 @@ park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
 [The java.util.concurrent Synchronizer Framework](/aqs.md)   
 java5引入的同步器框架底层设计和分析。（结合源码和网友的分析）  
 
-[Nonblocking Concurrent Data Structures with Condition Synchronization, Scherer04, DISC](/synchronousqueue.md)  
+[Nonblocking Concurrent Data Structures with Condition Synchronization, Scherer04, DISC](./synchronousqueue.md)  
 java5中SynchronousQueue的原型设计和分析。
 
 [Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
@@ -352,7 +359,7 @@ private static final int HASH_INCREMENT = 0x61c88647;
 nextHashCode.getAndAdd(HASH_INCREMENT);
 ```
 
-# 反汇编
+# 字节码动态加载类、反汇编
 ```cpp
 //share/tools/hsdis/hsdis.h
 void* decode_instructions(void* start, void* end,..
@@ -362,6 +369,17 @@ void* decode_instructions(void* start, void* end,..
 
 注意：简单的方法无法不足以触发JIT
 java -XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -version
+
+
+javaagent
+
+[byte buddy](https://bytebuddy.net/)
+
+[Chapter 6. The Java Virtual Machine Instruction Set](https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-6.html#jvms-6.5)
+
+[Escape Analysis for Java, oopsla99](http://cs.trinity.edu/~mlewis/CSCI3294-F01/Papers/escapeOopsla99.pdf)
+
+https://docs.oracle.com/javase/8/docs/technotes/guides/vm/performance-enhancements-7.html#escapeAnalysis
 
 https://github.com/AdoptOpenJDK/jitwatch  
 https://sourceforge.net/projects/fcml  
