@@ -169,7 +169,7 @@ park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
 
 ## 同步框架
 
-[The java.util.concurrent Synchronizer Framework](/aqs.md)   
+[The java.util.concurrent Synchronizer Framework](./aqs.md)   
 java5引入的同步器框架底层设计和分析。（结合源码和网友的分析）  
 
 [Nonblocking Concurrent Data Structures with Condition Synchronization, Scherer04, DISC](./synchronousqueue.md)  
@@ -179,7 +179,7 @@ java5中SynchronousQueue的原型设计和分析。
 
 [Future, 1977](http://home.pipeline.com/~hbaker1/Futures.html)  
 
-[Java Executor Framework](/executor.md)  
+[Java Executor Framework](./executor.md)  
 java5引入的多线程任务执行框架。
 
 [JCIP, 2006](https://book.douban.com/subject/10484692/)   
