@@ -92,6 +92,28 @@ http://pi.math.cornell.edu/~web6140/
 http://cs.rochester.edu/u/scott/courses/162/schedule.shtml
 
 
+## leetcode
+
+https://github.com/greyireland/algorithm-pattern
+
+[labuladong算法小炒](https://labuladong.gitbook.io/algo/)
+
+[分类表](https://cspiration.com/leetcodeClassification)
+
+[Learning-Algorithms-with-Leetcode](https://www.yuque.com/liweiwei1419/algo)
+
+[LeetCode题目分类与面试问题整理](https://github.com/yuanguangxin/LeetCode)
+
+[Leetcode by seina](https://github.com/gaoshengnan/LeetCode)
+
+[leetcode animation](https://github.com/MisterBooo/LeetCodeAnimation)
+
+[从零开始学算法](https://muyids.github.io/simple-algorithm/)
+
+[LeetcodeTop, 汇总互联网大厂高频算法题](https://github.com/afatcoder/LeetcodeTop)
+
+[LeetCode 官方推出的经典面试题目清单 —— 「初级算法 - 帮助入门」](https://leetcode-cn.com/leetbook/detail/top-interview-questions-easy/)
+
 
 ## 可视化
 
@@ -128,8 +150,11 @@ https://github.com/julycoding/The-Art-Of-Programming-By-July/blob/master/ebook/z
 
 
 ## searching
+BFS  
+DFS  
+Disjoint-set  
 
-Disjoint-set
+## Back tracing
 
 ## optimization
 
