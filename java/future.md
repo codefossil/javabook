@@ -1,5 +1,5 @@
 # 动机
-- 
+- 可取消的、异步的计算
 
 
 # 解决方案
@@ -8,86 +8,78 @@
 # 细节
 
 ```java
-public class ThreadPoolExecutor extends AbstractExecutorService {
-    /**
-    * 保存线程池状态和工作线程数:
-    * 低29位: 工作线程数
-    * 高3位 : 线程池状态
-    */
-    private final AtomicInteger ctl = new AtomicInteger(ctlOf(RUNNING, 0));
-    
-    private static final int COUNT_BITS = Integer.SIZE - 3;
-    
-    // 最大线程数: 2^29-1
-    private static final int CAPACITY = (1 << COUNT_BITS) - 1;  // 00011111 11111111 11111111 11111111
-    
-    // 线程池状态
-    private static final int RUNNING = -1 << COUNT_BITS;        // 11100000 00000000 00000000 00000000
-    private static final int SHUTDOWN = 0 << COUNT_BITS;        // 00000000 00000000 00000000 00000000
-    private static final int STOP = 1 << COUNT_BITS;            // 00100000 00000000 00000000 00000000
-    private static final int TIDYING = 2 << COUNT_BITS;         // 01000000 00000000 00000000 00000000
-    private static final int TERMINATED = 3 << COUNT_BITS;      // 01100000 00000000 00000000 00000000
+public class FutureTask<V> implements RunnableFuture<V> {
+    private volatile int state;
+    private static final int NEW          = 0;
+    private static final int COMPLETING   = 1;
+    private static final int NORMAL       = 2;
+    private static final int EXCEPTIONAL  = 3;
+    private static final int CANCELLED    = 4;
+    private static final int INTERRUPTING = 5;
+    private static final int INTERRUPTED  = 6;
 
-    /**
-    * 工作线程集合.
-    */
-    private final HashSet<Worker> workers = new HashSet<Worker>();
-
-    /**
-     * 任务队列, 保存已经提交但尚未被执行的线程集合
-     */
-    private final BlockingQueue<Runnable> workQueue;
-}
-```
-
-
-## 提交任务
-
-```java
-public void execute(Runnable command) {
-    if (workerCountOf(c) < corePoolSize) then
-        addWorker();
-    
-    if workQueue.offer() then
-    else if !addWorker() then
-        执行拒绝策略;    
-}
-```
-
-## 添加任务到线程池
-```java
-private boolean addWorker(Runnable firstTask, boolean core) {
-    创建worker w;
-    添加到workers;
-    启动线程，w.runWorker();
+    /** The underlying callable; nulled out after running */
+    private Callable<V> callable;
+    /** The result to return or exception to throw from get() */
+    private Object outcome; // non-volatile, protected by state reads/writes
+    /** The thread running the callable; CASed during run() */
+    private volatile Thread runner;
+    /** Treiber stack of waiting threads */
+    private volatile WaitNode waiters;
 }
 ```
 
 ## 执行任务
+```java
+public void run() {
+    cas(runner, currentThread);
+    result = c.call();
+    cas(state, NEW, COMPLETING);
+    cas(state, COMPLETING, NORMAL);
+}
+```
+
+## Treiber栈用于获取任务结果线程排队
+
+![](https://segmentfault.com/img/bVbiwFZ?w=231&h=422)
 
 ```java
-final void runWorker(Worker w) {
-    task = w.firstTask;
-    for(;;){
-        不停的获取任务(null, task);
-        task.run();        
+private int awaitDone(boolean timed, long nanos) throws InterruptedException {
+    final long deadline = timed ? System.nanoTime() + nanos : 0L;
+    WaitNode q = null;
+    boolean queued = false;
+    for (;;) {        
+        int s = state;
+
+        创建q = new WaitNode;
+        cas(waiter, waiters, q); // Treiber无锁栈
+        LockSupport.park();
+
+        if (s > COMPLETING) then
+            return s;            
     }
 }
 ```
 
-## 获取任务、超时
+## 完成任务
 ```java
-private Runnable getTask() {
-    boolean timed = allowCoreThreadTimeOut || wc > corePoolSize;
-    Runnable r = timed ?
-                    workQueue.poll(keepAliveTime, TimeUnit.NANOSECONDS) :
-                    workQueue.take();
-    return r;
+private void finishCompletion() {
+    q = waiter;
+    for (;;) {
+        Thread t = q.thread;
+        LockSupport.unpark(t);        
+        q = next;
+    }
 }
 ```
 
-## 任务异常、线程中断
+# 参考
 
-[Java多线程进阶（四十）—— J.U.C之executors框架：ThreadPoolExecutor](https://segmentfault.com/a/1190000016629668)
+[The Incremental Garbage Collection of Processes(future design pattern), baker77](http://home.pipeline.com/~hbaker1/Futures.html)  
+第一篇提及future这个关键词的（等同于promise和eventual）。  
+
+[A Scalable Lock-free Stack Algorithm, hendler09-jpdc](http://people.csail.mit.edu/shanir/publications/Lock_Free.pdf)
+
+[Java多线程进阶（四二）—— J.U.C之executors框架：Future模式](https://segmentfault.com/a/1190000016767676)
 
 

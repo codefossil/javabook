@@ -98,7 +98,15 @@ http://arturmkrtchyan.com/
 
 ## lock-free编程
 
+![](http://img.voycn.com/images/2020/02/60cfd36e4cec57efc5ae247ae021d22c.png)
+
+[CAS与volatile的语义区别](https://liangjiacheng.cn/2020/03/08/CAS%E4%B8%8Evolatile%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%BA%E5%88%AB/)
+
+[深入浅出 CAS](https://blog.biezhi.me/2019/01/head-first-cas.html)
+
 https://preshing.com/20120612/an-introduction-to-lock-free-programming/
+
+[lazyset](https://stackoverflow.com/questions/7557156/atomicxxx-lazyset-in-terms-of-happens-before-edges)
 
 
 ## 内部api
@@ -179,12 +187,11 @@ java5中SynchronousQueue的原型设计和分析。
 
 [Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
 
-[The Incremental Garbage Collection of Processes(future design pattern), baker77](http://home.pipeline.com/~hbaker1/Futures.html)  
-第一篇提及future这个关键词的（等同于promise和eventual）。  
-
+[Future](./future.md)
+java单任务异步执行实现。
 
 [Java Executor Framework](./executor.md)  
-java5引入的多线程任务执行框架。
+java5引入的线程池任务执行框架。
 
 [JCIP, 2006](https://book.douban.com/subject/10484692/)   
 java并发编程圣经。  
@@ -318,15 +325,17 @@ https://en.wikipedia.org/wiki/IEEE\_754-1985\#Comparing\_floating-point\_numbers
 http://0.30000000000000004.com/
 
 
-# hashcode
+# hashcode、equals
 
-> 不是用来唯一判定对象本身，而是用来缩小查找范围
+> hashCode不是用来唯一判定对象本身，而是用来缩小查找范围
 
 约定
 - 如果equal()返回true，2个对象hashCode()必须相等
 - 如果equal()返回false，对于hashCode()没有规定
 
 https://www.jitendrazaa.com/blog/java/what-is-the-need-to-override-hashcode-and-equals-method/
+
+https://blog.csdn.net/Mrs_chens/article/details/92761868
 
 ## 默认实现
 
@@ -403,5 +412,3 @@ https://medium.com/adorsys/jvm-memory-settings-in-a-container-environment-64b084
 
 [kubernetes资源限制](https://kubernetes.io/docs/concepts/policy/limit-range/)
 [Jenkins](http://jenkins.sudiyi.cn:8080/view/erp/job/erp-ticket-ticket-api/)
-
-

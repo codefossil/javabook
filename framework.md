@@ -260,6 +260,8 @@ https://mp.weixin.qq.com/s/i06PkS3rDLfouzVjS6QXkg
 
 # 研发规范
 
+https://ncrcoe.gitbooks.io/java-for-small-teams/content/
+
 ## 持续集成规范
 集成流水线  
 代码管理  

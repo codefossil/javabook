@@ -71,7 +71,10 @@ http://www.cs.cornell.edu/gries/July2016/
 [Actor, 2016](http://dist-prog-book.com/chapter/3/message-passing.html)  
 
 https://en.wikipedia.org/wiki/Concurrent_computing  
+
 https://www.irif.fr/~mellies/mpri/mpri-ens/articles/winskel-nielsen-models-for-concurrency.pdf
+
+https://wiki.rice.edu/confluence/display/PARPROG/COMP322
 
 ## 计算模型
 [Timesharing, 1962](http://www.eecs.harvard.edu/~margo/cs261/papers/corbato62.pdf)  

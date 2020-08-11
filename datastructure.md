@@ -100,6 +100,8 @@ https://github.com/greyireland/algorithm-pattern
 
 [分类表](https://cspiration.com/leetcodeClassification)
 
+[LeetCode最新面试高频题截图](https://www.nowcoder.com/discuss/455104)
+
 [Learning-Algorithms-with-Leetcode](https://www.yuque.com/liweiwei1419/algo)
 
 [LeetCode题目分类与面试问题整理](https://github.com/yuanguangxin/LeetCode)
@@ -113,7 +115,6 @@ https://github.com/greyireland/algorithm-pattern
 [LeetcodeTop, 汇总互联网大厂高频算法题](https://github.com/afatcoder/LeetcodeTop)
 
 [LeetCode 官方推出的经典面试题目清单 —— 「初级算法 - 帮助入门」](https://leetcode-cn.com/leetbook/detail/top-interview-questions-easy/)
-
 
 ## 可视化
 
