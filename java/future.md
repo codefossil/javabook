@@ -45,7 +45,6 @@ public void run() {
 
 ```java
 private int awaitDone(boolean timed, long nanos) throws InterruptedException {
-    final long deadline = timed ? System.nanoTime() + nanos : 0L;
     WaitNode q = null;
     boolean queued = false;
     for (;;) {        
