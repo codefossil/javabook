@@ -59,6 +59,8 @@ java是第一个在编程语言的层面规范内存访问模型。
 
 [Java并发指南2：深入理解Java内存模型JMM](https://blog.51cto.com/14006572/2448908)
 
+[Ergonomics](https://docs.oracle.com/javase/10/gctuning/ergonomics.htm#JSGCT-GUID-DB4CAE94-2041-4A16-90EC-6AE3D91EC1F1)
+
 # 对象、垃圾收集
 ![](https://img-blog.csdnimg.cn/20190115141050902.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NDRE5fQ1A=,size_16,color_FFFFFF,t_70)
 
@@ -167,7 +169,7 @@ park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
 当竞争时，需要撤销偏向锁
 
 
-## 同步框架
+## 同步、执行框架
 
 [The java.util.concurrent Synchronizer Framework](./aqs.md)   
 java5引入的同步器框架底层设计和分析。（结合源码和网友的分析）  
@@ -177,7 +179,9 @@ java5中SynchronousQueue的原型设计和分析。
 
 [Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
 
-[Future, 1977](http://home.pipeline.com/~hbaker1/Futures.html)  
+[The Incremental Garbage Collection of Processes(future design pattern), baker77](http://home.pipeline.com/~hbaker1/Futures.html)  
+第一篇提及future这个关键词的（等同于promise和eventual）。  
+
 
 [Java Executor Framework](./executor.md)  
 java5引入的多线程任务执行框架。
@@ -388,6 +392,16 @@ http://gee.cs.oswego.edu/dl/
 http://g.oswego.edu/dl/jmm/cookbook.html  
 
 
+# 容器
+jvm的环境需要支持容器对内存和cpu的设置
+8u191以上已经默认支持
 
+-XX:+UseContainerSupport已经默认加入到jdk中  
+https://medium.com/adorsys/jvm-memory-settings-in-a-container-environment-64b0840e1d9e  
+[8u191](https://medium.com/adorsys/usecontainersupport-to-the-rescue-e77d6cfea712)    
+[8u131](https://blog.softwaremill.com/docker-support-in-new-java-8-finally-fd595df0ca54)  
+
+[kubernetes资源限制](https://kubernetes.io/docs/concepts/policy/limit-range/)
+[Jenkins](http://jenkins.sudiyi.cn:8080/view/erp/job/erp-ticket-ticket-api/)
 
 
