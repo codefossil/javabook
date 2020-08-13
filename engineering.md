@@ -98,6 +98,10 @@ Evolutionary Project Management
 
 [Pragmatic Thinking and Learning, hunt2011](https://read.douban.com/ebook/1885884/)
 
+[The Seven Stages of Expertise in Software Engineering](http://www.wayland-informatics.com/The%20Seven%20Stages%20of%20Expertise%20in%20Software.htm)
+
+skill and self-evaluation
+
 https://firstround.com/review/Responsiveness-New-Efficiency/  
 
 http://www.cs.toronto.edu/~sme/CSC340F/  

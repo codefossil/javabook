@@ -72,6 +72,10 @@ https://courses.engr.illinois.edu/cs498374/fa2014/lectures.html
 
 [算法之道, 邹恒明](https://book.douban.com/subject/10564644/)
 
+[程序员代码面试指南：IT名企算法与数据结构题目最优解, 左程云2015](https://book.douban.com/subject/26638586/)
+
+[Algorithms, Dasgupta08](https://book.douban.com/subject/3155710/)
+
 [Introduction to Algorithms, cormen09, mit](https://book.douban.com/subject/3904676/)
 
 [The Art of Computer Programming, knuth98](https://book.douban.com/subject/1418402/)
