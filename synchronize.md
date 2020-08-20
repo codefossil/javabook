@@ -76,6 +76,8 @@ https://www.irif.fr/~mellies/mpri/mpri-ens/articles/winskel-nielsen-models-for-c
 
 https://wiki.rice.edu/confluence/display/PARPROG/COMP322
 
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-multicore-programming-primer-january-iap-2007/lecture-notes-and-video/
+
 ## 计算模型
 [Timesharing, 1962](http://www.eecs.harvard.edu/~margo/cs261/papers/corbato62.pdf)  
 [The Working Set Model for Program Behavior, 1968](https://www.cs.rutgers.edu/~zz124/cs671_fall2013/lectures/fan_workingset.pdf)  
@@ -118,8 +120,9 @@ https://www.cs.uky.edu/~jzhang/CS621/cs621.html
 [Amdahl's law in the Multicore Era, 2008](http://www.eng.auburn.edu/~agrawvd/COURSE/E6270_Spr09/READ/Amdahls%20Law%20in%20Multicore%20Era.pdf)  
 [Gustafson's law, 1988](http://www.johngustafson.net/pubs/pub13/amdahl.htm) 
 
-http://www.cs.cmu.edu/~418
-http://cs149.stanford.edu/winter19/
+http://www.cs.cmu.edu/~418  
+http://cs149.stanford.edu/winter19/  
+https://en.wikipedia.org/wiki/Massively_parallel  
 
 # 分布式系统
 [分布式](ds/ds.md)  

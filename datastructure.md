@@ -205,6 +205,22 @@ https://medium.com/@dgryski/consistent-hashing-algorithmic-tradeoffs-ef6b8e2fcae
 负载均衡  
 https://help.aliyun.com/document_detail/27544.html?spm=a2c4g.11186623.6.546.2bb11d42IuEAbG  
 
+# 算术
+## 计算和的溢出
+```java
+// java.lang.math
+public static int addExact(int x, int y) {
+    int r = x + y;
+    // HD 2-12 Overflow iff both arguments have the opposite sign of the result
+    if (((x ^ r) & (y ^ r)) < 0) {
+        throw new ArithmeticException("integer overflow");
+    }
+    return r;
+}
+```
+
+https://itsallbinary.com/algorithms-detect-int-addition-sum-overflow-or-underflow/
+
 # 数据结构
 [Advanced Data Structures ](http://courses.csail.mit.edu/6.851/fall17/)
 

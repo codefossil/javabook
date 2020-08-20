@@ -16,6 +16,7 @@
 
 http://cs.brown.edu/courses/csci2270/previous.html  
 http://people.csail.mit.edu/tdanford/6830papers/  
+https://people.eecs.berkeley.edu/~brewer/cs262/  
 
 - 工业  
 [Momjian-PostgreSQL](https://momjian.us/main/faq.html)  
@@ -130,13 +131,18 @@ http://pages.cs.wisc.edu/~nil/764/
 
 # 事务与并发控制
 
-> 事务是为了简化，解决数据库容错
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE988bc0b146770b77bd9fb4f96948816f/145)
 
 `ch17~ch18, db concept`  
-
+17章是事务管理的理论指导。
+一个个执行事务当然可以，更好的是并发地执行，以提高吞吐、利用率，同时能够加快用户响应。  
+通过构建一个简单的事务模型，抽象出R(A), W(B)，研究并发造成的各种现象。  
+隔离是目的，Serializability是保证正确性的基石，并发控制就是研究怎样编排可以串行化的事务组。  
+`PS：这里又涉及时序、happen before等类似问题。并发|分布式基本问题可以提炼出来。`
+数据库领域，喜欢把内部锁叫做latch。  
 
 [The Notions of Consistency and Predicate Locks in a Database System, eswaran76](http://people.csail.mit.edu/tdanford/6830papers/eswaran-notions-of-consistency.pdf)
-
+Serializability, 2PL
 
 [ARIES,tods92 ](https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf)
 
@@ -258,13 +264,13 @@ cpu越来越快，而磁盘的带宽却涨幅不大，因此多用cpu来换磁�
 
 
 https://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html
-[digg v4](https://knowyourmeme.com/memes/events/digg-v4)
+[digg v4](https://knowyourmeme.com/memes/events/digg-v4)  
 https://www.memsql.com/blog/why-nosql-databases-wrong-tool-for-modern-application/
 https://dzone.com/articles/nosql-vs-sql-differences-explained
 https://www.gartner.com/doc/reprints?id=1-5N2H2SM&ct=181024&st=sb
-[don't use mongodb](https://news.ycombinator.com/item?id=3202081)
-http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/
-
+[don't use mongodb](https://news.ycombinator.com/item?id=3202081)  
+http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/  
+https://laptrinhx.com/apache-hawq-next-step-in-massively-parallel-processing-3942821226/  
 
 # todo
 

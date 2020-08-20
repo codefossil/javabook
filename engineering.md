@@ -100,6 +100,8 @@ Evolutionary Project Management
 
 [The Seven Stages of Expertise in Software Engineering](http://www.wayland-informatics.com/The%20Seven%20Stages%20of%20Expertise%20in%20Software.htm)
 
+[新事物炒作曲线(un-confirmed), gartner](https://en.wikipedia.org/wiki/Hype_cycle)
+
 skill and self-evaluation
 
 https://firstround.com/review/Responsiveness-New-Efficiency/  
