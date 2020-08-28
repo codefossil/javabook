@@ -138,17 +138,28 @@ http://pages.cs.wisc.edu/~nil/764/
 一个个执行事务当然可以，更好的是并发地执行，以提高吞吐、利用率，同时能够加快用户响应。  
 通过构建一个简单的事务模型，抽象出R(A), W(B)，研究并发造成的各种现象。  
 隔离是目的，Serializability是保证正确性的基石，并发控制就是研究怎样编排可以串行化的事务组。  
-`PS：这里又涉及时序、happen before等类似问题。并发|分布式基本问题可以提炼出来。`
+`PS：这里又涉及时序、happen before等类似问题。并发|分布式基本问题可以提炼出来。`  
 数据库领域，喜欢把内部锁叫做latch。  
+
+## 锁协议
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE3126f56dc9680e1b36d31676378c4a53/147)
+
 
 [The Notions of Consistency and Predicate Locks in a Database System, eswaran76](http://people.csail.mit.edu/tdanford/6830papers/eswaran-notions-of-consistency.pdf)
 Serializability, 2PL
 
 [ARIES,tods92 ](https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf)
 
-[occ, tods81](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)  
+[occ, tods81](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)    
 
-[granularity of locks and degree of consistency, ibm75](http://jimgray.azurewebsites.net/papers/granularity%20of%20locks%20and%20degrees%20of%20consistency%20rj%201654.pdf)  
+[Concurrency Control in Distributed Database Systems, bernstein81](http://portal.acm.org/citation.cfm?id=356842.356846)  
+细节描述MVCC
+
+[Naming and Synchronization in a Decentralized Computer System, reed79](https://dspace.mit.edu/handle/1721.1/16279)  
+首次MVCC
+
+[granularity of locks and degree of consistency, gray75](http://jimgray.azurewebsites.net/papers/granularity%20of%20locks%20and%20degrees%20of%20consistency%20rj%201654.pdf)  
+锁的粒度。
 
 [transaction processing, gray92](https://book.douban.com/subject/2586390/)
 

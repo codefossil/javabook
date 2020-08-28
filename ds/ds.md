@@ -44,6 +44,8 @@ https://blog.rapid7.com/2014/03/14/synchronizing-clocks-in-a-cassandra-cluster-p
 # 一致性
 https://aphyr.com/posts/313-strong-consistency-models
 
+https://www.cncf.io/blog/2019/11/04/building-a-large-scale-distributed-storage-system-based-on-raft/
+
 # 复制
 
 [Cornell-Where Theory meets Practice](http://principled.cs.cornell.edu/research/)
