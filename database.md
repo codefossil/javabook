@@ -141,14 +141,13 @@ http://pages.cs.wisc.edu/~nil/764/
 `PS：这里又涉及时序、happen before等类似问题。并发|分布式基本问题可以提炼出来。`  
 数据库领域，喜欢把内部锁叫做latch。  
 
-## 锁协议
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE3126f56dc9680e1b36d31676378c4a53/147)
+[transaction processing, gray92](https://book.douban.com/subject/2586390/)
 
+## 可串行性、悲观锁、时序
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE3126f56dc9680e1b36d31676378c4a53/147)
 
 [The Notions of Consistency and Predicate Locks in a Database System, eswaran76](http://people.csail.mit.edu/tdanford/6830papers/eswaran-notions-of-consistency.pdf)
 Serializability, 2PL
-
-[ARIES,tods92 ](https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf)
 
 [occ, tods81](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)    
 
@@ -161,13 +160,21 @@ Serializability, 2PL
 [granularity of locks and degree of consistency, gray75](http://jimgray.azurewebsites.net/papers/granularity%20of%20locks%20and%20degrees%20of%20consistency%20rj%201654.pdf)  
 锁的粒度。
 
-[transaction processing, gray92](https://book.douban.com/subject/2586390/)
+[InnoDB locking](https://dev.mysql.com/doc/refman/5.7/en/innodb-locking.html)  
+
+## 并发异常、隔离级别
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE5523d0cddf53d51c08e86ee15e17a2aa/149)
 
 [critique isolation level, sigmod95](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-95-51.pdf)  
 
+[数据库事务隔离发展历史 | CatKang的博客](https://catkang.github.io/2018/08/31/isolation-level.html)
+
+## 持久化、可恢复性与日志
+
+[ARIES,tods92 ](https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf)  
+
 [voltdb recovery, icde2014](https://hstore.cs.brown.edu/papers/voltdb-recovery.pdf)
 
-[数据库事务隔离发展历史 | CatKang的博客](https://catkang.github.io/2018/08/31/isolation-level.html)
 
 # 存取方法
 
