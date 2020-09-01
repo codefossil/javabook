@@ -10,7 +10,7 @@
 [CMSC 724](http://www.cs.umd.edu/class/spring2017/cmsc724/schedule.html)   
 [CMU 15-721](http://15721.courses.cs.cmu.edu/spring2017/schedule.html)  
 [WISC CS744](http://pages.cs.wisc.edu/~akella/CS744/S19/papers.html)
-[HARVARD cs265](http://daslab.seas.harvard.edu/classes/cs265/)
+[HARVARD cs265](http://daslab.seas.harvard.edu/classes/cs265/)  
 [CMU 15-445/645](https://15445.courses.cs.cmu.edu/fall2018/schedule.html)  
 [MIT 6.830](http://people.csail.mit.edu/tdanford/6830papers/)  
 
@@ -134,7 +134,7 @@ http://pages.cs.wisc.edu/~nil/764/
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE988bc0b146770b77bd9fb4f96948816f/145)
 
 `ch17~ch18, db concept`  
-17章是事务管理的理论指导。
+17章是事务管理的理论指导。  
 一个个执行事务当然可以，更好的是并发地执行，以提高吞吐、利用率，同时能够加快用户响应。  
 通过构建一个简单的事务模型，抽象出R(A), W(B)，研究并发造成的各种现象。  
 隔离是目的，Serializability是保证正确性的基石，并发控制就是研究怎样编排可以串行化的事务组。  
@@ -144,9 +144,9 @@ http://pages.cs.wisc.edu/~nil/764/
 [transaction processing, gray92](https://book.douban.com/subject/2586390/)
 
 ## 可串行性、悲观锁、时序
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE3126f56dc9680e1b36d31676378c4a53/147)
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE845bbb498fc383b00521772ee9fed46f/152)
 
-[The Notions of Consistency and Predicate Locks in a Database System, eswaran76](http://people.csail.mit.edu/tdanford/6830papers/eswaran-notions-of-consistency.pdf)
+[The Notions of Consistency and Predicate Locks in a Database System, eswaran76](http://people.csail.mit.edu/tdanford/6830papers/eswaran-notions-of-consistency.pdf)  
 Serializability, 2PL
 
 [occ, tods81](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)    
@@ -162,12 +162,18 @@ Serializability, 2PL
 
 [InnoDB locking](https://dev.mysql.com/doc/refman/5.7/en/innodb-locking.html)  
 
+[MySQL多版本并发控制机制(MVCC)-源码浅析](https://my.oschina.net/alchemystar/blog/1927425)  
+
+[别再误解MySQL和「幻读」了](https://www.cnblogs.com/yaphetsfang/p/12055250.html)  
+
 ## 并发异常、隔离级别
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE5523d0cddf53d51c08e86ee15e17a2aa/149)
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEb5c5a08a8353d9b91972a7fbc857fcb5/155)
 
 [critique isolation level, sigmod95](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-95-51.pdf)  
 
-[数据库事务隔离发展历史 | CatKang的博客](https://catkang.github.io/2018/08/31/isolation-level.html)
+[innodb - 15.7.2.1 Transaction Isolation Levels](https://dev.mysql.com/doc/refman/8.0/en/innodb-transaction-isolation-levels.html)  
+
+[数据库事务隔离发展历史 | CatKang的博客](https://catkang.github.io/2018/08/31/isolation-level.html)  
 
 ## 持久化、可恢复性与日志
 
