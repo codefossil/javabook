@@ -11,6 +11,7 @@
 * [中科院软件研究所](http://www.is.cas.cn/)
 * [清华大学信息科学技术学院](http://www.sist.tsinghua.edu.cn/)
 * [科学技术司](http://www.moe.gov.cn/s78/A16/)
+* [Best Paper Awards in Computer Science (since 1996)](https://jeffhuang.com/best_paper_awards/)
 
 # blog
 [Software Developers and Technopreneurs](http://tutorials.jenkov.com/)
