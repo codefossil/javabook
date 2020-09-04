@@ -41,7 +41,7 @@ public class ThreadNumDemo {
 [HotSpot Runtime Overview](http://openjdk.java.net/groups/hotspot/docs/RuntimeOverview.html)
 
 # JVM内存布局
-![]()
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEd3a1b1c6b92e0b41c72b8a3336ca1c6f/157)
 
 [Understanding how the JVM uses native memory on Windows and Linux](https://www.ibm.com/developerworks/library/j-nativememory-linux/index.html)
 
