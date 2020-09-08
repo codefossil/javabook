@@ -175,6 +175,8 @@ Serializability, 2PL
 
 [数据库事务隔离发展历史 | CatKang的博客](https://catkang.github.io/2018/08/31/isolation-level.html)  
 
+[MySQL · 源码分析 · InnoDB Repeatable Read隔离级别之大不同](http://mysql.taobao.org/monthly/2017/06/07/)
+
 ## 持久化、可恢复性与日志
 
 [ARIES,tods92 ](https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf)  

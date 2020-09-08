@@ -119,3 +119,12 @@ c++
 文本处理
 c++98/11/14/17
 [C++ Concurrency In Action](https://chenxiaowei.gitbooks.io/cpp_concurrency_in_action/content/)
+
+
+
+[Turing79-floyd](https://amturing.acm.org/award_winners/floyd_3720707.cfm)
+
+
+# 静态代码分析
+
+https://pascal-group.bitbucket.io/teaching.html

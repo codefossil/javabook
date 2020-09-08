@@ -49,6 +49,9 @@ public class ThreadNumDemo {
 
 [Fixing Java's ByteBuffer native memory "leak"](https://www.evanjones.ca/java-bytebuffer-leak.html)
 
+[HotSpot JVM Performance Tuning Guidelines](https://ionutbalosin.com/2020/01/hotspot-jvm-performance-tuning-guidelines/#jit_tiered_mode)
+jvm各种优化options
+
 # 内存模型和多核处理器
 java是第一个在编程语言的层面规范内存访问模型。  
 
@@ -117,6 +120,8 @@ http://arturmkrtchyan.com/
 ## 内存监控、故障排除
 
 [native memory tracking](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr007.html)
+
+[Eliminating Large JVM GC Pauses Caused by Background IO Traffic, linkedin](https://engineering.linkedin.com/blog/2016/02/eliminating-large-jvm-gc-pauses-caused-by-background-io-traffic)
 
 
 # 并发、同步、锁优化
