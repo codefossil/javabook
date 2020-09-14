@@ -92,6 +92,8 @@ https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model
 
 # 查询
 
+index condition pushdown
+
 `ch2~ch5, db concept`  
 关系型查询语言SQL
 
@@ -162,9 +164,7 @@ Serializability, 2PL
 
 [InnoDB locking](https://dev.mysql.com/doc/refman/5.7/en/innodb-locking.html)  
 
-[MySQL多版本并发控制机制(MVCC)-源码浅析](https://my.oschina.net/alchemystar/blog/1927425)  
 
-[别再误解MySQL和「幻读」了](https://www.cnblogs.com/yaphetsfang/p/12055250.html)  
 
 ## 并发异常、隔离级别
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEb5c5a08a8353d9b91972a7fbc857fcb5/155)
@@ -175,7 +175,14 @@ Serializability, 2PL
 
 [数据库事务隔离发展历史 | CatKang的博客](https://catkang.github.io/2018/08/31/isolation-level.html)  
 
+[MySQL多版本并发控制机制(MVCC)-源码浅析](https://my.oschina.net/alchemystar/blog/1927425)  
+
 [MySQL · 源码分析 · InnoDB Repeatable Read隔离级别之大不同](http://mysql.taobao.org/monthly/2017/06/07/)
+innoDB RR实现会出现幻读，postgrel和SQL Server不会，不过也符合sql标准
+
+[14.7 innoDB锁和事务模型](https://dev.mysql.com/doc/refman/5.7/en/innodb-locking-transaction-model.html)
+innoDB的一致性读仅仅针对select语句。 insert/update/delete/select...for update等均使用锁的方式，不走一致性读。    
+对于读写事务，普通的select无法保护其他事务修改和删除数据。 需要用户自行选择使用select...for update锁读。  
 
 ## 持久化、可恢复性与日志
 
@@ -183,6 +190,7 @@ Serializability, 2PL
 
 [voltdb recovery, icde2014](https://hstore.cs.brown.edu/papers/voltdb-recovery.pdf)
 
+[5.4 MySQL服务器日志](https://dev.mysql.com/doc/refman/5.7/en/server-logs.html)
 
 # 存取方法
 
