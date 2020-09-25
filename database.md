@@ -139,7 +139,7 @@ http://pages.cs.wisc.edu/~nil/764/
 17章是事务管理的理论指导。  
 一个个执行事务当然可以，更好的是并发地执行，以提高吞吐、利用率，同时能够加快用户响应。  
 通过构建一个简单的事务模型，抽象出R(A), W(B)，研究并发造成的各种现象。  
-隔离是目的，Serializability是保证正确性的基石，并发控制就是研究怎样编排可以串行化的事务组。  
+隔离是目的，Serializability是保证正确性的基石，并发控制就是研究怎样编排可串行化的事务组。  
 `PS：这里又涉及时序、happen before等类似问题。并发|分布式基本问题可以提炼出来。`  
 数据库领域，喜欢把内部锁叫做latch。  
 
@@ -177,10 +177,10 @@ Serializability, 2PL
 
 [MySQL多版本并发控制机制(MVCC)-源码浅析](https://my.oschina.net/alchemystar/blog/1927425)  
 
-[MySQL · 源码分析 · InnoDB Repeatable Read隔离级别之大不同](http://mysql.taobao.org/monthly/2017/06/07/)
+[MySQL · 源码分析 · InnoDB Repeatable Read隔离级别之大不同](http://mysql.taobao.org/monthly/2017/06/07/)  
 innoDB RR实现会出现幻读，postgrel和SQL Server不会，不过也符合sql标准
 
-[14.7 innoDB锁和事务模型](https://dev.mysql.com/doc/refman/5.7/en/innodb-locking-transaction-model.html)
+[14.7 innoDB锁和事务模型](https://dev.mysql.com/doc/refman/5.7/en/innodb-locking-transaction-model.html)  
 innoDB的一致性读仅仅针对select语句。 insert/update/delete/select...for update等均使用锁的方式，不走一致性读。    
 对于读写事务，普通的select无法保护其他事务修改和删除数据。 需要用户自行选择使用select...for update锁读。  
 
