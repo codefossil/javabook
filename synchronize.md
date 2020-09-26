@@ -70,6 +70,8 @@ http://www.cs.cornell.edu/gries/July2016/
 [Event bad, 2003](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/Even-2/index.html)  
 [Actor, 2016](http://dist-prog-book.com/chapter/3/message-passing.html)  
 
+http://web.cecs.pdx.edu/~walpole/class/cs510/winter2018/home.html
+
 https://en.wikipedia.org/wiki/Concurrent_computing  
 https://www.irif.fr/~mellies/mpri/mpri-ens/articles/winskel-nielsen-models-for-concurrency.pdf
 

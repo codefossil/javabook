@@ -154,6 +154,8 @@ BFS
 DFS  
 Disjoint-set  
 
+[Skip Lists: A Probabilistic Alternative to Balanced Trees](http://courses.cs.vt.edu/cs2604/spring02/Projects/1/Pugh.Skiplists.pdf)
+
 ## Back tracing
 
 ## optimization

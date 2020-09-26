@@ -36,6 +36,11 @@ https://en.wikipedia.org/wiki/Learning_theory_(education)
 
 [college writing skills with readings](https://book.douban.com/subject/26275079/)
 
+# 二语习得
+[找对英语学习方法的第一本书, 漏屋2012](https://book.douban.com/subject/11522125/)  
+
+
+
 # 演讲
 [Giving a Talk, 2000](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/GivingATalk.pdf)  
 明确你要传递什么信息，分析你的听众。提前准备内容，熟悉场地，提前练习，对齐时间。内容的形式要简洁，多图表。演讲人也要充分的放松，选好站点，不断的观察听众的反应，放慢语速，保持与听众交互。
