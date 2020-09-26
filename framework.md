@@ -27,6 +27,8 @@
 # 通用企业架构设计
 microservice/SOA/Lambda Architecture  
 
+[后端架构师技术图谱](https://github.com/xingshaocheng/architect-awesome)
+
 [Patterns of Enterprise Application Architecture, 2003](https://book.douban.com/subject/1230559/)  
 [Building Microservice](https://book.douban.com/subject/25881698/)  
 
@@ -259,6 +261,8 @@ redis
 https://mp.weixin.qq.com/s/i06PkS3rDLfouzVjS6QXkg
 
 # 研发规范
+
+https://ncrcoe.gitbooks.io/java-for-small-teams/content/
 
 ## 持续集成规范
 集成流水线  

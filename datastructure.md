@@ -72,6 +72,10 @@ https://courses.engr.illinois.edu/cs498374/fa2014/lectures.html
 
 [算法之道, 邹恒明](https://book.douban.com/subject/10564644/)
 
+[程序员代码面试指南：IT名企算法与数据结构题目最优解, 左程云2015](https://book.douban.com/subject/26638586/)
+
+[Algorithms, Dasgupta08](https://book.douban.com/subject/3155710/)
+
 [Introduction to Algorithms, cormen09, mit](https://book.douban.com/subject/3904676/)
 
 [The Art of Computer Programming, knuth98](https://book.douban.com/subject/1418402/)
@@ -100,6 +104,8 @@ https://github.com/greyireland/algorithm-pattern
 
 [分类表](https://cspiration.com/leetcodeClassification)
 
+[LeetCode最新面试高频题截图](https://www.nowcoder.com/discuss/455104)
+
 [Learning-Algorithms-with-Leetcode](https://www.yuque.com/liweiwei1419/algo)
 
 [LeetCode题目分类与面试问题整理](https://github.com/yuanguangxin/LeetCode)
@@ -113,7 +119,6 @@ https://github.com/greyireland/algorithm-pattern
 [LeetcodeTop, 汇总互联网大厂高频算法题](https://github.com/afatcoder/LeetcodeTop)
 
 [LeetCode 官方推出的经典面试题目清单 —— 「初级算法 - 帮助入门」](https://leetcode-cn.com/leetbook/detail/top-interview-questions-easy/)
-
 
 ## 可视化
 
@@ -201,6 +206,22 @@ https://medium.com/@dgryski/consistent-hashing-algorithmic-tradeoffs-ef6b8e2fcae
 
 负载均衡  
 https://help.aliyun.com/document_detail/27544.html?spm=a2c4g.11186623.6.546.2bb11d42IuEAbG  
+
+# 算术
+## 计算和的溢出
+```java
+// java.lang.math
+public static int addExact(int x, int y) {
+    int r = x + y;
+    // HD 2-12 Overflow iff both arguments have the opposite sign of the result
+    if (((x ^ r) & (y ^ r)) < 0) {
+        throw new ArithmeticException("integer overflow");
+    }
+    return r;
+}
+```
+
+https://itsallbinary.com/algorithms-detect-int-addition-sum-overflow-or-underflow/
 
 # 数据结构
 [Advanced Data Structures ](http://courses.csail.mit.edu/6.851/fall17/)

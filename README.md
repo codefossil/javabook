@@ -12,8 +12,8 @@
 * [智能系统](ai.md)
 
 ## 信息工程
-> 提升软件质量  
-> 软件系统工程导论、自动化分析、形式化验证、软件度量
+
+> 自动化分析、形式化验证、软件度量
 
 * [项目管理](engineering.md)
 * [系统分析和架构设计](design.md)
@@ -29,12 +29,7 @@
 # 资源
 
 * [cs-list](https://en.wikipedia.org/wiki/List_of_important_publications_in_computer_science#Concurrent,_parallel,_and_distributed_computing)  
-* [moc](https://ocw.mit.edu/courses/find-by-topic/)
 * [awesome course](https://github.com/prakhar1989/awesome-courses)  
 * [hightscalability](http://highscalability.com/all-time-favorites/)
-* [leetcode](https://leetcode.com/explore/)
 * [参考连接](reference.md)
-
-
-
-
+* [Subfields of computer science](https://en.wikipedia.org/wiki/Category:Subfields_of_computer_science)

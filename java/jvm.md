@@ -12,7 +12,20 @@ https://en.wikipedia.org/wiki/Java_version_history
 
 https://www.cc.gatech.edu/~harrold/6340/cs6340_fall2009/
 
-# jvm内部线程
+# java特性
+
+[making the future safe for the past - adding genericity to the java programming language, sun, oopsla98](http://homepages.inf.ed.ac.uk/wadler/gj/Documents/gj-oopsla.pdf)
+
+[Performance of Java versus C++, lewis03](http://scribblethink.org/Computer/javaCbenchmark.html)
+
+[Effective Java](https://book.douban.com/subject/27047716/)  
+
+## 类型系统
+
+[JLS - Two type system](https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html)  
+https://softwareengineering.stackexchange.com/questions/203970/when-to-use-primitive-vs-class-in-java  
+
+## jvm内部线程
 ```java
 public class ThreadNumDemo {
     public static void main(String[] args) {
@@ -27,15 +40,17 @@ public class ThreadNumDemo {
 
 [HotSpot Runtime Overview](http://openjdk.java.net/groups/hotspot/docs/RuntimeOverview.html)
 
-# JVM结构、类型系统
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE98bf46481bc887a843546cbb68eb9c3d/123)
+# JVM内存布局
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEd3a1b1c6b92e0b41c72b8a3336ca1c6f/157)
+
+[Understanding how the JVM uses native memory on Windows and Linux](https://www.ibm.com/developerworks/library/j-nativememory-linux/index.html)
 
 [Chapter 2. The Structure of the Java Virtual Machine](https://docs.oracle.com/javase/specs/jvms/se9/html/jvms-2.html#jvms-2.5)
 
-[JLS - Two type system](https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html)  
-https://softwareengineering.stackexchange.com/questions/203970/when-to-use-primitive-vs-class-in-java  
+[Fixing Java's ByteBuffer native memory "leak"](https://www.evanjones.ca/java-bytebuffer-leak.html)
 
-[Effective Java](https://book.douban.com/subject/27047716/)  
+[HotSpot JVM Performance Tuning Guidelines](https://ionutbalosin.com/2020/01/hotspot-jvm-performance-tuning-guidelines/#jit_tiered_mode)
+jvm各种优化options
 
 # 内存模型和多核处理器
 java是第一个在编程语言的层面规范内存访问模型。  
@@ -59,6 +74,8 @@ java是第一个在编程语言的层面规范内存访问模型。
 
 [Java并发指南2：深入理解Java内存模型JMM](https://blog.51cto.com/14006572/2448908)
 
+[Ergonomics](https://docs.oracle.com/javase/10/gctuning/ergonomics.htm#JSGCT-GUID-DB4CAE94-2041-4A16-90EC-6AE3D91EC1F1)
+
 # 对象、垃圾收集
 ![](https://img-blog.csdnimg.cn/20190115141050902.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NDRE5fQ1A=,size_16,color_FFFFFF,t_70)
 
@@ -67,6 +84,20 @@ java是第一个在编程语言的层面规范内存访问模型。
 ![](https://i2.wp.com/dhaval-shah.com/wp-content/uploads/2017/10/Garbage-Collectors.png?w=626)
 
 [The Garbage Collection Handbook, jones2011](https://book.douban.com/subject/6809987/)  
+
+[CS690M: Advanced Dynamic Memory Management, Fall 2003](https://www.cs.purdue.edu/homes/hosking/690M/)
+
+[395T Memory Management Schedule](http://www.cs.utexas.edu/users/mckinley/395Tmm/schedule.html)
+
+[Uniprocessor Garbage Collection Techniques, wilson92, iwmm](https://condor.depaul.edu/dmumaugh/readings/handouts/CSC548/gcsurvey.pdf)
+
+[Generation Scavenging: A Non-disruptlve High Performance Storage Reclamation Algorithm, ungar84](https://www.cs.purdue.edu/homes/hosking/690M/p157-ungar.pdf)
+
+[Infant mortality and generational garbage collection, baker93, sigplan](https://dl.acm.org/doi/10.1145/152739.152747)
+
+[tracing garbage collection](https://en.wikipedia.org/wiki/Tracing_garbage_collection#Generational_GC_(ephemeral_GC))
+
+[Garbage-First Garbage Collection, sun, ismm04](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.63.6386&rep=rep1&type=pdf)
 
 [深入理解Java虚拟机, 2013](https://book.douban.com/subject/24722612/)  
 
@@ -90,13 +121,23 @@ http://arturmkrtchyan.com/
 
 [native memory tracking](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr007.html)
 
+[Eliminating Large JVM GC Pauses Caused by Background IO Traffic, linkedin](https://engineering.linkedin.com/blog/2016/02/eliminating-large-jvm-gc-pauses-caused-by-background-io-traffic)
+
 
 # 并发、同步、锁优化
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEadd81df1f79005bf5126391799ecfdab/139)
 
 ## lock-free编程
 
+![](http://img.voycn.com/images/2020/02/60cfd36e4cec57efc5ae247ae021d22c.png)
+
+[CAS与volatile的语义区别](https://liangjiacheng.cn/2020/03/08/CAS%E4%B8%8Evolatile%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%BA%E5%88%AB/)
+
+[深入浅出 CAS](https://blog.biezhi.me/2019/01/head-first-cas.html)
+
 https://preshing.com/20120612/an-introduction-to-lock-free-programming/
+
+[lazyset](https://stackoverflow.com/questions/7557156/atomicxxx-lazyset-in-terms-of-happens-before-edges)
 
 
 ## 内部api
@@ -167,7 +208,7 @@ park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
 当竞争时，需要撤销偏向锁
 
 
-## 同步框架
+## 同步、执行框架
 
 [The java.util.concurrent Synchronizer Framework](./aqs.md)   
 java5引入的同步器框架底层设计和分析。（结合源码和网友的分析）  
@@ -177,10 +218,11 @@ java5中SynchronousQueue的原型设计和分析。
 
 [Java Fork/Join, 2000](http://gee.cs.oswego.edu/dl/papers/fj.pdf)  
 
-[Future, 1977](http://home.pipeline.com/~hbaker1/Futures.html)  
+[Future](./future.md)
+java单任务异步执行实现。
 
 [Java Executor Framework](./executor.md)  
-java5引入的多线程任务执行框架。
+java5引入的线程池任务执行框架。
 
 [JCIP, 2006](https://book.douban.com/subject/10484692/)   
 java并发编程圣经。  
@@ -188,6 +230,8 @@ java并发编程圣经。
 然后从任务和执行分离的角度讲java的线程池的设计、评价和基础。  
 
 # 集合
+
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE633220a5b3b6698c02bf66f51450d288/143)
 
 [Collections Framework Overview](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html)  
 [Outline of the Collections Framework](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/reference.html)
@@ -314,15 +358,17 @@ https://en.wikipedia.org/wiki/IEEE\_754-1985\#Comparing\_floating-point\_numbers
 http://0.30000000000000004.com/
 
 
-# hashcode
+# hashcode、equals
 
-> 不是用来唯一判定对象本身，而是用来缩小查找范围
+> hashCode不是用来唯一判定对象本身，而是用来缩小查找范围
 
 约定
 - 如果equal()返回true，2个对象hashCode()必须相等
 - 如果equal()返回false，对于hashCode()没有规定
 
 https://www.jitendrazaa.com/blog/java/what-is-the-need-to-override-hashcode-and-equals-method/
+
+https://blog.csdn.net/Mrs_chens/article/details/92761868
 
 ## 默认实现
 
@@ -388,6 +434,13 @@ http://gee.cs.oswego.edu/dl/
 http://g.oswego.edu/dl/jmm/cookbook.html  
 
 
+# 容器
+jvm的环境需要支持容器对内存和cpu的设置
+8u191以上已经默认支持
 
-
-
+-XX:+UseContainerSupport已经默认加入到jdk中  
+https://medium.com/adorsys/jvm-memory-settings-in-a-container-environment-64b0840e1d9e  
+[8u191](https://medium.com/adorsys/usecontainersupport-to-the-rescue-e77d6cfea712)    
+[8u131](https://blog.softwaremill.com/docker-support-in-new-java-8-finally-fd595df0ca54)   
+[kubernetes资源限制](https://kubernetes.io/docs/concepts/policy/limit-range/)  
+[Jenkins](http://jenkins.sudiyi.cn:8080/view/erp/job/erp-ticket-ticket-api/)

@@ -10,12 +10,13 @@
 [CMSC 724](http://www.cs.umd.edu/class/spring2017/cmsc724/schedule.html)   
 [CMU 15-721](http://15721.courses.cs.cmu.edu/spring2017/schedule.html)  
 [WISC CS744](http://pages.cs.wisc.edu/~akella/CS744/S19/papers.html)
-[HARVARD cs265](http://daslab.seas.harvard.edu/classes/cs265/)
+[HARVARD cs265](http://daslab.seas.harvard.edu/classes/cs265/)  
 [CMU 15-445/645](https://15445.courses.cs.cmu.edu/fall2018/schedule.html)  
 [MIT 6.830](http://people.csail.mit.edu/tdanford/6830papers/)  
 
 http://cs.brown.edu/courses/csci2270/previous.html  
 http://people.csail.mit.edu/tdanford/6830papers/  
+https://people.eecs.berkeley.edu/~brewer/cs262/  
 
 - 工业  
 [Momjian-PostgreSQL](https://momjian.us/main/faq.html)  
@@ -91,6 +92,8 @@ https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model
 
 # 查询
 
+index condition pushdown
+
 `ch2~ch5, db concept`  
 关系型查询语言SQL
 
@@ -130,27 +133,64 @@ http://pages.cs.wisc.edu/~nil/764/
 
 # 事务与并发控制
 
-> 事务是为了简化，解决数据库容错
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE988bc0b146770b77bd9fb4f96948816f/145)
 
 `ch17~ch18, db concept`  
-
-
-[The Notions of Consistency and Predicate Locks in a Database System, eswaran76](http://people.csail.mit.edu/tdanford/6830papers/eswaran-notions-of-consistency.pdf)
-
-
-[ARIES,tods92 ](https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf)
-
-[occ, tods81](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)  
-
-[granularity of locks and degree of consistency, ibm75](http://jimgray.azurewebsites.net/papers/granularity%20of%20locks%20and%20degrees%20of%20consistency%20rj%201654.pdf)  
+17章是事务管理的理论指导。  
+一个个执行事务当然可以，更好的是并发地执行，以提高吞吐、利用率，同时能够加快用户响应。  
+通过构建一个简单的事务模型，抽象出R(A), W(B)，研究并发造成的各种现象。  
+隔离是目的，Serializability是保证正确性的基石，并发控制就是研究怎样编排可串行化的事务组。  
+`PS：这里又涉及时序、happen before等类似问题。并发|分布式基本问题可以提炼出来。`  
+数据库领域，喜欢把内部锁叫做latch。  
 
 [transaction processing, gray92](https://book.douban.com/subject/2586390/)
 
+## 可串行性、悲观锁、时序
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE845bbb498fc383b00521772ee9fed46f/152)
+
+[The Notions of Consistency and Predicate Locks in a Database System, eswaran76](http://people.csail.mit.edu/tdanford/6830papers/eswaran-notions-of-consistency.pdf)  
+Serializability, 2PL
+
+[occ, tods81](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)    
+
+[Concurrency Control in Distributed Database Systems, bernstein81](http://portal.acm.org/citation.cfm?id=356842.356846)  
+细节描述MVCC
+
+[Naming and Synchronization in a Decentralized Computer System, reed79](https://dspace.mit.edu/handle/1721.1/16279)  
+首次MVCC
+
+[granularity of locks and degree of consistency, gray75](http://jimgray.azurewebsites.net/papers/granularity%20of%20locks%20and%20degrees%20of%20consistency%20rj%201654.pdf)  
+锁的粒度。
+
+[InnoDB locking](https://dev.mysql.com/doc/refman/5.7/en/innodb-locking.html)  
+
+
+
+## 并发异常、隔离级别
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEb5c5a08a8353d9b91972a7fbc857fcb5/155)
+
 [critique isolation level, sigmod95](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-95-51.pdf)  
+
+[innodb - 15.7.2.1 Transaction Isolation Levels](https://dev.mysql.com/doc/refman/8.0/en/innodb-transaction-isolation-levels.html)  
+
+[数据库事务隔离发展历史 | CatKang的博客](https://catkang.github.io/2018/08/31/isolation-level.html)  
+
+[MySQL多版本并发控制机制(MVCC)-源码浅析](https://my.oschina.net/alchemystar/blog/1927425)  
+
+[MySQL · 源码分析 · InnoDB Repeatable Read隔离级别之大不同](http://mysql.taobao.org/monthly/2017/06/07/)  
+innoDB RR实现会出现幻读，postgrel和SQL Server不会，不过也符合sql标准
+
+[14.7 innoDB锁和事务模型](https://dev.mysql.com/doc/refman/5.7/en/innodb-locking-transaction-model.html)  
+innoDB的一致性读仅仅针对select语句。 insert/update/delete/select...for update等均使用锁的方式，不走一致性读。    
+对于读写事务，普通的select无法保护其他事务修改和删除数据。 需要用户自行选择使用select...for update锁读。  
+
+## 持久化、可恢复性与日志
+
+[ARIES,tods92 ](https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf)  
 
 [voltdb recovery, icde2014](https://hstore.cs.brown.edu/papers/voltdb-recovery.pdf)
 
-[数据库事务隔离发展历史 | CatKang的博客](https://catkang.github.io/2018/08/31/isolation-level.html)
+[5.4 MySQL服务器日志](https://dev.mysql.com/doc/refman/5.7/en/server-logs.html)
 
 # 存取方法
 
@@ -258,13 +298,13 @@ cpu越来越快，而磁盘的带宽却涨幅不大，因此多用cpu来换磁�
 
 
 https://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html
-[digg v4](https://knowyourmeme.com/memes/events/digg-v4)
+[digg v4](https://knowyourmeme.com/memes/events/digg-v4)  
 https://www.memsql.com/blog/why-nosql-databases-wrong-tool-for-modern-application/
 https://dzone.com/articles/nosql-vs-sql-differences-explained
 https://www.gartner.com/doc/reprints?id=1-5N2H2SM&ct=181024&st=sb
-[don't use mongodb](https://news.ycombinator.com/item?id=3202081)
-http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/
-
+[don't use mongodb](https://news.ycombinator.com/item?id=3202081)  
+http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/  
+https://laptrinhx.com/apache-hawq-next-step-in-massively-parallel-processing-3942821226/  
 
 # todo
 
