@@ -44,6 +44,7 @@ https://en.wikipedia.org/wiki/Learning_theory_(education)
 可理解的输入（70%）+ 词根词汇 + 内化语法 = 外语思维是最终的能力形成。  
 外语学习认知历史、各种错误的学习方法的解释，令人印象深刻。  
 
+http://testyourvocab.com/
 
 # 演讲
 [Giving a Talk, 2000](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/GivingATalk.pdf)  
