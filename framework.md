@@ -76,6 +76,19 @@ https://mp.weixin.qq.com/s/CZstkP51T8vte6P7u-Ni1A
 https://help.aliyun.com/product/29500.html?spm=a2c4g.11186623.6.540.1c66465dK4LT3j
 
 ## 接入、负载均衡  
+
+http-dns私有DNS系统  
+
+|       |       ||
+|  ---  |  ---  |--|
+| nginx      |   10K+    |7层|
+|  lvs     |   100k+    |4层|
+|   f5    |   1M+    |硬件级4层|
+
+
+
+![](https://img2018.cnblogs.com/blog/1496566/201908/1496566-20190801150358444-1982363646.png)
+
 https://help.aliyun.com/document_detail/27544.html?spm=a2c4g.11186623.6.546.2bb11d42IuEAbG  
 
 ## 服务治理、RPC
@@ -151,7 +164,7 @@ https://data1030.github.io/
 https://www.linkedin.com/pulse/big-data-velocity-plain-english-john-ryan/
 https://www.allthingsdistributed.com/2018/06/purpose-built-databases-in-aws.html
 
-
+## 对象存储
 
 
 # 核心基础服务
@@ -167,6 +180,9 @@ http://www.woshipm.com/pd/586436.html
 [分布式、服务化的ERP系统架构设计](https://www.cnblogs.com/liuche/p/7955462.html)
 
 ## 推送系统
+1. 短信、邮件、站内信  
+2. app推送   
+设备管理、连接保活、消息管理
 
 |名称|集群数量|CPU|内存|存储|网络|单机|集群长连接|消息下发|
 |--|--|--|--|--|--|--|--|--|
@@ -179,9 +195,15 @@ http://www.woshipm.com/pd/586436.html
 
 ## 用户系统
 
-1. 账户
+1. 账户  
 三用户模型
 http://doc.cocolian.cn/essay
+
+2. 用户认证  
+sso/cas/oauth2
+
+https://www.cnblogs.com/lyzg/p/6132801.html  
+https://blog.csdn.net/winter_wu_1998/article/details/104322353  
 
 ## 交易系统
 
@@ -199,10 +221,7 @@ https://juejin.im/post/5b06851251882538b82c3e1f
 https://www.jianshu.com/p/bc56e676298f
 
 
-## 身份认证
-SSO  
-登录系统  
-权限系统
+
 
 ## 商品系统
 商品管理  
