@@ -46,6 +46,8 @@ https://docs.oracle.com/cd/E19263-01/817-5764/architecture.html
 
 [DDD](https://book.douban.com/subject/1418618/)  
 
+[Building Microservice](https://book.douban.com/subject/25881698/)  
+
 [Microservices Patterns: With Examples in Java, 2019](https://book.douban.com/subject/33425123/)  
 
 [Patterns of Enterprise Application Architecture, fowler02](https://book.douban.com/subject/1229954/)
