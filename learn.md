@@ -44,6 +44,8 @@ https://en.wikipedia.org/wiki/Learning_theory_(education)
 可理解的输入（70%）+ 词根词汇 + 内化语法 = 外语思维是最终的能力形成。  
 2000高频词，使用率90%；5000，98%；7000，99%。要想读懂英文小说，10行一个单词，即是99%的覆盖率。  
 
+[把你的英语用起来, 伍君仪2013](https://book.douban.com/subject/3748247/)
+
 http://testyourvocab.com/
 
 # 演讲
@@ -52,3 +54,6 @@ http://testyourvocab.com/
 提前准备内容，熟悉场地，提前练习，对齐时间。   
 内容的形式要简洁，多图表。  
 演讲人也要充分的放松，选好站点，不断的观察听众的反应，放慢语速，保持与听众交互。  
+
+# 健身
+[量化健身, 陈柏龄2019](https://book.douban.com/subject/34912103/)
