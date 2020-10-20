@@ -53,6 +53,12 @@ https://en.wikipedia.org/wiki/Learning_theory_(education)
 发音练习+精听eslpod/englishpod+语法俱乐部=英语能力  
 2页查一个单词+7天行动+整理单词和短语=透析法。（就是要用起来，走在哪里都在学习英语）
 
+[不能错过的英语启蒙，安妮鲜花2011](https://book.douban.com/subject/6523827/)
+省略、连读、弱读需要原汁原味的英语听力训练。（辨音能力）  
+词汇量还应该包括单词放在上下文中的应用。（情景对应能力）  
+母语国家通过phonics，训练单词拼写、发音、语法 （阅读能力）  
+选书的原则=I P(purpose) I(interest) C(comprehend) K(know)  
+
 [单词量测试](http://testyourvocab.com/)  
 [剑桥词典](http://dictionary.cambridge.org)  
 https://www.oxfordlearnersdictionaries.com/  
