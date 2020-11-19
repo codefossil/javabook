@@ -88,6 +88,8 @@ https://blog.pragmaticengineer.com/software-architecture-is-overrated/
 [Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)  
 权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档
 
+[Domain-Specific Languages, fowler2010](https://book.douban.com/subject/4775030/)
+
 https://web.njit.edu/~kirova/is663-s11.html  
 https://handbookofsoftwarearchitecture.com/
 

@@ -70,7 +70,7 @@ CS的核心问题就是问题分解。
 
 [software foundation](https://softwarefoundations.cis.upenn.edu/)
 
-[A Discipline of Programming, Dijkstra76](https://book.douban.com/subject/24841112/)
+[A Discipline of Programming, Dijkstra76](https://book.douban.com/subject/24841112/)  
 
 https://ngte-se.gitbook.io/  
 https://github.com/xingshaocheng/architect-awesome 
@@ -125,6 +125,10 @@ https://dhh.dk/2014/tdd-is-dead-long-live-testing.html
 
 # 管理代码库
 https://ohshitgit.com/  
+
+# 构建包和系统
+
+[GNU make](https://www.gnu.org/software/make/manual/html_node/index.html#SEC_Contents)
 
 # 软件发布和运维
 
