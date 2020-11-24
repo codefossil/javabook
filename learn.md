@@ -52,7 +52,8 @@ https://en.wikipedia.org/wiki/Learning_theory_(education)
 | 2000 | 90% | 
 | 5000 | 98% | 
 | 7000 | 99% | 
-要想读懂英文小说，10行一个单词，即是99%的覆盖率。  
+
+要想读懂英文小说，10行一个陌生单词，即是99%的覆盖率。  
 
 [把你的英语用起来, 伍君仪2013](https://book.douban.com/subject/3748247/)  
 发音练习+精听eslpod/englishpod+语法俱乐部=英语能力  
