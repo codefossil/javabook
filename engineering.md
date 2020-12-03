@@ -19,6 +19,8 @@ https://www.cs.uic.edu/~i442/
 
 [Software Complexity Is Killing Us](https://www.simplethread.com/software-complexity-killing-us/)
 
+[My final post regarding the flaws of Docker/Kubernetes and their eco-system,krubner2019](http://www.smashcompany.com/technology/my-final-post-regarding-the-flaws-of-docker-kubernetes-and-their-eco-system)
+
 [Software Engineering for the 21st Century, mit04](http://www.cs.cmu.edu/~Compose/SEprinciples-pub-rev2.pdf)
 
 [Apprenticeship Patterns](https://www.amazon.com/Apprenticeship-Patterns-Guidance-Aspiring-Craftsman-ebook/dp/B002RMSZ7E)
