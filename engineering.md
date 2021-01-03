@@ -86,7 +86,13 @@ Evolutionary Project Management
 
 [Clean Coder, 2011](https://book.douban.com/subject/11614538/) 
 
-[软技能2软件开发者职业生涯指南, sonmez2020](https://book.douban.com/subject/35043940/)
+[The Complete Software Developer's Career Guide, sonmez2017](https://book.douban.com/subject/35043940/)  
+软件开发不仅仅是编程，在此之前还需要理清需求（大多数软件项目的目的都是自动化）、适量的设计，写完之后还要调试、测试、部署和监控。  
+
+学习一门新的编程语言最佳实践：真实的项目->Hello World->学习基本的构建模块->区分语言内置特性和标准库->理解并build现有代码->刷题。  
+
+程序员的手艺：开发语言（编译和运行平台、库和框架）、代码结构设计、OOD、算法和数据结构、数据库、源码控制、测试和调试、构建和部署、软件开发方法。  
+
 
 [cracking the coding interview](https://book.douban.com/subject/26570695/)
 
