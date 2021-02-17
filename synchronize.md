@@ -126,8 +126,6 @@ http://www.cs.cmu.edu/~418
 http://cs149.stanford.edu/winter19/  
 https://en.wikipedia.org/wiki/Massively_parallel  
 
-# 分布式系统
-[分布式](ds/ds.md)  
 
 [Distributed Computing, Kshemkalyani08](https://book.douban.com/subject/4182222/)
 

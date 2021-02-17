@@ -5,29 +5,24 @@
 ## 通识
 * [科学哲学](science.md)
 * [认知科学](cognition.md)
-* [学习理论](learn.md)
-
-## 信息应用
-* [计算与优化](datastructure.md)
-* [智能系统](ai.md)
 
 ## 信息工程
-
-> 自动化分析、形式化验证、软件度量
-
-* [项目管理](engineering.md)
+* [产品与管理](engineering.md)
 * [系统分析和架构设计](design.md)
 * [软件构建与运维](build.md)
 * [开发技术](framework.md)
+
+## 信息应用
+* [智能分析系统](ai.md)
+* [计算与优化](datastructure.md)
   
 ## 信息系统
+* [分布式系统](ds/ds.md))  
 * [数据系统](database.md) 
-* [并行与分布式](synchronize.md)
-* [操作系统与体系结构](os.md)
-* [程序语言](language.md)
+* [同步与并发](synchronize.md)  
+* [操作系统、编程语言与体系结构](os.md)  
 
 # 资源
-
 * [cs-list](https://en.wikipedia.org/wiki/List_of_important_publications_in_computer_science#Concurrent,_parallel,_and_distributed_computing)  
 * [awesome course](https://github.com/prakhar1989/awesome-courses)  
 * [hightscalability](http://highscalability.com/all-time-favorites/)

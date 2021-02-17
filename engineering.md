@@ -60,7 +60,6 @@ Toyota Production System
 Total quality management  
 Six Sigma  
 Lean manufacturing  
-  
 
 
 [A Guide to the Project Management Body of Knowledge](https://book.douban.com/subject/24697645/)  
@@ -93,12 +92,19 @@ Evolutionary Project Management
 
 程序员的手艺：开发语言（编译和运行平台、库和框架）、代码结构设计、OOD、算法和数据结构、数据库、源码控制、测试和调试、构建和部署、软件开发方法。  
 
-
 [cracking the coding interview](https://book.douban.com/subject/26570695/)
 
 [剑指Offer](https://book.douban.com/subject/25910559/)
 
 [软技能](https://book.douban.com/subject/26835090/)  
+拥有商业心态，把雇主当做软件开发企业的客户。  
+每个人都希望自己很重要。  
+在一个专业方向上拥有专长，思考专业化道路是会让自己受益，还是过度限制了自己的选择，类比律师。    
+同时保有全职工作、开源节流、业余时间2小时/天新业务试错。  
+持续不断增强业务能力，确保长期客户、稳定的新客户。  
+作为一名软件开发人员，拥有成为一名企业家得天独厚的优势，不仅能提出概念和想法，还能把它创造出来。  
+
+[The Effective Engineer, Lau2015](https://book.douban.com/subject/26360716/)
 
 [Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman, hoover2010](https://book.douban.com/subject/4924164/)
 
@@ -129,10 +135,57 @@ http://people.scs.carleton.ca/~deugo/Patterns/ospdg/
 https://www.cs.cmu.edu/~aldrich/courses/413/
 
 
+# 产品 公司 销售
 
+[The Innovator's Dilemma, Christensen02](https://book.douban.com/subject/1461932/)
+
+[Shoe Dog, knight2016](https://book.douban.com/subject/26738885/)
+
+[Zero to One, Thiel2014](https://book.douban.com/subject/24753651/)
+
+[Creativity, Inc.](https://book.douban.com/subject/25777433/)
+
+[商务与经济统计, Anderson D R. 2012](https://book.douban.com/subject/10557289/)
+
+[市场营销原理, 科特勒2010](https://book.douban.com/subject/4830099/)
+
+[The Hard Thing About Hard Things, Horowitz2015](https://book.douban.com/subject/26306686/)
+
+[企业战略博弈, 格林沃德06](https://book.douban.com/subject/1967814/)
+
+[国家竞争优势](https://book.douban.com/subject/6753831/)
+
+[战争论, 05](https://book.douban.com/subject/1009105/)  
+
+[Getting Real](https://basecamp.com/gettingreal/getting-real.pdf)
+
+[四步创业法](https://book.douban.com/subject/11516567/)  
+
+[创业者手册](https://book.douban.com/subject/20453004/)
+
+[创新者的解答](https://book.douban.com/subject/4822145/)
+
+[创业36条军规](https://book.douban.com/subject/26794032/)
+
+[商业模式新生代](https://book.douban.com/subject/6718487/)
+
+[创新的先知](https://book.douban.com/subject/4931700/)
+
+# 需求工程
+
+> 解决/不解决什么问题？谁的问题？
+creator driven (问题分治还是工作分治)  
+Be Zara, not Foxconn (从效率模式->快速响应式)  
+
+定义需求（满足、目标、用户需求、系统需求、软件需求）  
+优先级、权衡、风险和影响分析  
+需求验证  
+
+第一原理  
+[Top risks, 2001](http://sunnyday.mit.edu/16.355/lawrence-requirements.pdf)  
+[Requirements Engineering, 2000](http://mcs.open.ac.uk/ban25/papers/sotar.re.pdf)  
 
 # 软件开发流程
-
 
 [Process Models, 2001](https://www.ics.uci.edu/~wscacchi/Papers/SE-Encyc/Process-Models-SE-Encyc.pdf)  
 [PSP, 1996](http://www.star.cc.gatech.edu/documents/SpencerRugabear/psp.pdf)  
@@ -181,19 +234,3 @@ https://www.jackyshen.com/
 https://scrumguides.org/scrum-guide.html  
 https://www.scrum.org/ 
 http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.htm   
-
-# 需求工程
-
-> 解决/不解决什么问题？谁的问题？
-creator driven (问题分治还是工作分治)  
-Be Zara, not Foxconn (从效率模式->快速响应式)  
-
-定义需求（满足、目标、用户需求、系统需求、软件需求）  
-优先级、权衡、风险和影响分析  
-需求验证  
-
-第一原理  
-[Top risks, 2001](http://sunnyday.mit.edu/16.355/lawrence-requirements.pdf)  
-[Requirements Engineering, 2000](http://mcs.open.ac.uk/ban25/papers/sotar.re.pdf)  
-
-
