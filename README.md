@@ -17,7 +17,7 @@
 * [计算与优化](datastructure.md)
   
 ## 信息系统
-* [分布式系统](ds/ds.md))  
+* [分布式系统](ds/ds.md)
 * [数据系统](database.md) 
 * [同步与并发](synchronize.md)  
 * [操作系统、编程语言与体系结构](os.md)  
