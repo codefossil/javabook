@@ -132,5 +132,18 @@ https://www.oxfordlearnersdictionaries.com/
 
 [蓝思](https://hub.lexile.com/find-a-book/search)  
 
+# 理财
+[小狗钱钱, 舍费尔09](https://book.douban.com/subject/3576486/)
+
+[财富自由之路](https://book.douban.com/subject/27094706/)
+
+[巴菲特致股东的信](https://book.douban.com/subject/30164963/)
+
+[穷查理宝典](https://book.douban.com/subject/4208757/)
+
+[投资者的未来](https://book.douban.com/subject/30313572/)
+
+[穷爸爸、富爸爸](https://book.douban.com/subject/1033778/)
+
 # 健身
 [量化健身, 陈柏龄2019](https://book.douban.com/subject/34912103/)

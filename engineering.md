@@ -112,6 +112,8 @@ Evolutionary Project Management
 
 [Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman, hoover2010](https://book.douban.com/subject/4924164/)
 
+
+
 [卓有成效的程序员](https://book.douban.com/subject/3558788/)
 
 [Pragmatic Thinking and Learning, hunt2011](https://read.douban.com/ebook/1885884/)
