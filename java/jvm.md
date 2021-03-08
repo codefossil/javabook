@@ -405,21 +405,20 @@ private static final int HASH_INCREMENT = 0x61c88647;
 nextHashCode.getAndAdd(HASH_INCREMENT);
 ```
 
-# 字节码动态加载类、反汇编
-```cpp
-//share/tools/hsdis/hsdis.h
-void* decode_instructions(void* start, void* end,..
-```
+# 字节码动态加载-反射和代码生成
 
->在jre中，加载反汇编dll+jitwatch即可查看运行时的汇编代码。
+|代理|||
+|---|---|---|
+[byte buddy](https://bytebuddy.net/)||Elastic APM
+[CGLIB](https://github.com/cglib/cglib/wiki)|字节码|
+JDK动态代理|反射|面向接口
+[javassist](http://www.javassist.org/)|API或者字节码|
+[ASM](https://asm.ow2.io/)|字节码|CGLIB依赖库
+[Apache Commons BCEL](https://commons.apache.org/proper/commons-bcel/)|API|分析和重组.class
 
-注意：简单的方法无法不足以触发JIT
-java -XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -version
 
-
-javaagent
-
-[byte buddy](https://bytebuddy.net/)
+运行时代码生成器的性能比较
+![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEf6c1a67715d04eabd5d6126a12a333c7/165)
 
 [Chapter 6. The Java Virtual Machine Instruction Set](https://docs.oracle.com/javase/specs/jvms/se8/html/jvms-6.html#jvms-6.5)
 
@@ -434,7 +433,19 @@ http://gee.cs.oswego.edu/dl/
 http://g.oswego.edu/dl/jmm/cookbook.html  
 
 
-# 容器
+
+# 反汇编
+```cpp
+//share/tools/hsdis/hsdis.h
+void* decode_instructions(void* start, void* end,..
+```
+
+>在jre中，加载反汇编dll+jitwatch即可查看运行时的汇编代码。
+
+注意：简单的方法无法不足以触发JIT
+java -XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -version
+
+# 容器集成
 jvm的环境需要支持容器对内存和cpu的设置
 8u191以上已经默认支持
 

@@ -7,6 +7,9 @@
 [EWD](https://www.cs.utexas.edu/~EWD/)  
 [Dijkstra Prize list](podc.org/dijkstra/)  
 
+COS518: Advanced Computer Systems (Spring 2019)  
+https://www.cs.princeton.edu/courses/archive/spr19/cos518/syllabus.html
+
 # 计算模型
 
 [The Byzantine Generals Problem, 1982](https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf)  

@@ -4,7 +4,15 @@ https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/
 
 [The Humble Programmer, turing lecture](https://dl.acm.org/doi/10.1145/355604.361591)
 
-[cmu17-214](https://www.cs.cmu.edu/~charlie/courses/17-214/2020-spring/)  
+[cmu17-214, Principles of Software Construction](https://www.cs.cmu.edu/~charlie/courses/17-214/2020-spring/)  
+到目前为止看到的关于软件开发最棒的课程。Josh Bloch是导师。  
+现代软件开发已经过渡到需要理解和利用现成的构建块来构件软件系统。  
+软件质量的度量是什么，编写代码之前需要想想这些度量是否需要满足。  
+设计过程=整理工作+结构化理解+方便沟通，通过设计目标来评估设计、设计原则来描述最佳实践、设计模式来积累经验。 
+class=类型+API+实现。  
+怎样为易变的代码做设计=接口用来处理易改的部分+信息隐藏/封装是设计好坏最重要的因素。  
+怎样为复用代码做设计=
+
 [COMP 310](https://www.clear.rice.edu/comp310/f19/)
 
 [programming principles](https://github.com/webpro/programming-principles)  
