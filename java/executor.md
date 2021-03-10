@@ -1,9 +1,13 @@
 # 动机
-- 
-
+- 线程的创建和关闭耗时
+- 无效的线程资源
+- 屏蔽各个OS平台的线程方言
 
 # 解决方案
-![](https://segmentfault.com/img/bVbx7kE?w=746&h=425)
+![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE42d97a8603a981b91509b09da9181396/170)
+
+- 本质上是基于`生产者-消费者模式`
+- 任务提交与执行分离
 
 # 细节
 
@@ -47,8 +51,10 @@ public class ThreadPoolExecutor extends AbstractExecutorService {
 public void execute(Runnable command) {
     if (workerCountOf(c) < corePoolSize) then
         addWorker();
-    
+
+    // 先尝试插入队列
     if workQueue.offer() then
+    // 再尝试扩容非核心线程
     else if !addWorker() then
         执行拒绝策略;    
 }
@@ -59,7 +65,7 @@ public void execute(Runnable command) {
 private boolean addWorker(Runnable firstTask, boolean core) {
     创建worker w;
     添加到workers;
-    启动线程，w.runWorker();
+    启动线程，t.start()->w.runWorker();
 }
 ```
 
@@ -69,13 +75,14 @@ private boolean addWorker(Runnable firstTask, boolean core) {
 final void runWorker(Worker w) {
     task = w.firstTask;
     for(;;){
-        不停的获取任务(null, task);
-        task.run();        
+        if task!=null || task=getTask(null, task)!=null then
+            task.run();        
     }
+    processWorkerExit();
 }
 ```
 
-## 获取任务、超时
+## 从`submit`队列中获取任务
 ```java
 private Runnable getTask() {
     boolean timed = allowCoreThreadTimeOut || wc > corePoolSize;
@@ -86,7 +93,20 @@ private Runnable getTask() {
 }
 ```
 
+## 退出工作线程
+```java
+private void processWorkerExit(Worker w, boolean completedAbruptly) {
+    从核心队列中删除；
+    if 当前线程数量<核心池大小 then
+        addWorker(null, false);
+    else 
+        return;
+}
+```
+
 ## 任务异常、线程中断
+
+[ch6, JCIP, 2006](https://book.douban.com/subject/10484692/) 
 
 [Java多线程进阶（四十）—— J.U.C之executors框架：ThreadPoolExecutor](https://segmentfault.com/a/1190000016629668)
 

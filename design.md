@@ -1,10 +1,16 @@
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE607fb9a8895d4bc065e8b8f461b121f3/134)
-
-# 软件质量度量
-
-# 工作量评估
+![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEaa32470fa924b91662c25ba30a413530/167)
 
 # 系统分析
+
+[CMU 17-313](https://cmu-313.github.io/?#overview)  
+
+[Foundations for the Study of Software Architecture, perry92, SIGSOFT](http://citeseer.ist.psu.edu/viewdoc/download?doi=10.1.1.135.5430&rep=rep1&type=pdf)
+
+[New Tweets per second record, and how!](https://blog.twitter.com/engineering/en_us/a/2013/new-tweets-per-second-record-and-how.html)
+
+[Software Architecture as a Set of Architectural Design Decisions, jansen05, WICSA05](http://www.ics.uci.edu/~andre/ics223w2006/jansenbosch.pdf)
+
+[A Classification and Comparison Framework for Software Architecture Description Languages, medvidovic99, TOSE](https://www.ics.uci.edu/~andre/informatics223s2009/medvidovictaylor.pdf)
 
 [Systems Analysis and Design: An Object-Oriented Approach with UML](https://www.amazon.com/Systems-Analysis-Design-Object-Oriented-Approach/dp/1118804678/ref=zg_bs_602672_46?_encoding=UTF8&psc=1&refRID=PKYB5W8Q8TXME0HQZ945)
 
@@ -17,6 +23,10 @@
 
 https://www.umsl.edu/~sauterv/analysis/488_f01_papers/quillin.htm#Top  
 http://www.umsl.edu/~sauterv/analysis/analysis_links.html  
+
+
+软件质量度量  
+工作量评估
 
 # 架构设计
 
@@ -117,6 +127,8 @@ If it ain't broke, don't fix it.
 [system-desgin](https://github.com/donnemartin/system-design-primer)  
 
 https://martinfowler.com/architecture/
+
+https://www.d.umn.edu/~gshute/softeng/principles.html
 
 
 # 系统科学

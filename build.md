@@ -11,7 +11,7 @@ https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/
 设计过程=整理工作+结构化理解+方便沟通，通过设计目标来评估设计、设计原则来描述最佳实践、设计模式来积累经验。 
 class=类型+API+实现。  
 怎样为易变的代码做设计=接口用来处理易改的部分+信息隐藏/封装是设计好坏最重要的因素。  
-怎样为复用代码做设计=
+怎样为复用代码做设计=继承+代理组合+设计模式
 
 [COMP 310](https://www.clear.rice.edu/comp310/f19/)
 

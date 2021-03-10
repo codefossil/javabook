@@ -7,6 +7,9 @@
 
 https://fbinfer.com/docs/checker-racerd/
 
+online software analysis lectures  
+https://www.youtube.com/playlist?list=PLF3-CvSRq2SaApl3Lnu6Tu_ecsBr94543
+
 [Introduction to Static Analysis: An Abstract Interpretation Perspective](https://books.google.com.hk/books?id=96LLDwAAQBAJ&pg=PA19&lpg=PA19&dq=Introduction+to+Static+Analysis+An+Abstract+Interpretation+Perspective+pdf&source=bl&ots=9juPcBUpc5&sig=ACfU3U33KEgYfduYuzjKBYw0XxgPkW90Rg&hl=en&sa=X&ved=2ahUKEwjqksf2lsLsAhXZyYsBHWO-Ang4MhDoATADegQIARAC#v=onepage&q=Introduction%20to%20Static%20Analysis%20An%20Abstract%20Interpretation%20Perspective%20pdf&f=false)
 
 http://faculty.sist.shanghaitech.edu.cn/faculty/songfu/cav/

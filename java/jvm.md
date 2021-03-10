@@ -151,7 +151,7 @@ https://preshing.com/20120612/an-introduction-to-lock-free-programming/
 
 [JEP 171: Fence Intrinsics](http://openjdk.java.net/jeps/171)
 
-## 同步锁
+## 内置同步锁
 
 ```txt
 |--------------------|--------------------------------------------------------------------------------------------------------------|
@@ -208,7 +208,7 @@ park: 调用系统的WaitForSingleObject等待event对象，不断尝试CAS
 当竞争时，需要撤销偏向锁
 
 
-## 同步、执行框架
+## 同步器、任务执行框架
 
 [The java.util.concurrent Synchronizer Framework](./aqs.md)   
 java5引入的同步器框架底层设计和分析。（结合源码和网友的分析）  
@@ -236,6 +236,7 @@ java并发编程圣经。
 [Collections Framework Overview](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html)  
 [Outline of the Collections Framework](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/reference.html)
 
+[ConcurrentHashMap](https://zhuanlan.zhihu.com/p/349154062)  
 
 # 运算符优先级
 https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html

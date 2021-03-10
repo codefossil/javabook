@@ -3,13 +3,14 @@
 [CS != SE](http://www.cnblogs.com/buaashine/archive/2012/12/12/2813931.html)  
 [We Are All Confident Idiots](https://www.guokr.com/article/439517/)  
 
-[cmu 17313](https://www.cs.cmu.edu/~ckaestne/17313/2018/)  
+[CMU 17-313](https://cmu-313.github.io/?#schedule)
+
 [MIT 16.355](http://sunnyday.mit.edu/16.355/)   
 https://www.cs.uic.edu/~i442/
 
 [CMU-SEI](https://sei.cmu.edu/)  
 [MIT-SAL](http://systemarchitect.mit.edu/index.php)  
-[ICSE Most Influential Paper Award](https://www.sigsoft.org/awards/icseMIPAward.html)  
+[ICSE Most Influential Paper Award](https://www.sigsoft.org/awards/icseMIPAward.html) 
 
 # 基本问题
 

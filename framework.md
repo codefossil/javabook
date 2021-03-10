@@ -93,6 +93,12 @@ https://help.aliyun.com/document_detail/27544.html?spm=a2c4g.11186623.6.546.2bb1
 
 ## 服务治理、RPC
 
+![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAxOC8xMS83LzE2NmVjMDA2YjE1MzZmNDM_aW1hZ2VWaWV3Mi8wL3cvMTI4MC9oLzk2MC9mb3JtYXQvd2VicC9pZ25vcmUtZXJyb3IvMQ)
+
+https://www.cnblogs.com/-maji/p/13091719.html
+
+https://sulangsss.github.io/2019/10/17/SpringBoot/Eureka/Theory/
+
 ## 消息队列
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEd3bcffef5bb5a2be0d9301a768fde1e5/61)
