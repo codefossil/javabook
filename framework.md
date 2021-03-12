@@ -69,6 +69,8 @@ https://github.com/toutiaoio/awesome-architecture
 
 [互联网后端基础设施](https://mp.weixin.qq.com/s/TSJ0QN2xJI-Tv_HHp_hgcg)  
 
+[中台之路，从平台到中台的思考与实践](https://zhuanlan.zhihu.com/p/131632279)
+
 https://mp.weixin.qq.com/s/bsuveX-E6E2fKZ24mj03nQ
 
 https://mp.weixin.qq.com/s/CZstkP51T8vte6P7u-Ni1A
@@ -176,6 +178,8 @@ https://www.allthingsdistributed.com/2018/06/purpose-built-databases-in-aws.html
 # 核心基础服务
 
 ![](https://image.woshipm.com/wp-files/2017/02/eaiRbTvRmooOzRJY9va4.png)
+
+![](https://yqfile.alicdn.com/c1c7fb8be938e9e60ff8246d389713f7b77766cb.jpeg)
 
 http://www.woshipm.com/pd/586436.html  
 [中国互联网业务研发体系架构指南](https://blog.csdn.net/Ture010Love/article/details/104381157)

@@ -131,6 +131,8 @@ http://badsoftware.com/chapter1.htm
 http://wiki.c2.com/?JavaIdioms  
 https://dhh.dk/2014/tdd-is-dead-long-live-testing.html  
 
+https://github.com/actiontech/slides/blob/master/201807-MySQL%E4%B8%AD%E9%97%B4%E4%BB%B6%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95I-%E9%BB%84%E7%82%8E-IMG.pdf
+
 # 管理代码库
 https://ohshitgit.com/  
 

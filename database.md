@@ -173,6 +173,15 @@ Serializability, 2PL
 
 [innodb - 15.7.2.1 Transaction Isolation Levels](https://dev.mysql.com/doc/refman/8.0/en/innodb-transaction-isolation-levels.html)  
 
+|隔离级别|S|RR(default)|RC|RU|
+|---|---|---|---|---|
+select|自动转换成共享锁|一致性无锁读|一致性无锁读|无锁
+select...for update/share|同RR|索引锁，间隙和next key锁|索引锁|无锁
+update/delete|同RR|同上|行锁+where启发式解锁|同上
+MVCC||X|X|
+
+[Innodb中的事务隔离级别和锁的关系](https://tech.meituan.com/2014/08/20/innodb-lock.html)
+
 [数据库事务隔离发展历史 | CatKang的博客](https://catkang.github.io/2018/08/31/isolation-level.html)  
 
 [MySQL多版本并发控制机制(MVCC)-源码浅析](https://my.oschina.net/alchemystar/blog/1927425)  
@@ -180,8 +189,8 @@ Serializability, 2PL
 [MySQL · 源码分析 · InnoDB Repeatable Read隔离级别之大不同](http://mysql.taobao.org/monthly/2017/06/07/)  
 innoDB RR实现会出现幻读，postgrel和SQL Server不会，不过也符合sql标准
 
-[14.7 innoDB锁和事务模型](https://dev.mysql.com/doc/refman/5.7/en/innodb-locking-transaction-model.html)  
-innoDB的一致性读仅仅针对select语句。 insert/update/delete/select...for update等均使用锁的方式，不走一致性读。    
+**MySQL使用MVCC+2PL，实现不同的隔离级别**  
+innoDB的一致性读仅仅针对select语句。 insert/update/delete/select...for update等均使用锁的方式，不走一致性读。      
 对于读写事务，普通的select无法保护其他事务修改和删除数据。 需要用户自行选择使用select...for update锁读。  
 
 ## 持久化、可恢复性与日志

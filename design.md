@@ -103,6 +103,8 @@ https://blog.pragmaticengineer.com/software-architecture-is-overrated/
 https://web.njit.edu/~kirova/is663-s11.html  
 https://handbookofsoftwarearchitecture.com/
 
+https://book.douban.com/subject/30443578/
+
 
 沉默成本（可用性）  
 机会成本（兼容性）  
