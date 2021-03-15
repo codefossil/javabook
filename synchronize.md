@@ -55,30 +55,6 @@ http://www.ru.is/faculty/luca/IMTCOURSE/
 https://moodle.risc.jku.at/course/view.php?id=143  
 http://www.cs.cornell.edu/gries/July2016/  
 
-# 并发编程
-
-[Software and the Concurrency Revolution, 2005](https://dl.acm.org/citation.cfm?id=1095421)  
-[Parallel Programming, 2011](https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.2011.01.02a.pdf), 很多关于CPU缓存和一致性问题  
-[OS Three Easy pieces, 2015](http://pages.cs.wisc.edu/~remzi/OSTEP/)  
-[Multiprogramming, 1968](https://link.springer.com/content/pdf/10.1007%2F978-1-4757-3510-9_12.pdf)  
-
-[reactive design patterns](https://book.douban.com/subject/25870212/)
-
-[Thread programming, 1989](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/birrell%20paper%2003.pdf)  
-[HYDRA, 1974](http://research.cs.wisc.edu/areas/os/Qual/papers/hydra.pdf)  
-[Threads bad, 1995](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/Conc-4/index.html)  
-[Event bad, 2003](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/Even-2/index.html)  
-[Actor, 2016](http://dist-prog-book.com/chapter/3/message-passing.html)  
-
-http://web.cecs.pdx.edu/~walpole/class/cs510/winter2018/home.html
-
-https://en.wikipedia.org/wiki/Concurrent_computing  
-
-https://www.irif.fr/~mellies/mpri/mpri-ens/articles/winskel-nielsen-models-for-concurrency.pdf
-
-https://wiki.rice.edu/confluence/display/PARPROG/COMP322
-
-https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-multicore-programming-primer-january-iap-2007/lecture-notes-and-video/
 
 ## 计算模型
 [Timesharing, 1962](http://www.eecs.harvard.edu/~margo/cs261/papers/corbato62.pdf)  
@@ -86,31 +62,6 @@ https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-189-mu
 [NPTL, 2002](https://www.akkadia.org/drepper/nptl-design.pdf)  
 [Task, 1996](http://www.evanjones.ca/software/threading-linus-msg.html)  
 [Transactional memory, 1999](http://cs.brown.edu/~mph/HerlihyM93/herlihy93transactional.pdf)  
-
-## 性能
-[Imbench, 1996](http://mcvoy.com/lm/bitmover/lmbench/lmbench-usenix.pdf) ，线程切换 = 状态转换(~n us) + `cache missing`(~n 10ns), https://news.ycombinator.com/item?id=13930305  
-[Why pthread](https://computing.llnl.gov/tutorials/pthreads/#WhyPthreads), fork(~n 100ns) = ~10x pthread_create(~n 10ns)  
-[The Free Lunch Is Over, 2005](http://www.gotw.ca/publications/concurrency-ddj.htm)
-
-[The Problem with Threads, 2006](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2006/EECS-2006-1.pdf)  
-[Thin Locks, 1998](http://cseweb.ucsd.edu/classes/fa05/cse231/Hubble.pdf)  
-
-[System performance, 2014](https://book.douban.com/subject/26586598/)  
-http://pages.cs.wisc.edu/~bart/736/f2017/paper1.html  
-https://www.cse.iitb.ac.in/~mythili/os/notes/notes-perf.txt
-
-[排队论及其应用浅析](https://www.slideshare.net/frogd/ss-27959518)  
-[构建高性能Web站点, 2009](https://book.douban.com/subject/3924175/)  
-
-> Performance is all about code path
-
-* 优化问题，把所有访问路径列出来
-* 各种cache/各种延迟影响很大
-
-[我对后端优化的一点想法](https://www.slideshare.net/jamestong/2012-12552732)  
-[5-minute rule](http://www.hpl.hp.com/techreports/tandem/TR-86.1.pdf)  
-[Think Clearly About Performance](https://method-r.com/wp-content/uploads/2018/07/TCAP-from-MOTD2.pdf)  
-https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt.html
 
 # 并行计算
 

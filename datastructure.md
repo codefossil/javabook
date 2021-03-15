@@ -1,3 +1,14 @@
+
+# 时间复杂度
+|复杂度|计算次数(1k)|迭代次数(1M)|
+| ---- | ---- | ---- |
+|O(1)|1|1|
+|O(log(N))|7|14|
+|O(N)|1000|1,000,000|
+|O(NlogN)|7,000|14,000,000|
+|O(logN^2)|1,000,000|1,000,000,000,000|
+|O(logN^3)|1,000,000,000|1,000,000,000,000,000,000|
+
 [Unsolved problems in computer science](https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_computer_science)
 
 - 学术

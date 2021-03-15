@@ -52,6 +52,8 @@ https://docs.oracle.com/cd/E19263-01/817-5764/architecture.html
 
 [Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)
 
+[reactive design patterns](https://book.douban.com/subject/25870212/)
+
 [Software Architecture in Practice, bass2013](https://www.amazon.com/Software-Architecture-Practice-3rd-Engineering/dp/0321815734)  
 
 [DDD](https://book.douban.com/subject/1418618/)  

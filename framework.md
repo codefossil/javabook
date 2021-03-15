@@ -23,12 +23,18 @@
 * [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)  
 * [AWS Architecture Center](https://aws.amazon.com/architecture)  
 
+# 线上业务故障级别
+|故障等级|说明|响应时间|修复时间|故障复审|
+| ---- | ---- | ---- | ---- | ---- |
+|P0|1.系统整体瘫痪。2.关键硬件/软件损坏，无法自动修复。3.间歇性/随机性/重复性重启/退出，客户业务无法正常|<=3小时|<=1个工作日|VP|
+|P1|1.关键服务降级，客户业务受到严重影响。2.性能严重下降，无法自动修复。3.客户数据损失|<=4小时|<=3个工作日|总监|
+|P2|1.部分服务异常，整体正常，客户业务影响不大/存在隐患。2.备用设施离线，主设备正常。3.系统指标受影响，客户业务受限|<=6小时|<=4个工作日|团队|
+|P3|1.不在线的线路和端口损坏。2.安全重启。3.软件/硬件技术支持|<=24小时|<=5个工作日|团队|
+
 # 通用企业架构设计
 microservice/SOA/Lambda Architecture  
 
 [后端架构师技术图谱](https://github.com/xingshaocheng/architect-awesome)
-
-
 
 https://lethain.com/digg-v4-architecture-process/  
 [程序员的呐喊](https://book.douban.com/subject/25884108/)  
@@ -324,6 +330,8 @@ https://mp.weixin.qq.com/s/i06PkS3rDLfouzVjS6QXkg
 # 研发规范
 
 https://ncrcoe.gitbooks.io/java-for-small-teams/content/
+
+[serverside-checklist](https://github.com/mtdvio/going-to-production/blob/master/serverside-checklist.md)
 
 ## 持续集成规范
 集成流水线  

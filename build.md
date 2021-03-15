@@ -1,3 +1,6 @@
+# 代码复杂度
+![](https://www.synopsys.com/blogs/software-security/wp-content/uploads/LinesOfCodeInMillions.png)
+
 
 http://faculty.cse.tamu.edu/ritchey/courses/csce431/winter20/  
 https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/

@@ -178,7 +178,7 @@ Serializability, 2PL
 select|自动转换成共享锁|一致性无锁读|一致性无锁读|无锁
 select...for update/share|同RR|索引锁，间隙和next key锁|索引锁|无锁
 update/delete|同RR|同上|行锁+where启发式解锁|同上
-MVCC||X|X|
+MVCC||✓|✓|
 
 [Innodb中的事务隔离级别和锁的关系](https://tech.meituan.com/2014/08/20/innodb-lock.html)
 
