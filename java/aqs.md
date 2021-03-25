@@ -28,6 +28,8 @@
 - 原来的Thread.suspend和Thread.resume有顺序性，如果resume先于suspend调用，会忽略掉resume，造成同步存活性问题。
 - 超时和可中断
 
+`LockSupport.park/unpark`调用的是以下native方法，windows实现比较简单，因为windows内置的event就是类似的语义；linux需要通过自己实现一个permit counter，来模拟生产者和消费者模式，使得unpark可以发生在park之前。  
+
 ```c++
 // Parkers are used by JSR166-JUC park-unpark.
 //

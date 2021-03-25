@@ -169,6 +169,8 @@ https://help.aliyun.com/document_detail/59957.html?spm=a2c4g.11174283.6.545.5c07
 
 [从0到1：构建强大且易用的规则引擎](https://tech.meituan.com/2017/06/09/maze-framework.html)
 
+[规则引擎在企业开发中的应用](https://blog.csdn.net/lifetragedy/article/details/52836483)
+
 webhook  
 http://progrium.com/blog/2007/05/03/web-hooks-to-revolutionize-the-web/
 

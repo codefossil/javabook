@@ -2,8 +2,6 @@
 
 # 系统分析
 
-[CMU 17-313](https://cmu-313.github.io/?#overview)  
-
 [Foundations for the Study of Software Architecture, perry92, SIGSOFT](http://citeseer.ist.psu.edu/viewdoc/download?doi=10.1.1.135.5430&rep=rep1&type=pdf)
 
 [New Tweets per second record, and how!](https://blog.twitter.com/engineering/en_us/a/2013/new-tweets-per-second-record-and-how.html)
@@ -29,6 +27,20 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 工作量评估
 
 # 架构设计
+- 高性能
+读写分离、分库分表、缓存服务、单机架构、负载均衡
+
+- 高扩展
+分层、SOA、微内核
+
+- 高可用
+  双机备份、FMEA、异地多活、熔断、降级、限流
+
+https://tech.meituan.com/2018/05/31/dp-account-high-avaliable-road.html
+
+https://blog.csdn.net/ityouknow/article/details/81230412
+
+https://www.jianshu.com/p/dfce30de7fe3
 
 ![](https://pubs.opengroup.org/architecture/archimate-doc/ts_archimate/ts_archimate_files/image008.png)
 
@@ -66,7 +78,9 @@ https://docs.oracle.com/cd/E19263-01/817-5764/architecture.html
 
 https://docs.microsoft.com/en-us/azure/architecture/microservices/migrate-monolith  
 http://www.mit.edu/~richh/writings/  
-https://blog.pragmaticengineer.com/software-architecture-is-overrated/  
+https://blog.pragmaticengineer.com/software-architecture-is-overrated/
+
+[微服务架构设计, 互联网金融公司](https://gudaoxuri.gitbook.io/microservices-architecture/)
 
 [架构漫谈, 2016](https://www.infoq.cn/article/an-informal-discussion-on-architecture-part01)  
 
