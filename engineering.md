@@ -51,25 +51,35 @@ https://en.wikipedia.org/wiki/Software_development
 
 [software engineering at google, henderson2017](https://arxiv.org/pdf/1702.01715.pdf)
 
-# 项目管理
+
+
+# 立项批准、系统整体功能需求、整体解决方案
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE6287ea342110009b3ee392f41eb98c61/132)
 
-[PDCA, deming86](https://asqaustin.org/wp-content/uploads/2015/12/History_of_the_PDSA_Cycle_CN_ASQ_Talk-_2_10_2016_Handout.pdf)  
+确认解决的问题  
+对于公司来说，ROI分析  
+确认系统的功能、初步需要的经费  
+输出System Vision Document  
+召集所有核心人员，启动立项会议  
 
-Toyota Production System  
-Total quality management  
-Six Sigma  
-Lean manufacturing  
-
+[ch1, Systems Analysis and Design in a Changing World](https://www.amazon.com/Systems-Analysis-Design-Changing-World/dp/1305117204)  
+结合RMO在线交易系统的案例，整体阐述软件开发过程中涉及的各种活动。  
 
 [A Guide to the Project Management Body of Knowledge](https://book.douban.com/subject/24697645/)  
 [汪博士解读PMP考试](https://book.douban.com/subject/24713754/)  
 
-
-[Code of Ethics & Professional Conduct](https://www.pmi.org/about/ethics/code)  
-
 [项目管理方法论，2015](https://book.douban.com/subject/26584696/)  
+
+
+# 整体项目计划、迭代计划
+根据Vision文档，复查业务需求  
+划分子系统、确定完成顺序、人员、紧急程度  
+确定子系统组件、边界  
+规划WBS  
+
+> creator driven (问题分治还是工作分治)  
+> Be Zara, not Foxconn (从效率模式->快速响应式)  
 
 [Peopleware](https://book.douban.com/subject/25956450/)  
 
@@ -77,10 +87,80 @@ Lean manufacturing
 
 [程序员的三门课](https://www.zhihu.com/pub/reader/119647389/chapter/1182332907921813504)  
 
+[Code of Ethics & Professional Conduct](https://www.pmi.org/about/ethics/code)  
 
-Evolutionary Project Management
 
-97 Things Every Project Manager Should Know
+# 收集需求、提炼fact、用户参与
+![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEb0cc1b43e772d2c5fba39c1f0451a721/175)
+
+找到干系人  
+确认系统用例、领域类  
+记录用例细节图，UI原型  
+
+[Top risks, 2001](http://sunnyday.mit.edu/16.355/lawrence-requirements.pdf)  
+
+[Requirements Engineering, 2000](http://mcs.open.ac.uk/ban25/papers/sotar.re.pdf)  
+
+[Software Requirements (Developer Best Practices), wieger2013](https://www.amazon.com/Software-Requirements-Developer-Best-Practices-ebook/dp/B00JDMPMOA/ref=pd_sim_3?pd_rd_w=wKAhL&pf_rd_p=dc435707-6f1f-492e-b80d-8408db56abc9&pf_rd_r=S56C0MGWXZ88BWAF8NET&pd_rd_r=28ae2f52-e876-45d2-8c75-3771125ae848&pd_rd_wg=Exiv6&pd_rd_i=B00JDMPMOA&psc=1)
+
+[Requirements Engineering: From System Goals to UML Models to Software Specifications, axel2011](https://www.amazon.com/Requirements-Engineering-System-Software-Specifications-ebook/dp/B00DWHU40E)
+
+# 回顾、复查、总结迭代
+
+
+# 不确定的SDLC、软件开发过程
+
+[PDCA, deming86](https://asqaustin.org/wp-content/uploads/2015/12/History_of_the_PDSA_Cycle_CN_ASQ_Talk-_2_10_2016_Handout.pdf)  
+
+[Essential Scrum, rubin2014](https://book.douban.com/subject/25887356/)
+
+[Process Models, 2001](https://www.ics.uci.edu/~wscacchi/Papers/SE-Encyc/Process-Models-SE-Encyc.pdf)  
+[PSP, 1996](http://www.star.cc.gatech.edu/documents/SpencerRugabear/psp.pdf)  
+[CMM, 1991](http://sunnyday.mit.edu/16.355/cmm.pdf)  
+[The Agile Methods Fray](http://www-scf.usc.edu/~csci201/lectures/Lecture11/demarco2002.pdf)
+
+[software process versus design quality, suryanarayana2015](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7140652)
+
+[selecting a development approach, cms05 ](https://www.academia.edu/13239574/SELECTING_A_DEVELOPMENT_APPROACH)
+
+[a rational design process: how and why to fake it, parnas86, tose](https://www.cs.tufts.edu/~nr/cs257/archive/david-parnas/fake-it.pdf)
+
+[managing the development of large software systems, royce1970](http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf) 
+
+[evolutionary development, gilb81, sigsoft](https://dl.acm.org/doi/pdf/10.1145/1010865.1010868)
+
+[a spiral model of software development and enhancement, boehm88](http://www-scf.usc.edu/~csci201/lectures/Lecture11/boehm1988.pdf)  
+
+[CHAOS95](https://www.projectsmart.co.uk/white-papers/chaos-report.pdf)
+
+[Iterative and Incremental Development: A Brief History, 2003](https://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf)
+
+
+- 70年代前：文档驱动-一次过的顺序生命周期
+- 70年代：早期的IID出现
+- 80年代：adaptive和evo出现，人们开始思考软件项目失败的原因
+- 90年代至今：IID大面积推广、Scrum/RAD/RUP/XP，直到如今的敏捷
+
+[SCRUM development process, Schwaber95](http://www.jeffsutherland.org/oopsla/schwapub.pdf)
+
+[Extreme Programming Explained: Embrace Change, beck99](https://book.douban.com/subject/1440219/)
+
+[agile manifesto, 2002](http://agilemanifesto.org/)
+
+[Agile: The World's Most Popular Innovation Engine, 2015](https://www.forbes.com/sites/stevedenning/2015/07/23/the-worlds-most-popular-innovation-engine/#4d24af757c76)  
+
+https://chrisshayan.atlassian.net/wiki/spaces/my/blog/2013/05/12/622650/Selecting+the+Appropriate+Development+Methodology
+
+http://taoxie.cs.illinois.edu/index.htm
+
+https://www.ifi.uzh.ch/en/seal/teaching/courses/archive/hs10-1.html
+
+https://users.ece.utexas.edu/~perry/education/SE-Intro/
+
+https://www.jackyshen.com/  
+https://scrumguides.org/scrum-guide.html  
+https://www.scrum.org/ 
+http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.htm  
 
 # 程序员职业素养
 
@@ -112,8 +192,6 @@ Evolutionary Project Management
 [The Effective Engineer, Lau2015](https://book.douban.com/subject/26360716/)
 
 [Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman, hoover2010](https://book.douban.com/subject/4924164/)
-
-
 
 [卓有成效的程序员](https://book.douban.com/subject/3558788/)
 
@@ -178,75 +256,4 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 
 [创新的先知](https://book.douban.com/subject/4931700/)
 
-# 需求工程
-
-![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEb0cc1b43e772d2c5fba39c1f0451a721/175)
-
-> 解决/不解决什么问题？谁的问题？
-creator driven (问题分治还是工作分治)  
-Be Zara, not Foxconn (从效率模式->快速响应式)  
-
-定义需求（满足、目标、用户需求、系统需求、软件需求）  
-优先级、权衡、风险和影响分析  
-需求验证  
-
-[Top risks, 2001](http://sunnyday.mit.edu/16.355/lawrence-requirements.pdf)  
-[Requirements Engineering, 2000](http://mcs.open.ac.uk/ban25/papers/sotar.re.pdf)  
-
-[Software Requirements (Developer Best Practices), wieger2013](https://www.amazon.com/Software-Requirements-Developer-Best-Practices-ebook/dp/B00JDMPMOA/ref=pd_sim_3?pd_rd_w=wKAhL&pf_rd_p=dc435707-6f1f-492e-b80d-8408db56abc9&pf_rd_r=S56C0MGWXZ88BWAF8NET&pd_rd_r=28ae2f52-e876-45d2-8c75-3771125ae848&pd_rd_wg=Exiv6&pd_rd_i=B00JDMPMOA&psc=1)
-
-[Requirements Engineering: From System Goals to UML Models to Software Specifications, axel2011](https://www.amazon.com/Requirements-Engineering-System-Software-Specifications-ebook/dp/B00DWHU40E)
-
-
-
-# 软件开发流程
-
-[Essential Scrum, rubin2014](https://book.douban.com/subject/25887356/)
-
-[Process Models, 2001](https://www.ics.uci.edu/~wscacchi/Papers/SE-Encyc/Process-Models-SE-Encyc.pdf)  
-[PSP, 1996](http://www.star.cc.gatech.edu/documents/SpencerRugabear/psp.pdf)  
-[CMM, 1991](http://sunnyday.mit.edu/16.355/cmm.pdf)  
-[The Agile Methods Fray](http://www-scf.usc.edu/~csci201/lectures/Lecture11/demarco2002.pdf)
-
-[software process versus design quality, suryanarayana2015](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7140652)
-
-[selecting a development approach, cms05 ](https://www.academia.edu/13239574/SELECTING_A_DEVELOPMENT_APPROACH)
-
-[a rational design process: how and why to fake it, parnas86, tose](https://www.cs.tufts.edu/~nr/cs257/archive/david-parnas/fake-it.pdf)
-
-[managing the development of large software systems, royce1970](http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf) 
-
-[evolutionary development, gilb81, sigsoft](https://dl.acm.org/doi/pdf/10.1145/1010865.1010868)
-
-[a spiral model of software development and enhancement, boehm88](http://www-scf.usc.edu/~csci201/lectures/Lecture11/boehm1988.pdf)  
-
-[CHAOS95](https://www.projectsmart.co.uk/white-papers/chaos-report.pdf)
-
-[Iterative and Incremental Development: A Brief History, 2003](https://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf)
-
-
-- 70年代前：文档驱动-一次过的顺序生命周期
-- 70年代：早期的IID出现
-- 80年代：adaptive和evo出现，人们开始思考软件项目失败的原因
-- 90年代至今：IID大面积推广、Scrum/RAD/RUP/XP，直到如今的敏捷
-
-[SCRUM development process, Schwaber95](http://www.jeffsutherland.org/oopsla/schwapub.pdf)
-
-[Extreme Programming Explained: Embrace Change, beck99](https://book.douban.com/subject/1440219/)
-
-[agile manifesto, 2002](http://agilemanifesto.org/)
-
-[Agile: The World's Most Popular Innovation Engine, 2015](https://www.forbes.com/sites/stevedenning/2015/07/23/the-worlds-most-popular-innovation-engine/#4d24af757c76)  
-
-https://chrisshayan.atlassian.net/wiki/spaces/my/blog/2013/05/12/622650/Selecting+the+Appropriate+Development+Methodology
-
-http://taoxie.cs.illinois.edu/index.htm
-
-https://www.ifi.uzh.ch/en/seal/teaching/courses/archive/hs10-1.html
-
-https://users.ece.utexas.edu/~perry/education/SE-Intro/
-
-https://www.jackyshen.com/  
-https://scrumguides.org/scrum-guide.html  
-https://www.scrum.org/ 
-http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.htm   
+ 

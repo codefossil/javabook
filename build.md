@@ -121,6 +121,11 @@ static analysis
 自动化测试
 软件质量
 
+## 功能测试
+
+## 验收测试
+
+
 [growing object-oriented software guided by tests, beck09](https://book.douban.com/subject/4156589/)  
 
 [Agile Developer](https://book.douban.com/subject/4164024/)

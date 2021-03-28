@@ -12,7 +12,7 @@
 [大师说科学与哲学](https://book.douban.com/subject/27041829/)
 
 
-# 哲学
+# 哲学、人生
 
 [想透彻, 阿皮亚2017](https://book.douban.com/subject/27167590/)
 
@@ -34,7 +34,10 @@ https://en.wikipedia.org/wiki/History_of_science
 https://en.wikipedia.org/wiki/Branches_of_science
 
 
-# 历史
+# 历史、政治
+
 [中国古代文化常识](https://book.douban.com/subject/26021455/)
 
 [中国历史通论](https://book.douban.com/subject/30457516/)
+
+[中国历代政治得失，钱穆01](https://book.douban.com/subject/1003479/)
