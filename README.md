@@ -6,17 +6,17 @@
 * [科学哲学](science.md)
 * [认知科学](cognition.md)
 
-## 信息系统与应用
+## 信息系统开发
 * [产品、实施与管理](engineering.md)
 * [系统分析和设计](design.md)
 * [软件构建、质保与运维](build.md)
 * [开发技术与工具](framework.md)
 
-## 算法与分析
+## 计算与数据分析
 * [智能分析系统](ai.md)
 * [计算与优化](datastructure.md)
   
-## 软件基础与设施
+## 软件基础
 * [分布式系统](ds/ds.md)
 * [数据系统](database.md) 
 * [同步与并发](synchronize.md)  
