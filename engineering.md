@@ -51,8 +51,6 @@ https://en.wikipedia.org/wiki/Software_development
 
 [software engineering at google, henderson2017](https://arxiv.org/pdf/1702.01715.pdf)
 
-
-
 # 立项批准、系统整体功能需求、整体解决方案
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE6287ea342110009b3ee392f41eb98c61/132)
@@ -89,24 +87,9 @@ https://en.wikipedia.org/wiki/Software_development
 
 [Code of Ethics & Professional Conduct](https://www.pmi.org/about/ethics/code)  
 
-
-# 收集需求、提炼fact、用户参与
-![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEb0cc1b43e772d2c5fba39c1f0451a721/175)
-
-找到干系人  
-确认系统用例、领域类  
-记录用例细节图，UI原型  
-
-[Top risks, 2001](http://sunnyday.mit.edu/16.355/lawrence-requirements.pdf)  
-
-[Requirements Engineering, 2000](http://mcs.open.ac.uk/ban25/papers/sotar.re.pdf)  
-
-[Software Requirements (Developer Best Practices), wieger2013](https://www.amazon.com/Software-Requirements-Developer-Best-Practices-ebook/dp/B00JDMPMOA/ref=pd_sim_3?pd_rd_w=wKAhL&pf_rd_p=dc435707-6f1f-492e-b80d-8408db56abc9&pf_rd_r=S56C0MGWXZ88BWAF8NET&pd_rd_r=28ae2f52-e876-45d2-8c75-3771125ae848&pd_rd_wg=Exiv6&pd_rd_i=B00JDMPMOA&psc=1)
-
-[Requirements Engineering: From System Goals to UML Models to Software Specifications, axel2011](https://www.amazon.com/Requirements-Engineering-System-Software-Specifications-ebook/dp/B00DWHU40E)
-
 # 回顾、复查、总结迭代
-
+软件质量度量  
+工作量评估
 
 # 不确定的SDLC、软件开发过程
 
