@@ -3,9 +3,12 @@
 # 系统分析
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEb0cc1b43e772d2c5fba39c1f0451a721/175)
 
-> 理解系统应该做什么
+> 理解系统应该做什么。  
+> 把复杂的问题**解耦**为一个个更小的，更容易理解的模块。  
+> 把领域问题结构化、组织化成为需求模型。  
 
 [Systems Analysis and Design in a Changing World, Satzinger2015](https://www.amazon.com/Systems-Analysis-Design-Changing-World/dp/1305117204)  
+系统分析部分讲得很清楚，整个书把软件开发的方方面面讲得很具体。  
 
 [Systems Analysis and Design: An Object-Oriented Approach with UML](https://www.amazon.com/Systems-Analysis-Design-Object-Oriented-Approach/dp/1118804678/ref=zg_bs_602672_46?_encoding=UTF8&psc=1&refRID=PKYB5W8Q8TXME0HQZ945)
 
@@ -14,7 +17,7 @@
 https://www.umsl.edu/~sauterv/analysis/488_f01_papers/quillin.htm#Top  
 http://www.umsl.edu/~sauterv/analysis/analysis_links.html  
 
-## 需求、干系人、需求引出
+## 发现需求、干系人、需求引出
 
 功能性需求=业务用途必要的活动。  
 分析师需要学习用户的工作行为，了解业务知识，甚至变成业务专家。  
@@ -45,29 +48,38 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 用例=响应用户请求的一次活动。强调分析师优化和建模。  
 
 用户目标技术=按功能角色分类用户+目标描述  
-事件分解技术=外部事件+时序事件+内部事件
+事件分解技术=外部事件+时序事件+内部事件  
 用例图突出了actor与系统的功能关系。  
-
-[Applying UML and Patterns, larman04](https://book.douban.com/subject/1440149/)
 
 [Object-Oriented Analysis and Design with Applications, booch07](https://book.douban.com/subject/2266843/)  
 
-## 领域建模
+## 实体，领域建模
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEfb1b8e2ec2c2c32968ecc84d262cc4d8/177)
 
-**实体是现实世界的抽象，具体有形的东西、一次事件或者交互活动**就能表示现实世界的种种用例。  
+**实体是现实世界的抽象，具体有形的东西、一次事件或者交互活动**就能表示现实世界的种种用例。    
 头脑风暴需要分析师通过与用户沟通，结合用例和5W提问，分析和提炼出来。  
 名字技术需要列出用例中使用的所有名词，从现有系统、流程和表单中，增加更多的细节，提炼出实体、属性以及他们之间的关系。
-实体之间的关系=数量+通用/特殊+整体/部分
+
+实体之间的关系=数量+通用/特殊+整体/部分  
+
 确定实体的状态，以及业务逻辑控制状态转换。   
 
-[DDD](https://book.douban.com/subject/1418618/)  
 
-## 用例建模
+## 理解业务规则，用例建模
 
 **领域类图和用例图**最好就在项目的早期就完整确定下来，以便为设计和开发服务。  
+活动图主要用来描述在一个用例中，涉及的所有步骤，通常只包含2个actor，用户和系统。强调的是用户怎样与系统交互。  
+系统顺序图强调的是输入与输出，以便指导设计。  
+CRUD描述所有用户在每个用例中的权限。结合用户目的技术，用来交叉验证用例。  
+
+[Applying UML and Patterns, larman04](https://book.douban.com/subject/1440149/)
+
 
 # 系统设计
+
+[system-desgin](https://github.com/donnemartin/system-design-primer)  
+
+[Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
 
 [Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)
 
@@ -85,57 +97,11 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 
 [A Classification and Comparison Framework for Software Architecture Description Languages, medvidovic99, TOSE](https://www.ics.uci.edu/~andre/informatics223s2009/medvidovictaylor.pdf)
 
-
-## 定义架构
-- 高性能
-读写分离、分库分表、缓存服务、单机架构、负载均衡
-
-- 高扩展
-分层、SOA、微内核
-
-- 高可用
-  双机备份、FMEA、异地多活、熔断、降级、限流
-
-https://tech.meituan.com/2018/05/31/dp-account-high-avaliable-road.html
-
-https://blog.csdn.net/ityouknow/article/details/81230412
-
-https://www.jianshu.com/p/dfce30de7fe3
-
-![](https://pubs.opengroup.org/architecture/archimate-doc/ts_archimate/ts_archimate_files/image008.png)
-
-> OODA loop
-
-- Part of the process of architecting a software system is about understanding **what is significant and why**
-- Understanding **the speed at which your organisation or business changes** is important
-
-业务规则=约束+原则  
-结构=边界+接口  
-
-> 架构=重要的系统设计=结构+愿景=构建成本最小化+效率最大化
-
-https://docs.oracle.com/cd/E19263-01/817-5764/architecture.html
+## **描述**二方和三方系统通信、组织现存的技术架构
+明确现存技术环境，以便做出合适的设计决定。  
+明确在一个特定的技术环境中，系统是怎样工作的。  
 
 [康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
-
-[Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
-
-[What Every Engineer Should Know About Software Engineering, 07](https://book.douban.com/subject/2607747/)
-
-[Software Architecture in Practice, bass2013](https://www.amazon.com/Software-Architecture-Practice-3rd-Engineering/dp/0321815734)  
-
-
-[Building Microservice](https://book.douban.com/subject/25881698/)  
-
-[Microservices Patterns: With Examples in Java, 2019](https://book.douban.com/subject/33425123/)  
-
-
-
-https://docs.microsoft.com/en-us/azure/architecture/microservices/migrate-monolith  
-http://www.mit.edu/~richh/writings/  
-https://blog.pragmaticengineer.com/software-architecture-is-overrated/
-
-[微服务架构设计, 互联网金融公司](https://gudaoxuri.gitbook.io/microservices-architecture/)
 
 [架构漫谈, 2016](https://www.infoq.cn/article/an-informal-discussion-on-architecture-part01)  
 
@@ -150,25 +116,93 @@ https://blog.pragmaticengineer.com/software-architecture-is-overrated/
 [Architectural Blueprints - The 4+1 View Model of Software Architecture, kruchten95, rational](https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf)
 
 
+## 设计应用组件、子系统
+
+业务规则=约束+原则  
+结构=边界+接口  
+
+[Clean Architecture](https://book.douban.com/subject/30333919/)  
+提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。底层离中心业务越远越易变，高层中心业务规则是赚钱的法宝比较不易变。 
+
+[DDD](https://book.douban.com/subject/1418618/)  
+
+[Building Microservice](https://book.douban.com/subject/25881698/)  
+
+[Microservices Patterns: With Examples in Java, 2019](https://book.douban.com/subject/33425123/)  
+
+https://docs.microsoft.com/en-us/azure/architecture/microservices/migrate-monolith  
+http://www.mit.edu/~richh/writings/  
+https://blog.pragmaticengineer.com/software-architecture-is-overrated/
+
+[微服务架构设计, 互联网金融公司](https://gudaoxuri.gitbook.io/microservices-architecture/)
+
 [On the Criteria To Be Used in Decomposing Systems into Modules, parnas72](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf)
 
 [A Laboratory For Teaching Object-Oriented Thinking, beck89, oopsla](http://people.cs.pitt.edu/~chang/231/5spec/CRCcard/Beck-LaboratoryForTeachingOO.pdf)
 
 
-[Clean Architecture](https://book.douban.com/subject/30333919/)  
-提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。底层离中心业务越远越易变，高层中心业务规则是赚钱的法宝比较不易变。 
+## 非法输入验证、数据备份和恢复、欺诈保护
 
-[Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
-[Software design for large system, 1988](https://web.njit.edu/~kirova/BC-SDP.pdf)  
+## 访问控制、数据加密
 
-[Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
-[Just Enough Software Architecture](https://book.douban.com/subject/24872314/)    
-[Architectural and philosophical points](https://www.w3.org/DesignIssues/)  
+## 架构图
+可视化描述信息系统的环境、组件和部署情况。  
 
 [Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)  
 权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档
 
+## 系统架构设计原则
+
+> 架构=重要的系统设计=结构+愿景=构建成本最小化+效率最大化
+
+
+- 高性能
+
+  读写分离、分库分表、缓存服务、单机架构、负载均衡
+
+- 高扩展
+
+  分层、SOA、微内核
+
+- 高可用
+
+  双机备份、FMEA、异地多活、熔断、降级、限流
+
+
+[Software Architecture in Practice, bass2013](https://www.amazon.com/Software-Architecture-Practice-3rd-Engineering/dp/0321815734)  
+
+
+https://tech.meituan.com/2018/05/31/dp-account-high-avaliable-road.html
+
+https://blog.csdn.net/ityouknow/article/details/81230412
+
+https://www.jianshu.com/p/dfce30de7fe3
+
+![](https://pubs.opengroup.org/architecture/archimate-doc/ts_archimate/ts_archimate_files/image008.png)
+
+> OODA loop
+
+- Part of the process of architecting a software system is about understanding **what is significant and why**
+- Understanding **the speed at which your organisation or business changes** is important
+
+
+
+[Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
+
+[Software design for large system, 1988](https://web.njit.edu/~kirova/BC-SDP.pdf)  
+
+[Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
+[Just Enough Software Architecture](https://book.douban.com/subject/24872314/)    
+
+[Architectural and philosophical points](https://www.w3.org/DesignIssues/)  
+
 [Domain-Specific Languages, fowler2010](https://book.douban.com/subject/4775030/)
+
+
+https://docs.oracle.com/cd/E19263-01/817-5764/architecture.html
+
+
+
 
 https://web.njit.edu/~kirova/is663-s11.html  
 https://handbookofsoftwarearchitecture.com/
@@ -193,19 +227,67 @@ If it ain't broke, don't fix it.
 [worse is better](http://dreamsongs.com/WorseIsBetter.html)  
 [The Rule of Least Power, 2001](https://www.w3.org/2001/tag/doc/leastPower.html)  
 
-[Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)  
+
 [方法论——程序员的阿喀琉斯之踵](http://mindhacks.cn/2008/10/29/methodology-for-programmers/)  
 [PEP 20](https://www.python.org/dev/peps/pep-0020/)  
-[system-desgin](https://github.com/donnemartin/system-design-primer)  
+
 
 https://martinfowler.com/architecture/
 
 https://www.d.umn.edu/~gshute/softeng/principles.html
 
-## 设计用户接口
+# Back-Of-The-Envelope 容量/性能评估
 
-## 设计数据库表、系统组件、子系统架构
+## SLA
+|SLA|每天停机时间|每年停机时间|
+| ---- | ---- | ---- |
+|99%|14.40 mins|3.65 days|
+|**99.9%**|1.44 mins|8.77h|
+|99.99%|8.64s|52.60 mins|
+|99.999%|864 ms|5.26 mins|
+|99.9999%|84 ms|31.56s|
 
+## 线上业务故障级别
+|故障等级|说明|响应时间|修复时间|故障复审|
+| ---- | ---- | ---- | ---- | ---- |
+|P0|1.系统整体瘫痪。2.关键硬件/软件损坏，无法自动修复。3.间歇性/随机性/重复性重启/退出，客户业务无法正常|<=3小时|<=1个工作日|VP|
+|P1|1.关键服务降级，客户业务受到严重影响。2.性能严重下降，无法自动修复。3.客户数据损失|<=4小时|<=3个工作日|总监|
+|P2|1.部分服务异常，整体正常，客户业务影响不大/存在隐患。2.备用设施离线，主设备正常。3.系统指标受影响，客户业务受限|<=6小时|<=4个工作日|团队|
+|P3|1.不在线的线路和端口损坏。2.安全重启。3.软件/硬件技术支持|<=24小时|<=5个工作日|团队|
+
+## 延迟
+> 响应时间 = 服务时间（性能） + 排队时间
+
+![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEbf029d15a4f0fb456ca9c6b9a7eed73e/173)
+
+[Latency Numbers Every Programmer Should Know](https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html)
+
+|||
+|---|---|
+同机房|0.05ms
+同城|0.5ms
+异地|50ms
+
+## 常用中间件性能评估
+|名称|机器配置|性能|客户端|延迟|数据来源
+|---|---|---|---|---|---|
+haproxy|16c,64GB|2.4M CPS,30MB/s,20 clients|900 qps/c|[haproxy1.6](https://www.freecodecamp.org/news/how-we-fine-tuned-haproxy-to-achieve-2-000-000-concurrent-ssl-connections-d017e61a4d27/)
+nginx|36c,40Gbps,16GB|760K QPS/250K CPS, 730K/10K|10KB/r|[nginx 1.9](https://www.nginx.com/blog/testing-the-performance-of-nginx-and-nginx-plus-web-servers/)
+kafka|6c,1Gbps,32GB,7200 SATA| 820K TPS|100B/r，78MB/s，NIC基本打爆了|AVG 2ms,TP99 3ms|[kafka 0.8](https://engineering.linkedin.com/kafka/benchmarking-apache-kafka-2-million-writes-second-three-cheap-machines)
+zookeeper|2c|20K~80K/3severs QPS|200ms/elect|[Zookeeper3.x](https://zookeeper.apache.org/doc/r3.6.2/zookeeperOver.html)
+RabbitMQ|4c,40GB|44K TPS|serval B/r|1ms-500ms|[rabbitMQ 2.8](https://www.rabbitmq.com/blog/2012/04/25/rabbitmq-performance-measurements-part-2/)
+Redis|8c,32GB,EBS,10Gbps|150K QPS,100 clients|1K/r|TP99<1ms|[redis 5.0](https://docs.keydb.dev/blog/2019/06/17/blog-post/),[Redis lab](https://redis.io/topics/benchmarks)
+
+## 常见数据库性能评估
+|名称|机器配置|TPC-C|延迟|数据来源
+|---|---|---|---|---|
+MySQL|24c,4TGB,SSD,25Gbps|380K tpmC|TP90 100ms|[tpcc TTA](http://tpc.org/results/fdr/tpcc/tta~tpcc~as-1124us-tnrp~fdr~2020-08-16~v01.pdf)
+
+
+## 常见服务性能评估
+|名称|机器配置|性能|客户端|延迟|数据来源
+|---|---|---|---|---|---|
+微信||14M QPS/635台服务器, 月活540M|40M/600=66K QPS/server|[100亿次红包](https://developer.51cto.com/art/202003/613210.htm)
 
 # 控制复杂度
 

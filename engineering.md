@@ -45,6 +45,10 @@ https://en.wikipedia.org/wiki/Software_development
 [A Multi-Decade Perspective, Scacchi, 2018](https://www.ics.uci.edu/~wscacchi/Papers/New/IEEE-Computer-Scacchi-2018.pdf)  
 [自我评价](http://www.cnblogs.com/xinz/p/3852177.html)
 
+
+[What Every Engineer Should Know About Software Engineering, 07](https://book.douban.com/subject/2607747/)
+
+
 软件产品开发为什么失败  
 软件、软件危机、软件工程  
 测试写到什么程度算足够  

@@ -1,39 +1,3 @@
-
-# 延迟
-> 响应时间 = 服务时间（性能） + 排队时间
-
-![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEbf029d15a4f0fb456ca9c6b9a7eed73e/173)
-
-[Latency Numbers Every Programmer Should Know](https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html)
-
-|||
-|---|---|
-同机房|0.05ms
-同城|0.5ms
-异地|50ms
-
-## 常用中间件性能评估
-|名称|机器配置|性能|客户端|延迟|数据来源
-|---|---|---|---|---|---|
-haproxy|16c,64GB|2.4M CPS,30MB/s,20 clients|900 qps/c|[haproxy1.6](https://www.freecodecamp.org/news/how-we-fine-tuned-haproxy-to-achieve-2-000-000-concurrent-ssl-connections-d017e61a4d27/)
-nginx|36c,40Gbps,16GB|760K QPS/250K CPS, 730K/10K|10KB/r|[nginx 1.9](https://www.nginx.com/blog/testing-the-performance-of-nginx-and-nginx-plus-web-servers/)
-kafka|6c,1Gbps,32GB,7200 SATA| 820K TPS|100B/r，78MB/s，NIC基本打爆了|AVG 2ms,TP99 3ms|[kafka 0.8](https://engineering.linkedin.com/kafka/benchmarking-apache-kafka-2-million-writes-second-three-cheap-machines)
-zookeeper|2c|20K~80K/3severs QPS|200ms/elect|[Zookeeper3.x](https://zookeeper.apache.org/doc/r3.6.2/zookeeperOver.html)
-RabbitMQ|4c,40GB|44K TPS|serval B/r|1ms-500ms|[rabbitMQ 2.8](https://www.rabbitmq.com/blog/2012/04/25/rabbitmq-performance-measurements-part-2/)
-Redis|8c,32GB,EBS,10Gbps|150K QPS,100 clients|1K/r|TP99<1ms|[redis 5.0](https://docs.keydb.dev/blog/2019/06/17/blog-post/),[Redis lab](https://redis.io/topics/benchmarks)
-
-## 常见数据库性能评估
-|名称|机器配置|TPC-C|延迟|数据来源
-|---|---|---|---|---|
-MySQL|24c,4TGB,SSD,25Gbps|380K tpmC|TP90 100ms|[tpcc TTA](http://tpc.org/results/fdr/tpcc/tta~tpcc~as-1124us-tnrp~fdr~2020-08-16~v01.pdf)
-
-
-## 常见服务性能评估
-|名称|机器配置|性能|客户端|延迟|数据来源
-|---|---|---|---|---|---|
-微信||14M QPS/635台服务器, 月活540M|40M/600=66K QPS/server|[100亿次红包](https://developer.51cto.com/art/202003/613210.htm)
-
-
 # 性能
 [Imbench, 1996](http://mcvoy.com/lm/bitmover/lmbench/lmbench-usenix.pdf) ，线程切换 = 状态转换(~n us) + `cache missing`(~n 10ns), https://news.ycombinator.com/item?id=13930305  
 [Why pthread](https://computing.llnl.gov/tutorials/pthreads/#WhyPthreads), fork(~n 100ns) = ~10x pthread_create(~n 10ns)  

@@ -31,6 +31,12 @@ https://cmu-17-356.github.io/
 
 https://www.coursicle.com/cmu/courses/ISR/17480/
 
+# 分析模型到设计模型
+对于OOD来说，大部分工作就是扩展分析模型，丰富实现细节。  
+对于敏捷来说，强调模型设计的选择性，即对实现非常重要的，需要进行事先建模。  
+用例驱动，多层次类设计、模块设计。  
+
+[Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)  
 
 # 编程实践，接口，模块化，契约化
 api设计
@@ -152,8 +158,6 @@ https://ohshitgit.com/
 
 ![](https://pic1.zhimg.com/80/v2-4106a010bb1f53cf88f3e8173bff07e4_1440w.jpg)
 
-流量切换 sla  
-服务依赖/状态/降级  
 发布和灰度   
 
 [Kubernetes In Action, 2017](https://book.douban.com/subject/26997846/)  
