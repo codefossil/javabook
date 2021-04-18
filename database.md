@@ -163,7 +163,7 @@ Serializability, 2PL
 锁的粒度。
 
 [InnoDB locking](https://dev.mysql.com/doc/refman/5.7/en/innodb-locking.html)  
-
+意向锁用来表示当前表已经有行锁，减少表锁与行锁的扫描判断，造成锁表的性能损失。  
 
 
 ## 并发异常、隔离级别
@@ -195,11 +195,18 @@ innoDB的一致性读仅仅针对select语句。 insert/update/delete/select...f
 
 ## 持久化、可恢复性与日志
 
+[A way to do atomic writes](https://lwn.net/Articles/789600/)   
+在存储系统应用中，为了保证原子写入，通常有2种方式，内存锁和rename()。  
+
+[再探Linux内核write系统调用操作的原子性](https://blog.csdn.net/dog250/article/details/78879600)
+
 [ARIES,tods92 ](https://people.eecs.berkeley.edu/~brewer/cs262/Aries.pdf)  
 
 [voltdb recovery, icde2014](https://hstore.cs.brown.edu/papers/voltdb-recovery.pdf)
 
 [5.4 MySQL服务器日志](https://dev.mysql.com/doc/refman/5.7/en/server-logs.html)
+
+https://stackoverflow.com/questions/1154446/is-file-append-atomic-in-unix
 
 # 存取方法
 

@@ -34,6 +34,15 @@ https://blog.rapid7.com/2014/03/14/synchronizing-clocks-in-a-cassandra-cluster-p
 
 # 原子提交
 
+[服务化带来的数据一致问题](https://cloud.tencent.com/developer/article/1740740)
+
+[美团外卖订单中心的演进](https://tech.meituan.com/2016/09/09/mt-waimai-order-evolution.html)
+
+https://www.sohu.com/a/393714262_120451117  
+https://zhuanlan.zhihu.com/p/341700125
+
+[seata](http://seata.io/en-us/docs/user/quickstart.html)
+
 [2PC, 1977, P5.8](https://www.scribd.com/document/70629715/Jim-Gray-Notes-on-Database-Operating-Systems)  
 [3PC, 1981](https://www.cs.utexas.edu/~lorenzo/corsi/cs380d/papers/Ske81.pdf)  
 [XA specification, 1991](http://pubs.opengroup.org/onlinepubs/009680699/toc.pdf)  

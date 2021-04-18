@@ -33,7 +33,7 @@ https://www.coursicle.com/cmu/courses/ISR/17480/
 
 # 分析模型到设计模型
 对于OOD来说，大部分工作就是扩展分析模型，丰富实现细节。  
-对于敏捷来说，强调模型设计的选择性，即对实现非常重要的，需要进行事先建模。  
+对于敏捷来说，强调对实现非常重要的，需要进行事先建模。  
 用例驱动，多层次类设计、模块设计。  
 
 [Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)  
@@ -81,7 +81,7 @@ CS的核心问题就是问题分解。
 
 [The Practice of Programming, Kernighan99](https://book.douban.com/subject/1459281/)
 
-[The Art of UNIX Programming, raymond2003](https://www.amazon.com/UNIX-Programming-Addison-Wesley-Professional-Computing-ebook/dp/B003U2T5BA)
+[The Art of UNIX Programming (TAOUP), 2003](https://book.douban.com/subject/5387401/)   
 
 [Expert One-on-One J2EE Development without EJB, johnson04](https://book.douban.com/subject/1426848/)  
 
@@ -92,6 +92,8 @@ CS的核心问题就是问题分解。
 https://ngte-se.gitbook.io/  
 https://github.com/xingshaocheng/architect-awesome 
 https://java-design-patterns.com/principles/  
+
+# 代码结构度量
 
 # 软件验证，确认和测试
 

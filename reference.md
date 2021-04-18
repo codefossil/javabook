@@ -7,7 +7,6 @@
 * [cs-ranking](https://webdocs.cs.ualberta.ca/~zaiane/htmldocs/ConfRanking.html)
 * [top-cs](http://csrankings.org)
 * [ccf-recommendation](http://www.ccf.org.cn/xspj/gyml/)
-* [radar-thoughtworks](https://www.thoughtworks.com/radar/techniques)
 * [中科院软件研究所](http://www.is.cas.cn/)
 * [清华大学信息科学技术学院](http://www.sist.tsinghua.edu.cn/)
 * [科学技术司](http://www.moe.gov.cn/s78/A16/)
