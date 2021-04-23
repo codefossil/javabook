@@ -48,6 +48,8 @@ https://en.wikipedia.org/wiki/Software_development
 
 [What Every Engineer Should Know About Software Engineering, 07](https://book.douban.com/subject/2607747/)
 
+[Software Engineering at Google: Lessons Learned from Programming Over Time, winters2020](https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791/ref=sr_1_1?crid=B3OX7H0MRN3B&dchild=1&keywords=software+engineering+at+google&qid=1618715077&s=books&sprefix=software+en%2Cstripbooks-intl-ship%2C530&sr=1-1)
+
 
 软件产品开发为什么失败  
 软件、软件危机、软件工程  
@@ -65,8 +67,14 @@ https://en.wikipedia.org/wiki/Software_development
 输出System Vision Document  
 召集所有核心人员，启动立项会议  
 
-[ch1, Systems Analysis and Design in a Changing World](https://www.amazon.com/Systems-Analysis-Design-Changing-World/dp/1305117204)  
-结合RMO在线交易系统的案例，整体阐述软件开发过程中涉及的各种活动。  
+[ch11, Systems Analysis and Design in a Changing World](https://www.amazon.com/Systems-Analysis-Design-Changing-World/dp/1305117204)  
+凡是涉及二人以上的项目，都需要决定分工、开发过程。  
+项目失败的主要原因缺乏行政参与和项目管理技能。  
+项目成功的标志=按时完成+预算内+高效满足需求。  
+PM作为中心，需要对外汇报给客户、监督委员会，对内组织资源、计划、监控。  
+项目管理规格=正式程度+文档生成的量级+规格可追溯性。  
+敏捷项目管理需要平衡灵活性和对混沌的控制。  
+大多数公司都是不停的想办法提高市场份额=长期+短期计划。  
 
 [A Guide to the Project Management Body of Knowledge](https://book.douban.com/subject/24697645/)  
 [汪博士解读PMP考试](https://book.douban.com/subject/24713754/)  
@@ -79,9 +87,6 @@ https://en.wikipedia.org/wiki/Software_development
 划分子系统、确定完成顺序、人员、紧急程度  
 确定子系统组件、边界  
 规划WBS  
-
-> creator driven (问题分治还是工作分治)  
-> Be Zara, not Foxconn (从效率模式->快速响应式)  
 
 [Peopleware](https://book.douban.com/subject/25956450/)  
 
@@ -97,11 +102,29 @@ https://en.wikipedia.org/wiki/Software_development
 
 # 不确定的SDLC、软件开发过程
 
-[PDCA, deming86](https://asqaustin.org/wp-content/uploads/2015/12/History_of_the_PDSA_Cycle_CN_ASQ_Talk-_2_10_2016_Handout.pdf)  
+![](https://www.researchgate.net/profile/Humberto-Cervantes/publication/221036001/figure/fig1/AS:394022662230017@1470953731072/The-4-phases-and-9-disciplines-of-the-Rational-Unified-Process.png)
+
+[PDCA, deming86](https://asqaustin.org/wp-content/uploads/2015/12/History_of_the_PDSA_Cycle_CN_ASQ_Talk-_2_10_2016_Handout.pdf)   
+现代企业质量控制的基石，也是PMP的理论基础。  
+
+
+[ch10, Systems Analysis and Design in a Changing World, Satzinger2015](https://www.amazon.com/Systems-Analysis-Design-Changing-World/dp/1305117204)  
+非常明确的需求->使用可预测的过程到SDLC，基本顺序的执行五大过程组。  
+作为人类可能会犯错，可能会忽略掉重要的组件。  
+迭代/增量开发，加速了交付速度。 先把架子搭起，有部少量的功能，后续迭代出更多功能。  
+敏捷建模=重要的领域建模+决策点建模。  
+UP=回答每个迭代的重点是什么=觉察阶段+协作阶段+构建阶段+转移阶段+4周/迭代+训练科目/阶段。  
+XP=最佳实践=故事+TDD+结对编程+简单设计+重构代码+每人维护所有代码+CI+用户驻场+系统类比+小发布+遵循编码和文档标准。  
+SCRUM=适合需求非常不明确=backlog+计划会议+冲刺+每日站会+复查会议
+
+[Iterative and Incremental Development: A Brief History, 2003](https://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf)  
+70年代前：文档驱动-一次过的顺序生命周期  
+70年代：早期的IID出现  
+80年代：adaptive和evo出现，人们开始思考软件项目失败的原因  
+90年代至今：IID大面积推广、Scrum/RAD/RUP/XP，直到如今的敏捷  
 
 [Essential Scrum, rubin2014](https://book.douban.com/subject/25887356/)
 
-[Process Models, 2001](https://www.ics.uci.edu/~wscacchi/Papers/SE-Encyc/Process-Models-SE-Encyc.pdf)  
 [PSP, 1996](http://www.star.cc.gatech.edu/documents/SpencerRugabear/psp.pdf)  
 [CMM, 1991](http://sunnyday.mit.edu/16.355/cmm.pdf)  
 [The Agile Methods Fray](http://www-scf.usc.edu/~csci201/lectures/Lecture11/demarco2002.pdf)
@@ -120,13 +143,7 @@ https://en.wikipedia.org/wiki/Software_development
 
 [CHAOS95](https://www.projectsmart.co.uk/white-papers/chaos-report.pdf)
 
-[Iterative and Incremental Development: A Brief History, 2003](https://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf)
 
-
-- 70年代前：文档驱动-一次过的顺序生命周期
-- 70年代：早期的IID出现
-- 80年代：adaptive和evo出现，人们开始思考软件项目失败的原因
-- 90年代至今：IID大面积推广、Scrum/RAD/RUP/XP，直到如今的敏捷
 
 [SCRUM development process, Schwaber95](http://www.jeffsutherland.org/oopsla/schwapub.pdf)
 
@@ -166,11 +183,11 @@ http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.
 
 [软技能](https://book.douban.com/subject/26835090/)  
 至今为止看到软件开发工程师职业最强指南。  
-`拥有商业心态`，把雇主当做软件开发企业的客户。  
+**拥有商业心态**，把雇主当做软件开发企业的客户。  
 每个人都希望自己很重要。  
-在一个`专业方向上拥有专长`，思考专业化道路是会让自己受益，还是过度限制了自己的选择，类比律师。    
+**在一个专业方向上拥有专长**，思考专业化道路是会让自己受益，还是过度限制了自己的选择，类比律师。    
 同时保有全职工作、开源节流、业余时间2小时/天新业务试错。  
-持续不断增强业务能力，`确保长期客户、稳定的新客户`。  
+持续不断增强业务能力，**确保长期客户、稳定的新客户**。  
 作为一名软件开发人员，拥有成为一名企业家得天独厚的优势，不仅能提出概念和想法，还能把它创造出来。  
 建立长远的理财思维，考虑物品的实际开销。  
 **制定退休计划**，一方面缩减每个月的开支；一方面增加和确保自己的被动收入，包括且不仅限于购买增长型期权、高收益股票、基金、可租赁房产、存入退休账号、版权。  

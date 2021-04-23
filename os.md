@@ -141,6 +141,11 @@ https://www.cs.cmu.edu/~crary/819-f09/
 
 [Formal Semantics of Programming Languages](http://web.cs.ucdavis.edu/~su/teaching/ecs240-w17/lectures.html)  
 
+
+# cpp
+
+https://changkun.de/modern-cpp/zh-cn/00-preface/
+
 c++
 内存管理
 标准库扩展

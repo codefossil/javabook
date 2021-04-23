@@ -322,6 +322,14 @@ https://www.gartner.com/doc/reprints?id=1-5N2H2SM&ct=181024&st=sb
 http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/  
 https://laptrinhx.com/apache-hawq-next-step-in-massively-parallel-processing-3942821226/  
 
+## 时间序列数据库
+
+https://www.elastic.co/blog/elasticsearch-as-a-time-series-data-store
+
+https://www.influxdata.com/blog/influxdb-markedly-elasticsearch-in-time-series-data-metrics-benchmark/
+
+## 图数据库
+
 # todo
 
 [presto](http://prestodb.github.io/)  

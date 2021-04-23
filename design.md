@@ -13,7 +13,7 @@
 > 把领域问题结构化、组织化成为需求模型。  
 
 [Systems Analysis and Design in a Changing World, Satzinger2015](https://www.amazon.com/Systems-Analysis-Design-Changing-World/dp/1305117204)  
-系统分析部分讲得很清楚，整个书把软件开发的方方面面讲得很具体。  
+系统分析部分讲得很清楚，整个书把软件开发的方方面面讲得很具体。 
 
 [Systems Analysis and Design: An Object-Oriented Approach with UML](https://www.amazon.com/Systems-Analysis-Design-Object-Oriented-Approach/dp/1118804678/ref=zg_bs_602672_46?_encoding=UTF8&psc=1&refRID=PKYB5W8Q8TXME0HQZ945)
 
@@ -38,7 +38,10 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 散发和搜集问卷、复查现存文档、现场观察业务、研究友商解决方案。  
 快速迭代，干系人参与早期版本，收集活跃用户评论和建议。  
 
-模型是系统某方面的抽象表示。是分析师与用户和设计师交流的工具。
+```
+比起航天工程，信息系统更加的无形，<模型>是系统某一部分的抽象表示，同时也是系统可视化工具，是分析师与用户和设计师交流的工具，也是程序员理清系统行为的工具。
+```
+系统开发方法=各种模型+工具+技术组合
 
 [Top risks, 2001](http://sunnyday.mit.edu/16.355/lawrence-requirements.pdf)  
 
@@ -84,7 +87,7 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 
 ![](https://pubs.opengroup.org/architecture/archimate-doc/ts_archimate/ts_archimate_files/image008.png)
 
-[Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)
+[Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)  
 这本书，是迄今为止见过最全面关于软件架构的书。  
 从架构技术、架构师职责，到软技能、职业规划。  
 
@@ -96,6 +99,10 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 
 
 [Patterns of Enterprise Application Architecture, fowler02](https://book.douban.com/subject/1229954/)
+
+
+[Continuous Architecture in Practice: Software Architecture in the Age of Agility and DevOps](https://www.amazon.com/Continuous-Architecture-Practice-Addison-Wesley-Signature/dp/0136523560)
+
 
 [Foundations for the Study of Software Architecture, perry92, SIGSOFT](http://citeseer.ist.psu.edu/viewdoc/download?doi=10.1.1.135.5430&rep=rep1&type=pdf)
 
@@ -140,6 +147,8 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 与领域干系人开会时，捕捉关键的关注点，并转换成规格。  
 善于发现需求文档中，隐藏的规格信息。  
 存在这样一种映射=领域关注点->架构规则组合->技术实现方案  
+
+[Building Secure & Reliable Systems](https://book.douban.com/subject/34796016/)
 
 [Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
 
