@@ -1,4 +1,4 @@
-![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEaa32470fa924b91662c25ba30a413530/167)
+![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE489dca2bb3ec55b00fbc0b3753ba25f8/185)
 
 [ArchSummit全球架构师峰会](http://www.archsummit.com/)
 
@@ -12,7 +12,7 @@
 > 把复杂的问题**解耦**为一个个更小的，更容易理解的模块。  
 > 把领域问题结构化、组织化成为需求模型。  
 
-[Systems Analysis and Design in a Changing World, Satzinger2015](https://www.amazon.com/Systems-Analysis-Design-Changing-World/dp/1305117204)  
+[Systems Analysis and Design in a Changing World, Satzinger2016](https://www.amazon.com/Systems-Analysis-Design-Changing-World/dp/1305117204)  
 系统分析部分讲得很清楚，整个书把软件开发的方方面面讲得很具体。 
 
 [Systems Analysis and Design: An Object-Oriented Approach with UML](https://www.amazon.com/Systems-Analysis-Design-Object-Oriented-Approach/dp/1118804678/ref=zg_bs_602672_46?_encoding=UTF8&psc=1&refRID=PKYB5W8Q8TXME0HQZ945)
@@ -72,6 +72,9 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 
 确定实体的状态，以及业务逻辑控制状态转换。   
 
+```
+领域类图既服务于数据库设计，又服务于设计类图
+```
 
 ## 理解业务规则，用例建模
 

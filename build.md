@@ -1,4 +1,4 @@
-# 代码复杂度
+# 代码复杂度、结构度量
 ![](https://www.synopsys.com/blogs/software-security/wp-content/uploads/LinesOfCodeInMillions.png)
 
 
@@ -32,13 +32,18 @@ https://cmu-17-356.github.io/
 https://www.coursicle.com/cmu/courses/ISR/17480/
 
 # 分析模型到设计模型
-对于OOD来说，大部分工作就是扩展分析模型，丰富实现细节。  
-对于敏捷来说，强调对实现非常重要的，需要进行事先建模。  
-用例驱动，多层次类设计、模块设计。  
+![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE7d38c424dc9f719a17b83d9ebec429f7/183)
+
+[ch12, Systems Analysis and Design in a Changing World, Satzinger2015](https://www.amazon.com/Systems-Analysis-Design-Changing-World/dp/1305117204)  
+对于OO来说，OOD大部分工作就是扩展分析模型，丰富实现细节。  
+程序员编写程序的行为是单线程的，一次只能针对一个用例，设计模型需要提供类和流程。  
+OOD是一种用例驱动，通过确定各种类、方法和之间的消息来执行用例，这个过程与程序员写程序的行为一致。    
+对于简单的用例来说，直接编码合适；对于复杂的用例来说，建模便于思考、更直观。  
+每次用例设计完，会有更多的类、更多的属性和方法被定义，设计类图就会变得充实。  
 
 [Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)  
 
-# 编程实践，接口，模块化，契约化
+# 编程实践、接口、契约化
 api设计
 契约式设计、防御式编程
 
@@ -95,21 +100,19 @@ https://ngte-se.gitbook.io/
 https://github.com/xingshaocheng/architect-awesome 
 https://java-design-patterns.com/principles/  
 
-# 代码结构度量
+# 单元测试、集成测试
 
-# 软件验证，确认和测试
+[ch13, Systems Analysis and Design in a Changing World, Satzinger2015](https://www.amazon.com/Systems-Analysis-Design-Changing-World/dp/1305117204)  
+单元测试=在集成其他组件之前，测试单个方法/类/组件。  
 
-[Requirements and Testing: Seven Missing-Link Myths, graham02](http://www.eng.auburn.edu/~kchang/comp6710/readings/RequirementsandTesting_SevenMissing_LinkMyths_Graham.IEEE_Software.2002Sept.pdf)
 
-[What is Software Testing? And Why Is It So Hard?, whittaker2000](http://www.win.tue.nl/~wstomv/edu/sep/ieee/testing-is-hard.pdf)
+[growing object-oriented software guided by tests, beck09](https://book.douban.com/subject/4156589/)  
 
-https://www.istqb.org/  
+[Agile Developer](https://book.douban.com/subject/4164024/)
 
-[Testing in Scrum, linz2014](https://book.douban.com/subject/33319435/)  
+[关于单元测试](https://techsingular.net/2012/09/04/%E5%85%B3%E4%BA%8E%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/)  
 
-[Continuous Integration: Improving Software Quality and Reducing Risk, duvall07](https://book.douban.com/subject/2159442/)
-
-[Endo-Testing: Unit Testing with Mock Objects, mackinnon01, xp2000](https://www2.ccs.neu.edu/research/demeter/related-work/extreme-programming/MockObjectsFinal.PDF)  
+[ten years tdd](http://wiki.c2.com/?TenYearsOfTestDrivenDevelopment)  
 
 [Mock Objects](http://media.pragprog.com/articles/may_02_mock.pdf)
 
@@ -121,29 +124,6 @@ https://www.istqb.org/
 
 [A New Look at Test Driven Development, astels05](http://daveastels.com/a-new-look-at-test-driven-development.html)
 
-
-[comp6710](http://www.eng.auburn.edu/~kchang/comp6710/Presentation.Schedule.htm)  
-
-code coverage  
-性能测试  
-review
-static analysis
-自动化测试
-软件质量
-
-## 功能测试
-
-## 验收测试
-
-
-[growing object-oriented software guided by tests, beck09](https://book.douban.com/subject/4156589/)  
-
-[Agile Developer](https://book.douban.com/subject/4164024/)
-
-[关于单元测试](https://techsingular.net/2012/09/04/%E5%85%B3%E4%BA%8E%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/)  
-
-[ten years tdd](http://wiki.c2.com/?TenYearsOfTestDrivenDevelopment)  
-
 http://jaoo.dk/dl/qcon-london-2009/slides/MichaelFeathers_TestDrivenDevelopmentTenYearsLater.pdf  
 http://badsoftware.com/chapter1.htm  
 http://wiki.c2.com/?JavaIdioms  
@@ -151,12 +131,26 @@ https://dhh.dk/2014/tdd-is-dead-long-live-testing.html
 
 https://github.com/actiontech/slides/blob/master/201807-MySQL%E4%B8%AD%E9%97%B4%E4%BB%B6%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95I-%E9%BB%84%E7%82%8E-IMG.pdf
 
-# 管理代码库
+# 代码库、持续构建
 https://ohshitgit.com/  
 
-# 构建包和系统
-
 [GNU make](https://www.gnu.org/software/make/manual/html_node/index.html#SEC_Contents)
+
+[Continuous Integration: Improving Software Quality and Reducing Risk, duvall07](https://book.douban.com/subject/2159442/)
+
+# 系统测试、压测、验收测试
+
+[Requirements and Testing: Seven Missing-Link Myths, graham02](http://www.eng.auburn.edu/~kchang/comp6710/readings/RequirementsandTesting_SevenMissing_LinkMyths_Graham.IEEE_Software.2002Sept.pdf)
+
+[What is Software Testing? And Why Is It So Hard?, whittaker2000](http://www.win.tue.nl/~wstomv/edu/sep/ieee/testing-is-hard.pdf)
+
+https://www.istqb.org/  
+
+[Testing in Scrum, linz2014](https://book.douban.com/subject/33319435/)  
+
+[Endo-Testing: Unit Testing with Mock Objects, mackinnon01, xp2000](https://www2.ccs.neu.edu/research/demeter/related-work/extreme-programming/MockObjectsFinal.PDF)  
+
+[comp6710](http://www.eng.auburn.edu/~kchang/comp6710/Presentation.Schedule.htm)  
 
 # 软件发布和运维
 
