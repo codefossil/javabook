@@ -4,6 +4,8 @@
 
 [radar-thoughtworks](https://www.thoughtworks.com/radar/techniques)
 
+[Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)  
+[AWS Architecture Center](https://aws.amazon.com/architecture)  
 
 # 系统分析
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEb0cc1b43e772d2c5fba39c1f0451a721/175)
@@ -38,6 +40,7 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 散发和搜集问卷、复查现存文档、现场观察业务、研究友商解决方案。  
 快速迭代，干系人参与早期版本，收集活跃用户评论和建议。  
 
+:star:
 ```
 比起航天工程，信息系统更加的无形，<模型>是系统某一部分的抽象表示，同时也是系统可视化工具，是分析师与用户和设计师交流的工具，也是程序员理清系统行为的工具。
 ```
@@ -72,9 +75,9 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 
 确定实体的状态，以及业务逻辑控制状态转换。   
 
-```
-领域类图既服务于数据库设计，又服务于设计类图
-```
+<span style="color:red">领域类图既服务于数据库设计，又服务于设计类图</span>.
+
+[企业IT架构转型之道：阿里巴巴中台战略思想与架构实战, 钟华2017](https://book.douban.com/subject/27039508/)
 
 ## 理解业务规则，用例建模
 
@@ -94,12 +97,13 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 这本书，是迄今为止见过最全面关于软件架构的书。  
 从架构技术、架构师职责，到软技能、职业规划。  
 
+[37 Things One Architect Knows About IT Transformation](https://book.douban.com/subject/35062026/)
+
 [system-desgin](https://github.com/donnemartin/system-design-primer)  
 
 [Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
 
 [archi vs design](https://www.slideshare.net/luctrudeau/architecture-vs-design)
-
 
 [Patterns of Enterprise Application Architecture, fowler02](https://book.douban.com/subject/1229954/)
 
@@ -151,6 +155,8 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 善于发现需求文档中，隐藏的规格信息。  
 存在这样一种映射=领域关注点->架构规则组合->技术实现方案  
 
+[Quality Models in Software Engineering Literature, Al-Qutaish09](http://www.sciencepub.net/american/am0603/22_2208_Qutaish_am0603_166_175.pdf)
+
 [Building Secure & Reliable Systems](https://book.douban.com/subject/34796016/)
 
 [Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
@@ -188,6 +194,8 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 
 [DDD](https://book.douban.com/subject/1418618/)  
 
+[Patterns, Principles, and Practices of Domain-Driven Design, millett2015](https://book.douban.com/subject/24773322/)
+
 
 ## 系统风格、架构模式
 
@@ -217,7 +225,6 @@ https://blog.pragmaticengineer.com/software-architecture-is-overrated/
 [A Laboratory For Teaching Object-Oriented Thinking, beck89, oopsla](http://people.cs.pitt.edu/~chang/231/5spec/CRCcard/Beck-LaboratoryForTeachingOO.pdf)
 
 
-
 ## 架构设计原则、指南
 
 > 架构=重要的系统设计=结构+愿景=构建成本最小化+效率最大化  
@@ -233,6 +240,8 @@ If it ain't broke, don't fix it.
 
 [Clean Architecture](https://book.douban.com/subject/30333919/)  
 提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。底层离中心业务越远越易变，高层中心业务规则是赚钱的法宝比较不易变。 
+
+[The Hillside Group](https://hillside.net/patterns/books)
 
 [worse is better](http://dreamsongs.com/WorseIsBetter.html)  
 
@@ -281,6 +290,16 @@ https://www.d.umn.edu/~gshute/softeng/principles.html
 [Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)  
 权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档
 
+chart&flow
+[c4](https://c4model.com/)  
+[mermaid: uml in markdown](https://github.com/mermaid-js/mermaid)  
+[asciiflow](https://asciiflow.com/)
+
+[Architecture decision record (ADR)](https://github.com/joelparkerhenderson/architecture_decision_record)  
+
+[yapi](https://github.com/ymfe/yapi)  
+[apizza](https://www.apizza.net/)  
+
 ## 数据库设计
 可能是简单的文件列表。  
 对象文件，图片、音频、视频、excel等存储决策。  
@@ -293,7 +312,8 @@ https://www.d.umn.edu/~gshute/softeng/principles.html
 实体模型、故事卡、图形布局。  
 在SSD出图时，往往伴随着原型出图。  
 前端资源的分发和部署。  
-<br>
+
+[墨刀](https://modao.cc/)
 
 # 分析和评估架构风险
 

@@ -20,8 +20,6 @@
 * [mysql](https://github.com/mysql/mysql-server)
 * [linux](https://github.com/torvalds/linux)
 * [guava](https://github.com/google/guava)  
-* [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)  
-* [AWS Architecture Center](https://aws.amazon.com/architecture)  
 
 # 线上业务故障级别
 |故障等级|说明|响应时间|修复时间|故障复审|
@@ -328,39 +326,4 @@ https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-de
 
 redis
 https://mp.weixin.qq.com/s/i06PkS3rDLfouzVjS6QXkg
-
-# 研发规范
-
-https://ncrcoe.gitbooks.io/java-for-small-teams/content/
-
-[serverside-checklist](https://github.com/mtdvio/going-to-production/blob/master/serverside-checklist.md)
-
-## 持续集成规范
-集成流水线  
-代码管理  
-代码审查  
-编译  
-代码评审  
-单元测试  
-集成测试  
-系统测试  
-构建  
-部署环境  
-
-## 工程规范
-项目命名  
-项目结构  
-项目管理工具    
-
-## 接口规范
-接口知识库与网关  
-发布平台    
-
-## 数据库设计规范
-
-## 代码规范
-代码提交  
-代码设计  
-日志打印  
-性能追踪
 
