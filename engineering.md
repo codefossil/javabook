@@ -88,8 +88,6 @@ PM作为中心，需要对外汇报给客户、监督委员会，对内组织资
 确定子系统组件、边界  
 规划WBS  
 
-[Peopleware](https://book.douban.com/subject/25956450/)  
-
 [凤凰项目，2015](https://book.douban.com/subject/26644070/)  
 
 [程序员的三门课](https://www.zhihu.com/pub/reader/119647389/chapter/1182332907921813504)  
@@ -170,6 +168,8 @@ http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.
 
 # 程序员职业素养
 
+![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE3021df8e914094d063907d68a0ff9d0a/187)
+
 [Clean Coder, 2011](https://book.douban.com/subject/11614538/) 
 
 [The Complete Software Developer's Career Guide, sonmez2017](https://book.douban.com/subject/35043940/)  
@@ -207,6 +207,8 @@ http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.
 
 [新事物炒作曲线(un-confirmed), gartner](https://en.wikipedia.org/wiki/Hype_cycle)
 
+[大厂薪资对标](https://duibiao.info/)
+
 skill and self-evaluation
 
 https://firstround.com/review/Responsiveness-New-Efficiency/  
@@ -224,6 +226,16 @@ http://www.valleytalk.org
 
 http://people.scs.carleton.ca/~deugo/Patterns/ospdg/
 https://www.cs.cmu.edu/~aldrich/courses/413/
+
+# 技术领导力
+![](https://samuraibizgrp.com/wp-content/uploads/2019/08/sales-manangement-sales-leadership-samurai.png)
+
+[Peopleware](https://book.douban.com/subject/25956450/)  
+
+
+技术分享、读书会
+
+技术规划、目标管理
 
 
 # 产品 公司 销售
