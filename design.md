@@ -76,7 +76,7 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 确定实体的状态，以及业务逻辑控制状态转换。   
 
 ```diff
-- 领域类图既服务于数据库设计，又服务于设计类图
++ 领域类图既服务于数据库设计，又服务于设计类图
 ```
 
 [企业IT架构转型之道：阿里巴巴中台战略思想与架构实战, 钟华2017](https://book.douban.com/subject/27039508/)
