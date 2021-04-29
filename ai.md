@@ -5,6 +5,8 @@
 
 > 自动化分析、形式化验证、软件度量
 
+https://xiongyingfei.github.io/SA/2020/main.htm
+
 https://fbinfer.com/docs/checker-racerd/
 
 online software analysis lectures  

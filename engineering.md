@@ -227,18 +227,21 @@ http://www.valleytalk.org
 http://people.scs.carleton.ca/~deugo/Patterns/ospdg/
 https://www.cs.cmu.edu/~aldrich/courses/413/
 
+
 # 技术领导力
 ![](https://samuraibizgrp.com/wp-content/uploads/2019/08/sales-manangement-sales-leadership-samurai.png)
 
 [Peopleware](https://book.douban.com/subject/25956450/)  
 
+## 技术分享、读书会
+分享范围  
+专利  
+论文  
 
-技术分享、读书会
-
-技术规划、目标管理
+## 技术规划、目标管理
 
 
-# 产品 公司 销售
+# 商业、产品与公司
 
 [The Innovator's Dilemma, Christensen02](https://book.douban.com/subject/1461932/)
 

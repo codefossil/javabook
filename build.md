@@ -1,6 +1,14 @@
 # 代码复杂度、结构度量
 ![](https://www.synopsys.com/blogs/software-security/wp-content/uploads/LinesOfCodeInMillions.png)
 
+重复代码数  
+长方法数  
+复杂度  
+技术债  
+代码审查  
+重构  
+bug  
+故障  
 
 http://faculty.cse.tamu.edu/ritchey/courses/csce431/winter20/  
 https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/

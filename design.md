@@ -125,6 +125,7 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 
 
 ## **描述**二方和三方系统通信、组织现存的技术架构
+
 明确现存技术环境，以便做出合适的设计决定。  
 明确在一个特定的技术环境中，系统是怎样工作的。  
 
@@ -178,6 +179,8 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 <br>
 
 ## 架构决策、应用组件、子系统
+
+![](https://pic1.zhimg.com/80/v2-b439a15800943b24bcf65c1182a4ca88_1440w.jpg)
 
 架构决策负责：结构（架构风格）、非功能规格、依赖（组件之间的依赖）、接口、构建技术（平台、框架、工具、语言）。  
 编写ADR，记录决策的原因。  
@@ -297,10 +300,7 @@ chart&flow
 [mermaid: uml in markdown](https://github.com/mermaid-js/mermaid)  
 [asciiflow](https://asciiflow.com/)
 
-[Architecture decision record (ADR)](https://github.com/joelparkerhenderson/architecture_decision_record)  
-
-[yapi](https://github.com/ymfe/yapi)  
-[apizza](https://www.apizza.net/)  
+[Architecture decision record (ADR)](https://github.com/joelparkerhenderson/architecture_decision_record)   
 
 ## 数据库设计
 可能是简单的文件列表。  
