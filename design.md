@@ -2,6 +2,7 @@
 
 [ArchSummit全球架构师峰会](http://www.archsummit.com/)
 
+[martin](https://martinfowler.com/)  
 [radar-thoughtworks](https://www.thoughtworks.com/radar/techniques)
 
 [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)  
@@ -232,8 +233,6 @@ https://blog.pragmaticengineer.com/software-architecture-is-overrated/
 
 ## 架构设计原则、指南
 
-> 架构=重要的系统设计=结构+愿景=构建成本最小化+效率最大化  
-
 [separation of concerns, Dijkstra82](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD04xx/EWD447.html)
 
 You Aren't Gonna Need It.  
@@ -244,7 +243,10 @@ If it ain't broke, don't fix it.
 软件构架第二定律，为什么比怎样做更重要。 
 
 [Clean Architecture](https://book.douban.com/subject/30333919/)  
-提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。底层离中心业务越远越易变，高层中心业务规则是赚钱的法宝比较不易变。 
+![](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
+
+提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。  
+底层离中心业务越远越易变，高层中心业务规则是赚钱的法宝比较不易变。 
 
 [The Hillside Group](https://hillside.net/patterns/books)
 
