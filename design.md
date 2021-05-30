@@ -56,7 +56,7 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 [Requirements Engineering: From System Goals to UML Models to Software Specifications, axel2011](https://www.amazon.com/Requirements-Engineering-System-Software-Specifications-ebook/dp/B00DWHU40E)
 
 ## 定义需求、确定用户故事和用例图
-用户故事=<WHO>+<WHAT>+<WHY>+验收描述。更不形式化，倡导更快的到达程序分析师手上，鼓励直接与用户沟通，避免过多文档。  
+用户故事=WHO-WHAT-WHY 验收描述。更不形式化，倡导更快的到达程序分析师手上，鼓励直接与用户沟通，避免过多文档。  
 用例=响应用户请求的一次活动。强调分析师优化和建模。  
 
 用户目标技术=按功能角色分类用户+目标描述  
@@ -151,6 +151,8 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 
 [ISO/IEC 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010)
 
+[OWASP TOP10 App security](https://owasp.org/www-project-top-ten/)  
+
 [ch4~ch7 Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)  
 定义了各种系统规格，适用范围，相互影响。  
 共生性=如何度量组件划分好坏和粒度。  
@@ -200,8 +202,27 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 
 [DDD](https://book.douban.com/subject/1418618/)  
 
-[Patterns, Principles, and Practices of Domain-Driven Design, millett2015](https://book.douban.com/subject/24773322/)
+[Patterns, Principles, and Practices of Domain-Driven Design, millett2015](https://book.douban.com/subject/24773322/)  
+DDD=强调业务专家与开发团队配合=问题域分解成若干子域+沟通协调统一语言/模型+隔离模糊和腐烂+理解上下文。  
+有时候反馈和快速市场验证是产品成功的核心，BBoM足够了，并不总是反模式。  
+DDD不是关于代码设计模式的，也不是以代码为中心的，也不是让你写出优雅的代码，DDD更多的是强调通过协作解决问题。  
 
+开发团队可以与领域专家、对系统业务流程熟悉的业务人员、其他干系人协作，也可以引入BA，利用他们的洞见、专业、经验产生有用的模型满足需求。  
+```diff
++ 核心领域就是产品竞争的优势，核心领域会随着业务而演变。
+```
+把核心领域当成产品，而不是单个项目。核心领域也不是一开始就完美的。  
+边界清晰比完美的模型/代码更重要。  
+
+领域模型=团队模型=分析模型->**与分析模型绑定的**代码模型+使用统一语言+几乎没有技术关注点
+
+```diff
++ 保持解决方案简单，并不是快速和骚操作，而是通过代码审查和结对编程，避免混乱和过度复杂。  
+```
+使用界限上下文来分治问题域。上下文确定了职责，帮助更好的组织代码和分解问题。
+```diff
+! 识别上下文=使用词语和词组，就可以阐明模型≈业务能力   
+```
 
 ## 系统风格、架构模式
 
