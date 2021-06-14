@@ -324,6 +324,8 @@ https://laptrinhx.com/apache-hawq-next-step-in-massively-parallel-processing-394
 
 ## 时间序列数据库
 
+https://www.francosolleza.com/CS227/
+
 https://www.elastic.co/blog/elasticsearch-as-a-time-series-data-store
 
 https://www.influxdata.com/blog/influxdb-markedly-elasticsearch-in-time-series-data-metrics-benchmark/

@@ -30,6 +30,15 @@ https://www.open.edu/openlearn/ocw/mod/oucontent/view.php?id=20033&section=1.1
 
 [The Challenge](https://book.douban.com/subject/26304087/)
 
+# 社会
+
+[How to Win Friends & Influence People](https://www.amazon.com/exec/obidos/ASIN/0671027034/enterpriseint-20)
+
+[亲密关系](https://book.douban.com/subject/26585065/)
+
+[社会心理学](https://book.douban.com/subject/1476651/)
+
+
 # 学习科学
 
 [Knowns & unknowns, 96](http://matt.colorado.edu/teaching/highcog/fall8/nbbbbchlpsu96.pdf)  

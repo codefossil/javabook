@@ -65,6 +65,8 @@ Add text here
 
 ## Solution Component
 
+> context map
+
 > List of functional components that will make the system. Which actor will work on which functional part.
 
 > The list of technologies that you will use to build the system and the reason you choose them.

@@ -168,8 +168,6 @@ http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.
 
 # 程序员职业素养
 
-![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE3021df8e914094d063907d68a0ff9d0a/187)
-
 [Clean Coder, 2011](https://book.douban.com/subject/11614538/) 
 
 [The Complete Software Developer's Career Guide, sonmez2017](https://book.douban.com/subject/35043940/)  
@@ -208,6 +206,9 @@ http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.
 [新事物炒作曲线(un-confirmed), gartner](https://en.wikipedia.org/wiki/Hype_cycle)
 
 [大厂薪资对标](https://duibiao.info/)
+
+![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE3021df8e914094d063907d68a0ff9d0a/187)
+
 
 skill and self-evaluation
 

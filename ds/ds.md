@@ -10,6 +10,12 @@
 COS518: Advanced Computer Systems (Spring 2019)  
 https://www.cs.princeton.edu/courses/archive/spr19/cos518/syllabus.html
 
+[COMMUNICATIONS of the ACM](https://cacm.acm.org/magazines/decade)
+
+[Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)
+
+https://wiki.cantara.no/download/attachments/2065087/Do+Distribute.pdf
+
 # 计算模型
 
 [The Byzantine Generals Problem, 1982](https://people.eecs.berkeley.edu/~luca/cs174/byzantine.pdf)  
@@ -53,10 +59,16 @@ https://zhuanlan.zhihu.com/p/341700125
 [Transactions in Windows Azure, 2012](https://vasters.com/archive/Transactions-In-Windows-Azure-with-Service-Bus---An-Email-Discussion.html)  
 [Understanding Transactions in Azure, 2015](https://docs.particular.net/nservicebus/azure/understanding-transactionality-in-azure)  
 
+https://martinfowler.com/bliki/Transactionless.html
+
 # 一致性
 https://aphyr.com/posts/313-strong-consistency-models
 
 https://www.cncf.io/blog/2019/11/04/building-a-large-scale-distributed-storage-system-based-on-raft/
+
+[eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency)
+
+[Life beyond Distributed Transactions:an Apostate’s Opinion](http://cs.brown.edu/courses/cs227/archives/2012/papers/weaker/cidr07p15.pdf)
 
 # 复制
 

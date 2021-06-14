@@ -51,9 +51,8 @@ OOD是一种用例驱动，通过确定各种类、方法和之间的消息来�
 
 [Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)  
 
-# 编程实践、接口、契约化
-api设计
-契约式设计、防御式编程
+# 编程实践、契约化
+防御式编程
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE72667b09c11acd0f0b7b9c81b84cd30f/114)
 

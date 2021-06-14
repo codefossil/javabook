@@ -2,7 +2,7 @@
 
 [ArchSummit全球架构师峰会](http://www.archsummit.com/)
 
-[martin](https://martinfowler.com/)  
+[martin](https://martinfowler.com/tags/application%20architecture.html)  
 [radar-thoughtworks](https://www.thoughtworks.com/radar/techniques)
 
 [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)  
@@ -203,6 +203,9 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 [DDD](https://book.douban.com/subject/1418618/)  
 
 [Patterns, Principles, and Practices of Domain-Driven Design, millett2015](https://book.douban.com/subject/24773322/)  
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEb17db46804dda589318fc95da82b07ea/189)
+
+[模型]=领域逻辑中心-技术细节
 DDD=强调业务专家与开发团队配合=问题域分解成若干子域+沟通协调统一语言/模型+隔离模糊和腐烂+理解上下文。  
 有时候反馈和快速市场验证是产品成功的核心，BBoM足够了，并不总是反模式。  
 DDD不是关于代码设计模式的，也不是以代码为中心的，也不是让你写出优雅的代码，DDD更多的是强调通过协作解决问题。  
@@ -221,8 +224,9 @@ DDD不是关于代码设计模式的，也不是以代码为中心的，也不�
 ```
 使用界限上下文来分治问题域。上下文确定了职责，帮助更好的组织代码和分解问题。
 ```diff
-! 识别上下文=使用词语和词组，就可以阐明模型≈业务能力   
+! 识别上下文=术语≈业务能力
 ```
+上下文映射=[界线上下文之间的技术和组织关系模式](https://github.com/ddd-crew/context-mapping)=代码级的命名空间/项目
 
 ## 系统风格、架构模式
 
@@ -239,6 +243,7 @@ DDD不是关于代码设计模式的，也不是以代码为中心的，也不�
 
 [reactive design patterns](https://book.douban.com/subject/25870212/)
 
+
 [Building Microservice](https://book.douban.com/subject/25881698/)  
 
 [Microservices Patterns: With Examples in Java, 2019](https://book.douban.com/subject/33425123/)  
@@ -251,6 +256,11 @@ https://blog.pragmaticengineer.com/software-architecture-is-overrated/
 
 [A Laboratory For Teaching Object-Oriented Thinking, beck89, oopsla](http://people.cs.pitt.edu/~chang/231/5spec/CRCcard/Beck-LaboratoryForTeachingOO.pdf)
 
+https://github.com/MagicBowen/architecting_cloud_aware_applications/blob/master/Architecting_Cloud-Aware_Applications.md
+
+https://newrelic.com/blog/best-practices/distributed-monolith-vs-microservices
+
+https://www.jianshu.com/p/73b3aac644f9
 
 ## 架构设计原则、指南
 
@@ -331,6 +341,9 @@ chart&flow
 从领域类图开始，每个类对应一个设计数据库表、默认值、长度、类型。  
 性能、安全。  
 
+# API接口设计
+契约式设计
+https://stripe.com/docs/api/pagination
 
 ## UI设计、原型
 
