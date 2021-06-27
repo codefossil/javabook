@@ -205,7 +205,7 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 [Patterns, Principles, and Practices of Domain-Driven Design, millett2015](https://book.douban.com/subject/24773322/)  
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEb17db46804dda589318fc95da82b07ea/189)
 
-[模型]=领域逻辑中心-技术细节
+[模型]=领域逻辑中心-技术细节  
 DDD=强调业务专家与开发团队配合=问题域分解成若干子域+沟通协调统一语言/模型+隔离模糊和腐烂+理解上下文。  
 有时候反馈和快速市场验证是产品成功的核心，BBoM足够了，并不总是反模式。  
 DDD不是关于代码设计模式的，也不是以代码为中心的，也不是让你写出优雅的代码，DDD更多的是强调通过协作解决问题。  
@@ -227,6 +227,8 @@ DDD不是关于代码设计模式的，也不是以代码为中心的，也不�
 ! 识别上下文=术语≈业务能力
 ```
 上下文映射=[界线上下文之间的技术和组织关系模式](https://github.com/ddd-crew/context-mapping)=代码级的命名空间/项目
+
+从14章开始战术部分，从代码层面讲怎样维护对象的**不可变性**和**表达力**，怎样平衡值与实体、怎样结合界限上下文设计、怎样平衡贫血和充血实体。  
 
 ## 系统风格、架构模式
 
