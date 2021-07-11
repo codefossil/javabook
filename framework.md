@@ -60,6 +60,13 @@ https://github.com/toutiaoio/awesome-architecture
 9年双11：互联网技术超级工程  
 阿里工程师的自我修养
 
+# 技术框架
+![](https://ucc.alicdn.com/pic/developer-ecology/6895fa9ac02147b7a407208006ac8c93.png)
+
+[进击的 Spring Cloud Alibaba —— 框架与服务](https://developer.aliyun.com/article/771267)
+
+https://segmentfault.com/a/1190000020236180?utm_source=sf-similar-article
+
 
 # 基础技术
 

@@ -230,6 +230,8 @@ DDD不是关于代码设计模式的，也不是以代码为中心的，也不�
 
 从14章开始战术部分，从代码层面讲怎样维护对象的**不可变性**和**表达力**，怎样平衡值与实体、怎样结合界限上下文设计、怎样平衡贫血和充血实体。  
 
+repository模式隔离了领域模型和数据模型，隐藏了底层复杂的存储和持久化框架。
+
 ## 系统风格、架构模式
 
 [Big Ball of MUD, foote97, PLoP](http://www.laputan.org/mud/mud.html) 
@@ -343,9 +345,15 @@ chart&flow
 从领域类图开始，每个类对应一个设计数据库表、默认值、长度、类型。  
 性能、安全。  
 
-# API接口设计
+# API接口设计和安全
 契约式设计
 https://stripe.com/docs/api/pagination
+
+https://github.com/wuyichen24/spring-microservices-in-action/wiki/Store-Clients-and-Users'-Credentials-to-DB#for-clients
+
+https://codeaches.com/spring-cloud-security/oauth2-authorization-jdbc-token-store
+
+https://projects.spring.io/spring-security-oauth/docs/oauth2.html
 
 ## UI设计、原型
 
