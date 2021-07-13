@@ -355,6 +355,8 @@ https://codeaches.com/spring-cloud-security/oauth2-authorization-jdbc-token-stor
 
 https://projects.spring.io/spring-security-oauth/docs/oauth2.html
 
+https://zhuanlan.zhihu.com/p/137835878
+
 ## UI设计、原型
 
 实体模型、故事卡、图形布局。  
