@@ -57,6 +57,10 @@ OOD是一种用例驱动，通过确定各种类、方法和之间的消息来�
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE72667b09c11acd0f0b7b9c81b84cd30f/114)
 
 [Refactoring, fowler2000](https://book.douban.com/subject/4262627/)  
+重构就是敏捷，演变的设计才能形成好的设计。
+通过快速而小巧的修改内部结构，能够影响软件设计。
+整洁的代码就是能够快速响应需求和优化。
+
 
 [Agile Software Development, martin03](https://book.douban.com/subject/1140457/)  
 定义了软件开发工程师的行规。  

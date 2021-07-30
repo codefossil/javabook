@@ -476,3 +476,8 @@ MySQL|24c,4TGB,SSD,25Gbps|380K tpmC|TP90 100ms|[tpcc TTA](http://tpc.org/results
 |名称|机器配置|性能|客户端|延迟|数据来源
 |---|---|---|---|---|---|
 微信||14M QPS/635台服务器, 月活540M|40M/600=66K QPS/server|[100亿次红包](https://developer.51cto.com/art/202003/613210.htm)
+
+
+http://zhangxun.com/_templates/tmpl_treeview2.aspx?sname=AgileBOK#
+
+https://blog.csdn.net/rolt/article/details/107081176?spm=1001.2014.3001.5502
