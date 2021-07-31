@@ -155,12 +155,15 @@ https://scalingsystems.com/2011/09/07/reading-list-for-distributed-systems/
 
 [big data, 2015](https://book.douban.com/subject/10438832/)
 
+[Big Data Pipeline Recipe](https://itnext.io/big-data-pipeline-recipe-c416c1782908)
+
 ## 集群管理
 [yarn, socc2013](http://web.eecs.umich.edu/~mosharaf/Readings/YARN.pdf)  
 [mesos, nsdi2011](https://people.eecs.berkeley.edu/~alig/papers/mesos.pdf)  
 [Borg, 2015](https://pdos.csail.mit.edu/6.824/papers/borg.pdf)  
 
 ## 分布式存储
+
 [GFS, sosp03](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)  
 [hdfs, 2010](http://pages.cs.wisc.edu/~akella/CS744/S19/838-CloudPapers/hdfs.pdf)  
 [VL2, sigcomm09](http://bnrg.eecs.berkeley.edu/~randy/Courses/CS268.F09/papers/14_vl2.pdf)  
