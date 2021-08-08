@@ -251,6 +251,10 @@ http://cs.brown.edu/courses/cs227/papers.html
 [Architecture of a Database system, hellerstein07](http://db.cs.berkeley.edu/papers/fntdb07-architecture.pdf)  
 [db-how](http://coding-geek.com/how-databases-work)  
 
+[The physical structure of InnoDB index pages – Jeremy Cole](https://blog.jcole.us/2013/01/07/the-physical-structure-of-innodb-index-pages/)
+
+[MySQL技术内幕](https://book.douban.com/subject/24708143/) 
+
 ## 经典数据库 (before 2000)
 [system-r, 76](http://daslab.seas.harvard.edu/reading-group/papers/astrahan-1976.pdf)
 
@@ -332,6 +336,7 @@ https://www.influxdata.com/blog/influxdb-markedly-elasticsearch-in-time-series-d
 
 ## 图数据库
 
+
 # todo
 
 [presto](http://prestodb.github.io/)  
@@ -366,6 +371,5 @@ http://blog.yufeng.info/
 
 https://qw4990.gitbooks.io/nyadb/content/index.html
 
-[The physical structure of InnoDB index pages – Jeremy Cole](https://blog.jcole.us/2013/01/07/the-physical-structure-of-innodb-index-pages/)
 
 

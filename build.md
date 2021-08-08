@@ -5,8 +5,7 @@
 长方法数  
 复杂度  
 技术债  
-代码审查  
-重构  
+代码审查   
 bug  
 故障  
 
@@ -27,6 +26,7 @@ class=类型+API+实现。
 [COMP 310](https://www.clear.rice.edu/comp310/f19/)
 
 [programming principles](https://github.com/webpro/programming-principles)  
+
 [Code as Design: Three Essays](https://www.developerdotstar.com/mag/articles/reeves_design_main.html)  
 
 https://www.google.com/books/edition/Object_Oriented_Construction_Handbook/4edsQ97mEwUC?hl=en&gbpv=0
@@ -51,16 +51,14 @@ OOD是一种用例驱动，通过确定各种类、方法和之间的消息来�
 
 [Laws of Software Development](http://www.globalnerdy.com/2007/07/18/laws-of-software-development/)  
 
-# 编程实践、契约化
-防御式编程
+# 编码设计质量
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE72667b09c11acd0f0b7b9c81b84cd30f/114)
 
 [Refactoring, fowler2000](https://book.douban.com/subject/4262627/)  
 重构就是敏捷，演变的设计才能形成好的设计。  
-通过快速而小巧的修改内部结构，能够影响软件设计。  
+坏味道就是需要重构的指标，通过快速而小巧的修改内部结构，使软件变得更加易于修改，提升代码设计质量。    
 整洁的代码就是能够快速响应需求和优化。  
-
 
 [Agile Software Development, martin03](https://book.douban.com/subject/1140457/)  
 定义了软件开发工程师的行规。  
@@ -166,8 +164,6 @@ https://www.istqb.org/
 # 软件发布和运维
 
 ![](https://pic1.zhimg.com/80/v2-4106a010bb1f53cf88f3e8173bff07e4_1440w.jpg)
-
-发布和灰度   
 
 [Kubernetes In Action, 2017](https://book.douban.com/subject/26997846/)  
 [Continuous Delivery](https://book.douban.com/subject/6862062/)  

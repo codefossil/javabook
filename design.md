@@ -100,6 +100,9 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 这本书，是迄今为止见过最全面关于软件架构的书。  
 从架构技术、架构师职责，到软技能、职业规划。  
 
+[Patterns of Enterprise Application Architecture, fowler02](https://book.douban.com/subject/1229954/)
+
+
 [37 Things One Architect Knows About IT Transformation](https://book.douban.com/subject/35062026/)
 
 [system-desgin](https://github.com/donnemartin/system-design-primer)  
@@ -107,9 +110,6 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 [Big Design Up Front](https://en.wikipedia.org/wiki/Big_Design_Up_Front)  
 
 [archi vs design](https://www.slideshare.net/luctrudeau/architecture-vs-design)
-
-[Patterns of Enterprise Application Architecture, fowler02](https://book.douban.com/subject/1229954/)
-
 
 [Continuous Architecture in Practice: Software Architecture in the Age of Agility and DevOps](https://www.amazon.com/Continuous-Architecture-Practice-Addison-Wesley-Signature/dp/0136523560)
 
@@ -344,6 +344,12 @@ chart&flow
 对象文件，图片、音频、视频、excel等存储决策。  
 从领域类图开始，每个类对应一个设计数据库表、默认值、长度、类型。  
 性能、安全。  
+
+[SQL反模式](https://book.douban.com/subject/4898636/)  
+
+[SQL Style Guide](https://www.sqlstyle.guide/)
+
+[高性能MySQL(第3版)](https://book.douban.com/subject/23008813/)  
 
 # API接口设计和安全
 契约式设计
