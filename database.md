@@ -77,9 +77,6 @@ https://blog.victoriaholt.co.uk/2012/07/database-landscape.html
 通过实体集合、关系集合来描述物理世界。  
 在概念设计领域影响非常大。  
 
-`ch6~ch7, db concept`  
-数据库schema的设计，从ER模型到范式，保证数据不冗余。
-
 [Entity-Relationship Modeling, Thalheim00](https://book.douban.com/subject/18010984/)  
 
 
