@@ -332,7 +332,7 @@ https://www.d.umn.edu/~gshute/softeng/principles.html
 [Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)  
 权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档
 
-chart&flow
+chart&flow  
 [c4](https://c4model.com/)  
 [mermaid: uml in markdown](https://github.com/mermaid-js/mermaid)  
 [asciiflow](https://asciiflow.com/)

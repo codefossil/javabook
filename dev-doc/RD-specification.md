@@ -32,6 +32,8 @@
 [阿里云，JAVA工程脚手架](https://start.aliyun.com/)  
 [COLA](https://github.com/alibaba/COLA)
 
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEd5b7a03343330a8b391bfbe59f1b77e5/194)
+
 项目命名  
 项目结构  
 项目管理工具   
