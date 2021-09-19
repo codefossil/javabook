@@ -121,6 +121,8 @@ https://plumbr.io/handbook/garbage-collection-in-java
 
 https://docs.oracle.com/cd/E15523_01/web.1111/e13814/jvm_tuning.htm#PERFM151
 
+https://medium.com/to-the-cloud/taking-out-the-garbage-39887cf1b7de
+
 ## 内存监控、故障排除
 
 ![](https://4.bp.blogspot.com/-KMPS7glbJhY/T8cc_8QtQqI/AAAAAAAAAX8/hmMqLBx7m4k/s1600/Hotspot2_JVM_Parameters_GC_Heap.png)
