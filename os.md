@@ -13,6 +13,8 @@ http://web.stanford.edu/class/cs240/
 
 # 计算机系统
 
+https://javarevisited.blogspot.com/2014/05/10-articles-every-programmer-must-read.html#axzz76sMcZbqB
+
 [Great Principles of Computing, denning2017](https://book.douban.com/subject/27048506/)
 
 [Computer Systems, 2015](https://book.douban.com/subject/26344642/)
