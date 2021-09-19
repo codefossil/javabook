@@ -69,6 +69,8 @@ https://segmentfault.com/a/1190000020236180?utm_source=sf-similar-article
 
 https://javarevisited.blogspot.com/2013/06/spring-helloworld-example-in-java-using-3.0-dependency-injection.html#axzz76sMcZbqB
 
+https://medium.com/javarevisited/10-oop-design-principles-you-can-learn-in-2020-f7370cccdd31
+
 
 # 基础技术
 
