@@ -67,6 +67,8 @@ https://github.com/toutiaoio/awesome-architecture
 
 https://segmentfault.com/a/1190000020236180?utm_source=sf-similar-article
 
+https://javarevisited.blogspot.com/2013/06/spring-helloworld-example-in-java-using-3.0-dependency-injection.html#axzz76sMcZbqB
+
 
 # 基础技术
 
