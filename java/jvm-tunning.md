@@ -22,9 +22,19 @@ https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html
 [Fixing Java's ByteBuffer native memory "leak"](https://www.evanjones.ca/java-bytebuffer-leak.html)
 
 
+# 堆与年代调优
+| 开关  | default  | 说明|
+|---|---|---|
+| [0]-Xmx  |   | 总的堆大小，-XX:MaxHeapSize，忽略MaxRAMPercentage  |
+| [0]-Xms  |   | 最小堆大小，MinHeapSize=InitialHeapSize，忽略InitialRAMPercentage  |
+| [1]-XX:+UseContainerSupport  |   | 开启容器支持  |
+| [1]-XX:MaxRAMPercentage  | 25  | HeapSize是1/4可用内存大小  |
+| -XX:MaxRAM  |   | 最大可用内存 |
+| -XX:MaxTenuringThreshold  | 15   | 经过多少次to space周期，转老年代  |
+| -XX:NewRatio  | 4  | old/new, old占4份，new占1份  |
+| -XX:SurvivorRatio  | 8   | Eden/Survivor, Eden占8份，幸存占比1份  |
 
-# 对象、垃圾收集
-![](../image/jvm.drawio.png)
+# 垃圾收集器调优
 
 ![](https://i2.wp.com/dhaval-shah.com/wp-content/uploads/2017/10/Garbage-Collectors.png?w=626)
 
@@ -67,25 +77,6 @@ https://plumbr.io/handbook/garbage-collection-in-java
 https://docs.oracle.com/cd/E15523_01/web.1111/e13814/jvm_tuning.htm#PERFM151
 
 https://medium.com/to-the-cloud/taking-out-the-garbage-39887cf1b7de
-
-
-
-# 堆与年代调优
-| 开关  | default  | 说明|
-|---|---|---|
-| [0]-Xmx  |   | 总的堆大小，-XX:MaxHeapSize，忽略MaxRAMPercentage  |
-| [0]-Xms  |   | 最小堆大小，MinHeapSize=InitialHeapSize，忽略InitialRAMPercentage  |
-| [1]-XX:+UseContainerSupport  |   | 开启容器支持  |
-| [1]-XX:MaxRAMPercentage  | 25  | HeapSize是1/4可用内存大小  |
-| -XX:MaxRAM  |   | 最大可用内存 |
-| -XX:MaxTenuringThreshold  | 15   | 经过多少次to space周期，转老年代  |
-| -XX:NewRatio  | 4  | old/new, old占4份，new占1份  |
-| -XX:SurvivorRatio  | 8   | Eden/Survivor, Eden占8份，幸存占比1份  |
-
-# 垃圾收集器调优
-
-![](https://image.slidesharecdn.com/javaoptimizationtwjug-131222104941-phpapp01/95/introduction-of-java-gc-tuning-and-java-java-mission-control-49-638.jpg?cb=1387709567)
-
 
 > 暂停时间：GC造成程序不可响应的时间，GUI程序
 > 吞吐量：GC总共时间和应用时间占比，服务器
