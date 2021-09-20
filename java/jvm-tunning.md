@@ -24,7 +24,7 @@ https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html
 
 
 # 对象、垃圾收集
-![](https://img-blog.csdnimg.cn/20190115141050902.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NDRE5fQ1A=,size_16,color_FFFFFF,t_70)
+![](../image/jvm.drawio.png)
 
 ![](https://i2.wp.com/dhaval-shah.com/wp-content/uploads/2017/10/Garbage-Collectors.png?w=626)
 
