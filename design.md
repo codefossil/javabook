@@ -341,7 +341,7 @@ chart&flow
 
 ## 数据库设计
 
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE6ba5b6d70e1132d63235884438963e22/191)
+![](image/normalize.drawio.png)
 
 可能是简单的文件列表。  
 对象文件，图片、音频、视频、excel等存储决策。  

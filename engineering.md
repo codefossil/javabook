@@ -14,7 +14,7 @@ https://www.cs.uic.edu/~i442/
 
 # 基本问题
 
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE8deb61c8fa7a77a9c7c3d1e5075439c5/126)
+![](image/it.drawio.png)
 
 > One of the biggest problems with software is that **it’s complex and abstract**. The result being that it’s hard to visualise the runtime characteristics of a piece of software from diagrams or even the code itself.
 
