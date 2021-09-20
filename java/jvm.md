@@ -40,18 +40,6 @@ public class ThreadNumDemo {
 
 [HotSpot Runtime Overview](http://openjdk.java.net/groups/hotspot/docs/RuntimeOverview.html)
 
-# JVM内存布局
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEd3a1b1c6b92e0b41c72b8a3336ca1c6f/157)
-
-[Understanding how the JVM uses native memory on Windows and Linux](https://www.ibm.com/developerworks/library/j-nativememory-linux/index.html)
-
-[Chapter 2. The Structure of the Java Virtual Machine](https://docs.oracle.com/javase/specs/jvms/se9/html/jvms-2.html#jvms-2.5)
-
-[Fixing Java's ByteBuffer native memory "leak"](https://www.evanjones.ca/java-bytebuffer-leak.html)
-
-[HotSpot JVM Performance Tuning Guidelines](https://ionutbalosin.com/2020/01/hotspot-jvm-performance-tuning-guidelines/#jit_tiered_mode)
-jvm各种优化options
-
 # 内存模型和多核处理器
 java是第一个在编程语言的层面规范内存访问模型。  
 
@@ -75,62 +63,6 @@ java是第一个在编程语言的层面规范内存访问模型。
 [Java并发指南2：深入理解Java内存模型JMM](https://blog.51cto.com/14006572/2448908)
 
 [Ergonomics](https://docs.oracle.com/javase/10/gctuning/ergonomics.htm#JSGCT-GUID-DB4CAE94-2041-4A16-90EC-6AE3D91EC1F1)
-
-# 对象、垃圾收集
-![](https://img-blog.csdnimg.cn/20190115141050902.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NDRE5fQ1A=,size_16,color_FFFFFF,t_70)
-
-![](https://image.slidesharecdn.com/javaoptimizationtwjug-131222104941-phpapp01/95/introduction-of-java-gc-tuning-and-java-java-mission-control-49-638.jpg?cb=1387709567)
-
-![](https://i2.wp.com/dhaval-shah.com/wp-content/uploads/2017/10/Garbage-Collectors.png?w=626)
-
-[The Garbage Collection Handbook, jones2011](https://book.douban.com/subject/6809987/)  
-
-[CS690M: Advanced Dynamic Memory Management, Fall 2003](https://www.cs.purdue.edu/homes/hosking/690M/)
-
-[395T Memory Management Schedule](http://www.cs.utexas.edu/users/mckinley/395Tmm/schedule.html)
-
-[Uniprocessor Garbage Collection Techniques, wilson92, iwmm](https://condor.depaul.edu/dmumaugh/readings/handouts/CSC548/gcsurvey.pdf)
-
-[Generation Scavenging: A Non-disruptlve High Performance Storage Reclamation Algorithm, ungar84](https://www.cs.purdue.edu/homes/hosking/690M/p157-ungar.pdf)
-
-[Infant mortality and generational garbage collection, baker93, sigplan](https://dl.acm.org/doi/10.1145/152739.152747)
-
-[tracing garbage collection](https://en.wikipedia.org/wiki/Tracing_garbage_collection#Generational_GC_(ephemeral_GC))
-
-[Garbage-First Garbage Collection, sun, ismm04](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.63.6386&rep=rep1&type=pdf)
-
-[深入理解Java虚拟机, 2013](https://book.douban.com/subject/24722612/)  
-
-[HotSpot JVM Performance Tuning Guidelines](https://ionutbalosin.com/2020/01/hotspot-jvm-performance-tuning-guidelines/#jit_tiered_mode)  
-
-[The Java HotSpot Performance Engine Architecture](https://www.oracle.com/technetwork/java/whitepaper-135217.html)  
-
-safepoint  
-http://xiao-feng.blogspot.com/2008/01/gc-safe-point-and-safe-region.html  
-http://blog.ragozin.info/2012/10/safepoints-in-hotspot-jvm.html  
-https://shipilev.net/jvm/anatomy-quarks/22-safepoint-polls/  
-http://psy-lob-saw.blogspot.com/2015/12/safepoints.html  
-
-
-http://openjdk.java.net/groups/hotspot/docs/HotSpotGlossary.html  
-https://www.javamex.com/tutorials/memory/object\_memory\_usage.shtml  
-https://gist.github.com/arturmkrtchyan/43d6135e8a15798cc46c  
-http://arturmkrtchyan.com/  
-
-https://plumbr.io/handbook/garbage-collection-in-java
-
-https://docs.oracle.com/cd/E15523_01/web.1111/e13814/jvm_tuning.htm#PERFM151
-
-https://medium.com/to-the-cloud/taking-out-the-garbage-39887cf1b7de
-
-## 内存监控、故障排除
-
-![](https://4.bp.blogspot.com/-KMPS7glbJhY/T8cc_8QtQqI/AAAAAAAAAX8/hmMqLBx7m4k/s1600/Hotspot2_JVM_Parameters_GC_Heap.png)
-
-[native memory tracking](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr007.html)
-
-[Eliminating Large JVM GC Pauses Caused by Background IO Traffic, linkedin](https://engineering.linkedin.com/blog/2016/02/eliminating-large-jvm-gc-pauses-caused-by-background-io-traffic)
-
 
 # 并发、同步、锁优化
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEadd81df1f79005bf5126391799ecfdab/139)
