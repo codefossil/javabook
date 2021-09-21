@@ -244,6 +244,10 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 
 # 商业、产品与公司
 
+![](https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naL7zZhFK89LlYkJ4W20egLwiboBTXxNEkTMynE8B117ibfKxP5cc1dRg3vKvwzjJJ6gzicYjplEs2nXw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+[产品思维](https://mp.weixin.qq.com/s/fIqp3R2Tade2jInkrxordQ)
+
 [The Innovator's Dilemma, Christensen02](https://book.douban.com/subject/1461932/)
 
 [Shoe Dog, knight2016](https://book.douban.com/subject/26738885/)
