@@ -95,6 +95,16 @@ API文档
 
 # 应用分类
 
+| 特点  | 企业应用  | 互联网应用
+|---|---|---|
+| 业务范围  | 按行业   |跨行业，横向|
+| 业务复杂度  | 复杂，涉及大量的数据和流程   |简单|
+| 数据一致性  | 强一致性   | 最终一致性 |
+| 数据复杂度  | 大量的表，表之间关联复杂   |简单|
+| 并发量  | 大部分在100，<500   |高，无上限|
+| 上下文  | 内外部系统多，集成形式多样   |极少|
+| 用户交互  | 大部分在100，<500   |高，无上限|
+| 开发过程  | 行业经验，大量文档，多人协作   |敏捷、快速开发|
 
 
 
@@ -389,6 +399,11 @@ https://home.unicode.org/
 https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/  
 
 
-redis
+## redis
 https://mp.weixin.qq.com/s/i06PkS3rDLfouzVjS6QXkg
 
+## 开源框架
+
+### mybatis
+
+### spring

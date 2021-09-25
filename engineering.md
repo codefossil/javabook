@@ -251,6 +251,8 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 
 [产品思维](https://mp.weixin.qq.com/s/fIqp3R2Tade2jInkrxordQ)
 
+[业务分析师和产品经理](http://www.woshipm.com/pmd/3805700.html)
+
 [The Innovator's Dilemma, Christensen02](https://book.douban.com/subject/1461932/)
 
 [Shoe Dog, knight2016](https://book.douban.com/subject/26738885/)
