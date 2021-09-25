@@ -45,6 +45,60 @@ https://firstround.com/review/the-rewards-of-creator-driven-cultures-and-the-eng
 https://github.com/akullpp/awesome-java#science  
 https://github.com/toutiaoio/awesome-architecture
 
+
+# 知识与文档管理
+
+产品文档
+技术文档
+部署文档
+API文档
+迭代总结
+项目报告
+测试报告
+会议纪要
+线上问题
+
+# CI/CD
+应用管理
+环境管理
+发布策略
+发布流程
+发布计划
+
+# 项目集管理
+项目管理
+资源管理
+进度管理
+工作量管理
+任务管理
+
+# 产品迭代管理
+产品计划管理（战略、细分策略、整合优化）
+用户需求管理
+建议反馈
+市场信息
+竞品信息
+故事管理
+需求管理
+迭代计划
+
+
+# 代码质量管理
+缺陷管理
+测试用例
+测试报告
+代码质量分析报告
+自动化用例
+测试资源管理
+测试结果
+
+
+# 应用分类
+
+
+
+
+
 # 工业会议
 
 [ArchSummit](https://archsummit.infoq.cn/)   

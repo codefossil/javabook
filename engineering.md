@@ -61,6 +61,8 @@ https://en.wikipedia.org/wiki/Software_development
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE6287ea342110009b3ee392f41eb98c61/132)
 
+**项目经理**的核心技能是管理（计划，组织，领导，控制）
+
 确认解决的问题  
 对于公司来说，ROI分析  
 确认系统的功能、初步需要的经费  
@@ -233,6 +235,7 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 ![](https://samuraibizgrp.com/wp-content/uploads/2019/08/sales-manangement-sales-leadership-samurai.png)
 
 [Peopleware](https://book.douban.com/subject/25956450/)  
+
 
 ## 技术分享、读书会
 分享范围  
