@@ -1,5 +1,7 @@
 # 基本问题
 
+![](https://res.ailemon.net/blog/2019/20191202-5.png?x-oss-process=style/ailemon-blog-watermark-pic)
+
 [mind, thagard05](https://book.douban.com/subject/1869660/)
 
 [Cognition, Brain, & Consciousness, Baars2010](https://book.douban.com/subject/26715572/)  

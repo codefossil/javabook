@@ -142,6 +142,10 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 
 [Architectural Blueprints - The 4+1 View Model of Software Architecture, kruchten95, rational](https://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf)
 
+[sebok](https://www.sebokwiki.org/wiki/Guide_to_the_Systems_Engineering_Body_of_Knowledge_(SEBoK))
+
+http://wiki.ccose.org/index.php/%E9%A6%96%E9%A1%B5
+
 ## 确定系统规格、评价准则（非功能需求、质量属性）
 
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE1a06e5043df9f3d736835d51d8d7738d/179)
@@ -437,6 +441,7 @@ https://github.com/spring2go/engineer_competency_framework
 
 [架构师的职责与思考](https://github.com/aalansehaiyang/technology-talk/blob/master/system-architecture/%E6%9E%B6%E6%9E%84%E5%B8%88%E7%9A%84%E8%81%8C%E8%B4%A3%E4%B8%8E%E6%80%9D%E8%80%83.md
 )
+
 
 # 控制复杂度
 
