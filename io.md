@@ -1,3 +1,18 @@
+http://web.stanford.edu/class/cs240/
+
+[advanced-topic](https://people.eecs.berkeley.edu/~brewer/cs262/)
+
+# 操作系统
+[OS Three Easy pieces, 2015](http://pages.cs.wisc.edu/~remzi/OSTEP/)  
+
+[advanced programming in UNIX, steven2013](https://book.douban.com/subject/11937511/)
+
+[Linux Command Line and Shell Scripting Bible, blum2015](https://book.douban.com/subject/26309537/)
+
+[The Linux Programming Interface, kerrisk2010](https://book.douban.com/subject/4292217/)
+
+[Linux C编程一站式学习](https://akaedu.github.io/book/index.html)
+
 # 性能
 [Imbench, 1996](http://mcvoy.com/lm/bitmover/lmbench/lmbench-usenix.pdf) ，线程切换 = 状态转换(~n us) + `cache missing`(~n 10ns), https://news.ycombinator.com/item?id=13930305  
 [Why pthread](https://computing.llnl.gov/tutorials/pthreads/#WhyPthreads), fork(~n 100ns) = ~10x pthread_create(~n 10ns)  
@@ -28,7 +43,6 @@ https://carymillsap.blogspot.com/2010/09/my-otn-interview-at-oow2010-which-hasnt
 
 [Software and the Concurrency Revolution, 2005](https://dl.acm.org/citation.cfm?id=1095421)  
 [Parallel Programming, 2011](https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.2011.01.02a.pdf), 很多关于CPU缓存和一致性问题  
-[OS Three Easy pieces, 2015](http://pages.cs.wisc.edu/~remzi/OSTEP/)  
 [Multiprogramming, 1968](https://link.springer.com/content/pdf/10.1007%2F978-1-4757-3510-9_12.pdf)  
 
 [Thread programming, 1989](https://www.cs.ubc.ca/~norm/508/2009W1/summaries/birrell%20paper%2003.pdf)  
