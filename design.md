@@ -63,7 +63,9 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 事件分解技术=外部事件+时序事件+内部事件  
 用例图突出了actor与系统的功能关系。  
 
-[Object-Oriented Analysis and Design with Applications, booch07](https://book.douban.com/subject/2266843/)  
+[Object-Oriented Analysis and Design with Applications, booch07](https://book.douban.com/subject/2266843/) 
+
+[大话软件工程——需求分析与软件设计](https://book.douban.com/subject/35044776/)
 
 ## 实体，领域建模
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEfb1b8e2ec2c2c32968ecc84d262cc4d8/177)
@@ -81,6 +83,8 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 ```
 
 [企业IT架构转型之道：阿里巴巴中台战略思想与架构实战, 钟华2017](https://book.douban.com/subject/27039508/)
+
+[软件架构设计：大型网站技术架构与业务架构融合之道](https://e.jd.com/30457722.html)
 
 ## 理解业务规则，用例建模
 

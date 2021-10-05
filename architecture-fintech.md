@@ -1,3 +1,31 @@
+![](https://upload-images.jianshu.io/upload_images/426671-a824fb6afd4b3fa3.png?imageMogr2/auto-orient/strip|imageView2/2/w/671/format/webp)
+
+# 企业架构师
+http://www.woshipm.com/zhichang/2879933.html
+
+https://www.sohu.com/a/435166953_667714
+
+
+https://www.smartcity.team/professional/%E4%BC%81%E4%B8%9A%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B%E7%9A%84%E6%9E%B6%E6%9E%84%E9%80%89%E6%8B%A9/
+
+
+https://www.coollf.com/archives/%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84%E5%AE%9E%E8%B7%B5%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E7%94%BB%E5%87%BA%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84%E5%9B%BE
+
+# 业务架构师
+
+> 矛盾：产品原型、流程与技术结构的不匹配
+
+对齐企业战略，对企业能力进行**整体规划**  
+将复杂的业务体系进行**整体性、结构化设计**  
+有机的与技术实现对齐
+
+BIZBOK
+
+[企业级业务架构设计：方法论与实践](https://book.douban.com/subject/34801161/)
+
+https://www.smartcity.team/consultingskills/experience/%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84%E6%98%AF%E4%BB%80%E4%B9%88/
+
+
 # 金融行业业务架构师
 
 银行/保险/证券
@@ -18,7 +46,7 @@
 
 熟悉银行组织架构，业务模式，清楚客户对地图应用及大数据应用的需求和痛点，熟悉此类合作的商业运作模式和流程
 
-# 营销风控
+## 营销风控
 https://coffee.pmcaff.com/article/2094473557605504/pmcaff
 
 
@@ -44,3 +72,11 @@ Togaf、FEAF、Zachman
 
 # 运维架构师
 包括变更管控方案、巡检能力建设、监控能力建设、应急管理能力、故障演练能力建设等。
+
+
+互联网安全风险控制理论体系的建立
+指导互联网安全风控产品体系建设
+推动互联网安全工程行业标准建设
+
+组织既有技术和新技术的研究，对系统的重用、扩展、安全、性能、伸缩性、简洁等做系统级的把握；
+公司软件产品、重点项目的核心功能及应用模块的研发工作；

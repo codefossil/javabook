@@ -209,6 +209,8 @@ http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.
 
 [大厂薪资对标](https://duibiao.info/)
 
+[代码精进之路：从码农到工匠](https://book.douban.com/subject/34922776/)
+
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE3021df8e914094d063907d68a0ff9d0a/187)
 
 
