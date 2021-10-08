@@ -28,7 +28,8 @@ https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html
 | [0]-Xmx  |   | 总的堆大小，-XX:MaxHeapSize，忽略MaxRAMPercentage  |
 | [0]-Xms  |   | 最小堆大小，MinHeapSize=InitialHeapSize，忽略InitialRAMPercentage  |
 | [1]-XX:+UseContainerSupport  |   | 开启容器支持  |
-| [1]-XX:MaxRAMPercentage  | 25  | HeapSize是1/4可用内存大小  |
+| [1]-XX:InitialRAMPercentage  | 1.5625  | 初始化HeapSize是1/64可用内存大小  |
+| [1]-XX:MaxRAMPercentage  | 25  | 最大HeapSize是1/4可用内存大小  |
 | -XX:MaxRAM  |   | 最大可用内存 |
 | -XX:MaxTenuringThreshold  | 15   | 经过多少次to space周期，转老年代  |
 | -XX:NewRatio  | 4  | old/new, old占4份，new占1份  |
