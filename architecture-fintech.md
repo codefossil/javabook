@@ -1,32 +1,4 @@
-![](https://upload-images.jianshu.io/upload_images/426671-a824fb6afd4b3fa3.png?imageMogr2/auto-orient/strip|imageView2/2/w/671/format/webp)
-
-# 企业架构师
-http://www.woshipm.com/zhichang/2879933.html
-
-https://www.sohu.com/a/435166953_667714
-
-
-https://www.smartcity.team/professional/%E4%BC%81%E4%B8%9A%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B%E7%9A%84%E6%9E%B6%E6%9E%84%E9%80%89%E6%8B%A9/
-
-
-https://www.coollf.com/archives/%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84%E5%AE%9E%E8%B7%B5%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E7%94%BB%E5%87%BA%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84%E5%9B%BE
-
-# 业务架构师
-
-> 矛盾：产品原型、流程与技术结构的不匹配
-
-对齐企业战略，对企业能力进行**整体规划**  
-将复杂的业务体系进行**整体性、结构化设计**  
-有机的与技术实现对齐
-
-BIZBOK
-
-[企业级业务架构设计：方法论与实践](https://book.douban.com/subject/34801161/)
-
-https://www.smartcity.team/consultingskills/experience/%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84%E6%98%AF%E4%BB%80%E4%B9%88/
-
-
-# 金融行业业务架构师
+# 金融行业业务架构
 
 银行/保险/证券
 
@@ -61,16 +33,16 @@ Togaf、FEAF、Zachman
 
 包含容灾能力、应急能力、资金安全、红蓝攻防、性能容量、安全等，构建蚂蚁链技术风险体系；
 
-# 解决方案架构师（售前）
+# 解决方案架构（售前）
 
 负责售前咨询、技术交流、方案设计、招投标，结合蚂蚁产品及技术体系，提供具有竞争力的综合解决方案；
 
 负责对用户业务层规划及深度分析和洞察，形成有领先型的数字化转型方案，对用户业务部门和高层领导进业务和战略影响，其中对标杆客户进行轻咨询类规划引导，形成更加针对性的客户解决方案；
 
-# 质量/风险服务架构师
+# 质量/风险服务架构
 带领生态伙伴和客户的测试团队，把控实施过程中的整体项目质量，同时落地蚂蚁集团的整体质量保障方案。包括制定测试计划，分配测试资源，构建测试环境，执行集成测试，回归测试，UAT，线上质量监控等。
 
-# 运维架构师
+# 运维架构
 包括变更管控方案、巡检能力建设、监控能力建设、应急管理能力、故障演练能力建设等。
 
 

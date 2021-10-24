@@ -25,6 +25,10 @@
 https://www.umsl.edu/~sauterv/analysis/488_f01_papers/quillin.htm#Top  
 http://www.umsl.edu/~sauterv/analysis/analysis_links.html  
 
+
+[大话软件工程——需求分析与软件设计](https://book.douban.com/subject/35044776/)
+
+
 ## 发现需求、干系人、需求引出
 
 功能性需求=业务用途必要的活动。  
@@ -67,6 +71,10 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 
 [大话软件工程——需求分析与软件设计](https://book.douban.com/subject/35044776/)
 
+[业务架构•应用架构•数据架构实战](https://book.douban.com/subject/35355450/)
+
+[Righting Software：A Method for System and Project Design](https://book.douban.com/subject/35563799/)
+
 ## 实体，领域建模
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEfb1b8e2ec2c2c32968ecc84d262cc4d8/177)
 
@@ -104,7 +112,18 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 这本书，是迄今为止见过最全面关于软件架构的书。  
 从架构技术、架构师职责，到软技能、职业规划。  
 
-[Patterns of Enterprise Application Architecture, fowler02](https://book.douban.com/subject/1229954/)
+[Patterns of Enterprise Application Architecture, fowler02](https://book.douban.com/subject/1229954/)  
+当我们在设计企业级应用时，这本书给出了一个思考框架。    
+分层不仅仅意味着代码层面，物理上的分离也是需要考虑的。  
+
+| 框架  |   |
+|---|---|
+| 业务逻辑组织  |   |
+| 数据怎么操作  |   |
+| Web表现层  |   |
+| 并发  |   |
+| 会话表示  |   |
+| 分布式策略  |   |
 
 
 [37 Things One Architect Knows About IT Transformation](https://book.douban.com/subject/35062026/)

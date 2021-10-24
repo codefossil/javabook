@@ -57,6 +57,80 @@ https://en.wikipedia.org/wiki/Software_development
 
 [software engineering at google, henderson2017](https://arxiv.org/pdf/1702.01715.pdf)
 
+
+# 业务战略和产品
+
+![](https://upload-images.jianshu.io/upload_images/426671-a824fb6afd4b3fa3.png?imageMogr2/auto-orient/strip|imageView2/2/w/671/format/webp)
+
+[princeton CS448 -Innovating Across Technology, Business, and Marketplaces](https://www.cs.princeton.edu/courses/archive/spring20/cos448/schedule.html)
+
+[业务和领域专家](https://github.com/amitness/learning)
+
+## 企业架构
+http://www.woshipm.com/zhichang/2879933.html
+
+https://www.sohu.com/a/435166953_667714
+
+
+https://www.smartcity.team/professional/%E4%BC%81%E4%B8%9A%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B%E7%9A%84%E6%9E%B6%E6%9E%84%E9%80%89%E6%8B%A9/
+
+
+https://www.coollf.com/archives/%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84%E5%AE%9E%E8%B7%B5%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E7%94%BB%E5%87%BA%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84%E5%9B%BE
+
+## 业务架构
+
+> 矛盾：产品原型、流程与技术结构的不匹配
+
+对齐企业战略，对企业能力进行**整体规划**  
+将复杂的业务体系进行**整体性、结构化设计**  
+有机的与技术实现对齐
+
+BIZBOK
+
+[企业级业务架构设计：方法论与实践](https://book.douban.com/subject/34801161/)
+
+https://www.smartcity.team/consultingskills/experience/%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84%E6%98%AF%E4%BB%80%E4%B9%88/
+
+
+[产品思维](https://mp.weixin.qq.com/s/fIqp3R2Tade2jInkrxordQ)
+
+[业务分析师和产品经理](http://www.woshipm.com/pmd/3805700.html)
+
+[The Innovator's Dilemma, Christensen02](https://book.douban.com/subject/1461932/)
+
+[Shoe Dog, knight2016](https://book.douban.com/subject/26738885/)
+
+[Zero to One, Thiel2014](https://book.douban.com/subject/24753651/)
+
+[Creativity, Inc.](https://book.douban.com/subject/25777433/)
+
+[商务与经济统计, Anderson D R. 2012](https://book.douban.com/subject/10557289/)
+
+[市场营销原理, 科特勒2010](https://book.douban.com/subject/4830099/)
+
+[The Hard Thing About Hard Things, Horowitz2015](https://book.douban.com/subject/26306686/)
+
+[企业战略博弈, 格林沃德06](https://book.douban.com/subject/1967814/)
+
+[国家竞争优势](https://book.douban.com/subject/6753831/)
+
+[战争论, 05](https://book.douban.com/subject/1009105/)  
+
+[Getting Real](https://basecamp.com/gettingreal/getting-real.pdf)
+
+[四步创业法](https://book.douban.com/subject/11516567/)  
+
+[创业者手册](https://book.douban.com/subject/20453004/)
+
+[创新者的解答](https://book.douban.com/subject/4822145/)
+
+[创业36条军规](https://book.douban.com/subject/26794032/)
+
+[商业模式新生代](https://book.douban.com/subject/6718487/)
+
+[创新的先知](https://book.douban.com/subject/4931700/)
+ 
+
 # 立项批准、系统整体功能需求、整体解决方案
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE6287ea342110009b3ee392f41eb98c61/132)
@@ -101,6 +175,12 @@ PM作为中心，需要对外汇报给客户、监督委员会，对内组织资
 # 回顾、复查、总结迭代
 软件质量度量  
 工作量评估
+
+[精益软件度量](https://book.douban.com/subject/23009505/)
+
+[程序员度量](https://book.douban.com/subject/21365482/)
+
+[Team Topologies: Organizing Business and Technology Teams for Fast Flow](https://book.douban.com/subject/35528423/)
 
 # 不确定的SDLC、软件开发过程
 
@@ -169,6 +249,9 @@ https://www.scrum.org/
 http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.htm  
 
 # 程序员职业素养
+
+
+![](https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naL7zZhFK89LlYkJ4W20egLwiboBTXxNEkTMynE8B117ibfKxP5cc1dRg3vKvwzjJJ6gzicYjplEs2nXw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 [Clean Coder, 2011](https://book.douban.com/subject/11614538/) 
 
@@ -247,46 +330,3 @@ https://www.cs.cmu.edu/~aldrich/courses/413/
 ## 技术规划、目标管理
 
 
-# 商业、产品与公司
-
-![](https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naL7zZhFK89LlYkJ4W20egLwiboBTXxNEkTMynE8B117ibfKxP5cc1dRg3vKvwzjJJ6gzicYjplEs2nXw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-
-[产品思维](https://mp.weixin.qq.com/s/fIqp3R2Tade2jInkrxordQ)
-
-[业务分析师和产品经理](http://www.woshipm.com/pmd/3805700.html)
-
-[The Innovator's Dilemma, Christensen02](https://book.douban.com/subject/1461932/)
-
-[Shoe Dog, knight2016](https://book.douban.com/subject/26738885/)
-
-[Zero to One, Thiel2014](https://book.douban.com/subject/24753651/)
-
-[Creativity, Inc.](https://book.douban.com/subject/25777433/)
-
-[商务与经济统计, Anderson D R. 2012](https://book.douban.com/subject/10557289/)
-
-[市场营销原理, 科特勒2010](https://book.douban.com/subject/4830099/)
-
-[The Hard Thing About Hard Things, Horowitz2015](https://book.douban.com/subject/26306686/)
-
-[企业战略博弈, 格林沃德06](https://book.douban.com/subject/1967814/)
-
-[国家竞争优势](https://book.douban.com/subject/6753831/)
-
-[战争论, 05](https://book.douban.com/subject/1009105/)  
-
-[Getting Real](https://basecamp.com/gettingreal/getting-real.pdf)
-
-[四步创业法](https://book.douban.com/subject/11516567/)  
-
-[创业者手册](https://book.douban.com/subject/20453004/)
-
-[创新者的解答](https://book.douban.com/subject/4822145/)
-
-[创业36条军规](https://book.douban.com/subject/26794032/)
-
-[商业模式新生代](https://book.douban.com/subject/6718487/)
-
-[创新的先知](https://book.douban.com/subject/4931700/)
-
- 

@@ -165,6 +165,8 @@ https://www.istqb.org/
 
 ![](https://pic1.zhimg.com/80/v2-4106a010bb1f53cf88f3e8173bff07e4_1440w.jpg)
 
+[持续交付2.0](https://book.douban.com/subject/30419555/)
+
 [Kubernetes In Action, 2017](https://book.douban.com/subject/26997846/)  
 [Continuous Delivery](https://book.douban.com/subject/6862062/)  
 [Site Reliability Engineering](https://book.douban.com/subject/26875239/)  
