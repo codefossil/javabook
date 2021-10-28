@@ -28,6 +28,8 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 
 [大话软件工程——需求分析与软件设计](https://book.douban.com/subject/35044776/)
 
+[Design It!: From Programmer to Software Architect](https://book.douban.com/subject/34795642/)
+
 
 ## 发现需求、干系人、需求引出
 
@@ -74,6 +76,14 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 [业务架构•应用架构•数据架构实战](https://book.douban.com/subject/35355450/)
 
 [Righting Software：A Method for System and Project Design](https://book.douban.com/subject/35563799/)
+
+[The Unicorn Project](https://book.douban.com/subject/35424121/)
+
+[Agile Software Requirements, Leffingwell2015](https://book.douban.com/subject/26301944/)
+
+[Essential Scrum](https://book.douban.com/subject/25887356/)
+
+《知行》技术人的管理之路
 
 ## 实体，领域建模
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEfb1b8e2ec2c2c32968ecc84d262cc4d8/177)
