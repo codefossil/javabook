@@ -73,6 +73,36 @@ https://www.open.edu/openlearn/ocw/mod/oucontent/view.php?id=20033&section=1.1
 http://matt.colorado.edu/teaching/highcog/fall8/  
 https://en.wikipedia.org/wiki/Learning_theory_(education)  
 
+# 思维
+
+[不确定世界的理性选择](https://book.douban.com/subject/25763679/)
+
+[思维与决策](https://book.douban.com/subject/3542657/)
+
+[选择、价值与决策](https://book.douban.com/subject/30172741/)
+
+[学会提问](https://book.douban.com/subject/20428922/)
+
+[逻辑新引·怎样判别是非](https://book.douban.com/subject/30289559/)
+
+[为什么，关于因果关系的新科学](https://book.douban.com/subject/33438811/)
+
+
+
+[思维，批判性和创造性思维的跨学科研究]()
+
+[如何独立思考]()
+
+[成功动机与目标]()
+
+[Thinking, the new science of decision-making, problem-solving, and prediction]()
+
+[什么是技术]()
+
+[Simple Heuristics that make us smart]()
+
+
+
 # 阅读
 [How to read a paper, sigcomm07](http://home.cse.ust.hk/~weiwa/teaching/Fall16-COMP6611B/reading_list/PaperReading.pdf)  
 引入一个3阶段方法，分别从概览、原理、验证这三个维度解读整篇论文（耗时4-5个小时）

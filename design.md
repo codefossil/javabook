@@ -85,6 +85,8 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 
 《知行》技术人的管理之路
 
+[研发能力持续成长路线图]
+
 ## 实体，领域建模
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEfb1b8e2ec2c2c32968ecc84d262cc4d8/177)
 
