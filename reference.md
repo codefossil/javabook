@@ -20,3 +20,4 @@
 [amteur](https://dirtysalt.github.io/html/index.html)
 [寒](https://dearhwj.gitbooks.io/itbook/index.html)
 [豆瓣cs](https://book.douban.com/tag/计算机科学)
+[编程随想](https://program-think.blogspot.com/)
