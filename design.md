@@ -9,11 +9,13 @@
 [AWS Architecture Center](https://aws.amazon.com/architecture)  
 
 # 系统分析
+
+> 理解并明确系统应该做什么。  
+> 把复杂的问题**解耦**为一个个更小的，更容易理解的模块。  
+> 把领域问题结构化、文档化为需求模型（用例描述、活动图、领域模型、SSD）  
+
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEb0cc1b43e772d2c5fba39c1f0451a721/175)
 
-> 理解系统应该做什么。  
-> 把复杂的问题**解耦**为一个个更小的，更容易理解的模块。  
-> 把领域问题结构化、组织化成为需求模型。  
 
 [Systems Analysis and Design in a Changing World, Satzinger2016](https://www.amazon.com/Systems-Analysis-Design-Changing-World/dp/1305117204)  
 系统分析部分讲得很清楚，整个书把软件开发的方方面面讲得很具体。 
@@ -87,6 +89,8 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 
 [研发能力持续成长路线图]
 
+[Refactoring to Patterns](https://book.douban.com/subject/1456190/)
+
 ## 实体，领域建模
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEfb1b8e2ec2c2c32968ecc84d262cc4d8/177)
 
@@ -117,6 +121,10 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 
 
 # 系统设计
+
+> 细节描述最终的系统会怎样实现（软件/硬件架构+UI）
+> 输出决策记录和模型，以便构建出最终产品
+> 软件架构：明确分层、分模块、关系、规则（4R，战略层）
 
 ![](https://pubs.opengroup.org/architecture/archimate-doc/ts_archimate/ts_archimate_files/image008.png)
 
@@ -207,18 +215,15 @@ http://wiki.ccose.org/index.php/%E9%A6%96%E9%A1%B5
 [Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
 
 
-|规格|技术|
-| ---- | ---- | 
-|高效性|读写分离、分库分表、缓存服务、单机架构、负载均衡|
-|扩展性|分层、SOA、微内核|
-|可用性|双机备份、FMEA、异地多活、熔断、降级、限流|
+|规格||技术|
+| ---- | ---- | ---|
+|高效性||集群、缓存服务、读写分离、分库分表、单机架构、负载均衡|
+|扩展性（边际成本）|适应变化的能力、可理解性、可修改性|分层、DDD、SOA、微内核|
+|可用性（沉默成本）||双机备份、FMEA、异地多活、熔断、降级、限流|
+|兼容性（机会成本）  ||
+|可伸缩性  ||
 
-沉默成本（可用性）  
-机会成本（兼容性）  
-边际成本（扩展性）  
-
-
-<br>
+<br />
 
 ## 架构决策、应用组件、子系统
 
@@ -322,6 +327,10 @@ If it ain't broke, don't fix it.
 提出以企业业务规则和应用业务规则为核心，满足外部系统为目的涉及的“插件系统”。  
 底层离中心业务越远越易变，高层中心业务规则是赚钱的法宝比较不易变。 
 
+[Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
+
+[Just Enough Software Architecture](https://book.douban.com/subject/24872314/)    
+
 [The Hillside Group](https://hillside.net/patterns/books)
 
 [worse is better](http://dreamsongs.com/WorseIsBetter.html)  
@@ -343,10 +352,6 @@ https://blog.csdn.net/ityouknow/article/details/81230412
 
 https://www.jianshu.com/p/dfce30de7fe3
 
-[Building Evolutionary Architectures, 2017](https://book.douban.com/subject/27148120/)  
-
-[Just Enough Software Architecture](https://book.douban.com/subject/24872314/)    
-
 https://docs.oracle.com/cd/E19263-01/817-5764/architecture.html
 
 https://web.njit.edu/~kirova/is663-s11.html  
@@ -362,6 +367,11 @@ https://book.douban.com/subject/30443578/
 [PEP 20](https://www.python.org/dev/peps/pep-0020/)  
 
 https://www.d.umn.edu/~gshute/softeng/principles.html
+
+合适：合适优于业界领先，资源、时间、业务、团队，认可度，设计出来的架构满足当时的业务需要  
+简单：简单优于复杂，奥卡姆剃刀、复杂度，可靠性、可扩展性  
+演化：演化优于一步到位，满足当前业务需求、迭代优化、重构重写  
+
 
 ## 架构图
 可视化描述信息系统的环境、组件和部署情况。  
