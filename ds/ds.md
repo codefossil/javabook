@@ -74,6 +74,8 @@ https://www.cncf.io/blog/2019/11/04/building-a-large-scale-distributed-storage-s
 
 [Cornell-Where Theory meets Practice](http://principled.cs.cornell.edu/research/)
 
+状态决策，需要决定who win
+
 real-time computing
 bounded/unbounded fault
 
@@ -158,6 +160,9 @@ https://scalingsystems.com/2011/09/07/reading-list-for-distributed-systems/
 [Big Data Pipeline Recipe](https://itnext.io/big-data-pipeline-recipe-c416c1782908)
 
 ## 集群管理
+
+> 集群高性能本质是任务分配和任务分解
+
 [yarn, socc2013](http://web.eecs.umich.edu/~mosharaf/Readings/YARN.pdf)  
 [mesos, nsdi2011](https://people.eecs.berkeley.edu/~alig/papers/mesos.pdf)  
 [Borg, 2015](https://pdos.csail.mit.edu/6.824/papers/borg.pdf)  

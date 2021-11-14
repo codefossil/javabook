@@ -195,6 +195,7 @@ http://wiki.ccose.org/index.php/%E9%A6%96%E9%A1%B5
 
 > Understanding **the speed at which your organisation or business changes** is important
 
+### 可靠性vs可用性
 
 [ISO/IEC 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010)
 
@@ -223,6 +224,10 @@ http://wiki.ccose.org/index.php/%E9%A6%96%E9%A1%B5
 |兼容性（机会成本）  ||
 |可伸缩性  ||
 
+低成本与高性能、高可用、可扩展平衡  
+1台服务器用3年，2W/年（购买，维护、折旧、电费）  
+
+
 <br />
 
 ## 架构决策、应用组件、子系统
@@ -230,7 +235,7 @@ http://wiki.ccose.org/index.php/%E9%A6%96%E9%A1%B5
 ![](https://pic1.zhimg.com/80/v2-b439a15800943b24bcf65c1182a4ca88_1440w.jpg)
 
 架构决策负责：结构（架构风格）、非功能规格、依赖（组件之间的依赖）、接口、构建技术（平台、框架、工具、语言）。  
-编写ADR，记录决策的原因。  
+编写ADR，记录决策的原因。 
 
 [康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
 系统设计最终会按物理组织结构来分=UI+后端+规则+DBA
@@ -290,7 +295,7 @@ repository模式隔离了领域模型和数据模型，隐藏了底层复杂的�
 架构决策：单体还是分布式、数据流、同步还是异步服务间通信。 
 
 [reactive design patterns](https://book.douban.com/subject/25870212/)
-
+PPC/TPC
 
 [Building Microservice](https://book.douban.com/subject/25881698/)  
 
@@ -311,6 +316,16 @@ https://newrelic.com/blog/best-practices/distributed-monolith-vs-microservices
 https://www.jianshu.com/p/73b3aac644f9
 
 ## 架构设计原则、指南
+
+### 拆分
+> 拆分需要平衡内部复杂度和外部复杂度，先粗后细
+> 每个请求控制涉及多少个模块，1个子系统由多少人负责
+
+可扩展、高可用、高性能都依赖拆分  
+高可用关注异常情况、高性能关注正常情况  
+
+### 封装
+过度设计 
 
 [separation of concerns, Dijkstra82](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD04xx/EWD447.html)
 
@@ -371,6 +386,26 @@ https://www.d.umn.edu/~gshute/softeng/principles.html
 合适：合适优于业界领先，资源、时间、业务、团队，认可度，设计出来的架构满足当时的业务需要  
 简单：简单优于复杂，奥卡姆剃刀、复杂度，可靠性、可扩展性  
 演化：演化优于一步到位，满足当前业务需求、迭代优化、重构重写  
+
+
+## 工期估算
+
+https://www.cnblogs.com/odoouse/p/13245945.html
+
+https://diegobasch.com/why-software-development-estimations-are-regu
+
+[中国软件行业基准数据](http://www.bscea.org/uploads/soft/201015/
+CSBMK-2020%E5%B9%B4%E4%B8%AD%E5%9B%BD%E8%BD%AF%E4%BB%B6%E8%A1%8C%E4%B8%9A%E5%9F%BA%E5%87%86%E6%95%B0%E6%8D%AE.pdf)
+
+中国软件估算大会
+
+https://www.codeproject.com/Articles/701642/Software-Estimation-by-example
+
+[Software Estimation](https://book.douban.com/subject/1783543/)
+
+https://www.atlassian.com/agile/project-management/estimation
+
+https://pragprog.com/titles/gdestimate/software-estimation-without-guessing/
 
 
 ## 架构图

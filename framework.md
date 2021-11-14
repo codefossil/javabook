@@ -169,18 +169,23 @@ http-dns私有DNS系统
 |   f5    |   1M+    |硬件级4层|
 
 
+DNS(A记录，CNAME)  GSLB，CDN，httpDNS  
 
 ![](https://img2018.cnblogs.com/blog/1496566/201908/1496566-20190801150358444-1982363646.png)
 
 https://help.aliyun.com/document_detail/27544.html?spm=a2c4g.11186623.6.546.2bb11d42IuEAbG  
 
-## 服务治理、RPC
+## 服务治理
 
 ![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAxOC8xMS83LzE2NmVjMDA2YjE1MzZmNDM_aW1hZ2VWaWV3Mi8wL3cvMTI4MC9oLzk2MC9mb3JtYXQvd2VicC9pZ25vcmUtZXJyb3IvMQ)
+
+[主流微服务注册中心浅析和对比](https://zhuanlan.zhihu.com/p/63263168)
 
 https://www.cnblogs.com/-maji/p/13091719.html
 
 https://sulangsss.github.io/2019/10/17/SpringBoot/Eureka/Theory/
+
+https://blog.csdn.net/zl1zl2zl3/article/details/106522518
 
 ## 消息队列
 
@@ -231,6 +236,13 @@ http://www.voidcn.com/article/p-biggriil-bhz.html
 
 https://www.datadoghq.com/docker-adoption
 
+
+任务分配（运行时、配置、分配算法） 
+状态检测  
+
+Memcached、Redis Cluster, MongoDB sharding
+
+主从、主备
 
 ## 分布式应用配置
 
