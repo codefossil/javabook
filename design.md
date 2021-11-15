@@ -35,13 +35,10 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 
 ## 发现需求、干系人、需求引出
 
-功能性需求=业务用途必要的活动。  
-分析师需要学习用户的工作行为，了解业务知识，甚至变成业务专家。  
-每个公司都有自己的一套规则业务规则和流程，有些很容易理解；有些则很难被发现。  
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE91c0f29938af6934e1fe9d9fc733d9cf/199)
 
-干系人=所有对成功实现系统感兴趣的人。  
-操作干系人包括所有直接与系统交互的人。包括C端的customer/user, B端的operator/accountant/patient...   
-执行干系人使用系统的生成的数据。他们掌握的信息在组织内部不容易获取，也不广为人知。  
+功能性需求=业务用途必要的活动。  
+每个公司都有自己的一套规则业务规则和流程，有些很容易理解；有些则很难被发现。 
 
 采访干系人，学会提问引导出业务过程的细节；控制话题节奏，避免简单复述和错失重点。  
 如果可能的话，使用第一原理重新审视业务问题。  
@@ -64,6 +61,9 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 [Requirements Engineering: From System Goals to UML Models to Software Specifications, axel2011](https://www.amazon.com/Requirements-Engineering-System-Software-Specifications-ebook/dp/B00DWHU40E)
 
 ## 定义需求、确定用户故事和用例图
+
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEab6644f34efd538ee5e5f79dbf2be42c/201)
+
 用户故事=WHO-WHAT-WHY 验收描述。更不形式化，倡导更快的到达程序分析师手上，鼓励直接与用户沟通，避免过多文档。  
 用例=响应用户请求的一次活动。强调分析师优化和建模。  
 
@@ -195,11 +195,7 @@ http://wiki.ccose.org/index.php/%E9%A6%96%E9%A1%B5
 
 > Understanding **the speed at which your organisation or business changes** is important
 
-### 可靠性vs可用性
-
 [ISO/IEC 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010)
-
-[OWASP TOP10 App security](https://owasp.org/www-project-top-ten/)  
 
 [ch4~ch7 Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)  
 定义了各种系统规格，适用范围，相互影响。  
@@ -218,14 +214,22 @@ http://wiki.ccose.org/index.php/%E9%A6%96%E9%A1%B5
 
 |规格||技术|
 | ---- | ---- | ---|
+|低成本|||
 |高效性||集群、缓存服务、读写分离、分库分表、单机架构、负载均衡|
 |扩展性（边际成本）|适应变化的能力、可理解性、可修改性|分层、DDD、SOA、微内核|
-|可用性（沉默成本）||双机备份、FMEA、异地多活、熔断、降级、限流|
+|可用性（沉默成本）|服务总体持续时间|双机备份、FMEA、异地多活、熔断、降级、限流|
 |兼容性（机会成本）  ||
-|可伸缩性  ||
+|可伸缩性 |||
+|可靠性|系统无故障地持续运行的概率||
+|可测试性||全链路压测|
+|可维护性||全链路跟踪、降级、下线、熔断|
+|可观测性||日志、API、运维监控平台|
+
 
 低成本与高性能、高可用、可扩展平衡  
 1台服务器用3年，2W/年（购买，维护、折旧、电费）  
+
+引入缓存、虚拟化、性能调优、高性能硬件、开源方案  
 
 
 <br />
@@ -315,7 +319,45 @@ https://newrelic.com/blog/best-practices/distributed-monolith-vs-microservices
 
 https://www.jianshu.com/p/73b3aac644f9
 
-## 架构设计原则、指南
+## API接口和安全
+契约式设计
+https://stripe.com/docs/api/pagination
+
+https://github.com/wuyichen24/spring-microservices-in-action/
+wiki/Store-Clients-and-Users'-Credentials-to-DB#for-clients
+
+https://codeaches.com/spring-cloud-security/
+oauth2-authorization-jdbc-token-store
+
+https://projects.spring.io/spring-security-oauth/docs/oauth2.html
+
+https://zhuanlan.zhihu.com/p/137835878
+
+https://www.secrss.com/articles/13507
+
+https://blog.csdn.net/li1669852599/article/details/107925768
+
+
+### 架构安全
+网络隔离、流量清洗、机房切换
+
+### 业务安全
+保底限制
+安全漏洞 安全框架 OWASP
+内网安全 权限管控 shiro、spring security
+
+[OWASP TOP10 App security](https://owasp.org/www-project-top-ten/
+)  
+
+## UI设计、原型
+
+实体模型、故事卡、图形布局。  
+在SSD出图时，往往伴随着原型出图。  
+前端资源的分发和部署。  
+
+[墨刀](https://modao.cc/)
+
+# 架构设计原则、指南
 
 ### 拆分
 > 拆分需要平衡内部复杂度和外部复杂度，先粗后细
@@ -388,7 +430,7 @@ https://www.d.umn.edu/~gshute/softeng/principles.html
 演化：演化优于一步到位，满足当前业务需求、迭代优化、重构重写  
 
 
-## 工期估算
+# 工期估算
 
 https://www.cnblogs.com/odoouse/p/13245945.html
 
@@ -408,6 +450,7 @@ https://www.atlassian.com/agile/project-management/estimation
 https://pragprog.com/titles/gdestimate/software-estimation-without-guessing/
 
 
+# 备选架构、架构方案
 ## 架构图
 可视化描述信息系统的环境、组件和部署情况。  
 
@@ -423,7 +466,7 @@ chart&flow
 
 [Architecture decision record (ADR)](https://github.com/joelparkerhenderson/architecture_decision_record)   
 
-## 数据库设计
+## 数据库设计方案
 
 ![](image/normalize.drawio.png)
 
@@ -446,30 +489,6 @@ chart&flow
 [SQL Style Guide](https://www.sqlstyle.guide/)
 
 [高性能MySQL(第3版)](https://book.douban.com/subject/23008813/)  
-
-# API接口设计和安全
-契约式设计
-https://stripe.com/docs/api/pagination
-
-https://github.com/wuyichen24/spring-microservices-in-action/wiki/Store-Clients-and-Users'-Credentials-to-DB#for-clients
-
-https://codeaches.com/spring-cloud-security/oauth2-authorization-jdbc-token-store
-
-https://projects.spring.io/spring-security-oauth/docs/oauth2.html
-
-https://zhuanlan.zhihu.com/p/137835878
-
-https://www.secrss.com/articles/13507
-
-https://blog.csdn.net/li1669852599/article/details/107925768
-
-## UI设计、原型
-
-实体模型、故事卡、图形布局。  
-在SSD出图时，往往伴随着原型出图。  
-前端资源的分发和部署。  
-
-[墨刀](https://modao.cc/)
 
 # 分析和评估架构风险
 
