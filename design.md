@@ -436,8 +436,7 @@ https://www.cnblogs.com/odoouse/p/13245945.html
 
 https://diegobasch.com/why-software-development-estimations-are-regu
 
-[中国软件行业基准数据](http://www.bscea.org/uploads/soft/201015/
-CSBMK-2020%E5%B9%B4%E4%B8%AD%E5%9B%BD%E8%BD%AF%E4%BB%B6%E8%A1%8C%E4%B8%9A%E5%9F%BA%E5%87%86%E6%95%B0%E6%8D%AE.pdf)
+[中国软件行业基准数据](http://www.bscea.org/uploads/soft/201015/CSBMK-2020%E5%B9%B4%E4%B8%AD%E5%9B%BD%E8%BD%AF%E4%BB%B6%E8%A1%8C%E4%B8%9A%E5%9F%BA%E5%87%86%E6%95%B0%E6%8D%AE.pdf)
 
 中国软件估算大会
 
