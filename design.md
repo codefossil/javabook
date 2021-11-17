@@ -449,6 +449,10 @@ https://www.atlassian.com/agile/project-management/estimation
 
 https://pragprog.com/titles/gdestimate/software-estimation-without-guessing/
 
+https://www.scrum.org/forum/scrum-forum/31862/story-points-complexity-vs-effort  
+
+estimation factors in effort and complexity
+
 
 # 备选架构、架构方案
 ## 架构图
