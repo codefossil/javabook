@@ -452,6 +452,25 @@ https://www.scrum.org/forum/scrum-forum/31862/story-points-complexity-vs-effort
 
 estimation factors in effort and complexity
 
+敏捷估算与规划
+
+practical software project estimation
+
+software estimation without guessing
+
+software project estimation
+
+software sizing, estimation, and risk management
+
+manage it
+
+pmbok
+
+GB/T 37507-2019 项目管理指南
+
+https://developer.aliyun.com/article/206424
+
+[Software Metrics](https://people.ucalgary.ca/~far/Lectures/SENG421/)
 
 # 备选架构、架构方案
 ## 架构图
@@ -502,6 +521,8 @@ chart&flow
 
 
 # 架构师职业、核心价值、软技能
+
+![](image/arch-ability.drawio.png)
 
 > The most important single ingredient in the formula of success is knowing how to get along with people.
 
