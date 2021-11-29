@@ -66,6 +66,8 @@ https://en.wikipedia.org/wiki/Software_development
 
 [业务和领域专家](https://github.com/amitness/learning)
 
+[产品研发管理](https://book.douban.com/subject/10433727/)
+
 ## 企业架构
 http://www.woshipm.com/zhichang/2879933.html
 
@@ -151,6 +153,8 @@ PM作为中心，需要对外汇报给客户、监督委员会，对内组织资
 项目管理规格=正式程度+文档生成的量级+规格可追溯性。  
 敏捷项目管理需要平衡灵活性和对混沌的控制。  
 大多数公司都是不停的想办法提高市场份额=长期+短期计划。  
+
+[Manage It, johanna07](https://book.douban.com/subject/2143051/)  
 
 [A Guide to the Project Management Body of Knowledge](https://book.douban.com/subject/24697645/)  
 [汪博士解读PMP考试](https://book.douban.com/subject/24713754/)  
