@@ -163,10 +163,14 @@ PM作为中心，需要对外汇报给客户、监督委员会，对内组织资
 
 
 # 整体项目计划、迭代计划、监控
+> 计划毫无用处，但是制订计划必不可少
+
 根据Vision文档，复查业务需求  
 划分子系统、确定完成顺序、人员、紧急程度  
 确定子系统组件、边界  
 规划WBS  
+
+
 
 [凤凰项目，2015](https://book.douban.com/subject/26644070/)  
 
@@ -175,6 +179,48 @@ PM作为中心，需要对外汇报给客户、监督委员会，对内组织资
 [Code of Ethics & Professional Conduct](https://www.pmi.org/about/ethics/code)  
 
 [技术核心管理者的时间](https://www.infoq.cn/article/aALWwYEdxFuuisM8e9u2)
+
+# 工期估算
+
+https://www.cnblogs.com/odoouse/p/13245945.html
+
+https://diegobasch.com/why-software-development-estimations-are-regu
+
+[中国软件行业基准数据](http://www.bscea.org/uploads/soft/201015/CSBMK-2020%E5%B9%B4%E4%B8%AD%E5%9B%BD%E8%BD%AF%E4%BB%B6%E8%A1%8C%E4%B8%9A%E5%9F%BA%E5%87%86%E6%95%B0%E6%8D%AE.pdf)
+
+中国软件估算大会
+
+https://www.codeproject.com/Articles/701642/Software-Estimation-by-example
+
+[Software Estimation](https://book.douban.com/subject/1783543/)
+
+https://www.atlassian.com/agile/project-management/estimation
+
+https://pragprog.com/titles/gdestimate/software-estimation-without-guessing/
+
+https://www.scrum.org/forum/scrum-forum/31862/story-points-complexity-vs-effort  
+
+estimation factors in effort and complexity
+
+敏捷估算与规划
+
+practical software project estimation
+
+software estimation without guessing
+
+software project estimation
+
+software sizing, estimation, and risk management
+
+manage it
+
+pmbok
+
+GB/T 37507-2019 项目管理指南
+
+https://developer.aliyun.com/article/206424
+
+[Software Metrics](https://people.ucalgary.ca/~far/Lectures/SENG421/)
 
 # 回顾、复查、总结迭代
 软件质量度量  
@@ -252,85 +298,6 @@ https://scrumguides.org/scrum-guide.html
 https://www.scrum.org/ 
 http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.htm  
 
-# 程序员职业素养
 
-
-![](https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naL7zZhFK89LlYkJ4W20egLwiboBTXxNEkTMynE8B117ibfKxP5cc1dRg3vKvwzjJJ6gzicYjplEs2nXw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-
-[Clean Coder, 2011](https://book.douban.com/subject/11614538/) 
-
-[The Complete Software Developer's Career Guide, sonmez2017](https://book.douban.com/subject/35043940/)  
-软件开发不仅仅是编程，在此之前还需要理清需求（大多数软件项目的目的都是自动化）、适量的设计，写完之后还要调试、测试、部署和监控。  
-
-学习一门新的编程语言最佳实践：真实的项目->Hello World->学习基本的构建模块->区分语言内置特性和标准库->理解并build现有代码->刷题。  
-
-程序员的手艺：开发语言（编译和运行平台、库和框架）、代码结构设计、OOD、算法和数据结构、数据库、源码控制、测试和调试、构建和部署、软件开发方法。  
-
-[cracking the coding interview](https://book.douban.com/subject/26570695/)
-
-[剑指Offer](https://book.douban.com/subject/25910559/)
-
-[软技能](https://book.douban.com/subject/26835090/)  
-至今为止看到软件开发工程师职业最强指南。  
-**拥有商业心态**，把雇主当做软件开发企业的客户。  
-每个人都希望自己很重要。  
-**在一个专业方向上拥有专长**，思考专业化道路是会让自己受益，还是过度限制了自己的选择，类比律师。    
-同时保有全职工作、开源节流、业余时间2小时/天新业务试错。  
-持续不断增强业务能力，**确保长期客户、稳定的新客户**。  
-作为一名软件开发人员，拥有成为一名企业家得天独厚的优势，不仅能提出概念和想法，还能把它创造出来。  
-建立长远的理财思维，考虑物品的实际开销。  
-**制定退休计划**，一方面缩减每个月的开支；一方面增加和确保自己的被动收入，包括且不仅限于购买增长型期权、高收益股票、基金、可租赁房产、存入退休账号、版权。  
-退休=财务自由=不会由于财务状况用自己别无选择的方式，将自己的时间花费在不合心意的事情上。  
-
-[The Effective Engineer, Lau2015](https://book.douban.com/subject/26360716/)
-
-[Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman, hoover2010](https://book.douban.com/subject/4924164/)
-
-[卓有成效的程序员](https://book.douban.com/subject/3558788/)
-
-[Pragmatic Thinking and Learning, hunt2011](https://read.douban.com/ebook/1885884/)
-
-[The Seven Stages of Expertise in Software Engineering](http://www.wayland-informatics.com/The%20Seven%20Stages%20of%20Expertise%20in%20Software.htm)
-
-[新事物炒作曲线(un-confirmed), gartner](https://en.wikipedia.org/wiki/Hype_cycle)
-
-[大厂薪资对标](https://duibiao.info/)
-
-[代码精进之路：从码农到工匠](https://book.douban.com/subject/34922776/)
-
-![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE3021df8e914094d063907d68a0ff9d0a/187)
-
-
-skill and self-evaluation
-
-https://firstround.com/review/Responsiveness-New-Efficiency/  
-
-http://www.cs.toronto.edu/~sme/CSC340F/  
-
-https://simplicable.com/new/coding-principles  
-https://about.gitlab.com/handbook/  
-https://en.wikipedia.org/wiki/List_of_software_development_philosophies
-http://blog.vgod.tw/
-https://blog.youxu.info/
-http://blog.54chen.com/
-http://www.yankay.com
-http://www.valleytalk.org
-
-http://people.scs.carleton.ca/~deugo/Patterns/ospdg/
-https://www.cs.cmu.edu/~aldrich/courses/413/
-
-
-# 技术领导力
-![](https://samuraibizgrp.com/wp-content/uploads/2019/08/sales-manangement-sales-leadership-samurai.png)
-
-[Peopleware](https://book.douban.com/subject/25956450/)  
-
-
-## 技术分享、读书会
-分享范围  
-专利  
-论文  
-
-## 技术规划、目标管理
 
 

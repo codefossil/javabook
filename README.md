@@ -9,7 +9,7 @@
 * [心理、教育与学习--个人素质](cognition.md)
 
 ## 软件工程
-* [产品、实施与管理](engineering.md)
+* [产品、实施与管理](product.md)
 * [系统分析和设计](design.md)
 * [软件构建、质保与运维](build.md)
 * [开发技术与工具](framework.md)
@@ -17,7 +17,6 @@
 ## 应用技术
 * [智能分析与挖掘](ai.md)
 * [代码分析](program.md)
-
   
 ## 基础软件与理论
 * [数据系统](database.md) 

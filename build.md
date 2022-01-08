@@ -179,3 +179,72 @@ www.conventionalcommits.org
 https://www.atlassian.com/git/tutorials  
 https://github.com/GetMyle/Guides/wiki/MYLE-GitHub-Flow  
 https://about.gitlab.com/2016/03/08/gitlab-tutorial-its-all-connected/  
+
+
+# 程序员职业素养
+
+
+![](https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naL7zZhFK89LlYkJ4W20egLwiboBTXxNEkTMynE8B117ibfKxP5cc1dRg3vKvwzjJJ6gzicYjplEs2nXw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+[Clean Coder, 2011](https://book.douban.com/subject/11614538/) 
+
+[The Complete Software Developer's Career Guide, sonmez2017](https://book.douban.com/subject/35043940/)  
+软件开发不仅仅是编程，在此之前还需要理清需求（大多数软件项目的目的都是自动化）、适量的设计，写完之后还要调试、测试、部署和监控。  
+
+学习一门新的编程语言最佳实践：真实的项目->Hello World->学习基本的构建模块->区分语言内置特性和标准库->理解并build现有代码->刷题。  
+
+程序员的手艺：开发语言（编译和运行平台、库和框架）、代码结构设计、OOD、算法和数据结构、数据库、源码控制、测试和调试、构建和部署、软件开发方法。  
+
+[cracking the coding interview](https://book.douban.com/subject/26570695/)
+
+[剑指Offer](https://book.douban.com/subject/25910559/)
+
+[软技能](https://book.douban.com/subject/26835090/)  
+至今为止看到软件开发工程师职业最强指南。  
+**拥有商业心态**，把雇主当做软件开发企业的客户。  
+每个人都希望自己很重要。  
+**在一个专业方向上拥有专长**，思考专业化道路是会让自己受益，还是过度限制了自己的选择，类比律师。    
+同时保有全职工作、开源节流、业余时间2小时/天新业务试错。  
+持续不断增强业务能力，**确保长期客户、稳定的新客户**。  
+作为一名软件开发人员，拥有成为一名企业家得天独厚的优势，不仅能提出概念和想法，还能把它创造出来。  
+建立长远的理财思维，考虑物品的实际开销。  
+**制定退休计划**，一方面缩减每个月的开支；一方面增加和确保自己的被动收入，包括且不仅限于购买增长型期权、高收益股票、基金、可租赁房产、存入退休账号、版权。  
+退休=财务自由=不会由于财务状况用自己别无选择的方式，将自己的时间花费在不合心意的事情上。  
+
+[The Effective Engineer, Lau2015](https://book.douban.com/subject/26360716/)
+
+[Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman, hoover2010](https://book.douban.com/subject/4924164/)
+
+[卓有成效的程序员](https://book.douban.com/subject/3558788/)
+
+[Pragmatic Thinking and Learning, hunt2011](https://read.douban.com/ebook/1885884/)
+
+[The Seven Stages of Expertise in Software Engineering](http://www.wayland-informatics.com/The%20Seven%20Stages%20of%20Expertise%20in%20Software.htm)
+
+[新事物炒作曲线(un-confirmed), gartner](https://en.wikipedia.org/wiki/Hype_cycle)
+
+[大厂薪资对标](https://duibiao.info/)
+
+[代码精进之路：从码农到工匠](https://book.douban.com/subject/34922776/)
+
+![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE3021df8e914094d063907d68a0ff9d0a/187)
+
+
+skill and self-evaluation
+
+https://firstround.com/review/Responsiveness-New-Efficiency/  
+
+http://www.cs.toronto.edu/~sme/CSC340F/  
+
+https://simplicable.com/new/coding-principles  
+https://about.gitlab.com/handbook/  
+https://en.wikipedia.org/wiki/List_of_software_development_philosophies
+http://blog.vgod.tw/
+https://blog.youxu.info/
+http://blog.54chen.com/
+http://www.yankay.com
+http://www.valleytalk.org
+
+http://people.scs.carleton.ca/~deugo/Patterns/ospdg/
+https://www.cs.cmu.edu/~aldrich/courses/413/
+
