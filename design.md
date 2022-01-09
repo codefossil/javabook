@@ -301,6 +301,8 @@ https://www.d.umn.edu/~gshute/softeng/principles.html
 
 ## 系统风格、架构模式
 
+> 描述系统的拓扑结构
+
 [Big Ball of MUD, foote97, PLoP](http://www.laputan.org/mud/mud.html) 
 
 [ch9~ch18 Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)  
@@ -322,7 +324,7 @@ https://www.d.umn.edu/~gshute/softeng/principles.html
 实现和部署的耦合。随着越来越多的开发人员和功能，修改同一块代码，推送不同功能会产生dilivery contention。
   
 
-[淘宝技术这十年](https://book.douban.com/subject/24335672/)
+[淘宝技术这十年](https://book.douban.com/subject/24335672/)  
 新招来的同事，根本看不懂原来的业务，摸索着"在合适的地方"加一些合适的代码。  
 "常常是你改了商品相关的某些代码，发现交易出问题了"
 
@@ -419,7 +421,7 @@ DDD不是关于代码设计模式的，也不是以代码为中心的，也不�
 从14章开始战术部分，从代码层面讲怎样维护对象的**不可变性**和**表达力**，怎样平衡值与实体、怎样结合界限上下文设计、怎样平衡贫血和充血实体。  
 
 ## API接口和安全
-契约式设计
+契约式设计  
 https://stripe.com/docs/api/pagination
 
 https://github.com/wuyichen24/spring-microservices-in-action/
