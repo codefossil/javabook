@@ -316,7 +316,7 @@ https://www.d.umn.edu/~gshute/softeng/principles.html
 
 
 ### 单体
-[Don’t Touch My Code!, bird2011, sigsoft, microsoft](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bird2011dtm.pdf)
+[Don’t Touch My Code!, bird2011, sigsoft, microsoft](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bird2011dtm.pdf)  
 在一个二进制上开发人员越多，越容易出错。  
 不同程度的ownership，影响着模块的质量。  
 
@@ -356,7 +356,7 @@ https://blog.pragmaticengineer.com/software-architecture-is-overrated/
 [微服务架构设计, 互联网金融公司](https://gudaoxuri.gitbook.io/microservices-architecture/)
 
 
-[reactive design patterns](https://book.douban.com/subject/25870212/)
+[reactive design patterns](https://book.douban.com/subject/25870212/)  
 PPC/TPC
 
 [A Laboratory For Teaching Object-Oriented Thinking, beck89, oopsla](http://people.cs.pitt.edu/~chang/231/5spec/CRCcard/Beck-LaboratoryForTeachingOO.pdf)

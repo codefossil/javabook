@@ -212,8 +212,6 @@ software project estimation
 
 software sizing, estimation, and risk management
 
-manage it
-
 pmbok
 
 GB/T 37507-2019 项目管理指南
