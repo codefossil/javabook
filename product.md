@@ -318,3 +318,5 @@ http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.
 [软件项目成功之道](https://book.douban.com/subject/6748308/)
 
 [项目计划、进度与控制](https://book.douban.com/subject/10801087/)
+
+[7人团队敏捷管理手册](https://book.douban.com/subject/35481761/)
