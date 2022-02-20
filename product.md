@@ -299,3 +299,22 @@ http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.
 
 
 
+[敏捷革命](https://book.douban.com/subject/27008697/)
+
+[Become an Effective Software Engineering Manager](https://book.douban.com/subject/34944398/)
+
+[Lean Software Systems Engineering for Developers]()
+
+[Accelerate](https://book.douban.com/subject/30192146/)
+
+[Joel on Software](https://book.douban.com/subject/1395496/)
+
+[编程原则](https://book.douban.com/subject/35513153/)
+
+[告别失控](https://book.douban.com/subject/26829089/)
+
+[极客与团队](https://book.douban.com/subject/21372237/)
+
+[软件项目成功之道](https://book.douban.com/subject/6748308/)
+
+[项目计划、进度与控制](https://book.douban.com/subject/10801087/)

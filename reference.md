@@ -14,15 +14,14 @@
 
 # blog
 [Software Developers and Technopreneurs](http://tutorials.jenkov.com/)  
+
 [natureofcode](https://natureofcode.com/book/introduction/)  
+
 [Most influential books for programmers](https://github.com/cs-books/influential-cs-books)  
-[cs-note](https://github.com/CyC2018/CS-Notes/blob/master/notes/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86.md)
 
 [amteur](https://dirtysalt.github.io/html/index.html)
 
 [寒](https://dearhwj.gitbooks.io/itbook/index.html)
-
-[豆瓣cs](https://book.douban.com/tag/计算机科学)
 
 [编程随想](https://program-think.blogspot.com/)
 
