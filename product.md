@@ -1,61 +1,3 @@
-[CS vs SE, Hoare09](https://reinout.vanrees.org/weblog/2009/07/01/ep-keynote.html)  
-[什么是工程](https://en.wikipedia.org/wiki/Engineering)  
-[CS != SE](http://www.cnblogs.com/buaashine/archive/2012/12/12/2813931.html)  
-[We Are All Confident Idiots](https://www.guokr.com/article/439517/)  
-
-[CMU 17-313](https://cmu-313.github.io/?#schedule)
-
-[MIT 16.355](http://sunnyday.mit.edu/16.355/)   
-https://www.cs.uic.edu/~i442/
-
-[CMU-SEI](https://sei.cmu.edu/)  
-[MIT-SAL](http://systemarchitect.mit.edu/index.php)  
-[ICSE Most Influential Paper Award](https://www.sigsoft.org/awards/icseMIPAward.html) 
-
-# 基本问题
-
-![](image/it.drawio.png)
-
-> One of the biggest problems with software is that **it’s complex and abstract**. The result being that it’s hard to visualise the runtime characteristics of a piece of software from diagrams or even the code itself.
-
-[Software Complexity Is Killing Us](https://www.simplethread.com/software-complexity-killing-us/)
-
-[My final post regarding the flaws of Docker/Kubernetes and their eco-system,krubner2019](http://www.smashcompany.com/technology/my-final-post-regarding-the-flaws-of-docker-kubernetes-and-their-eco-system)
-
-[Software Engineering for the 21st Century, mit04](http://www.cs.cmu.edu/~Compose/SEprinciples-pub-rev2.pdf)
-
-[Apprenticeship Patterns](https://www.amazon.com/Apprenticeship-Patterns-Guidance-Aspiring-Craftsman-ebook/dp/B002RMSZ7E)
-
-[The Mythical Man Month, brooks03](https://book.douban.com/subject/1105381/)
-
-[Engeering: An endless frontier, Auyang2004](https://book.douban.com/subject/3287111/)
-
-[Humphrey-SPA award](https://resources.sei.cmu.edu/news-events/events/watts/watts.cfm)  
-[SE-history, 1996](https://www.dagstuhl.de/Reports/96/9635.pdf)  
-https://en.wikipedia.org/wiki/Software_engineering  
-https://en.wikipedia.org/wiki/Software_development  
-
-[Engineering a Safer World, 2012](http://sunnyday.mit.edu/safer-world/index.html)  
-[SE, 1968](http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF)  
-[No Silver Bullet, 1986](http://sunnyday.mit.edu/16.355/BrooksNoSilverBullet2.html)  
-[Software Engineering Economics, 1984](http://csse.usc.edu/TECHRPTS/1984/usccse84-500/usccse84-500.pdf)  
-[SWEBOK, 2004](https://www.computer.org/web/swebok/index)  
-
-[构建之法](https://book.douban.com/subject/27069503/)  
-[A Multi-Decade Perspective, Scacchi, 2018](https://www.ics.uci.edu/~wscacchi/Papers/New/IEEE-Computer-Scacchi-2018.pdf)  
-[自我评价](http://www.cnblogs.com/xinz/p/3852177.html)
-
-
-[What Every Engineer Should Know About Software Engineering, 07](https://book.douban.com/subject/2607747/)
-
-[Software Engineering at Google: Lessons Learned from Programming Over Time, winters2020](https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791/ref=sr_1_1?crid=B3OX7H0MRN3B&dchild=1&keywords=software+engineering+at+google&qid=1618715077&s=books&sprefix=software+en%2Cstripbooks-intl-ship%2C530&sr=1-1)
-
-
-软件产品开发为什么失败  
-软件、软件危机、软件工程  
-测试写到什么程度算足够  
-
-[software engineering at google, henderson2017](https://arxiv.org/pdf/1702.01715.pdf)
 
 
 # 业务战略和产品
@@ -135,12 +77,12 @@ https://www.smartcity.team/consultingskills/experience/%E4%B8%9A%E5%8A%A1%E6%9E%
 
 # 立项批准、系统整体功能需求、整体解决方案
 
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE6287ea342110009b3ee392f41eb98c61/132)
+![](image/process.drawio.png)
 
 **项目经理**的核心技能是管理（计划，组织，领导，控制）
 
 确认解决的问题  
-对于公司来说，ROI分析  
+对于公司来说，需要进行ROI分析，以决定是否做/自研or外包  
 确认系统的功能、初步需要的经费  
 输出System Vision Document  
 召集所有核心人员，启动立项会议  
@@ -154,7 +96,8 @@ PM作为中心，需要对外汇报给客户、监督委员会，对内组织资
 敏捷项目管理需要平衡灵活性和对混沌的控制。  
 大多数公司都是不停的想办法提高市场份额=长期+短期计划。  
 
-[Manage It, johanna07](https://book.douban.com/subject/2143051/)  
+[Manage It, johanna07](https://book.douban.com/subject/2143051/) 
+
 
 [A Guide to the Project Management Body of Knowledge](https://book.douban.com/subject/24697645/)  
 [汪博士解读PMP考试](https://book.douban.com/subject/24713754/)  
@@ -163,6 +106,9 @@ PM作为中心，需要对外汇报给客户、监督委员会，对内组织资
 
 
 # 整体项目计划、迭代计划、监控
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE6287ea342110009b3ee392f41eb98c61/132)
+
+
 > 计划毫无用处，但是制订计划必不可少
 
 根据Vision文档，复查业务需求  
@@ -180,7 +126,7 @@ PM作为中心，需要对外汇报给客户、监督委员会，对内组织资
 
 [技术核心管理者的时间](https://www.infoq.cn/article/aALWwYEdxFuuisM8e9u2)
 
-# 工期估算
+# 团队规模，工期估算和开发成本
 
 https://www.cnblogs.com/odoouse/p/13245945.html
 
@@ -320,3 +266,7 @@ http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.
 [项目计划、进度与控制](https://book.douban.com/subject/10801087/)
 
 [7人团队敏捷管理手册](https://book.douban.com/subject/35481761/)
+
+[极简项目管理：让目标落地、把事办成并使成功可复制的方法论](https://book.douban.com/subject/35219808/)
+
+[敏捷转型：打造VUCA时代的高效能组织](https://book.douban.com/subject/30359317/)
