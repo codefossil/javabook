@@ -116,7 +116,9 @@ PM作为中心，需要对外汇报给客户、监督委员会，对内组织资
 确定子系统组件、边界  
 规划WBS  
 
+[Practical Ways to Manage Yourself: Modern Management Made Easy](https://www.amazon.com/Practical-Ways-Manage-Yourself-Management/dp/1943487138)
 
+[Become an Effective Software Engineering Manager](https://www.amazon.com/Become-Effective-Software-Engineering-Manager/dp/1680507249)
 
 [凤凰项目，2015](https://book.douban.com/subject/26644070/)  
 
@@ -270,3 +272,23 @@ http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.
 [极简项目管理：让目标落地、把事办成并使成功可复制的方法论](https://book.douban.com/subject/35219808/)
 
 [敏捷转型：打造VUCA时代的高效能组织](https://book.douban.com/subject/30359317/)
+
+[Making things hanppen]
+
+[essential skills for the agile developer]
+
+[create your successful agile project]
+
+[become an effective software engineering manager]
+
+
+[start with why]
+
+[project management for the unofficial project manager]
+
+[agile project management with scrum]
+
+[The Successful Software Manager The definitive guide to growing from developer to manager]
+
+
+[learning domain-driven design]
