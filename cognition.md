@@ -24,7 +24,10 @@ https://www.open.edu/openlearn/ocw/mod/oucontent/view.php?id=20033&section=1.1
 更好的看待和养育孩子。  
 结合论文，详细介绍了人的一生每个重要阶段生理和心理的发展情况。  
 儿童从出生到青年，身体发育、自我理解、语言发展、情绪管理。  
-家庭教养方式、社会大环境的影响。  
+家庭教养方式、社会大环境的影响。
+
+[哈佛幸福课]()
+
 
 [伍尔福克教育心理学, woolfolk2015](https://book.douban.com/subject/26744183/)  
 

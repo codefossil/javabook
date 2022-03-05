@@ -8,10 +8,11 @@
 * [科学、哲学与历史--追求真理](science.md)
 * [心理、教育与学习--个人素质](cognition.md)
 
-## 软件工程
-* [产品、实施与管理](product.md)
+## 产品研发
+* [产品和项目](product.md)
 * [系统分析和设计](design.md)
-* [软件构建、质保与运维](build.md)
+* [软件工程](engineer.md)
+* [软件构建](build.md)
 * [开发技术与工具](framework.md)
 
 ## 应用技术
