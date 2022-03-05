@@ -10,6 +10,8 @@
 
 [产品研发管理](https://book.douban.com/subject/10433727/)
 
+[重新定义公司]()
+
 ## 企业架构
 http://www.woshipm.com/zhichang/2879933.html
 

@@ -50,13 +50,12 @@ https://en.wikipedia.org/wiki/Software_development
 
 [Software Engineering at Google: Lessons Learned from Programming Over Time, winters2020](https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791/ref=sr_1_1?crid=B3OX7H0MRN3B&dchild=1&keywords=software+engineering+at+google&qid=1618715077&s=books&sprefix=software+en%2Cstripbooks-intl-ship%2C530&sr=1-1)
 
+颠覆了我对软件工程的认知。  
+
 
 软件产品开发为什么失败  
 软件、软件危机、软件工程  
 测试写到什么程度算足够  
-
-[software engineering at google, henderson2017](https://arxiv.org/pdf/1702.01715.pdf)
-
 
 # 代码复杂度、结构度量
 ![](https://www.synopsys.com/blogs/software-security/wp-content/uploads/LinesOfCodeInMillions.png)
@@ -72,38 +71,12 @@ bug
 http://faculty.cse.tamu.edu/ritchey/courses/csce431/winter20/  
 https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/
 
-[The Humble Programmer, turing lecture](https://dl.acm.org/doi/10.1145/355604.361591)
 
-[cmu17-214, Principles of Software Construction](https://www.cs.cmu.edu/~charlie/courses/17-214/2020-spring/)  
-到目前为止看到的关于软件开发最棒的课程。Josh Bloch是导师。  
-现代软件开发已经过渡到需要理解和利用现成的构建块来构件软件系统。  
-软件质量的度量是什么，编写代码之前需要想想这些度量是否需要满足。  
-设计过程=整理工作+结构化理解+方便沟通，通过设计目标来评估设计、设计原则来描述最佳实践、设计模式来积累经验。 
-class=类型+API+实现。  
-怎样为易变的代码做设计=接口用来处理易改的部分+信息隐藏/封装是设计好坏最重要的因素。  
-怎样为复用代码做设计=继承+代理组合+设计模式
-
-[COMP 310](https://www.clear.rice.edu/comp310/f19/)
-
-[programming principles](https://github.com/webpro/programming-principles)  
-
-[Code as Design: Three Essays](https://www.developerdotstar.com/mag/articles/reeves_design_main.html)  
-
-https://www.google.com/books/edition/Object_Oriented_Construction_Handbook/4edsQ97mEwUC?hl=en&gbpv=0
-
-http://squall.cs.ntou.edu.tw/cpp/103spring/slides/CPP16-DisciplinedCodingStyles.pdf
-
-http://www.revision-zero.org/reuse
-
-https://cmu-17-356.github.io/
-
-https://www.coursicle.com/cmu/courses/ISR/17480/
-
-
-# 程序员职业素养
-
+# 软件工程师人性、个人发展
 
 ![](https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naL7zZhFK89LlYkJ4W20egLwiboBTXxNEkTMynE8B117ibfKxP5cc1dRg3vKvwzjJJ6gzicYjplEs2nXw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+[The Humble Programmer, turing lecture](https://dl.acm.org/doi/10.1145/355604.361591)
 
 [Clean Coder, 2011](https://book.douban.com/subject/11614538/) 
 

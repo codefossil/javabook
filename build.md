@@ -1,3 +1,31 @@
+
+
+[cmu17-214, Principles of Software Construction](https://www.cs.cmu.edu/~charlie/courses/17-214/2020-spring/)  
+到目前为止看到的关于软件开发最棒的课程。Josh Bloch是导师。  
+现代软件开发已经过渡到需要理解和利用现成的构建块来构件软件系统。  
+软件质量的度量是什么，编写代码之前需要想想这些度量是否需要满足。  
+设计过程=整理工作+结构化理解+方便沟通，通过设计目标来评估设计、设计原则来描述最佳实践、设计模式来积累经验。 
+class=类型+API+实现。  
+怎样为易变的代码做设计=接口用来处理易改的部分+信息隐藏/封装是设计好坏最重要的因素。  
+怎样为复用代码做设计=继承+代理组合+设计模式
+
+[COMP 310](https://www.clear.rice.edu/comp310/f19/)
+
+[programming principles](https://github.com/webpro/programming-principles)  
+
+[Code as Design: Three Essays](https://www.developerdotstar.com/mag/articles/reeves_design_main.html)  
+
+
+https://www.google.com/books/edition/Object_Oriented_Construction_Handbook/4edsQ97mEwUC?hl=en&gbpv=0
+
+http://squall.cs.ntou.edu.tw/cpp/103spring/slides/CPP16-DisciplinedCodingStyles.pdf
+
+http://www.revision-zero.org/reuse
+
+https://cmu-17-356.github.io/
+
+https://www.coursicle.com/cmu/courses/ISR/17480/
+
 # 分析模型到设计模型
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE7d38c424dc9f719a17b83d9ebec429f7/183)
 
@@ -63,6 +91,7 @@ OOD是一种用例驱动，通过确定各种类、方法和之间的消息来�
 [software foundation](https://softwarefoundations.cis.upenn.edu/)
 
 [A Discipline of Programming, Dijkstra76](https://book.douban.com/subject/24841112/)  
+
 
 https://ngte-se.gitbook.io/  
 https://github.com/xingshaocheng/architect-awesome 
