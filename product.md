@@ -130,45 +130,6 @@ PM作为中心，需要对外汇报给客户、监督委员会，对内组织资
 
 [技术核心管理者的时间](https://www.infoq.cn/article/aALWwYEdxFuuisM8e9u2)
 
-# 团队规模，工期估算和开发成本
-
-https://www.cnblogs.com/odoouse/p/13245945.html
-
-https://diegobasch.com/why-software-development-estimations-are-regu
-
-[中国软件行业基准数据](http://www.bscea.org/uploads/soft/201015/CSBMK-2020%E5%B9%B4%E4%B8%AD%E5%9B%BD%E8%BD%AF%E4%BB%B6%E8%A1%8C%E4%B8%9A%E5%9F%BA%E5%87%86%E6%95%B0%E6%8D%AE.pdf)
-
-中国软件估算大会
-
-https://www.codeproject.com/Articles/701642/Software-Estimation-by-example
-
-[Software Estimation](https://book.douban.com/subject/1783543/)
-
-https://www.atlassian.com/agile/project-management/estimation
-
-https://pragprog.com/titles/gdestimate/software-estimation-without-guessing/
-
-https://www.scrum.org/forum/scrum-forum/31862/story-points-complexity-vs-effort  
-
-estimation factors in effort and complexity
-
-敏捷估算与规划
-
-practical software project estimation
-
-software estimation without guessing
-
-software project estimation
-
-software sizing, estimation, and risk management
-
-pmbok
-
-GB/T 37507-2019 项目管理指南
-
-https://developer.aliyun.com/article/206424
-
-[Software Metrics](https://people.ucalgary.ca/~far/Lectures/SENG421/)
 
 # 回顾、复查、总结迭代
 软件质量度量  

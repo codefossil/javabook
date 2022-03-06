@@ -50,12 +50,58 @@ https://en.wikipedia.org/wiki/Software_development
 
 [Software Engineering at Google: Lessons Learned from Programming Over Time, winters2020](https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791/ref=sr_1_1?crid=B3OX7H0MRN3B&dchild=1&keywords=software+engineering+at+google&qid=1618715077&s=books&sprefix=software+en%2Cstripbooks-intl-ship%2C530&sr=1-1)
 
-颠覆了我对软件工程的认知。  
-
+颠覆了我对软件工程的认知  
+软件工程是时间在编程上增加的一个维度  
+随着组织变大、项目（版本）变多，开发产品和流程的效率是怎样的？  
 
 软件产品开发为什么失败  
 软件、软件危机、软件工程  
-测试写到什么程度算足够  
+测试写到什么程度算足够
+
+# 团队规模、效率
+> 人员构成（分工，人数）
+> 研发交易成本决策/投入力度, 采购or自研
+
+# 工期估算
+
+> 工程师花多少精力
+
+https://www.cnblogs.com/odoouse/p/13245945.html
+
+https://diegobasch.com/why-software-development-estimations-are-regu
+
+[中国软件行业基准数据](http://www.bscea.org/uploads/soft/201015/CSBMK-2020%E5%B9%B4%E4%B8%AD%E5%9B%BD%E8%BD%AF%E4%BB%B6%E8%A1%8C%E4%B8%9A%E5%9F%BA%E5%87%86%E6%95%B0%E6%8D%AE.pdf)
+
+中国软件估算大会
+
+https://www.codeproject.com/Articles/701642/Software-Estimation-by-example
+
+[Software Estimation](https://book.douban.com/subject/1783543/)
+
+https://www.atlassian.com/agile/project-management/estimation
+
+https://pragprog.com/titles/gdestimate/software-estimation-without-guessing/
+
+https://www.scrum.org/forum/scrum-forum/31862/story-points-complexity-vs-effort  
+
+estimation factors in effort and complexity
+
+敏捷估算与规划
+
+practical software project estimation
+
+software estimation without guessing
+
+software project estimation
+
+software sizing, estimation, and risk management
+
+pmbok
+
+GB/T 37507-2019 项目管理指南
+
+https://developer.aliyun.com/article/206424
+
 
 # 代码复杂度、结构度量
 ![](https://www.synopsys.com/blogs/software-security/wp-content/uploads/LinesOfCodeInMillions.png)
@@ -67,6 +113,9 @@ https://en.wikipedia.org/wiki/Software_development
 代码审查   
 bug  
 故障  
+
+[Software Metrics](https://people.ucalgary.ca/~far/Lectures/SENG421/)
+
 
 http://faculty.cse.tamu.edu/ritchey/courses/csce431/winter20/  
 https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/
