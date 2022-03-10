@@ -27,6 +27,10 @@ https://www.open.edu/openlearn/ocw/mod/oucontent/view.php?id=20033&section=1.1
 家庭教养方式、社会大环境的影响。
 
 [哈佛幸福课]()
+人们很容易忽略一些明显的问题。  
+积极心理学的本质就是健康本源。
+健康模型更注重培养能力，而不只是改正错误。  
+心理学关注的不仅仅是疾病和健康，还包括工作、教育、洞察力、爱、成长和玩乐。    
 
 
 [伍尔福克教育心理学, woolfolk2015](https://book.douban.com/subject/26744183/)  

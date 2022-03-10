@@ -12,6 +12,14 @@ https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html
 -Xms2048m -Xmx2048m -XX:NewRatio=2 -XX:+UseParNewGC -XX:ParallelGCThreads=2 -XX:+UseConcMarkSweepGC
 -verbose:gc -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -Xloggc:/var/log/app/jvm.log
 
+
+```python
+java -Xms500m -Xmx500m -verbose:gc -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -jar demo-0.0.1-SNAPSHOT.jar
+
+# container
+java -XX:InitialRAMPercentage=60.0 -XX:MaxRAMPercentage=60.0 -verbose:gc -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -jar demo-0.0.1-SNAPSHOT.jar
+```
+
 # JVM内存布局
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEd3a1b1c6b92e0b41c72b8a3336ca1c6f/157)
 
