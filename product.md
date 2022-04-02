@@ -98,7 +98,22 @@ PM作为中心，需要对外汇报给客户、监督委员会，对内组织资
 敏捷项目管理需要平衡灵活性和对混沌的控制。  
 大多数公司都是不停的想办法提高市场份额=长期+短期计划。  
 
+[What Makes a Great Manager of Software Engineers, Kalliamvakou17](https://www.microsoft.com/en-us/research/uploads/prod/2018/06/kalliamvakou-tse-2018.pdf)
+
+[软件开发之殇](http://career_book.siwei.me/)
+
+[The Manager's Path, Fournier17](https://book.douban.com/subject/26997855/)  
+
 [Manage It, johanna07](https://book.douban.com/subject/2143051/) 
+
+[Become an Effective Software Engineering Manager](https://www.amazon.com/Become-Effective-Software-Engineering-Manager/dp/1680507249)
+创造团队和条件，让其他人成功、学习、心理安全。 
+工程师的特点和心流。  (怎样保持心流)。   
+团队、领导。  
+线上问题、紧急中断、拜访者到来、会议、跟进列表
+使用工具来帮助自己不会忘记任何事情。  
+信息收集、决策、推进、榜样  
+管理的输出就是团队的输出、被管理影响的输出  
 
 
 [A Guide to the Project Management Body of Knowledge](https://book.douban.com/subject/24697645/)  
