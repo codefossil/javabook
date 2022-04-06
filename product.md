@@ -12,6 +12,12 @@
 
 [重新定义公司]()
 
+[Inspired, Cagan2017](https://book.douban.com/subject/27161852/)
+
+[Empowered, Cagan2020](https://book.douban.com/subject/35157237/)
+
+[High Growth Handbook: Scaling Startups From 10 to 10,000 People](https://www.amazon.com/High-Growth-Handbook-Elad-Gil/dp/1732265100/ref=pd_sbs_sccl_5/138-8628425-9428532?pd_rd_w=rWoqO&pf_rd_p=3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_r=MPGVN9HC2Q1M2XB4Y5TJ&pd_rd_r=8ea9f712-29da-4fed-bc01-a2c6b7f36cce&pd_rd_wg=ikXM4&pd_rd_i=1732265100&psc=1)
+
 ## 企业架构
 http://www.woshipm.com/zhichang/2879933.html
 
@@ -104,18 +110,6 @@ PM作为中心，需要对外汇报给客户、监督委员会，对内组织资
 
 [The Manager's Path, Fournier17](https://book.douban.com/subject/26997855/)  
 
-[Manage It, johanna07](https://book.douban.com/subject/2143051/) 
-
-[Become an Effective Software Engineering Manager](https://www.amazon.com/Become-Effective-Software-Engineering-Manager/dp/1680507249)
-创造团队和条件，让其他人成功、学习、心理安全。 
-工程师的特点和心流。  (怎样保持心流)。   
-团队、领导。  
-线上问题、紧急中断、拜访者到来、会议、跟进列表
-使用工具来帮助自己不会忘记任何事情。  
-信息收集、决策、推进、榜样  
-管理的输出就是团队的输出、被管理影响的输出  
-
-
 [A Guide to the Project Management Body of Knowledge](https://book.douban.com/subject/24697645/)  
 [汪博士解读PMP考试](https://book.douban.com/subject/24713754/)  
 
@@ -154,7 +148,7 @@ PM作为中心，需要对外汇报给客户、监督委员会，对内组织资
 
 [程序员度量](https://book.douban.com/subject/21365482/)
 
-[Team Topologies: Organizing Business and Technology Teams for Fast Flow](https://book.douban.com/subject/35528423/)
+
 
 # 不确定的SDLC、软件开发过程
 
@@ -226,8 +220,6 @@ http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.
 
 
 [敏捷革命](https://book.douban.com/subject/27008697/)
-
-[Become an Effective Software Engineering Manager](https://book.douban.com/subject/34944398/)
 
 [Lean Software Systems Engineering for Developers]()
 

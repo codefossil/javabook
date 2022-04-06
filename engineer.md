@@ -1,7 +1,4 @@
-[CS vs SE, Hoare09](https://reinout.vanrees.org/weblog/2009/07/01/ep-keynote.html)  
-[什么是工程](https://en.wikipedia.org/wiki/Engineering)  
-[CS != SE](http://www.cnblogs.com/buaashine/archive/2012/12/12/2813931.html)  
-[We Are All Confident Idiots](https://www.guokr.com/article/439517/)  
+
 
 [CMU 17-313](https://cmu-313.github.io/?#schedule)
 
@@ -12,13 +9,39 @@ https://www.cs.uic.edu/~i442/
 [MIT-SAL](http://systemarchitect.mit.edu/index.php)  
 [ICSE Most Influential Paper Award](https://www.sigsoft.org/awards/icseMIPAward.html) 
 
+
+https://blog.pragmaticengineer.com/
+
 # 基本问题
 
-![](image/it.drawio.png)
+[CS vs SE, Hoare09](https://reinout.vanrees.org/weblog/2009/07/01/ep-keynote.html)  
+[什么是工程](https://en.wikipedia.org/wiki/Engineering)  
+[CS != SE](http://www.cnblogs.com/buaashine/archive/2012/12/12/2813931.html)  
+[We Are All Confident Idiots](https://www.guokr.com/article/439517/)  
 
-> One of the biggest problems with software is that **it’s complex and abstract**. The result being that it’s hard to visualise the runtime characteristics of a piece of software from diagrams or even the code itself.
 
-[Software Complexity Is Killing Us](https://www.simplethread.com/software-complexity-killing-us/)
+[Software Engineering at Google: Lessons Learned from Programming Over Time, winters2020](https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791/ref=sr_1_1?crid=B3OX7H0MRN3B&dchild=1&keywords=software+engineering+at+google&qid=1618715077&s=books&sprefix=software+en%2Cstripbooks-intl-ship%2C530&sr=1-1)
+
+颠覆了我对软件工程的认知  
+软件工程是时间在编程上增加的一个维度  
+随着组织变大、项目（版本）变多，开发产品和流程的效率是怎样的？我们必须选择和依赖更加严格的工程方法。    
+
+[Become an Effective Software Engineering Manager, stanier2020](https://www.amazon.com/Become-Effective-Software-Engineering-Manager/dp/1680507249)
+
+带我入门管理的一本书，
+创造团队和条件，让其他人成功、学习、心理安全。 
+工程师的特点和心流。  (怎样保持心流)。   
+团队、领导。  
+线上问题、紧急中断、拜访者到来、会议、跟进列表
+使用工具来帮助自己不会忘记任何事情。  
+信息收集、决策、推进、榜样  
+管理的输出就是团队的输出、被管理影响的输出  
+管理不仅仅意味着管人，还要管流程、招聘、沟通、交付  
+
+[格鲁夫给经理人的第一课，Grove95](https://book.douban.com/subject/27178870/)
+
+[An Elegant Puzzle, Larson2019](https://book.douban.com/subject/33464445/)
+
 
 [My final post regarding the flaws of Docker/Kubernetes and their eco-system,krubner2019](http://www.smashcompany.com/technology/my-final-post-regarding-the-flaws-of-docker-kubernetes-and-their-eco-system)
 
@@ -30,37 +53,46 @@ https://www.cs.uic.edu/~i442/
 
 [Engeering: An endless frontier, Auyang2004](https://book.douban.com/subject/3287111/)
 
-[Humphrey-SPA award](https://resources.sei.cmu.edu/news-events/events/watts/watts.cfm)  
+[Humphrey-SPA award](https://resources.sei.cmu.edu/news-events/events/watts/watts.cfm) 
+
 [SE-history, 1996](https://www.dagstuhl.de/Reports/96/9635.pdf)  
 https://en.wikipedia.org/wiki/Software_engineering  
 https://en.wikipedia.org/wiki/Software_development  
 
 [Engineering a Safer World, 2012](http://sunnyday.mit.edu/safer-world/index.html)  
+
 [SE, 1968](http://homepages.cs.ncl.ac.uk/brian.randell/NATO/nato1968.PDF)  
+
 [No Silver Bullet, 1986](http://sunnyday.mit.edu/16.355/BrooksNoSilverBullet2.html)  
+
 [Software Engineering Economics, 1984](http://csse.usc.edu/TECHRPTS/1984/usccse84-500/usccse84-500.pdf)  
+
 [SWEBOK, 2004](https://www.computer.org/web/swebok/index)  
 
 [构建之法](https://book.douban.com/subject/27069503/)  
+
 [A Multi-Decade Perspective, Scacchi, 2018](https://www.ics.uci.edu/~wscacchi/Papers/New/IEEE-Computer-Scacchi-2018.pdf)  
+
 [自我评价](http://www.cnblogs.com/xinz/p/3852177.html)
 
 
 [What Every Engineer Should Know About Software Engineering, 07](https://book.douban.com/subject/2607747/)
 
-[Software Engineering at Google: Lessons Learned from Programming Over Time, winters2020](https://www.amazon.com/Software-Engineering-Google-Lessons-Programming/dp/1492082791/ref=sr_1_1?crid=B3OX7H0MRN3B&dchild=1&keywords=software+engineering+at+google&qid=1618715077&s=books&sprefix=software+en%2Cstripbooks-intl-ship%2C530&sr=1-1)
 
-颠覆了我对软件工程的认知  
-软件工程是时间在编程上增加的一个维度  
-随着组织变大、项目（版本）变多，开发产品和流程的效率是怎样的？  
+
+[Manage It, johanna07](https://book.douban.com/subject/2143051/) 
+
 
 软件产品开发为什么失败  
 软件、软件危机、软件工程  
 测试写到什么程度算足够
 
+
 # 团队规模、效率
 > 人员构成（分工，人数）
 > 研发交易成本决策/投入力度, 采购or自研
+
+[Team Topologies: Organizing Business and Technology Teams for Fast Flow](https://book.douban.com/subject/35528423/)
 
 # 工期估算
 
@@ -104,6 +136,10 @@ https://developer.aliyun.com/article/206424
 
 
 # 代码复杂度、结构度量
+
+> One of the biggest problems with software is that **it’s complex and abstract**. The result being that it’s hard to visualise the runtime characteristics of a piece of software from diagrams or even the code itself.
+
+
 ![](https://www.synopsys.com/blogs/software-security/wp-content/uploads/LinesOfCodeInMillions.png)
 
 重复代码数  
@@ -113,6 +149,9 @@ https://developer.aliyun.com/article/206424
 代码审查   
 bug  
 故障  
+
+
+[Software Complexity Is Killing Us](https://www.simplethread.com/software-complexity-killing-us/)
 
 [Software Metrics](https://people.ucalgary.ca/~far/Lectures/SENG421/)
 
