@@ -32,6 +32,10 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 
 [Design It!: From Programmer to Software Architect](https://book.douban.com/subject/34795642/)
 
+https://developer.aliyun.com/article/661516
+
+技术思维、业务思维到框架思维
+https://www.36dianping.com/dianping/2840103031
 
 ## 发现需求、干系人、需求引出
 
@@ -204,6 +208,8 @@ http://wiki.ccose.org/index.php/%E9%A6%96%E9%A1%B5
 与领域干系人开会时，捕捉关键的关注点，并转换成规格。  
 善于发现需求文档中，隐藏的规格信息。  
 存在这样一种映射=领域关注点->架构规则组合->技术实现方案  
+
+
 
 [Quality Models in Software Engineering Literature, Al-Qutaish09](http://www.sciencepub.net/american/am0603/22_2208_Qutaish_am0603_166_175.pdf)
 

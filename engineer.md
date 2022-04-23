@@ -203,8 +203,6 @@ https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/
 
 [新事物炒作曲线(un-confirmed), gartner](https://en.wikipedia.org/wiki/Hype_cycle)
 
-[大厂薪资对标](https://duibiao.info/)
-
 [代码精进之路：从码农到工匠](https://book.douban.com/subject/34922776/)
 
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE3021df8e914094d063907d68a0ff9d0a/187)
@@ -228,3 +226,10 @@ http://www.valleytalk.org
 http://people.scs.carleton.ca/~deugo/Patterns/ospdg/
 https://www.cs.cmu.edu/~aldrich/courses/413/
 
+写给工程师的十条精进原则  
+https://tech.meituan.com/2018/08/16/10-principles-for-engineers.html
+
+https://www.cnblogs.com/cicada-smile/p/14579547.html
+
+从码农到技术总监，如何提升自我修养？
+https://new.qq.com/omn/20190824/20190824A049H300.html?pc  
