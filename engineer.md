@@ -233,3 +233,7 @@ https://www.cnblogs.com/cicada-smile/p/14579547.html
 
 从码农到技术总监，如何提升自我修养？
 https://new.qq.com/omn/20190824/20190824A049H300.html?pc  
+
+
+Why Motivating People Doesn't Work . . . and What Does  
+https://www.amazon.com/Motivating-People-Doesnt-Work-What/dp/1626569452/ref=sr_1_18?crid=U700ZYNJZF0A&keywords=microservice&qid=1650727070&s=books&sprefix=microserv%2Cstripbooks-intl-ship%2C1149&sr=1-18

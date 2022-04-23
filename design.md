@@ -353,7 +353,11 @@ https://www.d.umn.edu/~gshute/softeng/principles.html
 
 [Building Microservice](https://book.douban.com/subject/25881698/)  
 
-[Microservices Patterns: With Examples in Java, 2019](https://book.douban.com/subject/33425123/)  
+[Microservices Patterns: With Examples in Java, 2019](https://book.douban.com/subject/33425123/) 
+
+[Spring Microservices in Action](https://book.douban.com/subject/27005082/)
+
+[Strategic Monoliths and Microservices: Driving Innovation Using Purposeful Architecture](https://www.amazon.com/dp/0137355467/ref=syn_sd_onsite_desktop_280?psc=1&pd_rd_plhdr=t&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFCOFhJRkRQMkVSSFYmZW5jcnlwdGVkSWQ9QTA5Mzc2NjkzNE1DWVhGWVk5NFU3JmVuY3J5cHRlZEFkSWQ9QTAyNTMzNzE1WktFRTVaOTkwTUMmd2lkZ2V0TmFtZT1zZF9vbnNpdGVfZGVza3RvcCZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=)
 
 https://docs.microsoft.com/en-us/azure/architecture/microservices/migrate-monolith  
 http://www.mit.edu/~richh/writings/  
@@ -505,7 +509,12 @@ chart&flow
 
 [高性能MySQL(第3版)](https://book.douban.com/subject/23008813/)  
 
-# 分析和评估架构风险
+# 软件架构评价
+
+[Software Architecture Metrics]()
+
+
+## 分析和评估架构风险
 
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE65e5f10832c4cf8b203fcf03a0a6199f/181)
 
