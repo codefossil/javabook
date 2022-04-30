@@ -34,6 +34,9 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 
 https://developer.aliyun.com/article/661516
 
+架构师手册
+https://tonydeng.github.io/architect-manual/
+
 技术思维、业务思维到框架思维
 https://www.36dianping.com/dianping/2840103031
 
