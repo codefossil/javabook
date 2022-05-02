@@ -94,6 +94,20 @@ https://en.wikipedia.org/wiki/Software_development
 
 [Team Topologies: Organizing Business and Technology Teams for Fast Flow](https://book.douban.com/subject/35528423/)
 
+[软件研发效能提升实践](https://blog.csdn.net/programmer_editor/article/details/121792959)
+
+
+[软件工程能力漫谈](https://www.infoq.cn/article/vtvqwb0akyfidxatfhfu)
+
+[百度现代化研发效能的提效与创新之路](https://www.163.com/dy/article/H5L9OCU50511CUMI.html)
+
+http://www.devopsstandard.cn/index.html
+
+[研发运营一体化（DevOps）能力成熟度模型](https://www.sohu.com/a/541438015_121216336)
+
+https://cloud.ofweek.com/news/2022-02/ART-178804-8420-30549630.html
+
+
 # 工期估算
 
 > 工程师花多少精力

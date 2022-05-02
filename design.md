@@ -31,6 +31,11 @@ http://www.umsl.edu/~sauterv/analysis/analysis_links.html
 [大话软件工程——需求分析与软件设计](https://book.douban.com/subject/35044776/)
 
 [Design It!: From Programmer to Software Architect](https://book.douban.com/subject/34795642/)
+理解->探索->评估->决定
+
+[An Introduction to Software Architecture, garlan94](https://www.cs.cmu.edu/afs/cs/project/able/ftp/intro_softarch/intro_softarch.pdf)
+
+[What do software architects really do? Kruchten08]()
 
 https://developer.aliyun.com/article/661516
 
@@ -196,7 +201,7 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 
 http://wiki.ccose.org/index.php/%E9%A6%96%E9%A1%B5
 
-## 确定系统规格、评价准则（非功能需求、质量属性）
+## 确定系统规格（非功能需求、质量属性）
 
 ![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE1a06e5043df9f3d736835d51d8d7738d/179)
 
@@ -241,7 +246,146 @@ http://wiki.ccose.org/index.php/%E9%A6%96%E9%A1%B5
 引入缓存、虚拟化、性能调优、高性能硬件、开源方案  
 
 
-<br />
+## 系统风格、架构模式
+
+> 描述系统的拓扑结构
+
+![](image/arch-style.drawio.png)
+
+[Big Ball of MUD, foote97, PLoP](http://www.laputan.org/mud/mud.html) 
+
+[ch9~ch18 Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)  
+充分评估分布式架构中的网络不可用、延迟、带宽、数据安全。  
+分布式架构需要解决分布式日志、分布式事务、通信契约问题。  
+按技术分层单体架构，权衡整体快速修改 | 专家，起初简单高效；越往后，修改后，测试和部署越麻烦。  
+复用与耦合需要权衡。   
+架构演变影响因素：对过去的反思、整个开发生态改变。  
+架构选择因素：影响规格的业务、数据架构、组织变化。  
+架构决策：单体还是分布式、数据流、同步还是异步服务间通信。 
+
+
+### 单体（模块化/分布式）
+[Don’t Touch My Code!, bird2011, sigsoft, microsoft](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bird2011dtm.pdf)  
+在一个二进制上开发人员越多，越容易出错。  
+不同程度的ownership，影响着模块的质量。  
+
+[ch1, Monolith to Microservices, newman2019](https://book.douban.com/subject/33415093/)  
+实现和部署的耦合。随着越来越多的开发人员和功能，修改同一块代码，推送不同功能会产生dilivery contention。
+  
+
+[淘宝技术这十年](https://book.douban.com/subject/24335672/)  
+新招来的同事，根本看不懂原来的业务，摸索着"在合适的地方"加一些合适的代码。  
+"常常是你改了商品相关的某些代码，发现交易出问题了"
+
+[Your Distributed Monoliths are secretly plotting against you](https://joaovasques.medium.com/your-distributed-monoliths-are-secretly-plotting-against-you-4c1b20324a31)  
+服务之间复杂的调用，最后又会变成MUD。  
+
+
+### 微服务+DDD
+[Monolith to Microservices, newman2019](https://book.douban.com/subject/33415093/)  
+微服务提供了一种进程隔离的思考逻辑，使得团队之间可以采用独立的技术/数据库，以解决复杂的业务问题。  
+从不同方面总结了，迁移到微服务的各种模式。  
+演化优于一步到位，满足当前业务需求、迭代优化、重构重写。  
+
+|   | :sunny:  |:cloud: |
+|---|---|---|
+|边界确定  | 提升团队自治  |自治和统一|
+|低耦合/高内聚  | 快速上线  |
+| | 更多开发人员 |ownership模糊|
+|按业务能力拆分  | 按负载扩展  |分析报告复杂|
+| | 新技术应用 |本地开发和调试复杂|
+| |健壮   |监控和故障诊断复杂|
+| |   |需要部署/配置/管理的东西过多|
+| |   |end-to-end测试复杂|
+
+[Building Microservice](https://book.douban.com/subject/25881698/)  
+
+[Microservices Patterns: With Examples in Java, 2019](https://book.douban.com/subject/33425123/) 
+
+[Spring Microservices in Action](https://book.douban.com/subject/27005082/)
+
+[Strategic Monoliths and Microservices: Driving Innovation Using Purposeful Architecture](https://www.amazon.com/dp/0137355467/)
+
+[Technology Strategy Patterns](https://book.douban.com/subject/30399608/)
+
+[How to Avoid Coupling in Microservices Design](https://www.capitalone.com/tech/software-engineering/how-to-avoid-loose-coupled-microservices/)
+
+[Deconstructing the Monolith, Shopify2019](https://shopify.engineering/deconstructing-monolith-designing-software-maximizes-developer-productivity)
+
+https://docs.microsoft.com/en-us/azure/architecture/microservices/migrate-monolith  
+http://www.mit.edu/~richh/writings/  
+https://blog.pragmaticengineer.com/software-architecture-is-overrated/
+
+[微服务架构设计, 互联网金融公司](https://gudaoxuri.gitbook.io/microservices-architecture/)
+
+
+[reactive design patterns](https://book.douban.com/subject/25870212/)  
+PPC/TPC
+
+[A Laboratory For Teaching Object-Oriented Thinking, beck89, oopsla](http://people.cs.pitt.edu/~chang/231/5spec/CRCcard/Beck-LaboratoryForTeachingOO.pdf)
+
+https://github.com/MagicBowen/architecting_cloud_aware_applications/blob/master/Architecting_Cloud-Aware_Applications.md
+
+https://newrelic.com/blog/best-practices/distributed-monolith-vs-microservices
+
+https://www.jianshu.com/p/73b3aac644f9
+
+[将单体式应用重构为微服务，google cloud](https://cloud.google.com/architecture/microservices-architecture-refactoring-monoliths?hl=zh-cn)
+
+
+## 拆分应用组件、子系统
+
+![](https://pic1.zhimg.com/80/v2-b439a15800943b24bcf65c1182a4ca88_1440w.jpg)
+
+> 拆分需要平衡内部复杂度和外部复杂度，先粗后细
+> 每个请求控制涉及多少个模块，1个子系统由多少人负责
+
+可扩展、高可用、高性能都依赖拆分  
+高可用关注异常情况、高性能关注正常情况  
+
+[康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
+系统设计最终会按物理组织结构来分=UI+后端+规则+DBA
+
+[ch8 Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)  
+顶层设计分离技术=按技术能力分离+按领域分离。  
+组件分解技术=基于actor/用例组件划分（用户端+管理端）+ 事件风暴（producer和worker分离）+ 工作流。  
+确定最初的组件->装入需求到组件->检查组件的角色和责任->分析组件规则->调整优化。  
+
+[On the Criteria To Be Used in Decomposing Systems into Modules, parnas72](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf)
+
+[Comparing techniques by means of encapsulation and connascence, page-jones92](https://dl.acm.org/doi/abs/10.1145/130994.131004)
+
+[DDD](https://book.douban.com/subject/1418618/)  
+
+[Patterns, Principles, and Practices of Domain-Driven Design, millett2015](https://book.douban.com/subject/24773322/)  
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEb17db46804dda589318fc95da82b07ea/189)
+
+[模型]=领域逻辑中心-技术细节  
+DDD=强调业务专家与开发团队配合=问题域分解成若干子域+沟通协调统一语言/模型+隔离模糊和腐烂+理解上下文。  
+有时候反馈和快速市场验证是产品成功的核心，BBoM足够了，并不总是反模式。  
+DDD不是关于代码设计模式的，也不是以代码为中心的，也不是让你写出优雅的代码，DDD更多的是强调通过协作解决问题。  
+
+开发团队可以与领域专家、对系统业务流程熟悉的业务人员、其他干系人协作，也可以引入BA，利用他们的洞见、专业、经验产生有用的模型满足需求。  
+```diff
++ 核心领域就是产品竞争的优势，核心领域会随着业务而演变。
+```
+把核心领域当成产品，而不是单个项目。核心领域也不是一开始就完美的。  
+边界清晰比完美的模型/代码更重要。  
+
+领域模型=团队模型=分析模型->**与分析模型绑定的**代码模型+使用统一语言+几乎没有技术关注点
+
+```diff
++ 保持解决方案简单，并不是快速和骚操作，而是通过代码审查和结对编程，避免混乱和过度复杂。  
+```
+使用界限上下文来分治问题域。上下文确定了职责，帮助更好的组织代码和分解问题。
+```diff
+- 识别上下文=术语≈业务能力
+```
+上下文映射=[界线上下文之间的技术和组织关系模式](https://github.com/ddd-crew/context-mapping)=代码级的命名空间/项目
+
+从14章开始战术部分，从代码层面讲怎样维护对象的**不可变性**和**表达力**，怎样平衡值与实体、怎样结合界限上下文设计、怎样平衡贫血和充血实体。  
+
+[微服务拆分设计规范指南](https://www.doc88.com/p-89716046079530.html?r=1)
 
 ## 架构决策、架构设计原则、指南
 
@@ -308,130 +452,6 @@ https://book.douban.com/subject/30443578/
 
 https://www.d.umn.edu/~gshute/softeng/principles.html
 
-## 系统风格、架构模式
-
-> 描述系统的拓扑结构
-
-[Big Ball of MUD, foote97, PLoP](http://www.laputan.org/mud/mud.html) 
-
-[ch9~ch18 Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)  
-充分评估分布式架构中的网络不可用、延迟、带宽、数据安全。  
-分布式架构需要解决分布式日志、分布式事务、通信契约问题。  
-按技术分层单体架构，权衡整体快速修改 | 专家，起初简单高效；越往后，修改后，测试和部署越麻烦。  
-复用与耦合需要权衡。   
-架构演变影响因素：对过去的反思、整个开发生态改变。  
-架构选择因素：影响规格的业务、数据架构、组织变化。  
-架构决策：单体还是分布式、数据流、同步还是异步服务间通信。 
-
-
-### 单体
-[Don’t Touch My Code!, bird2011, sigsoft, microsoft](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bird2011dtm.pdf)  
-在一个二进制上开发人员越多，越容易出错。  
-不同程度的ownership，影响着模块的质量。  
-
-[ch1, Monolith to Microservices, newman2019](https://book.douban.com/subject/33415093/)  
-实现和部署的耦合。随着越来越多的开发人员和功能，修改同一块代码，推送不同功能会产生dilivery contention。
-  
-
-[淘宝技术这十年](https://book.douban.com/subject/24335672/)  
-新招来的同事，根本看不懂原来的业务，摸索着"在合适的地方"加一些合适的代码。  
-"常常是你改了商品相关的某些代码，发现交易出问题了"
-
-### 微服务
-[Monolith to Microservices, newman2019](https://book.douban.com/subject/33415093/)  
-微服务提供了一种进程隔离的思考逻辑，使得团队之间可以采用独立的技术/数据库，以解决复杂的业务问题。  
-从不同方面总结了，迁移到微服务的各种模式。  
-演化优于一步到位，满足当前业务需求、迭代优化、重构重写。  
-
-|   | :sunny:  |:cloud: |
-|---|---|---|
-|边界确定  | 提升团队自治  |自治和统一|
-|低耦合/高内聚  | 快速上线  |
-| | 更多开发人员 |ownership模糊|
-|按业务能力拆分  | 按负载扩展  |分析报告复杂|
-| | 新技术应用 |本地开发和调试复杂|
-| |健壮   |监控和故障诊断复杂|
-| |   |需要部署/配置/管理的东西过多|
-| |   |end-to-end测试复杂|
-
-[Building Microservice](https://book.douban.com/subject/25881698/)  
-
-[Microservices Patterns: With Examples in Java, 2019](https://book.douban.com/subject/33425123/) 
-
-[Spring Microservices in Action](https://book.douban.com/subject/27005082/)
-
-[Strategic Monoliths and Microservices: Driving Innovation Using Purposeful Architecture](https://www.amazon.com/dp/0137355467/ref=syn_sd_onsite_desktop_280?psc=1&pd_rd_plhdr=t&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFCOFhJRkRQMkVSSFYmZW5jcnlwdGVkSWQ9QTA5Mzc2NjkzNE1DWVhGWVk5NFU3JmVuY3J5cHRlZEFkSWQ9QTAyNTMzNzE1WktFRTVaOTkwTUMmd2lkZ2V0TmFtZT1zZF9vbnNpdGVfZGVza3RvcCZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=)
-
-https://docs.microsoft.com/en-us/azure/architecture/microservices/migrate-monolith  
-http://www.mit.edu/~richh/writings/  
-https://blog.pragmaticengineer.com/software-architecture-is-overrated/
-
-[微服务架构设计, 互联网金融公司](https://gudaoxuri.gitbook.io/microservices-architecture/)
-
-
-[reactive design patterns](https://book.douban.com/subject/25870212/)  
-PPC/TPC
-
-[A Laboratory For Teaching Object-Oriented Thinking, beck89, oopsla](http://people.cs.pitt.edu/~chang/231/5spec/CRCcard/Beck-LaboratoryForTeachingOO.pdf)
-
-https://github.com/MagicBowen/architecting_cloud_aware_applications/blob/master/Architecting_Cloud-Aware_Applications.md
-
-https://newrelic.com/blog/best-practices/distributed-monolith-vs-microservices
-
-https://www.jianshu.com/p/73b3aac644f9
-
-
-## 拆分应用组件、子系统
-
-![](https://pic1.zhimg.com/80/v2-b439a15800943b24bcf65c1182a4ca88_1440w.jpg)
-
-> 拆分需要平衡内部复杂度和外部复杂度，先粗后细
-> 每个请求控制涉及多少个模块，1个子系统由多少人负责
-
-可扩展、高可用、高性能都依赖拆分  
-高可用关注异常情况、高性能关注正常情况  
-
-[康威定律, 1967](http://www.melconway.com/Home/Conways_Law.html)  
-系统设计最终会按物理组织结构来分=UI+后端+规则+DBA
-
-[ch8 Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)  
-顶层设计分离技术=按技术能力分离+按领域分离。  
-组件分解技术=基于actor/用例组件划分（用户端+管理端）+ 事件风暴（producer和worker分离）+ 工作流。  
-确定最初的组件->装入需求到组件->检查组件的角色和责任->分析组件规则->调整优化。  
-
-[On the Criteria To Be Used in Decomposing Systems into Modules, parnas72](https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf)
-
-[Comparing techniques by means of encapsulation and connascence, page-jones92](https://dl.acm.org/doi/abs/10.1145/130994.131004)
-
-[DDD](https://book.douban.com/subject/1418618/)  
-
-[Patterns, Principles, and Practices of Domain-Driven Design, millett2015](https://book.douban.com/subject/24773322/)  
-![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCEb17db46804dda589318fc95da82b07ea/189)
-
-[模型]=领域逻辑中心-技术细节  
-DDD=强调业务专家与开发团队配合=问题域分解成若干子域+沟通协调统一语言/模型+隔离模糊和腐烂+理解上下文。  
-有时候反馈和快速市场验证是产品成功的核心，BBoM足够了，并不总是反模式。  
-DDD不是关于代码设计模式的，也不是以代码为中心的，也不是让你写出优雅的代码，DDD更多的是强调通过协作解决问题。  
-
-开发团队可以与领域专家、对系统业务流程熟悉的业务人员、其他干系人协作，也可以引入BA，利用他们的洞见、专业、经验产生有用的模型满足需求。  
-```diff
-+ 核心领域就是产品竞争的优势，核心领域会随着业务而演变。
-```
-把核心领域当成产品，而不是单个项目。核心领域也不是一开始就完美的。  
-边界清晰比完美的模型/代码更重要。  
-
-领域模型=团队模型=分析模型->**与分析模型绑定的**代码模型+使用统一语言+几乎没有技术关注点
-
-```diff
-+ 保持解决方案简单，并不是快速和骚操作，而是通过代码审查和结对编程，避免混乱和过度复杂。  
-```
-使用界限上下文来分治问题域。上下文确定了职责，帮助更好的组织代码和分解问题。
-```diff
-- 识别上下文=术语≈业务能力
-```
-上下文映射=[界线上下文之间的技术和组织关系模式](https://github.com/ddd-crew/context-mapping)=代码级的命名空间/项目
-
-从14章开始战术部分，从代码层面讲怎样维护对象的**不可变性**和**表达力**，怎样平衡值与实体、怎样结合界限上下文设计、怎样平衡贫血和充血实体。  
 
 ## API接口和安全
 契约式设计  
