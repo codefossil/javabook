@@ -33,6 +33,5 @@
 # 资源
 * [cs-list](https://en.wikipedia.org/wiki/List_of_important_publications_in_computer_science#Concurrent,_parallel,_and_distributed_computing)  
 * [awesome course](https://github.com/prakhar1989/awesome-courses)  
-* [hightscalability](http://highscalability.com/all-time-favorites/)
 * [参考连接](reference.md)
 * [Subfields of computer science](https://en.wikipedia.org/wiki/Category:Subfields_of_computer_science)

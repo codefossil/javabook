@@ -45,6 +45,10 @@ https://tonydeng.github.io/architect-manual/
 技术思维、业务思维到框架思维
 https://www.36dianping.com/dianping/2840103031
 
+https://www.modb.pro/db/101694
+
+[架构活动](https://xie.infoq.cn/article/00a0095b134e803d277a53231)
+
 ## 发现需求、干系人、需求引出
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE91c0f29938af6934e1fe9d9fc733d9cf/199)
@@ -166,8 +170,6 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 
 [archi vs design](https://www.slideshare.net/luctrudeau/architecture-vs-design)
 
-[Continuous Architecture in Practice: Software Architecture in the Age of Agility and DevOps](https://www.amazon.com/Continuous-Architecture-Practice-Addison-Wesley-Signature/dp/0136523560)
-
 
 [Foundations for the Study of Software Architecture, perry92, SIGSOFT](http://citeseer.ist.psu.edu/viewdoc/download?doi=10.1.1.135.5430&rep=rep1&type=pdf)
 
@@ -179,6 +181,7 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 
 [Software design for large system, 1988](https://web.njit.edu/~kirova/BC-SDP.pdf)  
 
+[Software Architecture as a Set of Architectural Design Decisions](https://www.ics.uci.edu/~andre/ics223w2006/jansenbosch.pdf)
 
 ## **描述**二方和三方系统通信、组织现存的技术架构
 
@@ -201,11 +204,33 @@ CRUD描述所有用户在每个用例中的权限。结合用户目的技术，�
 
 http://wiki.ccose.org/index.php/%E9%A6%96%E9%A1%B5
 
+[open agile architecture](https://pubs.opengroup.org/architecture/o-aa-standard/index.html)
+
+https://www.mytechiebits.com/AgileArchitecture
+
+https://goobiz.com/Digital_Business_Model_Innovation-Enabling_Value_Creation_and_Delivery_from_Goals_to_Steps_of_the_Customer_Journey.html
+
+
+https://vedcraft.com/architecture/cloud-native-is-the-new-architecture-mantra-for-core-banking-solutions/
+
+
+https://simpat.tech/devops-architecture/
+
+https://davelms.medium.com/taking-a-first-look-at-google-cloud-architecture-diagramming-tool-35a1867356c9
+
+https://www.alibabacloud.com/blog/continuous-evolution-and-development-of-data-warehouse-architecture_597918
+
+
 ## 确定系统规格（非功能需求、质量属性）
 
-![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE1a06e5043df9f3d736835d51d8d7738d/179)
+[Continuous Architecture in Practice: Software Architecture in the Age of Agility and DevOps](https://www.amazon.com/Continuous-Architecture-Practice-Addison-Wesley-Signature/dp/0136523560) 
 
-> Understanding **the speed at which your organisation or business changes** is important
+![](https://lh5.googleusercontent.com/ICXKRm0-lk3X4V1WTzxEDE6Qi8zSZAtqCchLVdcGlo2Qwc0kBX2T3xA7fvg39Y65osFpSLaLAPig8aGR0PO6OgZl3SbcfmvQOwG68RyoYpdse6s-W8Rbm3C-Mo3M8b_EoFswbgyA)
+
+提出一个持续架构的方法论，6个原则+架构活动+工具+思维，作为手段，最后创建一个可持续的软件系统。    
+提出架构活动涉及软件系统的整个SDLC，包括构建、测试、部署和运维。
+主张团队负责架构活动，架构师作为问责人，保证系统概念的完整性。  
+给出了质量属性的解决方案。  
 
 [ISO/IEC 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010)
 
@@ -218,12 +243,23 @@ http://wiki.ccose.org/index.php/%E9%A6%96%E9%A1%B5
 存在这样一种映射=领域关注点->架构规则组合->技术实现方案  
 
 
-
 [Quality Models in Software Engineering Literature, Al-Qutaish09](http://www.sciencepub.net/american/am0603/22_2208_Qutaish_am0603_166_175.pdf)
 
 [Building Secure & Reliable Systems](https://book.douban.com/subject/34796016/)
 
-[Architecting for scale, 2016](https://book.douban.com/subject/27071892/)  
+### 可伸缩性
+
+![](image/scalability.drawio.png)
+
+[hightscalability.com](http://highscalability.com/all-time-favorites/)
+
+[Foundations of Scalable Systems](https://www.oreilly.com/library/view/foundations-of-scalable/9781098106058/)  
+
+[Web Scalability for Startup Engineers](https://www.amazon.com/Scalability-Startup-Engineers-Artur-Ejsmont/dp/0071843655/ref=pd_sbs_sccl_2_4/138-8628425-9428532?pd_rd_w=tqMof&pf_rd_p=3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_r=PHXDF277HR5FNGSP3NFC&pd_rd_r=7d194027-a799-4ced-b494-f91fa53cec6b&pd_rd_wg=rHX8W&pd_rd_i=0071843655&psc=1)
+
+[Architecting for Scale, atchison](https://www.amazon.com/Architecting-Scale-Maintain-Availability-Manage/dp/1492057177)
+
+[Art of Scalability](https://www.amazon.com/Art-Scalability-Architecture-Organizations-Enterprise/dp/0134032802/ref=sr_1_1?crid=3HVORBOLRQQ3B&keywords=The+Art+of+Scalability&qid=1653217991&s=books&sprefix=%2Cstripbooks-intl-ship%2C1088&sr=1-1)
 
 
 |规格||技术|
@@ -244,6 +280,8 @@ http://wiki.ccose.org/index.php/%E9%A6%96%E9%A1%B5
 1台服务器用3年，2W/年（购买，维护、折旧、电费）  
 
 引入缓存、虚拟化、性能调优、高性能硬件、开源方案  
+
+### overengineering
 
 
 ## 系统风格、架构模式
@@ -534,8 +572,13 @@ chart&flow
 
 # 软件架构评价
 
+[Software Architect’s Handbook](https://www.amazon.com/Software-Architects-Handbook-implementing-architecture-ebook/dp/B07B3R2ZCX)
+
 [Software Architecture Metrics]()
 
+## 技术债
+
+![](https://insights.sei.cmu.edu/media/images/Technical_Debt_Landscape.original.png)
 
 ## 分析和评估架构风险
 
@@ -563,7 +606,28 @@ chart&flow
 团队管理指导力度=团队熟悉程度+团队大小+经验水平+项目复杂度+项目时长。  
 团队不健康警告指标=过程损失+多元无知+旁观者效应。  
 高效的架构师通过榜样作用领导团队，而不是title。  
-对于架构师来说，知识的宽度比深度更重要。  
+对于架构师来说，知识的宽度比深度更重要。 
+
+## 业务能力成熟度
+https://jiagoushi.pro/business-capability-maturity
+
+https://www.smartcity.team/consultingskills/experience/%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84%E6%98%AF%E4%BB%80%E4%B9%88/
+
+https://www.jianshu.com/p/bd9962ba3c22
+
+https://tech.meituan.com/2018/04/16/study-vs-work.html
+
+https://mikechen.cc/7533.html
+
+http://iperson.uml.com.cn/SA/qualifications.asp
+
+https://www.infoq.cn/article/ngrof3ekpo0rsm5y2ajb
+
+https://juejin.cn/post/6991387551646892063
+
+http://www.woshipm.com/kol/5197192.html
+
+https://www.nankingcigar.com/2021/05/28/jia-gou-shi-jian.html
 
 
 ## 技术能力与职责

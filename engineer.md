@@ -14,6 +14,8 @@ https://blog.pragmaticengineer.com/
 
 # 基本问题
 
+![](https://www.hyperlinkinfosystem.com/localhost/bloghyper/images/sdlc%20models.jpg)
+
 [CS vs SE, Hoare09](https://reinout.vanrees.org/weblog/2009/07/01/ep-keynote.html)  
 [什么是工程](https://en.wikipedia.org/wiki/Engineering)  
 [CS != SE](http://www.cnblogs.com/buaashine/archive/2012/12/12/2813931.html)  
