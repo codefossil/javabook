@@ -118,6 +118,7 @@ PM作为中心，需要对外汇报给客户、监督委员会，对内组织资
 
 [项目管理方法论，2015](https://book.douban.com/subject/26584696/)  
 
+https://www.esensoft.com/industry-news/dx-11387.html
 
 # 整体项目计划、迭代计划、监控
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE6287ea342110009b3ee392f41eb98c61/132)
@@ -260,3 +261,7 @@ http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.
 
 
 [learning domain-driven design]
+
+Scrum: The Art of Doing Twice the Work in Half the Time
+
+[Agile Retrospectives: Making Good Teams Great](https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/)

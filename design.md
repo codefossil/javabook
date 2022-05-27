@@ -218,10 +218,13 @@ https://simpat.tech/devops-architecture/
 
 https://davelms.medium.com/taking-a-first-look-at-google-cloud-architecture-diagramming-tool-35a1867356c9
 
-https://www.alibabacloud.com/blog/continuous-evolution-and-development-of-data-warehouse-architecture_597918
 
 
 ## 确定系统规格（非功能需求、质量属性）
+
+
+> 低成本与高性能、高可用、可扩展平衡  
+> 1台服务器用3年，2W/年（购买，维护、折旧、电费）
 
 [Continuous Architecture in Practice: Software Architecture in the Age of Agility and DevOps](https://www.amazon.com/Continuous-Architecture-Practice-Addison-Wesley-Signature/dp/0136523560) 
 
@@ -247,6 +250,14 @@ https://www.alibabacloud.com/blog/continuous-evolution-and-development-of-data-w
 
 [Building Secure & Reliable Systems](https://book.douban.com/subject/34796016/)
 
+### 弹性（可用性、可靠性）
+
+![](image/ha.drawio.png)
+
+[Site Reliability Engineering](https://book.douban.com/subject/26875239/)  
+
+[A Proposal for an Antifragile Software Manifesto](https://www.danielrusso.org/files/2016Antifragile_Manifesto.pdf)
+
 ### 可伸缩性
 
 ![](image/scalability.drawio.png)
@@ -262,24 +273,11 @@ https://www.alibabacloud.com/blog/continuous-evolution-and-development-of-data-w
 [Art of Scalability](https://www.amazon.com/Art-Scalability-Architecture-Organizations-Enterprise/dp/0134032802/ref=sr_1_1?crid=3HVORBOLRQQ3B&keywords=The+Art+of+Scalability&qid=1653217991&s=books&sprefix=%2Cstripbooks-intl-ship%2C1088&sr=1-1)
 
 
-|规格||技术|
-| ---- | ---- | ---|
-|低成本|||
-|高效性||集群、缓存服务、读写分离、分库分表、单机架构、负载均衡|
-|扩展性（边际成本）|适应变化的能力、可理解性、可修改性|分层、DDD、SOA、微内核|
-|可用性（沉默成本）|服务总体持续时间|双机备份、FMEA、异地多活、熔断、降级、限流|
-|兼容性（机会成本）  ||
-|可伸缩性 |||
-|可靠性|系统无故障地持续运行的概率||
-|可测试性||全链路压测|
-|可维护性||全链路跟踪、降级、下线、熔断|
-|可观测性||日志、API、运维监控平台|
+### 性能
 
+![](image/performance.drawio.png)
 
-低成本与高性能、高可用、可扩展平衡  
-1台服务器用3年，2W/年（购买，维护、折旧、电费）  
-
-引入缓存、虚拟化、性能调优、高性能硬件、开源方案  
+[性能专题](io.md)
 
 ### overengineering
 
@@ -530,21 +528,22 @@ https://blog.csdn.net/li1669852599/article/details/107925768
 [墨刀](https://modao.cc/)
 
 
-# 备选架构、架构方案
-## 架构图
-可视化描述信息系统的环境、组件和部署情况。  
+# 数据架构
 
-[ch21 Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)  
+![](image/data.drawio.png)
 
-[Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)  
-权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档
+LEAP(4BD): Lightweight Evaluation and
+Architecture Prototyping for Big Data
 
-chart&flow  
-[c4](https://c4model.com/)  
-[mermaid: uml in markdown](https://github.com/mermaid-js/mermaid)  
-[asciiflow](https://asciiflow.com/)
+[Consistency Tradeoffs in Modern Distributed Database System Design, abadi2012](http://www.cs.umd.edu/~abadi/papers/abadi-pacelc.pdf)
 
-[Architecture decision record (ADR)](https://github.com/joelparkerhenderson/architecture_decision_record)   
+[ch4, Monolith to Microservices](https://book.douban.com/subject/33415093/)
+
+租户模式
+宽表还是维度表
+
+https://www.alibabacloud.com/blog/continuous-evolution-and-development-of-data-warehouse-architecture_597918
+
 
 ## 数据库设计方案
 
@@ -569,6 +568,28 @@ chart&flow
 [SQL Style Guide](https://www.sqlstyle.guide/)
 
 [高性能MySQL(第3版)](https://book.douban.com/subject/23008813/)  
+
+## 大数据
+![](https://img-blog.csdnimg.cn/img_convert/523af9b199c957a94f22907cc0df07b1.png)
+
+# 备选架构、架构方案
+## 架构图
+可视化描述信息系统的环境、组件和部署情况。  
+
+[ch21 Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)  
+
+[Software Architecture for Developers, 2014](https://book.douban.com/subject/26248182/)  
+权衡BDUF和演变式设计，软件架构中的争论，怎样产出图/文档
+
+chart&flow  
+[c4](https://c4model.com/)  
+[mermaid: uml in markdown](https://github.com/mermaid-js/mermaid)  
+[asciiflow](https://asciiflow.com/)
+
+[Architecture decision record (ADR)](https://github.com/joelparkerhenderson/architecture_decision_record)  
+
+
+
 
 # 软件架构评价
 

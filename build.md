@@ -157,7 +157,7 @@ https://www.istqb.org/
 
 [Kubernetes In Action, 2017](https://book.douban.com/subject/26997846/)  
 [Continuous Delivery](https://book.douban.com/subject/6862062/)  
-[Site Reliability Engineering](https://book.douban.com/subject/26875239/)  
+
 [Infrastructure as Code](https://d1.awsstatic.com/whitepapers/DevOps/infrastructure-as-code.pdf)  
 
 https://lpd-ios.github.io/2017/05/08/Git-Work-Flow/  
