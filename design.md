@@ -49,6 +49,8 @@ https://www.modb.pro/db/101694
 
 [架构活动](https://xie.infoq.cn/article/00a0095b134e803d277a53231)
 
+https://blog.prabasiva.com/tag/software-architecture/
+
 ## 发现需求、干系人、需求引出
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE91c0f29938af6934e1fe9d9fc733d9cf/199)
@@ -230,7 +232,7 @@ https://davelms.medium.com/taking-a-first-look-at-google-cloud-architecture-diag
 
 ![](https://lh5.googleusercontent.com/ICXKRm0-lk3X4V1WTzxEDE6Qi8zSZAtqCchLVdcGlo2Qwc0kBX2T3xA7fvg39Y65osFpSLaLAPig8aGR0PO6OgZl3SbcfmvQOwG68RyoYpdse6s-W8Rbm3C-Mo3M8b_EoFswbgyA)
 
-提出一个持续架构的方法论，6个原则+架构活动+工具+思维，作为手段，最后创建一个可持续的软件系统。    
+提出一个持续架构的方法论，6个原则+4个架构活动+策略。  
 提出架构活动涉及软件系统的整个SDLC，包括构建、测试、部署和运维。
 主张团队负责架构活动，架构师作为问责人，保证系统概念的完整性。  
 给出了质量属性的解决方案。  
@@ -288,7 +290,16 @@ https://davelms.medium.com/taking-a-first-look-at-google-cloud-architecture-diag
 
 ![](image/arch-style.drawio.png)
 
-[Big Ball of MUD, foote97, PLoP](http://www.laputan.org/mud/mud.html) 
+[Big Ball of MUD, foote97, PLoP](http://www.laputan.org/mud/mud.html)  
+
+![](image/bad.drawio.png)
+
+[Technical Debt](http://wiki.c2.com/?WardExplainsDebtMetaphor)
+
+[Strategic Monoliths and Microservices: Driving Innovation Using Purposeful Architecture](https://www.amazon.com/dp/0137355467/)
+数字化转型必须要结合业务目标，实现产品差异化。  
+软件架构提供一种结构化的设计，帮助实现功能和质量属性，以及低成本实现改变。    
+
 
 [ch9~ch18 Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)  
 充分评估分布式架构中的网络不可用、延迟、带宽、数据安全。  
@@ -339,8 +350,6 @@ https://davelms.medium.com/taking-a-first-look-at-google-cloud-architecture-diag
 [Microservices Patterns: With Examples in Java, 2019](https://book.douban.com/subject/33425123/) 
 
 [Spring Microservices in Action](https://book.douban.com/subject/27005082/)
-
-[Strategic Monoliths and Microservices: Driving Innovation Using Purposeful Architecture](https://www.amazon.com/dp/0137355467/)
 
 [Technology Strategy Patterns](https://book.douban.com/subject/30399608/)
 

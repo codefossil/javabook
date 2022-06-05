@@ -218,7 +218,13 @@ https://scrumguides.org/scrum-guide.html
 https://www.scrum.org/ 
 http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.htm  
 
+[The Heart of Agile](https://alistair.cockburn.us/wp-content/uploads/2018/02/The-Heart-of-Agile-Technical-Report.pdf)
 
+https://modernagile.org/
+
+https://techbeacon.com/app-dev-testing/modern-agile-heart-agile-new-focus-agile-development
+
+https://en.wikipedia.org/wiki/Shuhari
 
 
 [敏捷革命](https://book.douban.com/subject/27008697/)
