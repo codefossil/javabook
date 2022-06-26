@@ -346,6 +346,8 @@ https://davelms.medium.com/taking-a-first-look-at-google-cloud-architecture-diag
 | |   |end-to-end测试复杂|
 
 [Building Microservice](https://book.douban.com/subject/25881698/)  
+微服务=业务边界+独立部署+RPC/MQ
+
 
 [Microservices Patterns: With Examples in Java, 2019](https://book.douban.com/subject/33425123/) 
 
