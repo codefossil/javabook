@@ -90,7 +90,7 @@ https://en.wikipedia.org/wiki/Software_development
 测试写到什么程度算足够
 
 
-# 团队规模、效率
+# 团队规模、绩效
 > 人员构成（分工，人数）
 > 研发交易成本决策/投入力度, 采购or自研
 
@@ -109,6 +109,7 @@ http://www.devopsstandard.cn/index.html
 
 https://cloud.ofweek.com/news/2022-02/ART-178804-8420-30549630.html
 
+个人工作、委托、人员管理之间平衡
 
 # 工期估算
 
