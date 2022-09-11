@@ -27,6 +27,7 @@ https://blog.pragmaticengineer.com/
 颠覆了我对软件工程的认知  
 软件工程是时间在编程上增加的一个维度  
 随着组织变大、项目（版本）变多，开发产品和流程的效率是怎样的？我们必须选择和依赖更加严格的工程方法。    
+底层原理=人性+尊重+信任
 
 [Become an Effective Software Engineering Manager, stanier2020](https://www.amazon.com/Become-Effective-Software-Engineering-Manager/dp/1680507249)
 
@@ -90,7 +91,7 @@ https://en.wikipedia.org/wiki/Software_development
 测试写到什么程度算足够
 
 
-# 团队规模、效率
+# 团队规模、绩效
 > 人员构成（分工，人数）
 > 研发交易成本决策/投入力度, 采购or自研
 
@@ -108,6 +109,13 @@ http://www.devopsstandard.cn/index.html
 [研发运营一体化（DevOps）能力成熟度模型](https://www.sohu.com/a/541438015_121216336)
 
 https://cloud.ofweek.com/news/2022-02/ART-178804-8420-30549630.html
+
+个人工作、委托、人员管理之间平衡
+解决内部冲突，做决策，协调人员
+技术决策和方向的影响力
+组织外成事能力
+
+工程师的一天=编码+设计文档+解bug
 
 
 # 工期估算
