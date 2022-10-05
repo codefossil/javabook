@@ -14,7 +14,8 @@ https://blog.pragmaticengineer.com/
 
 # 基本问题
 
-![](https://www.hyperlinkinfosystem.com/localhost/bloghyper/images/sdlc%20models.jpg)
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE6083e211204017e74a8bbb2e2a081b09/208)
+
 
 [CS vs SE, Hoare09](https://reinout.vanrees.org/weblog/2009/07/01/ep-keynote.html)  
 [什么是工程](https://en.wikipedia.org/wiki/Engineering)  
@@ -27,7 +28,6 @@ https://blog.pragmaticengineer.com/
 颠覆了我对软件工程的认知  
 软件工程是时间在编程上增加的一个维度  
 随着组织变大、项目（版本）变多，开发产品和流程的效率是怎样的？我们必须选择和依赖更加严格的工程方法。    
-底层原理=人性+尊重+信任
 
 [Become an Effective Software Engineering Manager, stanier2020](https://www.amazon.com/Become-Effective-Software-Engineering-Manager/dp/1680507249)
 
@@ -39,7 +39,12 @@ https://blog.pragmaticengineer.com/
 使用工具来帮助自己不会忘记任何事情。  
 信息收集、决策、推进、榜样  
 管理的输出就是团队的输出、被管理影响的输出  
-管理不仅仅意味着管人，还要管流程、招聘、沟通、交付  
+管理不仅仅意味着管人，还要管流程、招聘、沟通、交付
+
+
+[软件项目成功之道](https://book.douban.com/subject/6748308/)
+
+![](https://images0.cnblogs.com/blog/471353/201309/04231008-3c633407b6c549c88b598c6dceeb3f96.png)
 
 [格鲁夫给经理人的第一课，Grove95](https://book.douban.com/subject/27178870/)
 
@@ -90,8 +95,10 @@ https://en.wikipedia.org/wiki/Software_development
 软件、软件危机、软件工程  
 测试写到什么程度算足够
 
+http://augmentsoftware.com/wp-content/uploads/2016/12/SWE-Parnas-IME-USP-GLD-PLT-2013-ewn_highlights.pdf
 
-# 团队规模、绩效
+
+# 团队规模、绩效和资源管理
 > 人员构成（分工，人数）
 > 研发交易成本决策/投入力度, 采购or自研
 
@@ -110,15 +117,36 @@ http://www.devopsstandard.cn/index.html
 
 https://cloud.ofweek.com/news/2022-02/ART-178804-8420-30549630.html
 
-个人工作、委托、人员管理之间平衡
-解决内部冲突，做决策，协调人员
-技术决策和方向的影响力
-组织外成事能力
-
-工程师的一天=编码+设计文档+解bug
 
 
-# 工期估算
+https://devops.phodal.com/maturity/team-topologies
+
+
+# 项目计划、迭代计划、监控
+![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE6287ea342110009b3ee392f41eb98c61/132)
+
+
+> 计划毫无用处，但是制订计划必不可少
+
+根据Vision文档，复查业务需求  
+划分子系统、确定完成顺序、人员、紧急程度  
+确定子系统组件、边界  
+规划WBS  
+
+[Practical Ways to Manage Yourself: Modern Management Made Easy](https://www.amazon.com/Practical-Ways-Manage-Yourself-Management/dp/1943487138)
+
+[凤凰项目，2015](https://book.douban.com/subject/26644070/)  
+
+[程序员的三门课](https://www.zhihu.com/pub/reader/119647389/chapter/1182332907921813504)  
+
+[Code of Ethics & Professional Conduct](https://www.pmi.org/about/ethics/code)  
+
+[技术核心管理者的时间](https://www.infoq.cn/article/aALWwYEdxFuuisM8e9u2)
+
+GB/T 37507-2019 项目管理指南
+
+
+# 任务分解与工期估算
 
 > 工程师花多少精力
 
@@ -152,12 +180,159 @@ software project estimation
 
 software sizing, estimation, and risk management
 
-pmbok
-
-GB/T 37507-2019 项目管理指南
 
 https://developer.aliyun.com/article/206424
 
+
+# 团队协调与沟通
+
+![](https://www.isixsigma.com/wp-content/uploads/2010/02/Software-Defect-Rate-of-Discovery-Versus-Time.gif)
+
+底层原理=人性+尊重+信任=成人自我
+[ch2, SEAG]()
+
+
+[ch3, 软件项目成功之道]()
+每日站会+任务清单+时间预估
+
+个人工作、委托、人员管理之间平衡  
+解决内部冲突，做决策，协调人员  
+技术决策和方向的影响力  
+组织外成事能力  
+
+https://paulhammant.com/2012/11/01/testability-and-cost-of-change/
+
+
+
+# 不确定的SDLC、软件开发过程
+
+
+![](https://www.researchgate.net/profile/Humberto-Cervantes/publication/221036001/figure/fig1/AS:394022662230017@1470953731072/The-4-phases-and-9-disciplines-of-the-Rational-Unified-Process.png)
+
+
+[PDCA, deming86](https://asqaustin.org/wp-content/uploads/2015/12/History_of_the_PDSA_Cycle_CN_ASQ_Talk-_2_10_2016_Handout.pdf)   
+现代企业质量控制的基石，也是PMP的理论基础。  
+
+
+[ch10, Systems Analysis and Design in a Changing World, Satzinger2015](https://www.amazon.com/Systems-Analysis-Design-Changing-World/dp/1305117204)  
+非常明确的需求->使用可预测的过程到SDLC，基本顺序的执行五大过程组。  
+作为人类可能会犯错，可能会忽略掉重要的组件。  
+迭代/增量开发，加速了交付速度。 先把架子搭起，有部少量的功能，后续迭代出更多功能。  
+敏捷建模=软件建模的态度=重要的领域建模+决策点建模。  
+UP=回答每个迭代的重点是什么+UML+OOD=觉察阶段+协作阶段+构建阶段+转移阶段+4周/迭代+训练科目/阶段。  
+XP=最佳实践=故事+TDD+结对编程+简单设计+重构代码+每人维护所有代码+CI+用户驻场+系统类比+小发布+遵循编码和文档标准。  
+SCRUM=适合需求非常不明确=backlog+计划会议+冲刺+每日站会+复查会议
+
+[Iterative and Incremental Development: A Brief History, 2003](https://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf)  
+70年代前：文档驱动-一次过的顺序生命周期  
+70年代：早期的IID出现  
+80年代：adaptive和evo出现，人们开始思考软件项目失败的原因  
+90年代至今：IID大面积推广、Scrum/RAD/RUP/XP，直到如今的敏捷  
+
+[Essential Scrum, rubin2014](https://book.douban.com/subject/25887356/)
+
+[PSP, 1996](http://www.star.cc.gatech.edu/documents/SpencerRugabear/psp.pdf)  
+[CMM, 1991](http://sunnyday.mit.edu/16.355/cmm.pdf)  
+[The Agile Methods Fray](http://www-scf.usc.edu/~csci201/lectures/Lecture11/demarco2002.pdf)
+
+[software process versus design quality, suryanarayana2015](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7140652)
+
+[selecting a development approach, cms05 ](https://www.academia.edu/13239574/SELECTING_A_DEVELOPMENT_APPROACH)
+
+[a rational design process: how and why to fake it, parnas86, tose](https://www.cs.tufts.edu/~nr/cs257/archive/david-parnas/fake-it.pdf)
+
+[managing the development of large software systems, royce1970](http://www-scf.usc.edu/~csci201/lectures/Lecture11/royce1970.pdf) 
+
+[evolutionary development, gilb81, sigsoft](https://dl.acm.org/doi/pdf/10.1145/1010865.1010868)
+
+[a spiral model of software development and enhancement, boehm88](http://www-scf.usc.edu/~csci201/lectures/Lecture11/boehm1988.pdf)  
+
+[CHAOS95](https://www.projectsmart.co.uk/white-papers/chaos-report.pdf)
+
+
+
+[SCRUM development process, Schwaber95](http://www.jeffsutherland.org/oopsla/schwapub.pdf)
+
+[Extreme Programming Explained: Embrace Change, beck99](https://book.douban.com/subject/1440219/)
+
+[agile manifesto, 2002](http://agilemanifesto.org/)
+
+[Agile: The World's Most Popular Innovation Engine, 2015](https://www.forbes.com/sites/stevedenning/2015/07/23/the-worlds-most-popular-innovation-engine/#4d24af757c76)  
+
+https://chrisshayan.atlassian.net/wiki/spaces/my/blog/2013/05/12/622650/Selecting+the+Appropriate+Development+Methodology
+
+http://taoxie.cs.illinois.edu/index.htm
+
+https://www.ifi.uzh.ch/en/seal/teaching/courses/archive/hs10-1.html
+
+https://users.ece.utexas.edu/~perry/education/SE-Intro/
+
+https://www.jackyshen.com/  
+https://scrumguides.org/scrum-guide.html  
+https://www.scrum.org/ 
+http://umsl.edu/~sauterv/analysis/Agile%20Methodology%20and%20System%20Analysis.htm  
+
+[The Heart of Agile](https://alistair.cockburn.us/wp-content/uploads/2018/02/The-Heart-of-Agile-Technical-Report.pdf)
+
+https://modernagile.org/
+
+https://techbeacon.com/app-dev-testing/modern-agile-heart-agile-new-focus-agile-development
+
+https://en.wikipedia.org/wiki/Shuhari
+
+
+[敏捷革命](https://book.douban.com/subject/27008697/)
+
+[Lean Software Systems Engineering for Developers]()
+
+[Accelerate](https://book.douban.com/subject/30192146/)
+
+[Joel on Software](https://book.douban.com/subject/1395496/)
+
+[编程原则](https://book.douban.com/subject/35513153/)
+
+[告别失控](https://book.douban.com/subject/26829089/)
+
+[极客与团队](https://book.douban.com/subject/21372237/)
+
+
+[项目计划、进度与控制](https://book.douban.com/subject/10801087/)
+
+[7人团队敏捷管理手册](https://book.douban.com/subject/35481761/)
+
+[极简项目管理：让目标落地、把事办成并使成功可复制的方法论](https://book.douban.com/subject/35219808/)
+
+[敏捷转型：打造VUCA时代的高效能组织](https://book.douban.com/subject/30359317/)
+
+[Making things hanppen]
+
+[essential skills for the agile developer]
+
+[create your successful agile project]
+
+[start with why]
+
+[project management for the unofficial project manager]
+
+[agile project management with scrum]
+
+[The Successful Software Manager The definitive guide to growing from developer to manager]
+
+
+[learning domain-driven design]
+
+Scrum: The Art of Doing Twice the Work in Half the Time
+
+[Agile Retrospectives: Making Good Teams Great](https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/)
+
+
+# 回顾、复查、总结迭代
+软件质量度量  
+工作量评估
+
+[精益软件度量](https://book.douban.com/subject/23009505/)
+
+[程序员度量](https://book.douban.com/subject/21365482/)
 
 # 代码复杂度、结构度量
 
@@ -187,6 +362,9 @@ https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/
 # 软件工程师人性、个人发展
 
 ![](https://mmbiz.qpic.cn/mmbiz_png/Z6bicxIx5naL7zZhFK89LlYkJ4W20egLwiboBTXxNEkTMynE8B117ibfKxP5cc1dRg3vKvwzjJJ6gzicYjplEs2nXw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+> 工程师的一天=编码+设计文档+解bug
+
 
 [The Humble Programmer, turing lecture](https://dl.acm.org/doi/10.1145/355604.361591)
 
@@ -229,8 +407,7 @@ https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/
 
 [代码精进之路：从码农到工匠](https://book.douban.com/subject/34922776/)
 
-![](http://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE3021df8e914094d063907d68a0ff9d0a/187)
-
+[Engineers Survival Guide](https://www.amazon.com/Engineers-Survival-Guide-Facebook-Microsoft/dp/B09MBZBGFK/ref=d_pd_sbs_sccl_2_3/138-8628425-9428532?pd_rd_w=4ov1F&content-id=amzn1.sym.3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_p=3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_r=B9J3B1NF1DBF4EXBRVBA&pd_rd_wg=Re3co&pd_rd_r=dc2e9acc-741e-4f62-be43-e927a2b7cd88&pd_rd_i=B09MBZBGFK&psc=1)
 
 skill and self-evaluation
 

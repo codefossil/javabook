@@ -51,6 +51,41 @@ https://www.modb.pro/db/101694
 
 https://blog.prabasiva.com/tag/software-architecture/
 
+# 立项批准、系统整体功能需求、整体解决方案
+
+![](image/process.drawio.png)
+
+**项目经理**的核心技能是管理（计划，组织，领导，控制）
+
+确认解决的问题  
+对于公司来说，需要进行ROI分析，以决定是否做/自研or外包  
+确认系统的功能、初步需要的经费  
+输出System Vision Document  
+召集所有核心人员，启动立项会议  
+
+[ch11, Systems Analysis and Design in a Changing World](https://www.amazon.com/Systems-Analysis-Design-Changing-World/dp/1305117204)  
+凡是涉及二人以上的项目，都需要决定分工、开发过程。  
+项目失败的主要原因缺乏行政参与和项目管理技能。  
+项目成功的标志=按时完成+预算内+高效满足需求。  
+PM作为中心，需要对外汇报给客户、监督委员会，对内组织资源、计划、监控。  
+项目管理规格=正式程度+文档生成的量级+规格可追溯性。  
+敏捷项目管理需要平衡灵活性和对混沌的控制。  
+大多数公司都是不停的想办法提高市场份额=长期+短期计划。  
+
+[What Makes a Great Manager of Software Engineers, Kalliamvakou17](https://www.microsoft.com/en-us/research/uploads/prod/2018/06/kalliamvakou-tse-2018.pdf)
+
+[软件开发之殇](http://career_book.siwei.me/)
+
+[The Manager's Path, Fournier17](https://book.douban.com/subject/26997855/)  
+
+[A Guide to the Project Management Body of Knowledge](https://book.douban.com/subject/24697645/)  
+[汪博士解读PMP考试](https://book.douban.com/subject/24713754/)  
+
+[项目管理方法论，2015](https://book.douban.com/subject/26584696/)  
+
+https://www.esensoft.com/industry-news/dx-11387.html
+
+
 ## 发现需求、干系人、需求引出
 
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE91c0f29938af6934e1fe9d9fc733d9cf/199)
