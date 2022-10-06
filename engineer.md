@@ -27,6 +27,7 @@ https://blog.pragmaticengineer.com/
 
 颠覆了我对软件工程的认知  
 软件工程是时间在编程上增加的一个维度  
+开发任务!=软件工程任务  
 随着组织变大、项目（版本）变多，开发产品和流程的效率是怎样的？我们必须选择和依赖更加严格的工程方法。    
 
 [Become an Effective Software Engineering Manager, stanier2020](https://www.amazon.com/Become-Effective-Software-Engineering-Manager/dp/1680507249)
@@ -97,12 +98,20 @@ https://en.wikipedia.org/wiki/Software_development
 
 http://augmentsoftware.com/wp-content/uploads/2016/12/SWE-Parnas-IME-USP-GLD-PLT-2013-ewn_highlights.pdf
 
+# 绩效、效率和人员管理
+> 开发人员规模控制、组成成分、外部招聘
+> 团队建设、培训晋升奖励
+> DevOps过程的进度、质量、效率相关数据化
 
-# 团队规模、绩效和资源管理
-> 人员构成（分工，人数）
-> 研发交易成本决策/投入力度, 采购or自研
+[Accelerate](https://book.douban.com/subject/30192146/)
+
+
+[技术运营](https://cloud.tencent.com/developer/article/1515171)
+
+https://github.com/512mouse/09-devops-system-tool/blob/master/project_and_development_management.md
 
 [Team Topologies: Organizing Business and Technology Teams for Fast Flow](https://book.douban.com/subject/35528423/)
+
 
 [软件研发效能提升实践](https://blog.csdn.net/programmer_editor/article/details/121792959)
 
@@ -117,15 +126,14 @@ http://www.devopsstandard.cn/index.html
 
 https://cloud.ofweek.com/news/2022-02/ART-178804-8420-30549630.html
 
-
-
 https://devops.phodal.com/maturity/team-topologies
 
 
 # 项目计划、迭代计划、监控
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE6287ea342110009b3ee392f41eb98c61/132)
 
-
+> 团队规模，人员构成（分工，人数）
+> 研发交易成本决策/投入力度, 采购or自研
 > 计划毫无用处，但是制订计划必不可少
 
 根据Vision文档，复查业务需求  
@@ -133,7 +141,7 @@ https://devops.phodal.com/maturity/team-topologies
 确定子系统组件、边界  
 规划WBS  
 
-[Practical Ways to Manage Yourself: Modern Management Made Easy](https://www.amazon.com/Practical-Ways-Manage-Yourself-Management/dp/1943487138)
+[项目计划、进度与控制](https://book.douban.com/subject/10801087/)
 
 [凤凰项目，2015](https://book.douban.com/subject/26644070/)  
 
@@ -188,21 +196,48 @@ https://developer.aliyun.com/article/206424
 
 ![](https://www.isixsigma.com/wp-content/uploads/2010/02/Software-Defect-Rate-of-Discovery-Versus-Time.gif)
 
-底层原理=人性+尊重+信任=成人自我
 [ch2, SEAG]()
-
+底层原理=人性+尊重+信任=成人自我
 
 [ch3, 软件项目成功之道]()
 每日站会+任务清单+时间预估
 
-个人工作、委托、人员管理之间平衡  
-解决内部冲突，做决策，协调人员  
+[ch5, SEAG]()
+个人工作、委托、人员管理之间平衡
+对齐产品与团队任务      
+解决内部冲突，做决策  
 技术决策和方向的影响力  
 组织外成事能力  
 
+[驱动力](https://book.douban.com/subject/10484712/)
+
+[团队协作的五大障碍](https://book.douban.com/subject/4235591/)
+
+[Practical Ways to Manage Yourself: Modern Management Made Easy](https://www.amazon.com/Practical-Ways-Manage-Yourself-Management/dp/1943487138)
+
+[Build](https://book.douban.com/subject/35685625/)
+
+[第五项修炼](https://book.douban.com/subject/4051739/)
+
+[坚毅](https://book.douban.com/subject/27062574/)
+
+[成功，动机与目标](https://book.douban.com/subject/22994632/)
+
+[终身成长](https://book.douban.com/subject/27154533/)
+
+[The Successful Software Manager The definitive guide to growing from developer to manager]()
+
+[agile project management with scrum]()
+
+[7人团队敏捷管理手册](https://book.douban.com/subject/35481761/)
+
+[create your successful agile project]()
+
+[极简项目管理：让目标落地、把事办成并使成功可复制的方法论](https://book.douban.com/subject/35219808/)
+
 https://paulhammant.com/2012/11/01/testability-and-cost-of-change/
 
-
+# 文档与知识共享
 
 # 不确定的SDLC、软件开发过程
 
@@ -212,6 +247,8 @@ https://paulhammant.com/2012/11/01/testability-and-cost-of-change/
 
 [PDCA, deming86](https://asqaustin.org/wp-content/uploads/2015/12/History_of_the_PDSA_Cycle_CN_ASQ_Talk-_2_10_2016_Handout.pdf)   
 现代企业质量控制的基石，也是PMP的理论基础。  
+
+Scrum: The Art of Doing Twice the Work in Half the Time
 
 
 [ch10, Systems Analysis and Design in a Changing World, Satzinger2015](https://www.amazon.com/Systems-Analysis-Design-Changing-World/dp/1305117204)  
@@ -285,7 +322,6 @@ https://en.wikipedia.org/wiki/Shuhari
 
 [Lean Software Systems Engineering for Developers]()
 
-[Accelerate](https://book.douban.com/subject/30192146/)
 
 [Joel on Software](https://book.douban.com/subject/1395496/)
 
@@ -295,36 +331,18 @@ https://en.wikipedia.org/wiki/Shuhari
 
 [极客与团队](https://book.douban.com/subject/21372237/)
 
-
-[项目计划、进度与控制](https://book.douban.com/subject/10801087/)
-
-[7人团队敏捷管理手册](https://book.douban.com/subject/35481761/)
-
-[极简项目管理：让目标落地、把事办成并使成功可复制的方法论](https://book.douban.com/subject/35219808/)
-
 [敏捷转型：打造VUCA时代的高效能组织](https://book.douban.com/subject/30359317/)
 
 [Making things hanppen]
 
 [essential skills for the agile developer]
 
-[create your successful agile project]
 
 [start with why]
 
 [project management for the unofficial project manager]
 
-[agile project management with scrum]
-
-[The Successful Software Manager The definitive guide to growing from developer to manager]
-
-
 [learning domain-driven design]
-
-Scrum: The Art of Doing Twice the Work in Half the Time
-
-[Agile Retrospectives: Making Good Teams Great](https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/)
-
 
 # 回顾、复查、总结迭代
 软件质量度量  
@@ -333,6 +351,9 @@ Scrum: The Art of Doing Twice the Work in Half the Time
 [精益软件度量](https://book.douban.com/subject/23009505/)
 
 [程序员度量](https://book.douban.com/subject/21365482/)
+
+[Agile Retrospectives: Making Good Teams Great](https://www.amazon.com/Agile-Retrospectives-Making-Teams-Great/)
+
 
 # 代码复杂度、结构度量
 
