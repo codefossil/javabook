@@ -98,9 +98,15 @@ https://en.wikipedia.org/wiki/Software_development
 
 http://augmentsoftware.com/wp-content/uploads/2016/12/SWE-Parnas-IME-USP-GLD-PLT-2013-ewn_highlights.pdf
 
+# 权衡与成本
+![](image/cost.drawio.png)
+
+[ch1, SEGA]()
+软件工程复杂性所带来的复杂的决策流程
+
 # 绩效、效率和人员管理
-> 开发人员规模控制、组成成分、外部招聘
-> 团队建设、培训晋升奖励
+> 开发人员规模控制、组成成分、外部招聘 
+> 团队建设、培训晋升奖励  
 > DevOps过程的进度、质量、效率相关数据化
 
 [Accelerate](https://book.douban.com/subject/30192146/)
@@ -129,6 +135,7 @@ https://cloud.ofweek.com/news/2022-02/ART-178804-8420-30549630.html
 https://devops.phodal.com/maturity/team-topologies
 
 
+
 # 项目计划、迭代计划、监控
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE6287ea342110009b3ee392f41eb98c61/132)
 
@@ -140,6 +147,7 @@ https://devops.phodal.com/maturity/team-topologies
 划分子系统、确定完成顺序、人员、紧急程度  
 确定子系统组件、边界  
 规划WBS  
+
 
 [项目计划、进度与控制](https://book.douban.com/subject/10801087/)
 

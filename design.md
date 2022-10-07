@@ -511,6 +511,8 @@ If it ain't broke, don't fix it.
 
 [Software Architecture in Practice, bass2013](https://www.amazon.com/Software-Architecture-Practice-3rd-Engineering/dp/0321815734)  
 
+[定律、理论、原则和模式](https://github.com/dwmkerr/hacker-laws)
+
 
 https://tech.meituan.com/2018/05/31/dp-account-high-avaliable-road.html
 
