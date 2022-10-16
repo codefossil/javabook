@@ -105,10 +105,8 @@ http://augmentsoftware.com/wp-content/uploads/2016/12/SWE-Parnas-IME-USP-GLD-PLT
 软件工程复杂性所带来的复杂的决策流程
 
 # 绩效、效率和人员管理
-> 开发人员规模控制、组成成分、外部招聘
-
+> 开发人员规模控制、组成成分、外部招聘  
 > 团队建设、培训晋升奖励  
-
 > DevOps过程的进度、质量、效率相关数据化
 
 [Accelerate](https://book.douban.com/subject/30192146/)
@@ -141,8 +139,8 @@ https://devops.phodal.com/maturity/team-topologies
 # 项目计划、迭代计划、监控
 ![](https://note.youdao.com/yws/public/resource/8f83e1297252c926e45efa55a901a1d2/xmlnote/WEBRESOURCE6287ea342110009b3ee392f41eb98c61/132)
 
-> 团队规模，人员构成（分工，人数）
-> 研发交易成本决策/投入力度, 采购or自研
+> 团队规模，人员构成（分工，人数）  
+> 研发交易成本决策/投入力度, 采购or自研  
 > 计划毫无用处，但是制订计划必不可少
 
 根据Vision文档，复查业务需求  
