@@ -364,6 +364,11 @@ https://davelms.medium.com/taking-a-first-look-at-google-cloud-architecture-diag
 
 
 ### 微服务+DDD
+
+[Building Microservice](https://book.douban.com/subject/25881698/)  
+微服务=独立部署+领域边界+数据状态独立（[3种数据私有化模式](https://microservices.io/patterns/data/database-per-service.html)
+）  
+
 [Monolith to Microservices, newman2019](https://book.douban.com/subject/33415093/)  
 微服务提供了一种进程隔离的思考逻辑，使得团队之间可以采用独立的技术/数据库，以解决复杂的业务问题。  
 从不同方面总结了，迁移到微服务的各种模式。  
@@ -379,10 +384,6 @@ https://davelms.medium.com/taking-a-first-look-at-google-cloud-architecture-diag
 | |健壮   |监控和故障诊断复杂|
 | |   |需要部署/配置/管理的东西过多|
 | |   |end-to-end测试复杂|
-
-[Building Microservice](https://book.douban.com/subject/25881698/)  
-微服务=业务边界+独立部署+RPC/MQ
-
 
 [Microservices Patterns: With Examples in Java, 2019](https://book.douban.com/subject/33425123/) 
 
@@ -657,86 +658,6 @@ chart&flow
 通过开风险风暴会议，参会人根据架构图，来确认、达成共识、修改每个风险维度。
 
 
-# 架构师职业、核心价值、软技能
-
-![](image/arch-ability.drawio.png)
-
-> The most important single ingredient in the formula of success is knowing how to get along with people.
-
-[ch22~ch24 Fundamentals of Software Architecture, ford2020](https://book.douban.com/subject/34464806/)  
-
-定义架构决策，指导开发团队做技术决策。  
-持续的学习新的技术和趋势。  
-确保团队遵循架构决策和设计原则。  
-多经历不同的框架、库、技术、平台和环境。  
-多了解业务知识。  
-构建自己的个人能力，包括团队合作、协调能力、领导力。  
-架构师做的每个决定几乎都会遭到质疑，需要斡旋能力。  
-团队管理指导力度=团队熟悉程度+团队大小+经验水平+项目复杂度+项目时长。  
-团队不健康警告指标=过程损失+多元无知+旁观者效应。  
-高效的架构师通过榜样作用领导团队，而不是title。  
-对于架构师来说，知识的宽度比深度更重要。 
-
-## 业务能力成熟度
-https://jiagoushi.pro/business-capability-maturity
-
-https://www.smartcity.team/consultingskills/experience/%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84%E6%98%AF%E4%BB%80%E4%B9%88/
-
-https://www.jianshu.com/p/bd9962ba3c22
-
-https://tech.meituan.com/2018/04/16/study-vs-work.html
-
-https://mikechen.cc/7533.html
-
-http://iperson.uml.com.cn/SA/qualifications.asp
-
-https://www.infoq.cn/article/ngrof3ekpo0rsm5y2ajb
-
-https://juejin.cn/post/6991387551646892063
-
-http://www.woshipm.com/kol/5197192.html
-
-https://www.nankingcigar.com/2021/05/28/jia-gou-shi-jian.html
-
-
-## 技术能力与职责
-
-架构需要关注运维，指导开发；反过来运维需要关注开发、指导架构。  
-
-在满足性能、安全、可用性基础上，保证业务线的正常运转    
-架构师利用自身的经验，帮助团队识别和规避各类风险，给出简单、可行的解决方案（决定权在项目经理）    
-保持系统的敏捷性、可扩展性、可维护性、可测试性
-
-态度上对团队支持、对系统负责，在技术、业务、管理和资源等各类因素之间进行平衡、沟通与协调。
-
-|象限 | 能力  |
-|---|---|
-| 架构  | 需求分析，应用架构分析与评审、应用安全规约  |
-| devops  | CI/CD设计，核心业务运营数据监控、核心接口性能监控、线上bug监控与分析  |
-| 工程  | 研发流程优化、项目结构与脚手架、分支提交与管理、接口管理、程序建模设计、静态分析工具    |
-| 代码 | 代码评审、重构分析与计划、编码规范    |
-| 团队  | 技术能力构建、最佳实践、生产力工具、培训、招聘    |
-| 业务  | 领域知识  |
-
-https://github.com/spring2go/engineer_competency_framework  
-
-[架构师的职责与思考](https://github.com/aalansehaiyang/technology-talk/blob/master/system-architecture/%E6%9E%B6%E6%9E%84%E5%B8%88%E7%9A%84%E8%81%8C%E8%B4%A3%E4%B8%8E%E6%80%9D%E8%80%83.md
-)
-
-
-## 技术领导力
-![](https://samuraibizgrp.com/wp-content/uploads/2019/08/sales-manangement-sales-leadership-samurai.png)
-
-[Peopleware](https://book.douban.com/subject/25956450/)  
-
-
-### 技术分享、读书会
-分享范围  
-专利  
-论文  
-
-### 技术规划、目标管理
-
 # 控制复杂度
 
 > the discipline of **systems thinking** proves to be an invaluable tool in assessing exposure, opportunities, parametric sensitivities. 
@@ -752,6 +673,30 @@ https://github.com/spring2go/engineer_competency_framework
 
 [System Architecture: Strategy and Product Development for Complex Systems](https://book.douban.com/subject/26938710/)  
 分析了一种系统化的思考方式和识别方法，结合大量实例自顶向下剖析了架构复杂系统的过程，总结出系统分为形式和功能，通过分解和分层等方法破解复杂系统。
+
+## 代码复杂度、结构度量
+
+> One of the biggest problems with software is that **it’s complex and abstract**. The result being that it’s hard to visualise the runtime characteristics of a piece of software from diagrams or even the code itself.
+
+
+![](https://www.synopsys.com/blogs/software-security/wp-content/uploads/LinesOfCodeInMillions.png)
+
+重复代码数  
+长方法数  
+复杂度  
+技术债  
+代码审查   
+bug  
+故障  
+
+
+[Software Complexity Is Killing Us](https://www.simplethread.com/software-complexity-killing-us/)
+
+[Software Metrics](https://people.ucalgary.ca/~far/Lectures/SENG421/)
+
+
+http://faculty.cse.tamu.edu/ritchey/courses/csce431/winter20/  
+https://alan-turing-institute.github.io/rsd-engineeringcourse/ch05construction/
 
 
 # Back-Of-The-Envelope 容量、带宽、延迟、性能评估
