@@ -101,12 +101,14 @@ http://augmentsoftware.com/wp-content/uploads/2016/12/SWE-Parnas-IME-USP-GLD-PLT
 # 权衡与成本
 ![](image/cost.drawio.png)
 
-[ch1, SEGA]()
+[ch1, SEGA]()  
 软件工程复杂性所带来的复杂的决策流程
 
 # 绩效、效率和人员管理
-> 开发人员规模控制、组成成分、外部招聘 
+> 开发人员规模控制、组成成分、外部招聘
+
 > 团队建设、培训晋升奖励  
+
 > DevOps过程的进度、质量、效率相关数据化
 
 [Accelerate](https://book.douban.com/subject/30192146/)
@@ -204,13 +206,15 @@ https://developer.aliyun.com/article/206424
 
 ![](https://www.isixsigma.com/wp-content/uploads/2010/02/Software-Defect-Rate-of-Discovery-Versus-Time.gif)
 
-[ch2, SEAG]()
+[ch2, SEAG]()  
+
 底层原理=人性+尊重+信任=成人自我
 
 [ch3, 软件项目成功之道]()
+
 每日站会+任务清单+时间预估
 
-[ch5, SEAG]()
+[ch5, SEAG]()  
 个人工作、委托、人员管理之间平衡
 对齐产品与团队任务      
 解决内部冲突，做决策  
